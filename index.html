@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Hub</title>
+  <meta name="description" content="Watch, support and shop: everything from my YouTube channel in one place.">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+      <h1 id="name"></h1>
+      <p class="tagline" id="tagline"></p>
+      <a class="btn btn-primary btn-lg" id="subscribe" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+        Subscribe on YouTube
+      </a>
+    </header>
+
+    <section id="sec-video" hidden>
+      <h2>Latest videos</h2>
+      <div class="video"><iframe id="player" title="Latest uploads" loading="lazy"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </section>
+
+    <section id="sec-support" hidden>
+      <h2>Support the channel</h2>
+      <div class="list" id="support"></div>
+    </section>
+
+    <section id="sec-products" hidden>
+      <h2>Shop</h2>
+      <div class="grid" id="products"></div>
+    </section>
+
+    <section id="sec-affiliates" hidden>
+      <h2>Gear I use</h2>
+      <div class="list" id="affiliates"></div>
+      <p class="fine" id="disclosure"></p>
+    </section>
+
+    <section id="sec-newsletter" hidden>
+      <h2>Join the list</h2>
+      <p id="newsletter-pitch"></p>
+      <form class="news" id="newsletter" method="post" target="_blank">
+        <label class="sr" for="email">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section id="sec-business" hidden>
+      <h2>Work with me</h2>
+      <p>Brands and sponsors: let's make something together.</p>
+      <div class="row">
+        <a class="btn btn-primary" id="biz-email">Email for sponsorships</a>
+        <a class="btn" id="media-kit" target="_blank" rel="noopener" hidden>Media kit</a>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="socials" id="socials"></nav>
+      <p class="fine">&copy; <span id="year"></span> <span id="footer-name"></span></p>
+    </footer>
+  </main>
+</body>
+</html>
