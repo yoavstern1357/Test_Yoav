@@ -31,11 +31,39 @@
     body.appendChild(el("strong", "", title));
     if (sub) body.appendChild(el("span", "card-sub", sub));
     a.appendChild(body);
-    a.appendChild(el("span", "arrow", "→"));
+    a.appendChild(el("span", "arrow", T.arrow));
     return a;
   }
 
   function show(id) { $(id).hidden = false; }
+
+  // Interface language: "he" (Hebrew, right-to-left) or "en".
+  var STRINGS = {
+    en: {
+      subscribe: "Subscribe on YouTube", latest: "Latest videos", support: "Support the channel",
+      shop: "Shop", gear: "Gear I use", list: "Join the list", emailLabel: "Email address",
+      join: "Subscribe", work: "Work with me",
+      brands: "Brands and sponsors: let's make something together.",
+      bizEmail: "Email for sponsorships", kit: "Media kit", subject: "Sponsorship inquiry: ",
+      arrow: "→", player: "Latest uploads",
+    },
+    he: {
+      subscribe: "הרשמה לערוץ ביוטיוב", latest: "סרטונים אחרונים", support: "תמכו בערוץ",
+      shop: "חנות", gear: "הציוד שלי", list: "הצטרפו לרשימת התפוצה", emailLabel: "כתובת מייל",
+      join: "הרשמה", work: "עבודה משותפת",
+      brands: "מותגים ונותני חסות: בואו ניצור משהו ביחד.",
+      bizEmail: "פנייה לשיתופי פעולה", kit: "ערכת מדיה", subject: "פנייה לשיתוף פעולה: ",
+      arrow: "←", player: "סרטונים אחרונים",
+    },
+  };
+  var lang = STRINGS[c.language] ? c.language : "en";
+  var T = STRINGS[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function (n) {
+    if (T[n.getAttribute("data-t")]) n.textContent = T[n.getAttribute("data-t")];
+  });
+  $("player").title = T.player;
 
   // Accent colour
   if (c.accent && CSS.supports("color", c.accent)) {
@@ -131,7 +159,7 @@
   // Business
   var email = typeof c.businessEmail === "string" ? c.businessEmail.trim() : "";
   if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    $("biz-email").href = "mailto:" + email + "?subject=" + encodeURIComponent("Sponsorship inquiry: " + name);
+    $("biz-email").href = "mailto:" + email + "?subject=" + encodeURIComponent(T.subject + name);
     var kit = safeUrl(c.mediaKitUrl);
     if (kit) { $("media-kit").href = kit; $("media-kit").hidden = false; }
     show("sec-business");

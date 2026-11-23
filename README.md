@@ -21,7 +21,7 @@ No build step, no server, no cost. It's plain HTML/CSS/JS.
 
 ## 1. Fill in your details (5 minutes)
 
-Edit **`config.js`**. It's the only file you need to touch. Replace each
+Edit **`config.js`**. It's the only file you need to touch. Set `language` to `"he"` (Hebrew, right-to-left) or `"en"`. Replace each
 `CHANGE ME` and paste in your links. To find your **channel ID** (it starts
 with `UC`), go to YouTube Studio → Settings → Channel → Advanced settings.
 
