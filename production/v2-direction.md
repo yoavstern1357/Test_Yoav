@@ -4,7 +4,7 @@ V2 goal: keep the v1 drawing, but make the episode a **gripping, living, kicking
 
 ## Creator's brief (verbatim intent)
 - Real animation feel, not just transitions between frames. More frames, a genuinely engaging video.
-- **Human-style but drawn** (semi-realistic 2D, human proportions), not round/chibi. Currently it reads as made for little kids; the audience is everyone.
+- **Drawing unchanged (round, soft, cute v1 style). Only the feel changes: lively, kicking, live story.**
 - **Faster pace.** Inspiration from *Avatar: The Last Airbender* and *Naruto* in rhythm and look, **never copying** characters, designs, compositions, music or any recognizable pattern.
 - Must make any viewer curious. Everything in English.
 
