@@ -45,3 +45,13 @@ opening with clouds of steam. Through the steam: a big, round, jolly middle-aged
 bald head with a thin black mustache, rosy cheeks, orange Hawaiian shirt with dumpling prints,
 eyes huge with excitement.
 ```
+
+## Canva reference images (reuse these for every episode)
+Canva folder: https://www.canva.com/folder/FAHbz3qqLyU
+| Character | Canva media ID | Link |
+|---|---|---|
+| The Boy (Bo) | `MAHbz05BV-E` | https://www.canva.com/M/MAHbz05BV-E |
+| The Uncle (Uncle Fong) | `MAHbz404TgM` | https://www.canva.com/M/MAHbz404TgM |
+
+Pass these as reference images when generating new scenes, and start the prompt with
+"Use the boy and the man from the reference images exactly…" to keep them consistent.
