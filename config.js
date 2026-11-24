@@ -8,11 +8,11 @@
  */
 window.CREATOR_CONFIG = {
   // Page language: "he" (Hebrew, right-to-left) or "en" (English).
-  language: "he",
+  language: "en",
 
   // ---- Who you are --------------------------------------------------------
-  name: "Yoav Stern",
-  tagline: "ברוכים הבאים לערוץ שלי! הירשמו כדי לא לפספס סרטונים חדשים.", // TODO: describe the channel
+  name: "The Dumpling Boy",
+  tagline: "A boy in a straw hat and his always-hungry uncle travel the world, one dumpling at a time. 🥟",
   // Square image, e.g. your YouTube profile picture. Can be a file in this
   // folder ("avatar.jpg") or a full URL. Leave "" to show your initials.
   avatar: "",
@@ -27,18 +27,18 @@ window.CREATOR_CONFIG = {
   support: [
     // { label, description, url }
     {
-      label: "הצטרפו כחברי ערוץ",
-      description: "מנוי חודשי עם הטבות",
+      label: "Join the Dumpling Crew",
+      description: "Monthly channel membership with perks",
       url: "", // after YouTube memberships unlock: "https://www.youtube.com/@TheDumplingBoy/join"
     },
     {
-      label: "קנו לי קפה ☕",
-      description: "טיפ חד־פעמי, בכל סכום",
+      label: "Buy the Uncle a dumpling 🥟",
+      description: "One-time tip, any amount: keeps the animations coming",
       url: "", // TODO: Ko-fi page, e.g. "https://ko-fi.com/yourname"
     },
     {
       label: "PayPal",
-      description: "שליחת טיפ דרך PayPal",
+      description: "Send a tip via PayPal",
       url: "", // e.g. "https://paypal.me/yourname"
     },
   ],
@@ -53,7 +53,7 @@ window.CREATOR_CONFIG = {
     // { name, note, url }
   ],
   affiliateDisclosure:
-    "חלק מהקישורים למעלה הם קישורי שותפים: אני עשוי לקבל עמלה קטנה, בלי עלות נוספת עבורכם.",
+    "Some links above are affiliate links: we may earn a small commission at no extra cost to you.",
 
   // ---- Sponsorships / brand deals -----------------------------------------
   businessEmail: "", // TODO: a dedicated business email
@@ -61,7 +61,7 @@ window.CREATOR_CONFIG = {
 
   // ---- Email list ---------------------------------------------------------
   newsletterFormAction: "",
-  newsletterPitch: "קבלו סרטונים חדשים וטיפים בלעדיים ישירות למייל.",
+  newsletterPitch: "New episodes and secret dumpling wisdom, straight to your inbox.",
 
   // ---- Other socials ------------------------------------------------------
   socials: [
@@ -70,5 +70,5 @@ window.CREATOR_CONFIG = {
   ],
 
   // Accent colour for buttons (any CSS colour).
-  accent: "#ff0033",
+  accent: "#d9480f",
 };
