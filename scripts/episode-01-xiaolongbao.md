@@ -52,3 +52,15 @@ Episode 1 of 3 in China. Next: how locals really eat them.
 - Shanghai Municipal Government, "Xiaolongbao: A small dumpling with a big story": https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html
 - MICHELIN Guide, best Shanghai xiaolongbao: https://guide.michelin.com/mo/en/article/travel/best-shanghai-xiao-long-bao
 - Note: other cities (e.g. Changzhou, Kaifeng) have competing origin stories, which is why the script says "Legend says".
+
+## Canva scene images (ready)
+Folder: https://www.canva.com/folder/FAHbz3qqLyU
+| Beat | Image | Canva link |
+|---|---|---|
+| Hook: Uncle through the steam | `MAHbz7FGxT8` | https://www.canva.com/M/MAHbz7FGxT8 |
+| Gag: Uncle burns his mouth | `MAHbzx-pSj4` | https://www.canva.com/M/MAHbzx-pSj4 |
+| The right way (spoon) | `MAHbzyCXudc` | https://www.canva.com/M/MAHbzyCXudc |
+| Dad's memory (sepia) | `MAHbz_GCMh8` | https://www.canva.com/M/MAHbz_GCMh8 |
+| Button: tower of steamers | `MAHbz7uEKeE` | https://www.canva.com/M/MAHbz7uEKeE |
+
+Still needed: the journal + map transition shot, and the "Legend says…" storybook shot.
