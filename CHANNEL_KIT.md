@@ -33,8 +33,8 @@ Pinned comment: `Which dumpling should we eat next? 👇 Support us: https://the
 
 ## Season plan
 The show runs in **3-episode country arcs** (Arrival → Culture → Recipe + Recap), following Dad's dumpling journal.
-Full season map (11 countries, Shanghai → … → Vietnam finale): **`production/series-format.md`**.
-Ready scripts: `scripts/episode-01…03` (China arc). Drafts: `episode-04-gyoza`, `episode-10-momo`.
+Full season map (Silk Road: Season 1 by sea, Season 2 by land, finale in Venice): **`production/series-format.md`**.
+Ready scripts: Episodes 1–9 in `scripts/` (China, Korea, Japan). Draft: `episode-21-momo-darjeeling`. Full route: `production/season-map.md`.
 
 ## Monetization notes
 - Make each episode a real mini-story with an original script. YouTube doesn't monetize mass-produced or repetitive content (its "inauthentic content" policy), so avoid near-identical AI clips.
