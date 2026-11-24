@@ -10,12 +10,12 @@
 **[0:03–0:06] REWIND.** Freeze frame. Record-scratch, rewind swoosh.
 > **BOY (V.O.):** Okay. Let's go back.
 
-**[0:06–0:22] THE JOURNEY: BY SEA FROM BUSAN.** Dad's leather **journal** opens. On the hand-drawn map, a dotted line glows from **Busan** across the sea to **Japan**. A little cartoon ship sails along it under the stars. On deck, UNCLE hugs the bag of frozen mandu that the Han family gave him "for the road" (Episode 6). He opens it. It's empty. Crumbs on his mustache.
-> **BOY (V.O.):** One night by ship… Next page: Japan!
-> **BOY:** Uncle! Those were for Japan!
-> **UNCLE:** *(pointing at the horizon)* That IS Japan.
+**[0:06–0:22] THE JOURNEY: OVERNIGHT FERRY BUSAN → OSAKA, TRAIN TO KOBE.** Dad's leather **journal** opens. On the hand-drawn map, a dotted line glows from **Busan** across the sea to **Osaka**. A little cartoon ferry sails along it under the stars. On deck, UNCLE hugs the bag of frozen mandu the Han family gave them "for the road… to share" (Episode 6). He opens it. Crumbs on his mustache. Only ONE mandu left. He looks at it… sighs… and holds it out to the BOY.
+> **BOY (V.O.):** One night by ferry… Next page: Japan!
+> **UNCLE:** *(heroic)* The last one. We share.
+The BOY breaks it in half. They clink halves like glasses.
 
-Sunrise. The ship glides into a wide, calm bay. Then a quick cartoon train hop along the water, past green mountains, to a harbor city with a tall red tower and big ships.
+Sunrise. The ferry glides into Osaka Bay. The torn last page of the journal flutters, and its little doodle of a round, fluffy bun glows. Then a quick cartoon train hop along the water, past green mountains, to a harbor city with a tall red tower and big ships.
 > **BOY (V.O.):** Then a short train… to Kobe.
 
 **[0:22–0:25] TITLE CARD.** `🥟 #07 BUTAMAN · Kobe, Japan`
@@ -123,7 +123,8 @@ Episode 1 of 3 in Japan. Next: Utsunomiya, gyoza city… and Dad's old pan.
 
 ## Accuracy notes
 - **"Many people say"** is used for the 1915 "birthplace of butaman" story: it's the shop's own long-standing claim, repeated by tourism and news sources, not an independent historical record. Don't name the shop or the founder on screen (series brand rule). The storybook cook is a generic figure, not a portrait.
-- **Sea route:** there is no regular Busan → Kobe passenger ferry today; the overnight ferry goes into Osaka Bay to Osaka. The script shows the ship entering "a wide, calm bay" and then "a short train to Kobe", so it stays true. Don't label the ferry's port as Kobe.
+- **Sea route:** there is no regular Busan → Kobe passenger ferry today; the overnight ferry goes into Osaka Bay to Osaka. The map line ends at Osaka and the script then shows "a short train to Kobe", so it stays true. Don't label the ferry's port as Kobe, and don't name a ferry company.
+- **Continuity with Ep 6:** the frozen mandu "for the road… to share" pays off with the Uncle sharing the last one (Korea's clue: share). The glowing fluffy-bun doodle on the torn page is the one Ep 6 ends on. Korea's journal secrets so far: courage · make them together · share. Japan's clues (per `production/season-map.md`): Ep 7 Warmth · Ep 8 Friendly rivals · Ep 9 Keep it simple.
 - **Butaman vs. dumpling:** a steamed bun (bao) is a yeast-dough cousin of the dumpling, not a dumpling in the strict sense, which is why the script calls it "the dumpling's fluffy cousin" every time.
 - **Nikuman/butaman names:** the "niku means beef in Kansai" reason is widely repeated by tourism and food sites but not from a formal dialect study, so the card only gives the two names, not the reason.
 - **Port history:** keep it to "opened to world trade in 1868". Nankinmachi was destroyed in WWII air raids and later rebuilt, and it was damaged in the 1995 earthquake; these are left out of a family Short on purpose.

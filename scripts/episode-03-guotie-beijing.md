@@ -76,7 +76,7 @@ Fact card: `Guotie = "pot stick" 🍳 They stick to the pan… and get a crispy 
 - ⚠️ **GROWN-UP STEP (hot pan):** `1 tbsp oil` → line up the guotie, flat side down, close together → `fry 2–3 min` until light golden.
 - ⚠️ **GROWN-UP STEP (splatter!):** `80 ml (⅓ cup) water` → lid on *right away*. *HISSSS!* Badge: `Kids stand back!` MEI and the BOY step back calmly. UNCLE leaps behind the fridge door.
 > **UNCLE:** *(peeking out)* Is it… friendly?
-> **MEI:** It's just steam!
+> **MEI:** Friendly from back here!
 - Clock: `steam 5–6 min, lid on` → `lid off, 1–2 min` until the water is gone and the bottoms are deep golden.
 - ⚠️ **GROWN-UP STEP (is it cooked?):** cut one open. Badge (hold 2 s): `✅ No pink · clear juices · 🌡️ pork 71°C / 160°F · chicken 74°C / 165°F · not there yet? lid on, 1–2 min more`
 > **BOY:** No pink inside? Then it's ready.

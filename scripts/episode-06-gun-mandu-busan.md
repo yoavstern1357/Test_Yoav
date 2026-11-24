@@ -80,7 +80,7 @@ Caption: `Full recipe + steam/boil options + New Year soup + freezing tip in the
 > **HALMEONI HAN:** Your father left this. For "the next one in the hat."
 > **BOY:** *(holding it to his heart, eyes closed)* Thank you.
 
-The BOY tucks the card into the journal and presses the 🇰🇷 stamp next to Busan. The journal shows three secrets: `#1 patience · #2 balance · #3 make them together.` Grandma hands UNCLE a bag of frozen mandu "for the road… to share". He hugs it like a teddy bear… then, slowly, hands one to the BOY.
+The BOY tucks the card into the journal and presses the 🇰🇷 stamp next to Busan. The journal now shows six secrets: `#1 patience · #2 gentle hands · #3 balance · #4 courage · #5 make them together · #6 share`. Grandma hands UNCLE a bag of frozen mandu "for the road… to share". He hugs it like a teddy bear… then, slowly, hands one to the BOY.
 
 A ship horn sounds from the harbor. The torn last page flutters… and a tiny drawing of a round, fluffy steamed bun glows on its edge. On the map, a new dotted ferry line runs from Busan's port across the sea to **Japan**, ending at the harbor city of **Kobe**.
 > **BOY:** Dad was right… Next stop: Kobe, Japan!

@@ -52,7 +52,7 @@ On-screen fact card: `In Korea's colder north (Gangwon, Seoul, Gyeonggi), many f
 > **HALMEONI HAN:** He came one New Year. He said: "Make them together."
 > **BOY:** *(whispers)* Dad…
 
-The BOY opens the journal: under Chuncheon, a faded line glows: `Secret #3: make them together.` ✨
+The BOY opens the journal: under Chuncheon, a faded line glows: `Secret #5: make them together.` ✨
 
 **[1:40–1:50] HEART MOMENT.** Night. The house is quiet. The BOY and UNCLE sit on the doorstep under the persimmon tree, the lake shining under the moon, steam rising from two cups of tea.
 > **BOY:** Why did you fold alone, Uncle?
