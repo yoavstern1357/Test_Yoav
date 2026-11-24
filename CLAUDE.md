@@ -18,6 +18,7 @@ Animated family YouTube series: a boy in a Vietnamese conical hat and his big, a
 - `production/character-bible.md`: character prompts and Canva reference image IDs.
 - `production/growth-plan.md`, `media-kit.md`, `fact-check-report.md`, `first-upload-checklist.md`, `ko-fi-page.md`.
 - `tools/episode_maker/`: local video pipeline (see its README).
+- `.claude/skills/`: project skills (write-episode-script, make-episode-frames, render-episode, deploy-site).
 - Site files (`index.html`, `app.js`, `config.js`, `style.css`, `avatar.svg`, `og-image.png`) deployed to Netlify.
 
 ## Style constants
