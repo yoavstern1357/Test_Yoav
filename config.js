@@ -34,7 +34,7 @@ window.CREATOR_CONFIG = {
     {
       label: "Buy the Uncle a dumpling 🥟",
       description: "One-time tip, any amount: keeps the animations coming",
-      url: "https://ko-fi.com/thedumplingboy", // Ko-fi (pays out via PayPal)
+      url: "", // TODO: Ko-fi page URL (ko-fi.com/thedumplingboy returned 404)
     },
   ],
 
@@ -61,7 +61,6 @@ window.CREATOR_CONFIG = {
   // ---- Other socials ------------------------------------------------------
   socials: [
     // { label, url }
-    { label: "Ko-fi", url: "https://ko-fi.com/thedumplingboy" },
     { label: "YouTube", url: "https://www.youtube.com/@TheDumplingBoy" },
   ],
 
