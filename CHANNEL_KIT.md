@@ -38,5 +38,5 @@ Ready scripts: `scripts/episode-01…03` (China arc). Drafts: `episode-04-gyoza`
 
 ## Monetization notes
 - Make each episode a real mini-story with an original script. YouTube doesn't monetize mass-produced or repetitive content (its "inauthentic content" policy), so avoid near-identical AI clips.
-- Shorts lead to subscribers. Once you're making episodes regularly, add a 3–5 minute "compilation" or long episode each month. Long videos earn more from ads per view.
+- Every episode is ~2 minutes (vertical). After each country arc, publish the 3 episodes joined as one 16:9 video (~6 min): it builds watch hours, which Shorts views don't.
 - Design note: the Boy wears a Vietnamese conical hat (nón lá) and a white kimono, a look that is clearly his own and doesn't resemble existing famous characters.

@@ -1,7 +1,7 @@
 # Episode scripts: The Dumpling Boy
 
 Format: see **`production/series-format.md`**. Every country is a 3-episode arc:
-**1. Arrival** (Short) → **2. Culture** (Short) → **3. Recipe + Recap** (long video + Short cut).
+**1. Arrival** → **2. Culture** → **3. Recipe + Recap**: every episode about **2 minutes**, vertical (9:16).
 The table below is the beat for the Arrival episodes:
 
 | Time | Beat |

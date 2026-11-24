@@ -17,7 +17,7 @@ Goal: the first public video, published cleanly with everything in place.
 - [ ] Ko-fi texts from `production/ko-fi-page.md`, PayPal connected
 
 ## C. The video
-- [ ] Vertical 9:16, 1080×1920, under 60 seconds (45–60s)
+- [ ] Vertical 9:16, 1080×1920, about 2:00 (1:50–2:10; Shorts allow up to 3:00)
 - [ ] Hook in the first 3 seconds (the Uncle through the steam)
 - [ ] Captions burned in (English)
 - [ ] Music/sounds only from a licensed library (YouTube Audio Library or Canva's library)

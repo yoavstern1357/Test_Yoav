@@ -1,13 +1,13 @@
 # Episode Workflow: from idea to upload
 
-Target: **1 Short per week** to start (about 3–5 hours each). Consistency beats perfection.
+Target: **1 episode (~2 min) per week** to start (about 5–8 hours each). Consistency beats perfection.
 
 ## Step 1: Script (15 min)
 Tell Claude (in Hebrew is fine) which dumpling you want, and get a script in the format in `scripts/README.md`.
 Scripts for the China arc (Episodes 1–3) are ready in `scripts/`. Episode structure: `series-format.md`.
 
 ## Step 2: Images (1–2 h)
-- Generate **6–10 still images** per episode (one per beat), using the prompts in `character-bible.md`.
+- Generate **15–20 still images** per ~2-minute episode (one per beat), using the prompts in `character-bible.md`.
 - Tools (pick one): any AI image generator you have access to, Canva's built-in AI image tool, or draw your own.
 - Always 9:16 vertical (1080×1920).
 - Reuse your saved character reference images so the Boy and the Uncle look the same every time.
@@ -26,7 +26,7 @@ Options, from easiest to most "animated":
 
 ## Step 5: Captions + export (20 min)
 - CapCut → **Auto captions** (English). Use big bold text in the middle third of the screen.
-- Export **1080×1920, 30fps, under 60 seconds**.
+- Export **1080×1920, 30fps, about 2:00** (Shorts allow up to 3:00).
 
 ## Step 6: Upload (10 min). Checklist:
 - [ ] Title, description and pinned comment from the script file

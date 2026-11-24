@@ -20,11 +20,12 @@ This gives viewers a reason to come back, and to watch from Episode 1.
 ## Every country is a 3-episode arc
 | Part | Type | Length | What happens |
 |---|---|---|---|
-| **1** | **Arrival** | Short, 45–60s | Travel transition (map + plane/train/boat animation) → arrival → meet the dumpling → the Uncle's gag → **"Legend says…"** history moment → Dad's wisdom |
-| **2** | **Culture** | Short, 45–60s | When and why locals eat it (festival, breakfast, family tradition) → a friendly local character → one **journal clue** that moves the story forward |
-| **3** | **Recipe + Recap** | Long video 3–5 min, plus a 60s Short cut | A simple **family recipe** (kids + grown-up), then a **Recap card** (dumpling, country, history, fun fact, how to eat it) → **map stamp** → teaser for the next country |
+| **1** | **Arrival** | ~2:00 Short (9:16) | Travel transition (map + plane/train/boat animation) → arrival → meet the dumpling → the Uncle's gag → **"Legend says…"** history moment → Dad's wisdom |
+| **2** | **Culture** | ~2:00 Short (9:16) | When and why locals eat it (festival, breakfast, family tradition) → a friendly local character → one **journal clue** that moves the story forward |
+| **3** | **Recipe + Recap** | ~2:00 Short (9:16); full written recipe in the description | A simple **family recipe** (kids + grown-up), then a **Recap card** (dumpling, country, history, fun fact, how to eat it) → **map stamp** → teaser for the next country |
 
-The long recipe videos earn more from ads and get searched ("easy soup dumpling recipe"). The Shorts bring new viewers.
+**Every episode is about 2 minutes** (1:50–2:10), vertical 9:16, uploaded as a Short (Shorts can be up to 3 minutes).
+**Watch hours:** Shorts views don't count toward the YouTube Partner Program watch-hour goal. So after each country arc, publish a **16:9 "full arc" compilation** (the 3 episodes joined, ~6 min) as a regular video. It costs almost no extra work and builds watch hours and search traffic.
 
 ## Season 1 map (11 countries)
 | Arc | Episodes | Country / City | Dumpling | Clue for Dad's recipe |

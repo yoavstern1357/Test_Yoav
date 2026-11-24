@@ -1,5 +1,8 @@
 # Growth & Monetization Plan: The Dumpling Boy
 
+> **Format update (creator decision):** every episode is now **about 2 minutes, vertical 9:16, uploaded as a Short** (recipe episodes included; no separate 3–5 min recipe video or 60s cut). Wherever this plan says "long video" or "Short cut" for Ep 3/6/9, read it as the ~2:00 episode. For watch hours, publish each arc's three episodes joined as one **16:9 compilation (~6 min)** a few days after the arc ends.
+
+
 Channel: **The Dumpling Boy** · YouTube **@TheDumplingBoy.studio** · Creator page **https://thedumplingboy.netlify.app** · Ko-fi **https://ko-fi.com/thedumplingboy** · Business email **thedumplingboy.studio@gmail.com**
 
 Written: 24 Nov 2026 (launch week). Starting point: 0 subscribers, scripts ready for Episodes 1–3 (China), drafts for Gyoza (Japan) and Momo (Nepal). One person, day job, Canva Pro now and CapCut later.
