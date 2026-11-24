@@ -12,7 +12,7 @@ window.CREATOR_CONFIG = {
 
   // ---- Who you are --------------------------------------------------------
   name: "The Dumpling Boy",
-  tagline: "A boy in a straw hat and his always-hungry uncle travel the world, one dumpling at a time. 🥟",
+  tagline: "A boy in a conical hat and his always-hungry uncle travel the world, one dumpling at a time. 🥟",
   // Square image, e.g. your YouTube profile picture. Can be a file in this
   // folder ("avatar.jpg") or a full URL. Leave "" to show your initials.
   avatar: "avatar.svg",

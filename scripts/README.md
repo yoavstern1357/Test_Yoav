@@ -12,7 +12,7 @@ Every episode follows the same beat so viewers learn the rhythm:
 | 45–55s | **Button:** a final laugh, plus "Where to next? Comment!" to drive comments |
 
 ## Characters
-- **Boy:** About 10, wears a straw hat. Curious, calm, a little poetic. Says the "dumpling wisdom" lines.
+- **Boy:** About 10, wears a Vietnamese conical hat and a white kimono. Curious, calm, a little poetic. Says the "dumpling wisdom" lines.
 - **Uncle:** His late father's older brother. Big, loud, warm and always hungry. The comedy engine.
 - **Dad:** Only a soft voice-over or a warm, sepia flashback silhouette. Never fully shown, which keeps it mysterious and emotional.
 

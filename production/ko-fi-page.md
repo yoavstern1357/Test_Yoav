@@ -6,7 +6,7 @@ Paste these into Ko-fi → **Settings → Page** (field names may differ slightl
 
 **Bio / About:**
 ```
-Hi! 🥟 I'm making a little animated series about a boy in a straw hat and his always-hungry uncle,
+Hi! 🥟 I'm making a little animated series about a boy in a conical hat and his always-hungry uncle,
 traveling the world to taste every dumpling on Earth, and finding life lessons inside each one.
 Every "dumpling" you buy here helps make the next episode. Thank you for being part of the journey!
 ```
