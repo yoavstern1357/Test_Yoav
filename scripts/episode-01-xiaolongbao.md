@@ -63,4 +63,7 @@ Folder: https://www.canva.com/folder/FAHbz3qqLyU
 | Dad's memory (sepia) | `MAHbz_GCMh8` | https://www.canva.com/M/MAHbz_GCMh8 |
 | Button: tower of steamers | `MAHbz7uEKeE` | https://www.canva.com/M/MAHbz7uEKeE |
 
-Still needed: the journal + map transition shot, and the "Legend says…" storybook shot.
+| "Legend says…" (storybook) | `MAHbz79mePU` | https://www.canva.com/M/MAHbz79mePU |
+
+Note: the storybook image shows a small sign with characters; keep it brief on screen or cover it with the fact card.
+Still needed: journal + map transition shot, and the cover image (generation retried).
