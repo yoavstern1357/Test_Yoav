@@ -328,6 +328,105 @@ GRADES = {   # soft, warm-leaning: (mul r,g,b), (add r,g,b)
 }
 WHIP_T = 0.15
 
+# ------------------------------------------------------------------ puppets (cut-out animation)
+PUPPET_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "specs", "puppets")
+MOUTH_LEVELS = 5
+
+
+def _back(x, c1=1.70158):
+    x = min(max(x, 0.0), 1.0)
+    c3 = c1 + 1
+    return 1 + c3 * (x - 1) ** 3 + c1 * (x - 1) ** 2
+
+
+def _out(x):
+    x = min(max(x, 0.0), 1.0)
+    return 1 - (1 - x) ** 3
+
+
+class Puppet:
+    """A transparent cut-out plus a sidecar rig (<name>.json: eyes, mouth, skin colour).
+    Variants (blink x mouth level x flip) are painted once and cached."""
+
+    def __init__(self, name):
+        base = os.path.join(PUPPET_DIR, os.path.splitext(name)[0])
+        self.img = Image.open(base + ".png").convert("RGBA")
+        self.rig = json.load(open(base + ".json")) if os.path.exists(base + ".json") else {}
+        self.cache = {}
+
+    @property
+    def size(self):
+        return self.img.size
+
+    def variant(self, lvl, blink, flip):
+        key = (lvl, blink, flip)
+        if key in self.cache:
+            return self.cache[key]
+        im = self.img
+        rig = self.rig
+        if (lvl > 0 and rig.get("mouth")) or (blink and rig.get("eyes")):
+            Z = 2
+            ov = Image.new("RGBA", (im.width * Z, im.height * Z), (0, 0, 0, 0))
+            d = ImageDraw.Draw(ov)
+            pat = Image.new("RGBA", ov.size, tuple(rig.get("skin", [250, 208, 178])) + (0,))
+            pd = ImageDraw.Draw(pat)
+            skin = tuple(rig.get("skin", [250, 208, 178])) + (255,)
+            line = (70, 40, 28, 255)
+            if blink and rig.get("eyes"):
+                for ex, ey, ew, eh in rig["eyes"]:
+                    pd.ellipse(((ex - ew * 0.62) * Z, (ey - eh * 0.8) * Z, (ex + ew * 0.62) * Z, (ey + eh * 0.62) * Z), fill=skin)
+                    d.arc(((ex - ew * 0.5) * Z, (ey - eh * 0.42) * Z, (ex + ew * 0.5) * Z, (ey + eh * 0.42) * Z), 18, 162, fill=line, width=int(5 * Z))
+            if lvl > 0 and rig.get("mouth"):
+                m = rig["mouth"]
+                mx, my = m["x"], m["y"]
+                pw, ph = m.get("patch", [100, 36])
+                pd.ellipse(((mx - pw / 2) * Z, (my - ph / 2) * Z, (mx + pw / 2) * Z, (my + ph / 2) * Z), fill=skin)
+                f = lvl / MOUTH_LEVELS
+                w = m["w"] * (0.62 + 0.38 * f)
+                h = max(5.0, m["h"] * f)
+                top = my - m.get("up", 0.25) * h
+                box = (( mx - w / 2) * Z, top * Z, (mx + w / 2) * Z, (top + h) * Z)
+                mask = Image.new("L", ov.size, 0)
+                ImageDraw.Draw(mask).ellipse(box, fill=255)
+                inner = Image.new("RGBA", ov.size, (118, 38, 40, 255))
+                if h > 14:
+                    td = ImageDraw.Draw(inner)
+                    td.ellipse((box[0] + w * 0.12 * Z, box[1] + h * 0.52 * Z, box[2] - w * 0.12 * Z, box[3] + h * 0.35 * Z), fill=(232, 120, 122, 255))
+                ov.paste(inner, (0, 0), mask)
+                d.ellipse(box, outline=line, width=int(max(3, 4) * Z * 0.8))
+            pat = pat.filter(ImageFilter.GaussianBlur(2.2 * Z))
+            pat.alpha_composite(ov)
+            ov = pat.resize(im.size, Image.LANCZOS)
+            im = im.copy()
+            # paint only where the cut-out is opaque (keeps the silhouette)
+            a = im.getchannel("A")
+            ov.putalpha(ImageChops_multiply(ov.getchannel("A"), a))
+            im.alpha_composite(ov)
+        if flip:
+            im = ImageOps.mirror(im)
+        self.cache[key] = im
+        return im
+
+
+def ImageChops_multiply(a, b):
+    from PIL import ImageChops
+    return ImageChops.multiply(a, b)
+
+
+def voice_envelope(audio):
+    """Mouth-openness 0..1 at 60 Hz from a voice line's samples."""
+    hop = SR // 60
+    n = len(audio) // hop
+    if n < 2:
+        return np.zeros(2, np.float32)
+    x = audio[: n * hop].reshape(n, hop)
+    rms = np.sqrt((x ** 2).mean(axis=1))
+    ref = np.percentile(rms[rms > 0.02], 90) if (rms > 0.02).any() else 1.0
+    e = np.clip(rms / (ref or 1.0), 0, 1) ** 0.85
+    e = np.convolve(e, np.array([0.25, 0.5, 0.25]), mode="same")
+    return e.astype(np.float32)
+
+
 
 class Renderer:
     def __init__(self, spec, shots, W, H, fps, frames_dir):
@@ -339,6 +438,13 @@ class Renderer:
             for k in ("bg", "fg"):
                 if s.get("layers", {}).get(k):
                     self.load(s["layers"][k], rgba=(k == "fg"))
+        self.pups = {}
+        self.envs = {}
+        self._cam = None
+        for s_ in shots:
+            for pp in s_.get("puppets", []):
+                if pp["img"] not in self.pups:
+                    self.pups[pp["img"]] = Puppet(pp["img"])
         self.rng = np.random.default_rng(3)
         self.parts = {}
         self.grid = None
@@ -406,6 +512,7 @@ class Renderer:
             ny = min(max(box[1] + sy * sc, 0), img.size[1] - bh)
             box = (nx, ny, nx + bw, ny + bh)
         fr = img.resize((W, H), Image.BICUBIC, box=box)
+        self._cam = (box, img.size)
         if layers.get("fg"):      # foreground plane: moves faster than the background
             fg = self.imgs[os.path.join(self.frames_dir, layers["fg"])]
             drift = math.sin(t_local * 0.6 + s["start"]) * 0.012
@@ -549,8 +656,145 @@ class Renderer:
             fr = Image.blend(fr, Image.new("RGB", fr.size, col), a)
         return fr
 
+    # ---- puppets
+    def line_amp(self, s, ln, t_abs):
+        key = (id(s), ln["start"], ln["who"], ln["text"])
+        if key not in self.envs:
+            self.envs[key] = voice_envelope(ln["audio"])
+        env = self.envs[key]
+        i = (t_abs - ln["start"]) * 60.0
+        if i < 0 or i >= len(env) - 1:
+            return 0.0
+        i0 = int(i)
+        return float(env[i0] * (1 - (i - i0)) + env[i0 + 1] * (i - i0))
+
+    def puppets(self, fr, s, t):
+        box, (sw, sh) = self._cam
+        W, H = self.W, self.H
+        k = W / (box[2] - box[0])
+        for pi, pp in enumerate(s["puppets"]):
+            pup = self.pups[pp["img"]]
+            ph = s["start"] * 1.3 + pi * 2.1 + pp.get("phase", 0.0)
+            x, y = pp.get("x", 0.5), pp.get("y", 0.9)
+            path = pp.get("path")
+            if path:                      # keyframes [{t,x,y}] with smooth interpolation
+                pts = sorted(path, key=lambda q: q["t"])
+                if t <= pts[0]["t"]:
+                    x, y = pts[0].get("x", x), pts[0].get("y", y)
+                elif t >= pts[-1]["t"]:
+                    x, y = pts[-1].get("x", x), pts[-1].get("y", y)
+                else:
+                    for a, b in zip(pts, pts[1:]):
+                        if a["t"] <= t <= b["t"]:
+                            e = ease((t - a["t"]) / max(b["t"] - a["t"], 1e-6))
+                            x = a.get("x", x) + (b.get("x", x) - a.get("x", x)) * e
+                            y = a.get("y", y) + (b.get("y", y) - a.get("y", y)) * e
+                            break
+            scale = pp.get("scale", 1.0)
+            sx = sy = 1.0
+            rot = 0.0
+            alpha = 1.0
+            # entrance / exit
+            en, et, ed = pp.get("enter", "none"), pp.get("enter_t", 0.0), pp.get("enter_d", 0.45)
+            if en != "none":
+                q = (t - et) / ed
+                if q < 0:
+                    continue
+                if en == "left":
+                    x -= 0.75 * (1 - _back(q, 1.0))
+                elif en == "right":
+                    x += 0.75 * (1 - _back(q, 1.0))
+                elif en == "bottom":
+                    y += 0.6 * (1 - _back(q, 1.0))
+                elif en == "pop":
+                    ps = _back(q, 2.2)
+                    sx *= max(ps, 0.001); sy *= max(ps, 0.001)
+                    if q < 1:
+                        rot += (1 - q) * 6
+            ex_, ext = pp.get("exit", "none"), pp.get("exit_t", 1e9)
+            if ex_ != "none" and t >= ext:
+                q = min((t - ext) / pp.get("exit_d", 0.35), 1.0)
+                if q >= 1.0:
+                    continue
+                e = q * q
+                x += {"left": -0.8, "right": 0.8}.get(ex_, 0) * e
+                y += 0.6 * e if ex_ == "bottom" else 0
+            # idle
+            idle = pp.get("idle", {})
+            br = idle.get("breathe", 0.0)
+            if br:
+                b = math.sin(2 * math.pi * 0.42 * t + ph)
+                sy *= 1 + br * 0.03 * b
+                sx *= 1 - br * 0.012 * b
+            bob = idle.get("bob", 0.0)
+            lift = 0.0
+            if bob:
+                lift = bob * 0.012 * (0.5 + 0.5 * math.sin(2 * math.pi * 1.1 * t + ph))
+            sway = idle.get("sway", 0.0)
+            if sway:
+                rot += sway * 1.6 * math.sin(2 * math.pi * 0.31 * t + ph * 1.7)
+            # hit: damped squash-and-stretch spring (squash first, then stretch)
+            for h in pp.get("hit", []):
+                dt = t - h["t"]
+                if 0 <= dt < 1.2:
+                    sq = h.get("squash", 0.2)
+                    env = math.exp(-dt / 0.16) * math.cos(2 * math.pi * dt / 0.34)
+                    sy *= 1 - sq * env
+                    sx *= 1 + sq * 0.7 * env
+                    lift += h.get("hop", 0.0) * 0.1 * max(0.0, math.sin(min(dt / 0.35, 1.0) * math.pi)) if dt < 0.35 else 0.0
+                    rot += h.get("tilt", 0.0) * math.exp(-dt / 0.2) * math.sin(2 * math.pi * dt / 0.4)
+            # talking: mouth from the voice amplitude (+ a tiny nod)
+            amp = 0.0
+            tk = pp.get("talk")
+            t_abs = s["start"] + t
+            if tk:
+                sel = tk.get("line", "auto") if isinstance(tk, dict) else "auto"
+                who = pp.get("who")
+                for li, ln in enumerate(s["lines"]):
+                    if (sel == "auto" and ln["who"] == who) or sel == li:
+                        amp = max(amp, self.line_amp(s, ln, t_abs))
+            for m in pp.get("mouth", []):       # manual mouth timeline: {t, d, level 0-5}
+                if m["t"] <= t < m["t"] + m["d"]:
+                    amp = max(amp, m.get("level", 4) / MOUTH_LEVELS * (0.85 + 0.15 * math.sin(t * 40)) if m.get("jitter") else m.get("level", 4) / MOUTH_LEVELS)
+            if amp > 0.05:
+                sy *= 1 + 0.018 * amp
+                lift += 0.004 * amp
+            lvl = int(round(amp * MOUTH_LEVELS)) if amp > 0.12 else 0
+            # blink
+            blink = False
+            if pp.get("blink", True):
+                per = 3.3 + 0.9 * (pi % 3)
+                blink = ((t + ph) % per) < 0.13
+            im = pup.variant(lvl, blink, bool(pp.get("flip")))
+            base_h = scale * 0.6 * sh * k * (pp.get("mul", 1.0))
+            ih = max(2, int(base_h * sy))
+            iw = max(2, int(base_h * pup.size[0] / pup.size[1] * sx))
+            spr = im.resize((iw, ih), Image.LANCZOS)
+            cx = (x * sw - box[0]) * k
+            cy = (y * sh - box[1]) * k - lift * sh * k
+            ground = (y * sh - box[1]) * k
+            # drop shadow (shrinks when lifted)
+            if pp.get("shadow", True):
+                sw_ = int(iw * 0.78 * (1 - min(lift * 6, 0.4)))
+                shh = max(6, int(sw_ * 0.11))
+                shd = Image.new("L", (sw_ + 40, shh * 3 + 40), 0)
+                ImageDraw.Draw(shd).ellipse((20, 20 + shh, 20 + sw_, 20 + shh * 2), fill=int(255 * 0.30))
+                shd = shd.filter(ImageFilter.GaussianBlur(shh * 0.35 + 2))
+                fr.paste((59, 42, 26), (int(cx - shd.width / 2), int(ground - shd.height / 2 - shh * 0.1)), shd)
+            if abs(rot) > 0.02:
+                pad = int(max(iw, ih) * 0.08) + 4
+                cv = Image.new("RGBA", (iw + 2 * pad, ih + pad), (0, 0, 0, 0))
+                cv.paste(spr, (pad, pad // 2 + 1))
+                cv = cv.rotate(rot, resample=Image.BICUBIC, center=(cv.width / 2, ih + pad // 2 + 1))
+                fr.paste(cv, (int(cx - cv.width / 2), int(cy - ih - pad // 2 - 1)), cv)
+            else:
+                fr.paste(spr, (int(cx - iw / 2), int(cy - ih)), spr)
+        return fr
+
     def scene(self, s, t_local):
         fr = self.base_frame(s, t_local)
+        if s.get("puppets"):
+            fr = self.puppets(fr, s, t_local)
         if s.get("grade"):
             fr = self.grade(fr, s["grade"])
         if s.get("rays"):
@@ -641,7 +885,7 @@ class Renderer:
                 sc = 0.9 + 0.1 * pop
                 lw, lh = int(lay.width * sc), int(lay.height * sc)
                 l2 = lay.resize((lw, lh), Image.BILINEAR) if sc != 1 else lay
-                frame.paste(l2, ((W - lw) // 2, int(self.H * 0.67) - lh // 2), l2)
+                frame.paste(l2, ((W - lw) // 2, int(self.H * s.get("caption_y", 0.67)) - lh // 2), l2)
         return frame
 
     def post(self, fr):

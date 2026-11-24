@@ -1,0 +1,823 @@
+{
+ "title": "Puppet demo (Phase 2 prototype)",
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "frames_dir": "frames",
+ "grain": true,
+ "vignette": 0.3,
+ "snap_to_beat": true,
+ "shots": [
+  {
+   "id": "hook",
+   "img": "ep01v2/f12_pagodas_low.png",
+   "dur": 2.2,
+   "motion": "zoom_in",
+   "zoom": 1.1,
+   "mood": "adventure",
+   "grade": "warm",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "I smell... destiny.",
+     "at": 0.5
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "swoosh_big"
+    }
+   ],
+   "particles": {
+    "type": "steam",
+    "n": 10
+   },
+   "fx": [
+    {
+     "type": "steam",
+     "x": [
+      0.3,
+      0.7
+     ],
+     "y": 0.7,
+     "n": 5,
+     "alpha": 0.4
+    }
+   ],
+   "puppets": [
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.5,
+     "y": 0.95,
+     "scale": 0.95,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.5,
+      "sway": 0.6
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     },
+     "enter": "pop",
+     "enter_t": 0.05,
+     "hit": [
+      {
+       "t": 1.45,
+       "squash": 0.12
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "float",
+   "img": "ep01v2/f13_steam_alley.png",
+   "dur": 2.0,
+   "motion": "zoom_in",
+   "zoom": 1.08,
+   "whip": true,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Uncle. Feet. Ground.",
+     "at": 0.35
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "whoosh"
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.22,
+     "y": 0.95,
+     "scale": 0.64,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "enter": "left",
+     "enter_t": 0.05,
+     "hit": [
+      {
+       "t": 0.55,
+       "squash": 0.1
+      }
+     ]
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.66,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 1,
+      "bob": 2.2,
+      "sway": 1.0
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     },
+     "path": [
+      {
+       "t": 0.0,
+       "x": 0.66,
+       "y": 0.95
+      },
+      {
+       "t": 0.5,
+       "x": 0.66,
+       "y": 0.95
+      }
+     ],
+     "enter": "right",
+     "enter_t": 0.0
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "grab",
+   "img": "ep01v2/f13_steam_alley.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.14,
+   "focus": [
+    0.55,
+    0.5
+   ],
+   "mood": "tension",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Wait! There's soup inside!",
+     "at": 0.1
+    },
+    {
+     "who": "uncle",
+     "text": "For science!",
+     "at": 1.75
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.75,
+     "name": "taiko"
+    }
+   ],
+   "punch": [
+    {
+     "t": 1.75,
+     "scale": 1.12
+    }
+   ],
+   "speedlines": {
+    "t": 1.75,
+    "d": 0.7,
+    "dir": "radial"
+   },
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.22,
+     "y": 0.95,
+     "scale": 0.64,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.1,
+       "squash": 0.12,
+       "tilt": 3
+      }
+     ]
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.66,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.5,
+      "sway": 0.6
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 1.75,
+       "squash": 0.16,
+       "hop": 0.4
+      }
+     ],
+     "path": [
+      {
+       "t": 0,
+       "x": 0.66
+      },
+      {
+       "t": 1.7,
+       "x": 0.66
+      },
+      {
+       "t": 2.3,
+       "x": 0.6
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "burn_impact",
+   "img": "ep01v2/f13_steam_alley.png",
+   "dur": 1.1,
+   "motion": "zoom_in",
+   "zoom": 1.25,
+   "focus": [
+    0.6,
+    0.5
+   ],
+   "mood": "off",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "impact"
+    },
+    {
+     "t": 0.0,
+     "name": "crack"
+    },
+    {
+     "t": 0.05,
+     "name": "gong"
+    }
+   ],
+   "speedlines": {
+    "t": 0.0,
+    "d": 0.9,
+    "dir": "radial"
+   },
+   "impact": {
+    "t": 0.0
+   },
+   "shake": [
+    {
+     "t": 0.0,
+     "d": 0.7,
+     "amp": 18
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.22,
+     "y": 0.95,
+     "scale": 0.64,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "blink": false,
+     "hit": [
+      {
+       "t": 0.0,
+       "squash": 0.2,
+       "tilt": -4
+      }
+     ]
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.66,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 1,
+      "sway": 2.5
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.0,
+       "squash": 0.34,
+       "hop": 1.2,
+       "tilt": 5
+      }
+     ],
+     "mouth": [
+      {
+       "t": 0.12,
+       "d": 0.9,
+       "level": 5
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "ears_toot",
+   "img": "ep01v2/f13_steam_alley.png",
+   "dur": 1.7,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "mood": "adventure",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "toot",
+     "d": 1.4
+    }
+   ],
+   "particles": {
+    "type": "steam",
+    "n": 12
+   },
+   "shake": [
+    {
+     "t": 0.0,
+     "d": 1.2,
+     "amp": 10
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.22,
+     "y": 0.95,
+     "scale": 0.64,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.0,
+       "squash": 0.08,
+       "hop": 0.5
+      }
+     ]
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.66,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 2,
+      "sway": 3.0,
+      "bob": 1.5
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     },
+     "mouth": [
+      {
+       "t": 0.0,
+       "d": 1.2,
+       "level": 4,
+       "jitter": true
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "sheepish",
+   "img": "ep01v2/f13_steam_alley.png",
+   "dur": 2.0,
+   "motion": "zoom_in",
+   "zoom": 1.1,
+   "mood": "sparse",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "...There's soup inside.",
+     "at": 0.3
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.22,
+     "y": 0.95,
+     "scale": 0.64,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     }
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.66,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.5,
+      "sway": 0.6
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.3,
+       "squash": 0.06
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "safety",
+   "img": "ep01v2/f08_skyline.png",
+   "dur": 2.2,
+   "motion": "zoom_in",
+   "zoom": 1.1,
+   "mood": "adventure",
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "clink"
+    }
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Let me show you.",
+     "at": 0.2
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.3,
+     "y": 0.95,
+     "scale": 0.78,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "enter": "bottom",
+     "enter_t": 0.0,
+     "enter_d": 0.4,
+     "hit": [
+      {
+       "t": 0.2,
+       "squash": 0.1
+      }
+     ]
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.72,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.5,
+      "sway": 0.6
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     }
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "lift",
+   "img": "ep01v2/f08_skyline.png",
+   "dur": 1.5,
+   "motion": "zoom_in",
+   "zoom": 1.22,
+   "focus": [
+    0.3,
+    0.5
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "taiko"
+    }
+   ],
+   "punch": [
+    {
+     "t": 0.0,
+     "scale": 1.1
+    }
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Lift.",
+     "at": 0.1
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.3,
+     "y": 0.95,
+     "scale": 0.78,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.1,
+       "squash": 0.18,
+       "hop": 0.6
+      }
+     ]
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.72,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.5,
+      "sway": 0.6
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     }
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "be_cool",
+   "img": "ep01v2/f08_skyline.png",
+   "dur": 2.3,
+   "motion": "zoom_in",
+   "zoom": 1.18,
+   "mood": "sparse",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "tick"
+    },
+    {
+     "t": 0.5,
+     "name": "tock"
+    },
+    {
+     "t": 1.0,
+     "name": "tick"
+    },
+    {
+     "t": 1.5,
+     "name": "tock"
+    }
+   ],
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Be cool. Be cool.",
+     "at": 0.2
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.3,
+     "y": 0.95,
+     "scale": 0.78,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     }
+    },
+    {
+     "who": "uncle",
+     "img": "uncle.png",
+     "x": 0.72,
+     "y": 0.95,
+     "scale": 0.85,
+     "idle": {
+      "breathe": 2,
+      "bob": 0.5,
+      "sway": 1.8
+     },
+     "blink": false,
+     "talk": {
+      "line": "auto"
+     }
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "hat",
+   "img": "ep01v2/f12_pagodas_low.png",
+   "dur": 2.8,
+   "motion": "zoom_in",
+   "zoom": 1.1,
+   "mood": "adventure",
+   "particles": {
+    "type": "petals",
+    "n": 14
+   },
+   "whip": true,
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "That hat! He ate here.",
+     "at": 0.5
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "swoosh_big"
+    },
+    {
+     "t": 0.35,
+     "name": "sparkle"
+    }
+   ],
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.2,
+     "y": 0.95,
+     "scale": 0.72,
+     "idle": {
+      "breathe": 1,
+      "bob": 0.4,
+      "sway": 0.5
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.9,
+       "squash": 0.12,
+       "hop": 0.5
+      }
+     ]
+    },
+    {
+     "who": "grandma",
+     "img": "grandma.png",
+     "x": 0.7,
+     "y": 1.03,
+     "scale": 0.92,
+     "idle": {
+      "breathe": 1,
+      "sway": 0.3
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "enter": "right",
+     "enter_t": 0.0,
+     "enter_d": 0.5,
+     "hit": [
+      {
+       "t": 0.5,
+       "squash": 0.06
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "south",
+   "img": "ep01v2/f12_pagodas_low.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.14,
+   "mood": "epic",
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "taiko"
+    },
+    {
+     "t": 0.4,
+     "name": "ding"
+    }
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad went south? Next stop: Guangzhou!",
+     "at": 0.3
+    }
+   ],
+   "punch": [
+    {
+     "t": 0.3,
+     "scale": 1.08
+    }
+   ],
+   "tail": 0.6,
+   "puppets": [
+    {
+     "who": "boy",
+     "img": "boy.png",
+     "x": 0.5,
+     "y": 0.95,
+     "scale": 0.9,
+     "idle": {
+      "breathe": 1.5,
+      "bob": 1,
+      "sway": 0.8
+     },
+     "talk": {
+      "line": "auto"
+     },
+     "hit": [
+      {
+       "t": 0.3,
+       "squash": 0.15,
+       "hop": 0.8
+      }
+     ]
+    }
+   ],
+   "caption_y": 0.8
+  }
+ ]
+}

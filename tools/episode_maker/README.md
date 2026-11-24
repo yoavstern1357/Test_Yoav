@@ -59,3 +59,21 @@ Tuned for the soft round cartoon look: light grain, warm grades, bright flashes.
 **Voices**: `narrator` (bm_george, calm, deeper); `boy` is now older (pitch 1.08 instead of 1.22).
 
 **Performance**: world effects are built at 1/2 to 1/6 resolution and upscaled; sprites and masks are cached. Preview of the 36 s demo takes well under a minute.
+
+## Puppet (cut-out) animation: `puppets` shot option
+Characters are transparent PNG cut-outs in `specs/puppets/<name>.png` (boy, uncle, grandma), drawn over the shot background (`img`) and moving with the camera. Optional sidecar `<name>.json` is the "rig": `skin` colour, `eyes [[x,y,w,h],..]` (for blinking), `mouth {x,y,w,h,patch,up}` (for talking), all in cut-out pixels. See `specs/puppet-demo.json`.
+
+```
+"puppets": [{"who":"uncle", "img":"uncle.png", "x":0.66, "y":0.95, "scale":0.85, "flip":false,
+  "enter":"left|right|bottom|pop|none", "enter_t":0, "enter_d":0.45, "exit":"left|right|bottom", "exit_t":2.0,
+  "idle":{"breathe":1, "bob":0.5, "sway":0.6},
+  "blink":true, "talk":{"line":"auto"},
+  "mouth":[{"t":0.1,"d":0.9,"level":5,"jitter":true}],
+  "hit":[{"t":1.2,"squash":0.2,"hop":0.5,"tilt":3}],
+  "path":[{"t":0,"x":0.6},{"t":1.5,"x":0.4}], "shadow":true}]
+```
+- `x`,`y`: feet position as a fraction of the background; `scale` 1.0 = 60% of frame height (boy ~0.65, uncle ~0.85, grandma stall ~0.9).
+- `talk`: mouth follows the voice amplitude; `"line":"auto"` = every line whose `who` matches, or a line index. `mouth` = manual open/close timeline (level 0-5) for screams, laughs, steam toots.
+- `hit`: damped squash-and-stretch spring (+ optional `hop`, `tilt`). `idle`: breathing, bob, sway multipliers.
+- Shot option `caption_y` (default 0.67) moves the burned-in caption so it does not cover faces (puppet shots use 0.8).
+- Needs the puppet files only (no extra Canva frames): new episodes = backgrounds + spec.
