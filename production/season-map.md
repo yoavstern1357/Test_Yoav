@@ -134,3 +134,7 @@ Order note: the old order was China → Japan → Korea. The new order is **Chin
 - **Recipe flags:** Ep 18 and 36 (deep-frying) and Ep 30 (raw egg) need strong ⚠️ GROWN-UP STEP cards. Ep 18 and Ep 21 should also give oven or air-fryer options. Ep 15 is gluten-free (good for the allergy card).
 - **Brands:** Don't name shops on screen (Ep 7's 1915 shop, Ep 9's 1928 shiumai maker, Ep 18's 1956 stall). Describe them only.
 - Sources above are one per episode (minimum). Each script still needs its own 2-source list per the accuracy rules in `series-format.md`.
+
+## Route map art
+Dad's journal with the Silk Road route (sea + land), for community posts and travel transitions:
+`MAHb0D5LH5I`: https://www.canva.com/M/MAHb0D5LH5I
