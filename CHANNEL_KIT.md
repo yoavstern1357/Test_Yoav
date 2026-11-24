@@ -32,7 +32,7 @@ Today the Uncle meets {DUMPLING} from {COUNTRY}... and it doesn't go as planned.
 Pinned comment: `Which dumpling should we eat next? 👇 Support us: https://thedumplingboy.netlify.app`
 
 ## Season plan
-The show runs in **3-episode country arcs** (Arrival → Culture → Recipe + Recap), following Dad's dumpling journal.
+One dumpling per ~2-minute episode. Countries with several dumplings get **3 episodes: 3 dumplings from 3 different places** (steamed, fried and boiled mixed); every 3rd episode adds a recipe + recap. The route follows Dad's journal along the Silk Road.
 Full season map (Silk Road: Season 1 by sea, Season 2 by land, finale in Venice): **`production/series-format.md`**.
 Ready scripts: Episodes 1–9 in `scripts/` (China, Korea, Japan). Draft: `episode-21-momo-darjeeling`. Full route: `production/season-map.md`.
 
