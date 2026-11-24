@@ -13,7 +13,10 @@ Rule of thumb: **a 6-year-old laughs at the Uncle, and a 40-year-old learns some
 - The Boy found it, and the journey follows Dad's map, one country at a time.
 - Each country ends with a **stamp** on the map and one line Dad wrote about it.
 - The **last page is torn**: it's "Dad's Dumpling", a recipe he invented. Each country gives a clue to one secret ingredient.
-- **Season finale (Vietnam · Huế):** the journey ends in Huế, famous for its conical hats, where Dad got his. The Boy and the Uncle cook Dad's Dumpling together, and the Uncle finally eats slowly.
+- **Ep 15 (Vietnam · Huế):** where Dad got his conical hat; the first half of the torn page is hidden in its brim.
+- **Ep 21 (Season 1 finale, India):** the journal unfolds into a map of the land road.
+- **Ep 39 (Series finale, Venice):** the second half of the page; the Boy and the Uncle cook Dad's Dumpling together, and the Uncle finally eats slowly.
+- Full route: `production/season-map.md` (Silk Road: Season 1 by sea, Season 2 by land).
 
 This gives viewers a reason to come back, and to watch from Episode 1.
 
@@ -27,20 +30,10 @@ This gives viewers a reason to come back, and to watch from Episode 1.
 **Every episode is about 2 minutes** (1:50–2:10), vertical 9:16, uploaded as a Short (Shorts can be up to 3 minutes).
 **Watch hours:** Shorts views don't count toward the YouTube Partner Program watch-hour goal. So after each country arc, publish a **16:9 "full arc" compilation** (the 3 episodes joined, ~6 min) as a regular video. It costs almost no extra work and builds watch hours and search traffic.
 
-## Season 1 map (11 countries)
-| Arc | Episodes | Country / City | Dumpling | Clue for Dad's recipe |
-|---|---|---|---|---|
-| 1 | 1–3 | China · Shanghai | Xiaolongbao | "The soup is the secret" (patience) |
-| 2 | 4–6 | Japan · Tokyo | Gyoza | "Crispy and soft together" (balance) |
-| 3 | 7–9 | South Korea · Seoul | Mandu | "Make them together" (sharing) |
-| 4 | 10–12 | Nepal · Kathmandu | Momo | "A little fire" (chutney / courage) |
-| 5 | 13–15 | India · Mumbai | Modak | "Something sweet" (celebration) |
-| 6 | 16–18 | Türkiye · Kayseri | Mantı | "Small things matter" (tiny dumplings) |
-| 7 | 19–21 | Georgia · Tbilisi | Khinkali | "Don't eat the top" (respect tradition) |
-| 8 | 22–24 | Poland · Kraków | Pierogi | "Grandma's hands" (family) |
-| 9 | 25–27 | Italy · Bologna | Tortellini | "Fold with love" |
-| 10 | 28–30 | Argentina · Tucumán (Famaillá) | Empanada | "Every family folds differently" |
-| 11 | 31–33 | **Vietnam · Huế** (finale) | Bánh bột lọc + **Dad's Dumpling** | All clues come together |
+## Season map (Silk Road route)
+Full episode-by-episode plan: **see [`season-map.md`](season-map.md)** (39 episodes; every 3rd episode is Recipe + Recap).
+- **Season 1: Maritime Silk Road (Ep 1–21):** China → South Korea → Japan → Philippines → Vietnam (Huế, Dad's hat) → Thailand · Malaysia · Singapore → India
+- **Season 2: Land Silk Road (Ep 22–39):** Mongolia → Russia (Siberia) · Kazakhstan · Kyrgyzstan → Uzbekistan → Azerbaijan · Georgia · Armenia → Türkiye → Italy (finale: Venice, Marco Polo)
 
 ## Accuracy rules (for the history parts)
 - Say **"Legend says…"** or **"Many people believe…"** when a story isn't proven. Many dumpling origin stories are legends with competing versions.
