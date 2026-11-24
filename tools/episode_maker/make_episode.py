@@ -9,7 +9,7 @@ Nothing here needs a paid video service.
 """
 import argparse, hashlib, json, math, os, subprocess, sys, textwrap
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
 from scipy import signal
 import soundfile as sf
 
@@ -282,22 +282,33 @@ def load_cover(path, W, H):
     return img
 
 
-def camera_box(img_size, W, H, shot, p):
+def ease_fn(name):
+    """Camera easing. Default (None) is the original smoothstep."""
+    return {
+        "linear": lambda x: min(max(x, 0.0), 1.0),
+        "in": lambda x: min(max(x, 0.0), 1.0) ** 2,
+        "out": lambda x: 1 - (1 - min(max(x, 0.0), 1.0)) ** 2,
+        "inout": ease,
+    }.get(name, ease)
+
+
+def camera_box(img_size, W, H, shot, p, mult=1.0, off=(0.0, 0.0), min_zoom=1.0, pan_mult=1.0, zoom_mult=1.0):
     sw, sh = img_size
     base = max(W / sw, H / sh)           # scale to cover
     zoom0, zoom1 = shot.get("zoom0", 1.0), shot.get("zoom", 1.12)
     motion = shot.get("motion", "zoom_in")
     fx, fy = shot.get("focus", [0.5, 0.5])
-    amt = shot.get("pan", 0.06)
-    e = ease(p)
+    amt = shot.get("pan", 0.06) * pan_mult
+    e = ease_fn(shot.get("ease"))(p)
     if motion == "zoom_out":
         z = zoom1 + (zoom0 - zoom1) * e
     elif motion in ("static",):
         z = zoom0
     else:
         z = zoom0 + (zoom1 - zoom0) * e
+    z = max(z * zoom_mult * mult, min_zoom)
     vw, vh = W / (base * z), H / (base * z)        # visible window in source px
-    cx, cy = fx * sw, fy * sh
+    cx, cy = fx * sw + off[0] * sw, fy * sh + off[1] * sh
     if motion == "pan_left":
         cx += (0.5 - e) * amt * sw
     elif motion == "pan_right":
@@ -311,33 +322,262 @@ def camera_box(img_size, W, H, shot, p):
     return (x0, y0, x0 + vw, y0 + vh)
 
 
+GRADES = {   # soft, warm-leaning: (mul r,g,b), (add r,g,b)
+    "warm": ((1.05, 1.015, 0.93), (5, 2, -4)),
+    "cool": ((0.94, 0.99, 1.06), (-3, 1, 7)),
+}
+WHIP_T = 0.15
+
+
 class Renderer:
     def __init__(self, spec, shots, W, H, fps, frames_dir):
         self.spec, self.shots, self.W, self.H, self.fps = spec, shots, W, H, fps
         self.frames_dir = frames_dir
         self.imgs = {}
         for s in shots:
-            p = os.path.join(frames_dir, s["img"])
-            if p not in self.imgs:
-                self.imgs[p] = Image.open(p).convert("RGB")
+            self.load(s["img"])
+            for k in ("bg", "fg"):
+                if s.get("layers", {}).get(k):
+                    self.load(s["layers"][k], rgba=(k == "fg"))
         self.rng = np.random.default_rng(3)
+        self.parts = {}
+        self.grid = None
+        self.vig = None
+        self.noise = None
+        self.fidx = 0
+        if spec.get("grain"):
+            g = np.random.default_rng(11)
+            self.noise = [g.standard_normal((H // 2 + 1, W // 2 + 1)).astype(np.float32) for _ in range(6)]
+        v = float(spec.get("vignette", 0) or 0)
+        if v > 0:
+            yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+            r2 = ((xx / W - 0.5) * 2) ** 2 * 0.8 + ((yy / H - 0.5) * 2) ** 2 * 0.9
+            self.vig = (1 - v * 0.5 * np.clip(r2 - 0.25, 0, 1.2) ** 1.3)[..., None].astype(np.float32)
+
+    def load(self, name, rgba=False):
+        p = os.path.join(self.frames_dir, name)
+        if p not in self.imgs:
+            self.imgs[p] = Image.open(p).convert("RGBA" if rgba else "RGB")
+        return self.imgs[p]
+
+    # ---- camera
+    def cam_time(self, s, t):
+        """Hit-stop: the camera freezes for 0.12 s at each impact."""
+        imps = [s["impact"]["t"]] if isinstance(s.get("impact"), dict) else []
+        for it in sorted(imps):
+            if t >= it + 0.12:
+                t -= 0.12
+            elif t >= it:
+                t = it
+        return t
 
     def base_frame(self, s, t_local):
         W, H = self.W, self.H
-        img = self.imgs[os.path.join(self.frames_dir, s["img"])]
-        p = t_local / max(s["dur"], 0.01)
-        box = camera_box(img.size, W, H, s, p)
-        # shake windows
-        for sh in s.get("shake", []):
+        layers = s.get("layers") or {}
+        img = self.imgs[os.path.join(self.frames_dir, layers.get("bg") or s["img"])]
+        tc = self.cam_time(s, t_local)
+        p = tc / max(s["dur"], 0.01)
+        mult = 1.0
+        for pu in s.get("punch", []):
+            dt = t_local - pu["t"]
+            if 0 <= dt < 1.5:
+                mult *= 1 + (pu.get("scale", 1.15) - 1) * math.exp(-dt / 0.14)
+        sway = float(s.get("sway", self.spec.get("sway", 0)) or 0)
+        off, minz = (0.0, 0.0), 1.0
+        if sway > 0:
+            ph = s["start"] * 1.7
+            off = (sway * 0.0045 * (math.sin(2 * math.pi * 0.37 * t_local + ph) + 0.6 * math.sin(2 * math.pi * 0.93 * t_local + ph * 2)),
+                   sway * 0.0035 * (math.sin(2 * math.pi * 0.29 * t_local + ph * 3) + 0.5 * math.sin(2 * math.pi * 1.1 * t_local + ph)))
+            minz = 1 + 0.03 * sway
+        box = camera_box(img.size, W, H, s, p, mult, off, minz)
+        shakes = list(s.get("shake", []))
+        if isinstance(s.get("impact"), dict):
+            shakes.append({"t": s["impact"]["t"], "d": 0.4, "amp": s["impact"].get("amp", 26)})
+        sx = sy = 0.0
+        for sh in shakes:
             if sh["t"] <= t_local <= sh["t"] + sh["d"]:
                 k = (1 - (t_local - sh["t"]) / sh["d"]) * sh.get("amp", 14)
                 dx, dy = self.rng.uniform(-k, k, 2)
-                sc = (box[2] - box[0]) / W
-                bw, bh = box[2] - box[0], box[3] - box[1]
-                nx = min(max(box[0] + dx * sc, 0), img.size[0] - bw)
-                ny = min(max(box[1] + dy * sc, 0), img.size[1] - bh)
-                box = (nx, ny, nx + bw, ny + bh)
-        return img.resize((W, H), Image.BICUBIC, box=box)
+                sx += dx; sy += dy
+        if sx or sy:
+            sc = (box[2] - box[0]) / W
+            bw, bh = box[2] - box[0], box[3] - box[1]
+            nx = min(max(box[0] + sx * sc, 0), img.size[0] - bw)
+            ny = min(max(box[1] + sy * sc, 0), img.size[1] - bh)
+            box = (nx, ny, nx + bw, ny + bh)
+        fr = img.resize((W, H), Image.BICUBIC, box=box)
+        if layers.get("fg"):      # foreground plane: moves faster than the background
+            fg = self.imgs[os.path.join(self.frames_dir, layers["fg"])]
+            drift = math.sin(t_local * 0.6 + s["start"]) * 0.012
+            fbox = camera_box(fg.size, W, H, s, p, mult, (off[0] + drift, off[1]), minz, pan_mult=2.2, zoom_mult=1.05)
+            if sx or sy:
+                sc = (fbox[2] - fbox[0]) / W
+                fw, fh = fbox[2] - fbox[0], fbox[3] - fbox[1]
+                nx = min(max(fbox[0] + sx * sc * 1.4, 0), fg.size[0] - fw)
+                ny = min(max(fbox[1] + sy * sc * 1.4, 0), fg.size[1] - fh)
+                fbox = (nx, ny, nx + fw, ny + fh)
+            fgr = fg.resize((W, H), Image.BICUBIC, box=fbox)
+            fr.paste(fgr, (0, 0), fgr)
+        return fr
+
+    # ---- world fx (part of the "scene", drawn under captions)
+    def grade(self, fr, name):
+        if name in GRADES:
+            mul, add = GRADES[name]
+            lut = []
+            for c in range(3):
+                lut += [int(min(255, max(0, v * mul[c] + add[c]))) for v in range(256)]
+            return fr.point(lut)
+        if name == "sepia":
+            tone = ImageOps.colorize(ImageOps.grayscale(fr), (58, 36, 20), (255, 240, 212), (178, 128, 82))
+            return Image.blend(fr, tone, 0.55)
+        return fr
+
+    def rays(self, fr, t):
+        W, H = self.W, self.H
+        w, h = max(W // 6, 8), max(H // 6, 8)
+        if self.grid is None or self.grid[0] != (w, h):
+            yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+            self.grid = ((w, h), xx / w, yy / h)
+        _, X, Y = self.grid
+        u = X * 0.62 + Y * 0.40
+        m = np.zeros((h, w), np.float32)
+        for f, ph, sp, a in ((7.0, 0.3, 0.05, 1.0), (11.5, 1.7, -0.035, 0.7), (4.3, 4.0, 0.025, 0.8)):
+            m += a * np.clip(np.sin(2 * math.pi * (f * u + sp * t) + ph) - 0.15, 0, 1) ** 2
+        m *= np.clip(1.15 - Y * 1.1, 0, 1) * np.clip(1.2 - X * 0.5, 0, 1)
+        m = np.clip(m * 0.17, 0, 0.30)
+        mask = Image.fromarray((m * 255).astype(np.uint8)).resize((W, H), Image.BILINEAR)
+        fr.paste((255, 240, 205), (0, 0), mask)
+        return fr
+
+    def particles(self, fr, s, t):
+        cfg = s["particles"]
+        kind, n = cfg.get("type", "dust"), cfg.get("n", 30)
+        key = id(s)
+        if key not in self.parts:
+            g = np.random.default_rng(int(s["start"] * 1000) + n)
+            self.parts[key] = g.uniform(0, 1, (n, 6))
+        W, H = self.W, self.H
+        for x0, y0, z, a, b, c in self.parts[key]:
+            z = 0.35 + 0.65 * z                       # depth: near = bigger, faster, brighter
+            if kind == "dust":
+                x = (x0 + 0.012 * z * t + 0.03 * math.sin(t * 0.4 + a * 6)) % 1.0
+                y = (y0 - 0.010 * z * t + 0.02 * math.sin(t * 0.3 + b * 6)) % 1.0
+                r, al, col = W * (0.004 + 0.007 * z), 0.35 + 0.25 * math.sin(t * 1.5 + c * 9) ** 2, (255, 244, 214)
+            elif kind == "embers":
+                x = (x0 + 0.03 * math.sin(t * 1.1 + a * 9) * z) % 1.0
+                y = (y0 - 0.085 * z * t) % 1.12 - 0.05
+                r, al, col = W * (0.004 + 0.007 * z), 0.55 + 0.4 * math.sin(t * 9 + c * 20), (255, 168 + int(60 * b), 80)
+            elif kind == "petals":
+                x = (x0 + 0.035 * z * t + 0.05 * math.sin(t * 1.2 + a * 9)) % 1.0
+                y = (y0 + 0.075 * z * t) % 1.1 - 0.05
+                r, al, col = W * (0.011 + 0.012 * z), 0.85, (255, 190 + int(25 * b), 205)
+            elif kind == "steam":
+                x = (x0 + 0.04 * math.sin(t * 0.5 + a * 9)) % 1.0
+                y = (y0 - 0.06 * z * t) % 1.2 - 0.1
+                r, al, col = W * (0.07 + 0.07 * z), 0.10 + 0.05 * z, (255, 255, 255)
+            else:  # snow
+                x = (x0 + 0.03 * math.sin(t * 0.8 + a * 9) + 0.01 * t * z) % 1.0
+                y = (y0 + 0.07 * z * t) % 1.06 - 0.03
+                r, al, col = W * (0.004 + 0.008 * z), 0.8, (255, 255, 255)
+            R = max(2, int(r / 0.45 / 2) * 2)
+            aq = int(max(0.0, min(1.0, al)) * 8)
+            if aq <= 0:
+                continue
+            spr = self.sprite(kind, R, aq, int((t * 2 + c * 12) % 12) if kind == "petals" else 0)
+            fr.paste(col, (int(x * W - R), int(y * H - R)), spr)
+        return fr
+
+    def sprite(self, kind, R, aq, ang):
+        key = ("psp", kind, R, aq, ang)
+        if key not in _layer_cache:
+            if kind == "petals":
+                s = Image.new("L", (R * 2, R * 2), 0)
+                ImageDraw.Draw(s).ellipse((R * 0.55, R * 0.8, R * 1.45, R * 1.2), fill=255)
+                s = s.rotate(ang * 30, resample=Image.BILINEAR).filter(ImageFilter.GaussianBlur(R * 0.06))
+            else:
+                s = soft_sprite(R, 1.0)
+            _layer_cache[key] = s.point(lambda v: int(v * aq / 8))
+        return _layer_cache[key]
+
+    def speedlines(self, fr, t, cfg, strength=1.0):
+        W, H = self.W, self.H
+        dt = t - cfg["t"]
+        d = cfg.get("d", 0.5)
+        if not (0 <= dt <= d):
+            return fr
+        a = min(1.0, dt / 0.06, (d - dt) / 0.12 + 0.2) * strength
+        w, h = W // 2, H // 2
+        g = np.random.default_rng(int(t * 14) * 7919 + 1)          # flicker: new line set ~14x / s
+        m = Image.new("L", (w, h), 0)
+        dr = ImageDraw.Draw(m)
+        if cfg.get("dir", "radial") == "horizontal":
+            for _ in range(22):
+                y = g.uniform(0, h); ln = g.uniform(0.25, 0.8) * w; x = g.uniform(-0.1, 1.0) * w
+                th = g.uniform(1.5, 6)
+                dr.rectangle((x, y, x + ln, y + th), fill=int(g.uniform(150, 255)))
+        else:
+            cx, cy = w * cfg.get("cx", 0.5), h * cfg.get("cy", 0.5)
+            for _ in range(54):
+                ang = g.uniform(0, 2 * math.pi)
+                r0 = g.uniform(0.30, 0.55) * h
+                r1 = h * 1.3
+                wd = g.uniform(0.012, 0.045)
+                p0 = (cx + math.cos(ang) * r0, cy + math.sin(ang) * r0)
+                p1 = (cx + math.cos(ang - wd) * r1, cy + math.sin(ang - wd) * r1)
+                p2 = (cx + math.cos(ang + wd) * r1, cy + math.sin(ang + wd) * r1)
+                dr.polygon([p0, p1, p2], fill=int(g.uniform(160, 255)))
+        m = m.filter(ImageFilter.GaussianBlur(0.8)).resize((W, H), Image.BILINEAR)
+        m = m.point(lambda v: int(v * 0.72 * a))
+        col = (59, 42, 26) if cfg.get("color") == "dark" else (255, 255, 255)
+        fr.paste(col, (0, 0), m)
+        return fr
+
+    def impact_fx(self, fr, s, t):
+        im = s["impact"]
+        dt = t - im["t"]
+        if dt < 0 or dt > 0.4:
+            return fr
+        self.speedlines(fr, t, {"t": im["t"], "d": 0.3, "dir": "radial"}, 0.9)
+        if dt < 0.05:
+            col, a = (255, 255, 255), 0.85
+        elif dt < 0.10 and im.get("dark", True):
+            col, a = (59, 42, 26), 0.30
+        else:
+            col, a = (255, 250, 240), 0.5 * max(0.0, 1 - (dt - 0.10) / 0.22)
+        if a > 0.01:
+            fr = Image.blend(fr, Image.new("RGB", fr.size, col), a)
+        return fr
+
+    def scene(self, s, t_local):
+        fr = self.base_frame(s, t_local)
+        if s.get("grade"):
+            fr = self.grade(fr, s["grade"])
+        if s.get("rays"):
+            fr = self.rays(fr, t_local + s["start"])
+        if s.get("particles"):
+            fr = self.particles(fr, s, t_local)
+        if s.get("speedlines"):
+            sl = s["speedlines"]
+            for c in (sl if isinstance(sl, list) else [sl]):
+                fr = self.speedlines(fr, t_local, c)
+        if isinstance(s.get("impact"), dict):
+            fr = self.impact_fx(fr, s, t_local)
+        return fr
+
+    def whip(self, prev, cur, q):
+        """Whip-pan: both frames slide horizontally with motion blur."""
+        W = self.W
+        wide = np.concatenate([np.asarray(prev), np.asarray(cur)], axis=1)
+        e = q * q * (3 - 2 * q)
+        off = int(e * W)
+        blur = int(W * 0.30 * math.sin(math.pi * min(max(q, 0.0), 1.0))) + 2
+        K = int(min(48, max(9, blur // 5)))
+        acc = np.zeros((self.H, W, 3), np.float32)
+        for i in range(K):
+            o = min(max(off + int((i / (K - 1) - 0.5) * blur), 0), W)
+            acc += wide[:, o:o + W]
+        return Image.fromarray((acc / K).astype(np.uint8))
 
     def overlays(self, frame, s, t_local):
         W, H = self.W, self.H
@@ -404,6 +644,18 @@ class Renderer:
                 frame.paste(l2, ((W - lw) // 2, int(self.H * 0.67) - lh // 2), l2)
         return frame
 
+    def post(self, fr):
+        if self.vig is None and self.noise is None:
+            return fr
+        arr = np.asarray(fr, dtype=np.float32)
+        if self.vig is not None:
+            arr = arr * self.vig
+        if self.noise is not None:
+            g = np.roll(self.noise[self.fidx % 6], (self.fidx * 37) % 17, axis=0)
+            g = np.repeat(np.repeat(g, 2, axis=0), 2, axis=1)[: self.H, : self.W]
+            arr = arr + (g * 3.0)[..., None]            # light, soft grain
+        return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+
     def frame_at(self, gt):
         s = None
         for i, sh in enumerate(self.shots):
@@ -411,13 +663,18 @@ class Renderer:
                 s, idx = sh, i
                 break
         t_local = gt - s["start"]
-        fr = self.base_frame(s, t_local)
+        fr = self.scene(s, t_local)
         tf = s.get("fade", 0.18)
-        if idx > 0 and s.get("transition", "fade") == "fade" and t_local < tf:
+        if idx > 0 and s.get("whip") and t_local < WHIP_T:
             prev = self.shots[idx - 1]
-            pf = self.base_frame(prev, prev["dur"] + t_local)
+            pf = self.scene(prev, prev["dur"] + t_local)
+            fr = self.whip(pf, fr, t_local / WHIP_T)
+        elif idx > 0 and s.get("transition", "fade") == "fade" and t_local < tf:
+            prev = self.shots[idx - 1]
+            pf = self.scene(prev, prev["dur"] + t_local)
             fr = Image.blend(pf, fr, ease(t_local / tf))
-        return self.overlays(fr, s, t_local)
+        fr = self.overlays(fr, s, t_local)
+        return self.post(fr)
 
 
 def main():
@@ -426,8 +683,10 @@ def main():
     ap.add_argument("--preview", action="store_true")
     ap.add_argument("--audio-only", action="store_true")
     ap.add_argument("--frames-dir", default=None)
+    ap.add_argument("--mobile", action="store_true", help="also write <out>-mobile.mp4 (720x1280, H.264 Main, crf 27, AAC 128k mono)")
     a = ap.parse_args()
     spec = json.load(open(a.spec))
+    PITCH_OVERRIDE.update(spec.get("voice_pitch", {}))
     W, H = spec.get("size", [1080, 1920])
     fps = spec.get("fps", 30)
     if a.preview:
@@ -447,11 +706,18 @@ def main():
            "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", a.out]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for i in range(nframes):
+        r.fidx = i
         p.stdin.write(r.frame_at(i / fps).tobytes())
         if i % (fps * 10) == 0:
             print(f"  frame {i}/{nframes}", flush=True)
     p.stdin.close(); p.wait()
     print("done", a.out)
+    if a.mobile:
+        mob = os.path.splitext(a.out)[0] + "-mobile.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a.out, "-vf", "scale=720:1280:flags=lanczos", "-c:v", "libx264",
+                        "-profile:v", "main", "-crf", "27", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-ac", "1",
+                        "-movflags", "+faststart", mob], check=True)
+        print("mobile", mob)
 
 
 if __name__ == "__main__":
