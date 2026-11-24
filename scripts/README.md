@@ -1,7 +1,8 @@
 # Episode scripts: The Dumpling Boy
 
-Format: vertical YouTube Shorts (9:16), **35–55 seconds**, English.
-Every episode follows the same beat so viewers learn the rhythm:
+Format: see **`production/series-format.md`**. Every country is a 3-episode arc:
+**1. Arrival** (Short) → **2. Culture** (Short) → **3. Recipe + Recap** (long video + Short cut).
+The table below is the beat for the Arrival episodes:
 
 | Time | Beat |
 |---|---|

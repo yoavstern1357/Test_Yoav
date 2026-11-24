@@ -1,4 +1,6 @@
-# Episode 02: "Uncle Fights a Frying Pan" (Gyoza, Japan)
+# Episode 04 (Japan arc, part 1, draft): "Uncle Fights a Frying Pan" (Gyoza, Japan)
+
+> Draft written before the 3-part arc format. Before production, add the travel transition, the "Legend says…" history beat and the journal clue (see `production/series-format.md`).
 
 **Length:** about 45s · **Location:** a lantern-lit Tokyo alley stall
 

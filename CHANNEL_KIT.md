@@ -31,39 +31,10 @@ Today the Uncle meets {DUMPLING} from {COUNTRY}... and it doesn't go as planned.
 ```
 Pinned comment: `Which dumpling should we eat next? 👇 Support us: https://thedumplingboy.netlify.app`
 
-## 30 episode ideas (one dumpling each)
-| # | Dumpling | Country | Possible lesson / gag |
-|---|---|---|---|
-| 1 | Jiaozi | China | The first fold: every journey starts with one step |
-| 2 | Xiaolongbao | China | Uncle burns his mouth on the soup: patience |
-| 3 | Gyoza | Japan | Crispy outside, soft inside: like people |
-| 4 | Mandu | Korea | Sharing a plate with strangers |
-| 5 | Momo | Nepal/Tibet | Climbing a mountain for one bite |
-| 6 | Har gow | Hong Kong | See-through skin: honesty |
-| 7 | Siu mai | China | Open-top dumpling: being open to new things |
-| 8 | Wonton | China | Floating in soup: go with the flow |
-| 9 | Baozi | China | Big and fluffy, like the Uncle |
-| 10 | Pierogi | Poland | Grandma's secret recipe |
-| 11 | Pelmeni | Russia | Freezing cold, warm heart |
-| 12 | Khinkali | Georgia | Never eat the top knot (Uncle does) |
-| 13 | Manti | Turkey | Tiny dumplings: small things matter |
-| 14 | Mantu | Afghanistan | Patience while steaming |
-| 15 | Empanada | Argentina | Different folds, same heart |
-| 16 | Ravioli | Italy | Pasta counts as a dumpling? A big debate |
-| 17 | Gnocchi | Italy | Is it even a dumpling? |
-| 18 | Kreplach | Jewish tradition | Family holidays |
-| 19 | Samosa | India | Triangles of friendship |
-| 20 | Modak | India | A sweet dumpling for a celebration |
-| 21 | Ha cao vs. bánh bột lọc | Vietnam | Twins that aren't the same |
-| 22 | Bánh bao | Vietnam | Surprise egg inside |
-| 23 | Tangyuan | China | Sweet, round: family reunions |
-| 24 | Knödel | Germany/Austria | The Uncle can't finish one |
-| 25 | Fufu & dumplings | West Africa | Eating with your hands |
-| 26 | Chicken & dumplings | USA | Comfort food after a bad day |
-| 27 | Kibbeh | Middle East | Football-shaped: teamwork |
-| 28 | Pastel | Brazil | Street-market chaos |
-| 29 | Coxinha | Brazil | Shaped like a drumstick: don't judge by looks |
-| 30 | Dad's dumpling | Home | The finale: the recipe Dad left behind |
+## Season plan
+The show runs in **3-episode country arcs** (Arrival → Culture → Recipe + Recap), following Dad's dumpling journal.
+Full season map (11 countries, Shanghai → … → Vietnam finale): **`production/series-format.md`**.
+Ready scripts: `scripts/episode-01…03` (China arc). Drafts: `episode-04-gyoza`, `episode-10-momo`.
 
 ## Monetization notes
 - Make each episode a real mini-story with an original script. YouTube doesn't monetize mass-produced or repetitive content (its "inauthentic content" policy), so avoid near-identical AI clips.

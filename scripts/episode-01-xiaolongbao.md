@@ -1,50 +1,54 @@
-# Episode 01: "Uncle vs. Soup Dumpling" (Xiaolongbao, Shanghai)
+# Episode 01: "Uncle vs. Soup Dumpling" (China arc, part 1 of 3: Arrival)
 
-**Length:** about 45s · **Location:** a tiny steamy dumpling shop in Shanghai
+**Length:** about 60s Short · **Location:** Nanxiang, a town near Shanghai, China · **Dumpling:** Xiaolongbao
 
 ## Script
 
-**[0–3s] HOOK.** Close-up: a steamer basket opens. Steam everywhere. UNCLE's face appears through the steam, eyes huge.
+**[0–4s] HOOK.** Close-up: a bamboo steamer basket opens. Steam everywhere. UNCLE's face appears through the steam, eyes huge.
 > **UNCLE:** It's… *perfect.*
 
-**[3–8s] TITLE CARD.** `🥟 #01 XIAOLONGBAO · Shanghai, China`
-> **BOY (V.O.):** Dad said the best journeys start with something small… and *very* hot.
+**[4–12s] THE JOURNEY BEGINS.** Flashback-style transition: the BOY opens an old leather **journal** with a hand-drawn world map. A dotted line glows from home to **Shanghai**. The BOY and UNCLE ride a little cartoon train across the map.
+> **BOY (V.O.):** Dad left me his dumpling journal. Page one… Shanghai.
 
-**[8–20s] THE GAG.** UNCLE grabs a xiaolongbao with his chopsticks.
+**[12–16s] TITLE CARD.** `🥟 #01 XIAOLONGBAO · Shanghai, China`
+
+**[16–28s] THE GAG.** UNCLE grabs a xiaolongbao with his chopsticks.
 > **BOY:** Uncle, wait! There's soup insi…
 > **UNCLE:** For science! *(swallows it whole)*
 
-Freeze frame. UNCLE's face turns red, then purple, and steam shoots out of his ears like a train whistle. *TOOT TOOOOT!*
+Freeze frame. UNCLE's face turns red, and steam shoots out of his ears like a train whistle. *TOOT TOOOOT!*
 > **UNCLE:** *(tiny voice)* …there's soup inside.
 
-**[20–32s] THE RIGHT WAY.** The BOY calmly demonstrates. On-screen captions pop up one by one:
-1. `Lift gently.`
-2. `Place on spoon.`
-3. `Poke a tiny hole.`
-4. `Sip the soup.`
-5. `Then eat.`
+**[28–42s] "LEGEND SAYS…"** Storybook-style animation (paper-cut look, warm colors): an old dumpling shop in a little town with a garden.
+> **BOY (V.O.):** Legend says that around 1871, in the town of Nanxiang, a shop owner made his buns smaller, with super-thin skin… and a secret inside.
+> **BOY (V.O.):** The secret? Soup that's *jelly* when it's cold… and melts when it's steamed!
 
-UNCLE copies him with exaggerated, trembling care, and it works. His eyes fill with happy tears.
+On-screen fact card: `Xiaolongbao = "little basket bun" 🧺`
 
-**[32–42s] DAD'S WISDOM.** Soft music. A sepia silhouette of DAD holding the same spoon.
-> **BOY:** Dad used to say: *"Life is like a soup dumpling. If you rush it, you get burned. If you're patient, you get the best part."*
+**[42–52s] DAD'S WISDOM.** Soft music. A sepia memory: DAD's silhouette in a conical hat, holding a spoon.
+> **BOY:** Dad wrote: *"Life is like a soup dumpling. If you rush it, you get burned. If you're patient, you get the best part."*
 
-**[42–48s] BUTTON.** UNCLE has already stacked 14 empty steamers.
-> **UNCLE:** I've been *very* patient. Eleven more?
-> **BOY:** *(to camera, smiling)* Dad was right… Where should we go next? 👇
+**[52–60s] BUTTON.** UNCLE is fanning his tongue with the journal.
+> **UNCLE:** Patience. Got it. *(already reaching for the next one)*
+> **BOY:** *(to camera)* Dad was right… Next time: how do Shanghai people *really* eat them? 👇
 
 ## Upload details
-- **Title:** `Uncle vs. Soup Dumpling 🥟 #shorts`
+- **Title:** `Uncle vs. Soup Dumpling 🥟 | Dumpling Journal #1`
 - **Description:**
 ```
 🥟 Support the journey → https://thedumplingboy.netlify.app
-Uncle tried to eat a xiaolongbao in one bite. Bad idea.
+A boy and his hungry uncle follow Dad's old dumpling journal around the world.
+Stop 1: Shanghai, home of the soup dumpling (xiaolongbao).
 
-"Life is like a soup dumpling. If you rush it, you get burned." – Dad
+Legend says the xiaolongbao was born around 1871 in Nanxiang, a town near Shanghai.
+"Life is like a soup dumpling: if you rush it, you get burned." – Dad
 
-Episode 1 of a journey through every dumpling on Earth.
-Where should we go next? Comment below! 👇
-
-#dumplings #xiaolongbao #animation #shorts #foodie #shanghai
+Episode 1 of 3 in China. Next: how locals really eat them.
+#dumplings #xiaolongbao #shanghai #animation #shorts #foodhistory
 ```
-- **Pinned comment:** `Which dumpling should Uncle burn his mouth on next? 👇🥟`
+- **Pinned comment:** `Have you ever burned your mouth on a soup dumpling? 🔥🥟👇`
+
+## Sources (history beat)
+- Shanghai Municipal Government, "Xiaolongbao: A small dumpling with a big story": https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html
+- MICHELIN Guide, best Shanghai xiaolongbao: https://guide.michelin.com/mo/en/article/travel/best-shanghai-xiao-long-bao
+- Note: other cities (e.g. Changzhou, Kaifeng) have competing origin stories, which is why the script says "Legend says".

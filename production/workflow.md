@@ -4,7 +4,7 @@ Target: **1 Short per week** to start (about 3–5 hours each). Consistency beat
 
 ## Step 1: Script (15 min)
 Tell Claude (in Hebrew is fine) which dumpling you want, and get a script in the format in `scripts/README.md`.
-Scripts for Episodes 1–3 are ready in `scripts/`.
+Scripts for the China arc (Episodes 1–3) are ready in `scripts/`. Episode structure: `series-format.md`.
 
 ## Step 2: Images (1–2 h)
 - Generate **6–10 still images** per episode (one per beat), using the prompts in `character-bible.md`.

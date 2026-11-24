@@ -1,4 +1,6 @@
-# Episode 03: "Uncle Climbs a Mountain for Lunch" (Momo, Nepal)
+# Episode 10 (Nepal arc, part 1, draft): "Uncle Climbs a Mountain for Lunch" (Momo, Nepal)
+
+> Draft written before the 3-part arc format. Before production, add the travel transition, the "Legend says…" history beat and the journal clue (see `production/series-format.md`).
 
 **Length:** about 50s · **Location:** a Himalayan mountain trail, then a tiny tea house at the top
 

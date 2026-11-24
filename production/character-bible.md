@@ -5,9 +5,11 @@ characters look the same in every episode. Save the best result for each charact
 and reuse it as a reference image ("image-to-image" / "character reference") in later generations.
 
 ## Global style (paste at the start of every prompt)
+The look is made for young kids (soft, round, colorful); the content is for everyone. See `series-format.md`.
 ```
-2D cartoon, soft rounded shapes, thick dark-brown outlines, warm pastel colors,
-cozy food-illustration style, simple clean backgrounds, vertical 9:16 frame
+Soft, gentle children's picture-book animation style, 2D cartoon, very round friendly shapes,
+big expressive eyes, soft dark-brown outlines, bright cheerful pastel colors, soft warm lighting,
+cozy and safe mood, simple clean backgrounds, vertical 9:16 frame
 ```
 Palette: hat-leaf yellow `#ECC66A` · dumpling cream `#FFFAF0` · warm orange `#D9480F` · peach `#FFE3B8` · outline brown `#3B2A1A`
 
