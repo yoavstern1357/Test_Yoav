@@ -1,0 +1,7 @@
+tts
+tts/
+specs/frames/
+out/
+*.wav
+*.mp4
+__pycache__/
