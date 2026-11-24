@@ -80,7 +80,7 @@ How to eat one safely: lift, spoon, tiny hole, wait, sip.
 Episode 1 of 3 in China. Next: Guangzhou, the dim sum city… and har gow, the see-through shrimp dumpling.
 #dumplings #xiaolongbao #shanghai #animation #shorts #foodhistory
 ```
-- **Pinned comment:** `Have you ever burned your mouth on a soup dumpling? 🔥🥟👇 (And who do you think the grandma is? 👀)`
+- **Pinned comment:** `Have you ever burned your mouth on a soup dumpling? 🔥🥟👇 (Where do YOU think Dad went next? 👀)`
 
 ## Sources (history beat)
 - Shanghai Municipal Government, "Xiaolongbao: A small dumpling with a big story": https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html
