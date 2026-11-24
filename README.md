@@ -1,5 +1,8 @@
 # Creator Hub: a money page for your YouTube channel
 
+> **Live:** https://thedumplingboy.netlify.app (hosted on Netlify)
+> **Start here:** `CHANNEL_KIT.md` (channel texts) · `scripts/` (episode scripts) · `production/` (character prompts, workflow, Ko-fi text) · `brand/` (profile picture, banner)
+
 A free, single-page website you link from your YouTube channel and every video
 description. It turns viewers into income through:
 
