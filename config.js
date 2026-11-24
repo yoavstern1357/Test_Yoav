@@ -15,7 +15,7 @@ window.CREATOR_CONFIG = {
   tagline: "A boy in a straw hat and his always-hungry uncle travel the world, one dumpling at a time. 🥟",
   // Square image, e.g. your YouTube profile picture. Can be a file in this
   // folder ("avatar.jpg") or a full URL. Leave "" to show your initials.
-  avatar: "",
+  avatar: "avatar.svg",
 
   // ---- YouTube ------------------------------------------------------------
   youtubeUrl: "https://www.youtube.com/@TheDumplingBoy",
@@ -34,7 +34,7 @@ window.CREATOR_CONFIG = {
     {
       label: "Buy the Uncle a dumpling 🥟",
       description: "One-time tip, any amount: keeps the animations coming",
-      url: "https://ko-fi.com/thedumplingboy", // Ko-fi (pays out via PayPal)
+      url: "", // TODO: Ko-fi page still 404s; put back "https://ko-fi.com/thedumplingboy" once the page is live
     },
   ],
 
@@ -61,7 +61,6 @@ window.CREATOR_CONFIG = {
   // ---- Other socials ------------------------------------------------------
   socials: [
     // { label, url }
-    { label: "Ko-fi", url: "https://ko-fi.com/thedumplingboy" },
     { label: "YouTube", url: "https://www.youtube.com/@TheDumplingBoy" },
   ],
 

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="The Dumpling Boy logo">
+  <rect width="200" height="200" fill="#ffe3b8"/>
+  <!-- steam -->
+  <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity=".9">
+    <path d="M62 52c-8-8 8-14 0-24"/>
+    <path d="M138 52c-8-8 8-14 0-24"/>
+  </g>
+  <!-- dumpling body -->
+  <path d="M28 140c0-44 32-72 72-72s72 28 72 72c0 18-30 26-72 26s-72-8-72-26z"
+        fill="#fffaf0" stroke="#3b2a1a" stroke-width="5" stroke-linejoin="round"/>
+  <!-- pleats -->
+  <g fill="none" stroke="#3b2a1a" stroke-width="4" stroke-linecap="round">
+    <path d="M70 80c4 8 4 14 0 20"/>
+    <path d="M100 74c4 8 4 16 0 24"/>
+    <path d="M130 80c-4 8-4 14 0 20"/>
+  </g>
+  <!-- straw hat -->
+  <ellipse cx="100" cy="74" rx="74" ry="15" fill="#e9b949" stroke="#3b2a1a" stroke-width="5"/>
+  <path d="M64 72c2-22 18-34 36-34s34 12 36 34c-20 6-52 6-72 0z"
+        fill="#f2c95c" stroke="#3b2a1a" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M66 66c22 6 46 6 68 0" fill="none" stroke="#d9480f" stroke-width="7"/>
+  <!-- face -->
+  <circle cx="78" cy="124" r="7" fill="#3b2a1a"/>
+  <circle cx="122" cy="124" r="7" fill="#3b2a1a"/>
+  <circle cx="80" cy="121" r="2.2" fill="#fff"/>
+  <circle cx="124" cy="121" r="2.2" fill="#fff"/>
+  <ellipse cx="64" cy="138" rx="9" ry="5" fill="#ff9e9e" opacity=".8"/>
+  <ellipse cx="136" cy="138" rx="9" ry="5" fill="#ff9e9e" opacity=".8"/>
+  <path d="M90 138c5 7 15 7 20 0" fill="none" stroke="#3b2a1a" stroke-width="4" stroke-linecap="round"/>
+</svg>
