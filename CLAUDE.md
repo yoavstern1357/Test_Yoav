@@ -11,6 +11,7 @@ Animated family YouTube series: a boy in a Vietnamese conical hat and his big, a
 6. Commit with the attribution lines from the session reminder; push to the branch the session names.
 
 ## Where things are
+- `production/v2-direction.md`: CURRENT DIRECTION (semi-realistic anime-style look, fast pace, living animation). Read before making any new frames or episode.
 - `HANDOFF.md`: status, how to run everything, IDs, gotchas, next step.
 - `scripts/`: episode scripts (m:ss timed beats, dialogue, upload text, sources). Ep 1-9 written; `archive/` holds superseded drafts.
 - `production/series-format.md`: format (one dumpling per episode, 3-episode country arcs, recipe + recap every 3rd, Dad's journal storyline).
