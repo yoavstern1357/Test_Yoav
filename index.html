@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Dumpling Boy</title>
+  <meta name="description" content="A boy in a conical hat and his always-hungry uncle travel the world, one dumpling at a time. Watch, support and join the Dumpling Crew.">
+  <link rel="icon" href="avatar.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#d9480f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Dumpling Boy">
+  <meta property="og:description" content="A boy in a conical hat and his always-hungry uncle travel the world, one dumpling at a time. 🥟">
+  <meta property="og:url" content="https://thedumplingboy.netlify.app/">
+  <meta property="og:image" content="https://thedumplingboy.netlify.app/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+      <h1 id="name"></h1>
+      <p class="tagline" id="tagline"></p>
+      <a class="btn btn-primary btn-lg" id="subscribe" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+        <span data-t="subscribe">Subscribe on YouTube</span>
+      </a>
+    </header>
+
+    <section id="sec-video" hidden>
+      <h2 data-t="latest">Latest videos</h2>
+      <div class="video"><iframe id="player" title="Latest uploads" loading="lazy"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </section>
+
+    <section id="sec-support" hidden>
+      <h2 data-t="support">Support the channel</h2>
+      <div class="list" id="support"></div>
+    </section>
+
+    <section id="sec-products" hidden>
+      <h2 data-t="shop">Shop</h2>
+      <div class="grid" id="products"></div>
+    </section>
+
+    <section id="sec-affiliates" hidden>
+      <h2 data-t="gear">Gear I use</h2>
+      <div class="list" id="affiliates"></div>
+      <p class="fine" id="disclosure"></p>
+    </section>
+
+    <section id="sec-newsletter" hidden>
+      <h2 data-t="list">Join the list</h2>
+      <p id="newsletter-pitch"></p>
+      <form class="news" id="newsletter" method="post" target="_blank">
+        <label class="sr" for="email" data-t="emailLabel">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email" dir="ltr">
+        <button class="btn btn-primary" type="submit" data-t="join">Subscribe</button>
+      </form>
+    </section>
+
+    <section id="sec-business" hidden>
+      <h2 data-t="work">Work with me</h2>
+      <p data-t="brands">Brands and sponsors: let's make something together.</p>
+      <div class="row">
+        <a class="btn btn-primary" id="biz-email" data-t="bizEmail">Email for sponsorships</a>
+        <a class="btn" id="media-kit" target="_blank" rel="noopener" hidden data-t="kit">Media kit</a>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="socials" id="socials"></nav>
+      <p class="fine">&copy; <span id="year"></span> <span id="footer-name"></span></p>
+    </footer>
+  </main>
+</body>
+</html>

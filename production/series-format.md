@@ -1,0 +1,54 @@
+# Series Format: The Dumpling Boy
+
+## Two audiences, one show
+| Layer | Who it's for | How |
+|---|---|---|
+| **Look** | Young kids | Soft, round, bright, gentle animation; slapstick from the Uncle; big expressive faces |
+| **Content** | Everyone (teens, parents, foodies, travelers) | A continuing storyline, the real history of each dumpling, how food connects to culture, travel between countries, real recipes |
+
+Rule of thumb: **a 6-year-old laughs at the Uncle, and a 40-year-old learns something.**
+
+## The continuing storyline: "Dad's Dumpling Journal"
+- Before he passed away, Dad traveled the world tasting dumplings and kept a **hand-drawn journal with a world map**.
+- The Boy found it, and the journey follows Dad's map, one country at a time.
+- Each country ends with a **stamp** on the map and one line Dad wrote about it.
+- The **last page is torn**: it's "Dad's Dumpling", a recipe he invented. Each country gives a clue to one secret ingredient.
+- **Ep 15 (Vietnam · Huế):** where Dad got his conical hat; the first half of the torn page is hidden in its brim.
+- **Ep 21 (Season 1 finale, India):** the journal unfolds into a map of the land road.
+- **Ep 39 (Series finale, Venice):** the second half of the page; the Boy and the Uncle cook Dad's Dumpling together, and the Uncle finally eats slowly.
+- Full route: `production/season-map.md` (Silk Road: Season 1 by sea, Season 2 by land).
+
+This gives viewers a reason to come back, and to watch from Episode 1.
+
+## Every country is a 3-episode arc
+| Part | Type | Length | What happens |
+|---|---|---|---|
+| **1** | **Arrival** | ~2:00 Short (9:16) | Travel transition (map + plane/train/boat animation) → arrival → meet the dumpling → the Uncle's gag → **"Legend says…"** history moment → Dad's wisdom |
+| **2** | **Culture** | ~2:00 Short (9:16) | When and why locals eat it (festival, breakfast, family tradition) → a friendly local character → one **journal clue** that moves the story forward |
+| **3** | **Recipe + Recap** | ~2:00 Short (9:16); full written recipe in the description | A simple **family recipe** (kids + grown-up), then a **Recap card** (dumpling, country, history, fun fact, how to eat it) → **map stamp** → teaser for the next country |
+
+**Every episode is about 2 minutes** (1:50–2:10), vertical 9:16, uploaded as a Short (Shorts can be up to 3 minutes).
+**Watch hours:** Shorts views don't count toward the YouTube Partner Program watch-hour goal. So after each country arc, publish a **16:9 "full arc" compilation** (the 3 episodes joined, ~6 min) as a regular video. It costs almost no extra work and builds watch hours and search traffic.
+
+## Season map (Silk Road route)
+Full episode-by-episode plan: **see [`season-map.md`](season-map.md)** (39 episodes; every 3rd episode is Recipe + Recap).
+- **Season 1: Maritime Silk Road (Ep 1–21):** China → South Korea → Japan → Philippines → Vietnam (Huế, Dad's hat) → Thailand · Malaysia · Singapore → India
+- **Season 2: Land Silk Road (Ep 22–39):** Mongolia → Russia (Siberia) · Kazakhstan · Kyrgyzstan → Uzbekistan → Azerbaijan · Georgia · Armenia → Türkiye → Italy (finale: Venice, Marco Polo)
+
+## Accuracy rules (for the history parts)
+- Say **"Legend says…"** or **"Many people believe…"** when a story isn't proven. Many dumpling origin stories are legends with competing versions.
+- Use only facts you can find in at least two reliable sources, and keep a source list per episode in the script file.
+- Be respectful with every culture. Locals should feel proud watching it, not mocked. The jokes are always on the Uncle, never on the country.
+
+## Recipe rules
+- Simple ingredients you can find in a normal supermarket; give a substitute for pork (chicken or vegetables) so every family can make it.
+- Always a **grown-up step** marker for knives, boiling water and steam.
+- Show the "kid job" clearly: mixing, folding, pinching.
+
+## ⚠️ YouTube "Made for kids" setting: decide this carefully
+Because the look is designed to attract young children, YouTube may consider the channel **made for kids**. That's a legal setting (COPPA), and **you must answer honestly** for each video.
+- **Made for kids = Yes:** no comments, no channel memberships, no personalized ads (lower ad income). Super Thanks, Super Chat, the notification bell, the Miniplayer, save to playlist / Watch Later, cards and end screens, and YouTube's merch shelf are also off.
+- **Made for kids = No:** only correct if the videos are not directed at children. A video still counts as made for kids if children are a *secondary* audience ("mixed audience") but it is still aimed at them, for example through animated characters, stories or child-focused language. "Family friendly" on its own does not make a video made for kids.
+
+Questions YouTube looks at: the subject, whether children are the main intended audience, animated characters, bright colors, child-focused language, etc.
+**Recommendation:** write every episode for a general/family audience (history, culture, cooking, travel), use titles that speak to everyone (not "for kids"), and answer per video honestly. If most videos clearly target young children, choose "Yes" and focus income on the recipe long-videos, Ko-fi, off-YouTube merch and sponsorships (note: YouTube's merch shelf is off on made-for-kids videos, and videos with a declared paid promotion are removed from the YouTube Kids app).

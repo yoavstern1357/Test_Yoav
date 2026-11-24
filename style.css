@@ -1,0 +1,108 @@
+:root {
+  --accent: #ff0033;
+  --bg: #f6f6f7;
+  --surface: #ffffff;
+  --text: #121214;
+  --muted: #5f6068;
+  --border: #e3e3e7;
+  --radius: 14px;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e0e10;
+    --surface: #1a1a1e;
+    --text: #f1f1f3;
+    --muted: #a3a3ad;
+    --border: #2c2c33;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+[hidden] { display: none !important; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.wrap { max-width: 640px; margin: 0 auto; padding: 40px 16px 32px; }
+
+.hero { text-align: center; margin-bottom: 36px; }
+.avatar {
+  width: 112px; height: 112px; margin: 0 auto 16px;
+  border-radius: 50%; overflow: hidden;
+  display: grid; place-items: center;
+  background: var(--accent); color: #fff;
+  font-size: 40px; font-weight: 700;
+  box-shadow: 0 0 0 4px var(--surface), 0 0 0 6px var(--accent);
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.02em; }
+.tagline { color: var(--muted); margin: 0 auto 20px; max-width: 46ch; }
+
+section { margin-bottom: 36px; }
+h2 {
+  font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); margin: 0 0 12px;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 11px 18px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+  transition: transform .12s ease, filter .12s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-lg { padding: 14px 26px; font-size: 17px; }
+
+.video {
+  position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius);
+  overflow: hidden; background: #000;
+}
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.list { display: grid; gap: 10px; }
+.card {
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px 18px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+  color: inherit; text-decoration: none;
+  transition: border-color .12s ease, transform .12s ease;
+}
+.card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.card-body { flex: 1; display: grid; min-width: 0; }
+.card-sub { color: var(--muted); font-size: 14px; }
+.arrow { color: var(--accent); font-weight: 700; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.product {
+  display: grid; align-content: start; gap: 4px; padding: 10px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+  color: inherit; text-decoration: none;
+}
+.product:hover { border-color: var(--accent); }
+.product-img { aspect-ratio: 1; border-radius: 10px; overflow: hidden; background: var(--border); margin-bottom: 6px; }
+.product-img img { width: 100%; height: 100%; object-fit: cover; }
+.price { color: var(--accent); font-weight: 700; }
+
+.news { display: flex; gap: 8px; flex-wrap: wrap; }
+.news input {
+  flex: 1 1 200px; min-width: 0; padding: 11px 16px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit;
+}
+.news input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.fine { color: var(--muted); font-size: 13px; }
+
+footer { text-align: center; border-top: 1px solid var(--border); padding-top: 24px; }
+.socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 8px; }
+.socials a { color: var(--text); font-weight: 600; text-decoration: none; }
+.socials a:hover { color: var(--accent); }
