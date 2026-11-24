@@ -115,9 +115,17 @@ Note: the storybook image shows a small sign with characters; keep it brief on s
 
 All Episode 1 images are ready (8 total).
 
-### Still needed for the 2:00 version (new beats)
-- Arrival montage: Shanghai skyline across the river at dusk; metro train + `NANXIANG · Line 11` sign; Nanxiang canal, stone bridge, lanterns and the twin brick pagodas; Uncle floating after a ribbon of steam.
-- Gag part 2: Uncle staring at his spoon with a big ticking clock, wobbling steamer tower (the "tower of steamers" image `MAHbz7uEKeE` can be reused as the base).
-- Fun fact card background (paper-cut pagodas).
-- Heart moment: Boy and Uncle on the stone bridge at night, lantern light on the water.
-- Cliffhanger: the little Grandma at her stall, staring at the Boy's hat (reuse this design for Episode 2's Grandma).
+### Images for the 2:00 version (new beats), ready
+| Beat | Image | Canva link |
+|---|---|---|
+| Arrival montage: Nanxiang canal, bridge, pagodas | `MAHb0LLufyg` | https://www.canva.com/M/MAHb0LLufyg |
+| Gag part 2: Uncle waits, clock ticks | `MAHb0FpmVD0` | https://www.canva.com/M/MAHb0FpmVD0 |
+| Fun fact card background (paper-cut) | `MAHb0NdiCnA` | https://www.canva.com/M/MAHb0NdiCnA |
+| Heart moment: night on the bridge | `MAHb0J-f0Cs` | https://www.canva.com/M/MAHb0J-f0Cs |
+| Cliffhanger: Grandma stares at the hat (recurring Grandma) | `MAHb0FNIPP4` | https://www.canva.com/M/MAHb0FNIPP4 |
+
+Still optional: Shanghai skyline at dusk + metro sign (can be a simple title-card graphic in the editor).
+
+### Canva edit file (storyboard / animatic)
+Design "The Dumpling Boy Episode 1 storyboard": https://www.canva.com/d/l2vRA_QVJBy3rLP
+Pages 2–9 are the vertical 9:16 scenes with captions (page 1 is an unused square collage). Export pages 2–9 as MP4, or open in Canva's video editor to add voice, music and timing.
