@@ -24,12 +24,14 @@ CACHE = os.environ.get("TTS_CACHE", "/tmp/dumpling_tts_cache")
 
 # Voice casting: (kokoro voice, speed, pitch ratio via resample trick)
 VOICES = {
-    "boy":     ("am_puck",    1.00, 1.22),
+    "boy":     ("am_puck",    1.00, 1.08),   # older, less chipmunk (v1 used 1.22: spec "voice_pitch": {"boy": 1.22})
     "uncle":   ("am_michael", 0.92, 0.90),
     "grandma": ("af_sarah",   0.92, 0.93),
     "dad":     ("bm_daniel",  0.88, 1.00),
+    "narrator": ("bm_george", 0.90, 0.96),   # calm, slightly deeper
 }
-FILL = {"boy": (255, 255, 255), "uncle": (255, 226, 140), "grandma": (255, 214, 224), "dad": (255, 236, 196)}
+PITCH_OVERRIDE = {}
+FILL = {"boy": (255, 255, 255), "uncle": (255, 226, 140), "grandma": (255, 214, 224), "dad": (255, 236, 196), "narrator": (232, 240, 255)}
 
 
 # ------------------------------------------------------------------ TTS
@@ -39,6 +41,7 @@ _kokoro = None
 def tts(who, text):
     global _kokoro
     voice, speed, pitch = VOICES[who]
+    pitch = PITCH_OVERRIDE.get(who, pitch)
     key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, key + ".npy")
@@ -69,8 +72,14 @@ def tts(who, text):
 # ------------------------------------------------------------------ timeline
 def build_timeline(spec):
     shots, t = [], 0.0
+    snap = spec.get("snap_to_beat", False)
+    mood, origin = "cozy", 0.0
     for sh in spec["shots"]:
         s = dict(sh)
+        if s.get("mood") and s["mood"] != mood:
+            if s["mood"] in synth.NEW_MOODS or mood in synth.NEW_MOODS:
+                origin = t           # music bar grid restarts at a tempo change
+            mood = s["mood"]
         s["start"] = t
         lines, cur = [], t + s.get("lead", 0.3)
         for ln in s.get("lines", []):
@@ -82,6 +91,14 @@ def build_timeline(spec):
         s["lines"] = lines
         end_voice = (lines[-1]["start"] + lines[-1]["dur"] + s.get("tail", 0.35)) if lines else t
         s["dur"] = max(s["dur"], end_voice - t)
+        if snap and mood != "off":   # round the cut to the nearest half-beat of the mood's tempo
+            half = 30.0 / synth.mood_bpm(mood)
+            need = s["dur"]
+            k = round((t + need - origin) / half)
+            end = origin + k * half
+            if end - t < need - 1e-6:
+                end += half
+            s["dur"] = max(end - t, half)
         s["end"] = t + s["dur"]
         shots.append(s)
         t = s["end"]
@@ -105,6 +122,10 @@ def render_audio(spec, shots, total, out_wav):
             put(voice, ln["audio"], ln["start"], 1.0)
         for ev in sh.get("sfx", []):
             put(sfx, synth.SFX[ev["name"]](*([ev["d"]] if "d" in ev else [])), sh["start"] + ev["t"], ev.get("gain", 1.0))
+        if sh.get("whip") and sh["start"] > 0:
+            put(sfx, synth.swoosh_big(0.5), sh["start"] - 0.08, 0.7)
+        for im in ([sh["impact"]] if isinstance(sh.get("impact"), dict) else []):
+            put(sfx, synth.impact(), sh["start"] + im["t"], im.get("gain", 0.9))
         if sh.get("ambience"):
             a = synth.ambience(sh["ambience"], sh["dur"] + 0.6)
             put(amb, a, sh["start"] - 0.3, 1.0)
@@ -118,7 +139,7 @@ def render_audio(spec, shots, total, out_wav):
                 m = md
         return m
     mus = np.zeros(n, np.float32)
-    mm = synth.music(total, mood_at)
+    mm = synth.music(total, mood_at, change_times=[st for st, _ in moods])
     mus[: len(mm)] = mm
     # duck music under voice
     mask = (np.abs(voice) > 0.02).astype(np.float32)
