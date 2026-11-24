@@ -2,6 +2,8 @@
 
 Creator page: **https://thedumplingboy.netlify.app**
 YouTube: **https://www.youtube.com/@TheDumplingBoy**
+Ko-fi: **https://ko-fi.com/thedumplingboy**
+Business email: **thedumplingboy.studio@gmail.com**
 
 ## The show in one line
 A curious boy in a straw hat and his big, always-hungry uncle travel the world

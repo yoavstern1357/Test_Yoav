@@ -34,12 +34,7 @@ window.CREATOR_CONFIG = {
     {
       label: "Buy the Uncle a dumpling 🥟",
       description: "One-time tip, any amount: keeps the animations coming",
-      url: "", // TODO: Ko-fi page, e.g. "https://ko-fi.com/yourname"
-    },
-    {
-      label: "PayPal",
-      description: "Send a tip via PayPal",
-      url: "", // e.g. "https://paypal.me/yourname"
+      url: "https://ko-fi.com/thedumplingboy", // Ko-fi (pays out via PayPal)
     },
   ],
 
@@ -56,7 +51,7 @@ window.CREATOR_CONFIG = {
     "Some links above are affiliate links: we may earn a small commission at no extra cost to you.",
 
   // ---- Sponsorships / brand deals -----------------------------------------
-  businessEmail: "", // TODO: a dedicated business email
+  businessEmail: "thedumplingboy.studio@gmail.com",
   mediaKitUrl: "",
 
   // ---- Email list ---------------------------------------------------------
@@ -66,6 +61,7 @@ window.CREATOR_CONFIG = {
   // ---- Other socials ------------------------------------------------------
   socials: [
     // { label, url }
+    { label: "Ko-fi", url: "https://ko-fi.com/thedumplingboy" },
     { label: "YouTube", url: "https://www.youtube.com/@TheDumplingBoy" },
   ],
 
