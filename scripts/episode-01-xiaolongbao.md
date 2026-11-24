@@ -55,10 +55,13 @@ On-screen: `FUN FACT 🥟 In Nanxiang, many people still call them by their old 
 > **UNCLE:** *(softly)* Your dad picked a good first page.
 The BOY smiles with his eyes closed.
 
-**[1:54–2:04] BUTTON + CLIFFHANGER.** UNCLE is fanning his tongue with the journal.
+**[1:54–2:08] BUTTON + CLIFFHANGER.** UNCLE is fanning his tongue with the journal.
 > **UNCLE:** Patience. Got it. *(already reaching for the next one)*
-Across the street, at a tiny dumpling stall, a little GRANDMA's hands blur as she folds. *Whoosh whoosh.* Suddenly she stops… and stares straight at the BOY's conical hat.
-> **BOY:** *(to camera, puzzled)* Why is she looking at my hat? Next time: how do Shanghai people *really* eat them? 👇
+Across the street, at a tiny dumpling stall, a little GRANDMA's hands blur as she folds. *Whoosh whoosh.* Suddenly she stops… and stares straight at the BOY's conical hat. She hurries over, touches the brim, and smiles.
+> **GRANDMA:** That hat! He ate here.
+> **GRANDMA:** Then he went south… to the dim sum city.
+The BOY opens the journal: the dotted line glows south, down the coast.
+> **BOY:** *(to camera)* Dad went south? Next stop: Guangzhou! 👇
 
 ## Upload details
 - **Title:** `Uncle vs. Soup Dumpling 🥟 | Dumpling Journal #1`
@@ -74,7 +77,7 @@ Fun fact: in Nanxiang, many people still call them "xiaolong mantou".
 
 How to eat one safely: lift, spoon, tiny hole, wait, sip.
 
-Episode 1 of 3 in China. Next: how locals really eat them… and why a dumpling grandma knows Dad's hat.
+Episode 1 of 3 in China. Next: Guangzhou, the dim sum city… and har gow, the see-through shrimp dumpling.
 #dumplings #xiaolongbao #shanghai #animation #shorts #foodhistory
 ```
 - **Pinned comment:** `Have you ever burned your mouth on a soup dumpling? 🔥🥟👇 (And who do you think the grandma is? 👀)`
