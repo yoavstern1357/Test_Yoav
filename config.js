@@ -18,7 +18,7 @@ window.CREATOR_CONFIG = {
   avatar: "avatar.svg",
 
   // ---- YouTube ------------------------------------------------------------
-  youtubeUrl: "https://www.youtube.com/@TheDumplingBoy",
+  youtubeUrl: "https://www.youtube.com/@TheDumplingBoy.studio",
   // Your channel ID (starts with "UC"), from youtube.com/account_advanced.
   // Used to embed your latest uploads automatically. "" hides the player.
   channelId: "",
@@ -29,7 +29,7 @@ window.CREATOR_CONFIG = {
     {
       label: "Join the Dumpling Crew",
       description: "Monthly channel membership with perks",
-      url: "", // after YouTube memberships unlock: "https://www.youtube.com/@TheDumplingBoy/join"
+      url: "", // after YouTube memberships unlock: "https://www.youtube.com/@TheDumplingBoy.studio/join"
     },
     {
       label: "Buy the Uncle a dumpling 🥟",
@@ -61,7 +61,7 @@ window.CREATOR_CONFIG = {
   // ---- Other socials ------------------------------------------------------
   socials: [
     // { label, url }
-    { label: "YouTube", url: "https://www.youtube.com/@TheDumplingBoy" },
+    { label: "YouTube", url: "https://www.youtube.com/@TheDumplingBoy.studio" },
   ],
 
   // Accent colour for buttons (any CSS colour).

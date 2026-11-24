@@ -1,7 +1,7 @@
 # The Dumpling Boy: Channel Kit
 
 Creator page: **https://thedumplingboy.netlify.app**
-YouTube: **https://www.youtube.com/@TheDumplingBoy**
+YouTube: **https://www.youtube.com/@TheDumplingBoy.studio**
 Ko-fi: **https://ko-fi.com/thedumplingboy** (not live yet)
 Business email: **thedumplingboy.studio@gmail.com**
 
