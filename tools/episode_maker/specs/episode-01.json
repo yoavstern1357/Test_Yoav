@@ -1,150 +1,928 @@
 {
-  "title": "Episode 01: Uncle vs. Soup Dumpling",
-  "size": [1080, 1920],
-  "fps": 30,
-  "frames_dir": "frames/ep01",
-  "shots": [
-    {"id": "hook", "img": "hook_steam.png", "dur": 3.6, "motion": "zoom_in", "zoom": 1.16, "focus": [0.5, 0.42],
-     "lines": [{"who": "uncle", "text": "It's... perfect.", "at": 0.7}],
-     "sfx": [{"t": 0.1, "name": "lid"}, {"t": 0.4, "name": "hiss", "d": 1.8}],
-     "fx": [{"type": "steam", "x": [0.15, 0.85], "y": 0.80, "rise": 0.45, "n": 8}],
-     "ambience": "shop", "mood": "cozy"},
-
-    {"id": "journal", "img": "journal_station.png", "dur": 4.4, "motion": "zoom_in", "zoom": 1.25, "focus": [0.36, 0.72],
-     "lines": [{"who": "boy", "text": "Dad left me his dumpling journal."}],
-     "sfx": [{"t": 0.2, "name": "page"}]},
-
-    {"id": "route", "img": "route_map.png", "dur": 3.8, "motion": "zoom_out", "zoom": 1.25, "zoom0": 1.0,
-     "lines": [{"who": "boy", "text": "Page one... Shanghai."}],
-     "sfx": [{"t": 0.3, "name": "chug", "d": 2.6, "gain": 0.6}, {"t": 2.4, "name": "sparkle"}]},
-
-    {"id": "title", "img": "cover.png", "dur": 3.4, "motion": "zoom_in", "zoom": 1.1, "focus": [0.5, 0.58],
-     "cards": [{"type": "title", "text": "#01 XIAOLONGBAO", "sub": "Shanghai, China", "t": 0.3, "d": 2.9, "y": 0.17}],
-     "sfx": [{"t": 0.2, "name": "whoosh"}, {"t": 0.5, "name": "ding"}]},
-
-    {"id": "skyline", "img": "skyline.png", "dur": 3.8, "motion": "pan_right", "zoom0": 1.12, "zoom": 1.12, "pan": 0.08,
-     "lines": [{"who": "boy", "text": "Shanghai! So big, so bright."}],
-     "sfx": [{"t": 0.2, "name": "boat_horn", "gain": 0.6}, {"t": 2.6, "name": "bike_bell"}],
-     "ambience": "street"},
-
-    {"id": "metro", "img": "metro.png", "dur": 3.4, "motion": "pan_left", "zoom0": 1.15, "zoom": 1.15, "pan": 0.07,
-     "lines": [{"who": "boy", "text": "A short metro ride..."}],
-     "sfx": [{"t": 0.0, "name": "chug", "d": 3.0, "gain": 0.5}, {"t": 0.5, "name": "whoosh"}]},
-
-    {"id": "canal", "img": "arrive_canal.png", "dur": 3.8, "motion": "zoom_in", "zoom": 1.15, "focus": [0.5, 0.5],
-     "lines": [{"who": "boy", "text": "...and we're in old Nanxiang."}],
-     "sfx": [{"t": 0.4, "name": "bike_bell"}], "ambience": "water"},
-
-    {"id": "float", "img": "float.png", "dur": 3.8, "motion": "zoom_in", "zoom": 1.12,
-     "lines": [{"who": "uncle", "text": "I smell... destiny.", "at": 0.6}],
-     "fx": [{"type": "hearts", "x": 0.5, "y": 0.42, "t": 1.0, "n": 5}],
-     "sfx": [{"t": 0.3, "name": "whoosh"}, {"t": 1.8, "name": "sparkle"}], "ambience": "street"},
-
-    {"id": "grab", "img": "grab.png", "dur": 3.4, "motion": "zoom_in", "zoom": 1.14, "focus": [0.5, 0.45],
-     "lines": [{"who": "boy", "text": "Uncle, wait! There's soup inside!", "at": 0.2}, {"who": "uncle", "text": "For science!", "gap": 0.1}],
-     "sfx": [{"t": 0.0, "name": "hiss", "d": 1.6, "gain": 0.35}], "ambience": "shop"},
-
-    {"id": "toot", "img": "toot_face.png", "dur": 2.8, "motion": "zoom_in", "zoom0": 1.05, "zoom": 1.2,
-     "fx": [{"type": "flash", "t": 0.1, "d": 0.14}],
-     "shake": [{"t": 0.1, "d": 1.1, "amp": 20}],
-     "sfx": [{"t": 0.0, "name": "pop"}, {"t": 0.15, "name": "toot", "d": 1.3}], "transition": "cut"},
-
-    {"id": "burn", "img": "gag_burn.png", "dur": 3.0, "motion": "pan_left", "zoom0": 1.1, "zoom": 1.1, "pan": 0.05,
-     "shake": [{"t": 0.0, "d": 0.8, "amp": 10}],
-     "sfx": [{"t": 0.0, "name": "hiss", "d": 1.4, "gain": 0.5}, {"t": 1.0, "name": "boing"}]},
-
-    {"id": "sheepish", "img": "sheepish.png", "dur": 3.0, "motion": "zoom_in", "zoom": 1.14,
-     "lines": [{"who": "uncle", "text": "...there's soup inside.", "at": 0.5}]},
-
-    {"id": "lift", "img": "spoon_lift.png", "dur": 3.0, "motion": "zoom_in", "zoom": 1.15, "focus": [0.5, 0.6], "mood": "cozy",
-     "lines": [{"who": "boy", "text": "Lift. Spoon. Tiny hole."}],
-     "sfx": [{"t": 0.6, "name": "clink"}, {"t": 2.0, "name": "pop"}]},
-
-    {"id": "sip", "img": "sip.png", "dur": 2.6, "motion": "zoom_in", "zoom": 1.14,
-     "lines": [{"who": "boy", "text": "Wait. Sip.", "at": 0.2}],
-     "sfx": [{"t": 1.0, "name": "sip"}, {"t": 1.7, "name": "sparkle"}]},
-
-    {"id": "careful", "img": "uncle_careful.png", "dur": 3.0, "motion": "zoom_in", "zoom": 1.12,
-     "lines": [{"who": "uncle", "text": "Like this?", "at": 0.4}, {"who": "boy", "text": "Exactly."}],
-     "sfx": [{"t": 0.1, "name": "tick"}]},
-
-    {"id": "rightway", "img": "right_way.png", "dur": 2.4, "motion": "pan_right", "zoom0": 1.08, "zoom": 1.08, "pan": 0.06,
-     "sfx": [{"t": 0.3, "name": "sparkle"}]},
-
-    {"id": "clock", "img": "spoon_clock.png", "dur": 3.2, "motion": "zoom_in", "zoom": 1.2, "mood": "sparse",
-     "lines": [{"who": "uncle", "text": "Be cool... be cool...", "at": 0.7}],
-     "sfx": [{"t": 0.0, "name": "tick"}, {"t": 0.5, "name": "tock"}, {"t": 1.0, "name": "tick"}, {"t": 1.5, "name": "tock"}, {"t": 2.0, "name": "tick"}, {"t": 2.5, "name": "tock"}]},
-
-    {"id": "waiting", "img": "wait_uncle.png", "dur": 3.2, "motion": "zoom_in", "zoom": 1.12,
-     "lines": [{"who": "boy", "text": "Almost...", "at": 1.4}],
-     "shake": [{"t": 0.3, "d": 1.2, "amp": 6}],
-     "sfx": [{"t": 0.2, "name": "growl", "d": 1.4}, {"t": 2.3, "name": "tock"}]},
-
-    {"id": "wobble", "img": "tower_wobble.png", "dur": 3.0, "motion": "pan_up", "zoom0": 1.1, "zoom": 1.1, "pan": 0.06,
-     "shake": [{"t": 0.0, "d": 1.6, "amp": 9}],
-     "sfx": [{"t": 0.0, "name": "rattle", "d": 0.9}, {"t": 0.2, "name": "growl", "d": 1.3, "gain": 0.7}]},
-
-    {"id": "dingsip", "img": "ding_sip.png", "dur": 3.6, "motion": "zoom_in", "zoom": 1.14, "mood": "cozy",
-     "lines": [{"who": "uncle", "text": "Worth it.", "at": 0.9}],
-     "fx": [{"type": "hearts", "x": 0.5, "y": 0.42, "t": 0.6, "n": 6}],
-     "sfx": [{"t": 0.2, "name": "ding"}, {"t": 0.5, "name": "sip"}, {"t": 1.0, "name": "heart"}]},
-
-    {"id": "legend1", "img": "legend_shop.png", "dur": 4.0, "motion": "zoom_in", "zoom": 1.15, "focus": [0.4, 0.6], "mood": "tender",
-     "lines": [{"who": "boy", "text": "Legend says: around 1871, in Nanxiang, a cook made tiny buns..."}],
-     "sfx": [{"t": 0.1, "name": "page"}]},
-
-    {"id": "legend2", "img": "legend_fold.png", "dur": 2.8, "motion": "zoom_in", "zoom": 1.15,
-     "lines": [{"who": "boy", "text": "...with super-thin skin..."}],
-     "sfx": [{"t": 1.2, "name": "pop"}]},
-
-    {"id": "legend3", "img": "legend_jelly.png", "dur": 4.4, "motion": "zoom_in", "zoom": 1.12,
-     "lines": [{"who": "boy", "text": "...and a secret: soup jelly that melts when it's steamed!"}],
-     "cards": [{"type": "fact", "label": "WORD GAME", "text": "Xiaolongbao = “little basket bun”", "t": 2.2, "d": 3.0, "y": 0.30}],
-     "sfx": [{"t": 0.3, "name": "sparkle"}]},
-
-    {"id": "fact", "img": "factbg.png", "dur": 4.8, "motion": "zoom_in", "zoom": 1.08, "mood": "cozy",
-     "cards": [{"type": "fact", "label": "FUN FACT", "text": "In Nanxiang, many people still call them “xiaolong mantou”.", "t": 0.3, "d": 4.3, "y": 0.42}],
-     "lines": [{"who": "boy", "text": "In Nanxiang, many still say “xiaolong mantou.”", "caption": false, "at": 0.7}],
-     "sfx": [{"t": 0.3, "name": "sparkle"}]},
-
-    {"id": "twonames", "img": "two_names.png", "dur": 3.2, "motion": "zoom_in", "zoom": 1.12,
-     "lines": [{"who": "uncle", "text": "Two names? So... two dumplings.", "at": 0.3}],
-     "sfx": [{"t": 2.6, "name": "boing"}]},
-
-    {"id": "dad1", "img": "dad_sepia.png", "dur": 4.2, "motion": "zoom_in", "zoom": 1.15, "focus": [0.45, 0.42], "mood": "tender",
-     "lines": [{"who": "boy", "text": "Dad wrote: life is like a soup dumpling."}],
-     "sfx": [{"t": 0.1, "name": "page"}]},
-
-    {"id": "dad2", "img": "dad_journal.png", "dur": 5.0, "motion": "pan_down", "zoom0": 1.12, "zoom": 1.12, "pan": 0.06,
-     "lines": [{"who": "boy", "text": "If you rush it, you get burned. If you're patient, you get the best part."}]},
-
-    {"id": "bridge", "img": "night_bridge.png", "dur": 4.4, "motion": "zoom_in", "zoom": 1.15, "focus": [0.5, 0.6],
-     "lines": [{"who": "uncle", "text": "Your dad picked a good first page.", "at": 0.7}],
-     "sfx": [{"t": 2.8, "name": "heart"}], "ambience": "night"},
-
-    {"id": "smile", "img": "boy_smile.png", "dur": 3.0, "motion": "zoom_in", "zoom": 1.12,
-     "sfx": [{"t": 0.3, "name": "sparkle"}]},
-
-    {"id": "fanning", "img": "fanning.png", "dur": 3.0, "motion": "zoom_in", "zoom": 1.12, "mood": "cozy",
-     "lines": [{"who": "uncle", "text": "Patience. Got it.", "at": 0.4}],
-     "sfx": [{"t": 1.5, "name": "whoosh"}]},
-
-    {"id": "gfold", "img": "grandma_fold.png", "dur": 3.0, "motion": "pan_right", "zoom0": 1.1, "zoom": 1.1, "pan": 0.06,
-     "sfx": [{"t": 0.2, "name": "whoosh"}, {"t": 0.8, "name": "whoosh"}, {"t": 1.6, "name": "bike_bell"}], "ambience": "street"},
-
-    {"id": "gstare", "img": "grandma_stare.png", "dur": 2.6, "motion": "zoom_in", "zoom": 1.22, "focus": [0.5, 0.36], "mood": "sparse",
-     "sfx": [{"t": 1.2, "name": "tick"}]},
-
-    {"id": "ghat", "img": "grandma_hat.png", "dur": 4.2, "motion": "zoom_in", "zoom": 1.12, "mood": "cozy",
-     "lines": [{"who": "grandma", "text": "That hat! He ate here."}, {"who": "grandma", "text": "Then he went south... to the dim sum city."}],
-     "sfx": [{"t": 0.2, "name": "sparkle"}]},
-
-    {"id": "south", "img": "route_south.png", "dur": 3.0, "motion": "zoom_in", "zoom": 1.15,
-     "lines": [{"who": "boy", "text": "Dad went south?", "at": 0.3}],
-     "sfx": [{"t": 1.3, "name": "sparkle"}, {"t": 1.5, "name": "chug", "d": 1.4, "gain": 0.4}]},
-
-    {"id": "wave", "img": "boy_wave.png", "dur": 3.6, "motion": "zoom_in", "zoom": 1.1,
-     "lines": [{"who": "boy", "text": "Next stop: Guangzhou!", "at": 0.4}],
-     "sfx": [{"t": 0.4, "name": "ding"}], "tail": 0.8}
-  ]
+ "title": "Episode 01: Uncle vs. Soup Dumpling",
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "frames_dir": "frames/ep01",
+ "shots": [
+  {
+   "id": "hook",
+   "img": "hook_steam.png",
+   "dur": 3.6,
+   "motion": "zoom_in",
+   "zoom": 1.16,
+   "focus": [
+    0.5,
+    0.42
+   ],
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "It's... perfect.",
+     "at": 0.7
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "lid"
+    },
+    {
+     "t": 0.4,
+     "name": "hiss",
+     "d": 1.8
+    }
+   ],
+   "fx": [
+    {
+     "type": "steam",
+     "x": [
+      0.15,
+      0.85
+     ],
+     "y": 0.8,
+     "rise": 0.45,
+     "n": 8
+    }
+   ],
+   "ambience": "shop",
+   "mood": "cozy"
+  },
+  {
+   "id": "journal",
+   "img": "journal_station.png",
+   "dur": 4.4,
+   "motion": "zoom_in",
+   "zoom": 1.25,
+   "focus": [
+    0.36,
+    0.72
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad left me his dumpling journal."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "page"
+    }
+   ]
+  },
+  {
+   "id": "route",
+   "img": "route_map.png",
+   "dur": 3.8,
+   "motion": "zoom_out",
+   "zoom": 1.25,
+   "zoom0": 1.0,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Page one... Shanghai."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "chug",
+     "d": 2.6,
+     "gain": 0.6
+    },
+    {
+     "t": 2.4,
+     "name": "sparkle"
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "img": "cover.png",
+   "dur": 3.4,
+   "motion": "zoom_in",
+   "zoom": 1.1,
+   "focus": [
+    0.5,
+    0.58
+   ],
+   "cards": [
+    {
+     "type": "title",
+     "text": "#01 XIAOLONGBAO",
+     "sub": "Shanghai, China",
+     "t": 0.3,
+     "d": 2.9,
+     "y": 0.17
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "whoosh"
+    },
+    {
+     "t": 0.5,
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "id": "skyline",
+   "img": "skyline.png",
+   "dur": 3.8,
+   "motion": "pan_right",
+   "zoom0": 1.12,
+   "zoom": 1.12,
+   "pan": 0.08,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Shanghai! So big, so bright."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "boat_horn",
+     "gain": 0.6
+    },
+    {
+     "t": 2.6,
+     "name": "bike_bell"
+    }
+   ],
+   "ambience": "street"
+  },
+  {
+   "id": "metro",
+   "img": "metro.png",
+   "dur": 3.4,
+   "motion": "pan_left",
+   "zoom0": 1.15,
+   "zoom": 1.15,
+   "pan": 0.07,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "A short metro ride..."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "chug",
+     "d": 3.0,
+     "gain": 0.5
+    },
+    {
+     "t": 0.5,
+     "name": "whoosh"
+    }
+   ]
+  },
+  {
+   "id": "canal",
+   "img": "arrive_canal.png",
+   "dur": 3.8,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "...and we're in old Nanxiang."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.4,
+     "name": "bike_bell"
+    }
+   ],
+   "ambience": "water"
+  },
+  {
+   "id": "float",
+   "img": "float.png",
+   "dur": 3.8,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "I smell... destiny.",
+     "at": 0.6
+    }
+   ],
+   "fx": [
+    {
+     "type": "hearts",
+     "x": 0.5,
+     "y": 0.42,
+     "t": 1.0,
+     "n": 5
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "whoosh"
+    },
+    {
+     "t": 1.8,
+     "name": "sparkle"
+    }
+   ],
+   "ambience": "street"
+  },
+  {
+   "id": "grab",
+   "img": "grab.png",
+   "dur": 3.4,
+   "motion": "zoom_in",
+   "zoom": 1.14,
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Uncle, wait! There's soup inside!",
+     "at": 0.2
+    },
+    {
+     "who": "uncle",
+     "text": "For science!",
+     "gap": 0.1
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "hiss",
+     "d": 1.6,
+     "gain": 0.35
+    }
+   ],
+   "ambience": "shop"
+  },
+  {
+   "id": "toot",
+   "img": "toot_face.png",
+   "dur": 2.8,
+   "motion": "zoom_in",
+   "zoom0": 1.05,
+   "zoom": 1.2,
+   "fx": [
+    {
+     "type": "flash",
+     "t": 0.1,
+     "d": 0.14
+    }
+   ],
+   "shake": [
+    {
+     "t": 0.1,
+     "d": 1.1,
+     "amp": 20
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "pop"
+    },
+    {
+     "t": 0.15,
+     "name": "toot",
+     "d": 1.3
+    }
+   ],
+   "transition": "cut"
+  },
+  {
+   "id": "burn",
+   "img": "gag_burn.png",
+   "dur": 3.0,
+   "motion": "pan_left",
+   "zoom0": 1.1,
+   "zoom": 1.1,
+   "pan": 0.05,
+   "shake": [
+    {
+     "t": 0.0,
+     "d": 0.8,
+     "amp": 10
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "hiss",
+     "d": 1.4,
+     "gain": 0.5
+    },
+    {
+     "t": 1.0,
+     "name": "boing"
+    }
+   ]
+  },
+  {
+   "id": "sheepish",
+   "img": "sheepish.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.14,
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "...there's soup inside.",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "id": "lift",
+   "img": "spoon_lift.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "focus": [
+    0.5,
+    0.6
+   ],
+   "mood": "cozy",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Lift. Spoon. Tiny hole."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.6,
+     "name": "clink"
+    },
+    {
+     "t": 2.0,
+     "name": "pop"
+    }
+   ]
+  },
+  {
+   "id": "sip",
+   "img": "sip.png",
+   "dur": 2.6,
+   "motion": "zoom_in",
+   "zoom": 1.14,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Wait. Sip.",
+     "at": 0.2
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.0,
+     "name": "sip"
+    },
+    {
+     "t": 1.7,
+     "name": "sparkle"
+    }
+   ]
+  },
+  {
+   "id": "careful",
+   "img": "uncle_careful.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Like this?",
+     "at": 0.4
+    },
+    {
+     "who": "boy",
+     "text": "Exactly."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "tick"
+    }
+   ]
+  },
+  {
+   "id": "rightway",
+   "img": "right_way.png",
+   "dur": 2.4,
+   "motion": "pan_right",
+   "zoom0": 1.08,
+   "zoom": 1.08,
+   "pan": 0.06,
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "sparkle"
+    }
+   ]
+  },
+  {
+   "id": "clock",
+   "img": "spoon_clock.png",
+   "dur": 3.2,
+   "motion": "zoom_in",
+   "zoom": 1.2,
+   "mood": "sparse",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Be cool... be cool...",
+     "at": 0.7
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "tick"
+    },
+    {
+     "t": 0.5,
+     "name": "tock"
+    },
+    {
+     "t": 1.0,
+     "name": "tick"
+    },
+    {
+     "t": 1.5,
+     "name": "tock"
+    },
+    {
+     "t": 2.0,
+     "name": "tick"
+    },
+    {
+     "t": 2.5,
+     "name": "tock"
+    }
+   ]
+  },
+  {
+   "id": "waiting",
+   "img": "wait_uncle.png",
+   "dur": 3.2,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Almost...",
+     "at": 1.4
+    }
+   ],
+   "shake": [
+    {
+     "t": 0.3,
+     "d": 1.2,
+     "amp": 6
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "growl",
+     "d": 1.4
+    },
+    {
+     "t": 2.3,
+     "name": "tock"
+    }
+   ]
+  },
+  {
+   "id": "wobble",
+   "img": "tower_wobble.png",
+   "dur": 3.0,
+   "motion": "pan_up",
+   "zoom0": 1.1,
+   "zoom": 1.1,
+   "pan": 0.06,
+   "shake": [
+    {
+     "t": 0.0,
+     "d": 1.6,
+     "amp": 9
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "rattle",
+     "d": 0.9
+    },
+    {
+     "t": 0.2,
+     "name": "growl",
+     "d": 1.3,
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "dingsip",
+   "img": "ding_sip.png",
+   "dur": 3.6,
+   "motion": "zoom_in",
+   "zoom": 1.14,
+   "mood": "cozy",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Worth it.",
+     "at": 0.9
+    }
+   ],
+   "fx": [
+    {
+     "type": "hearts",
+     "x": 0.5,
+     "y": 0.42,
+     "t": 0.6,
+     "n": 6
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "ding"
+    },
+    {
+     "t": 0.5,
+     "name": "sip"
+    },
+    {
+     "t": 1.0,
+     "name": "heart"
+    }
+   ]
+  },
+  {
+   "id": "legend1",
+   "img": "legend_shop.png",
+   "dur": 4.0,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "focus": [
+    0.4,
+    0.6
+   ],
+   "mood": "tender",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Legend says: around 1871, in Nanxiang, a cook made tiny buns..."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "page"
+    }
+   ]
+  },
+  {
+   "id": "legend2",
+   "img": "legend_fold.png",
+   "dur": 2.8,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "...with super-thin skin..."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.2,
+     "name": "pop"
+    }
+   ]
+  },
+  {
+   "id": "legend3",
+   "img": "legend_jelly.png",
+   "dur": 4.4,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "...and a secret: soup jelly that melts when it's steamed!"
+    }
+   ],
+   "cards": [
+    {
+     "type": "fact",
+     "label": "WORD GAME",
+     "text": "Xiaolongbao = “little basket bun”",
+     "t": 2.2,
+     "d": 3.0,
+     "y": 0.3
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "sparkle"
+    }
+   ]
+  },
+  {
+   "id": "fact",
+   "img": "factbg.png",
+   "dur": 4.8,
+   "motion": "zoom_in",
+   "zoom": 1.08,
+   "mood": "cozy",
+   "cards": [
+    {
+     "type": "fact",
+     "label": "FUN FACT",
+     "text": "In Nanxiang, many people still call them “xiaolong mantou”.",
+     "t": 0.3,
+     "d": 4.3,
+     "y": 0.42
+    }
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "In Nanxiang, many still say “xiaolong mantou.”",
+     "caption": false,
+     "at": 0.7
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "sparkle"
+    }
+   ]
+  },
+  {
+   "id": "twonames",
+   "img": "two_names.png",
+   "dur": 3.2,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Two names? So... two dumplings.",
+     "at": 0.3
+    }
+   ],
+   "sfx": [
+    {
+     "t": 2.6,
+     "name": "boing"
+    }
+   ]
+  },
+  {
+   "id": "dad1",
+   "img": "dad_sepia.png",
+   "dur": 4.2,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "focus": [
+    0.45,
+    0.42
+   ],
+   "mood": "tender",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad wrote: life is like a soup dumpling."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "page"
+    }
+   ]
+  },
+  {
+   "id": "dad2",
+   "img": "dad_journal.png",
+   "dur": 5.0,
+   "motion": "pan_down",
+   "zoom0": 1.12,
+   "zoom": 1.12,
+   "pan": 0.06,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "If you rush it, you get burned. If you're patient, you get the best part."
+    }
+   ]
+  },
+  {
+   "id": "bridge",
+   "img": "night_bridge.png",
+   "dur": 4.4,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "focus": [
+    0.5,
+    0.6
+   ],
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Your dad picked a good first page.",
+     "at": 0.7
+    }
+   ],
+   "sfx": [
+    {
+     "t": 2.8,
+     "name": "heart"
+    }
+   ],
+   "ambience": "night"
+  },
+  {
+   "id": "smile",
+   "img": "boy_smile.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.6,
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "sparkle"
+    }
+   ],
+   "focus": [
+    0.32,
+    0.62
+   ]
+  },
+  {
+   "id": "fanning",
+   "img": "fanning.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "mood": "cozy",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Patience. Got it.",
+     "at": 0.4
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.5,
+     "name": "whoosh"
+    }
+   ]
+  },
+  {
+   "id": "gfold",
+   "img": "grandma_fold.png",
+   "dur": 3.0,
+   "motion": "pan_right",
+   "zoom0": 1.1,
+   "zoom": 1.1,
+   "pan": 0.06,
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "whoosh"
+    },
+    {
+     "t": 0.8,
+     "name": "whoosh"
+    },
+    {
+     "t": 1.6,
+     "name": "bike_bell"
+    }
+   ],
+   "ambience": "street"
+  },
+  {
+   "id": "gstare",
+   "img": "grandma_stare.png",
+   "dur": 2.6,
+   "motion": "zoom_in",
+   "zoom": 1.22,
+   "focus": [
+    0.5,
+    0.36
+   ],
+   "mood": "sparse",
+   "sfx": [
+    {
+     "t": 1.2,
+     "name": "tick"
+    }
+   ]
+  },
+  {
+   "id": "ghat",
+   "img": "grandma_hat.png",
+   "dur": 4.2,
+   "motion": "zoom_in",
+   "zoom": 1.12,
+   "mood": "cozy",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "That hat! He ate here."
+    },
+    {
+     "who": "grandma",
+     "text": "Then he went south... to the dim sum city."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "sparkle"
+    }
+   ]
+  },
+  {
+   "id": "south",
+   "img": "route_south.png",
+   "dur": 3.0,
+   "motion": "zoom_in",
+   "zoom": 1.15,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad went south?",
+     "at": 0.3
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.3,
+     "name": "sparkle"
+    },
+    {
+     "t": 1.5,
+     "name": "chug",
+     "d": 1.4,
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "wave",
+   "img": "boy_wave.png",
+   "dur": 3.6,
+   "motion": "zoom_in",
+   "zoom": 1.25,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Next stop: Guangzhou!",
+     "at": 0.4
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.4,
+     "name": "ding"
+    }
+   ],
+   "tail": 0.8,
+   "focus": [
+    0.5,
+    0.62
+   ]
+  }
+ ]
 }
