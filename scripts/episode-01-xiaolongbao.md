@@ -12,16 +12,19 @@
 
 **[12–16s] TITLE CARD.** `🥟 #01 XIAOLONGBAO · Shanghai, China`
 
-**[16–28s] THE GAG.** UNCLE grabs a xiaolongbao with his chopsticks.
+**[16–26s] THE GAG.** UNCLE grabs a xiaolongbao with his chopsticks.
 > **BOY:** Uncle, wait! There's soup insi…
 > **UNCLE:** For science! *(swallows it whole)*
 
 Freeze frame. UNCLE's face turns red, and steam shoots out of his ears like a train whistle. *TOOT TOOOOT!*
 > **UNCLE:** *(tiny voice)* …there's soup inside.
 
-**[28–42s] "LEGEND SAYS…"** Storybook-style animation (paper-cut look, warm colors): an old dumpling shop in a little town with a garden.
-> **BOY (V.O.):** Legend says that around 1871, in the town of Nanxiang, a shop owner made his buns smaller, with super-thin skin… and a secret inside.
-> **BOY (V.O.):** The secret? Soup that's *jelly* when it's cold… and melts when it's steamed!
+**[26–32s] THE RIGHT WAY (safety beat).** The BOY calmly lifts a dumpling onto a spoon, pokes a tiny hole, lets it cool, sips. UNCLE copies him, very carefully.
+> **BOY:** Lift. Spoon. Tiny hole. Wait. Sip.
+
+**[32–42s] "LEGEND SAYS…"** Storybook-style animation (paper-cut look, warm colors): an old dumpling shop in a little town with a garden.
+> **BOY (V.O.):** Legend says: around 1871, in Nanxiang, a cook made tiny buns with super-thin skin…
+> **BOY (V.O.):** …and a secret: soup jelly that melts when it's steamed!
 
 On-screen fact card: `Xiaolongbao = "little basket bun" 🧺`
 
@@ -66,4 +69,7 @@ Folder: https://www.canva.com/folder/FAHbz3qqLyU
 | "Legend says…" (storybook) | `MAHbz79mePU` | https://www.canva.com/M/MAHbz79mePU |
 
 Note: the storybook image shows a small sign with characters; keep it brief on screen or cover it with the fact card.
-Still needed: journal + map transition shot, and the cover image (generation retried).
+| Journey: Dad's journal + map + train | `MAHbz9FRn_U` | https://www.canva.com/M/MAHbz9FRn_U |
+| Cover / first frame (both characters) | `MAHbzyd1uFg` | https://www.canva.com/M/MAHbzyd1uFg |
+
+All Episode 1 images are ready (8 total).

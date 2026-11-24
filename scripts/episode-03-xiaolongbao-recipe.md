@@ -15,10 +15,12 @@
 
 ## Recipe: Easy Soup Dumplings (about 24 dumplings)
 ⚠️ **Grown-up step** = steam, boiling water or knives. Kids: mixing, folding, pinching!
+🧼 **Raw meat rule:** wash hands with soap after touching raw meat, and never taste the raw filling. Keep the filling in the fridge until you fold.
+🌾 **Allergy note:** wrappers contain wheat (gluten); the filling has soy and sesame.
 
 **1. The soup jelly (the secret!), make it 3+ hours before, or the night before**
 - 1 cup (250 ml) chicken broth
-- 1 packet (7 g / about 2¼ tsp) unflavored gelatin powder
+- 1 packet (7 g / about 2½ tsp) unflavored gelatin powder
 - Sprinkle the gelatin over the cold broth and wait 5 minutes. Then **warm it gently (grown-up step)** while stirring, until it dissolves. Don't boil it.
 - Pour into a small container and chill in the fridge until firm (about 3 hours).
 - Cut into tiny cubes. *(Uncle: "It's soup… but you can hold it!")*
@@ -31,16 +33,19 @@
 
 **3. Fold**
 - 24 round thin dumpling wrappers (store-bought)
-- Put 1 heaped teaspoon of filling in the center.
+- Put about 1 tablespoon of filling in the center.
 - Pinch small folds all around the edge, turning as you go, and twist the top closed. *(Grandma: "Count your folds!")*
 
 **4. Steam (grown-up step)**
 - Line a steamer basket with parchment paper with small holes, or with cabbage leaves.
 - Place the dumplings with space between them.
 - Steam over boiling water for **8–10 minutes**, until the filling is fully cooked.
+- **Check one (grown-up step):** the filling should be cooked through with no pink left. A food thermometer should read **160°F / 71°C for pork** or **165°F / 74°C for chicken**. If not, steam 2–3 minutes more.
+- Open the lid **away from your face**: the steam can burn.
 
 **5. Eat it the right way** (callback to Episode 1)
 Lift gently → place on spoon → poke a tiny hole → sip the soup (careful, very hot!) → eat with black vinegar and ginger.
+**Wait 2–3 minutes** after steaming before anyone takes a bite. Never pop one in whole like the Uncle! For little kids, a grown-up opens the dumpling on the spoon and lets the soup cool first.
 
 ## Recap card (on screen, read by the Boy)
 ```

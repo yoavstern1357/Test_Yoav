@@ -13,7 +13,7 @@ Rule of thumb: **a 6-year-old laughs at the Uncle, and a 40-year-old learns some
 - The Boy found it, and the journey follows Dad's map, one country at a time.
 - Each country ends with a **stamp** on the map and one line Dad wrote about it.
 - The **last page is torn**: it's "Dad's Dumpling", a recipe he invented. Each country gives a clue to one secret ingredient.
-- **Season finale (Vietnam):** the journey ends where Dad got his conical hat. The Boy and the Uncle cook Dad's Dumpling together, and the Uncle finally eats slowly.
+- **Season finale (Vietnam · Huế):** the journey ends in Huế, famous for its conical hats, where Dad got his. The Boy and the Uncle cook Dad's Dumpling together, and the Uncle finally eats slowly.
 
 This gives viewers a reason to come back, and to watch from Episode 1.
 
@@ -34,12 +34,12 @@ The long recipe videos earn more from ads and get searched ("easy soup dumpling 
 | 3 | 7–9 | South Korea · Seoul | Mandu | "Make them together" (sharing) |
 | 4 | 10–12 | Nepal · Kathmandu | Momo | "A little fire" (chutney / courage) |
 | 5 | 13–15 | India · Mumbai | Modak | "Something sweet" (celebration) |
-| 6 | 16–18 | Turkey · Kayseri | Mantı | "Small things matter" (tiny dumplings) |
+| 6 | 16–18 | Türkiye · Kayseri | Mantı | "Small things matter" (tiny dumplings) |
 | 7 | 19–21 | Georgia · Tbilisi | Khinkali | "Don't eat the top" (respect tradition) |
 | 8 | 22–24 | Poland · Kraków | Pierogi | "Grandma's hands" (family) |
 | 9 | 25–27 | Italy · Bologna | Tortellini | "Fold with love" |
-| 10 | 28–30 | Argentina · Buenos Aires | Empanada | "Every family folds differently" |
-| 11 | 31–33 | **Vietnam** (finale) | Bánh bột lọc + **Dad's Dumpling** | All clues come together |
+| 10 | 28–30 | Argentina · Tucumán (Famaillá) | Empanada | "Every family folds differently" |
+| 11 | 31–33 | **Vietnam · Huế** (finale) | Bánh bột lọc + **Dad's Dumpling** | All clues come together |
 
 ## Accuracy rules (for the history parts)
 - Say **"Legend says…"** or **"Many people believe…"** when a story isn't proven. Many dumpling origin stories are legends with competing versions.
@@ -53,8 +53,8 @@ The long recipe videos earn more from ads and get searched ("easy soup dumpling 
 
 ## ⚠️ YouTube "Made for kids" setting: decide this carefully
 Because the look is designed to attract young children, YouTube may consider the channel **made for kids**. That's a legal setting (COPPA), and **you must answer honestly** for each video.
-- **Made for kids = Yes:** no comments, no channel memberships, no personalized ads (lower ad income). Super Thanks and some features are also off.
-- **Made for kids = No:** only correct if the videos are not primarily aimed at children.
+- **Made for kids = Yes:** no comments, no channel memberships, no personalized ads (lower ad income). Super Thanks, Super Chat, the notification bell, the Miniplayer, save to playlist / Watch Later, cards and end screens, and YouTube's merch shelf are also off.
+- **Made for kids = No:** only correct if the videos are not directed at children. A video still counts as made for kids if children are a *secondary* audience ("mixed audience") but it is still aimed at them, for example through animated characters, stories or child-focused language. "Family friendly" on its own does not make a video made for kids.
 
 Questions YouTube looks at: the subject, whether children are the main intended audience, animated characters, bright colors, child-focused language, etc.
-**Recommendation:** write every episode for a general/family audience (history, culture, cooking, travel), use titles that speak to everyone (not "for kids"), and answer per video honestly. If most videos clearly target young children, choose "Yes" and focus income on the recipe long-videos, Ko-fi, merch and sponsorships, which still work.
+**Recommendation:** write every episode for a general/family audience (history, culture, cooking, travel), use titles that speak to everyone (not "for kids"), and answer per video honestly. If most videos clearly target young children, choose "Yes" and focus income on the recipe long-videos, Ko-fi, off-YouTube merch and sponsorships (note: YouTube's merch shelf is off on made-for-kids videos, and videos with a declared paid promotion are removed from the YouTube Kids app).
