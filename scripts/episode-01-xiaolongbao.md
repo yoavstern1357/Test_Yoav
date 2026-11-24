@@ -1,39 +1,64 @@
 # Episode 01: "Uncle vs. Soup Dumpling" (China arc, part 1 of 3: Arrival)
 
-**Length:** about 60s Short · **Location:** Nanxiang, a town near Shanghai, China · **Dumpling:** Xiaolongbao
+**Length:** about 2:00 (1:50–2:10) · vertical 9:16 · YouTube Short · **Location:** Shanghai, then Nanxiang, an old town on the outskirts of Shanghai, China · **Dumpling:** Xiaolongbao
 
 ## Script
 
-**[0–4s] HOOK.** Close-up: a bamboo steamer basket opens. Steam everywhere. UNCLE's face appears through the steam, eyes huge.
+**[0:00–0:04] HOOK.** Close-up: a bamboo steamer basket opens. Steam everywhere. UNCLE's face appears through the steam, eyes huge.
 > **UNCLE:** It's… *perfect.*
 
-**[4–12s] THE JOURNEY BEGINS.** Flashback-style transition: the BOY opens an old leather **journal** with a hand-drawn world map. A dotted line glows from home to **Shanghai**. The BOY and UNCLE ride a little cartoon train across the map.
+**[0:04–0:14] THE JOURNEY BEGINS.** Flashback-style transition: the BOY opens an old leather **journal** with a hand-drawn world map. A dotted line glows from home to **Shanghai**. The BOY and UNCLE ride a little cartoon train across the map.
 > **BOY (V.O.):** Dad left me his dumpling journal. Page one… Shanghai.
 
-**[12–16s] TITLE CARD.** `🥟 #01 XIAOLONGBAO · Shanghai, China`
+**[0:14–0:18] TITLE CARD.** `🥟 #01 XIAOLONGBAO · Shanghai, China`
 
-**[16–26s] THE GAG.** UNCLE grabs a xiaolongbao with his chopsticks.
+**[0:18–0:34] ARRIVAL: SIGHTS AND SOUNDS.** Quick, happy montage. Sound design does the work: bicycle bells, a gentle river-boat horn, the rattle of steamer lids, a busy-street hum.
+- Shanghai's bright skyline glows across the river at dusk. The BOY looks up, mouth open.
+- A friendly metro train glides out of the big city. Platform sign: `NANXIANG · Line 11`.
+- Nanxiang's old town: a little canal, a stone bridge, red lanterns, and two tall old **brick pagodas** side by side.
+- UNCLE's nose lifts in the air. A cartoon ribbon of steam curls from a shop and "pulls" him along by the nose, feet floating off the ground.
+> **BOY (V.O.):** Shanghai! So big, so bright.
+> **BOY (V.O.):** A short metro ride… and we're in old Nanxiang.
+> **UNCLE:** *(floating after the smell)* I smell… destiny.
+
+**[0:34–0:50] THE GAG.** UNCLE grabs a xiaolongbao with his chopsticks.
 > **BOY:** Uncle, wait! There's soup insi…
 > **UNCLE:** For science! *(swallows it whole)*
 
 Freeze frame. UNCLE's face turns red, and steam shoots out of his ears like a train whistle. *TOOT TOOOOT!*
 > **UNCLE:** *(tiny voice)* …there's soup inside.
 
-**[26–32s] THE RIGHT WAY (safety beat).** The BOY calmly lifts a dumpling onto a spoon, pokes a tiny hole, lets it cool, sips. UNCLE copies him, very carefully.
+**[0:50–0:58] THE RIGHT WAY (safety beat).** The BOY calmly lifts a dumpling onto a spoon, pokes a tiny hole, lets it cool, sips. UNCLE copies him, very carefully.
 > **BOY:** Lift. Spoon. Tiny hole. Wait. Sip.
 
-**[32–42s] "LEGEND SAYS…"** Storybook-style animation (paper-cut look, warm colors): an old dumpling shop in a little town with a garden.
+**[0:58–1:10] THE GAG, PART 2: THE WAIT.** UNCLE stares at the steaming dumpling on his spoon. A big cartoon clock ticks. *Tick… tick…* Sweat on his head. His tummy growls so loudly that the whole tower of steamers wobbles. *GRRRROWL. Rattle-rattle.* The BOY steadies the tower with one finger.
+> **UNCLE:** *(whispering to the dumpling)* Be cool. Be cool…
+> **BOY:** Almost…
+*Ding!* UNCLE sips very carefully. His eyes close. Tiny hearts float up.
+> **UNCLE:** *(happy whisper)* Worth it.
+
+**[1:10–1:24] "LEGEND SAYS…"** Storybook-style animation (paper-cut look, warm colors): an old dumpling shop in a little town with a garden.
 > **BOY (V.O.):** Legend says: around 1871, in Nanxiang, a cook made tiny buns with super-thin skin…
 > **BOY (V.O.):** …and a secret: soup jelly that melts when it's steamed!
 
 On-screen fact card: `Xiaolongbao = "little basket bun" 🧺`
 
-**[42–52s] DAD'S WISDOM.** Soft music. A sepia memory: DAD's silhouette in a conical hat, holding a spoon.
+**[1:24–1:34] FUN FACT CARD.** A paper-cut card pops up next to the brick pagodas.
+On-screen: `FUN FACT 🥟 In Nanxiang, many people still call them by their old name: "xiaolong mantou".`
+> **BOY (V.O.):** In Nanxiang, many still say "xiaolong mantou."
+> **UNCLE:** Two names? *(holds up two fingers)* So… two dumplings.
+
+**[1:34–1:44] DAD'S WISDOM.** Soft music. A sepia memory: DAD's silhouette in a conical hat, holding a spoon.
 > **BOY:** Dad wrote: *"Life is like a soup dumpling. If you rush it, you get burned. If you're patient, you get the best part."*
 
-**[52–60s] BUTTON.** UNCLE is fanning his tongue with the journal.
+**[1:44–1:54] HEART MOMENT.** Evening. The BOY sits on the stone bridge over the canal, the journal on his knees. Lantern light ripples on the water. UNCLE sits down next to him, slowly for once. He puts one last dumpling on a spoon, waits, and hands it to the BOY.
+> **UNCLE:** *(softly)* Your dad picked a good first page.
+The BOY smiles with his eyes closed.
+
+**[1:54–2:04] BUTTON + CLIFFHANGER.** UNCLE is fanning his tongue with the journal.
 > **UNCLE:** Patience. Got it. *(already reaching for the next one)*
-> **BOY:** *(to camera)* Dad was right… Next time: how do Shanghai people *really* eat them? 👇
+Across the street, at a tiny dumpling stall, a little GRANDMA's hands blur as she folds. *Whoosh whoosh.* Suddenly she stops… and stares straight at the BOY's conical hat.
+> **BOY:** *(to camera, puzzled)* Why is she looking at my hat? Next time: how do Shanghai people *really* eat them? 👇
 
 ## Upload details
 - **Title:** `Uncle vs. Soup Dumpling 🥟 | Dumpling Journal #1`
@@ -43,18 +68,34 @@ On-screen fact card: `Xiaolongbao = "little basket bun" 🧺`
 A boy and his hungry uncle follow Dad's old dumpling journal around the world.
 Stop 1: Shanghai, home of the soup dumpling (xiaolongbao).
 
-Legend says the xiaolongbao was born around 1871 in Nanxiang, a town near Shanghai.
+Legend says the xiaolongbao was born around 1871 in Nanxiang, an old town on the outskirts of Shanghai.
+Fun fact: in Nanxiang, many people still call them "xiaolong mantou".
 "Life is like a soup dumpling: if you rush it, you get burned." – Dad
 
-Episode 1 of 3 in China. Next: how locals really eat them.
+How to eat one safely: lift, spoon, tiny hole, wait, sip.
+
+Episode 1 of 3 in China. Next: how locals really eat them… and why a dumpling grandma knows Dad's hat.
 #dumplings #xiaolongbao #shanghai #animation #shorts #foodhistory
 ```
-- **Pinned comment:** `Have you ever burned your mouth on a soup dumpling? 🔥🥟👇`
+- **Pinned comment:** `Have you ever burned your mouth on a soup dumpling? 🔥🥟👇 (And who do you think the grandma is? 👀)`
 
 ## Sources (history beat)
 - Shanghai Municipal Government, "Xiaolongbao: A small dumpling with a big story": https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html
 - MICHELIN Guide, best Shanghai xiaolongbao: https://guide.michelin.com/mo/en/article/travel/best-shanghai-xiao-long-bao
 - Note: other cities (e.g. Changzhou, Kaifeng) have competing origin stories, which is why the script says "Legend says".
+
+## Sources (new beats, added for the 2:00 version)
+- **"Xiaolong mantou" (fun fact card):** Shanghainese/Wu speakers use "mantou" for filled buns too, and Nanxiang still uses the original name xiaolong mantou. "Many people" is used because how often locals use each name today isn't measured.
+  - SCMP, history of xiaolongbao: https://amp.scmp.com/lifestyle/food-drink/article/3097791/history-xiaolongbao-or-soup-dumplings-outskirts-shanghai
+  - Wikipedia, Xiaolongbao (naming section): https://en.wikipedia.org/wiki/Xiaolongbao
+  - Shanghai Municipal Government, "Steamed Meat Buns": https://english.shanghai.gov.cn/en-Snack-travelinshanghai/20231214/5e949cf6f7cd4109a903ff1e37e3b7ec.html
+- **Nanxiang twin brick pagodas (arrival montage):** a pair of octagonal, seven-story brick pagodas, about 11 m tall, a protected historic site and landmark of Nanxiang Ancient Town. Their exact age is disputed between sources, so the script only says "old".
+  - Shanghai Municipal Government, "Nanxiang Ancient Town": https://english.shanghai.gov.cn/en-ScenicSpots/20240318/d27e0a0fd8a647f38e8da351b13cfeec.html
+  - China Daily, "Nanxiang Twin Pagodas": https://global.chinadaily.com.cn/m/shanghai/jiading/2017-02/10/content_28158425_3.htm
+- **Metro Line 11 to Nanxiang (arrival montage):** Nanxiang station is on Shanghai Metro Line 11 (opened 2009).
+  - Wikipedia, Nanxiang station (Shanghai Metro): https://en.wikipedia.org/wiki/Nanxiang_station_(Shanghai_Metro)
+  - Explore Shanghai, Nanxiang station: https://exploreshanghai.com/metro/pedia/station/nanxiang
+- **"Outskirts of Shanghai" wording:** Nanxiang is now in Jiading District, Shanghai (see fact-check report and the Shanghai gov page above).
 
 ## Canva scene images (ready)
 Folder: https://www.canva.com/folder/FAHbz3qqLyU
@@ -73,3 +114,10 @@ Note: the storybook image shows a small sign with characters; keep it brief on s
 | Cover / first frame (both characters) | `MAHbzyd1uFg` | https://www.canva.com/M/MAHbzyd1uFg |
 
 All Episode 1 images are ready (8 total).
+
+### Still needed for the 2:00 version (new beats)
+- Arrival montage: Shanghai skyline across the river at dusk; metro train + `NANXIANG · Line 11` sign; Nanxiang canal, stone bridge, lanterns and the twin brick pagodas; Uncle floating after a ribbon of steam.
+- Gag part 2: Uncle staring at his spoon with a big ticking clock, wobbling steamer tower (the "tower of steamers" image `MAHbz7uEKeE` can be reused as the base).
+- Fun fact card background (paper-cut pagodas).
+- Heart moment: Boy and Uncle on the stone bridge at night, lantern light on the water.
+- Cliffhanger: the little Grandma at her stall, staring at the Boy's hat (reuse this design for Episode 2's Grandma).
