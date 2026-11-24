@@ -514,7 +514,7 @@
    "img": "f21_eyes_twitch.png",
    "dur": 1.2,
    "motion": "zoom_in",
-   "zoom": 1.12,
+   "zoom": 1.45,
    "sfx": [
     {
      "t": 0.0,
@@ -532,7 +532,11 @@
      "scale": 1.15
     }
    ],
-   "mood": "tension"
+   "mood": "tension",
+   "focus": [
+    0.5,
+    0.33
+   ]
   },
   {
    "id": "burn_impact",
