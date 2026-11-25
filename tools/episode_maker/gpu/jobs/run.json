@@ -1,1 +1,1 @@
-{"run_id": "look-test-3", "task": "images", "input": "tools/episode_maker/gpu/inputs/look-test-3", "smoke": false, "backend": "klein", "only": "", "max_minutes": 60}
+{"run_id": "intro-stills-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/intro-stills", "smoke": false, "backend": "klein", "only": "", "max_minutes": 90}
