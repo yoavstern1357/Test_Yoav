@@ -1,0 +1,1251 @@
+[{"stream_name":"stderr","time":12.342434653,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.342503143,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.342508036,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.342510909,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":13.078788105,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":13.078826312,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":13.078831003,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":13.078834616,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.527849995,"data":"Kaggle\n"}
+,{"stream_name":"stdout","time":14.527881447,"data":"GPU 0: Tesla T4 (UUID: GPU-3ea1fdcc-381c-34cc-b15f-30da4d9394d0)\n"}
+,{"stream_name":"stdout","time":14.527884722,"data":"GPU 1: Tesla T4 (UUID: GPU-9a139a8f-bef1-0af4-4de2-491a86999024)\n"}
+,{"stream_name":"stdout","time":14.527887305,"data":"\n"}
+,{"stream_name":"stdout","time":14.558412275,"data":"Writing generate_music.py\n"}
+,{"stream_name":"stdout","time":14.87569133,"data":"inputs: /kaggle/input/datasets/thedumplingboy/dumpling-input-opening-song-002\n"}
+,{"stream_name":"stdout","time":14.891353942,"data":"\n"}
+,{"stream_name":"stdout","time":14.891373634,"data":"==================== acestep ====================\n"}
+,{"stream_name":"stdout","time":15.110852325,"data":"21:32:31 pinned: torch==2.11.0+cu130 torchvision==0.26.0+cu130 torchaudio==2.11.0+cu130 torchcodec==0.11.0+cu130 triton==3.6.0 numpy==2.1.3\n"}
+,{"stream_name":"stdout","time":162.836155504,"data":"21:34:59 import test ok\n"}
+,{"stream_name":"stdout","time":164.41206955,"data":"21:35:00 torch 2.11.0+cu130 cuda 13.0 ok\n"}
+,{"stream_name":"stdout","time":165.252787473,"data":"21:35:01 backend acestep (Apache-2.0): 16 jobs, 16 to do\n"}
+,{"stream_name":"stdout","time":165.254042929,"data":"21:35:01   full_a__s101 60.0s | japanese punk rock, anime opening theme, 180 bpm, very fast  | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.254873861,"data":"21:35:01   full_a__s102 60.0s | japanese punk rock, anime opening theme, 180 bpm, very fast  | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.255820189,"data":"21:35:01   full_b__s202 60.0s | j-rock punk, anime tv opening, 185 bpm, fast, overdriven pow | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.257034315,"data":"21:35:01   full_b__s203 60.0s | j-rock punk, anime tv opening, 185 bpm, fast, overdriven pow | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.257919357,"data":"21:35:01   full_c__s303 60.0s | pop punk, japanese, anime opening, 175 bpm, fast tempo, crun | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.258877991,"data":"21:35:01   full_c__s304 60.0s | pop punk, japanese, anime opening, 175 bpm, fast tempo, crun | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.260022509,"data":"21:35:01   full_d__s404 60.0s | asian punk rock, japanese anime opening, 190 bpm, very fast, | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.261139922,"data":"21:35:01   full_d__s405 60.0s | asian punk rock, japanese anime opening, 190 bpm, very fast, | 32 lyric lines\n"}
+,{"stream_name":"stdout","time":165.262185284,"data":"21:35:01   intro_a__s111 16.0s | japanese punk rock, anime opening theme, 180 bpm, very fast  | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.263071574,"data":"21:35:01   intro_a__s112 16.0s | japanese punk rock, anime opening theme, 180 bpm, very fast  | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.26411822,"data":"21:35:01   intro_b__s212 16.0s | j-rock punk, anime tv opening, 185 bpm, fast, overdriven pow | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.265072948,"data":"21:35:01   intro_b__s213 16.0s | j-rock punk, anime tv opening, 185 bpm, fast, overdriven pow | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.266089055,"data":"21:35:01   intro_c__s313 16.0s | pop punk, japanese, anime opening, 175 bpm, fast tempo, crun | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.267095635,"data":"21:35:01   intro_c__s314 16.0s | pop punk, japanese, anime opening, 175 bpm, fast tempo, crun | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.268035654,"data":"21:35:01   intro_d__s414 16.0s | asian punk rock, japanese anime opening, 190 bpm, very fast, | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":165.269026024,"data":"21:35:01   intro_d__s415 16.0s | asian punk rock, japanese anime opening, 190 bpm, very fast, | 4 lyric lines\n"}
+,{"stream_name":"stdout","time":175.410669544,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stdout","time":175.41183891,"data":"I0000 00:00:1795642511.941422     223 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stdout","time":177.21140388,"data":"Flax classes are deprecated and will be removed in Diffusers v0.40.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.\n"}
+,{"stream_name":"stdout","time":177.212241466,"data":"Flax classes are deprecated and will be removed in Diffusers v0.40.0. We recommend migrating to PyTorch classes or pinning your version of Diffusers.\n"}
+,{"stream_name":"stdout","time":178.200924067,"data":"2026-11-25 21:35:14.732 | INFO     | acestep.pipeline_ace_step:get_checkpoint_path:178 - Download models from Hugging Face: ACE-Step/ACE-Step-v1-3.5B, cache to: /tmp/hf_home/ace_step_ckpt\n"}
+,{"stream_name":"stdout","time":178.381445249,"data":"\n"}
+,{"stream_name":"stdout","time":178.569405329,"data":"Fetching 14 files:   0%|          | 0/14 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":178.712206878,"data":"Fetching 14 files:   7%|▋         | 1/14 [00:00\u003c00:02,  5.33it/s]\n"}
+,{"stream_name":"stdout","time":208.460458581,"data":"Fetching 14 files:  14%|█▍        | 2/14 [00:00\u003c00:01,  6.20it/s]\n"}
+,{"stream_name":"stdout","time":208.461862946,"data":"Fetching 14 files:  29%|██▊       | 4/14 [00:30\u003c01:33,  9.38s/it]\n"}
+,{"stream_name":"stdout","time":208.463228555,"data":"Fetching 14 files: 100%|██████████| 14/14 [00:30\u003c00:00,  2.15s/it]\n"}
+,{"stream_name":"stdout","time":220.714634985,"data":"There are modules in ACEStepTransformer2DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.\n"}
+,{"stream_name":"stdout","time":221.042024423,"data":"/usr/local/lib/python3.13/dist-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.\n"}
+,{"stream_name":"stdout","time":221.042803629,"data":"  WeightNorm.apply(module, name, dim)\n"}
+,{"stream_name":"stdout","time":222.041505611,"data":"There are modules in MusicDCAE that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.\n"}
+,{"stream_name":"stdout","time":229.236898805,"data":"21:36:05 decoder + vocoder cast to float32\n"}
+,{"stream_name":"stdout","time":229.237744522,"data":"21:36:05 ACE-Step pipeline ready bfloat16\n"}
+,{"stream_name":"stdout","time":229.247838218,"data":"2026-11-25 21:36:05.779 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":229.979710571,"data":"2026-11-25 21:36:06.507 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":230.011834949,"data":"2026-11-25 21:36:06.542 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":230.184744181,"data":"\n"}
+,{"stream_name":"stdout","time":233.90344478,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":234.746539074,"data":"  2%|▏         | 1/60 [00:03\u003c03:39,  3.72s/it]\n"}
+,{"stream_name":"stdout","time":236.066061387,"data":"  3%|▎         | 2/60 [00:04\u003c01:57,  2.03s/it]\n"}
+,{"stream_name":"stdout","time":237.390274139,"data":"  5%|▌         | 3/60 [00:05\u003c01:37,  1.70s/it]\n"}
+,{"stream_name":"stdout","time":238.720910842,"data":"  7%|▋         | 4/60 [00:07\u003c01:27,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":240.050982461,"data":"  8%|▊         | 5/60 [00:08\u003c01:20,  1.47s/it]\n"}
+,{"stream_name":"stdout","time":241.38459833,"data":" 10%|█         | 6/60 [00:09\u003c01:16,  1.43s/it]\n"}
+,{"stream_name":"stdout","time":242.722978549,"data":" 12%|█▏        | 7/60 [00:11\u003c01:13,  1.40s/it]\n"}
+,{"stream_name":"stdout","time":244.068478762,"data":" 13%|█▎        | 8/60 [00:12\u003c01:11,  1.38s/it]\n"}
+,{"stream_name":"stdout","time":245.421089962,"data":" 15%|█▌        | 9/60 [00:13\u003c01:09,  1.37s/it]\n"}
+,{"stream_name":"stdout","time":246.776346716,"data":" 17%|█▋        | 10/60 [00:15\u003c01:08,  1.36s/it]\n"}
+,{"stream_name":"stdout","time":248.13538942,"data":" 18%|█▊        | 11/60 [00:16\u003c01:06,  1.36s/it]\n"}
+,{"stream_name":"stdout","time":249.499857244,"data":" 20%|██        | 12/60 [00:17\u003c01:05,  1.36s/it]\n"}
+,{"stream_name":"stdout","time":250.865496047,"data":" 22%|██▏       | 13/60 [00:19\u003c01:03,  1.36s/it]\n"}
+,{"stream_name":"stdout","time":252.237673061,"data":" 23%|██▎       | 14/60 [00:20\u003c01:02,  1.36s/it]\n"}
+,{"stream_name":"stdout","time":255.5591239,"data":" 25%|██▌       | 15/60 [00:22\u003c01:01,  1.37s/it]\n"}
+,{"stream_name":"stdout","time":257.833254601,"data":" 27%|██▋       | 16/60 [00:25\u003c01:25,  1.95s/it]\n"}
+,{"stream_name":"stdout","time":260.624614588,"data":" 28%|██▊       | 17/60 [00:27\u003c01:28,  2.05s/it]\n"}
+,{"stream_name":"stdout","time":263.429656896,"data":" 30%|███       | 18/60 [00:30\u003c01:35,  2.27s/it]\n"}
+,{"stream_name":"stdout","time":266.270078333,"data":" 32%|███▏      | 19/60 [00:33\u003c01:39,  2.43s/it]\n"}
+,{"stream_name":"stdout","time":269.128734403,"data":" 33%|███▎      | 20/60 [00:36\u003c01:42,  2.56s/it]\n"}
+,{"stream_name":"stdout","time":272.014206345,"data":" 35%|███▌      | 21/60 [00:38\u003c01:43,  2.65s/it]\n"}
+,{"stream_name":"stdout","time":274.930176368,"data":" 37%|███▋      | 22/60 [00:41\u003c01:43,  2.72s/it]\n"}
+,{"stream_name":"stdout","time":277.850980163,"data":" 38%|███▊      | 23/60 [00:44\u003c01:42,  2.78s/it]\n"}
+,{"stream_name":"stdout","time":280.764388262,"data":" 40%|████      | 24/60 [00:47\u003c01:41,  2.82s/it]\n"}
+,{"stream_name":"stdout","time":283.703361723,"data":" 42%|████▏     | 25/60 [00:50\u003c01:39,  2.85s/it]\n"}
+,{"stream_name":"stdout","time":286.668574839,"data":" 43%|████▎     | 26/60 [00:53\u003c01:37,  2.88s/it]\n"}
+,{"stream_name":"stdout","time":289.67631475,"data":" 45%|████▌     | 27/60 [00:56\u003c01:35,  2.90s/it]\n"}
+,{"stream_name":"stdout","time":292.706171479,"data":" 47%|████▋     | 28/60 [00:59\u003c01:33,  2.93s/it]\n"}
+,{"stream_name":"stdout","time":295.777172049,"data":" 48%|████▊     | 29/60 [01:02\u003c01:31,  2.96s/it]\n"}
+,{"stream_name":"stdout","time":298.893686657,"data":" 50%|█████     | 30/60 [01:05\u003c01:29,  3.00s/it]\n"}
+,{"stream_name":"stdout","time":302.056256097,"data":" 52%|█████▏    | 31/60 [01:08\u003c01:27,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":305.256697902,"data":" 53%|█████▎    | 32/60 [01:11\u003c01:25,  3.07s/it]\n"}
+,{"stream_name":"stdout","time":308.508999359,"data":" 55%|█████▌    | 33/60 [01:15\u003c01:23,  3.11s/it]\n"}
+,{"stream_name":"stdout","time":311.808096944,"data":" 57%|█████▋    | 34/60 [01:18\u003c01:21,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":315.156660187,"data":" 58%|█████▊    | 35/60 [01:21\u003c01:19,  3.20s/it]\n"}
+,{"stream_name":"stdout","time":318.563859815,"data":" 60%|██████    | 36/60 [01:24\u003c01:17,  3.24s/it]\n"}
+,{"stream_name":"stdout","time":321.986959102,"data":" 62%|██████▏   | 37/60 [01:28\u003c01:15,  3.29s/it]\n"}
+,{"stream_name":"stdout","time":325.400626818,"data":" 63%|██████▎   | 38/60 [01:31\u003c01:13,  3.33s/it]\n"}
+,{"stream_name":"stdout","time":328.75630728,"data":" 65%|██████▌   | 39/60 [01:35\u003c01:10,  3.36s/it]\n"}
+,{"stream_name":"stdout","time":332.052034257,"data":" 67%|██████▋   | 40/60 [01:38\u003c01:07,  3.36s/it]\n"}
+,{"stream_name":"stdout","time":335.31005927,"data":" 68%|██████▊   | 41/60 [01:41\u003c01:03,  3.34s/it]\n"}
+,{"stream_name":"stdout","time":338.518193849,"data":" 70%|███████   | 42/60 [01:45\u003c00:59,  3.31s/it]\n"}
+,{"stream_name":"stdout","time":341.695144581,"data":" 72%|███████▏  | 43/60 [01:48\u003c00:55,  3.28s/it]\n"}
+,{"stream_name":"stdout","time":344.848081613,"data":" 73%|███████▎  | 44/60 [01:51\u003c00:52,  3.25s/it]\n"}
+,{"stream_name":"stdout","time":346.40567808,"data":" 75%|███████▌  | 45/60 [01:54\u003c00:48,  3.22s/it]\n"}
+,{"stream_name":"stdout","time":347.969989988,"data":" 77%|███████▋  | 46/60 [01:56\u003c00:38,  2.72s/it]\n"}
+,{"stream_name":"stdout","time":349.535325481,"data":" 78%|███████▊  | 47/60 [01:57\u003c00:30,  2.37s/it]\n"}
+,{"stream_name":"stdout","time":351.087235741,"data":" 80%|████████  | 48/60 [01:59\u003c00:25,  2.13s/it]\n"}
+,{"stream_name":"stdout","time":352.638002307,"data":" 82%|████████▏ | 49/60 [02:00\u003c00:21,  1.96s/it]\n"}
+,{"stream_name":"stdout","time":354.190311022,"data":" 83%|████████▎ | 50/60 [02:02\u003c00:18,  1.84s/it]\n"}
+,{"stream_name":"stdout","time":355.743278101,"data":" 85%|████████▌ | 51/60 [02:04\u003c00:15,  1.75s/it]\n"}
+,{"stream_name":"stdout","time":357.283808816,"data":" 87%|████████▋ | 52/60 [02:05\u003c00:13,  1.69s/it]\n"}
+,{"stream_name":"stdout","time":358.83038099,"data":" 88%|████████▊ | 53/60 [02:07\u003c00:11,  1.65s/it]\n"}
+,{"stream_name":"stdout","time":360.368695522,"data":" 90%|█████████ | 54/60 [02:08\u003c00:09,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":361.910437403,"data":" 92%|█████████▏| 55/60 [02:10\u003c00:07,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":363.451405471,"data":" 93%|█████████▎| 56/60 [02:11\u003c00:06,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":364.99615802,"data":" 95%|█████████▌| 57/60 [02:13\u003c00:04,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":366.544467726,"data":" 97%|█████████▋| 58/60 [02:14\u003c00:03,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":368.082656227,"data":" 98%|█████████▊| 59/60 [02:16\u003c00:01,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":368.083518356,"data":"100%|██████████| 60/60 [02:17\u003c00:00,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":368.084365956,"data":"100%|██████████| 60/60 [02:17\u003c00:00,  2.30s/it]\n"}
+,{"stream_name":"stdout","time":368.08511049,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":389.99495691,"data":"\n"}
+,{"stream_name":"stdout","time":389.995829278,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:38:46.525 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_a__s101.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":392.148148661,"data":"/usr/local/lib/python3.13/dist-packages/torchaudio/__init__.py:178: UserWarning: The 'format' parameter is not used by TorchCodec AudioEncoder. Format is determined by the file extension.\n"}
+,{"stream_name":"stdout","time":392.148974453,"data":"  return save_with_torchcodec(\n"}
+,{"stream_name":"stdout","time":392.149639273,"data":"/usr/local/lib/python3.13/dist-packages/torchaudio/__init__.py:178: UserWarning: The 'backend' parameter is not used by TorchCodec AudioEncoder.\n"}
+,{"stream_name":"stdout","time":392.150443149,"data":"  return save_with_torchcodec(\n"}
+,{"stream_name":"stdout","time":392.25491475,"data":"\n"}
+,{"stream_name":"stdout","time":392.255753769,"data":"100%|██████████| 1/1 [00:02\u003c00:00,  2.26s/it]\n"}
+,{"stream_name":"stdout","time":392.256515672,"data":"100%|██████████| 1/1 [00:02\u003c00:00,  2.26s/it]\n"}
+,{"stream_name":"stdout","time":392.268816705,"data":"2026-11-25 21:38:48.800 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.07GB allocated, 8.70GB reserved\n"}
+,{"stream_name":"stdout","time":417.812365681,"data":"21:39:14 ok full_a__s101 {'seconds': 59.91, 'peak': 0.835, 'rms_db': -18.1, 'clipped_pct': 0.0, 'tempo_bpm': 90.7, 'mid_band_ratio': 0.589} in 189s\n"}
+,{"stream_name":"stdout","time":417.813240352,"data":"2026-11-25 21:39:14.338 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":417.890642548,"data":"2026-11-25 21:39:14.415 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":417.893949821,"data":"2026-11-25 21:39:14.417 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":417.909124975,"data":"\n"}
+,{"stream_name":"stdout","time":419.606463709,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":420.632036536,"data":"  2%|▏         | 1/60 [00:01\u003c01:40,  1.70s/it]\n"}
+,{"stream_name":"stdout","time":422.242587625,"data":"  3%|▎         | 2/60 [00:02\u003c01:15,  1.30s/it]\n"}
+,{"stream_name":"stdout","time":423.877980395,"data":"  5%|▌         | 3/60 [00:04\u003c01:22,  1.44s/it]\n"}
+,{"stream_name":"stdout","time":425.53186347,"data":"  7%|▋         | 4/60 [00:05\u003c01:25,  1.52s/it]\n"}
+,{"stream_name":"stdout","time":427.207912655,"data":"  8%|▊         | 5/60 [00:07\u003c01:26,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":428.90142105,"data":" 10%|█         | 6/60 [00:09\u003c01:26,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":430.609599234,"data":" 12%|█▏        | 7/60 [00:10\u003c01:26,  1.63s/it]\n"}
+,{"stream_name":"stdout","time":432.341791801,"data":" 13%|█▎        | 8/60 [00:12\u003c01:26,  1.66s/it]\n"}
+,{"stream_name":"stdout","time":434.091707462,"data":" 15%|█▌        | 9/60 [00:14\u003c01:25,  1.68s/it]\n"}
+,{"stream_name":"stdout","time":435.866230866,"data":" 17%|█▋        | 10/60 [00:16\u003c01:25,  1.70s/it]\n"}
+,{"stream_name":"stdout","time":437.651216743,"data":" 18%|█▊        | 11/60 [00:17\u003c01:24,  1.72s/it]\n"}
+,{"stream_name":"stdout","time":439.437108602,"data":" 20%|██        | 12/60 [00:19\u003c01:23,  1.74s/it]\n"}
+,{"stream_name":"stdout","time":441.215263133,"data":" 22%|██▏       | 13/60 [00:21\u003c01:22,  1.76s/it]\n"}
+,{"stream_name":"stdout","time":442.972592059,"data":" 23%|██▎       | 14/60 [00:23\u003c01:21,  1.76s/it]\n"}
+,{"stream_name":"stdout","time":446.416888116,"data":" 25%|██▌       | 15/60 [00:25\u003c01:19,  1.76s/it]\n"}
+,{"stream_name":"stdout","time":449.756938079,"data":" 27%|██▋       | 16/60 [00:28\u003c01:39,  2.27s/it]\n"}
+,{"stream_name":"stdout","time":453.00465895,"data":" 28%|██▊       | 17/60 [00:31\u003c01:51,  2.59s/it]\n"}
+,{"stream_name":"stdout","time":456.188630251,"data":" 30%|███       | 18/60 [00:35\u003c01:57,  2.79s/it]\n"}
+,{"stream_name":"stdout","time":459.329484973,"data":" 32%|███▏      | 19/60 [00:38\u003c01:59,  2.91s/it]\n"}
+,{"stream_name":"stdout","time":462.425531042,"data":" 33%|███▎      | 20/60 [00:41\u003c01:59,  2.98s/it]\n"}
+,{"stream_name":"stdout","time":465.492031774,"data":" 35%|███▌      | 21/60 [00:44\u003c01:57,  3.01s/it]\n"}
+,{"stream_name":"stdout","time":468.536012757,"data":" 37%|███▋      | 22/60 [00:47\u003c01:55,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":471.565089901,"data":" 38%|███▊      | 23/60 [00:50\u003c01:52,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":474.590313366,"data":" 40%|████      | 24/60 [00:53\u003c01:49,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":477.612271866,"data":" 42%|████▏     | 25/60 [00:56\u003c01:46,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":480.641150036,"data":" 43%|████▎     | 26/60 [00:59\u003c01:42,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":483.670493358,"data":" 45%|████▌     | 27/60 [01:02\u003c01:39,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":486.710633215,"data":" 47%|████▋     | 28/60 [01:05\u003c01:36,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":489.774297239,"data":" 48%|████▊     | 29/60 [01:08\u003c01:34,  3.03s/it]\n"}
+,{"stream_name":"stdout","time":492.867949093,"data":" 50%|█████     | 30/60 [01:11\u003c01:31,  3.04s/it]\n"}
+,{"stream_name":"stdout","time":495.97634491,"data":" 52%|█████▏    | 31/60 [01:14\u003c01:28,  3.06s/it]\n"}
+,{"stream_name":"stdout","time":499.106154484,"data":" 53%|█████▎    | 32/60 [01:18\u003c01:26,  3.07s/it]\n"}
+,{"stream_name":"stdout","time":502.26571442,"data":" 55%|█████▌    | 33/60 [01:21\u003c01:23,  3.09s/it]\n"}
+,{"stream_name":"stdout","time":505.460188002,"data":" 57%|█████▋    | 34/60 [01:24\u003c01:20,  3.11s/it]\n"}
+,{"stream_name":"stdout","time":508.685835143,"data":" 58%|█████▊    | 35/60 [01:27\u003c01:18,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":511.939501065,"data":" 60%|██████    | 36/60 [01:30\u003c01:15,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":515.189276885,"data":" 62%|██████▏   | 37/60 [01:34\u003c01:13,  3.19s/it]\n"}
+,{"stream_name":"stdout","time":518.457496932,"data":" 63%|██████▎   | 38/60 [01:37\u003c01:10,  3.21s/it]\n"}
+,{"stream_name":"stdout","time":521.722208856,"data":" 65%|██████▌   | 39/60 [01:40\u003c01:07,  3.23s/it]\n"}
+,{"stream_name":"stdout","time":524.97463917,"data":" 67%|██████▋   | 40/60 [01:43\u003c01:04,  3.24s/it]\n"}
+,{"stream_name":"stdout","time":528.224591028,"data":" 68%|██████▊   | 41/60 [01:47\u003c01:01,  3.24s/it]\n"}
+,{"stream_name":"stdout","time":531.452439273,"data":" 70%|███████   | 42/60 [01:50\u003c00:58,  3.24s/it]\n"}
+,{"stream_name":"stdout","time":534.668353016,"data":" 72%|███████▏  | 43/60 [01:53\u003c00:55,  3.24s/it]\n"}
+,{"stream_name":"stdout","time":537.869255709,"data":" 73%|███████▎  | 44/60 [01:56\u003c00:51,  3.23s/it]\n"}
+,{"stream_name":"stdout","time":539.459011932,"data":" 75%|███████▌  | 45/60 [01:59\u003c00:48,  3.22s/it]\n"}
+,{"stream_name":"stdout","time":541.04549502,"data":" 77%|███████▋  | 46/60 [02:01\u003c00:38,  2.73s/it]\n"}
+,{"stream_name":"stdout","time":542.643833546,"data":" 78%|███████▊  | 47/60 [02:03\u003c00:31,  2.39s/it]\n"}
+,{"stream_name":"stdout","time":544.218053535,"data":" 80%|████████  | 48/60 [02:04\u003c00:25,  2.15s/it]\n"}
+,{"stream_name":"stdout","time":545.8008417,"data":" 82%|████████▏ | 49/60 [02:06\u003c00:21,  1.98s/it]\n"}
+,{"stream_name":"stdout","time":547.379777005,"data":" 83%|████████▎ | 50/60 [02:07\u003c00:18,  1.86s/it]\n"}
+,{"stream_name":"stdout","time":548.953616962,"data":" 85%|████████▌ | 51/60 [02:09\u003c00:15,  1.78s/it]\n"}
+,{"stream_name":"stdout","time":550.52741605,"data":" 87%|████████▋ | 52/60 [02:11\u003c00:13,  1.72s/it]\n"}
+,{"stream_name":"stdout","time":552.09880407,"data":" 88%|████████▊ | 53/60 [02:12\u003c00:11,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":553.664832417,"data":" 90%|█████████ | 54/60 [02:14\u003c00:09,  1.64s/it]\n"}
+,{"stream_name":"stdout","time":555.227072801,"data":" 92%|█████████▏| 55/60 [02:15\u003c00:08,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":556.792185887,"data":" 93%|█████████▎| 56/60 [02:17\u003c00:06,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":558.356593906,"data":" 95%|█████████▌| 57/60 [02:18\u003c00:04,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":559.919828985,"data":" 97%|█████████▋| 58/60 [02:20\u003c00:03,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":561.486593317,"data":" 98%|█████████▊| 59/60 [02:22\u003c00:01,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":561.487494359,"data":"100%|██████████| 60/60 [02:23\u003c00:00,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":561.488215739,"data":"100%|██████████| 60/60 [02:23\u003c00:00,  2.39s/it]\n"}
+,{"stream_name":"stdout","time":561.488959175,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":576.370668227,"data":"\n"}
+,{"stream_name":"stdout","time":576.371435942,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:41:52.893 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_a__s102.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":576.372182596,"data":"/usr/local/lib/python3.13/dist-packages/torchaudio/__init__.py:178: UserWarning: The 'format' parameter is not used by TorchCodec AudioEncoder. Format is determined by the file extension.\n"}
+,{"stream_name":"stdout","time":576.373072816,"data":"  return save_with_torchcodec(\n"}
+,{"stream_name":"stdout","time":576.373933523,"data":"/usr/local/lib/python3.13/dist-packages/torchaudio/__init__.py:178: UserWarning: The 'backend' parameter is not used by TorchCodec AudioEncoder.\n"}
+,{"stream_name":"stdout","time":576.374735347,"data":"  return save_with_torchcodec(\n"}
+,{"stream_name":"stdout","time":576.388730736,"data":"\n"}
+,{"stream_name":"stdout","time":576.389440628,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 37.51it/s]\n"}
+,{"stream_name":"stdout","time":576.411141736,"data":"2026-11-25 21:41:52.942 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.70GB reserved\n"}
+,{"stream_name":"stdout","time":578.085769673,"data":"21:41:54 ok full_a__s102 {'seconds': 59.91, 'peak': 0.881, 'rms_db': -16.8, 'clipped_pct': 0.0, 'tempo_bpm': 100.4, 'mid_band_ratio': 0.437} in 160s\n"}
+,{"stream_name":"stdout","time":578.086735414,"data":"2026-11-25 21:41:54.617 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":578.155656559,"data":"2026-11-25 21:41:54.684 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":578.158731791,"data":"2026-11-25 21:41:54.685 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":578.173141907,"data":"\n"}
+,{"stream_name":"stdout","time":579.770895662,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":580.766355395,"data":"  2%|▏         | 1/60 [00:01\u003c01:34,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":582.323683278,"data":"  3%|▎         | 2/60 [00:02\u003c01:12,  1.24s/it]\n"}
+,{"stream_name":"stdout","time":583.886247912,"data":"  5%|▌         | 3/60 [00:04\u003c01:19,  1.39s/it]\n"}
+,{"stream_name":"stdout","time":585.449939974,"data":"  7%|▋         | 4/60 [00:05\u003c01:21,  1.46s/it]\n"}
+,{"stream_name":"stdout","time":587.0200131,"data":"  8%|▊         | 5/60 [00:07\u003c01:22,  1.49s/it]\n"}
+,{"stream_name":"stdout","time":588.593126614,"data":" 10%|█         | 6/60 [00:08\u003c01:22,  1.52s/it]\n"}
+,{"stream_name":"stdout","time":590.170776334,"data":" 12%|█▏        | 7/60 [00:10\u003c01:21,  1.54s/it]\n"}
+,{"stream_name":"stdout","time":591.755347265,"data":" 13%|█▎        | 8/60 [00:11\u003c01:20,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":593.338347543,"data":" 15%|█▌        | 9/60 [00:13\u003c01:19,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":594.922886552,"data":" 17%|█▋        | 10/60 [00:15\u003c01:18,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":596.515801964,"data":" 18%|█▊        | 11/60 [00:16\u003c01:17,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":598.107407606,"data":" 20%|██        | 12/60 [00:18\u003c01:15,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":599.705319794,"data":" 22%|██▏       | 13/60 [00:19\u003c01:14,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":601.300592272,"data":" 23%|██▎       | 14/60 [00:21\u003c01:13,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":604.503484591,"data":" 25%|██▌       | 15/60 [00:23\u003c01:11,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":607.698899072,"data":" 27%|██▋       | 16/60 [00:26\u003c01:31,  2.08s/it]\n"}
+,{"stream_name":"stdout","time":610.877281928,"data":" 28%|██▊       | 17/60 [00:29\u003c01:43,  2.41s/it]\n"}
+,{"stream_name":"stdout","time":614.065965397,"data":" 30%|███       | 18/60 [00:32\u003c01:51,  2.64s/it]\n"}
+,{"stream_name":"stdout","time":617.250678231,"data":" 32%|███▏      | 19/60 [00:35\u003c01:55,  2.81s/it]\n"}
+,{"stream_name":"stdout","time":620.425453038,"data":" 33%|███▎      | 20/60 [00:39\u003c01:56,  2.92s/it]\n"}
+,{"stream_name":"stdout","time":623.585384554,"data":" 35%|███▌      | 21/60 [00:42\u003c01:56,  3.00s/it]\n"}
+,{"stream_name":"stdout","time":626.742779926,"data":" 37%|███▋      | 22/60 [00:45\u003c01:55,  3.05s/it]\n"}
+,{"stream_name":"stdout","time":629.900213455,"data":" 38%|███▊      | 23/60 [00:48\u003c01:53,  3.08s/it]\n"}
+,{"stream_name":"stdout","time":633.051296664,"data":" 40%|████      | 24/60 [00:51\u003c01:51,  3.10s/it]\n"}
+,{"stream_name":"stdout","time":636.196358242,"data":" 42%|████▏     | 25/60 [00:54\u003c01:49,  3.12s/it]\n"}
+,{"stream_name":"stdout","time":639.340966994,"data":" 43%|████▎     | 26/60 [00:58\u003c01:46,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":642.477135344,"data":" 45%|████▌     | 27/60 [01:01\u003c01:43,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":645.613466334,"data":" 47%|████▋     | 28/60 [01:04\u003c01:40,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":648.744025968,"data":" 48%|████▊     | 29/60 [01:07\u003c01:37,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":651.867714085,"data":" 50%|█████     | 30/60 [01:10\u003c01:33,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":654.991072908,"data":" 52%|█████▏    | 31/60 [01:13\u003c01:30,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":658.11262767,"data":" 53%|█████▎    | 32/60 [01:16\u003c01:27,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":661.245214581,"data":" 55%|█████▌    | 33/60 [01:19\u003c01:24,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":664.390493006,"data":" 57%|█████▋    | 34/60 [01:23\u003c01:21,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":667.530611742,"data":" 58%|█████▊    | 35/60 [01:26\u003c01:18,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":670.680133665,"data":" 60%|██████    | 36/60 [01:29\u003c01:15,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":673.823977138,"data":" 62%|██████▏   | 37/60 [01:32\u003c01:12,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":676.970017713,"data":" 63%|██████▎   | 38/60 [01:35\u003c01:09,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":680.122109181,"data":" 65%|██████▌   | 39/60 [01:38\u003c01:06,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":683.262928541,"data":" 67%|██████▋   | 40/60 [01:41\u003c01:02,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":686.412649857,"data":" 68%|██████▊   | 41/60 [01:45\u003c00:59,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":689.560887461,"data":" 70%|███████   | 42/60 [01:48\u003c00:56,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":692.710792872,"data":" 72%|███████▏  | 43/60 [01:51\u003c00:53,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":695.865408066,"data":" 73%|███████▎  | 44/60 [01:54\u003c00:50,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":697.43622527,"data":" 75%|███████▌  | 45/60 [01:57\u003c00:47,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":699.019109318,"data":" 77%|███████▋  | 46/60 [01:59\u003c00:37,  2.68s/it]\n"}
+,{"stream_name":"stdout","time":700.60262592,"data":" 78%|███████▊  | 47/60 [02:00\u003c00:30,  2.35s/it]\n"}
+,{"stream_name":"stdout","time":702.29116512,"data":" 80%|████████  | 48/60 [02:02\u003c00:25,  2.12s/it]\n"}
+,{"stream_name":"stdout","time":703.770240274,"data":" 82%|████████▏ | 49/60 [02:04\u003c00:21,  1.96s/it]\n"}
+,{"stream_name":"stdout","time":705.356288659,"data":" 83%|████████▎ | 50/60 [02:05\u003c00:18,  1.85s/it]\n"}
+,{"stream_name":"stdout","time":706.939250819,"data":" 85%|████████▌ | 51/60 [02:07\u003c00:15,  1.77s/it]\n"}
+,{"stream_name":"stdout","time":708.523691622,"data":" 87%|████████▋ | 52/60 [02:08\u003c00:13,  1.71s/it]\n"}
+,{"stream_name":"stdout","time":710.107099154,"data":" 88%|████████▊ | 53/60 [02:10\u003c00:11,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":711.689643649,"data":" 90%|█████████ | 54/60 [02:11\u003c00:09,  1.65s/it]\n"}
+,{"stream_name":"stdout","time":713.269670867,"data":" 92%|█████████▏| 55/60 [02:13\u003c00:08,  1.63s/it]\n"}
+,{"stream_name":"stdout","time":714.850207534,"data":" 93%|█████████▎| 56/60 [02:15\u003c00:06,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":716.43263368,"data":" 95%|█████████▌| 57/60 [02:16\u003c00:04,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":718.017601007,"data":" 97%|█████████▋| 58/60 [02:18\u003c00:03,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":719.600773328,"data":" 98%|█████████▊| 59/60 [02:19\u003c00:01,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":719.60204885,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":719.602881147,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  2.36s/it]\n"}
+,{"stream_name":"stdout","time":719.603761036,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":734.663371021,"data":"\n"}
+,{"stream_name":"stdout","time":734.664356278,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:44:31.184 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_b__s202.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":734.679664521,"data":"\n"}
+,{"stream_name":"stdout","time":734.680921858,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 38.82it/s]\n"}
+,{"stream_name":"stdout","time":734.706727347,"data":"2026-11-25 21:44:31.238 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.07GB allocated, 8.70GB reserved\n"}
+,{"stream_name":"stdout","time":736.328286561,"data":"21:44:32 ok full_b__s202 {'seconds': 59.91, 'peak': 0.954, 'rms_db': -15.7, 'clipped_pct': 0.0, 'tempo_bpm': 119.7, 'mid_band_ratio': 0.41} in 158s\n"}
+,{"stream_name":"stdout","time":736.32910657,"data":"2026-11-25 21:44:32.859 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":736.403699883,"data":"2026-11-25 21:44:32.929 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":736.40393881,"data":"2026-11-25 21:44:32.930 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":736.421871065,"data":"\n"}
+,{"stream_name":"stdout","time":738.096023466,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":739.104420588,"data":"  2%|▏         | 1/60 [00:01\u003c01:38,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":740.671830679,"data":"  3%|▎         | 2/60 [00:02\u003c01:14,  1.28s/it]\n"}
+,{"stream_name":"stdout","time":742.245277548,"data":"  5%|▌         | 3/60 [00:04\u003c01:20,  1.41s/it]\n"}
+,{"stream_name":"stdout","time":743.817191178,"data":"  7%|▋         | 4/60 [00:05\u003c01:22,  1.48s/it]\n"}
+,{"stream_name":"stdout","time":745.394854346,"data":"  8%|▊         | 5/60 [00:07\u003c01:23,  1.51s/it]\n"}
+,{"stream_name":"stdout","time":746.975047089,"data":" 10%|█         | 6/60 [00:08\u003c01:22,  1.53s/it]\n"}
+,{"stream_name":"stdout","time":748.553718415,"data":" 12%|█▏        | 7/60 [00:10\u003c01:22,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":750.138863122,"data":" 13%|█▎        | 8/60 [00:12\u003c01:21,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":751.715972898,"data":" 15%|█▌        | 9/60 [00:13\u003c01:19,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":753.300948208,"data":" 17%|█▋        | 10/60 [00:15\u003c01:18,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":754.88645149,"data":" 18%|█▊        | 11/60 [00:16\u003c01:17,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":756.474688737,"data":" 20%|██        | 12/60 [00:18\u003c01:15,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":758.060717034,"data":" 22%|██▏       | 13/60 [00:20\u003c01:14,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":759.650739335,"data":" 23%|██▎       | 14/60 [00:21\u003c01:12,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":762.834653763,"data":" 25%|██▌       | 15/60 [00:23\u003c01:11,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":766.021677274,"data":" 27%|██▋       | 16/60 [00:26\u003c01:30,  2.07s/it]\n"}
+,{"stream_name":"stdout","time":769.189904815,"data":" 28%|██▊       | 17/60 [00:29\u003c01:43,  2.40s/it]\n"}
+,{"stream_name":"stdout","time":772.365757251,"data":" 30%|███       | 18/60 [00:32\u003c01:50,  2.63s/it]\n"}
+,{"stream_name":"stdout","time":775.547097595,"data":" 32%|███▏      | 19/60 [00:35\u003c01:54,  2.80s/it]\n"}
+,{"stream_name":"stdout","time":778.727775018,"data":" 33%|███▎      | 20/60 [00:39\u003c01:56,  2.91s/it]\n"}
+,{"stream_name":"stdout","time":781.915251806,"data":" 35%|███▌      | 21/60 [00:42\u003c01:56,  2.99s/it]\n"}
+,{"stream_name":"stdout","time":785.099597488,"data":" 37%|███▋      | 22/60 [00:45\u003c01:55,  3.05s/it]\n"}
+,{"stream_name":"stdout","time":788.277452966,"data":" 38%|███▊      | 23/60 [00:48\u003c01:54,  3.09s/it]\n"}
+,{"stream_name":"stdout","time":791.451602559,"data":" 40%|████      | 24/60 [00:51\u003c01:52,  3.12s/it]\n"}
+,{"stream_name":"stdout","time":794.629588639,"data":" 42%|████▏     | 25/60 [00:55\u003c01:49,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":797.82186419,"data":" 43%|████▎     | 26/60 [00:58\u003c01:47,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":800.972236149,"data":" 45%|████▌     | 27/60 [01:01\u003c01:44,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":804.145441163,"data":" 47%|████▋     | 28/60 [01:04\u003c01:41,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":807.311720366,"data":" 48%|████▊     | 29/60 [01:07\u003c01:38,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":810.485541792,"data":" 50%|█████     | 30/60 [01:10\u003c01:34,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":813.649979469,"data":" 52%|█████▏    | 31/60 [01:14\u003c01:31,  3.17s/it]\n"}
+,{"stream_name":"stdout","time":816.812306022,"data":" 53%|█████▎    | 32/60 [01:17\u003c01:28,  3.17s/it]\n"}
+,{"stream_name":"stdout","time":819.971075179,"data":" 55%|█████▌    | 33/60 [01:20\u003c01:25,  3.17s/it]\n"}
+,{"stream_name":"stdout","time":823.127348291,"data":" 57%|█████▋    | 34/60 [01:23\u003c01:22,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":826.280516256,"data":" 58%|█████▊    | 35/60 [01:26\u003c01:19,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":829.444521314,"data":" 60%|██████    | 36/60 [01:29\u003c01:15,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":832.583928017,"data":" 62%|██████▏   | 37/60 [01:33\u003c01:12,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":835.739653672,"data":" 63%|██████▎   | 38/60 [01:36\u003c01:09,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":838.894937371,"data":" 65%|██████▌   | 39/60 [01:39\u003c01:06,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":842.04565708,"data":" 67%|██████▋   | 40/60 [01:42\u003c01:03,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":845.195465973,"data":" 68%|██████▊   | 41/60 [01:45\u003c00:59,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":848.342493072,"data":" 70%|███████   | 42/60 [01:48\u003c00:56,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":851.493875135,"data":" 72%|███████▏  | 43/60 [01:51\u003c00:53,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":854.639387288,"data":" 73%|███████▎  | 44/60 [01:55\u003c00:50,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":856.204977228,"data":" 75%|███████▌  | 45/60 [01:58\u003c00:47,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":857.783730558,"data":" 77%|███████▋  | 46/60 [01:59\u003c00:37,  2.67s/it]\n"}
+,{"stream_name":"stdout","time":859.36213444,"data":" 78%|███████▊  | 47/60 [02:01\u003c00:30,  2.35s/it]\n"}
+,{"stream_name":"stdout","time":860.952095055,"data":" 80%|████████  | 48/60 [02:02\u003c00:25,  2.12s/it]\n"}
+,{"stream_name":"stdout","time":862.521114123,"data":" 82%|████████▏ | 49/60 [02:04\u003c00:21,  1.95s/it]\n"}
+,{"stream_name":"stdout","time":864.097929151,"data":" 83%|████████▎ | 50/60 [02:06\u003c00:18,  1.84s/it]\n"}
+,{"stream_name":"stdout","time":865.678245241,"data":" 85%|████████▌ | 51/60 [02:07\u003c00:15,  1.76s/it]\n"}
+,{"stream_name":"stdout","time":867.253068586,"data":" 87%|████████▋ | 52/60 [02:09\u003c00:13,  1.71s/it]\n"}
+,{"stream_name":"stdout","time":868.831579644,"data":" 88%|████████▊ | 53/60 [02:10\u003c00:11,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":870.40532224,"data":" 90%|█████████ | 54/60 [02:12\u003c00:09,  1.64s/it]\n"}
+,{"stream_name":"stdout","time":871.982607351,"data":" 92%|█████████▏| 55/60 [02:13\u003c00:08,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":873.555934793,"data":" 93%|█████████▎| 56/60 [02:15\u003c00:06,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":875.129688438,"data":" 95%|█████████▌| 57/60 [02:17\u003c00:04,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":876.705699293,"data":" 97%|█████████▋| 58/60 [02:18\u003c00:03,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":878.282014751,"data":" 98%|█████████▊| 59/60 [02:20\u003c00:01,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":878.28296335,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":878.28367248,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  2.36s/it]\n"}
+,{"stream_name":"stdout","time":878.284430355,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":893.262217595,"data":"\n"}
+,{"stream_name":"stdout","time":893.26309664,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:47:09.773 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_b__s203.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":893.273314955,"data":"\n"}
+,{"stream_name":"stdout","time":893.274432107,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 31.60it/s]\n"}
+,{"stream_name":"stdout","time":893.297975736,"data":"2026-11-25 21:47:09.829 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.67GB reserved\n"}
+,{"stream_name":"stdout","time":894.866411561,"data":"21:47:11 ok full_b__s203 {'seconds': 59.91, 'peak': 0.89, 'rms_db': -17.1, 'clipped_pct': 0.0, 'tempo_bpm': 175.8, 'mid_band_ratio': 0.652} in 159s\n"}
+,{"stream_name":"stdout","time":894.867363169,"data":"2026-11-25 21:47:11.397 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":894.936226181,"data":"2026-11-25 21:47:11.464 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":894.937189271,"data":"2026-11-25 21:47:11.465 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":894.953054064,"data":"\n"}
+,{"stream_name":"stdout","time":896.552038783,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":897.552584027,"data":"  2%|▏         | 1/60 [00:01\u003c01:34,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":899.108943618,"data":"  3%|▎         | 2/60 [00:02\u003c01:12,  1.25s/it]\n"}
+,{"stream_name":"stdout","time":900.672473933,"data":"  5%|▌         | 3/60 [00:04\u003c01:19,  1.39s/it]\n"}
+,{"stream_name":"stdout","time":902.236775883,"data":"  7%|▋         | 4/60 [00:05\u003c01:21,  1.46s/it]\n"}
+,{"stream_name":"stdout","time":903.804607645,"data":"  8%|▊         | 5/60 [00:07\u003c01:22,  1.50s/it]\n"}
+,{"stream_name":"stdout","time":905.372619372,"data":" 10%|█         | 6/60 [00:08\u003c01:22,  1.52s/it]\n"}
+,{"stream_name":"stdout","time":906.943344878,"data":" 12%|█▏        | 7/60 [00:10\u003c01:21,  1.54s/it]\n"}
+,{"stream_name":"stdout","time":908.523251066,"data":" 13%|█▎        | 8/60 [00:11\u003c01:20,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":910.105709112,"data":" 15%|█▌        | 9/60 [00:13\u003c01:19,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":911.682929889,"data":" 17%|█▋        | 10/60 [00:15\u003c01:18,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":913.265728631,"data":" 18%|█▊        | 11/60 [00:16\u003c01:16,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":914.846728984,"data":" 20%|██        | 12/60 [00:18\u003c01:15,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":916.432501892,"data":" 22%|██▏       | 13/60 [00:19\u003c01:14,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":918.020374412,"data":" 23%|██▎       | 14/60 [00:21\u003c01:12,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":921.201777576,"data":" 25%|██▌       | 15/60 [00:23\u003c01:11,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":924.38226874,"data":" 27%|██▋       | 16/60 [00:26\u003c01:30,  2.06s/it]\n"}
+,{"stream_name":"stdout","time":927.546381182,"data":" 28%|██▊       | 17/60 [00:29\u003c01:43,  2.40s/it]\n"}
+,{"stream_name":"stdout","time":930.727964645,"data":" 30%|███       | 18/60 [00:32\u003c01:50,  2.63s/it]\n"}
+,{"stream_name":"stdout","time":933.916539011,"data":" 32%|███▏      | 19/60 [00:35\u003c01:54,  2.80s/it]\n"}
+,{"stream_name":"stdout","time":937.109835705,"data":" 33%|███▎      | 20/60 [00:38\u003c01:56,  2.91s/it]\n"}
+,{"stream_name":"stdout","time":940.293845679,"data":" 35%|███▌      | 21/60 [00:42\u003c01:56,  3.00s/it]\n"}
+,{"stream_name":"stdout","time":943.475279366,"data":" 37%|███▋      | 22/60 [00:45\u003c01:56,  3.05s/it]\n"}
+,{"stream_name":"stdout","time":946.650211104,"data":" 38%|███▊      | 23/60 [00:48\u003c01:54,  3.09s/it]\n"}
+,{"stream_name":"stdout","time":949.814596946,"data":" 40%|████      | 24/60 [00:51\u003c01:52,  3.12s/it]\n"}
+,{"stream_name":"stdout","time":952.974437749,"data":" 42%|████▏     | 25/60 [00:54\u003c01:49,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":956.144046773,"data":" 43%|████▎     | 26/60 [00:58\u003c01:46,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":959.284599807,"data":" 45%|████▌     | 27/60 [01:01\u003c01:43,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":962.433469695,"data":" 47%|████▋     | 28/60 [01:04\u003c01:40,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":965.586468298,"data":" 48%|████▊     | 29/60 [01:07\u003c01:37,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":968.73544264,"data":" 50%|█████     | 30/60 [01:10\u003c01:34,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":971.8832808,"data":" 52%|█████▏    | 31/60 [01:13\u003c01:31,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":975.022092369,"data":" 53%|█████▎    | 32/60 [01:16\u003c01:28,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":978.158608738,"data":" 55%|█████▌    | 33/60 [01:20\u003c01:24,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":981.295190021,"data":" 57%|█████▋    | 34/60 [01:23\u003c01:21,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":984.428024362,"data":" 58%|█████▊    | 35/60 [01:26\u003c01:18,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":987.569475084,"data":" 60%|██████    | 36/60 [01:29\u003c01:15,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":990.687186423,"data":" 62%|██████▏   | 37/60 [01:32\u003c01:12,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":993.830613863,"data":" 63%|██████▎   | 38/60 [01:35\u003c01:08,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":996.977434148,"data":" 65%|██████▌   | 39/60 [01:38\u003c01:05,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1000.127257041,"data":" 67%|██████▋   | 40/60 [01:42\u003c01:02,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1003.27777954,"data":" 68%|██████▊   | 41/60 [01:45\u003c00:59,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1006.43902251,"data":" 70%|███████   | 42/60 [01:48\u003c00:56,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1009.594015922,"data":" 72%|███████▏  | 43/60 [01:51\u003c00:53,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1012.756525953,"data":" 73%|███████▎  | 44/60 [01:54\u003c00:50,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1014.337620985,"data":" 75%|███████▌  | 45/60 [01:57\u003c00:47,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1015.925342445,"data":" 77%|███████▋  | 46/60 [01:59\u003c00:37,  2.68s/it]\n"}
+,{"stream_name":"stdout","time":1017.511689939,"data":" 78%|███████▊  | 47/60 [02:00\u003c00:30,  2.35s/it]\n"}
+,{"stream_name":"stdout","time":1019.114495231,"data":" 80%|████████  | 48/60 [02:02\u003c00:25,  2.12s/it]\n"}
+,{"stream_name":"stdout","time":1020.694877243,"data":" 82%|████████▏ | 49/60 [02:04\u003c00:21,  1.96s/it]\n"}
+,{"stream_name":"stdout","time":1022.285809173,"data":" 83%|████████▎ | 50/60 [02:05\u003c00:18,  1.85s/it]\n"}
+,{"stream_name":"stdout","time":1023.878018335,"data":" 85%|████████▌ | 51/60 [02:07\u003c00:15,  1.77s/it]\n"}
+,{"stream_name":"stdout","time":1025.468823702,"data":" 87%|████████▋ | 52/60 [02:08\u003c00:13,  1.72s/it]\n"}
+,{"stream_name":"stdout","time":1027.063370219,"data":" 88%|████████▊ | 53/60 [02:10\u003c00:11,  1.68s/it]\n"}
+,{"stream_name":"stdout","time":1028.65892711,"data":" 90%|█████████ | 54/60 [02:12\u003c00:09,  1.65s/it]\n"}
+,{"stream_name":"stdout","time":1030.251278917,"data":" 92%|█████████▏| 55/60 [02:13\u003c00:08,  1.64s/it]\n"}
+,{"stream_name":"stdout","time":1031.849443117,"data":" 93%|█████████▎| 56/60 [02:15\u003c00:06,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":1033.439130489,"data":" 95%|█████████▌| 57/60 [02:16\u003c00:04,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":1035.03220203,"data":" 97%|█████████▋| 58/60 [02:18\u003c00:03,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":1036.623957552,"data":" 98%|█████████▊| 59/60 [02:20\u003c00:01,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":1036.625053384,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":1036.625865764,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  2.36s/it]\n"}
+,{"stream_name":"stdout","time":1036.626641126,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":1051.763311737,"data":"\n"}
+,{"stream_name":"stdout","time":1051.764167888,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:49:48.281 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_c__s303.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1051.772002772,"data":"\n"}
+,{"stream_name":"stdout","time":1051.772783218,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 44.09it/s]\n"}
+,{"stream_name":"stdout","time":1051.798740296,"data":"2026-11-25 21:49:48.330 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.66GB reserved\n"}
+,{"stream_name":"stdout","time":1053.394944131,"data":"21:49:49 ok full_c__s303 {'seconds': 59.91, 'peak': 0.922, 'rms_db': -16.4, 'clipped_pct': 0.0, 'tempo_bpm': 160.7, 'mid_band_ratio': 0.289} in 159s\n"}
+,{"stream_name":"stdout","time":1053.396380098,"data":"2026-11-25 21:49:49.926 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1053.466628455,"data":"2026-11-25 21:49:49.993 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1053.466795489,"data":"2026-11-25 21:49:49.994 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1053.483750821,"data":"\n"}
+,{"stream_name":"stdout","time":1055.092695434,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1056.103614209,"data":"  2%|▏         | 1/60 [00:01\u003c01:34,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":1057.671247867,"data":"  3%|▎         | 2/60 [00:02\u003c01:12,  1.26s/it]\n"}
+,{"stream_name":"stdout","time":1059.247122213,"data":"  5%|▌         | 3/60 [00:04\u003c01:19,  1.40s/it]\n"}
+,{"stream_name":"stdout","time":1060.820279556,"data":"  7%|▋         | 4/60 [00:05\u003c01:22,  1.47s/it]\n"}
+,{"stream_name":"stdout","time":1062.400603751,"data":"  8%|▊         | 5/60 [00:07\u003c01:22,  1.51s/it]\n"}
+,{"stream_name":"stdout","time":1063.974470438,"data":" 10%|█         | 6/60 [00:08\u003c01:22,  1.53s/it]\n"}
+,{"stream_name":"stdout","time":1065.550786593,"data":" 12%|█▏        | 7/60 [00:10\u003c01:21,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":1067.125916289,"data":" 13%|█▎        | 8/60 [00:12\u003c01:20,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":1068.701406319,"data":" 15%|█▌        | 9/60 [00:13\u003c01:19,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":1070.273713945,"data":" 17%|█▋        | 10/60 [00:15\u003c01:18,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1071.852084084,"data":" 18%|█▊        | 11/60 [00:16\u003c01:16,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1073.427658479,"data":" 20%|██        | 12/60 [00:18\u003c01:15,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1075.006405088,"data":" 22%|██▏       | 13/60 [00:19\u003c01:13,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1076.579684984,"data":" 23%|██▎       | 14/60 [00:21\u003c01:12,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1079.736086354,"data":" 25%|██▌       | 15/60 [00:23\u003c01:10,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1082.894504316,"data":" 27%|██▋       | 16/60 [00:26\u003c01:30,  2.05s/it]\n"}
+,{"stream_name":"stdout","time":1086.028134701,"data":" 28%|██▊       | 17/60 [00:29\u003c01:42,  2.38s/it]\n"}
+,{"stream_name":"stdout","time":1089.1786796,"data":" 30%|███       | 18/60 [00:32\u003c01:49,  2.61s/it]\n"}
+,{"stream_name":"stdout","time":1092.327298877,"data":" 32%|███▏      | 19/60 [00:35\u003c01:53,  2.77s/it]\n"}
+,{"stream_name":"stdout","time":1095.470644728,"data":" 33%|███▎      | 20/60 [00:38\u003c01:55,  2.89s/it]\n"}
+,{"stream_name":"stdout","time":1098.614676724,"data":" 35%|███▌      | 21/60 [00:41\u003c01:55,  2.96s/it]\n"}
+,{"stream_name":"stdout","time":1101.762057174,"data":" 37%|███▋      | 22/60 [00:45\u003c01:54,  3.02s/it]\n"}
+,{"stream_name":"stdout","time":1104.906458039,"data":" 38%|███▊      | 23/60 [00:48\u003c01:53,  3.06s/it]\n"}
+,{"stream_name":"stdout","time":1108.053057454,"data":" 40%|████      | 24/60 [00:51\u003c01:50,  3.08s/it]\n"}
+,{"stream_name":"stdout","time":1111.194903727,"data":" 42%|████▏     | 25/60 [00:54\u003c01:48,  3.10s/it]\n"}
+,{"stream_name":"stdout","time":1114.353338914,"data":" 43%|████▎     | 26/60 [00:57\u003c01:45,  3.11s/it]\n"}
+,{"stream_name":"stdout","time":1117.473087242,"data":" 45%|████▌     | 27/60 [01:00\u003c01:43,  3.12s/it]\n"}
+,{"stream_name":"stdout","time":1120.61667297,"data":" 47%|████▋     | 28/60 [01:03\u003c01:40,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":1123.760237712,"data":" 48%|████▊     | 29/60 [01:07\u003c01:37,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":1126.897691692,"data":" 50%|█████     | 30/60 [01:10\u003c01:34,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1130.036962111,"data":" 52%|█████▏    | 31/60 [01:13\u003c01:30,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1133.168454774,"data":" 53%|█████▎    | 32/60 [01:16\u003c01:27,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1136.310437279,"data":" 55%|█████▌    | 33/60 [01:19\u003c01:24,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1139.442898848,"data":" 57%|█████▋    | 34/60 [01:22\u003c01:21,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1142.584951379,"data":" 58%|█████▊    | 35/60 [01:25\u003c01:18,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1145.742916165,"data":" 60%|██████    | 36/60 [01:29\u003c01:15,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1148.869975992,"data":" 62%|██████▏   | 37/60 [01:32\u003c01:12,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1152.010303106,"data":" 63%|██████▎   | 38/60 [01:35\u003c01:09,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1155.147386081,"data":" 65%|██████▌   | 39/60 [01:38\u003c01:05,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1158.287386738,"data":" 67%|██████▋   | 40/60 [01:41\u003c01:02,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1161.428617841,"data":" 68%|██████▊   | 41/60 [01:44\u003c00:59,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1164.56664801,"data":" 70%|███████   | 42/60 [01:47\u003c00:56,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1167.70408728,"data":" 72%|███████▏  | 43/60 [01:51\u003c00:53,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1170.840760181,"data":" 73%|███████▎  | 44/60 [01:54\u003c00:50,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1172.402109464,"data":" 75%|███████▌  | 45/60 [01:57\u003c00:47,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1173.973879065,"data":" 77%|███████▋  | 46/60 [01:58\u003c00:37,  2.67s/it]\n"}
+,{"stream_name":"stdout","time":1175.544949653,"data":" 78%|███████▊  | 47/60 [02:00\u003c00:30,  2.34s/it]\n"}
+,{"stream_name":"stdout","time":1177.135438705,"data":" 80%|████████  | 48/60 [02:02\u003c00:25,  2.11s/it]\n"}
+,{"stream_name":"stdout","time":1178.692629319,"data":" 82%|████████▏ | 49/60 [02:03\u003c00:21,  1.95s/it]\n"}
+,{"stream_name":"stdout","time":1180.266533812,"data":" 83%|████████▎ | 50/60 [02:05\u003c00:18,  1.83s/it]\n"}
+,{"stream_name":"stdout","time":1181.842772933,"data":" 85%|████████▌ | 51/60 [02:06\u003c00:15,  1.76s/it]\n"}
+,{"stream_name":"stdout","time":1183.41669338,"data":" 87%|████████▋ | 52/60 [02:08\u003c00:13,  1.70s/it]\n"}
+,{"stream_name":"stdout","time":1184.991786335,"data":" 88%|████████▊ | 53/60 [02:09\u003c00:11,  1.66s/it]\n"}
+,{"stream_name":"stdout","time":1186.570701709,"data":" 90%|█████████ | 54/60 [02:11\u003c00:09,  1.64s/it]\n"}
+,{"stream_name":"stdout","time":1188.148530361,"data":" 92%|█████████▏| 55/60 [02:13\u003c00:08,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":1189.730290823,"data":" 93%|█████████▎| 56/60 [02:14\u003c00:06,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":1191.303994443,"data":" 95%|█████████▌| 57/60 [02:16\u003c00:04,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":1192.87923083,"data":" 97%|█████████▋| 58/60 [02:17\u003c00:03,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1194.452999401,"data":" 98%|█████████▊| 59/60 [02:19\u003c00:01,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1194.453988984,"data":"100%|██████████| 60/60 [02:20\u003c00:00,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1194.454992432,"data":"100%|██████████| 60/60 [02:20\u003c00:00,  2.35s/it]\n"}
+,{"stream_name":"stdout","time":1194.455848214,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":1209.459209371,"data":"\n"}
+,{"stream_name":"stdout","time":1209.460154157,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:52:25.974 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_c__s304.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1209.466484188,"data":"\n"}
+,{"stream_name":"stdout","time":1209.467279712,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 43.07it/s]\n"}
+,{"stream_name":"stdout","time":1209.494404447,"data":"2026-11-25 21:52:26.026 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.64GB reserved\n"}
+,{"stream_name":"stdout","time":1211.101227718,"data":"21:52:27 ok full_c__s304 {'seconds': 59.91, 'peak': 0.948, 'rms_db': -16.3, 'clipped_pct': 0.0, 'tempo_bpm': 165.4, 'mid_band_ratio': 0.433} in 158s\n"}
+,{"stream_name":"stdout","time":1211.102023005,"data":"2026-11-25 21:52:27.632 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1211.177609468,"data":"2026-11-25 21:52:27.703 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1211.177692226,"data":"2026-11-25 21:52:27.704 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1211.196405722,"data":"\n"}
+,{"stream_name":"stdout","time":1212.868226341,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1213.873364933,"data":"  2%|▏         | 1/60 [00:01\u003c01:38,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":1215.441511127,"data":"  3%|▎         | 2/60 [00:02\u003c01:14,  1.28s/it]\n"}
+,{"stream_name":"stdout","time":1217.008430855,"data":"  5%|▌         | 3/60 [00:04\u003c01:20,  1.41s/it]\n"}
+,{"stream_name":"stdout","time":1218.583173723,"data":"  7%|▋         | 4/60 [00:05\u003c01:22,  1.47s/it]\n"}
+,{"stream_name":"stdout","time":1220.159118301,"data":"  8%|▊         | 5/60 [00:07\u003c01:23,  1.51s/it]\n"}
+,{"stream_name":"stdout","time":1221.73511748,"data":" 10%|█         | 6/60 [00:08\u003c01:22,  1.53s/it]\n"}
+,{"stream_name":"stdout","time":1223.316971137,"data":" 12%|█▏        | 7/60 [00:10\u003c01:21,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":1224.895664573,"data":" 13%|█▎        | 8/60 [00:12\u003c01:21,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":1226.475897612,"data":" 15%|█▌        | 9/60 [00:13\u003c01:19,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":1228.05633413,"data":" 17%|█▋        | 10/60 [00:15\u003c01:18,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1229.64301001,"data":" 18%|█▊        | 11/60 [00:16\u003c01:17,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1231.229593336,"data":" 20%|██        | 12/60 [00:18\u003c01:15,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1232.819794784,"data":" 22%|██▏       | 13/60 [00:20\u003c01:14,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1234.411534783,"data":" 23%|██▎       | 14/60 [00:21\u003c01:12,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1237.590810413,"data":" 25%|██▌       | 15/60 [00:23\u003c01:11,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1240.797283601,"data":" 27%|██▋       | 16/60 [00:26\u003c01:30,  2.07s/it]\n"}
+,{"stream_name":"stdout","time":1243.963659835,"data":" 28%|██▊       | 17/60 [00:29\u003c01:43,  2.40s/it]\n"}
+,{"stream_name":"stdout","time":1247.150662937,"data":" 30%|███       | 18/60 [00:32\u003c01:50,  2.64s/it]\n"}
+,{"stream_name":"stdout","time":1250.336183655,"data":" 32%|███▏      | 19/60 [00:35\u003c01:54,  2.80s/it]\n"}
+,{"stream_name":"stdout","time":1253.516304349,"data":" 33%|███▎      | 20/60 [00:39\u003c01:56,  2.92s/it]\n"}
+,{"stream_name":"stdout","time":1256.69131733,"data":" 35%|███▌      | 21/60 [00:42\u003c01:56,  3.00s/it]\n"}
+,{"stream_name":"stdout","time":1259.863823595,"data":" 37%|███▋      | 22/60 [00:45\u003c01:55,  3.05s/it]\n"}
+,{"stream_name":"stdout","time":1263.035370864,"data":" 38%|███▊      | 23/60 [00:48\u003c01:54,  3.09s/it]\n"}
+,{"stream_name":"stdout","time":1266.202626242,"data":" 40%|████      | 24/60 [00:51\u003c01:52,  3.11s/it]\n"}
+,{"stream_name":"stdout","time":1269.373253932,"data":" 42%|████▏     | 25/60 [00:55\u003c01:49,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":1272.549957462,"data":" 43%|████▎     | 26/60 [00:58\u003c01:46,  3.14s/it]\n"}
+,{"stream_name":"stdout","time":1275.694998965,"data":" 45%|████▌     | 27/60 [01:01\u003c01:43,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1278.859638942,"data":" 47%|████▋     | 28/60 [01:04\u003c01:40,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1282.021833946,"data":" 48%|████▊     | 29/60 [01:07\u003c01:37,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1285.177837898,"data":" 50%|█████     | 30/60 [01:10\u003c01:34,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1288.343695615,"data":" 52%|█████▏    | 31/60 [01:13\u003c01:31,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1291.498167423,"data":" 53%|█████▎    | 32/60 [01:17\u003c01:28,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1294.650406578,"data":" 55%|█████▌    | 33/60 [01:20\u003c01:25,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1297.804337332,"data":" 57%|█████▋    | 34/60 [01:23\u003c01:22,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1300.963473782,"data":" 58%|█████▊    | 35/60 [01:26\u003c01:18,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1304.123324622,"data":" 60%|██████    | 36/60 [01:29\u003c01:15,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1307.254917823,"data":" 62%|██████▏   | 37/60 [01:32\u003c01:12,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1310.406228795,"data":" 63%|██████▎   | 38/60 [01:36\u003c01:09,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1313.558745709,"data":" 65%|██████▌   | 39/60 [01:39\u003c01:06,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1316.715953891,"data":" 67%|██████▋   | 40/60 [01:42\u003c01:03,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1319.868449947,"data":" 68%|██████▊   | 41/60 [01:45\u003c00:59,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1323.012830085,"data":" 70%|███████   | 42/60 [01:48\u003c00:56,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1326.152124912,"data":" 72%|███████▏  | 43/60 [01:51\u003c00:53,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1329.298364253,"data":" 73%|███████▎  | 44/60 [01:54\u003c00:50,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1330.871103315,"data":" 75%|███████▌  | 45/60 [01:58\u003c00:47,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1332.453668822,"data":" 77%|███████▋  | 46/60 [01:59\u003c00:37,  2.67s/it]\n"}
+,{"stream_name":"stdout","time":1334.02892266,"data":" 78%|███████▊  | 47/60 [02:01\u003c00:30,  2.35s/it]\n"}
+,{"stream_name":"stdout","time":1335.620806402,"data":" 80%|████████  | 48/60 [02:02\u003c00:25,  2.12s/it]\n"}
+,{"stream_name":"stdout","time":1337.179616543,"data":" 82%|████████▏ | 49/60 [02:04\u003c00:21,  1.95s/it]\n"}
+,{"stream_name":"stdout","time":1338.753599838,"data":" 83%|████████▎ | 50/60 [02:05\u003c00:18,  1.84s/it]\n"}
+,{"stream_name":"stdout","time":1340.331361497,"data":" 85%|████████▌ | 51/60 [02:07\u003c00:15,  1.76s/it]\n"}
+,{"stream_name":"stdout","time":1341.907450669,"data":" 87%|████████▋ | 52/60 [02:09\u003c00:13,  1.71s/it]\n"}
+,{"stream_name":"stdout","time":1343.482668,"data":" 88%|████████▊ | 53/60 [02:10\u003c00:11,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":1345.058957764,"data":" 90%|█████████ | 54/60 [02:12\u003c00:09,  1.64s/it]\n"}
+,{"stream_name":"stdout","time":1346.633987725,"data":" 92%|█████████▏| 55/60 [02:13\u003c00:08,  1.62s/it]\n"}
+,{"stream_name":"stdout","time":1348.21534362,"data":" 93%|█████████▎| 56/60 [02:15\u003c00:06,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":1349.78829812,"data":" 95%|█████████▌| 57/60 [02:17\u003c00:04,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":1351.368223202,"data":" 97%|█████████▋| 58/60 [02:18\u003c00:03,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1352.944033305,"data":" 98%|█████████▊| 59/60 [02:20\u003c00:01,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1352.94506897,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1352.945892001,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  2.36s/it]\n"}
+,{"stream_name":"stdout","time":1352.946681574,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":1367.905763472,"data":"\n"}
+,{"stream_name":"stdout","time":1367.906731431,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:55:04.419 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_d__s404.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1367.912592812,"data":"\n"}
+,{"stream_name":"stdout","time":1367.913755985,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 40.87it/s]\n"}
+,{"stream_name":"stdout","time":1367.939832316,"data":"2026-11-25 21:55:04.471 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.07GB allocated, 8.65GB reserved\n"}
+,{"stream_name":"stdout","time":1369.529959387,"data":"21:55:06 ok full_d__s404 {'seconds': 59.91, 'peak': 0.964, 'rms_db': -16.2, 'clipped_pct': 0.0, 'tempo_bpm': 165.4, 'mid_band_ratio': 0.314} in 158s\n"}
+,{"stream_name":"stdout","time":1369.53086606,"data":"2026-11-25 21:55:06.061 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1369.598815174,"data":"2026-11-25 21:55:06.129 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1369.602504511,"data":"2026-11-25 21:55:06.130 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1369.620852794,"data":"\n"}
+,{"stream_name":"stdout","time":1371.211232471,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1372.212278809,"data":"  2%|▏         | 1/60 [00:01\u003c01:33,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1373.773122675,"data":"  3%|▎         | 2/60 [00:02\u003c01:12,  1.24s/it]\n"}
+,{"stream_name":"stdout","time":1375.32836712,"data":"  5%|▌         | 3/60 [00:04\u003c01:19,  1.39s/it]\n"}
+,{"stream_name":"stdout","time":1376.893986417,"data":"  7%|▋         | 4/60 [00:05\u003c01:21,  1.45s/it]\n"}
+,{"stream_name":"stdout","time":1378.457219061,"data":"  8%|▊         | 5/60 [00:07\u003c01:22,  1.49s/it]\n"}
+,{"stream_name":"stdout","time":1380.027616901,"data":" 10%|█         | 6/60 [00:08\u003c01:21,  1.52s/it]\n"}
+,{"stream_name":"stdout","time":1381.59848166,"data":" 12%|█▏        | 7/60 [00:10\u003c01:21,  1.54s/it]\n"}
+,{"stream_name":"stdout","time":1383.172811131,"data":" 13%|█▎        | 8/60 [00:11\u003c01:20,  1.55s/it]\n"}
+,{"stream_name":"stdout","time":1384.751762507,"data":" 15%|█▌        | 9/60 [00:13\u003c01:19,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":1386.33321262,"data":" 17%|█▋        | 10/60 [00:15\u003c01:18,  1.56s/it]\n"}
+,{"stream_name":"stdout","time":1387.9219003,"data":" 18%|█▊        | 11/60 [00:16\u003c01:16,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1389.506049615,"data":" 20%|██        | 12/60 [00:18\u003c01:15,  1.57s/it]\n"}
+,{"stream_name":"stdout","time":1391.09145663,"data":" 22%|██▏       | 13/60 [00:19\u003c01:14,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1392.683713352,"data":" 23%|██▎       | 14/60 [00:21\u003c01:12,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1395.873587003,"data":" 25%|██▌       | 15/60 [00:23\u003c01:11,  1.58s/it]\n"}
+,{"stream_name":"stdout","time":1399.080885676,"data":" 27%|██▋       | 16/60 [00:26\u003c01:30,  2.07s/it]\n"}
+,{"stream_name":"stdout","time":1402.252794904,"data":" 28%|██▊       | 17/60 [00:29\u003c01:43,  2.40s/it]\n"}
+,{"stream_name":"stdout","time":1405.444418687,"data":" 30%|███       | 18/60 [00:32\u003c01:50,  2.64s/it]\n"}
+,{"stream_name":"stdout","time":1408.645948921,"data":" 32%|███▏      | 19/60 [00:35\u003c01:55,  2.81s/it]\n"}
+,{"stream_name":"stdout","time":1411.83027088,"data":" 33%|███▎      | 20/60 [00:39\u003c01:56,  2.92s/it]\n"}
+,{"stream_name":"stdout","time":1415.006977089,"data":" 35%|███▌      | 21/60 [00:42\u003c01:57,  3.00s/it]\n"}
+,{"stream_name":"stdout","time":1418.186301342,"data":" 37%|███▋      | 22/60 [00:45\u003c01:56,  3.05s/it]\n"}
+,{"stream_name":"stdout","time":1421.366516496,"data":" 38%|███▊      | 23/60 [00:48\u003c01:54,  3.09s/it]\n"}
+,{"stream_name":"stdout","time":1424.535056826,"data":" 40%|████      | 24/60 [00:51\u003c01:52,  3.12s/it]\n"}
+,{"stream_name":"stdout","time":1427.71161202,"data":" 42%|████▏     | 25/60 [00:54\u003c01:49,  3.13s/it]\n"}
+,{"stream_name":"stdout","time":1430.899576829,"data":" 43%|████▎     | 26/60 [00:58\u003c01:46,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1434.049686388,"data":" 45%|████▌     | 27/60 [01:01\u003c01:44,  3.15s/it]\n"}
+,{"stream_name":"stdout","time":1437.221531568,"data":" 47%|████▋     | 28/60 [01:04\u003c01:41,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1440.388233168,"data":" 48%|████▊     | 29/60 [01:07\u003c01:38,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1443.555525184,"data":" 50%|█████     | 30/60 [01:10\u003c01:34,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1446.724759965,"data":" 52%|█████▏    | 31/60 [01:13\u003c01:31,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1449.883151383,"data":" 53%|█████▎    | 32/60 [01:17\u003c01:28,  3.17s/it]\n"}
+,{"stream_name":"stdout","time":1453.049507606,"data":" 55%|█████▌    | 33/60 [01:20\u003c01:25,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1456.211262367,"data":" 57%|█████▋    | 34/60 [01:23\u003c01:22,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1459.376460652,"data":" 58%|█████▊    | 35/60 [01:26\u003c01:19,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1462.555456138,"data":" 60%|██████    | 36/60 [01:29\u003c01:15,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1465.695435903,"data":" 62%|██████▏   | 37/60 [01:32\u003c01:12,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1468.853427298,"data":" 63%|██████▎   | 38/60 [01:36\u003c01:09,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1472.008258797,"data":" 65%|██████▌   | 39/60 [01:39\u003c01:06,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1475.170967986,"data":" 67%|██████▋   | 40/60 [01:42\u003c01:03,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1478.327262325,"data":" 68%|██████▊   | 41/60 [01:45\u003c01:00,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1481.487691051,"data":" 70%|███████   | 42/60 [01:48\u003c00:56,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1484.642329074,"data":" 72%|███████▏  | 43/60 [01:51\u003c00:53,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1487.799461071,"data":" 73%|███████▎  | 44/60 [01:55\u003c00:50,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1489.374005659,"data":" 75%|███████▌  | 45/60 [01:58\u003c00:47,  3.16s/it]\n"}
+,{"stream_name":"stdout","time":1490.95969011,"data":" 77%|███████▋  | 46/60 [01:59\u003c00:37,  2.68s/it]\n"}
+,{"stream_name":"stdout","time":1492.544879858,"data":" 78%|███████▊  | 47/60 [02:01\u003c00:30,  2.35s/it]\n"}
+,{"stream_name":"stdout","time":1494.143999714,"data":" 80%|████████  | 48/60 [02:02\u003c00:25,  2.12s/it]\n"}
+,{"stream_name":"stdout","time":1495.705697613,"data":" 82%|████████▏ | 49/60 [02:04\u003c00:21,  1.96s/it]\n"}
+,{"stream_name":"stdout","time":1497.285613344,"data":" 83%|████████▎ | 50/60 [02:06\u003c00:18,  1.85s/it]\n"}
+,{"stream_name":"stdout","time":1498.860419919,"data":" 85%|████████▌ | 51/60 [02:07\u003c00:15,  1.77s/it]\n"}
+,{"stream_name":"stdout","time":1500.443549605,"data":" 87%|████████▋ | 52/60 [02:09\u003c00:13,  1.71s/it]\n"}
+,{"stream_name":"stdout","time":1502.033299354,"data":" 88%|████████▊ | 53/60 [02:10\u003c00:11,  1.67s/it]\n"}
+,{"stream_name":"stdout","time":1503.610095521,"data":" 90%|█████████ | 54/60 [02:12\u003c00:09,  1.65s/it]\n"}
+,{"stream_name":"stdout","time":1505.192506771,"data":" 92%|█████████▏| 55/60 [02:13\u003c00:08,  1.63s/it]\n"}
+,{"stream_name":"stdout","time":1506.77259244,"data":" 93%|█████████▎| 56/60 [02:15\u003c00:06,  1.61s/it]\n"}
+,{"stream_name":"stdout","time":1508.355090308,"data":" 95%|█████████▌| 57/60 [02:17\u003c00:04,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":1509.930670424,"data":" 97%|█████████▋| 58/60 [02:18\u003c00:03,  1.60s/it]\n"}
+,{"stream_name":"stdout","time":1511.508160321,"data":" 98%|█████████▊| 59/60 [02:20\u003c00:01,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1511.509015034,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  1.59s/it]\n"}
+,{"stream_name":"stdout","time":1511.509811359,"data":"100%|██████████| 60/60 [02:21\u003c00:00,  2.36s/it]\n"}
+,{"stream_name":"stdout","time":1511.510506306,"data":"Using Overlapped DCAE and Vocoder\n"}
+,{"stream_name":"stdout","time":1526.513791809,"data":"\n"}
+,{"stream_name":"stdout","time":1526.514681839,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:57:43.025 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/full_d__s405.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1526.517652552,"data":"\n"}
+,{"stream_name":"stdout","time":1526.519018115,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 42.88it/s]\n"}
+,{"stream_name":"stdout","time":1526.545186532,"data":"2026-11-25 21:57:43.076 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.62GB reserved\n"}
+,{"stream_name":"stdout","time":1528.203891103,"data":"21:57:44 ok full_d__s405 {'seconds': 59.91, 'peak': 0.978, 'rms_db': -13.8, 'clipped_pct': 0.0, 'tempo_bpm': 97.0, 'mid_band_ratio': 0.307} in 159s\n"}
+,{"stream_name":"stdout","time":1528.205810488,"data":"2026-11-25 21:57:44.735 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1528.257644624,"data":"2026-11-25 21:57:44.783 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1528.259635511,"data":"2026-11-25 21:57:44.784 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1528.273107825,"data":"\n"}
+,{"stream_name":"stdout","time":1528.679630128,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1528.943889948,"data":"  2%|▏         | 1/60 [00:00\u003c00:23,  2.46it/s]\n"}
+,{"stream_name":"stdout","time":1529.352819226,"data":"  3%|▎         | 2/60 [00:00\u003c00:18,  3.10it/s]\n"}
+,{"stream_name":"stdout","time":1529.762524832,"data":"  5%|▌         | 3/60 [00:01\u003c00:20,  2.76it/s]\n"}
+,{"stream_name":"stdout","time":1530.17352484,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.63it/s]\n"}
+,{"stream_name":"stdout","time":1530.584496243,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.55it/s]\n"}
+,{"stream_name":"stdout","time":1530.996517683,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.51it/s]\n"}
+,{"stream_name":"stdout","time":1531.408836022,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.48it/s]\n"}
+,{"stream_name":"stdout","time":1531.819699467,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.46it/s]\n"}
+,{"stream_name":"stdout","time":1532.231367368,"data":" 15%|█▌        | 9/60 [00:03\u003c00:20,  2.45it/s]\n"}
+,{"stream_name":"stdout","time":1532.642703851,"data":" 17%|█▋        | 10/60 [00:03\u003c00:20,  2.45it/s]\n"}
+,{"stream_name":"stdout","time":1533.056755753,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1533.469775572,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1533.882028905,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1534.295194602,"data":" 23%|██▎       | 14/60 [00:05\u003c00:18,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1535.121707379,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1535.947689834,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.86it/s]\n"}
+,{"stream_name":"stdout","time":1536.771965194,"data":" 28%|██▊       | 17/60 [00:07\u003c00:26,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1537.596379961,"data":" 30%|███       | 18/60 [00:08\u003c00:28,  1.46it/s]\n"}
+,{"stream_name":"stdout","time":1538.422678757,"data":" 32%|███▏      | 19/60 [00:09\u003c00:29,  1.38it/s]\n"}
+,{"stream_name":"stdout","time":1539.248151821,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.32it/s]\n"}
+,{"stream_name":"stdout","time":1540.074662068,"data":" 35%|███▌      | 21/60 [00:10\u003c00:30,  1.29it/s]\n"}
+,{"stream_name":"stdout","time":1540.899003297,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.26it/s]\n"}
+,{"stream_name":"stdout","time":1541.725601377,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1542.556349452,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1543.384075642,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1544.217207883,"data":" 43%|████▎     | 26/60 [00:15\u003c00:27,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1545.051128787,"data":" 45%|████▌     | 27/60 [00:15\u003c00:27,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1545.886297711,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1546.718579727,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1547.548527468,"data":" 50%|█████     | 30/60 [00:18\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1548.381616686,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1549.220345574,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1550.052352384,"data":" 55%|█████▌    | 33/60 [00:20\u003c00:22,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1550.891507875,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1551.730933769,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1552.56869571,"data":" 60%|██████    | 36/60 [00:23\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1553.412007626,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1554.253243953,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1555.094452846,"data":" 65%|██████▌   | 39/60 [00:25\u003c00:17,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1555.938996373,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1556.801154464,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1557.624285969,"data":" 70%|███████   | 42/60 [00:28\u003c00:15,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1558.461322091,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1559.302189728,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1559.722908236,"data":" 75%|███████▌  | 45/60 [00:31\u003c00:12,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1560.144859487,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:10,  1.40it/s]\n"}
+,{"stream_name":"stdout","time":1560.567378995,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1560.990682905,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.77it/s]\n"}
+,{"stream_name":"stdout","time":1561.410670949,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.91it/s]\n"}
+,{"stream_name":"stdout","time":1561.83107621,"data":" 83%|████████▎ | 50/60 [00:33\u003c00:04,  2.03it/s]\n"}
+,{"stream_name":"stdout","time":1562.256038845,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.13it/s]\n"}
+,{"stream_name":"stdout","time":1562.679333446,"data":" 87%|████████▋ | 52/60 [00:33\u003c00:03,  2.19it/s]\n"}
+,{"stream_name":"stdout","time":1563.101906217,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.24it/s]\n"}
+,{"stream_name":"stdout","time":1563.524936618,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.28it/s]\n"}
+,{"stream_name":"stdout","time":1563.945083266,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.30it/s]\n"}
+,{"stream_name":"stdout","time":1564.364963295,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.32it/s]\n"}
+,{"stream_name":"stdout","time":1564.784162581,"data":" 95%|█████████▌| 57/60 [00:36\u003c00:01,  2.34it/s]\n"}
+,{"stream_name":"stdout","time":1565.204483144,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1565.626266567,"data":" 98%|█████████▊| 59/60 [00:36\u003c00:00,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1565.627120206,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1565.627829767,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.61it/s]\n"}
+,{"stream_name":"stdout","time":1569.0322769,"data":"\n"}
+,{"stream_name":"stdout","time":1569.03378163,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:58:25.562 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_a__s111.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1569.04027362,"data":"\n"}
+,{"stream_name":"stdout","time":1569.041542651,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 113.22it/s]\n"}
+,{"stream_name":"stdout","time":1569.062647093,"data":"2026-11-25 21:58:25.594 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.61GB reserved\n"}
+,{"stream_name":"stdout","time":1569.897355839,"data":"21:58:26 ok intro_a__s111 {'seconds': 15.98, 'peak': 0.939, 'rms_db': -15.1, 'clipped_pct': 0.0, 'tempo_bpm': 200.9, 'mid_band_ratio': 0.24} in 42s\n"}
+,{"stream_name":"stdout","time":1569.898331325,"data":"2026-11-25 21:58:26.429 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1569.952817062,"data":"2026-11-25 21:58:26.479 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1569.953843889,"data":"2026-11-25 21:58:26.480 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1569.967217593,"data":"\n"}
+,{"stream_name":"stdout","time":1570.378043473,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1570.645627812,"data":"  2%|▏         | 1/60 [00:00\u003c00:24,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1571.059541657,"data":"  3%|▎         | 2/60 [00:00\u003c00:18,  3.07it/s]\n"}
+,{"stream_name":"stdout","time":1571.47434965,"data":"  5%|▌         | 3/60 [00:01\u003c00:20,  2.73it/s]\n"}
+,{"stream_name":"stdout","time":1571.888635517,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.60it/s]\n"}
+,{"stream_name":"stdout","time":1572.302377661,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.53it/s]\n"}
+,{"stream_name":"stdout","time":1572.718254369,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.49it/s]\n"}
+,{"stream_name":"stdout","time":1573.135353956,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.46it/s]\n"}
+,{"stream_name":"stdout","time":1573.547381201,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1573.96365757,"data":" 15%|█▌        | 9/60 [00:03\u003c00:20,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1574.380206591,"data":" 17%|█▋        | 10/60 [00:03\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1574.79568516,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1575.212435191,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1575.625857893,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1576.038747074,"data":" 23%|██▎       | 14/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1576.869344158,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1577.700221542,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.85it/s]\n"}
+,{"stream_name":"stdout","time":1578.528394692,"data":" 28%|██▊       | 17/60 [00:07\u003c00:26,  1.59it/s]\n"}
+,{"stream_name":"stdout","time":1579.356301217,"data":" 30%|███       | 18/60 [00:08\u003c00:28,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":1580.183718495,"data":" 32%|███▏      | 19/60 [00:09\u003c00:29,  1.37it/s]\n"}
+,{"stream_name":"stdout","time":1581.012926617,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.32it/s]\n"}
+,{"stream_name":"stdout","time":1581.839411835,"data":" 35%|███▌      | 21/60 [00:11\u003c00:30,  1.28it/s]\n"}
+,{"stream_name":"stdout","time":1582.666199547,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.26it/s]\n"}
+,{"stream_name":"stdout","time":1583.495333075,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1584.322308814,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1585.149496044,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1585.977190348,"data":" 43%|████▎     | 26/60 [00:15\u003c00:27,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1586.827510924,"data":" 45%|████▌     | 27/60 [00:16\u003c00:27,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1587.630206679,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1588.45480684,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1589.284111161,"data":" 50%|█████     | 30/60 [00:18\u003c00:24,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1590.11160757,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:23,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1590.93548829,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1591.764206676,"data":" 55%|█████▌    | 33/60 [00:20\u003c00:22,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1592.588913684,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1593.414480286,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1594.240643046,"data":" 60%|██████    | 36/60 [00:23\u003c00:19,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1595.067536564,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:18,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1595.897353063,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1596.72227369,"data":" 65%|██████▌   | 39/60 [00:25\u003c00:17,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1597.551391471,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1598.378021492,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1599.202058468,"data":" 70%|███████   | 42/60 [00:28\u003c00:14,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1600.028880745,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1600.855477162,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1601.267689668,"data":" 75%|███████▌  | 45/60 [00:30\u003c00:12,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1601.681420131,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.42it/s]\n"}
+,{"stream_name":"stdout","time":1602.095603283,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.62it/s]\n"}
+,{"stream_name":"stdout","time":1602.508806059,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.80it/s]\n"}
+,{"stream_name":"stdout","time":1602.921573094,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.95it/s]\n"}
+,{"stream_name":"stdout","time":1603.334728773,"data":" 83%|████████▎ | 50/60 [00:32\u003c00:04,  2.07it/s]\n"}
+,{"stream_name":"stdout","time":1603.74761438,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.17it/s]\n"}
+,{"stream_name":"stdout","time":1604.162202657,"data":" 87%|████████▋ | 52/60 [00:33\u003c00:03,  2.24it/s]\n"}
+,{"stream_name":"stdout","time":1604.575409639,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.29it/s]\n"}
+,{"stream_name":"stdout","time":1604.989275786,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.33it/s]\n"}
+,{"stream_name":"stdout","time":1605.403700166,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1605.816032152,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1606.232165532,"data":" 95%|█████████▌| 57/60 [00:35\u003c00:01,  2.39it/s]\n"}
+,{"stream_name":"stdout","time":1606.644677472,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.39it/s]\n"}
+,{"stream_name":"stdout","time":1607.059313115,"data":" 98%|█████████▊| 59/60 [00:36\u003c00:00,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1607.06073407,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1607.062007323,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.62it/s]\n"}
+,{"stream_name":"stdout","time":1610.296271227,"data":"\n"}
+,{"stream_name":"stdout","time":1610.297435208,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:59:06.827 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_a__s112.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1610.304315368,"data":"\n"}
+,{"stream_name":"stdout","time":1610.305506008,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 115.21it/s]\n"}
+,{"stream_name":"stdout","time":1610.324415121,"data":"2026-11-25 21:59:06.855 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.07GB allocated, 8.62GB reserved\n"}
+,{"stream_name":"stdout","time":1611.165217293,"data":"21:59:07 ok intro_a__s112 {'seconds': 15.98, 'peak': 1.0, 'rms_db': -15.0, 'clipped_pct': 0.0, 'tempo_bpm': 112.5, 'mid_band_ratio': 0.414} in 41s\n"}
+,{"stream_name":"stdout","time":1611.166696142,"data":"2026-11-25 21:59:07.696 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1611.222641503,"data":"2026-11-25 21:59:07.747 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1611.225948336,"data":"2026-11-25 21:59:07.748 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1611.236273453,"data":"\n"}
+,{"stream_name":"stdout","time":1611.640134141,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1611.904264797,"data":"  2%|▏         | 1/60 [00:00\u003c00:23,  2.48it/s]\n"}
+,{"stream_name":"stdout","time":1612.315532973,"data":"  3%|▎         | 2/60 [00:00\u003c00:18,  3.11it/s]\n"}
+,{"stream_name":"stdout","time":1612.727208676,"data":"  5%|▌         | 3/60 [00:01\u003c00:20,  2.76it/s]\n"}
+,{"stream_name":"stdout","time":1613.13895299,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.62it/s]\n"}
+,{"stream_name":"stdout","time":1613.550269607,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.55it/s]\n"}
+,{"stream_name":"stdout","time":1613.960741788,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.51it/s]\n"}
+,{"stream_name":"stdout","time":1614.37280275,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.48it/s]\n"}
+,{"stream_name":"stdout","time":1614.784025347,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.47it/s]\n"}
+,{"stream_name":"stdout","time":1615.194898415,"data":" 15%|█▌        | 9/60 [00:03\u003c00:20,  2.45it/s]\n"}
+,{"stream_name":"stdout","time":1615.605885893,"data":" 17%|█▋        | 10/60 [00:03\u003c00:20,  2.45it/s]\n"}
+,{"stream_name":"stdout","time":1616.019653489,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1616.431954058,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1616.867326399,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1617.253928248,"data":" 23%|██▎       | 14/60 [00:05\u003c00:18,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1618.076701216,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1618.89951194,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.87it/s]\n"}
+,{"stream_name":"stdout","time":1619.720216559,"data":" 28%|██▊       | 17/60 [00:07\u003c00:26,  1.61it/s]\n"}
+,{"stream_name":"stdout","time":1620.545427491,"data":" 30%|███       | 18/60 [00:08\u003c00:28,  1.47it/s]\n"}
+,{"stream_name":"stdout","time":1621.368598333,"data":" 32%|███▏      | 19/60 [00:09\u003c00:29,  1.38it/s]\n"}
+,{"stream_name":"stdout","time":1622.193299697,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.33it/s]\n"}
+,{"stream_name":"stdout","time":1623.017031903,"data":" 35%|███▌      | 21/60 [00:10\u003c00:30,  1.29it/s]\n"}
+,{"stream_name":"stdout","time":1623.841235514,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.27it/s]\n"}
+,{"stream_name":"stdout","time":1624.668475925,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1625.494026714,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1626.322003257,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1627.147634549,"data":" 43%|████▎     | 26/60 [00:15\u003c00:27,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1627.976091679,"data":" 45%|████▌     | 27/60 [00:15\u003c00:27,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1628.802672387,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1629.630950342,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1630.455231495,"data":" 50%|█████     | 30/60 [00:18\u003c00:24,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1631.282299736,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:23,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1632.111024872,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1632.93659143,"data":" 55%|█████▌    | 33/60 [00:20\u003c00:22,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1633.769068589,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1634.597179596,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1635.428357048,"data":" 60%|██████    | 36/60 [00:23\u003c00:19,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1636.265185573,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1637.096341501,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1637.932099975,"data":" 65%|██████▌   | 39/60 [00:25\u003c00:17,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1638.766296492,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1639.598188458,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1640.434484094,"data":" 70%|███████   | 42/60 [00:28\u003c00:14,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1641.264425339,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1642.101298843,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1642.516527568,"data":" 75%|███████▌  | 45/60 [00:30\u003c00:12,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1642.935660123,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.41it/s]\n"}
+,{"stream_name":"stdout","time":1643.350597004,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.61it/s]\n"}
+,{"stream_name":"stdout","time":1643.76861954,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.79it/s]\n"}
+,{"stream_name":"stdout","time":1644.185870102,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.93it/s]\n"}
+,{"stream_name":"stdout","time":1644.604696308,"data":" 83%|████████▎ | 50/60 [00:32\u003c00:04,  2.05it/s]\n"}
+,{"stream_name":"stdout","time":1645.023705141,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.14it/s]\n"}
+,{"stream_name":"stdout","time":1645.444052257,"data":" 87%|████████▋ | 52/60 [00:33\u003c00:03,  2.21it/s]\n"}
+,{"stream_name":"stdout","time":1645.862278735,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.26it/s]\n"}
+,{"stream_name":"stdout","time":1646.281369284,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.30it/s]\n"}
+,{"stream_name":"stdout","time":1646.701123551,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.32it/s]\n"}
+,{"stream_name":"stdout","time":1647.143316805,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.34it/s]\n"}
+,{"stream_name":"stdout","time":1647.537991801,"data":" 95%|█████████▌| 57/60 [00:35\u003c00:01,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1647.957297682,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1648.377059101,"data":" 98%|█████████▊| 59/60 [00:36\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1648.377828148,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1648.378594664,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.62it/s]\n"}
+,{"stream_name":"stdout","time":1651.652345846,"data":"\n"}
+,{"stream_name":"stdout","time":1651.653531981,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 21:59:48.182 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_b__s212.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1651.661019051,"data":"\n"}
+,{"stream_name":"stdout","time":1651.662066163,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 104.21it/s]\n"}
+,{"stream_name":"stdout","time":1651.691857542,"data":"2026-11-25 21:59:48.223 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.60GB reserved\n"}
+,{"stream_name":"stdout","time":1652.527465072,"data":"21:59:49 ok intro_b__s212 {'seconds': 15.98, 'peak': 0.932, 'rms_db': -16.5, 'clipped_pct': 0.0, 'tempo_bpm': 144.2, 'mid_band_ratio': 0.619} in 41s\n"}
+,{"stream_name":"stdout","time":1652.528309963,"data":"2026-11-25 21:59:49.059 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1652.575645342,"data":"2026-11-25 21:59:49.104 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1652.57817874,"data":"2026-11-25 21:59:49.105 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1652.59196146,"data":"\n"}
+,{"stream_name":"stdout","time":1653.004274406,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1653.272236503,"data":"  2%|▏         | 1/60 [00:00\u003c00:24,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1653.685248887,"data":"  3%|▎         | 2/60 [00:00\u003c00:18,  3.06it/s]\n"}
+,{"stream_name":"stdout","time":1654.103661419,"data":"  5%|▌         | 3/60 [00:01\u003c00:20,  2.73it/s]\n"}
+,{"stream_name":"stdout","time":1654.517418828,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.58it/s]\n"}
+,{"stream_name":"stdout","time":1654.932576727,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.52it/s]\n"}
+,{"stream_name":"stdout","time":1655.346606028,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.48it/s]\n"}
+,{"stream_name":"stdout","time":1655.765396082,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.46it/s]\n"}
+,{"stream_name":"stdout","time":1656.182057338,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1656.601036758,"data":" 15%|█▌        | 9/60 [00:03\u003c00:21,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1657.016314369,"data":" 17%|█▋        | 10/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1657.435585251,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1657.854467159,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1658.272573733,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1658.688384074,"data":" 23%|██▎       | 14/60 [00:05\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1659.524040944,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1660.356387504,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.84it/s]\n"}
+,{"stream_name":"stdout","time":1661.191294611,"data":" 28%|██▊       | 17/60 [00:07\u003c00:27,  1.59it/s]\n"}
+,{"stream_name":"stdout","time":1662.024494488,"data":" 30%|███       | 18/60 [00:08\u003c00:29,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":1662.857546422,"data":" 32%|███▏      | 19/60 [00:09\u003c00:30,  1.36it/s]\n"}
+,{"stream_name":"stdout","time":1663.689318224,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":1664.519721703,"data":" 35%|███▌      | 21/60 [00:11\u003c00:30,  1.28it/s]\n"}
+,{"stream_name":"stdout","time":1665.353195496,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1666.185012227,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1667.017402407,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1667.85422109,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1668.684972372,"data":" 43%|████▎     | 26/60 [00:15\u003c00:28,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1669.519302173,"data":" 45%|████▌     | 27/60 [00:16\u003c00:27,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1670.354253717,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1671.18659101,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1672.020086316,"data":" 50%|█████     | 30/60 [00:18\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1672.854647236,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1673.687632498,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1674.524480579,"data":" 55%|█████▌    | 33/60 [00:21\u003c00:22,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1675.358685339,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1676.190475623,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1677.024269118,"data":" 60%|██████    | 36/60 [00:23\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1677.890122753,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1678.69418688,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1679.526869359,"data":" 65%|██████▌   | 39/60 [00:26\u003c00:17,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1680.363895256,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1681.200954527,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1682.035233414,"data":" 70%|███████   | 42/60 [00:28\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1682.872843668,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1683.709370132,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1684.12278419,"data":" 75%|███████▌  | 45/60 [00:31\u003c00:12,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1684.538428275,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.41it/s]\n"}
+,{"stream_name":"stdout","time":1684.954843038,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.61it/s]\n"}
+,{"stream_name":"stdout","time":1685.372879615,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.79it/s]\n"}
+,{"stream_name":"stdout","time":1685.790591923,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.93it/s]\n"}
+,{"stream_name":"stdout","time":1686.210371752,"data":" 83%|████████▎ | 50/60 [00:33\u003c00:04,  2.05it/s]\n"}
+,{"stream_name":"stdout","time":1686.630624256,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.14it/s]\n"}
+,{"stream_name":"stdout","time":1687.050210943,"data":" 87%|████████▋ | 52/60 [00:34\u003c00:03,  2.21it/s]\n"}
+,{"stream_name":"stdout","time":1687.467593598,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.26it/s]\n"}
+,{"stream_name":"stdout","time":1687.886902812,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.30it/s]\n"}
+,{"stream_name":"stdout","time":1688.305703108,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.32it/s]\n"}
+,{"stream_name":"stdout","time":1688.725408806,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.34it/s]\n"}
+,{"stream_name":"stdout","time":1689.143497567,"data":" 95%|█████████▌| 57/60 [00:36\u003c00:01,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1689.559352408,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1689.976277097,"data":" 98%|█████████▊| 59/60 [00:36\u003c00:00,  2.38it/s]\n"}
+,{"stream_name":"stdout","time":1689.977218668,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.38it/s]\n"}
+,{"stream_name":"stdout","time":1689.978011093,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1693.239553922,"data":"\n"}
+,{"stream_name":"stdout","time":1693.240573602,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 22:00:29.770 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_b__s213.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1693.246974311,"data":"\n"}
+,{"stream_name":"stdout","time":1693.247894366,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 121.47it/s]\n"}
+,{"stream_name":"stdout","time":1693.268970368,"data":"2026-11-25 22:00:29.800 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.58GB reserved\n"}
+,{"stream_name":"stdout","time":1694.070880739,"data":"22:00:30 ok intro_b__s213 {'seconds': 15.98, 'peak': 0.988, 'rms_db': -15.7, 'clipped_pct': 0.0, 'tempo_bpm': 187.5, 'mid_band_ratio': 0.618} in 42s\n"}
+,{"stream_name":"stdout","time":1694.073535523,"data":"2026-11-25 22:00:30.599 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1694.119487067,"data":"2026-11-25 22:00:30.651 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1694.123438331,"data":"2026-11-25 22:00:30.652 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1694.138652915,"data":"\n"}
+,{"stream_name":"stdout","time":1694.551669946,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1694.820292186,"data":"  2%|▏         | 1/60 [00:00\u003c00:24,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1695.236508216,"data":"  3%|▎         | 2/60 [00:00\u003c00:18,  3.05it/s]\n"}
+,{"stream_name":"stdout","time":1695.652604025,"data":"  5%|▌         | 3/60 [00:01\u003c00:20,  2.72it/s]\n"}
+,{"stream_name":"stdout","time":1696.066874411,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.58it/s]\n"}
+,{"stream_name":"stdout","time":1696.480834075,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.52it/s]\n"}
+,{"stream_name":"stdout","time":1696.895380523,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.48it/s]\n"}
+,{"stream_name":"stdout","time":1697.310804091,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.46it/s]\n"}
+,{"stream_name":"stdout","time":1697.726472829,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1698.141139225,"data":" 15%|█▌        | 9/60 [00:03\u003c00:20,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1698.558031258,"data":" 17%|█▋        | 10/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1698.972092058,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1699.38829194,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1699.806257828,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1700.222107751,"data":" 23%|██▎       | 14/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1701.053020948,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1701.883892523,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.85it/s]\n"}
+,{"stream_name":"stdout","time":1702.716687707,"data":" 28%|██▊       | 17/60 [00:07\u003c00:27,  1.59it/s]\n"}
+,{"stream_name":"stdout","time":1703.552188706,"data":" 30%|███       | 18/60 [00:08\u003c00:28,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":1704.385636375,"data":" 32%|███▏      | 19/60 [00:09\u003c00:30,  1.36it/s]\n"}
+,{"stream_name":"stdout","time":1705.216423468,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":1706.047776019,"data":" 35%|███▌      | 21/60 [00:11\u003c00:30,  1.28it/s]\n"}
+,{"stream_name":"stdout","time":1706.882120273,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1707.718685939,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1708.580598433,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1709.384382751,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1710.217517794,"data":" 43%|████▎     | 26/60 [00:15\u003c00:28,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1711.047184461,"data":" 45%|████▌     | 27/60 [00:16\u003c00:27,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1711.883128021,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1712.716698469,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1713.550406389,"data":" 50%|█████     | 30/60 [00:18\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1714.385709713,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1715.21942687,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1716.055584026,"data":" 55%|█████▌    | 33/60 [00:21\u003c00:22,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1716.88935438,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1717.725672951,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1718.564328943,"data":" 60%|██████    | 36/60 [00:23\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1719.400622838,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1720.233871848,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1721.068900075,"data":" 65%|██████▌   | 39/60 [00:26\u003c00:17,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1721.899749785,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1722.737214344,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1723.564072875,"data":" 70%|███████   | 42/60 [00:28\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1724.404145264,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1725.24353435,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1725.661276875,"data":" 75%|███████▌  | 45/60 [00:31\u003c00:12,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1726.08219019,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.41it/s]\n"}
+,{"stream_name":"stdout","time":1726.501396583,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1726.920417154,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.78it/s]\n"}
+,{"stream_name":"stdout","time":1727.339669498,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.93it/s]\n"}
+,{"stream_name":"stdout","time":1727.758468883,"data":" 83%|████████▎ | 50/60 [00:33\u003c00:04,  2.04it/s]\n"}
+,{"stream_name":"stdout","time":1728.178220546,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.14it/s]\n"}
+,{"stream_name":"stdout","time":1728.597744645,"data":" 87%|████████▋ | 52/60 [00:34\u003c00:03,  2.20it/s]\n"}
+,{"stream_name":"stdout","time":1729.018316883,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.25it/s]\n"}
+,{"stream_name":"stdout","time":1729.437205934,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.29it/s]\n"}
+,{"stream_name":"stdout","time":1729.85791259,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.32it/s]\n"}
+,{"stream_name":"stdout","time":1730.27688158,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.34it/s]\n"}
+,{"stream_name":"stdout","time":1730.698085694,"data":" 95%|█████████▌| 57/60 [00:36\u003c00:01,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1731.118430888,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1731.536910416,"data":" 98%|█████████▊| 59/60 [00:36\u003c00:00,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1731.537834505,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1731.538589838,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1734.80512516,"data":"\n"}
+,{"stream_name":"stdout","time":1734.806088588,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 22:01:11.336 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_c__s313.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1734.81268169,"data":"\n"}
+,{"stream_name":"stdout","time":1734.812697854,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 131.45it/s]\n"}
+,{"stream_name":"stdout","time":1734.830761079,"data":"2026-11-25 22:01:11.362 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.62GB reserved\n"}
+,{"stream_name":"stdout","time":1735.640619121,"data":"22:01:12 ok intro_c__s313 {'seconds': 15.98, 'peak': 0.97, 'rms_db': -17.8, 'clipped_pct': 0.0, 'tempo_bpm': 175.8, 'mid_band_ratio': 0.615} in 42s\n"}
+,{"stream_name":"stdout","time":1735.640650632,"data":"2026-11-25 22:01:12.164 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1735.686856337,"data":"2026-11-25 22:01:12.216 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1735.689780899,"data":"2026-11-25 22:01:12.218 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1735.707127805,"data":"\n"}
+,{"stream_name":"stdout","time":1736.120166249,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1736.388459067,"data":"  2%|▏         | 1/60 [00:00\u003c00:24,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1736.802275931,"data":"  3%|▎         | 2/60 [00:00\u003c00:19,  3.05it/s]\n"}
+,{"stream_name":"stdout","time":1737.219209783,"data":"  5%|▌         | 3/60 [00:01\u003c00:20,  2.72it/s]\n"}
+,{"stream_name":"stdout","time":1737.634509787,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.59it/s]\n"}
+,{"stream_name":"stdout","time":1738.048299518,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.52it/s]\n"}
+,{"stream_name":"stdout","time":1738.461156899,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.48it/s]\n"}
+,{"stream_name":"stdout","time":1738.904619179,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.46it/s]\n"}
+,{"stream_name":"stdout","time":1739.290696921,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.45it/s]\n"}
+,{"stream_name":"stdout","time":1739.708892313,"data":" 15%|█▌        | 9/60 [00:03\u003c00:20,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1740.125827171,"data":" 17%|█▋        | 10/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1740.544205479,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1740.963937185,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1741.380229762,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1741.797949602,"data":" 23%|██▎       | 14/60 [00:05\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1742.635304095,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1743.467738931,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.84it/s]\n"}
+,{"stream_name":"stdout","time":1744.300619739,"data":" 28%|██▊       | 17/60 [00:07\u003c00:27,  1.59it/s]\n"}
+,{"stream_name":"stdout","time":1745.131685116,"data":" 30%|███       | 18/60 [00:08\u003c00:29,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":1745.968919296,"data":" 32%|███▏      | 19/60 [00:09\u003c00:30,  1.36it/s]\n"}
+,{"stream_name":"stdout","time":1746.799496906,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":1747.630427536,"data":" 35%|███▌      | 21/60 [00:11\u003c00:30,  1.27it/s]\n"}
+,{"stream_name":"stdout","time":1748.460790854,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1749.292924478,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1750.126481274,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1750.95692994,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1751.788351038,"data":" 43%|████▎     | 26/60 [00:15\u003c00:28,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1752.623789536,"data":" 45%|████▌     | 27/60 [00:16\u003c00:27,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1753.461765619,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1754.300520907,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1755.1390946,"data":" 50%|█████     | 30/60 [00:18\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1755.977416309,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1756.80751544,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1757.641042837,"data":" 55%|█████▌    | 33/60 [00:21\u003c00:22,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1758.476076504,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1759.315926931,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1760.150600453,"data":" 60%|██████    | 36/60 [00:23\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1760.987753426,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1761.822761472,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1762.658284238,"data":" 65%|██████▌   | 39/60 [00:26\u003c00:17,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1763.495654896,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1764.332325174,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1765.17187678,"data":" 70%|███████   | 42/60 [00:28\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1766.008083666,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1766.847947586,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1767.266492918,"data":" 75%|███████▌  | 45/60 [00:31\u003c00:12,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1767.687639869,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.40it/s]\n"}
+,{"stream_name":"stdout","time":1768.10668275,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1768.525179425,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.78it/s]\n"}
+,{"stream_name":"stdout","time":1768.980646378,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.92it/s]\n"}
+,{"stream_name":"stdout","time":1769.370120885,"data":" 83%|████████▎ | 50/60 [00:33\u003c00:04,  2.04it/s]\n"}
+,{"stream_name":"stdout","time":1769.790293925,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.13it/s]\n"}
+,{"stream_name":"stdout","time":1770.210073902,"data":" 87%|████████▋ | 52/60 [00:34\u003c00:03,  2.20it/s]\n"}
+,{"stream_name":"stdout","time":1770.629741307,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.25it/s]\n"}
+,{"stream_name":"stdout","time":1771.047573133,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.29it/s]\n"}
+,{"stream_name":"stdout","time":1771.465996637,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.32it/s]\n"}
+,{"stream_name":"stdout","time":1771.885081035,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.34it/s]\n"}
+,{"stream_name":"stdout","time":1772.303701286,"data":" 95%|█████████▌| 57/60 [00:36\u003c00:01,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1772.724849425,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1773.146713104,"data":" 98%|█████████▊| 59/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1773.146741462,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1773.146746315,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1776.414988962,"data":"\n"}
+,{"stream_name":"stdout","time":1776.415984649,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 22:01:52.945 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_c__s314.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1776.423272087,"data":"\n"}
+,{"stream_name":"stdout","time":1776.424244217,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 110.92it/s]\n"}
+,{"stream_name":"stdout","time":1776.444103683,"data":"2026-11-25 22:01:52.975 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.58GB reserved\n"}
+,{"stream_name":"stdout","time":1777.269671258,"data":"22:01:53 ok intro_c__s314 {'seconds': 15.98, 'peak': 0.928, 'rms_db': -17.6, 'clipped_pct': 0.0, 'tempo_bpm': 97.0, 'mid_band_ratio': 0.52} in 42s\n"}
+,{"stream_name":"stdout","time":1777.270901345,"data":"2026-11-25 22:01:53.800 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1777.324687365,"data":"2026-11-25 22:01:53.851 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1777.324741445,"data":"2026-11-25 22:01:53.852 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1777.340606715,"data":"\n"}
+,{"stream_name":"stdout","time":1777.753733148,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1778.022027077,"data":"  2%|▏         | 1/60 [00:00\u003c00:24,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1778.440347665,"data":"  3%|▎         | 2/60 [00:00\u003c00:18,  3.05it/s]\n"}
+,{"stream_name":"stdout","time":1778.861270154,"data":"  5%|▌         | 3/60 [00:01\u003c00:21,  2.71it/s]\n"}
+,{"stream_name":"stdout","time":1779.280212586,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.57it/s]\n"}
+,{"stream_name":"stdout","time":1779.693591593,"data":"  8%|▊         | 5/60 [00:01\u003c00:22,  2.50it/s]\n"}
+,{"stream_name":"stdout","time":1780.112537446,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.47it/s]\n"}
+,{"stream_name":"stdout","time":1780.530831864,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1780.948514418,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1781.36644428,"data":" 15%|█▌        | 9/60 [00:03\u003c00:21,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1781.785230114,"data":" 17%|█▋        | 10/60 [00:04\u003c00:20,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1782.202384286,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1782.619909106,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1783.031574903,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1783.448401727,"data":" 23%|██▎       | 14/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1784.28611284,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.40it/s]\n"}
+,{"stream_name":"stdout","time":1785.121979106,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.84it/s]\n"}
+,{"stream_name":"stdout","time":1785.959220775,"data":" 28%|██▊       | 17/60 [00:07\u003c00:27,  1.58it/s]\n"}
+,{"stream_name":"stdout","time":1786.790648142,"data":" 30%|███       | 18/60 [00:08\u003c00:29,  1.44it/s]\n"}
+,{"stream_name":"stdout","time":1787.627131582,"data":" 32%|███▏      | 19/60 [00:09\u003c00:30,  1.36it/s]\n"}
+,{"stream_name":"stdout","time":1788.462053314,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":1789.295812112,"data":" 35%|███▌      | 21/60 [00:11\u003c00:30,  1.27it/s]\n"}
+,{"stream_name":"stdout","time":1790.133875776,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1790.969838572,"data":" 38%|███▊      | 23/60 [00:12\u003c00:30,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1791.803491118,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1792.639893384,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1793.47878896,"data":" 43%|████▎     | 26/60 [00:15\u003c00:28,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1794.314188278,"data":" 45%|████▌     | 27/60 [00:16\u003c00:27,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1795.149910469,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1795.990625951,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1796.832752458,"data":" 50%|█████     | 30/60 [00:18\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1797.670220739,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:24,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1798.510967415,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1799.383741523,"data":" 55%|█████▌    | 33/60 [00:21\u003c00:22,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1800.1822772,"data":" 57%|█████▋    | 34/60 [00:22\u003c00:21,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1801.020680193,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1801.856783595,"data":" 60%|██████    | 36/60 [00:23\u003c00:20,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1802.697188957,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1803.532696909,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1804.370953224,"data":" 65%|██████▌   | 39/60 [00:26\u003c00:17,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1805.209963035,"data":" 67%|██████▋   | 40/60 [00:27\u003c00:16,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1806.052657924,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1806.89363957,"data":" 70%|███████   | 42/60 [00:28\u003c00:15,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1807.735005107,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1808.571136344,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1808.990814004,"data":" 75%|███████▌  | 45/60 [00:31\u003c00:12,  1.19it/s]\n"}
+,{"stream_name":"stdout","time":1809.410222548,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.40it/s]\n"}
+,{"stream_name":"stdout","time":1809.83176446,"data":" 78%|███████▊  | 47/60 [00:32\u003c00:08,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1810.253689653,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.77it/s]\n"}
+,{"stream_name":"stdout","time":1810.676620672,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.92it/s]\n"}
+,{"stream_name":"stdout","time":1811.09622661,"data":" 83%|████████▎ | 50/60 [00:33\u003c00:04,  2.03it/s]\n"}
+,{"stream_name":"stdout","time":1811.518274604,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.13it/s]\n"}
+,{"stream_name":"stdout","time":1811.938023138,"data":" 87%|████████▋ | 52/60 [00:34\u003c00:03,  2.19it/s]\n"}
+,{"stream_name":"stdout","time":1812.360343244,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.25it/s]\n"}
+,{"stream_name":"stdout","time":1812.7793506,"data":" 90%|█████████ | 54/60 [00:35\u003c00:02,  2.28it/s]\n"}
+,{"stream_name":"stdout","time":1813.199527836,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.31it/s]\n"}
+,{"stream_name":"stdout","time":1813.618716078,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.33it/s]\n"}
+,{"stream_name":"stdout","time":1814.037004432,"data":" 95%|█████████▌| 57/60 [00:36\u003c00:01,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1814.457635111,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.36it/s]\n"}
+,{"stream_name":"stdout","time":1814.878019495,"data":" 98%|█████████▊| 59/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1814.878927979,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1814.879724532,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.60it/s]\n"}
+,{"stream_name":"stdout","time":1818.149403923,"data":"\n"}
+,{"stream_name":"stdout","time":1818.150493203,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 22:02:34.680 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_d__s414.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1818.156525085,"data":"\n"}
+,{"stream_name":"stdout","time":1818.157800649,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 124.54it/s]\n"}
+,{"stream_name":"stdout","time":1818.179292911,"data":"2026-11-25 22:02:34.710 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.56GB reserved\n"}
+,{"stream_name":"stdout","time":1819.009007629,"data":"22:02:35 ok intro_d__s414 {'seconds': 15.98, 'peak': 0.908, 'rms_db': -14.7, 'clipped_pct': 0.0, 'tempo_bpm': 144.2, 'mid_band_ratio': 0.295} in 42s\n"}
+,{"stream_name":"stdout","time":1819.012608238,"data":"2026-11-25 22:02:35.537 | INFO     | acestep.pipeline_ace_step:__call__:1501 - Model loaded in 0.00 seconds.\n"}
+,{"stream_name":"stdout","time":1819.059046219,"data":"2026-11-25 22:02:35.589 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:847 - cfg_type: apg, guidance_scale: 15.0, omega_scale: 10.0\n"}
+,{"stream_name":"stdout","time":1819.062500401,"data":"2026-11-25 22:02:35.590 | INFO     | acestep.pipeline_ace_step:text2music_diffusion_process:1085 - start_idx: 15, end_idx: 45, num_inference_steps: 60\n"}
+,{"stream_name":"stdout","time":1819.07917033,"data":"\n"}
+,{"stream_name":"stdout","time":1819.49243503,"data":"  0%|          | 0/60 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":1819.761067646,"data":"  2%|▏         | 1/60 [00:00\u003c00:24,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1820.178231783,"data":"  3%|▎         | 2/60 [00:00\u003c00:19,  3.05it/s]\n"}
+,{"stream_name":"stdout","time":1820.59344695,"data":"  5%|▌         | 3/60 [00:01\u003c00:21,  2.71it/s]\n"}
+,{"stream_name":"stdout","time":1821.008959142,"data":"  7%|▋         | 4/60 [00:01\u003c00:21,  2.58it/s]\n"}
+,{"stream_name":"stdout","time":1821.426424105,"data":"  8%|▊         | 5/60 [00:01\u003c00:21,  2.52it/s]\n"}
+,{"stream_name":"stdout","time":1821.843037464,"data":" 10%|█         | 6/60 [00:02\u003c00:21,  2.47it/s]\n"}
+,{"stream_name":"stdout","time":1822.256673922,"data":" 12%|█▏        | 7/60 [00:02\u003c00:21,  2.45it/s]\n"}
+,{"stream_name":"stdout","time":1822.674265728,"data":" 13%|█▎        | 8/60 [00:03\u003c00:21,  2.44it/s]\n"}
+,{"stream_name":"stdout","time":1823.090707537,"data":" 15%|█▌        | 9/60 [00:03\u003c00:21,  2.43it/s]\n"}
+,{"stream_name":"stdout","time":1823.502590235,"data":" 17%|█▋        | 10/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1823.919385649,"data":" 18%|█▊        | 11/60 [00:04\u003c00:20,  2.42it/s]\n"}
+,{"stream_name":"stdout","time":1824.336536791,"data":" 20%|██        | 12/60 [00:04\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1824.753658012,"data":" 22%|██▏       | 13/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1825.168322224,"data":" 23%|██▎       | 14/60 [00:05\u003c00:19,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1826.007265848,"data":" 25%|██▌       | 15/60 [00:06\u003c00:18,  2.41it/s]\n"}
+,{"stream_name":"stdout","time":1826.837594756,"data":" 27%|██▋       | 16/60 [00:06\u003c00:23,  1.84it/s]\n"}
+,{"stream_name":"stdout","time":1827.671001903,"data":" 28%|██▊       | 17/60 [00:07\u003c00:27,  1.59it/s]\n"}
+,{"stream_name":"stdout","time":1828.502408072,"data":" 30%|███       | 18/60 [00:08\u003c00:29,  1.45it/s]\n"}
+,{"stream_name":"stdout","time":1829.332959104,"data":" 32%|███▏      | 19/60 [00:09\u003c00:30,  1.36it/s]\n"}
+,{"stream_name":"stdout","time":1830.202044498,"data":" 33%|███▎      | 20/60 [00:10\u003c00:30,  1.31it/s]\n"}
+,{"stream_name":"stdout","time":1830.998921366,"data":" 35%|███▌      | 21/60 [00:11\u003c00:30,  1.28it/s]\n"}
+,{"stream_name":"stdout","time":1831.833119137,"data":" 37%|███▋      | 22/60 [00:11\u003c00:30,  1.25it/s]\n"}
+,{"stream_name":"stdout","time":1832.663888933,"data":" 38%|███▊      | 23/60 [00:12\u003c00:29,  1.24it/s]\n"}
+,{"stream_name":"stdout","time":1833.492908753,"data":" 40%|████      | 24/60 [00:13\u003c00:29,  1.23it/s]\n"}
+,{"stream_name":"stdout","time":1834.324238396,"data":" 42%|████▏     | 25/60 [00:14\u003c00:28,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1835.156517536,"data":" 43%|████▎     | 26/60 [00:15\u003c00:27,  1.22it/s]\n"}
+,{"stream_name":"stdout","time":1835.991012017,"data":" 45%|████▌     | 27/60 [00:16\u003c00:27,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1836.824162993,"data":" 47%|████▋     | 28/60 [00:16\u003c00:26,  1.21it/s]\n"}
+,{"stream_name":"stdout","time":1837.654531121,"data":" 48%|████▊     | 29/60 [00:17\u003c00:25,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1838.486597883,"data":" 50%|█████     | 30/60 [00:18\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1839.319329719,"data":" 52%|█████▏    | 31/60 [00:19\u003c00:24,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1840.151406961,"data":" 53%|█████▎    | 32/60 [00:20\u003c00:23,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1840.986018673,"data":" 55%|█████▌    | 33/60 [00:21\u003c00:22,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1841.818647148,"data":" 57%|█████▋    | 34/60 [00:21\u003c00:21,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1842.648706958,"data":" 58%|█████▊    | 35/60 [00:22\u003c00:20,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1843.480924296,"data":" 60%|██████    | 36/60 [00:23\u003c00:19,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1844.310054318,"data":" 62%|██████▏   | 37/60 [00:24\u003c00:19,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1845.143021279,"data":" 63%|██████▎   | 38/60 [00:25\u003c00:18,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1845.978741932,"data":" 65%|██████▌   | 39/60 [00:26\u003c00:17,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1846.810804234,"data":" 67%|██████▋   | 40/60 [00:26\u003c00:16,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1847.646250354,"data":" 68%|██████▊   | 41/60 [00:27\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1848.473256194,"data":" 70%|███████   | 42/60 [00:28\u003c00:15,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1849.304649014,"data":" 72%|███████▏  | 43/60 [00:29\u003c00:14,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1850.137186468,"data":" 73%|███████▎  | 44/60 [00:30\u003c00:13,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1850.550782583,"data":" 75%|███████▌  | 45/60 [00:31\u003c00:12,  1.20it/s]\n"}
+,{"stream_name":"stdout","time":1850.966972894,"data":" 77%|███████▋  | 46/60 [00:31\u003c00:09,  1.42it/s]\n"}
+,{"stream_name":"stdout","time":1851.382054786,"data":" 78%|███████▊  | 47/60 [00:31\u003c00:08,  1.61it/s]\n"}
+,{"stream_name":"stdout","time":1851.799292302,"data":" 80%|████████  | 48/60 [00:32\u003c00:06,  1.79it/s]\n"}
+,{"stream_name":"stdout","time":1852.217229048,"data":" 82%|████████▏ | 49/60 [00:32\u003c00:05,  1.94it/s]\n"}
+,{"stream_name":"stdout","time":1852.632485412,"data":" 83%|████████▎ | 50/60 [00:33\u003c00:04,  2.06it/s]\n"}
+,{"stream_name":"stdout","time":1853.049765801,"data":" 85%|████████▌ | 51/60 [00:33\u003c00:04,  2.15it/s]\n"}
+,{"stream_name":"stdout","time":1853.465844926,"data":" 87%|████████▋ | 52/60 [00:33\u003c00:03,  2.22it/s]\n"}
+,{"stream_name":"stdout","time":1853.88330892,"data":" 88%|████████▊ | 53/60 [00:34\u003c00:03,  2.27it/s]\n"}
+,{"stream_name":"stdout","time":1854.300223536,"data":" 90%|█████████ | 54/60 [00:34\u003c00:02,  2.31it/s]\n"}
+,{"stream_name":"stdout","time":1854.717444985,"data":" 92%|█████████▏| 55/60 [00:35\u003c00:02,  2.33it/s]\n"}
+,{"stream_name":"stdout","time":1855.13350075,"data":" 93%|█████████▎| 56/60 [00:35\u003c00:01,  2.35it/s]\n"}
+,{"stream_name":"stdout","time":1855.550363365,"data":" 95%|█████████▌| 57/60 [00:36\u003c00:01,  2.37it/s]\n"}
+,{"stream_name":"stdout","time":1855.965871295,"data":" 97%|█████████▋| 58/60 [00:36\u003c00:00,  2.38it/s]\n"}
+,{"stream_name":"stdout","time":1856.381432392,"data":" 98%|█████████▊| 59/60 [00:36\u003c00:00,  2.39it/s]\n"}
+,{"stream_name":"stdout","time":1856.38240439,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  2.39it/s]\n"}
+,{"stream_name":"stdout","time":1856.384276739,"data":"100%|██████████| 60/60 [00:37\u003c00:00,  1.61it/s]\n"}
+,{"stream_name":"stdout","time":1859.632071066,"data":"\n"}
+,{"stream_name":"stdout","time":1859.633124193,"data":"  0%|          | 0/1 [00:00\u003c?, ?it/s]2026-11-25 22:03:16.163 | INFO     | acestep.pipeline_ace_step:save_wav_file:1412 - Saving audio to /kaggle/working/dumpling_out/audio/intro_d__s415.flac.tmp.wav using backend soundfile\n"}
+,{"stream_name":"stdout","time":1859.639399077,"data":"\n"}
+,{"stream_name":"stdout","time":1859.640293799,"data":"100%|██████████| 1/1 [00:00\u003c00:00, 122.19it/s]\n"}
+,{"stream_name":"stdout","time":1859.659994541,"data":"2026-11-25 22:03:16.191 | INFO     | acestep.pipeline_ace_step:cleanup_memory:151 - GPU Memory: 8.08GB allocated, 8.62GB reserved\n"}
+,{"stream_name":"stdout","time":1860.527210059,"data":"22:03:17 ok intro_d__s415 {'seconds': 15.98, 'peak': 0.966, 'rms_db': -15.2, 'clipped_pct': 0.0, 'tempo_bpm': 170.5, 'mid_band_ratio': 0.451} in 41s\n"}
+,{"stream_name":"stdout","time":1862.854343228,"data":"22:03:19 done: 16 ok, 0 failed\n"}
+,{"stream_name":"stdout","time":1870.010988309,"data":"\n"}
+,{"stream_name":"stdout","time":1870.011025693,"data":"SUMMARY {'acestep': 'ok'}\n"}
+,{"stream_name":"stdout","time":1870.207689749,"data":"backend: acestep | license: Apache-2.0 | model: ACE-Step/ACE-Step-v1-3.5B 82cd0d7b6322bd28cd4e830fe675ddb6180ce36c\n"}
+,{"stream_name":"stdout","time":1870.20771886,"data":"full_a__s101 ok {'seconds': 59.91, 'peak': 0.835, 'rms_db': -18.1, 'clipped_pct': 0.0, 'tempo_bpm': 90.7, 'mid_band_ratio': 0.589}\n"}
+,{"stream_name":"stdout","time":1870.479614482,"data":"full_a__s102 ok {'seconds': 59.91, 'peak': 0.881, 'rms_db': -16.8, 'clipped_pct': 0.0, 'tempo_bpm': 100.4, 'mid_band_ratio': 0.437}\n"}
+,{"stream_name":"stdout","time":1870.626221203,"data":"full_b__s202 ok {'seconds': 59.91, 'peak': 0.954, 'rms_db': -15.7, 'clipped_pct': 0.0, 'tempo_bpm': 119.7, 'mid_band_ratio': 0.41}\n"}
+,{"stream_name":"stdout","time":1870.749879123,"data":"full_b__s203 ok {'seconds': 59.91, 'peak': 0.89, 'rms_db': -17.1, 'clipped_pct': 0.0, 'tempo_bpm': 175.8, 'mid_band_ratio': 0.652}\n"}
+,{"stream_name":"stdout","time":1870.891983433,"data":"full_c__s303 ok {'seconds': 59.91, 'peak': 0.922, 'rms_db': -16.4, 'clipped_pct': 0.0, 'tempo_bpm': 160.7, 'mid_band_ratio': 0.289}\n"}
+,{"stream_name":"stdout","time":1871.025255124,"data":"full_c__s304 ok {'seconds': 59.91, 'peak': 0.948, 'rms_db': -16.3, 'clipped_pct': 0.0, 'tempo_bpm': 165.4, 'mid_band_ratio': 0.433}\n"}
+,{"stream_name":"stdout","time":1871.133883954,"data":"full_d__s404 ok {'seconds': 59.91, 'peak': 0.964, 'rms_db': -16.2, 'clipped_pct': 0.0, 'tempo_bpm': 165.4, 'mid_band_ratio': 0.314}\n"}
+,{"stream_name":"stdout","time":1871.24941649,"data":"full_d__s405 ok {'seconds': 59.91, 'peak': 0.978, 'rms_db': -13.8, 'clipped_pct': 0.0, 'tempo_bpm': 97.0, 'mid_band_ratio': 0.307}\n"}
+,{"stream_name":"stdout","time":1871.394307729,"data":"intro_a__s111 ok {'seconds': 15.98, 'peak': 0.939, 'rms_db': -15.1, 'clipped_pct': 0.0, 'tempo_bpm': 200.9, 'mid_band_ratio': 0.24}\n"}
+,{"stream_name":"stdout","time":1871.432534054,"data":"intro_a__s112 ok {'seconds': 15.98, 'peak': 1.0, 'rms_db': -15.0, 'clipped_pct': 0.0, 'tempo_bpm': 112.5, 'mid_band_ratio': 0.414}\n"}
+,{"stream_name":"stdout","time":1871.464008091,"data":"intro_b__s212 ok {'seconds': 15.98, 'peak': 0.932, 'rms_db': -16.5, 'clipped_pct': 0.0, 'tempo_bpm': 144.2, 'mid_band_ratio': 0.619}\n"}
+,{"stream_name":"stdout","time":1871.49691637,"data":"intro_b__s213 ok {'seconds': 15.98, 'peak': 0.988, 'rms_db': -15.7, 'clipped_pct': 0.0, 'tempo_bpm': 187.5, 'mid_band_ratio': 0.618}\n"}
+,{"stream_name":"stdout","time":1871.528504229,"data":"intro_c__s313 ok {'seconds': 15.98, 'peak': 0.97, 'rms_db': -17.8, 'clipped_pct': 0.0, 'tempo_bpm': 175.8, 'mid_band_ratio': 0.615}\n"}
+,{"stream_name":"stdout","time":1871.560722625,"data":"intro_c__s314 ok {'seconds': 15.98, 'peak': 0.928, 'rms_db': -17.6, 'clipped_pct': 0.0, 'tempo_bpm': 97.0, 'mid_band_ratio': 0.52}\n"}
+,{"stream_name":"stdout","time":1871.592223949,"data":"intro_d__s414 ok {'seconds': 15.98, 'peak': 0.908, 'rms_db': -14.7, 'clipped_pct': 0.0, 'tempo_bpm': 144.2, 'mid_band_ratio': 0.295}\n"}
+,{"stream_name":"stdout","time":1871.62459886,"data":"intro_d__s415 ok {'seconds': 15.98, 'peak': 0.966, 'rms_db': -15.2, 'clipped_pct': 0.0, 'tempo_bpm': 170.5, 'mid_band_ratio': 0.451}\n"}
+,{"stream_name":"stderr","time":1877.693330599,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1877.69335827,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1877.913753123,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1877.913807316,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1878.801638037,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1880.696434792,"data":"[NbConvertApp] Writing 98439453 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1883.52102697,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1888.351482342,"data":"[NbConvertApp] Writing 98778274 bytes to __results__.html\n"}
+]
