@@ -46,3 +46,4 @@
 6. Animate as many FACIAL EXPRESSIONS and body movements as possible; constant visual interest, no static moments.
 7. Use as many tools and agents as needed to reach the best possible continuous first version.
 8. Work autonomously to completion based on everything the creator said so far.
+- UNCLE REFERENCE LOCKED (creator): use the Uncle exactly as in the corrected intro stills, variant 2 (gpu-results/intro-v3/dumpling_out/images/*__v2.png, e.g. I1_bite__v2, I3_pool__v2, I5_chase__v2, I6_chomp__v2). Do NOT redesign or regenerate a new Uncle model; use these images as the Uncle reference for every new still.
