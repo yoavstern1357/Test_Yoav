@@ -610,13 +610,13 @@ def importance_map(img):
     sat = np.clip((hsv[..., 1] - 90) / 120, 0, 1) * np.clip((hsv[..., 2] - 60) / 120, 0, 1)
     imp = 0.45 * sal + 0.6 * edge + 1.1 * skin + 0.25 * cv2.GaussianBlur(sat, (0, 0), 2.0)
     imp = cv2.GaussianBlur(imp, (0, 0), 2.5)
-    return np.clip(imp / (np.percentile(imp, 97) + 1e-6), 0, 1.5)
+    return np.clip(imp / (np.percentile(imp, 97) + 1e-6), 0, 1.5), skin
 
 
 def safe_caption_y(frame, lay, land):
     """Vertical centre (fraction of the height) of the emptiest band for this caption, near the usual spot; faces, hands and dumplings are
     what the importance map marks, so the caption lands beside them (never over them when an empty band exists)."""
-    imp = importance_map(frame)
+    imp, skin = importance_map(frame)
     h, w = imp.shape
     H = frame.height
     bbox = lay.getchannel("A").getbbox()
@@ -635,7 +635,8 @@ def safe_caption_y(frame, lay, land):
         if y0 < 0 or y1 > h:
             continue
         reg = imp[y0:y1, x0:x1]
-        sc = float(reg.mean()) + 1.0 * float(np.percentile(reg, 93)) + 0.35 * abs(cy - default)
+        sk = skin[y0:y1, x0:x1]
+        sc = 3.0 * float(sk.max() > 0.30) + float(reg.mean()) + 1.0 * float(np.percentile(reg, 93)) + 0.35 * abs(cy - default)
         if sc < bs:
             best, bs = float(cy), sc
     return best
