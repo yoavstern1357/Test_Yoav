@@ -1,1 +1,1 @@
-{"run_id": "intro-stills-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/intro-stills", "smoke": false, "backend": "klein", "only": "", "max_minutes": 90}
+{"run_id": "style-options-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/style-options", "smoke": false, "backend": "klein", "only": "", "max_minutes": 60}

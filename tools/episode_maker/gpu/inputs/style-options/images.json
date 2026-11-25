@@ -1,0 +1,55 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 2,
+  "ref_max": 704
+ },
+ "images": [
+  {
+   "id": "S1_soft_watercolor_anime",
+   "seed": 7100,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "The same two characters as in the reference image, same faces, bodies and village clothes: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, rolled hemp trousers, orange cloth sash, small cloth bag; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash, towel on one shoulder. They stand side by side at a small dumpling stall in an old canal town, steam rising from bamboo steamers, the boy holding chopsticks, the man smiling. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. Vertical composition. No text."
+  },
+  {
+   "id": "S2_clean_tv_anime",
+   "seed": 7101,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "The same two characters as in the reference image, same faces, bodies and village clothes: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, rolled hemp trousers, orange cloth sash, small cloth bag; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash, towel on one shoulder. They stand side by side at a small dumpling stall in an old canal town, steam rising from bamboo steamers, the boy holding chopsticks, the man smiling. Style: clean modern TV anime, crisp dark line art, flat cel shading with one shadow tone, bright clear colors, sharp graphic backgrounds. Original house style, not imitating any specific studio. Vertical composition. No text."
+  },
+  {
+   "id": "S3_gouache_painterly",
+   "seed": 7102,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "The same two characters as in the reference image, same faces, bodies and village clothes: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, rolled hemp trousers, orange cloth sash, small cloth bag; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash, towel on one shoulder. They stand side by side at a small dumpling stall in an old canal town, steam rising from bamboo steamers, the boy holding chopsticks, the man smiling. Style: painterly gouache anime, soft edges with almost no outlines, rich matte colors, brush texture in the background, warm cinematic lighting, like a hand-painted animated film poster. Original house style, not imitating any specific studio. Vertical composition. No text."
+  },
+  {
+   "id": "S4_ink_and_color",
+   "seed": 7103,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "The same two characters as in the reference image, same faces, bodies and village clothes: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, rolled hemp trousers, orange cloth sash, small cloth bag; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash, towel on one shoulder. They stand side by side at a small dumpling stall in an old canal town, steam rising from bamboo steamers, the boy holding chopsticks, the man smiling. Style: Eastern ink-and-color anime, expressive ink line with varied thickness, soft color fills, ink-wash background with lots of air, subtle rice-paper texture, elegant and calm. Original house style, not imitating any specific studio. Vertical composition. No text."
+  }
+ ]
+}
