@@ -1,0 +1,62 @@
+[{"stream_name":"stderr","time":6.769382596,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.769416987,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.769420427,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.769422637,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.307122356,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.307155766,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.307160786,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.307164466,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.373762797,"data":"Kaggle\n"}
+,{"stream_name":"stderr","time":8.700726119,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":8.70123196,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":8.70124192,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":8.701249549,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8.701253789,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":8.70125726,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":8.701260229,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":8.701263489,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":8.701267089,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":8.701270249,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":8.70127376,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":8.701276749,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":8.701279749,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":8.701282719,"data":"FileNotFoundError                         Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":8.701285609,"data":"/tmp/ipykernel_16/3828642837.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":8.701288669,"data":"      3 ON_COLAB = \"COLAB_GPU\" in os.environ or \"google.colab\" in sys.modules\n"}
+,{"stream_name":"stderr","time":8.701291789,"data":"      4 print(\"Kaggle\" if ON_KAGGLE else \"Colab\" if ON_COLAB else \"other machine\")\n"}
+,{"stream_name":"stderr","time":8.701295659,"data":"----\u003e 5 print(subprocess.run([\"nvidia-smi\", \"-L\"], capture_output=True, text=True).stdout or \"NO GPU FOUND: turn on the accelerator and restart\")\n"}
+,{"stream_name":"stderr","time":8.701299059,"data":"      6 OUT = \"/kaggle/working/dumpling_out\" if ON_KAGGLE else \"/content/dumpling_out\" if ON_COLAB else os.path.abspath(\"dumpling_out\")\n"}
+,{"stream_name":"stderr","time":8.701318159,"data":"      7 os.makedirs(OUT, exist_ok=True)\n"}
+,{"stream_name":"stderr","time":8.701320259,"data":"\n"}
+,{"stream_name":"stderr","time":8.701322159,"data":"/usr/lib/python3.13/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)\n"}
+,{"stream_name":"stderr","time":8.701324179,"data":"    553         kwargs['stderr'] = PIPE\n"}
+,{"stream_name":"stderr","time":8.701326079,"data":"    554 \n"}
+,{"stream_name":"stderr","time":8.70132801,"data":"--\u003e 555     with Popen(*popenargs, **kwargs) as process:\n"}
+,{"stream_name":"stderr","time":8.701329979,"data":"    556         try:\n"}
+,{"stream_name":"stderr","time":8.701331879,"data":"    557             stdout, stderr = process.communicate(input, timeout=timeout)\n"}
+,{"stream_name":"stderr","time":8.701333879,"data":"\n"}
+,{"stream_name":"stderr","time":8.701336599,"data":"/usr/lib/python3.13/subprocess.py in __init__(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, user, group, extra_groups, encoding, errors, text, umask, pipesize, process_group)\n"}
+,{"stream_name":"stderr","time":8.70133893,"data":"   1038                             encoding=encoding, errors=errors)\n"}
+,{"stream_name":"stderr","time":8.70134085,"data":"   1039 \n"}
+,{"stream_name":"stderr","time":8.701343039,"data":"-\u003e 1040             self._execute_child(args, executable, preexec_fn, close_fds,\n"}
+,{"stream_name":"stderr","time":8.70134501,"data":"   1041                                 pass_fds, cwd, env,\n"}
+,{"stream_name":"stderr","time":8.701346899,"data":"   1042                                 startupinfo, creationflags, shell,\n"}
+,{"stream_name":"stderr","time":8.701348799,"data":"\n"}
+,{"stream_name":"stderr","time":8.70135063,"data":"/usr/lib/python3.13/subprocess.py in _execute_child(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, restore_signals, gid, gids, uid, umask, start_new_session, process_group)\n"}
+,{"stream_name":"stderr","time":8.701352859,"data":"   1990                         err_msg = os.strerror(errno_num)\n"}
+,{"stream_name":"stderr","time":8.701354759,"data":"   1991                     if err_filename is not None:\n"}
+,{"stream_name":"stderr","time":8.701356639,"data":"-\u003e 1992                         raise child_exception_type(errno_num, err_msg, err_filename)\n"}
+,{"stream_name":"stderr","time":8.70135859,"data":"   1993                     else:\n"}
+,{"stream_name":"stderr","time":8.701360439,"data":"   1994                         raise child_exception_type(errno_num, err_msg)\n"}
+,{"stream_name":"stderr","time":8.701362339,"data":"\n"}
+,{"stream_name":"stderr","time":8.701364139,"data":"FileNotFoundError: [Errno 2] No such file or directory: 'nvidia-smi'\n"}
+,{"stream_name":"stderr","time":8.70136605,"data":"\n"}
+,{"stream_name":"stderr","time":10.960202074,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":10.960241474,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":11.10939153,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":11.10942458,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":11.790231666,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":11.858809906,"data":"[NbConvertApp] Writing 48574 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":14.398442317,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":14.939932045,"data":"[NbConvertApp] Writing 444179 bytes to __results__.html\n"}
+]
