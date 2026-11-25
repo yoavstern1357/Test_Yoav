@@ -10,6 +10,13 @@
  "frames_fallback": "frames/ep01v43",
  "clips_dir": "clips/ep01v44",
  "voice_engine": "gpu",
+ "voice_cast": {
+  "narrator": {
+   "engine": "prerendered",
+   "dir": "tts/gpu",
+   "pitch": 0.84
+  }
+ },
  "voice_fallback": true,
  "caption_safe": true,
  "voice_speed": {

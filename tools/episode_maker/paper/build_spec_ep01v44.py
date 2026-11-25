@@ -189,7 +189,7 @@ def build():
 
 
 spec = dict(title="The Dumpling Boy: intro + Episode 01 v4.4 (How Does Soup Get Inside a Dumpling?)", size=[1080, 1920], fps=30, orientation="both",
-            frames_dir="frames/ep01v44", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v44", voice_engine="gpu", voice_fallback=True, caption_safe=True,
+            frames_dir="frames/ep01v44", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v44", voice_engine="gpu", voice_cast={"narrator": {"engine": "prerendered", "dir": "tts/gpu", "pitch": 0.84}}, voice_fallback=True, caption_safe=True,
             voice_speed={"boy": 1.17, "uncle": 1.25, "grandma": 1.25, "narrator": 1.15}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0,
             caption_y=0.8, caption_y_land=0.86, narrator_echo=True, snap_to_beat=False,
             # series opening song (ACE-Step, original): swap the file here when the creator picks another variant (tools/episode_maker/make_opening_cuts.py)
