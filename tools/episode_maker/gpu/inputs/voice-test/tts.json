@@ -8,22 +8,30 @@
   "boy": {
    "ref": "refs/boy.wav",
    "exaggeration_scale": 1.0,
-   "orpheus_voice": "leo"
+   "orpheus_voice": "leo",
+   "qwen_voice": "A warm, curious 11-year-old boy with a bright, clear, friendly voice, natural and expressive like a cheerful kids TV host.",
+   "qwen_speaker": "Aiden"
   },
   "grandma": {
    "ref": "refs/grandma.wav",
    "exaggeration_scale": 1.1,
-   "orpheus_voice": "tara"
+   "orpheus_voice": "tara",
+   "qwen_voice": "A kind elderly grandmother with a warm, slightly raspy voice, lively, affectionate and full of character.",
+   "qwen_speaker": "Serena"
   },
   "narrator": {
    "ref": "refs/narrator.wav",
    "exaggeration_scale": 0.8,
-   "orpheus_voice": "zac"
+   "orpheus_voice": "zac",
+   "qwen_voice": "A deep, solemn, resonant male storyteller voice with a slow measured pace, like the narrator of an epic legend.",
+   "qwen_speaker": "Uncle_Fu"
   },
   "uncle": {
    "ref": "refs/uncle.wav",
    "exaggeration_scale": 1.15,
-   "orpheus_voice": "dan"
+   "orpheus_voice": "dan",
+   "qwen_voice": "A big, warm, jolly middle-aged man with a deep, rich, slightly husky voice, funny, playful and affectionate, very expressive.",
+   "qwen_speaker": "Ryan"
   }
  },
  "lines": [

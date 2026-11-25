@@ -1,1 +1,1 @@
-{"run_id": "voices-test-001", "task": "tts", "input": "tools/episode_maker/gpu/inputs/voice-test", "smoke": false, "backend": "chatterbox", "only": "", "max_minutes": 90}
+{"run_id": "voices-test-002", "task": "tts", "input": "tools/episode_maker/gpu/inputs/voice-test", "smoke": false, "backend": "qwen3,chatterbox,orpheus", "only": "", "max_minutes": 40}

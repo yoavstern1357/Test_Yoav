@@ -23,7 +23,7 @@ file in a repo cannot run code); no trust_remote_code; no token. The resolved mo
    "styles": {"tender": {"exaggeration": 0.35, "cfg_weight": 0.3}},          (optional, adds to / overrides STYLES below)
    "lines": [{"id": "<line key>", "who": "boy", "text": "...", "style": "host", "text_gpu": "optional text with tags"}]}
 """
-import argparse, json, os, re, shutil, sys, time, traceback, wave, zipfile
+import argparse, json, os, re, shutil, subprocess, sys, time, traceback, wave, zipfile
 import numpy as np
 
 BACKENDS = {
@@ -170,10 +170,20 @@ class Orpheus:
         secure_torch_load()
         from transformers import AutoModelForCausalLM, AutoTokenizer
         from snac import SNAC
-        repo = BACKENDS["orpheus"]["repo"]
         self.torch, self.sr = torch, 24000
-        self.tok = AutoTokenizer.from_pretrained(repo, revision=a.revision)
-        self.m = AutoModelForCausalLM.from_pretrained(repo, torch_dtype=torch.float16, use_safetensors=True, revision=a.revision).cuda().eval()
+        err = None
+        for repo in ORPHEUS_REPOS:          # official repo first; the ungated mirror when the official one needs a token
+            try:
+                self.tok = AutoTokenizer.from_pretrained(repo, revision=a.revision)
+                self.m = AutoModelForCausalLM.from_pretrained(repo, dtype=torch.float16, use_safetensors=True, revision=a.revision).cuda().eval()
+                BACKENDS["orpheus"]["repo"] = repo
+                log("orpheus weights from", repo)
+                break
+            except Exception as ex:         # noqa: BLE001
+                err = ex
+                log("orpheus repo", repo, "failed:", repr(ex)[:300])
+        else:
+            raise err
         self.snac = SNAC.from_pretrained("hubertsiuzdak/snac_24khz").eval().cuda()
 
     def say(self, line, st, ref, seed):
@@ -200,8 +210,139 @@ class Orpheus:
         return audio.squeeze().float().cpu().numpy()
 
 
+class Qwen3:
+    """Qwen3-TTS 1.7B (Alibaba Qwen, Apache-2.0). `qwen3` = VoiceDesign (voice from a text description + a style sentence per line),
+    `qwen3custom` = CustomVoice (9 built-in premium speakers + a style instruction)."""
+
+    def __init__(self, a):
+        import torch
+        secure_torch_load()
+        from qwen_tts import Qwen3TTSModel
+        self.torch, self.custom = torch, a.backend == "qwen3custom"
+        repo = BACKENDS[a.backend]["repo"]
+        last = None
+        for dt in (torch.float16, torch.bfloat16):          # T4 has no native bf16: try fp16 first, fall back if the output is broken
+            try:
+                self.m = Qwen3TTSModel.from_pretrained(repo, device_map="cuda:0", dtype=dt, attn_implementation="sdpa", revision=a.revision) \
+                    if a.revision else Qwen3TTSModel.from_pretrained(repo, device_map="cuda:0", dtype=dt, attn_implementation="sdpa")
+                self.sr = 24000
+                w = self._gen("Hello there, this is a short test.", "Natural.", "A friendly young man.", "Ryan", 1)
+                if not np.isfinite(w).all() or np.abs(w).max() < 0.01:
+                    raise RuntimeError("fp16 warm-up produced NaN or silence" if dt == torch.float16 else "warm-up silent")
+                log("qwen3 loaded", repo, str(dt))
+                return
+            except Exception as ex:         # noqa: BLE001
+                last = ex
+                log("qwen3 dtype", str(dt), "failed:", repr(ex)[:300])
+                self.m = None
+                torch.cuda.empty_cache()
+        raise last
+
+    def _gen(self, text, style, voice, speaker, seed):
+        self.torch.manual_seed(seed)
+        kw = dict(do_sample=True, temperature=0.8, top_p=0.95, top_k=50, repetition_penalty=1.05, max_new_tokens=1500)
+        if self.custom:
+            wavs, sr = self.m.generate_custom_voice(text=text, language="English", speaker=speaker, instruct=style, **kw)
+        else:
+            wavs, sr = self.m.generate_voice_design(text=text, language="English", instruct=(voice + " " + style).strip(), **kw)
+        self.sr = int(sr)
+        return np.asarray(wavs[0], dtype=np.float32).squeeze()
+
+    def say(self, line, st, ref, seed):
+        return self._gen(line["text"], st.get("qwen", ""), st.get("qwen_voice", "A clear, natural English speaker."),
+                         st.get("qwen_speaker", "Ryan"), seed)
+
+
+# ------------------------------------------------------------------ installer (Kaggle / Colab: NEVER replace the preinstalled torch)
+PIN_FILE = "/tmp/dumpling_pins.txt"
+# per backend: (packages installed with --no-deps, packages installed normally but held to the pins of the preinstalled torch stack)
+RECIPES = {
+    "chatterbox": (["chatterbox-tts==0.1.7"],
+                   ["transformers==5.2.0", "diffusers==0.29.0", "librosa==0.11.0", "s3tokenizer", "resemble-perth", "conformer==0.3.2",
+                    "pykakasi==2.3.0", "pyloudnorm", "omegaconf", "safetensors", "huggingface_hub", "einops", "spacy-pkuseg", "dicta-onnx"]),
+    "orpheus": ([], ["transformers==5.2.0", "accelerate", "snac", "soundfile", "huggingface_hub"]),
+    "qwen3": ([], ["transformers==4.57.3", "accelerate==1.12.0", "qwen-tts", "librosa", "soundfile", "sox", "onnxruntime", "einops"]),
+}
+RECIPES["turbo"] = RECIPES["chatterbox"]
+RECIPES["qwen3custom"] = RECIPES["qwen3"]
+MODULE_TO_PIP = {"perth": "resemble-perth", "spacy_pkuseg": "spacy-pkuseg", "dicta_onnx": "dicta-onnx", "russian_text_stresser": "russian-text-stresser",
+                 "s3tokenizer": "s3tokenizer", "pkg_resources": "setuptools<81", "sklearn": "scikit-learn", "cv2": "opencv-python-headless", "yaml": "pyyaml"}
+IMPORT_TEST = {"chatterbox": "import chatterbox.tts", "turbo": "import chatterbox.tts_turbo", "orpheus": "import transformers, snac",
+               "qwen3": "import qwen_tts", "qwen3custom": "import qwen_tts"}
+
+
+def _run(cmd, tail=1500):
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    out = (r.stdout + r.stderr).strip()
+    if r.returncode and out:
+        print(out[-tail:], flush=True)
+    return r
+
+
+def write_pins():
+    """Pin the preinstalled torch stack, so no later `pip install` can replace it (this broke the first Chatterbox run)."""
+    from importlib.metadata import PackageNotFoundError, version
+    lines = []
+    for p in ("torch", "torchvision", "torchaudio", "torchcodec", "triton", "numpy"):
+        try:
+            lines.append(f"{p}=={version(p)}")
+        except PackageNotFoundError:
+            pass
+    open(PIN_FILE, "w").write("\n".join(lines) + "\n")
+    log("pinned:", " ".join(lines))
+
+
+def pip_install(pkgs, no_deps=False):
+    base = [sys.executable, "-m", "pip", "install", "-q", "--disable-pip-version-check"]
+    if no_deps:
+        r = _run(base + ["--no-deps"] + pkgs)
+        return r.returncode == 0
+    if _run(base + ["-c", PIN_FILE] + pkgs).returncode == 0:
+        return True
+    log("grouped install failed, trying one by one:", pkgs)
+    ok = True
+    for p in pkgs:
+        if _run(base + ["-c", PIN_FILE, p]).returncode:
+            ok = False
+            log("install failed (continuing):", p)
+    return ok
+
+
+def install_backend(backend):
+    """Installs the packages of a backend without touching torch / torchvision / torchaudio, then heals missing modules."""
+    import importlib
+    recipe = RECIPES.get(backend)
+    if not recipe:
+        return
+    write_pins()
+    nodeps, deps = recipe
+    if nodeps:
+        pip_install(nodeps, no_deps=True)
+    pip_install(deps)
+    importlib.invalidate_caches()
+    for _ in range(12):                      # heal: install a module the import test says is missing, then test again
+        r = _run([sys.executable, "-c", IMPORT_TEST[backend]], tail=2500)
+        if r.returncode == 0:
+            break
+        m = re.search(r"No module named '([^'.]+)", r.stdout + r.stderr)
+        if not m:
+            log("import test failed for another reason (see above)")
+            break
+        pkg = MODULE_TO_PIP.get(m.group(1), m.group(1).replace("_", "-"))
+        log("missing module", m.group(1), "-> pip install", pkg)
+        if not pip_install([pkg]):
+            pip_install([pkg], no_deps=True)
+    try:
+        import torch
+        log("torch", torch.__version__, "cuda", torch.version.cuda, "ok" if torch.cuda.is_available() else "NO CUDA")
+        import transformers
+        log("transformers", transformers.__version__)
+    except Exception as ex:                  # noqa: BLE001
+        log("version report failed:", repr(ex)[:200])
+
+
 def make_backend(a):
-    return {"mock": Mock, "chatterbox": Chatterbox, "turbo": Chatterbox, "orpheus": Orpheus}[a.backend](a)
+    return {"mock": Mock, "chatterbox": Chatterbox, "turbo": Chatterbox, "orpheus": Orpheus, "qwen3": Qwen3, "qwen3custom": Qwen3}[a.backend](a)
 
 
 def qc(wav, sr, text):
@@ -225,7 +366,11 @@ def main():
     ap.add_argument("--dry-run", action="store_true"); ap.add_argument("--max-minutes", type=float, default=240)
     ap.add_argument("--revision", default=None, help="pin the main model to a commit hash")
     ap.add_argument("--print-requirements", action="store_true")
+    ap.add_argument("--install", action="store_true", help="install the backend's packages (keeps the preinstalled torch) and exit")
     a = ap.parse_args()
+    if a.install:
+        install_backend(a.backend or "chatterbox")
+        return
     if a.print_requirements:
         print(BACKENDS[a.backend or "chatterbox"]["pip"])
         return
