@@ -1,0 +1,2136 @@
+{
+ "backend": "qwen3",
+ "license": "Apache-2.0",
+ "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+ "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+ "results": [
+  {
+   "id": "fc0a6a4efb1d2bfa",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.4,
+   "audio_seconds": 5.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: hushed, amazed, half to himself. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "fc0a6a4efb1d2bfa__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 15.0,
+   "audio_seconds": 5.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: hushed, amazed, half to himself. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "fc0a6a4efb1d2bfa__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 17.0,
+   "audio_seconds": 6.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: hushed, amazed, half to himself. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "175971ff0663f3c4",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 12.5,
+   "audio_seconds": 4.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: warm, amused, to the lens. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "175971ff0663f3c4__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.3,
+   "audio_seconds": 5.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: warm, amused, to the lens. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "175971ff0663f3c4__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.8,
+   "audio_seconds": 5.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: warm, amused, to the lens. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "0dc2161283c760a1",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.3,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muffled by an ice pack, dignified. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "0dc2161283c760a1__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.5,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muffled by an ice pack, dignified. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "0dc2161283c760a1__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 1.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muffled by an ice pack, dignified. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "f7efd0965048c87d",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 13.2,
+   "audio_seconds": 5.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy, storyteller, a little smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "f7efd0965048c87d__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.7,
+   "audio_seconds": 5.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy, storyteller, a little smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "f7efd0965048c87d__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 12.2,
+   "audio_seconds": 4.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy, storyteller, a little smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "9ae042009ba2f552",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 18.4,
+   "audio_seconds": 7.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: leaning in, interested, then wondering on the last half. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "9ae042009ba2f552__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 19.3,
+   "audio_seconds": 7.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: leaning in, interested, then wondering on the last half. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "9ae042009ba2f552__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 18.6,
+   "audio_seconds": 7.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: leaning in, interested, then wondering on the last half. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "08c131e7e19ad6e6",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 13.1,
+   "audio_seconds": 5.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, reading, thinking it over. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "08c131e7e19ad6e6__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 16.4,
+   "audio_seconds": 6.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, reading, thinking it over. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "08c131e7e19ad6e6__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 15.7,
+   "audio_seconds": 6.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, reading, thinking it over. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "e6e97fb18ef8307c",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 5.9,
+   "audio_seconds": 2.16,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slurred, dreamy, talking in his sleep. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "e6e97fb18ef8307c__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.2,
+   "audio_seconds": 2.24,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slurred, dreamy, talking in his sleep. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "e6e97fb18ef8307c__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.8,
+   "audio_seconds": 2.96,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slurred, dreamy, talking in his sleep. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "3c0f60ebe6f0ce3a",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 11.8,
+   "audio_seconds": 4.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: relaxed, glad to be here. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "3c0f60ebe6f0ce3a__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 12.0,
+   "audio_seconds": 4.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: relaxed, glad to be here. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "3c0f60ebe6f0ce3a__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 12.5,
+   "audio_seconds": 4.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: relaxed, glad to be here. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "b11f83a2d82ef87a",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 8.7,
+   "audio_seconds": 3.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: fond, pointing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "b11f83a2d82ef87a__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.7,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: fond, pointing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "b11f83a2d82ef87a__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.3,
+   "audio_seconds": 3.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: fond, pointing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "428ad7f87c9467cb",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.1,
+   "audio_seconds": 1.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: awed, quiet. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "428ad7f87c9467cb__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: awed, quiet. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "428ad7f87c9467cb__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.4,
+   "audio_seconds": 1.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: awed, quiet. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "fe451674d799013d",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 11.6,
+   "audio_seconds": 4.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy, a small shrug. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "fe451674d799013d__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 10.6,
+   "audio_seconds": 4.08,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy, a small shrug. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "fe451674d799013d__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.8,
+   "audio_seconds": 3.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy, a small shrug. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "7060f1563c85fea2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 8.7,
+   "audio_seconds": 3.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, a little moved, then a held beat. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "7060f1563c85fea2__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 2.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, a little moved, then a held beat. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "7060f1563c85fea2__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 5.5,
+   "audio_seconds": 2.08,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, a little moved, then a held beat. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "1d22f55f55493315",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.0,
+   "audio_seconds": 3.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright, curious, a little shy. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "1d22f55f55493315__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.8,
+   "audio_seconds": 3.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright, curious, a little shy. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "1d22f55f55493315__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 8.3,
+   "audio_seconds": 3.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright, curious, a little shy. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "2d54b246aa498486",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 11.9,
+   "audio_seconds": 4.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: brisk, teasing, eyes on her hands. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "2d54b246aa498486__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 14.5,
+   "audio_seconds": 5.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: brisk, teasing, eyes on her hands. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "2d54b246aa498486__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 10.6,
+   "audio_seconds": 4.08,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: brisk, teasing, eyes on her hands. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "f52900408645c1e6",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 19.2,
+   "audio_seconds": 7.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: warm, hands busy, matter-of-fact. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "f52900408645c1e6__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 18.1,
+   "audio_seconds": 6.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: warm, hands busy, matter-of-fact. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "f52900408645c1e6__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 15.8,
+   "audio_seconds": 5.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: warm, hands busy, matter-of-fact. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "f8095ed6551a7793",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.4,
+   "audio_seconds": 0.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: under his breath, fascinated. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "f8095ed6551a7793__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.6,
+   "audio_seconds": 0.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: under his breath, fascinated. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "f8095ed6551a7793__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.3,
+   "audio_seconds": 0.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: under his breath, fascinated. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "98166281d4fb9d2b",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 12.5,
+   "audio_seconds": 4.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: low, dreamy, a cook who knows. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "98166281d4fb9d2b__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 13.9,
+   "audio_seconds": 5.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: low, dreamy, a cook who knows. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "98166281d4fb9d2b__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 12.3,
+   "audio_seconds": 4.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: low, dreamy, a cook who knows. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "cc23c718b101b3ad",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.9,
+   "audio_seconds": 3.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: breathless wonder, a half-laugh. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "cc23c718b101b3ad__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 8.6,
+   "audio_seconds": 3.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: breathless wonder, a half-laugh. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "cc23c718b101b3ad__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.7,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: breathless wonder, a half-laugh. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "165024b71c14afc1",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.0,
+   "audio_seconds": 1.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: curious. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "165024b71c14afc1__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 1.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: curious. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "165024b71c14afc1__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.9,
+   "audio_seconds": 1.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: curious. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "a84b630238e31095",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 19.1,
+   "audio_seconds": 7.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: amused, proud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "a84b630238e31095__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 17.0,
+   "audio_seconds": 6.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: amused, proud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "a84b630238e31095__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 23.8,
+   "audio_seconds": 9.2,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: amused, proud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "e36c3c6fce81d7d7",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 11.2,
+   "audio_seconds": 4.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muttering, losing count. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "e36c3c6fce81d7d7__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 14.7,
+   "audio_seconds": 5.6,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muttering, losing count. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "e36c3c6fce81d7d7__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 9.7,
+   "audio_seconds": 3.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muttering, losing count. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "872952d7e2feb5a1",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: kindly, not looking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "872952d7e2feb5a1__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 1.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: kindly, not looking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "872952d7e2feb5a1__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 4.6,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: kindly, not looking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "145a48775bc5ba7f",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 5.1,
+   "audio_seconds": 1.92,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quick, warm, a warning. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "145a48775bc5ba7f__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 6.0,
+   "audio_seconds": 2.32,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quick, warm, a warning. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "145a48775bc5ba7f__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 6.8,
+   "audio_seconds": 2.56,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quick, warm, a warning. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "35834c004f792557",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 5.2,
+   "audio_seconds": 1.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: alarmed, low. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "35834c004f792557__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 5.4,
+   "audio_seconds": 2.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: alarmed, low. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "35834c004f792557__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.3,
+   "audio_seconds": 2.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: alarmed, low. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "092e872bd690d9c4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.6,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, relaxed, waving him off. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "092e872bd690d9c4__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.9,
+   "audio_seconds": 3.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, relaxed, waving him off. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "092e872bd690d9c4__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 9.5,
+   "audio_seconds": 3.68,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, relaxed, waving him off. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "2968bcbd72232911",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.1,
+   "audio_seconds": 2.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: tiny voice, wheezing, humbled. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "2968bcbd72232911__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 10.1,
+   "audio_seconds": 3.92,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: tiny voice, wheezing, humbled. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "2968bcbd72232911__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 8.2,
+   "audio_seconds": 3.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: tiny voice, wheezing, humbled. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "68a7605d04699eb6",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 5.8,
+   "audio_seconds": 2.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: kind, a bit teasing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "68a7605d04699eb6__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 10.0,
+   "audio_seconds": 3.84,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: kind, a bit teasing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "68a7605d04699eb6__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 7.1,
+   "audio_seconds": 2.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: kind, a bit teasing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "fb12778e1af31de5",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.8,
+   "audio_seconds": 1.84,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: gentle, hiding a smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "fb12778e1af31de5__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.2,
+   "audio_seconds": 0.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: gentle, hiding a smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "fb12778e1af31de5__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.7,
+   "audio_seconds": 0.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: gentle, hiding a smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "366c810bcba8b1f7",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 11.5,
+   "audio_seconds": 4.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: patient, a teacher's calm. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "366c810bcba8b1f7__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 13.5,
+   "audio_seconds": 5.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: patient, a teacher's calm. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "366c810bcba8b1f7__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 18.8,
+   "audio_seconds": 7.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: patient, a teacher's calm. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "295fef823f07451c",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 7.0,
+   "audio_seconds": 2.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, showing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "295fef823f07451c__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 6.1,
+   "audio_seconds": 2.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, showing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "295fef823f07451c__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 5.4,
+   "audio_seconds": 2.08,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, showing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "55607935df5df086",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.0,
+   "audio_seconds": 0.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: thinking aloud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "55607935df5df086__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.1,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: thinking aloud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "55607935df5df086__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: thinking aloud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "4adeeffe064df9c2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 4.2,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: approving. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "4adeeffe064df9c2__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 5.1,
+   "audio_seconds": 1.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: approving. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "4adeeffe064df9c2__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: approving. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "d1bc3c143135d5e4",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.5,
+   "audio_seconds": 0.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, hopeful. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "d1bc3c143135d5e4__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.4,
+   "audio_seconds": 0.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, hopeful. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "d1bc3c143135d5e4__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.3,
+   "audio_seconds": 0.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, hopeful. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "7837e620dcf33380",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 9.4,
+   "audio_seconds": 3.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: whispering, eyes closed, melting. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "7837e620dcf33380__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 12.7,
+   "audio_seconds": 4.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: whispering, eyes closed, melting. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "7837e620dcf33380__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 9.5,
+   "audio_seconds": 3.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: whispering, eyes closed, melting. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "3edea794e2e1a94b",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 10.0,
+   "audio_seconds": 3.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: pleased. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "3edea794e2e1a94b__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 11.0,
+   "audio_seconds": 4.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: pleased. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "3edea794e2e1a94b__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 9.9,
+   "audio_seconds": 3.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: pleased. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "e052a9f102bef0e6",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.4,
+   "audio_seconds": 1.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: curious, turning to her. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "e052a9f102bef0e6__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.8,
+   "audio_seconds": 1.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: curious, turning to her. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "e052a9f102bef0e6__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 5.0,
+   "audio_seconds": 1.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: curious, turning to her. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "38c721ae4c943d2d",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 18.4,
+   "audio_seconds": 6.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: deep, grand, unhurried. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "38c721ae4c943d2d__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 20.4,
+   "audio_seconds": 7.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: deep, grand, unhurried. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "38c721ae4c943d2d__v3",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 18.9,
+   "audio_seconds": 7.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: deep, grand, unhurried. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "fc04c41ace58d37c",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 15.4,
+   "audio_seconds": 6.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: rising, playful grandeur. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "fc04c41ace58d37c__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 16.7,
+   "audio_seconds": 6.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: rising, playful grandeur. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "fc04c41ace58d37c__v3",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 12.8,
+   "audio_seconds": 4.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: rising, playful grandeur. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "05293ebe00424155",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 2.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: satisfied, closing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "05293ebe00424155__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 6.4,
+   "audio_seconds": 2.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: satisfied, closing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "05293ebe00424155__v3",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 6.0,
+   "audio_seconds": 2.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: satisfied, closing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend."
+   }
+  },
+  {
+   "id": "86137cc97dc36b9a",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, fond. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "86137cc97dc36b9a__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, fond. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "86137cc97dc36b9a__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.5,
+   "audio_seconds": 1.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, fond. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "1afa92d1f061c4b1",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.4,
+   "audio_seconds": 1.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dignified, not lowering the spoon. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "1afa92d1f061c4b1__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 12.4,
+   "audio_seconds": 4.64,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dignified, not lowering the spoon. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "1afa92d1f061c4b1__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.6,
+   "audio_seconds": 1.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dignified, not lowering the spoon. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "d77a16209cc1b840",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 11.1,
+   "audio_seconds": 4.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: to the lens, smiling. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "d77a16209cc1b840__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.1,
+   "audio_seconds": 3.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: to the lens, smiling. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "d77a16209cc1b840__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.7,
+   "audio_seconds": 3.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: to the lens, smiling. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "8d92038709deb28b",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 14.3,
+   "audio_seconds": 5.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slowing down, then quiet and a little amazed. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "8d92038709deb28b__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 23.5,
+   "audio_seconds": 9.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slowing down, then quiet and a little amazed. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "8d92038709deb28b__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 15.1,
+   "audio_seconds": 5.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slowing down, then quiet and a little amazed. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "20eac48ff8555b36",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.3,
+   "audio_seconds": 1.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "20eac48ff8555b36__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "20eac48ff8555b36__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 5.3,
+   "audio_seconds": 2.0,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "cc1e33d297e866a4",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 11.7,
+   "audio_seconds": 4.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet, reading aloud, his voice a little tight. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "cc1e33d297e866a4__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.1,
+   "audio_seconds": 5.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet, reading aloud, his voice a little tight. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "cc1e33d297e866a4__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.7,
+   "audio_seconds": 5.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet, reading aloud, his voice a little tight. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "1d191fac263bd20b",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 9.2,
+   "audio_seconds": 3.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, warm, hoarse. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "1d191fac263bd20b__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.6,
+   "audio_seconds": 2.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, warm, hoarse. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "1d191fac263bd20b__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.6,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, warm, hoarse. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "abc4a747e6fb29a9",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.4,
+   "audio_seconds": 0.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a small smile, almost a breath. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "abc4a747e6fb29a9__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.1,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a small smile, almost a breath. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "abc4a747e6fb29a9__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 1.8,
+   "audio_seconds": 0.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a small smile, almost a breath. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "a5cac3b75b3db066",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 6.2,
+   "audio_seconds": 2.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: smiling, a little secret. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "a5cac3b75b3db066__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 8.1,
+   "audio_seconds": 3.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: smiling, a little secret. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "a5cac3b75b3db066__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 2.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: smiling, a little secret. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children."
+   }
+  },
+  {
+   "id": "7146d41cda6232b2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.9,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: instantly perking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "7146d41cda6232b2__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 4.0,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: instantly perking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "7146d41cda6232b2__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.9,
+   "audio_seconds": 1.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: instantly perking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere."
+   }
+  },
+  {
+   "id": "034b8c85a93d3ec5",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.8,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, to the lens, a small smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "034b8c85a93d3ec5__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.4,
+   "audio_seconds": 2.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, to the lens, a small smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  },
+  {
+   "id": "034b8c85a93d3ec5__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.8,
+   "audio_seconds": 2.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: soft, to the lens, a small smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host."
+   }
+  }
+ ]
+}
