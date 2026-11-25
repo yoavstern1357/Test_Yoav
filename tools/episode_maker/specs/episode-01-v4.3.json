@@ -18,6 +18,7 @@
   "narrator": 1.15
  },
  "max_pause": 0.35,
+ "crf": 23,
  "grain": true,
  "vignette": 0.2,
  "sway": 0.0,
@@ -837,8 +838,8 @@
      "type": "fact",
      "t": 0.3,
      "d": 3.5,
-     "label": "SOUP, SOLID",
-     "text": "The soup goes in as jelly",
+     "label": "SOUP SECRET",
+     "text": "The soup goes in solid",
      "y": 0.18,
      "y_land": 0.28
     }

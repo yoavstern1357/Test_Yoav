@@ -1417,7 +1417,7 @@ def render_video(spec, shots, total, wav, W, H, fps, fdir, orient, out, mobile):
     r = Renderer(spec, shots, W, H, fps, fdir, orient)
     nframes = int(total * fps)
     cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
-           "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
+           "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", str(spec.get("crf", 18)), "-pix_fmt", "yuv420p",
            "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", out]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for i in range(nframes):
