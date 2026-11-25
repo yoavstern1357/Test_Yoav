@@ -3,7 +3,7 @@
 
     python3 make_episode.py specs/episode-01.json out.mp4 [--preview]
 
-Pipeline: neural TTS (Kokoro) -> timeline -> audio mix (voices, sfx, ambience,
+Pipeline: neural TTS (Kokoro by default; optional engines in tts_engines.py, see voice_casts.json) -> timeline -> audio mix (voices, sfx, ambience,
 ducked music) -> frame renderer (Ken Burns, captions, cards, fx) -> ffmpeg.
 Nothing here needs a paid video service.
 """
@@ -39,37 +39,92 @@ FILL = {"boy": (255, 255, 255), "uncle": (255, 226, 140), "grandma": (255, 214, 
 _kokoro = None
 
 
-def tts(who, text, speed_mult=None, pitch_override=None):
-    global _kokoro
-    voice, speed, pitch = VOICES[who]
-    pitch = PITCH_OVERRIDE.get(who, pitch)
-    if pitch_override:
-        pitch = float(pitch_override)
-    if speed_mult:
-        speed = speed * float(speed_mult)
-    key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()
-    os.makedirs(CACHE, exist_ok=True)
-    path = os.path.join(CACHE, key + ".npy")
-    if os.path.exists(path):
-        return np.load(path)
-    if _kokoro is None:
-        from kokoro_onnx import Kokoro
-        _kokoro = Kokoro(os.path.join(TTS_DIR, "kokoro-v1.0.onnx"), os.path.join(TTS_DIR, "voices-v1.0.bin"))
-    wav, sr = _kokoro.create(text, voice=voice, speed=speed, lang="en-us")
+def _load_casts():
+    """Optional per-character engine config (backwards compatible: with no config every voice is Kokoro as before).
+    Presets live in voice_casts.json; pick one with spec "voice_engine" or env VOICE_ENGINE, then override single
+    characters with spec "voice_cast": {"uncle": {"engine": "supertonic", "sid": 8}}."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice_casts.json")
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
+
+
+CAST = {}          # who -> {"engine": "kokoro" | "supertonic" | "pocket" | "prerendered", ...}; empty = Kokoro VOICES above
+
+
+def set_cast(spec):
+    CAST.clear()
+    name = spec.get("voice_engine") or os.environ.get("VOICE_ENGINE")
+    if name and name != "kokoro":
+        presets = _load_casts()
+        if name not in presets:
+            raise SystemExit(f"voice_engine {name!r} not found in voice_casts.json (have: {sorted(presets)})")
+        CAST.update({k: dict(v) for k, v in presets[name].items() if not k.startswith("_")})
+    for who, c in spec.get("voice_cast", {}).items():
+        CAST[who] = dict(c)
+
+
+def _stretch(wav, sr, factor):
+    """Pitch-preserving speed change (ffmpeg atempo) for engines without a native speed control."""
+    tmp_in, tmp_out = f"/tmp/dumpling_st_{os.getpid()}.in.wav", f"/tmp/dumpling_st_{os.getpid()}.out.wav"
+    sf.write(tmp_in, wav, sr)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp_in, "-af", f"atempo={factor:.5f}", tmp_out], check=True)
+    out, sr2 = sf.read(tmp_out)
+    os.remove(tmp_in); os.remove(tmp_out)
+    return out, sr2
+
+
+def _finish(wav, sr, pitch):
+    """Shared tail of every engine: optional pitch shift (duration kept), resample to SR, trim silence, normalize."""
     wav = np.asarray(wav, dtype=np.float64)
     if pitch != 1.0:   # pitch shift, then restore duration with time-stretch via ffmpeg atempo
-        tmp_in, tmp_out = path + ".in.wav", path + ".out.wav"
+        tmp_in, tmp_out = f"/tmp/dumpling_ps_{os.getpid()}.in.wav", f"/tmp/dumpling_ps_{os.getpid()}.out.wav"
         sf.write(tmp_in, wav, sr)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp_in, "-af",
                         f"asetrate={int(sr*pitch)},aresample={sr},atempo={1/pitch:.5f}", tmp_out], check=True)
         wav, sr = sf.read(tmp_out)
         os.remove(tmp_in); os.remove(tmp_out)
     wav = signal.resample_poly(wav, SR, sr)
-    # trim leading/trailing silence
-    a = np.abs(wav)
+    a = np.abs(wav)       # trim leading/trailing silence
     idx = np.where(a > 0.01 * a.max())[0]
     wav = wav[max(0, idx[0] - int(0.03 * SR)): idx[-1] + int(0.08 * SR)]
-    wav = (wav / (np.abs(wav).max() or 1) * 0.9).astype(np.float32)
+    return (wav / (np.abs(wav).max() or 1) * 0.9).astype(np.float32)
+
+
+def tts(who, text, speed_mult=None, pitch_override=None):
+    global _kokoro
+    cast = CAST.get(who)
+    engine = (cast or {}).get("engine", "kokoro")
+    voice, speed, pitch = VOICES[who]
+    if engine == "kokoro" and cast:      # per-character Kokoro override: {"engine": "kokoro", "voice": "am_adam", "speed": 0.95, "pitch": 0.9}
+        voice, speed, pitch = cast.get("voice", voice), cast.get("speed", speed), cast.get("pitch", pitch)
+    elif engine != "kokoro":
+        pitch = cast.get("pitch", 1.0)
+    pitch = PITCH_OVERRIDE.get(who, pitch)
+    if pitch_override:
+        pitch = float(pitch_override)
+    if engine == "kokoro":
+        if speed_mult:
+            speed = speed * float(speed_mult)
+        key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()   # unchanged: old caches stay valid
+    else:
+        key = hashlib.md5(f"{engine}|{json.dumps(cast, sort_keys=True)}|{speed_mult}|{pitch}|{who}|{text}".encode()).hexdigest()
+    os.makedirs(CACHE, exist_ok=True)
+    path = os.path.join(CACHE, key + ".npy")
+    if os.path.exists(path):
+        return np.load(path)
+    if engine == "kokoro":
+        if _kokoro is None:
+            from kokoro_onnx import Kokoro
+            _kokoro = Kokoro(os.path.join(TTS_DIR, "kokoro-v1.0.onnx"), os.path.join(TTS_DIR, "voices-v1.0.bin"))
+        wav, sr = _kokoro.create(text, voice=voice, speed=speed, lang="en-us")
+    else:
+        import tts_engines
+        if engine == "prerendered":
+            wav, sr = tts_engines.prerendered(cast, who, text)
+            if speed_mult and abs(float(speed_mult) - 1.0) > 0.01:
+                wav, sr = _stretch(wav, sr, float(speed_mult))
+        else:
+            wav, sr = tts_engines.synth(cast, text, float(speed_mult or 1.0))
+    wav = _finish(wav, sr, pitch)
     np.save(path, wav)
     return wav
 
@@ -1188,6 +1243,7 @@ def main():
     a = ap.parse_args()
     spec = json.load(open(a.spec))
     PITCH_OVERRIDE.update(spec.get("voice_pitch", {}))
+    set_cast(spec)
     W, H = spec.get("size", [1080, 1920])
     fps = spec.get("fps", 30)
     if a.preview:

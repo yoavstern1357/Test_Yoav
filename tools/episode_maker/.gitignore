@@ -6,3 +6,4 @@ out/
 *.mp4
 __pycache__/
 specs/clips/
+!gpu/inputs/*/refs/*.wav

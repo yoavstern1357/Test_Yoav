@@ -5,9 +5,9 @@
 
 Job file (all keys except run_id and input are optional):
   {"run_id": "smoke-001", "input": "tools/episode_maker/gpu/inputs/sample",
-   "task": "clips",            # "clips" (default, image-to-video, input has clips.json) or "images" (stills, input has images.json)
+   "task": "clips",            # "clips" (default, image-to-video, input has clips.json), "images" (stills, images.json) or "tts" (voices, tts.json)
    "notebook": "",            # default: dumpling_clips.ipynb / dumpling_images.ipynb (a file in this folder)
-   "backend": "ltx",          # default ltx for clips, klein for images (images: klein | qwen)
+   "backend": "ltx",          # default ltx for clips, klein for images (images: klein | qwen), chatterbox for tts (chatterbox | turbo | orpheus)
    "smoke": true, "only": "", "max_minutes": 300,
    "accelerator": "NvidiaTeslaT4"}   # Kaggle machine_shape: T4 x2
 Steps: upload the input folder as a private dataset, push a private notebook with GPU T4 x2 + internet, wait until it
@@ -20,6 +20,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 TASKS = {
     "clips": ("dumpling_clips.ipynb", "clips.json", "ltx", "dumpling-clips-"),
     "images": ("dumpling_images.ipynb", "images.json", "klein", "dumpling-images-"),
+    "tts": ("dumpling_tts.ipynb", "tts.json", "chatterbox", "dumpling-tts-"),     # voices: chatterbox | turbo | orpheus
 }
 REPO = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 

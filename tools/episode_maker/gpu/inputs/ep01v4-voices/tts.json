@@ -1,0 +1,301 @@
+{
+ "defaults": {
+  "backend": "chatterbox",
+  "seed": 7,
+  "variants": 2
+ },
+ "voices": {
+  "boy": {
+   "ref": "refs/boy.wav",
+   "exaggeration_scale": 1.0,
+   "orpheus_voice": "leo"
+  },
+  "grandma": {
+   "ref": "refs/grandma.wav",
+   "exaggeration_scale": 1.1,
+   "orpheus_voice": "tara"
+  },
+  "narrator": {
+   "ref": "refs/narrator.wav",
+   "exaggeration_scale": 0.8,
+   "orpheus_voice": "zac"
+  },
+  "uncle": {
+   "ref": "refs/uncle.wav",
+   "exaggeration_scale": 1.15,
+   "orpheus_voice": "dan"
+  }
+ },
+ "lines": [
+  {
+   "id": "fce2f1a1cb031c92",
+   "who": "boy",
+   "text": "Welcome to The Dumpling Boy.",
+   "style": "host"
+  },
+  {
+   "id": "2699bbb5bf6770ab",
+   "who": "boy",
+   "text": "That's my uncle. He's not the host.",
+   "style": "host"
+  },
+  {
+   "id": "42afef6d44fabf36",
+   "who": "uncle",
+   "text": "Co-host!",
+   "style": "excited"
+  },
+  {
+   "id": "4c27c26a06c181f1",
+   "who": "boy",
+   "text": "He is luggage.",
+   "style": "host"
+  },
+  {
+   "id": "2a111d967a817c1c",
+   "who": "boy",
+   "text": "Six hours earlier.",
+   "style": "host"
+  },
+  {
+   "id": "f5ea32b1ec218117",
+   "who": "narrator",
+   "text": "For centuries, travelers carried silk, spices, and ideas.",
+   "style": "solemn"
+  },
+  {
+   "id": "4653f323d199b753",
+   "who": "boy",
+   "text": "And, probably, snacks.",
+   "style": "host"
+  },
+  {
+   "id": "996a2d8493dafa6f",
+   "who": "narrator",
+   "text": "Near Shanghai, old Qinglong port shipped ceramics along the sea Silk Road.",
+   "style": "solemn"
+  },
+  {
+   "id": "b116e37850046c03",
+   "who": "boy",
+   "text": "Dad left me this journal. One page, one dumpling.",
+   "style": "host"
+  },
+  {
+   "id": "954d9e226f82da88",
+   "who": "boy",
+   "text": "The last page is torn out.",
+   "style": "host"
+  },
+  {
+   "id": "decafd575e7010af",
+   "who": "boy",
+   "text": "Welcome to old Nanxiang. On your left, a stone bridge.",
+   "style": "host"
+  },
+  {
+   "id": "d43fd02c50566f84",
+   "who": "boy",
+   "text": "On your right, two old pagodas.",
+   "style": "host"
+  },
+  {
+   "id": "eb165be0f3da93f2",
+   "who": "boy",
+   "text": "Behind me, my uncle. Kidnapped by a smell.",
+   "style": "host"
+  },
+  {
+   "id": "a560256d9cfedd11",
+   "who": "uncle",
+   "text": "I smell... destiny.",
+   "style": "excited"
+  },
+  {
+   "id": "19299ab6bcf6b63b",
+   "who": "boy",
+   "text": "That's the steamer.",
+   "style": "host"
+  },
+  {
+   "id": "f5541109637dbc96",
+   "who": "boy",
+   "text": "How does soup get inside a dumpling?",
+   "style": "host"
+  },
+  {
+   "id": "691b900e2d7b17ac",
+   "who": "boy",
+   "text": "Uncle, wait. There's soup inside.",
+   "style": "host"
+  },
+  {
+   "id": "d2e1c141b80d4f73",
+   "who": "uncle",
+   "text": "For science!",
+   "style": "excited"
+  },
+  {
+   "id": "b0969145c47a89a8",
+   "who": "uncle",
+   "text": "...There's soup inside.",
+   "style": "excited"
+  },
+  {
+   "id": "603ce42de1b15289",
+   "who": "boy",
+   "text": "We'll be right back.",
+   "style": "host"
+  },
+  {
+   "id": "0eb9db857ac67b2e",
+   "who": "boy",
+   "text": "How to eat a soup dumpling.",
+   "style": "host"
+  },
+  {
+   "id": "ca7754c1ed4a14e1",
+   "who": "boy",
+   "text": "Lift.",
+   "style": "host"
+  },
+  {
+   "id": "32fec53f2d1769ef",
+   "who": "boy",
+   "text": "Spoon.",
+   "style": "host"
+  },
+  {
+   "id": "bc192ac74603abaf",
+   "who": "boy",
+   "text": "Tiny hole.",
+   "style": "host"
+  },
+  {
+   "id": "e4dfba83844da08e",
+   "who": "boy",
+   "text": "Wait.",
+   "style": "host"
+  },
+  {
+   "id": "d35d81f9a3e220af",
+   "who": "uncle",
+   "text": "Be cool. Be cool.",
+   "style": "excited"
+  },
+  {
+   "id": "e6a72506a0385f86",
+   "who": "boy",
+   "text": "Sip.",
+   "style": "host"
+  },
+  {
+   "id": "d55cb4eba2953a2e",
+   "who": "uncle",
+   "text": "For science.",
+   "style": "excited"
+  },
+  {
+   "id": "b0ce00f9fa78dea4",
+   "who": "boy",
+   "text": "He rates everything ten. Yesterday, a napkin.",
+   "style": "host"
+  },
+  {
+   "id": "5e9d9521f66a350a",
+   "who": "boy",
+   "text": "A little history.",
+   "style": "host"
+  },
+  {
+   "id": "d5ebc260964709f0",
+   "who": "narrator",
+   "text": "Legend says, around eighteen seventy-one, a shop in Nanxiang sold one big meat bun.",
+   "style": "solemn"
+  },
+  {
+   "id": "dd51a089ae82f361",
+   "who": "narrator",
+   "text": "So he made it smaller, and added soup, set as jelly, that melts when steamed.",
+   "style": "solemn"
+  },
+  {
+   "id": "86137cc97dc36b9a",
+   "who": "boy",
+   "text": "That's not what he looked like.",
+   "style": "host"
+  },
+  {
+   "id": "1afa92d1f061c4b1",
+   "who": "uncle",
+   "text": "He had my energy.",
+   "style": "excited"
+  },
+  {
+   "id": "a116f77e5ae885b1",
+   "who": "boy",
+   "text": "Legend. That's historian for 'please don't quote me.'",
+   "style": "host"
+  },
+  {
+   "id": "8c548c41bfd104a0",
+   "who": "boy",
+   "text": "Many in Nanxiang still say 'xiaolong mantou.'",
+   "style": "host"
+  },
+  {
+   "id": "9e552509505a7ddd",
+   "who": "uncle",
+   "text": "Two names? Two dumplings.",
+   "style": "excited"
+  },
+  {
+   "id": "2567aa1734cf6300",
+   "who": "boy",
+   "text": "Dad wrote: life is like a soup dumpling.",
+   "style": "host"
+  },
+  {
+   "id": "be34de9e603269e7",
+   "who": "boy",
+   "text": "Rush it, you get burned. Be patient, you get the best part.",
+   "style": "host"
+  },
+  {
+   "id": "1d191fac263bd20b",
+   "who": "uncle",
+   "text": "Your dad picked a good first page.",
+   "style": "excited"
+  },
+  {
+   "id": "45a72e6fd8929cf9",
+   "who": "boy",
+   "text": "Co-host.",
+   "style": "host"
+  },
+  {
+   "id": "8c42dabc6232e314",
+   "who": "grandma",
+   "text": "That hat! He sat right there. Burned his tongue.",
+   "style": "excited"
+  },
+  {
+   "id": "be71ee932fec85dd",
+   "who": "boy",
+   "text": "Sound familiar?",
+   "style": "host"
+  },
+  {
+   "id": "3ca04b4b3dff3be6",
+   "who": "grandma",
+   "text": "Then he went south. To the dim sum city.",
+   "style": "excited"
+  },
+  {
+   "id": "034b8c85a93d3ec5",
+   "who": "boy",
+   "text": "Dad was right... the best part is worth the wait.",
+   "style": "host"
+  }
+ ]
+}

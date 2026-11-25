@@ -177,3 +177,16 @@ Rebuild the notebooks after editing a generator: `python3 build_images_notebook.
 ### Episode 1 stills
 `inputs/ep01v4-stills/` (about 1.2 MB) makes the 9 missing stills (C10, C14, C16, C17, C20, C26, C27, C28, C29) with 2 variants each, plus `G00_grandma_ref`, a new Grandma character sheet in the same round picture-book style as the Boy and the Uncle (the old painterly cut-out is deliberately NOT used as a reference). Refs: `boy.jpg`, `uncle.jpg` (from `specs/puppets`), `camel.jpg` (from the metro still) and finished stills as style references, all downscaled to <= 1024 px. Expressions are restrained by default; big ones only in C14 (the burn aftermath) and C20 (the proud hero pose). Pick the best variant per still, copy it to `specs/frames/ep01v4/Cxx.png`, then run the clips task.
 
+## 11. Voices: expressive TTS on the same free GPU (task `tts`)
+Choice and licenses: `production/v4/voice-tech.md`. Backends: `chatterbox` (default, MIT, voice = a reference clip we synthesize), `turbo` (MIT, `[laugh]` tags), `orpheus` (built-in voices, `<laugh>` tags; check its license text first), `mock` (no GPU, tests the logic). Only official repos, safetensors, `torch.load` forced to `weights_only=True`, no token.
+
+Input `tts.json` + `refs/*.wav` (build it with `python3 make_tts_input.py --spec ../specs/episode-01-v4.json --out inputs/ep01v4-voices`; refs are Kokoro-synthesized, never real people). Each line has `id` (= `tts_engines.line_key(who, text)`, the file name make_episode.py looks for), `who`, `text`, optional `style` (`host tender dreamy tiny solemn excited laugh` = emotion presets for `exaggeration`/`cfg_weight`), optional `text_gpu` (text with `[laugh]` or `<laugh>` tags), per-line `exaggeration`, `cfg_weight`, `temperature`. Voices: `ref`, `exaggeration_scale`, `orpheus_voice`. `variants: 2` writes `<id>.wav` and `<id>__v2.wav`.
+Check without a GPU: `python3 generate_tts.py --input inputs/voice-test --out /tmp/x --dry-run` (or `--backend mock` for a full run with tone placeholders).
+
+Job (not triggered by the engineer; first run with `smoke: true`, which renders 2 lines):
+```json
+{"run_id": "ep01v4-voices-001", "task": "tts", "input": "tools/episode_maker/gpu/inputs/ep01v4-voices", "backend": "chatterbox", "smoke": true, "only": "", "max_minutes": 60}
+```
+Listening test first: `inputs/voice-test` has the 6 comparison lines. Results: `audio/<id>.wav`, `results.json` (model commit, duration, QC flags), `dumpling_tts.zip` (the workflow deletes zips; download the wavs from the `gpu-results` branch or Kaggle). Copy the WAVs to `tools/episode_maker/tts/gpu/` and render with `"voice_engine": "gpu"`. Rebuild the notebook after editing the generator: `python3 build_tts_notebook.py`.
+Not tested: any real generation (see voice-tech.md section 7).
+

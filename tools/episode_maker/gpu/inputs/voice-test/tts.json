@@ -1,0 +1,73 @@
+{
+ "defaults": {
+  "backend": "chatterbox",
+  "seed": 7,
+  "variants": 2
+ },
+ "voices": {
+  "boy": {
+   "ref": "refs/boy.wav",
+   "exaggeration_scale": 1.0,
+   "orpheus_voice": "leo"
+  },
+  "grandma": {
+   "ref": "refs/grandma.wav",
+   "exaggeration_scale": 1.1,
+   "orpheus_voice": "tara"
+  },
+  "narrator": {
+   "ref": "refs/narrator.wav",
+   "exaggeration_scale": 0.8,
+   "orpheus_voice": "zac"
+  },
+  "uncle": {
+   "ref": "refs/uncle.wav",
+   "exaggeration_scale": 1.15,
+   "orpheus_voice": "dan"
+  }
+ },
+ "lines": [
+  {
+   "id": "decafd575e7010af",
+   "who": "boy",
+   "text": "Welcome to old Nanxiang. On your left, a stone bridge.",
+   "style": "host",
+   "name": "01"
+  },
+  {
+   "id": "be34de9e603269e7",
+   "who": "boy",
+   "text": "Rush it, you get burned. Be patient, you get the best part.",
+   "style": "tender",
+   "name": "02"
+  },
+  {
+   "id": "a560256d9cfedd11",
+   "who": "uncle",
+   "text": "I smell... destiny.",
+   "style": "dreamy",
+   "name": "03"
+  },
+  {
+   "id": "b0969145c47a89a8",
+   "who": "uncle",
+   "text": "...There's soup inside.",
+   "style": "tiny",
+   "name": "04"
+  },
+  {
+   "id": "8c42dabc6232e314",
+   "who": "grandma",
+   "text": "That hat! He sat right there. Burned his tongue.",
+   "style": "excited",
+   "name": "05"
+  },
+  {
+   "id": "09754a39c3897a23",
+   "who": "narrator",
+   "text": "Legend says, around 1871, a shop in Nanxiang sold one big meat bun.",
+   "style": "solemn",
+   "name": "06"
+  }
+ ]
+}

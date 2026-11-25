@@ -2,7 +2,7 @@
 
 Builds a ~2-minute vertical episode video from a JSON spec, with **no paid video service**:
 
-- **Voices:** Kokoro neural TTS (open model, runs locally; cast in `VOICES`)
+- **Voices:** Kokoro neural TTS (open model, runs locally; cast in `VOICES`). Optional engines per episode or character: Supertonic, Pocket TTS (CPU) and Chatterbox/Orpheus (free Kaggle GPU); see "Voice engines" below
 - **Music + sound effects + ambience:** synthesized from scratch (`synth.py`), so nothing is licensed or sampled
 - **Picture:** Ken Burns camera moves, crossfades, burned-in captions, fun-fact cards, steam/hearts/flash effects
 - **Output:** 1080x1920 H.264 + AAC, loudness-normalized for Shorts
@@ -15,6 +15,12 @@ curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-fil
 curl -LO https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
 ```
 (also needs `ffmpeg`)
+
+## Voice engines (optional)
+Default is Kokoro, unchanged. Add `"voice_engine": "supertonic" | "pocket" | "gpu"` to a spec (or env `VOICE_ENGINE`) to switch the whole cast, and
+`"voice_cast": {"uncle": {"engine": "supertonic", "sid": 9, "speed": 0.95, "pitch": 0.94}}` to change single characters. Presets: `voice_casts.json`.
+CPU engines: `pip install sherpa-onnx && sh fetch_voice_models.sh` (GitHub only). GPU engine ("gpu" = pre-rendered WAVs from the Kaggle `tts` task, see `gpu/README.md` section 11) reads `tts/gpu/<line key>.wav`.
+Compare engines on 6 sample lines: `python3 voice_test.py` (writes `out/voice-test/comparison.m4a`). Choice, licenses and cast: `production/v4/voice-tech.md`.
 
 ## Use
 ```

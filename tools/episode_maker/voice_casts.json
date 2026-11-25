@@ -1,0 +1,24 @@
+{
+  "_readme": "Voice cast presets for make_episode.py. Select with spec \"voice_engine\": \"supertonic\" (or env VOICE_ENGINE). Default (nothing set) = Kokoro, exactly as before. Override one character in a spec with \"voice_cast\": {\"uncle\": {\"engine\": \"supertonic\", \"sid\": 9}}. Details: production/v4/voice-tech.md",
+  "supertonic": {
+    "boy":      {"engine": "supertonic", "sid": 5, "speed": 1.0,  "pitch": 1.12},
+    "uncle":    {"engine": "supertonic", "sid": 8, "speed": 0.95, "pitch": 0.94},
+    "grandma":  {"engine": "supertonic", "sid": 4, "speed": 0.95, "pitch": 0.97},
+    "dad":      {"engine": "supertonic", "sid": 9, "speed": 0.92},
+    "narrator": {"engine": "supertonic", "sid": 6, "speed": 0.9}
+  },
+  "pocket": {
+    "boy":      {"engine": "pocket", "ref_voice": "am_puck",    "pitch": 1.08},
+    "uncle":    {"engine": "pocket", "ref_voice": "am_michael", "pitch": 0.92},
+    "grandma":  {"engine": "pocket", "ref_voice": "af_sarah",   "pitch": 0.95},
+    "dad":      {"engine": "pocket", "ref_voice": "bm_daniel"},
+    "narrator": {"engine": "pocket", "ref_voice": "bm_george",  "pitch": 0.96}
+  },
+  "gpu": {
+    "boy":      {"engine": "prerendered", "dir": "tts/gpu"},
+    "uncle":    {"engine": "prerendered", "dir": "tts/gpu"},
+    "grandma":  {"engine": "prerendered", "dir": "tts/gpu"},
+    "dad":      {"engine": "prerendered", "dir": "tts/gpu"},
+    "narrator": {"engine": "prerendered", "dir": "tts/gpu"}
+  }
+}

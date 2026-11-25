@@ -1,0 +1,11 @@
+{
+  "_readme": "Six sample lines from scripts/episode-01-v4.1.md, used to compare voice engines (voice_test.py) and as the smoke input of the GPU tts task. 'style' feeds the GPU engines only (emotion tag / exaggeration).",
+  "lines": [
+    {"id": "01", "who": "boy",      "text": "Welcome to old Nanxiang. On your left, a stone bridge.", "style": "host"},
+    {"id": "02", "who": "boy",      "text": "Rush it, you get burned. Be patient, you get the best part.", "style": "tender"},
+    {"id": "03", "who": "uncle",    "text": "I smell... destiny.", "style": "dreamy"},
+    {"id": "04", "who": "uncle",    "text": "...There's soup inside.", "style": "tiny"},
+    {"id": "05", "who": "grandma",  "text": "That hat! He sat right there. Burned his tongue.", "style": "excited"},
+    {"id": "06", "who": "narrator", "text": "Legend says, around 1871, a shop in Nanxiang sold one big meat bun.", "style": "solemn"}
+  ]
+}
