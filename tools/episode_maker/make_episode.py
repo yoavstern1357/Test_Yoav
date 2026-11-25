@@ -39,10 +39,12 @@ FILL = {"boy": (255, 255, 255), "uncle": (255, 226, 140), "grandma": (255, 214, 
 _kokoro = None
 
 
-def tts(who, text, speed_mult=None):
+def tts(who, text, speed_mult=None, pitch_override=None):
     global _kokoro
     voice, speed, pitch = VOICES[who]
     pitch = PITCH_OVERRIDE.get(who, pitch)
+    if pitch_override:
+        pitch = float(pitch_override)
     if speed_mult:
         speed = speed * float(speed_mult)
     key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()
@@ -216,7 +218,7 @@ def build_timeline(spec, spec_dir="."):
         s["start"] = t
         lines, cur = [], t + s.get("lead", 0.3)
         for ln in s.get("lines", []):
-            a = tts(ln["who"], ln["text"], ln.get("speed"))
+            a = tts(ln["who"], ln["text"], ln.get("speed"), ln.get("pitch"))
             if ln.get("gain"):
                 a = (a * float(ln["gain"])).astype(np.float32)
             at = t + ln["at"] if "at" in ln else cur
@@ -966,7 +968,11 @@ class Renderer:
         return fr
 
     def scene(self, s, t_local):
+        if s.get("black") and t_local < s["black"]:
+            return Image.new("RGB", (self.W, self.H), (0, 0, 0))
         fr = self.base_frame(s, t_local)
+        if s.get("fade_out") and t_local > s["dur"] - s["fade_out"]:
+            fr = Image.blend(fr, Image.new("RGB", fr.size, (0, 0, 0)), min(1.0, (t_local - (s["dur"] - s["fade_out"])) / s["fade_out"]))
         if s.get("puppets"):
             fr = self.puppets(fr, s, t_local)
         if s.get("grade"):
