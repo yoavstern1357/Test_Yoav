@@ -1,0 +1,18 @@
+{
+ "id": "C09",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5049,
+ "size": [
+  768,
+  1344
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 15.9,
+ "prompt": "Reference images: image 1 is the Boy: his face, hat, village clothes and colors to keep exactly (only the boy). Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). Wide low angle: two small stout brick pagodas side by side (about 11 m, no hero angle), wind chimes in the foreground, soft leaves; the Boy small in the foreground pointing up. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos. Vertical 9:16 composition, tall framing with the subjects stacked top to bottom.",
+ "negative": "",
+ "refs": [
+  "refs/boy_only.jpg"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "C07_end",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5035,
+ "size": [
+  768,
+  1344
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 21.1,
+ "prompt": "Reference images: image 1 is the START frame of the same shot: keep place, characters, outfits and style identical; image 2 is painting style, line quality and light reference only (do not copy the characters or the place). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The open doorway empty, a cartoon dust-cloud silhouette of the Uncle hanging in the air and speed lines pointing out onto the platform; the Boy alone, hat ribbon whipped sideways, eyes sliding to the lens; the camel stepping calmly through the doors (camel cameo). Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos. Vertical 9:16 composition, tall framing with the subjects stacked top to bottom.",
+ "negative": "",
+ "refs": [
+  "@C07",
+  "refs/style_s1.jpg"
+ ]
+}
