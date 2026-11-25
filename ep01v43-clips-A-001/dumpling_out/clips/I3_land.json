@@ -1,0 +1,19 @@
+{
+ "id": "I3_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7003,
+ "frames": 97,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 123.9,
+ "prompt": "Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/I3_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

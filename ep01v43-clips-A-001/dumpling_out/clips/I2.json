@@ -1,0 +1,19 @@
+{
+ "id": "I2",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 7002,
+ "frames": 97,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 120.4,
+ "prompt": "Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/I2.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

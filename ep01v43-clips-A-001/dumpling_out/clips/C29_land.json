@@ -1,0 +1,19 @@
+{
+ "id": "C29_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7029,
+ "frames": 97,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 122.7,
+ "prompt": "The boy stands in front. Behind him the fat uncle with his tongue in a bucket of ice gives a thumbs up, one tiny puff of steam from his ear, and the camel beside him blinks slowly at the camera. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C29_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

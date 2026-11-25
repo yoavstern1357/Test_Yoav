@@ -1,0 +1,610 @@
+[
+ {
+  "id": "I1",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7001,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 179.3,
+  "prompt": "Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I1.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I1_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7001,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 183.0,
+  "prompt": "Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I1_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I2",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7002,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 120.4,
+  "prompt": "Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I2.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I2_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7002,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 125.2,
+  "prompt": "Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I2.jpg",
+  "end": null,
+  "cropped_from_other_orientation": true
+ },
+ {
+  "id": "I3",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7003,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 120.7,
+  "prompt": "Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I3.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I3_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7003,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 123.9,
+  "prompt": "Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I3_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7004,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 121.4,
+  "prompt": "The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I5.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7004,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 124.7,
+  "prompt": "The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I5_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5b",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7005,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 119.2,
+  "prompt": "Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I5b.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5b_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7005,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 124.0,
+  "prompt": "Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I5b_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5c",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7006,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 118.9,
+  "prompt": "A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I5c.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5c_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7006,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 123.5,
+  "prompt": "A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I5c_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I6",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7007,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 119.7,
+  "prompt": "Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I6.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I6_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7007,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 124.6,
+  "prompt": "Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/I6_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C01",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7008,
+  "frames": 121,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 155.4,
+  "prompt": "Macro. One soup dumpling is lifted slowly on chopsticks above a bamboo basket, the thin skin sags like a small water balloon and the golden soup sways inside, steam drifts up. Slow and calm. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C01.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C01_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7008,
+  "frames": 121,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 160.6,
+  "prompt": "Macro. One soup dumpling is lifted slowly on chopsticks above a bamboo basket, the thin skin sags like a small water balloon and the golden soup sways inside, steam drifts up. Slow and calm. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C01_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C02",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7009,
+  "frames": 121,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 155.2,
+  "prompt": "the small boy in the conical leaf hat smiles warmly at the camera and glances sideways at his uncle. Behind him on the stool the big fat bald uncle with the mustache holds an ice pack on his cheek, fans his tongue with a napkin, faint steam from his ears, and lifts one limp hand. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C02.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C02_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7009,
+  "frames": 121,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 160.3,
+  "prompt": "the small boy in the conical leaf hat smiles warmly at the camera and glances sideways at his uncle. Behind him on the stool the big fat bald uncle with the mustache holds an ice pack on his cheek, fans his tongue with a napkin, faint steam from his ears, and lifts one limp hand. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C02_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C07",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7010,
+  "frames": 121,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 156.3,
+  "prompt": "the small boy in the conical leaf hat walks backward toward the camera at an easy pace, smiling, the chopstick microphone in his hand, the camera tracks backward with him. Far behind, the big fat bald uncle with the mustache strolls across the lane rubbing his stomach. Willow branches sway. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C07.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C07_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7010,
+  "frames": 121,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 161.3,
+  "prompt": "the small boy in the conical leaf hat walks backward toward the camera at an easy pace, smiling, the chopstick microphone in his hand, the camera tracks backward with him. Far behind, the big fat bald uncle with the mustache strolls across the lane rubbing his stomach. Willow branches sway. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C07_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C13",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7012,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 120.1,
+  "prompt": "The chopsticks of the big fat bald uncle with the mustache dart toward the basket; the small boy in the conical leaf hat blocks them with his chopstick microphone like a barrier arm; the uncle lifts one dumpling like a trophy with his chest out. Grandma steps back. Steam drifts. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C13.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C13_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7012,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 124.0,
+  "prompt": "The chopsticks of the big fat bald uncle with the mustache dart toward the basket; the small boy in the conical leaf hat blocks them with his chopstick microphone like a barrier arm; the uncle lifts one dumpling like a trophy with his chest out. Grandma steps back. Steam drifts. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C13_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C23",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7015,
+  "frames": 121,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 155.2,
+  "prompt": "The napkin cape of the big fat bald uncle with the mustache flutters in the breeze while he holds the spoon up like a sword, proud. the small boy in the conical leaf hat gives him a warm amused look, then turns toward the camera and smiles. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C23.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C23_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7015,
+  "frames": 121,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 160.3,
+  "prompt": "The napkin cape of the big fat bald uncle with the mustache flutters in the breeze while he holds the spoon up like a sword, proud. the small boy in the conical leaf hat gives him a warm amused look, then turns toward the camera and smiles. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C23_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C25",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7025,
+  "frames": 121,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 154.3,
+  "prompt": "Warm sepia dusk. The silhouette of the man seen from behind slowly lowers the spoon over the steaming dumpling, steam rises, lantern light flickers softly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C25.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C25_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7025,
+  "frames": 121,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 160.3,
+  "prompt": "Warm sepia dusk. The silhouette of the man seen from behind slowly lowers the spoon over the steaming dumpling, steam rises, lantern light flickers softly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C25_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C26",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7026,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 119.9,
+  "prompt": "the big fat bald uncle with the mustache waits calmly without moving, then slowly hands the spoon to the small boy in the conical leaf hat, who takes it with a small smile. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C26.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C26_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7026,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 123.8,
+  "prompt": "the big fat bald uncle with the mustache waits calmly without moving, then slowly hands the spoon to the small boy in the conical leaf hat, who takes it with a small smile. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C26_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C27",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7027,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 119.9,
+  "prompt": "Grandma leans in over the counter and points far away to the south with a secret smile. The boy looks where she points, and the fat uncle perks up with hungry eyes. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C27.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C27_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7027,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 124.0,
+  "prompt": "Grandma leans in over the counter and points far away to the south with a secret smile. The boy looks where she points, and the fat uncle perks up with hungry eyes. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C27_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C29",
+  "orientation": "portrait",
+  "backend": "ltx",
+  "seed": 7029,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 119.1,
+  "prompt": "The boy stands in front. Behind him the fat uncle with his tongue in a bucket of ice gives a thumbs up, one tiny puff of steam from his ear, and the camel beside him blinks slowly at the camera. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C29.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C29_land",
+  "orientation": "landscape",
+  "backend": "ltx",
+  "seed": 7029,
+  "frames": 97,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 30,
+  "status": "ok",
+  "seconds": 122.7,
+  "prompt": "The boy stands in front. Behind him the fat uncle with his tongue in a bucket of ice gives a thumbs up, one tiny puff of steam from his ear, and the camel beside him blinks slowly at the camera. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/C29_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "id": "I5b_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7005,
+ "frames": 97,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 124.0,
+ "prompt": "Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/I5b_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

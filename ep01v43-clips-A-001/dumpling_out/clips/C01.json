@@ -1,0 +1,19 @@
+{
+ "id": "C01",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 7008,
+ "frames": 121,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 155.4,
+ "prompt": "Macro. One soup dumpling is lifted slowly on chopsticks above a bamboo basket, the thin skin sags like a small water balloon and the golden soup sways inside, steam drifts up. Slow and calm. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C01.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

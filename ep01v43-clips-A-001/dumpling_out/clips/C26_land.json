@@ -1,0 +1,19 @@
+{
+ "id": "C26_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7026,
+ "frames": 97,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 123.8,
+ "prompt": "the big fat bald uncle with the mustache waits calmly without moving, then slowly hands the spoon to the small boy in the conical leaf hat, who takes it with a small smile. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C26_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

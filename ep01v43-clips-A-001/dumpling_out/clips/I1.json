@@ -1,0 +1,19 @@
+{
+ "id": "I1",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 7001,
+ "frames": 97,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 179.3,
+ "prompt": "Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/I1.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

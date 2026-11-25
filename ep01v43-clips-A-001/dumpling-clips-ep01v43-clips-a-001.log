@@ -1,0 +1,1496 @@
+[{"stream_name":"stderr","time":7.26299625,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.263040588,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.263047108,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.263051226,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.8242198290000005,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.824250461,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.824257316,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.824264646,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.942461711,"data":"Kaggle\n"}
+,{"stream_name":"stdout","time":8.942502288,"data":"GPU 0: Tesla T4 (UUID: GPU-be8f7e9f-1e50-f189-0c1c-395b84c055c4)\n"}
+,{"stream_name":"stdout","time":8.942507501,"data":"GPU 1: Tesla T4 (UUID: GPU-5224d25e-de50-b36a-7e5d-323f1d85688c)\n"}
+,{"stream_name":"stdout","time":8.942516897,"data":"\n"}
+,{"stream_name":"stdout","time":36.808464221,"data":"\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\r\n"}
+,{"stream_name":"stdout","time":36.808501658,"data":"bigframes 2.51.0 requires google-cloud-bigquery-storage\u003c3.0.0,\u003e=2.30.0, which is not installed.\r\n"}
+,{"stream_name":"stdout","time":36.808506981,"data":"ydata-profiling 4.18.4 requires numpy\u003c2.4,\u003e=1.22, but you have numpy 2.5.5 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":36.808511206,"data":"dopamine-rl 4.1.2 requires gym\u003c=0.25.2, but you have gym 0.26.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":36.808515415,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":36.808519195,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":36.808523033,"data":"numba 0.61.2 requires numpy\u003c2.3,\u003e=1.24, but you have numpy 2.5.5 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":36.808526839,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\u001b[0m\u001b[31m\r\n"}
+,{"stream_name":"stderr","time":50.45928447,"data":"Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\n"}
+,{"stream_name":"stderr","time":50.459316418,"data":"\n"}
+,{"stream_name":"stderr","time":50.459322207,"data":"Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\n"}
+,{"stream_name":"stdout","time":56.960651444,"data":"\u001b[0mdiffusers 0.43.0 | torch 2.11.0+cu130 | cuda True | gpus 2\n"}
+,{"stream_name":"stdout","time":56.98826039,"data":"Writing generate_clips.py\n"}
+,{"stream_name":"stdout","time":57.374240237,"data":"inputs: /kaggle/input/datasets/thedumplingboy/dumpling-input-ep01v43-clips-a-001\n"}
+,{"stream_name":"stdout","time":57.656849362,"data":"19:12:16 WARNING: 1 clip(s) have no start image for their orientation and use a center crop of the other one: I2_land\r\n"}
+,{"stream_name":"stdout","time":57.656893433,"data":"19:12:16 32 clips (0 already done)\r\n"}
+,{"stream_name":"stdout","time":57.656897988,"data":"  I1                           ltx     480x832 97f steps=30 seed=7001 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656901614,"data":"      Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide w\r\n"}
+,{"stream_name":"stdout","time":57.656905448,"data":"  I1_land                      ltx     832x480 97f steps=30 seed=7001 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656909065,"data":"      Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide w\r\n"}
+,{"stream_name":"stdout","time":57.656912764,"data":"  I2                           ltx     480x832 97f steps=30 seed=7002 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656917893,"data":"      Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets \r\n"}
+,{"stream_name":"stdout","time":57.6569247,"data":"  I2_land                      ltx     832x480 97f steps=30 seed=7002 ~5 min on a T4 (estimate)  [center crop of the other orientation]\r\n"}
+,{"stream_name":"stdout","time":57.656927083,"data":"      Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets \r\n"}
+,{"stream_name":"stdout","time":57.656929476,"data":"  I3                           ltx     480x832 97f steps=30 seed=7003 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656931843,"data":"      Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the \r\n"}
+,{"stream_name":"stdout","time":57.65693426,"data":"  I3_land                      ltx     832x480 97f steps=30 seed=7003 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656936618,"data":"      Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the \r\n"}
+,{"stream_name":"stdout","time":57.656939022,"data":"  I5                           ltx     480x832 97f steps=30 seed=7004 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.65694141,"data":"      The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Ri\r\n"}
+,{"stream_name":"stdout","time":57.656943814,"data":"  I5_land                      ltx     832x480 97f steps=30 seed=7004 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656947361,"data":"      The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Ri\r\n"}
+,{"stream_name":"stdout","time":57.65694988,"data":"  I5b                          ltx     480x832 97f steps=30 seed=7005 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656952186,"data":"      Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth\r\n"}
+,{"stream_name":"stdout","time":57.656954589,"data":"  I5b_land                     ltx     832x480 97f steps=30 seed=7005 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656956896,"data":"      Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth\r\n"}
+,{"stream_name":"stdout","time":57.656962246,"data":"  I5c                          ltx     480x832 97f steps=30 seed=7006 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656964742,"data":"      A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant du\r\n"}
+,{"stream_name":"stdout","time":57.656967212,"data":"  I5c_land                     ltx     832x480 97f steps=30 seed=7006 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656969569,"data":"      A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant du\r\n"}
+,{"stream_name":"stdout","time":57.656974736,"data":"  I6                           ltx     480x832 97f steps=30 seed=7007 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656977161,"data":"      Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, \r\n"}
+,{"stream_name":"stdout","time":57.656979851,"data":"  I6_land                      ltx     832x480 97f steps=30 seed=7007 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656982191,"data":"      Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, \r\n"}
+,{"stream_name":"stdout","time":57.656984608,"data":"  C01                          ltx     480x832 121f steps=30 seed=7008 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656986941,"data":"      Macro. One soup dumpling is lifted slowly on chopsticks above a bamboo basket, the thin skin sags like a small water balloon and the golden \r\n"}
+,{"stream_name":"stdout","time":57.656989446,"data":"  C01_land                     ltx     832x480 121f steps=30 seed=7008 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656991976,"data":"      Macro. One soup dumpling is lifted slowly on chopsticks above a bamboo basket, the thin skin sags like a small water balloon and the golden \r\n"}
+,{"stream_name":"stdout","time":57.656994413,"data":"  C02                          ltx     480x832 121f steps=30 seed=7009 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.656996756,"data":"      the small boy in the conical leaf hat smiles warmly at the camera and glances sideways at his uncle. Behind him on the stool the big fat bal\r\n"}
+,{"stream_name":"stdout","time":57.656999216,"data":"  C02_land                     ltx     832x480 121f steps=30 seed=7009 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657001558,"data":"      the small boy in the conical leaf hat smiles warmly at the camera and glances sideways at his uncle. Behind him on the stool the big fat bal\r\n"}
+,{"stream_name":"stdout","time":57.657003944,"data":"  C07                          ltx     480x832 121f steps=30 seed=7010 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657006289,"data":"      the small boy in the conical leaf hat walks backward toward the camera at an easy pace, smiling, the chopstick microphone in his hand, the c\r\n"}
+,{"stream_name":"stdout","time":57.657008762,"data":"  C07_land                     ltx     832x480 121f steps=30 seed=7010 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.65701112,"data":"      the small boy in the conical leaf hat walks backward toward the camera at an easy pace, smiling, the chopstick microphone in his hand, the c\r\n"}
+,{"stream_name":"stdout","time":57.657013509,"data":"  C13                          ltx     480x832 97f steps=30 seed=7012 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657015869,"data":"      The chopsticks of the big fat bald uncle with the mustache dart toward the basket; the small boy in the conical leaf hat blocks them with hi\r\n"}
+,{"stream_name":"stdout","time":57.657020304,"data":"  C13_land                     ltx     832x480 97f steps=30 seed=7012 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657022743,"data":"      The chopsticks of the big fat bald uncle with the mustache dart toward the basket; the small boy in the conical leaf hat blocks them with hi\r\n"}
+,{"stream_name":"stdout","time":57.65702514,"data":"  C23                          ltx     480x832 121f steps=30 seed=7015 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657027483,"data":"      The napkin cape of the big fat bald uncle with the mustache flutters in the breeze while he holds the spoon up like a sword, proud. the smal\r\n"}
+,{"stream_name":"stdout","time":57.657029828,"data":"  C23_land                     ltx     832x480 121f steps=30 seed=7015 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657032166,"data":"      The napkin cape of the big fat bald uncle with the mustache flutters in the breeze while he holds the spoon up like a sword, proud. the smal\r\n"}
+,{"stream_name":"stdout","time":57.657034956,"data":"  C25                          ltx     480x832 121f steps=30 seed=7025 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657037312,"data":"      Warm sepia dusk. The silhouette of the man seen from behind slowly lowers the spoon over the steaming dumpling, steam rises, lantern light f\r\n"}
+,{"stream_name":"stdout","time":57.657039713,"data":"  C25_land                     ltx     832x480 121f steps=30 seed=7025 ~6 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657042054,"data":"      Warm sepia dusk. The silhouette of the man seen from behind slowly lowers the spoon over the steaming dumpling, steam rises, lantern light f\r\n"}
+,{"stream_name":"stdout","time":57.657044428,"data":"  C26                          ltx     480x832 97f steps=30 seed=7026 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657046761,"data":"      the big fat bald uncle with the mustache waits calmly without moving, then slowly hands the spoon to the small boy in the conical leaf hat, \r\n"}
+,{"stream_name":"stdout","time":57.657049146,"data":"  C26_land                     ltx     832x480 97f steps=30 seed=7026 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657051484,"data":"      the big fat bald uncle with the mustache waits calmly without moving, then slowly hands the spoon to the small boy in the conical leaf hat, \r\n"}
+,{"stream_name":"stdout","time":57.657053868,"data":"  C27                          ltx     480x832 97f steps=30 seed=7027 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657056213,"data":"      Grandma leans in over the counter and points far away to the south with a secret smile. The boy looks where she points, and the fat uncle pe\r\n"}
+,{"stream_name":"stdout","time":57.657058598,"data":"  C27_land                     ltx     832x480 97f steps=30 seed=7027 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657060928,"data":"      Grandma leans in over the counter and points far away to the south with a secret smile. The boy looks where she points, and the fat uncle pe\r\n"}
+,{"stream_name":"stdout","time":57.657063294,"data":"  C29                          ltx     480x832 97f steps=30 seed=7029 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657065632,"data":"      The boy stands in front. Behind him the fat uncle with his tongue in a bucket of ice gives a thumbs up, one tiny puff of steam from his ear,\r\n"}
+,{"stream_name":"stdout","time":57.657068015,"data":"  C29_land                     ltx     832x480 97f steps=30 seed=7029 ~5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":57.657072494,"data":"      The boy stands in front. Behind him the fat uncle with his tongue in a bucket of ice gives a thumbs up, one tiny puff of steam from his ear,\r\n"}
+,{"stream_name":"stdout","time":57.65707499,"data":"19:12:16 estimated remaining GPU time: 166 min (one T4; halve it with 2 GPUs). Estimates are not measured.\r\n"}
+,{"stream_name":"stdout","time":57.964187808,"data":"19:12:16 WARNING: 1 clip(s) have no start image for their orientation and use a center crop of the other one: I2_land\r\n"}
+,{"stream_name":"stdout","time":58.015820335,"data":"19:12:16 2 GPUs: starting 2 workers\r\n"}
+,{"stream_name":"stdout","time":58.117669329,"data":"[gpu1] 19:12:16 worker 2/2: 16 clips to do\r\n"}
+,{"stream_name":"stdout","time":58.117699318,"data":"[gpu0] 19:12:16 worker 1/2: 16 clips to do\r\n"}
+,{"stream_name":"stdout","time":59.80488791,"data":"[gpu1] 19:12:18 backend ltx model=Lightricks/LTX-Video-0.9.5 dtype=torch.float16 gpu=Tesla T4\r\n"}
+,{"stream_name":"stdout","time":59.906397178,"data":"[gpu0] 19:12:18 backend ltx model=Lightricks/LTX-Video-0.9.5 dtype=torch.float16 gpu=Tesla T4\r\n"}
+,{"stream_name":"stdout","time":62.192118156,"data":"[gpu1] Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\r\n"}
+,{"stream_name":"stdout","time":62.243020691,"data":"[gpu0] Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\r\n"}
+,{"stream_name":"stdout","time":68.700507283,"data":"[gpu0] /usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\r\n"}
+,{"stream_name":"stdout","time":68.700537202,"data":"[gpu0]   deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\r\n"}
+,{"stream_name":"stdout","time":68.700541983,"data":"[gpu1] /usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\r\n"}
+,{"stream_name":"stdout","time":68.700546205,"data":"[gpu1]   deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\r\n"}
+,{"stream_name":"stdout","time":69.66267605,"data":"[gpu0] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":69.713322019,"data":"[gpu1] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":69.916681072,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":69.968772268,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":70.221733726,"data":"[gpu0] Fetching 12 files:   0%|          | 0/12 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":70.272555236,"data":"[gpu1] Fetching 12 files:   0%|          | 0/12 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":70.425179838,"data":"[gpu0] Fetching 12 files:  17%|█▋        | 2/12 [00:00\u003c00:01,  6.81it/s]\r\n"}
+,{"stream_name":"stdout","time":70.476165151,"data":"[gpu1] Fetching 12 files:  17%|█▋        | 2/12 [00:00\u003c00:01,  6.50it/s]\r\n"}
+,{"stream_name":"stdout","time":70.578675771,"data":"[gpu0] Fetching 12 files:  25%|██▌       | 3/12 [00:00\u003c00:01,  5.72it/s]\r\n"}
+,{"stream_name":"stdout","time":70.730300742,"data":"[gpu1] Fetching 12 files:  25%|██▌       | 3/12 [00:00\u003c00:01,  5.94it/s]\r\n"}
+,{"stream_name":"stdout","time":73.506019779,"data":"[gpu0] Fetching 12 files:  50%|█████     | 6/12 [00:00\u003c00:00, 11.35it/s]\r\n"}
+,{"stream_name":"stdout","time":73.560684446,"data":"[gpu1] Fetching 12 files:  58%|█████▊    | 7/12 [00:00\u003c00:00,  9.81it/s]\r\n"}
+,{"stream_name":"stdout","time":158.518856996,"data":"[gpu0] Fetching 12 files:  67%|██████▋   | 8/12 [00:03\u003c00:02,  1.62it/s]\r\n"}
+,{"stream_name":"stdout","time":158.518917399,"data":"[gpu0] Fetching 12 files:  75%|███████▌  | 9/12 [01:28\u003c00:55, 18.59s/it]\r\n"}
+,{"stream_name":"stdout","time":158.518927157,"data":"[gpu0] Fetching 12 files: 100%|██████████| 12/12 [01:28\u003c00:00,  7.38s/it]\r\n"}
+,{"stream_name":"stdout","time":158.518937214,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":158.518940251,"data":"[gpu1] Fetching 12 files:  67%|██████▋   | 8/12 [00:03\u003c00:02,  1.56it/s]\r\n"}
+,{"stream_name":"stdout","time":158.518943379,"data":"[gpu1] Fetching 12 files:  75%|███████▌  | 9/12 [01:28\u003c00:58, 19.45s/it]\r\n"}
+,{"stream_name":"stdout","time":158.518946374,"data":"[gpu1] Fetching 12 files: 100%|██████████| 12/12 [01:28\u003c00:00,  7.38s/it]\r\n"}
+,{"stream_name":"stdout","time":158.518949679,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":158.819721554,"data":"[gpu1] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":158.819756251,"data":"[gpu0] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":158.819762008,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":158.819766381,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":160.243139579,"data":"[gpu0] Loading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":160.243171095,"data":"[gpu1] Loading weights:   0%|          | 0/219 [00:00\u003c?, ?it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":160.243176896,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":160.243181245,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":162.637047129,"data":"[gpu0] Loading weights:   0%|          | 1/219 [00:01\u003c05:14,  1.44s/it]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":162.63711731,"data":"[gpu1] Loading weights:   0%|          | 1/219 [00:01\u003c05:14,  1.44s/it]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":162.637124616,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":162.637129983,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":164.638108731,"data":"[gpu1] Loading weights:   3%|▎         | 7/219 [00:03\u003c01:46,  1.98it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":164.638156683,"data":"[gpu0] Loading weights:   3%|▎         | 7/219 [00:03\u003c01:46,  1.98it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":164.638167401,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":164.638174899,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":165.500509317,"data":"[gpu1] Loading weights:   7%|▋         | 16/219 [00:05\u003c01:04,  3.14it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":165.500556707,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":165.544212492,"data":"[gpu0] Loading weights:   7%|▋         | 16/219 [00:05\u003c01:04,  3.14it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":165.544281338,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":165.645194008,"data":"[gpu1] Loading weights:  11%|█▏        | 25/219 [00:06\u003c00:41,  4.71it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":165.645264541,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":165.64528309,"data":"[gpu0] Loading weights:  11%|█▏        | 25/219 [00:06\u003c00:41,  4.71it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":165.645287495,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":166.659877198,"data":"[gpu0] Loading weights:  24%|██▍       | 53/219 [00:06\u003c00:11, 14.13it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":166.659917497,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":166.659924121,"data":"[gpu1] Loading weights:  24%|██▍       | 53/219 [00:06\u003c00:11, 14.24it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":166.659931464,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":166.804205498,"data":"[gpu0] Loading weights:  28%|██▊       | 61/219 [00:07\u003c00:13, 12.11it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":166.804281293,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":166.804299862,"data":"[gpu1] Loading weights:  28%|██▊       | 62/219 [00:07\u003c00:12, 12.37it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":166.804306194,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":167.015214878,"data":"[gpu1] Loading weights:  35%|███▍      | 76/219 [00:08\u003c00:08, 17.68it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":167.015248874,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":167.068470294,"data":"[gpu0] Loading weights:  34%|███▍      | 74/219 [00:07\u003c00:08, 17.13it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":167.068544102,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":167.223507299,"data":"[gpu1] Loading weights:  38%|███▊      | 84/219 [00:08\u003c00:06, 20.16it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":167.223567683,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":167.22357479,"data":"[gpu0] Loading weights:  37%|███▋      | 81/219 [00:08\u003c00:07, 18.35it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":167.223580205,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":168.140807464,"data":"[gpu0] Loading weights:  40%|████      | 88/219 [00:08\u003c00:06, 21.31it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":168.140861943,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":170.124672044,"data":"[gpu1] Loading weights:  42%|████▏     | 91/219 [00:08\u003c00:05, 22.43it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":170.124704351,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":170.379116305,"data":"[gpu0] Loading weights:  43%|████▎     | 94/219 [00:09\u003c00:08, 14.34it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":170.379151948,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":170.379158446,"data":"[gpu1] Loading weights:  44%|████▍     | 97/219 [00:11\u003c00:16,  7.24it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":170.379164059,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":172.720515152,"data":"[gpu0] Loading weights:  45%|████▍     | 98/219 [00:11\u003c00:18,  6.51it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":172.720546635,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":172.720551637,"data":"[gpu1] Loading weights:  46%|████▌     | 101/219 [00:11\u003c00:14,  8.07it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":172.720556579,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":174.906555935,"data":"[gpu0] Loading weights:  48%|████▊     | 106/219 [00:13\u003c00:22,  4.99it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":174.906591405,"data":"[gpu1] Loading weights:  48%|████▊     | 106/219 [00:13\u003c00:23,  4.91it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":174.906599139,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":174.90661574,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":175.110385261,"data":"[gpu1] Loading weights:  53%|█████▎    | 115/219 [00:16\u003c00:22,  4.59it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":175.110422762,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":175.110426357,"data":"[gpu0] Loading weights:  53%|█████▎    | 115/219 [00:16\u003c00:22,  4.66it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":175.110429156,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":177.398519351,"data":"[gpu1] Loading weights:  53%|█████▎    | 117/219 [00:16\u003c00:21,  4.85it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":177.398556836,"data":"[gpu0] Loading weights:  53%|█████▎    | 117/219 [00:16\u003c00:20,  4.90it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":177.398562033,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":177.39856566,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":179.740204011,"data":"[gpu1] Loading weights:  57%|█████▋    | 124/219 [00:18\u003c00:23,  4.04it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":179.740242951,"data":"[gpu0] Loading weights:  57%|█████▋    | 124/219 [00:18\u003c00:23,  4.10it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":179.790571983,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":179.790605341,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":179.892651812,"data":"[gpu1] Loading weights:  61%|██████    | 133/219 [00:20\u003c00:21,  3.95it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":179.892682685,"data":"[gpu0] Loading weights:  61%|██████    | 133/219 [00:20\u003c00:21,  3.98it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":179.892687179,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":179.892690641,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":182.134686417,"data":"[gpu1] Loading weights:  61%|██████    | 134/219 [00:21\u003c00:20,  4.06it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":182.134724976,"data":"[gpu0] Loading weights:  61%|██████    | 134/219 [00:21\u003c00:20,  4.09it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":182.13472895,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":182.184988038,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":182.287273902,"data":"[gpu0] Loading weights:  65%|██████▍   | 142/219 [00:23\u003c00:20,  3.85it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":182.287372379,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":182.287378071,"data":"[gpu1] Loading weights:  65%|██████▍   | 142/219 [00:23\u003c00:20,  3.84it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":182.287380949,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":184.478189291,"data":"[gpu0] Loading weights:  65%|██████▌   | 143/219 [00:23\u003c00:19,  4.00it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":184.478225277,"data":"[gpu1] Loading weights:  65%|██████▌   | 143/219 [00:23\u003c00:19,  3.98it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":184.528726424,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":184.528754252,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":184.733588035,"data":"[gpu1] Loading weights:  69%|██████▉   | 151/219 [00:25\u003c00:17,  3.80it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":184.733651309,"data":"[gpu0] Loading weights:  69%|██████▉   | 151/219 [00:25\u003c00:17,  3.81it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":184.733659217,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":184.733663209,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":187.022936718,"data":"[gpu0] Loading weights:  69%|██████▉   | 152/219 [00:25\u003c00:17,  3.86it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":187.022975039,"data":"[gpu1] Loading weights:  69%|██████▉   | 152/219 [00:25\u003c00:17,  3.85it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":187.022981658,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":187.022986784,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":188.710715651,"data":"[gpu1] Loading weights:  73%|███████▎  | 160/219 [00:28\u003c00:16,  3.68it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":188.755025143,"data":"[gpu0] Loading weights:  73%|███████▎  | 160/219 [00:28\u003c00:16,  3.69it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":188.755059302,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":188.755065957,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":189.619935027,"data":"[gpu1] Loading weights:  77%|███████▋  | 169/219 [00:29\u003c00:11,  4.20it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":189.620001868,"data":"[gpu0] Loading weights:  77%|███████▋  | 169/219 [00:29\u003c00:11,  4.21it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":189.620007528,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":189.620011078,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":191.354714887,"data":"[gpu1] Loading weights:  78%|███████▊  | 170/219 [00:30\u003c00:13,  3.59it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":191.354781188,"data":"[gpu0] Loading weights:  78%|███████▊  | 170/219 [00:30\u003c00:13,  3.60it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":191.35478741,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":191.354791518,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":192.119723656,"data":"[gpu0] Loading weights:  81%|████████▏ | 178/219 [00:32\u003c00:10,  3.94it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":192.119754691,"data":"[gpu1] Loading weights:  81%|████████▏ | 178/219 [00:32\u003c00:10,  3.94it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":192.119759624,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":192.119763369,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":194.054439097,"data":"[gpu0] Loading weights:  82%|████████▏ | 179/219 [00:33\u003c00:11,  3.48it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":194.05447572,"data":"[gpu1] Loading weights:  82%|████████▏ | 179/219 [00:33\u003c00:11,  3.48it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":194.05448334,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":194.054488077,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":194.20775702,"data":"[gpu0] Loading weights:  85%|████████▌ | 187/219 [00:35\u003c00:08,  3.72it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":194.207809178,"data":"[gpu1] Loading weights:  85%|████████▌ | 187/219 [00:35\u003c00:08,  3.72it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":194.207816665,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":194.207821624,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":196.702670755,"data":"[gpu1] Loading weights:  86%|████████▌ | 188/219 [00:35\u003c00:08,  3.85it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":196.702801142,"data":"[gpu0] Loading weights:  86%|████████▌ | 188/219 [00:35\u003c00:08,  3.85it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":196.702813285,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":196.702819664,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":198.992965795,"data":"[gpu1] Loading weights:  89%|████████▉ | 196/219 [00:37\u003c00:06,  3.55it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":198.993000893,"data":"[gpu0] Loading weights:  89%|████████▉ | 196/219 [00:37\u003c00:06,  3.55it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":198.993005768,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":198.993009204,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":201.128749383,"data":"[gpu1] Loading weights:  94%|█████████▎| 205/219 [00:40\u003c00:03,  3.67it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":201.12878744,"data":"[gpu0] Loading weights:  94%|█████████▎| 205/219 [00:40\u003c00:03,  3.67it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":201.128794118,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":201.128797975,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":202.349757458,"data":"[gpu1] Loading weights:  98%|█████████▊| 214/219 [00:42\u003c00:01,  3.86it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":202.349804408,"data":"[gpu0] Loading weights:  98%|█████████▊| 214/219 [00:42\u003c00:01,  3.86it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":202.349809768,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":202.349812803,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":202.349815644,"data":"[gpu0] Loading weights: 100%|██████████| 219/219 [00:43\u003c00:00,  3.92it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":202.349818724,"data":"[gpu0] Loading weights: 100%|██████████| 219/219 [00:43\u003c00:00,  5.03it/s]\r\n"}
+,{"stream_name":"stdout","time":202.349821824,"data":"[gpu1] Loading weights: 100%|██████████| 219/219 [00:43\u003c00:00,  3.92it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":202.34982481,"data":"[gpu1] Loading weights: 100%|██████████| 219/219 [00:43\u003c00:00,  5.03it/s]\r\n"}
+,{"stream_name":"stdout","time":202.400610189,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":202.400651342,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":202.655314031,"data":"[gpu1] Loading pipeline components...:  33%|███▎      | 1/3 [00:43\u003c01:27, 43.86s/it]\r\n"}
+,{"stream_name":"stdout","time":204.17826961,"data":"[gpu1] Loading pipeline components...:  67%|██████▋   | 2/3 [00:44\u003c00:18, 18.23s/it]\r\n"}
+,{"stream_name":"stdout","time":204.178326424,"data":"[gpu0] Loading pipeline components...:  33%|███▎      | 1/3 [00:43\u003c01:27, 43.87s/it]\r\n"}
+,{"stream_name":"stdout","time":204.178333957,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:45\u003c00:00, 10.60s/it]\r\n"}
+,{"stream_name":"stdout","time":204.17833903,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:45\u003c00:00, 15.22s/it]\r\n"}
+,{"stream_name":"stdout","time":204.331513444,"data":"[gpu0] Loading pipeline components...:  67%|██████▋   | 2/3 [00:45\u003c00:19, 19.13s/it]\r\n"}
+,{"stream_name":"stdout","time":204.331553104,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:45\u003c00:00, 10.45s/it]\r\n"}
+,{"stream_name":"stdout","time":204.33156035,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:45\u003c00:00, 15.26s/it]\r\n"}
+,{"stream_name":"stdout","time":231.865348187,"data":"[gpu1] 19:15:10 prompts encoded for 16 clips (text encoder released)\r\n"}
+,{"stream_name":"stdout","time":231.955795386,"data":"[gpu0] 19:15:10 prompts encoded for 16 clips (text encoder released)\r\n"}
+,{"stream_name":"stdout","time":232.20974016,"data":"[gpu0] 19:15:10 [I1] 97 frames 480x832 steps=30 seed=7001\r\n"}
+,{"stream_name":"stdout","time":232.209767382,"data":"[gpu1] 19:15:10 [I1_land] 97 frames 832x480 steps=30 seed=7001\r\n"}
+,{"stream_name":"stdout","time":232.717369287,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":232.717394579,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":232.971054825,"data":"[gpu1] Fetching 6 files:   0%|          | 0/6 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":232.971081942,"data":"[gpu0] Fetching 6 files:   0%|          | 0/6 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":248.535666893,"data":"[gpu0] Fetching 6 files:  50%|█████     | 3/6 [00:00\u003c00:00, 12.54it/s]\r\n"}
+,{"stream_name":"stdout","time":248.535712237,"data":"[gpu1] Fetching 6 files:  50%|█████     | 3/6 [00:00\u003c00:00, 12.55it/s]\r\n"}
+,{"stream_name":"stdout","time":252.541087339,"data":"[gpu1] Fetching 6 files:  67%|██████▋   | 4/6 [00:15\u003c00:00, 12.55it/s]\r\n"}
+,{"stream_name":"stdout","time":252.541119056,"data":"[gpu0] Fetching 6 files:  67%|██████▋   | 4/6 [00:15\u003c00:00, 12.54it/s]\r\n"}
+,{"stream_name":"stdout","time":267.200803477,"data":"[gpu1] Fetching 6 files:  83%|████████▎ | 5/6 [00:19\u003c00:04,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":267.200838098,"data":"[gpu1] Fetching 6 files: 100%|██████████| 6/6 [00:34\u003c00:00,  7.36s/it]\r\n"}
+,{"stream_name":"stdout","time":267.200844093,"data":"[gpu1] Fetching 6 files: 100%|██████████| 6/6 [00:34\u003c00:00,  5.75s/it]\r\n"}
+,{"stream_name":"stdout","time":267.200848849,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":267.200852998,"data":"[gpu0] Fetching 6 files:  83%|████████▎ | 5/6 [00:19\u003c00:04,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":267.200857478,"data":"[gpu0] Fetching 6 files: 100%|██████████| 6/6 [00:34\u003c00:00,  7.36s/it]\r\n"}
+,{"stream_name":"stdout","time":267.200861993,"data":"[gpu0] Fetching 6 files: 100%|██████████| 6/6 [00:34\u003c00:00,  5.75s/it]\r\n"}
+,{"stream_name":"stdout","time":267.200866489,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":274.671122978,"data":"[gpu1] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":274.671159294,"data":"[gpu0] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":290.087246077,"data":"[gpu1] Loading pipeline components...:  67%|██████▋   | 2/3 [00:07\u003c00:03,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":290.089169092,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:22\u003c00:00,  8.59s/it]\r\n"}
+,{"stream_name":"stdout","time":290.089188206,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:22\u003c00:00,  7.62s/it]\r\n"}
+,{"stream_name":"stdout","time":290.089195943,"data":"[gpu0] Loading pipeline components...:  33%|███▎      | 1/3 [00:07\u003c00:14,  7.44s/it]\r\n"}
+,{"stream_name":"stdout","time":290.089235513,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:22\u003c00:00,  7.64s/it]\r\n"}
+,{"stream_name":"stdout","time":290.089241677,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:22\u003c00:00,  7.62s/it]\r\n"}
+,{"stream_name":"stdout","time":291.969147297,"data":"[gpu1] 19:16:10 pipeline loaded\r\n"}
+,{"stream_name":"stdout","time":292.020311682,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":292.121504135,"data":"[gpu0] 19:16:10 pipeline loaded\r\n"}
+,{"stream_name":"stdout","time":292.121535524,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":294.911189143,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":294.911226343,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":298.063399603,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":298.063434742,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":299.326976548,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:30,  3.12s/it]\r\n"}
+,{"stream_name":"stdout","time":299.327018639,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:32,  3.17s/it]\r\n"}
+,{"stream_name":"stdout","time":302.430818924,"data":"[gpu1]   7%|▋         | 2/30 [00:04\u003c00:56,  2.02s/it]\r\n"}
+,{"stream_name":"stdout","time":302.534254981,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c00:57,  2.06s/it]\r\n"}
+,{"stream_name":"stdout","time":305.685964985,"data":"[gpu1]  10%|█         | 3/30 [00:07\u003c01:08,  2.54s/it]\r\n"}
+,{"stream_name":"stdout","time":305.736482158,"data":"[gpu0]  10%|█         | 3/30 [00:07\u003c01:09,  2.57s/it]\r\n"}
+,{"stream_name":"stdout","time":308.887967682,"data":"[gpu1]  13%|█▎        | 4/30 [00:10\u003c01:12,  2.80s/it]\r\n"}
+,{"stream_name":"stdout","time":308.990609206,"data":"[gpu0]  13%|█▎        | 4/30 [00:10\u003c01:13,  2.83s/it]\r\n"}
+,{"stream_name":"stdout","time":312.132321249,"data":"[gpu1]  17%|█▋        | 5/30 [00:13\u003c01:13,  2.95s/it]\r\n"}
+,{"stream_name":"stdout","time":312.233780041,"data":"[gpu0]  17%|█▋        | 5/30 [00:14\u003c01:14,  2.97s/it]\r\n"}
+,{"stream_name":"stdout","time":315.388714863,"data":"[gpu1]  20%|██        | 6/30 [00:17\u003c01:13,  3.05s/it]\r\n"}
+,{"stream_name":"stdout","time":315.54133691,"data":"[gpu0]  20%|██        | 6/30 [00:17\u003c01:13,  3.07s/it]\r\n"}
+,{"stream_name":"stdout","time":318.695187685,"data":"[gpu1]  23%|██▎       | 7/30 [00:20\u003c01:11,  3.12s/it]\r\n"}
+,{"stream_name":"stdout","time":318.898919925,"data":"[gpu0]  23%|██▎       | 7/30 [00:20\u003c01:12,  3.15s/it]\r\n"}
+,{"stream_name":"stdout","time":322.051992656,"data":"[gpu1]  27%|██▋       | 8/30 [00:23\u003c01:09,  3.18s/it]\r\n"}
+,{"stream_name":"stdout","time":322.204605684,"data":"[gpu0]  27%|██▋       | 8/30 [00:23\u003c01:10,  3.21s/it]\r\n"}
+,{"stream_name":"stdout","time":325.448951083,"data":"[gpu1]  30%|███       | 9/30 [00:27\u003c01:07,  3.24s/it]\r\n"}
+,{"stream_name":"stdout","time":325.550588264,"data":"[gpu0]  30%|███       | 9/30 [00:27\u003c01:08,  3.24s/it]\r\n"}
+,{"stream_name":"stdout","time":329.077135203,"data":"[gpu1]  33%|███▎      | 10/30 [00:30\u003c01:05,  3.29s/it]\r\n"}
+,{"stream_name":"stdout","time":329.078623763,"data":"[gpu0]  33%|███▎      | 10/30 [00:30\u003c01:05,  3.28s/it]\r\n"}
+,{"stream_name":"stdout","time":332.333351763,"data":"[gpu1]  37%|███▋      | 11/30 [00:33\u003c01:03,  3.34s/it]\r\n"}
+,{"stream_name":"stdout","time":332.384220413,"data":"[gpu0]  37%|███▋      | 11/30 [00:34\u003c01:02,  3.31s/it]\r\n"}
+,{"stream_name":"stdout","time":335.795273054,"data":"[gpu0]  40%|████      | 12/30 [00:37\u003c01:00,  3.35s/it]\r\n"}
+,{"stream_name":"stdout","time":335.897469132,"data":"[gpu1]  40%|████      | 12/30 [00:37\u003c01:00,  3.37s/it]\r\n"}
+,{"stream_name":"stdout","time":339.25096174,"data":"[gpu0]  43%|████▎     | 13/30 [00:40\u003c00:57,  3.37s/it]\r\n"}
+,{"stream_name":"stdout","time":339.403018842,"data":"[gpu1]  43%|████▎     | 13/30 [00:40\u003c00:58,  3.42s/it]\r\n"}
+,{"stream_name":"stdout","time":342.696082804,"data":"[gpu0]  47%|████▋     | 14/30 [00:44\u003c00:54,  3.39s/it]\r\n"}
+,{"stream_name":"stdout","time":343.001714419,"data":"[gpu1]  47%|████▋     | 14/30 [00:44\u003c00:55,  3.45s/it]\r\n"}
+,{"stream_name":"stdout","time":346.139313226,"data":"[gpu0]  50%|█████     | 15/30 [00:47\u003c00:51,  3.41s/it]\r\n"}
+,{"stream_name":"stdout","time":346.595111082,"data":"[gpu1]  50%|█████     | 15/30 [00:48\u003c00:52,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":349.682574598,"data":"[gpu0]  53%|█████▎    | 16/30 [00:51\u003c00:47,  3.42s/it]\r\n"}
+,{"stream_name":"stdout","time":350.239351863,"data":"[gpu1]  53%|█████▎    | 16/30 [00:51\u003c00:49,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":353.240425977,"data":"[gpu0]  57%|█████▋    | 17/30 [00:54\u003c00:44,  3.45s/it]\r\n"}
+,{"stream_name":"stdout","time":353.952258346,"data":"[gpu1]  57%|█████▋    | 17/30 [00:55\u003c00:46,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":356.798704035,"data":"[gpu0]  60%|██████    | 18/30 [00:58\u003c00:41,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":357.714317164,"data":"[gpu1]  60%|██████    | 18/30 [00:59\u003c00:43,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":360.474718045,"data":"[gpu0]  63%|██████▎   | 19/30 [01:01\u003c00:38,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":361.529082511,"data":"[gpu1]  63%|██████▎   | 19/30 [01:02\u003c00:40,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":364.123731435,"data":"[gpu0]  67%|██████▋   | 20/30 [01:05\u003c00:35,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":365.395785934,"data":"[gpu1]  67%|██████▋   | 20/30 [01:06\u003c00:37,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":367.882582312,"data":"[gpu0]  70%|███████   | 21/30 [01:09\u003c00:32,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":369.405257055,"data":"[gpu1]  70%|███████   | 21/30 [01:10\u003c00:33,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":371.581413703,"data":"[gpu0]  73%|███████▎  | 22/30 [01:12\u003c00:29,  3.63s/it]\r\n"}
+,{"stream_name":"stdout","time":373.408738482,"data":"[gpu1]  73%|███████▎  | 22/30 [01:14\u003c00:30,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":375.392565644,"data":"[gpu0]  77%|███████▋  | 23/30 [01:16\u003c00:25,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":377.42810937,"data":"[gpu1]  77%|███████▋  | 23/30 [01:18\u003c00:27,  3.88s/it]\r\n"}
+,{"stream_name":"stdout","time":379.158906991,"data":"[gpu0]  80%|████████  | 24/30 [01:20\u003c00:22,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":381.395518319,"data":"[gpu1]  80%|████████  | 24/30 [01:22\u003c00:23,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":382.871683351,"data":"[gpu0]  83%|████████▎ | 25/30 [01:24\u003c00:18,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":385.311433743,"data":"[gpu1]  83%|████████▎ | 25/30 [01:26\u003c00:19,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":386.57834415,"data":"[gpu0]  87%|████████▋ | 26/30 [01:27\u003c00:14,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":389.161152006,"data":"[gpu1]  87%|████████▋ | 26/30 [01:30\u003c00:15,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":390.224200319,"data":"[gpu0]  90%|█████████ | 27/30 [01:31\u003c00:11,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":392.933764975,"data":"[gpu1]  90%|█████████ | 27/30 [01:34\u003c00:11,  3.90s/it]\r\n"}
+,{"stream_name":"stdout","time":393.835172646,"data":"[gpu0]  93%|█████████▎| 28/30 [01:35\u003c00:07,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":396.684685759,"data":"[gpu1]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.87s/it]\r\n"}
+,{"stream_name":"stdout","time":397.448511994,"data":"[gpu0]  97%|█████████▋| 29/30 [01:38\u003c00:03,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":397.448547345,"data":"[gpu0] 100%|██████████| 30/30 [01:42\u003c00:00,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":397.448551721,"data":"[gpu0] 100%|██████████| 30/30 [01:42\u003c00:00,  3.42s/it]\r\n"}
+,{"stream_name":"stdout","time":400.342479319,"data":"[gpu1]  97%|█████████▋| 29/30 [01:41\u003c00:03,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":400.342513005,"data":"[gpu1] 100%|██████████| 30/30 [01:45\u003c00:00,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":400.34251744,"data":"[gpu1] 100%|██████████| 30/30 [01:45\u003c00:00,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":411.220482016,"data":"[gpu0] 19:18:09 [I1] done in 179.3 s -\u003e /kaggle/working/dumpling_out/clips/I1.mp4\r\n"}
+,{"stream_name":"stdout","time":411.899328091,"data":"[gpu0] 19:18:10 [I2] 97 frames 480x832 steps=30 seed=7002\r\n"}
+,{"stream_name":"stdout","time":411.95528131,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":412.263256083,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":414.828612048,"data":"[gpu1] 19:18:13 [I1_land] done in 183.0 s -\u003e /kaggle/working/dumpling_out/clips/I1_land.mp4\r\n"}
+,{"stream_name":"stdout","time":415.032523324,"data":"[gpu1] 19:18:13 [I2_land] 97 frames 832x480 steps=30 seed=7002\r\n"}
+,{"stream_name":"stdout","time":415.032558666,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":415.387243518,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":415.642696323,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":417.066349032,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:39,  3.43s/it]\r\n"}
+,{"stream_name":"stdout","time":418.84405169,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":420.268855752,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:40,  3.45s/it]\r\n"}
+,{"stream_name":"stdout","time":420.523416757,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:02,  2.24s/it]\r\n"}
+,{"stream_name":"stdout","time":423.791275577,"data":"[gpu1]   7%|▋         | 2/30 [00:04\u003c01:03,  2.25s/it]\r\n"}
+,{"stream_name":"stdout","time":423.977728158,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:15,  2.79s/it]\r\n"}
+,{"stream_name":"stdout","time":427.369786167,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:16,  2.84s/it]\r\n"}
+,{"stream_name":"stdout","time":427.471684028,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:19,  3.05s/it]\r\n"}
+,{"stream_name":"stdout","time":431.033537848,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:21,  3.14s/it]\r\n"}
+,{"stream_name":"stdout","time":431.083288818,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:20,  3.22s/it]\r\n"}
+,{"stream_name":"stdout","time":434.691996219,"data":"[gpu0]  20%|██        | 6/30 [00:18\u003c01:20,  3.34s/it]\r\n"}
+,{"stream_name":"stdout","time":434.794099051,"data":"[gpu1]  17%|█▋        | 5/30 [00:15\u003c01:23,  3.33s/it]\r\n"}
+,{"stream_name":"stdout","time":438.355596019,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:18,  3.43s/it]\r\n"}
+,{"stream_name":"stdout","time":438.610197695,"data":"[gpu1]  20%|██        | 6/30 [00:19\u003c01:23,  3.47s/it]\r\n"}
+,{"stream_name":"stdout","time":442.068965752,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:17,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":442.528779813,"data":"[gpu1]  23%|██▎       | 7/30 [00:23\u003c01:22,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":445.8318435,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:15,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":446.493036467,"data":"[gpu1]  27%|██▋       | 8/30 [00:27\u003c01:21,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":449.645355905,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:12,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":450.511069793,"data":"[gpu1]  30%|███       | 9/30 [00:31\u003c01:19,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":453.45972504,"data":"[gpu0]  37%|███▋      | 11/30 [00:37\u003c01:10,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":454.495063904,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:17,  3.85s/it]\r\n"}
+,{"stream_name":"stdout","time":457.22642095,"data":"[gpu0]  40%|████      | 12/30 [00:41\u003c01:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":458.449211605,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:13,  3.89s/it]\r\n"}
+,{"stream_name":"stdout","time":460.940348974,"data":"[gpu0]  43%|████▎     | 13/30 [00:44\u003c01:03,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":462.314213897,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:10,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":464.656797343,"data":"[gpu0]  47%|████▋     | 14/30 [00:48\u003c00:59,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":466.182836645,"data":"[gpu1]  43%|████▎     | 13/30 [00:46\u003c01:06,  3.90s/it]\r\n"}
+,{"stream_name":"stdout","time":468.320256522,"data":"[gpu0]  50%|█████     | 15/30 [00:52\u003c00:55,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":469.999499018,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c01:02,  3.88s/it]\r\n"}
+,{"stream_name":"stdout","time":471.983515244,"data":"[gpu0]  53%|█████▎    | 16/30 [00:56\u003c00:52,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":473.764244195,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:57,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":475.645764221,"data":"[gpu0]  57%|█████▋    | 17/30 [00:59\u003c00:48,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":477.47638518,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:53,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":479.258152046,"data":"[gpu0]  60%|██████    | 18/30 [01:03\u003c00:44,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":481.191437865,"data":"[gpu1]  57%|█████▋    | 17/30 [01:02\u003c00:49,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":482.82491325,"data":"[gpu0]  63%|██████▎   | 19/30 [01:07\u003c00:40,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":484.926133176,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:45,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":486.434042846,"data":"[gpu0]  67%|██████▋   | 20/30 [01:10\u003c00:36,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":488.572572896,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:41,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":489.997793025,"data":"[gpu0]  70%|███████   | 21/30 [01:14\u003c00:32,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":492.238541754,"data":"[gpu1]  67%|██████▋   | 20/30 [01:13\u003c00:37,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":493.508114206,"data":"[gpu0]  73%|███████▎  | 22/30 [01:17\u003c00:28,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":495.900859096,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":497.070674503,"data":"[gpu0]  77%|███████▋  | 23/30 [01:21\u003c00:25,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":499.512030756,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":500.630850996,"data":"[gpu0]  80%|████████  | 24/30 [01:24\u003c00:21,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":503.170497037,"data":"[gpu1]  77%|███████▋  | 23/30 [01:24\u003c00:25,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":504.187800579,"data":"[gpu0]  83%|████████▎ | 25/30 [01:28\u003c00:17,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":506.832557025,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":507.748498243,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":510.482342341,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":511.293172044,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:10,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":514.191556046,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":514.852501647,"data":"[gpu0]  93%|█████████▎| 28/30 [01:39\u003c00:07,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":517.878142,"data":"[gpu1]  90%|█████████ | 27/30 [01:38\u003c00:10,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":518.414899383,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":518.414966755,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":518.414974727,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":521.562454527,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":525.279542449,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":525.279580424,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":525.279617836,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":531.600021528,"data":"[gpu0] 19:20:10 [I2] done in 120.4 s -\u003e /kaggle/working/dumpling_out/clips/I2.mp4\r\n"}
+,{"stream_name":"stdout","time":531.854349182,"data":"[gpu0] 19:20:10 [I3] 97 frames 480x832 steps=30 seed=7003\r\n"}
+,{"stream_name":"stdout","time":531.905481995,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":532.210912678,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":535.741929825,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":537.184834006,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:41,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":540.058197577,"data":"[gpu1] 19:20:18 [I2_land] done in 125.2 s -\u003e /kaggle/working/dumpling_out/clips/I2_land.mp4\r\n"}
+,{"stream_name":"stdout","time":540.263328985,"data":"[gpu1] 19:20:18 [I3_land] 97 frames 832x480 steps=30 seed=7003\r\n"}
+,{"stream_name":"stdout","time":540.314061647,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":540.619428202,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":540.721548165,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:04,  2.29s/it]\r\n"}
+,{"stream_name":"stdout","time":544.224340329,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":544.275356162,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:17,  2.86s/it]\r\n"}
+,{"stream_name":"stdout","time":545.700220143,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:44,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":547.911415097,"data":"[gpu0]  13%|█▎        | 4/30 [00:12\u003c01:21,  3.15s/it]\r\n"}
+,{"stream_name":"stdout","time":549.416729375,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:05,  2.35s/it]\r\n"}
+,{"stream_name":"stdout","time":551.553441073,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:22,  3.31s/it]\r\n"}
+,{"stream_name":"stdout","time":553.182096116,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:20,  2.97s/it]\r\n"}
+,{"stream_name":"stdout","time":555.265296888,"data":"[gpu0]  20%|██        | 6/30 [00:19\u003c01:22,  3.43s/it]\r\n"}
+,{"stream_name":"stdout","time":557.046943793,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:25,  3.28s/it]\r\n"}
+,{"stream_name":"stdout","time":559.030931714,"data":"[gpu0]  23%|██▎       | 7/30 [00:23\u003c01:20,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":561.015099455,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:27,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":562.850482742,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:19,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":565.037684609,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:27,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":566.665878691,"data":"[gpu0]  30%|███       | 9/30 [00:30\u003c01:16,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":569.05660248,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:26,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":570.482846648,"data":"[gpu0]  33%|███▎      | 10/30 [00:34\u003c01:14,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":572.974426026,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:24,  3.85s/it]\r\n"}
+,{"stream_name":"stdout","time":574.239922387,"data":"[gpu0]  37%|███▋      | 11/30 [00:38\u003c01:11,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":576.872262462,"data":"[gpu1]  30%|███       | 9/30 [00:32\u003c01:21,  3.88s/it]\r\n"}
+,{"stream_name":"stdout","time":577.958451162,"data":"[gpu0]  40%|████      | 12/30 [00:41\u003c01:07,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":580.680353485,"data":"[gpu1]  33%|███▎      | 10/30 [00:36\u003c01:17,  3.88s/it]\r\n"}
+,{"stream_name":"stdout","time":581.59657891,"data":"[gpu0]  43%|████▎     | 13/30 [00:45\u003c01:03,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":584.447243481,"data":"[gpu1]  37%|███▋      | 11/30 [00:40\u003c01:13,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":585.261503052,"data":"[gpu0]  47%|████▋     | 14/30 [00:49\u003c00:59,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":588.161219531,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":588.873391854,"data":"[gpu0]  50%|█████     | 15/30 [00:53\u003c00:55,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":591.864408403,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":592.472390005,"data":"[gpu0]  53%|█████▎    | 16/30 [00:56\u003c00:51,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":595.559756517,"data":"[gpu1]  47%|████▋     | 14/30 [00:51\u003c01:00,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":596.066074544,"data":"[gpu0]  57%|█████▋    | 17/30 [01:00\u003c00:47,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":599.255815521,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":599.609858986,"data":"[gpu0]  60%|██████    | 18/30 [01:03\u003c00:43,  3.63s/it]\r\n"}
+,{"stream_name":"stdout","time":602.861428455,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":603.167426166,"data":"[gpu0]  63%|██████▎   | 19/30 [01:07\u003c00:39,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":606.524570147,"data":"[gpu1]  57%|█████▋    | 17/30 [01:02\u003c00:48,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":606.728537757,"data":"[gpu0]  67%|██████▋   | 20/30 [01:10\u003c00:35,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":610.161185774,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":610.289919252,"data":"[gpu0]  70%|███████   | 21/30 [01:14\u003c00:32,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":613.801175368,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":613.801250945,"data":"[gpu0]  73%|███████▎  | 22/30 [01:18\u003c00:28,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":617.310361293,"data":"[gpu0]  77%|███████▋  | 23/30 [01:21\u003c00:24,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":617.412463321,"data":"[gpu1]  67%|██████▋   | 20/30 [01:13\u003c00:36,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":620.860950857,"data":"[gpu0]  80%|████████  | 24/30 [01:25\u003c00:21,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":621.063730562,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:32,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":624.410011003,"data":"[gpu0]  83%|████████▎ | 25/30 [01:28\u003c00:17,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":624.715381439,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":627.971932301,"data":"[gpu0]  87%|████████▋ | 26/30 [01:32\u003c00:14,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":628.378782613,"data":"[gpu1]  77%|███████▋  | 23/30 [01:24\u003c00:25,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":631.583328679,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:10,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":632.040823956,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:21,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":635.137260169,"data":"[gpu0]  93%|█████████▎| 28/30 [01:39\u003c00:07,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":635.747999003,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":638.74945553,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":638.749500849,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":638.749507213,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":639.461062269,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":643.241479549,"data":"[gpu1]  90%|█████████ | 27/30 [01:38\u003c00:11,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":646.980749175,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":650.707230452,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":650.707299106,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":650.707309183,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":652.354572589,"data":"[gpu0] 19:22:11 [I3] done in 120.7 s -\u003e /kaggle/working/dumpling_out/clips/I3.mp4\r\n"}
+,{"stream_name":"stdout","time":652.609137135,"data":"[gpu0] 19:22:11 [I5] 97 frames 480x832 steps=30 seed=7004\r\n"}
+,{"stream_name":"stdout","time":652.609274309,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":652.913489242,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":656.450147577,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":657.868230922,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:42,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":661.46372746,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:04,  2.29s/it]\r\n"}
+,{"stream_name":"stdout","time":663.99207314,"data":"[gpu1] 19:22:22 [I3_land] done in 123.9 s -\u003e /kaggle/working/dumpling_out/clips/I3_land.mp4\r\n"}
+,{"stream_name":"stdout","time":664.196721769,"data":"[gpu1] 19:22:22 [I5_land] 97 frames 832x480 steps=30 seed=7004\r\n"}
+,{"stream_name":"stdout","time":664.196766529,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":664.55109603,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":665.007459425,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:17,  2.87s/it]\r\n"}
+,{"stream_name":"stdout","time":668.198668259,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":668.553756843,"data":"[gpu0]  13%|█▎        | 4/30 [00:12\u003c01:21,  3.14s/it]\r\n"}
+,{"stream_name":"stdout","time":669.672966558,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:44,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":672.166062753,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:22,  3.30s/it]\r\n"}
+,{"stream_name":"stdout","time":673.363275322,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:06,  2.36s/it]\r\n"}
+,{"stream_name":"stdout","time":675.779364914,"data":"[gpu0]  20%|██        | 6/30 [00:19\u003c01:21,  3.39s/it]\r\n"}
+,{"stream_name":"stdout","time":677.099158294,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:20,  2.97s/it]\r\n"}
+,{"stream_name":"stdout","time":679.382251576,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:19,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":680.85763489,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:25,  3.27s/it]\r\n"}
+,{"stream_name":"stdout","time":683.097152112,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:17,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":684.725511031,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":686.81101524,"data":"[gpu0]  30%|███       | 9/30 [00:30\u003c01:14,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":688.591385216,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":690.523770832,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:12,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":692.507762553,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:24,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":694.233188985,"data":"[gpu0]  37%|███▋      | 11/30 [00:37\u003c01:09,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":696.36853085,"data":"[gpu1]  27%|██▋       | 8/30 [00:27\u003c01:22,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":697.945080807,"data":"[gpu0]  40%|████      | 12/30 [00:41\u003c01:06,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":700.180147842,"data":"[gpu1]  30%|███       | 9/30 [00:31\u003c01:19,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":701.604091726,"data":"[gpu0]  43%|████▎     | 13/30 [00:44\u003c01:02,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":704.021080923,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:15,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":705.214098699,"data":"[gpu0]  47%|████▋     | 14/30 [00:48\u003c00:58,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":707.757791604,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:12,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":708.879593967,"data":"[gpu0]  50%|█████     | 15/30 [00:52\u003c00:54,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":711.473218215,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":712.490852915,"data":"[gpu0]  53%|█████▎    | 16/30 [00:55\u003c00:51,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":715.231474423,"data":"[gpu1]  43%|████▎     | 13/30 [00:46\u003c01:04,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":716.095731203,"data":"[gpu0]  57%|█████▋    | 17/30 [00:59\u003c00:47,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":718.942529978,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c01:00,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":719.651130934,"data":"[gpu0]  60%|██████    | 18/30 [01:03\u003c00:43,  3.63s/it]\r\n"}
+,{"stream_name":"stdout","time":722.638778035,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":723.251654196,"data":"[gpu0]  63%|██████▎   | 19/30 [01:06\u003c00:39,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":726.294658147,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":726.801104091,"data":"[gpu0]  67%|██████▋   | 20/30 [01:10\u003c00:36,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":729.996022792,"data":"[gpu1]  57%|█████▋    | 17/30 [01:01\u003c00:48,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":730.35057736,"data":"[gpu0]  70%|███████   | 21/30 [01:13\u003c00:32,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":733.658622289,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":733.914149426,"data":"[gpu0]  73%|███████▎  | 22/30 [01:17\u003c00:28,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":737.402412117,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":737.476030777,"data":"[gpu0]  77%|███████▋  | 23/30 [01:21\u003c00:25,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":741.028963419,"data":"[gpu1]  67%|██████▋   | 20/30 [01:12\u003c00:36,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":741.079781298,"data":"[gpu0]  80%|████████  | 24/30 [01:24\u003c00:21,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":744.643451268,"data":"[gpu0]  83%|████████▎ | 25/30 [01:28\u003c00:17,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":744.745391551,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":748.198758429,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":748.401514258,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":751.804997783,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:10,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":752.110141207,"data":"[gpu1]  77%|███████▋  | 23/30 [01:23\u003c00:25,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":755.362588109,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":755.871856801,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":758.974926336,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":758.97497672,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":758.97498462,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":759.584707243,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":763.294904739,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":767.009731566,"data":"[gpu1]  90%|█████████ | 27/30 [01:38\u003c00:11,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":770.861956811,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":773.736967587,"data":"[gpu0] 19:24:12 [I5] done in 121.4 s -\u003e /kaggle/working/dumpling_out/clips/I5.mp4\r\n"}
+,{"stream_name":"stdout","time":773.99222129,"data":"[gpu0] 19:24:12 [I5b] 97 frames 480x832 steps=30 seed=7005\r\n"}
+,{"stream_name":"stdout","time":773.992261452,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":774.348699697,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":774.502065162,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":774.502100275,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":774.502105912,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":777.796746161,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":779.221357482,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:40,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":782.732033164,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:03,  2.27s/it]\r\n"}
+,{"stream_name":"stdout","time":786.240225818,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:16,  2.84s/it]\r\n"}
+,{"stream_name":"stdout","time":788.652716233,"data":"[gpu1] 19:24:27 [I5_land] done in 124.7 s -\u003e /kaggle/working/dumpling_out/clips/I5_land.mp4\r\n"}
+,{"stream_name":"stdout","time":788.907772663,"data":"[gpu1] 19:24:27 [I5b_land] 97 frames 832x480 steps=30 seed=7005\r\n"}
+,{"stream_name":"stdout","time":788.907820638,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":789.264362674,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":789.823885105,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:20,  3.11s/it]\r\n"}
+,{"stream_name":"stdout","time":792.816917067,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":793.376236245,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:21,  3.26s/it]\r\n"}
+,{"stream_name":"stdout","time":794.292004008,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:44,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":796.936391326,"data":"[gpu0]  20%|██        | 6/30 [00:19\u003c01:20,  3.36s/it]\r\n"}
+,{"stream_name":"stdout","time":798.005236488,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:05,  2.35s/it]\r\n"}
+,{"stream_name":"stdout","time":800.549139362,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:18,  3.43s/it]\r\n"}
+,{"stream_name":"stdout","time":801.800307621,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:20,  2.96s/it]\r\n"}
+,{"stream_name":"stdout","time":804.199612874,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:16,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":805.565895209,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:25,  3.27s/it]\r\n"}
+,{"stream_name":"stdout","time":807.952608834,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:14,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":809.47792524,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.47s/it]\r\n"}
+,{"stream_name":"stdout","time":811.665051806,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:12,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":813.496009061,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":815.432348561,"data":"[gpu0]  37%|███▋      | 11/30 [00:37\u003c01:09,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":817.468702876,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:26,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":819.198607931,"data":"[gpu0]  40%|████      | 12/30 [00:41\u003c01:06,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":821.378966868,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:24,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":822.905260505,"data":"[gpu0]  43%|████▎     | 13/30 [00:44\u003c01:02,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":825.242479513,"data":"[gpu1]  30%|███       | 9/30 [00:32\u003c01:20,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":826.56124697,"data":"[gpu0]  47%|████▋     | 14/30 [00:48\u003c00:59,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":829.002508633,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:16,  3.85s/it]\r\n"}
+,{"stream_name":"stdout","time":830.168374733,"data":"[gpu0]  50%|█████     | 15/30 [00:52\u003c00:55,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":832.786710196,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:12,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":833.823788811,"data":"[gpu0]  53%|█████▎    | 16/30 [00:55\u003c00:51,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":836.468030481,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":837.384315628,"data":"[gpu0]  57%|█████▋    | 17/30 [00:59\u003c00:47,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":840.182659366,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":840.996804753,"data":"[gpu0]  60%|██████    | 18/30 [01:03\u003c00:43,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":843.896521472,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c01:00,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":844.558138378,"data":"[gpu0]  63%|██████▎   | 19/30 [01:06\u003c00:39,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":847.558643626,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":848.06757825,"data":"[gpu0]  67%|██████▋   | 20/30 [01:10\u003c00:36,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":851.172474043,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":851.630997284,"data":"[gpu0]  70%|███████   | 21/30 [01:13\u003c00:32,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":854.83165722,"data":"[gpu1]  57%|█████▋    | 17/30 [01:01\u003c00:47,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":855.137896239,"data":"[gpu0]  73%|███████▎  | 22/30 [01:17\u003c00:28,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":858.442553169,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":858.695798842,"data":"[gpu0]  77%|███████▋  | 23/30 [01:20\u003c00:24,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":862.098354999,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":862.200190269,"data":"[gpu0]  80%|████████  | 24/30 [01:24\u003c00:21,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":865.743297287,"data":"[gpu0]  83%|████████▎ | 25/30 [01:27\u003c00:17,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":865.743376152,"data":"[gpu1]  67%|██████▋   | 20/30 [01:12\u003c00:36,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":869.219745461,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":869.372438707,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:32,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":872.783700641,"data":"[gpu0]  90%|█████████ | 27/30 [01:34\u003c00:10,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":873.037186407,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":876.292500209,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":876.697434325,"data":"[gpu1]  77%|███████▋  | 23/30 [01:23\u003c00:25,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":879.850899186,"data":"[gpu0]  97%|█████████▋| 29/30 [01:41\u003c00:03,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":879.850946683,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":879.850953839,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":880.406143308,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:21,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":884.062304089,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":887.781099012,"data":"[gpu1]  87%|████████▋ | 26/30 [01:34\u003c00:14,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":891.53065198,"data":"[gpu1]  90%|█████████ | 27/30 [01:38\u003c00:11,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":892.86860338,"data":"[gpu0] 19:26:11 [I5b] done in 119.2 s -\u003e /kaggle/working/dumpling_out/clips/I5b.mp4\r\n"}
+,{"stream_name":"stdout","time":893.123411407,"data":"[gpu0] 19:26:11 [I5c] 97 frames 480x832 steps=30 seed=7006\r\n"}
+,{"stream_name":"stdout","time":893.123464291,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":893.428731606,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":895.258009772,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":896.969070087,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":898.358395464,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:41,  3.50s/it]\r\n"}
+,{"stream_name":"stdout","time":898.968280974,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":898.968326715,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":898.968367827,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":901.914591048,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:03,  2.28s/it]\r\n"}
+,{"stream_name":"stdout","time":905.422881873,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:16,  2.85s/it]\r\n"}
+,{"stream_name":"stdout","time":909.012251244,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:21,  3.12s/it]\r\n"}
+,{"stream_name":"stdout","time":912.545576552,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:21,  3.28s/it]\r\n"}
+,{"stream_name":"stdout","time":912.697492788,"data":"[gpu1] 19:26:31 [I5b_land] done in 124.0 s -\u003e /kaggle/working/dumpling_out/clips/I5b_land.mp4\r\n"}
+,{"stream_name":"stdout","time":912.95245649,"data":"[gpu1] 19:26:31 [I5c_land] 97 frames 832x480 steps=30 seed=7006\r\n"}
+,{"stream_name":"stdout","time":912.952517997,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":913.257277702,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":916.103682785,"data":"[gpu0]  20%|██        | 6/30 [00:19\u003c01:20,  3.37s/it]\r\n"}
+,{"stream_name":"stdout","time":916.865515986,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":918.341371063,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:44,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":919.714801603,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:19,  3.44s/it]\r\n"}
+,{"stream_name":"stdout","time":922.095237123,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:05,  2.35s/it]\r\n"}
+,{"stream_name":"stdout","time":923.313298967,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:16,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":925.805941534,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:20,  2.97s/it]\r\n"}
+,{"stream_name":"stdout","time":927.058485763,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:14,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":929.659470893,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:25,  3.28s/it]\r\n"}
+,{"stream_name":"stdout","time":930.728792517,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:11,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":933.526762964,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.47s/it]\r\n"}
+,{"stream_name":"stdout","time":934.446785084,"data":"[gpu0]  37%|███▋      | 11/30 [00:37\u003c01:08,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":937.496776098,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":938.209786023,"data":"[gpu0]  40%|████      | 12/30 [00:41\u003c01:05,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":941.511837097,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:25,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":941.970169715,"data":"[gpu0]  43%|████▎     | 13/30 [00:44\u003c01:02,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":945.379035863,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:23,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":945.684608155,"data":"[gpu0]  47%|████▋     | 14/30 [00:48\u003c00:59,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":949.181790566,"data":"[gpu1]  30%|███       | 9/30 [00:32\u003c01:20,  3.84s/it]\r\n"}
+,{"stream_name":"stdout","time":949.334480744,"data":"[gpu0]  50%|█████     | 15/30 [00:52\u003c00:55,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":952.946611237,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:16,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":952.946666744,"data":"[gpu0]  53%|█████▎    | 16/30 [00:55\u003c00:51,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":956.5577419,"data":"[gpu0]  57%|█████▋    | 17/30 [00:59\u003c00:47,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":956.659669178,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:12,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":960.206416368,"data":"[gpu0]  60%|██████    | 18/30 [01:03\u003c00:43,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":960.373827743,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":963.729153107,"data":"[gpu0]  63%|██████▎   | 19/30 [01:06\u003c00:39,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":964.084408864,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:03,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":967.281853193,"data":"[gpu0]  67%|██████▋   | 20/30 [01:10\u003c00:36,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":967.791259863,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c00:59,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":970.844887276,"data":"[gpu0]  70%|███████   | 21/30 [01:13\u003c00:32,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":971.455733003,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:55,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":974.407165837,"data":"[gpu0]  73%|███████▎  | 22/30 [01:17\u003c00:28,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":975.119761421,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:51,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":977.963761072,"data":"[gpu0]  77%|███████▋  | 23/30 [01:20\u003c00:25,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":978.773573392,"data":"[gpu1]  57%|█████▋    | 17/30 [01:01\u003c00:48,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":981.507103497,"data":"[gpu0]  80%|████████  | 24/30 [01:24\u003c00:21,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":982.422148821,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":985.009354135,"data":"[gpu0]  83%|████████▎ | 25/30 [01:28\u003c00:17,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":986.078231358,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":988.567472713,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":989.733421502,"data":"[gpu1]  67%|██████▋   | 20/30 [01:12\u003c00:36,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":992.157028994,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:10,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":993.392308255,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":995.630096497,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":997.105016574,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":999.195656441,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":999.195700311,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":999.195722541,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":1000.769228574,"data":"[gpu1]  77%|███████▋  | 23/30 [01:23\u003c00:25,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1004.480706501,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1008.192286881,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1011.811712316,"data":"[gpu0] 19:28:10 [I5c] done in 118.9 s -\u003e /kaggle/working/dumpling_out/clips/I5c.mp4\r\n"}
+,{"stream_name":"stdout","time":1011.914068802,"data":"[gpu1]  87%|████████▋ | 26/30 [01:34\u003c00:14,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1012.016257398,"data":"[gpu0] 19:28:10 [I6] 97 frames 480x832 steps=30 seed=7007\r\n"}
+,{"stream_name":"stdout","time":1012.067411037,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1012.374596684,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1015.620371012,"data":"[gpu1]  90%|█████████ | 27/30 [01:38\u003c00:11,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1015.873943138,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1017.348454628,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:41,  3.50s/it]\r\n"}
+,{"stream_name":"stdout","time":1019.382712446,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1020.857779484,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:03,  2.28s/it]\r\n"}
+,{"stream_name":"stdout","time":1023.121761024,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1023.121790026,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1023.121794735,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1024.416052263,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:17,  2.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1027.976072406,"data":"[gpu0]  13%|█▎        | 4/30 [00:12\u003c01:21,  3.13s/it]\r\n"}
+,{"stream_name":"stdout","time":1031.539066634,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:22,  3.28s/it]\r\n"}
+,{"stream_name":"stdout","time":1035.110553713,"data":"[gpu0]  20%|██        | 6/30 [00:19\u003c01:21,  3.38s/it]\r\n"}
+,{"stream_name":"stdout","time":1036.183293169,"data":"[gpu1] 19:28:34 [I5c_land] done in 123.5 s -\u003e /kaggle/working/dumpling_out/clips/I5c_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1036.387535437,"data":"[gpu1] 19:28:35 [I6_land] 97 frames 832x480 steps=30 seed=7007\r\n"}
+,{"stream_name":"stdout","time":1036.387573776,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1036.743473544,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1038.668277337,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:19,  3.44s/it]\r\n"}
+,{"stream_name":"stdout","time":1040.391250405,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1041.863557602,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:44,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1042.268649894,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:16,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":1045.5668069,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:06,  2.36s/it]\r\n"}
+,{"stream_name":"stdout","time":1045.872500593,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:13,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":1049.279902573,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:20,  2.97s/it]\r\n"}
+,{"stream_name":"stdout","time":1049.484187375,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:10,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":1053.096876354,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:25,  3.27s/it]\r\n"}
+,{"stream_name":"stdout","time":1053.18809567,"data":"[gpu0]  37%|███▋      | 11/30 [00:37\u003c01:07,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":1056.918417246,"data":"[gpu0]  40%|████      | 12/30 [00:40\u003c01:04,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":1056.967949093,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":1060.613220453,"data":"[gpu0]  43%|████▎     | 13/30 [00:44\u003c01:01,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":1060.866971839,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":1064.362848405,"data":"[gpu0]  47%|████▋     | 14/30 [00:48\u003c00:58,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1064.821228405,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:25,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1068.07637007,"data":"[gpu0]  50%|█████     | 15/30 [00:51\u003c00:55,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1068.687060965,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:23,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1071.785377566,"data":"[gpu0]  53%|█████▎    | 16/30 [00:55\u003c00:51,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1072.497956535,"data":"[gpu1]  30%|███       | 9/30 [00:31\u003c01:20,  3.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1075.434610998,"data":"[gpu0]  57%|█████▋    | 17/30 [00:59\u003c00:48,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1076.298106049,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:16,  3.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1079.045456335,"data":"[gpu0]  60%|██████    | 18/30 [01:03\u003c00:44,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1080.063989861,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:12,  3.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1082.660730607,"data":"[gpu0]  63%|██████▎   | 19/30 [01:06\u003c00:40,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1083.821257977,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1086.22000007,"data":"[gpu0]  67%|██████▋   | 20/30 [01:10\u003c00:36,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1087.49431806,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1089.834869256,"data":"[gpu0]  70%|███████   | 21/30 [01:13\u003c00:32,  3.63s/it]\r\n"}
+,{"stream_name":"stdout","time":1091.207781359,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c01:00,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1093.395135022,"data":"[gpu0]  73%|███████▎  | 22/30 [01:17\u003c00:28,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":1094.87007244,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1096.952711074,"data":"[gpu0]  77%|███████▋  | 23/30 [01:20\u003c00:25,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":1098.526391782,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1100.458056248,"data":"[gpu0]  80%|████████  | 24/30 [01:24\u003c00:21,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":1102.187585956,"data":"[gpu1]  57%|█████▋    | 17/30 [01:01\u003c00:48,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1104.018612367,"data":"[gpu0]  83%|████████▎ | 25/30 [01:28\u003c00:17,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":1105.847977597,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1107.529160513,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":1109.503389077,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1111.077683362,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:10,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":1113.159489409,"data":"[gpu1]  67%|██████▋   | 20/30 [01:12\u003c00:36,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1114.679835368,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":1116.823935901,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1118.194612783,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":1118.194666401,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":1118.194982724,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":1120.518158753,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1124.180352218,"data":"[gpu1]  77%|███████▋  | 23/30 [01:23\u003c00:25,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1127.917813596,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1131.468708123,"data":"[gpu0] 19:30:10 [I6] done in 119.7 s -\u003e /kaggle/working/dumpling_out/clips/I6.mp4\r\n"}
+,{"stream_name":"stdout","time":1131.621938061,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1131.72473553,"data":"[gpu0] 19:30:10 [C01] 121 frames 480x832 steps=30 seed=7008\r\n"}
+,{"stream_name":"stdout","time":1131.724769801,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1132.079675626,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1135.326251351,"data":"[gpu1]  87%|████████▋ | 26/30 [01:34\u003c00:14,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1136.64607212,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1138.530278737,"data":"[gpu0]   3%|▎         | 1/30 [00:04\u003c02:12,  4.58s/it]\r\n"}
+,{"stream_name":"stdout","time":1139.090227452,"data":"[gpu1]  90%|█████████ | 27/30 [01:38\u003c00:11,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1142.852304466,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1143.157477412,"data":"[gpu0]   7%|▋         | 2/30 [00:06\u003c01:23,  2.98s/it]\r\n"}
+,{"stream_name":"stdout","time":1146.646458655,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1146.646673407,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1146.646685393,"data":"[gpu1] 100%|██████████| 30/30 [01:49\u003c00:00,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1147.78566029,"data":"[gpu0]  10%|█         | 3/30 [00:11\u003c01:40,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1152.452296371,"data":"[gpu0]  13%|█▎        | 4/30 [00:15\u003c01:46,  4.10s/it]\r\n"}
+,{"stream_name":"stdout","time":1157.113234336,"data":"[gpu0]  17%|█▋        | 5/30 [00:20\u003c01:47,  4.31s/it]\r\n"}
+,{"stream_name":"stdout","time":1160.7694903,"data":"[gpu1] 19:30:39 [I6_land] done in 124.6 s -\u003e /kaggle/working/dumpling_out/clips/I6_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1161.02459761,"data":"[gpu1] 19:30:39 [C01_land] 121 frames 832x480 steps=30 seed=7008\r\n"}
+,{"stream_name":"stdout","time":1161.02465084,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1161.380143981,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1161.787461555,"data":"[gpu0]  20%|██        | 6/30 [00:25\u003c01:46,  4.43s/it]\r\n"}
+,{"stream_name":"stdout","time":1166.050209064,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1166.507904892,"data":"[gpu0]  23%|██▎       | 7/30 [00:29\u003c01:43,  4.51s/it]\r\n"}
+,{"stream_name":"stdout","time":1167.978459515,"data":"[gpu1]   3%|▎         | 1/30 [00:04\u003c02:15,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1171.22154131,"data":"[gpu0]  27%|██▋       | 8/30 [00:34\u003c01:40,  4.56s/it]\r\n"}
+,{"stream_name":"stdout","time":1172.799467239,"data":"[gpu1]   7%|▋         | 2/30 [00:06\u003c01:25,  3.06s/it]\r\n"}
+,{"stream_name":"stdout","time":1176.000169395,"data":"[gpu0]  30%|███       | 9/30 [00:39\u003c01:36,  4.61s/it]\r\n"}
+,{"stream_name":"stdout","time":1177.778875354,"data":"[gpu1]  10%|█         | 3/30 [00:11\u003c01:44,  3.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1180.833324417,"data":"[gpu0]  33%|███▎      | 10/30 [00:43\u003c01:33,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1182.766079578,"data":"[gpu1]  13%|█▎        | 4/30 [00:16\u003c01:51,  4.29s/it]\r\n"}
+,{"stream_name":"stdout","time":1185.767340174,"data":"[gpu0]  37%|███▋      | 11/30 [00:48\u003c01:29,  4.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1187.902863143,"data":"[gpu1]  17%|█▋        | 5/30 [00:21\u003c01:53,  4.56s/it]\r\n"}
+,{"stream_name":"stdout","time":1190.691582598,"data":"[gpu0]  40%|████      | 12/30 [00:53\u003c01:26,  4.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1193.030159824,"data":"[gpu1]  20%|██        | 6/30 [00:26\u003c01:54,  4.76s/it]\r\n"}
+,{"stream_name":"stdout","time":1195.573009961,"data":"[gpu0]  43%|████▎     | 13/30 [00:58\u003c01:22,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1198.016050018,"data":"[gpu1]  23%|██▎       | 7/30 [00:31\u003c01:52,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1200.354396308,"data":"[gpu0]  47%|████▋     | 14/30 [01:03\u003c01:17,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1202.948690613,"data":"[gpu1]  27%|██▋       | 8/30 [00:36\u003c01:48,  4.92s/it]\r\n"}
+,{"stream_name":"stdout","time":1205.135677668,"data":"[gpu0]  50%|█████     | 15/30 [01:08\u003c01:12,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1207.876986857,"data":"[gpu1]  30%|███       | 9/30 [00:41\u003c01:43,  4.92s/it]\r\n"}
+,{"stream_name":"stdout","time":1209.866605407,"data":"[gpu0]  53%|█████▎    | 16/30 [01:13\u003c01:07,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1212.664542899,"data":"[gpu1]  33%|███▎      | 10/30 [00:46\u003c01:38,  4.90s/it]\r\n"}
+,{"stream_name":"stdout","time":1214.544015234,"data":"[gpu0]  57%|█████▋    | 17/30 [01:17\u003c01:02,  4.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1217.494970279,"data":"[gpu1]  37%|███▋      | 11/30 [00:51\u003c01:32,  4.89s/it]\r\n"}
+,{"stream_name":"stdout","time":1219.224554578,"data":"[gpu0]  60%|██████    | 18/30 [01:22\u003c00:57,  4.76s/it]\r\n"}
+,{"stream_name":"stdout","time":1222.275314816,"data":"[gpu1]  40%|████      | 12/30 [00:56\u003c01:27,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1223.852590998,"data":"[gpu0]  63%|██████▎   | 19/30 [01:27\u003c00:52,  4.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1227.053867603,"data":"[gpu1]  43%|████▎     | 13/30 [01:00\u003c01:22,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1228.478122069,"data":"[gpu0]  67%|██████▋   | 20/30 [01:31\u003c00:47,  4.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1231.832241555,"data":"[gpu1]  47%|████▋     | 14/30 [01:05\u003c01:17,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1233.149889025,"data":"[gpu0]  70%|███████   | 21/30 [01:36\u003c00:42,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1236.55676451,"data":"[gpu1]  50%|█████     | 15/30 [01:10\u003c01:12,  4.80s/it]\r\n"}
+,{"stream_name":"stdout","time":1237.77969793,"data":"[gpu0]  73%|███████▎  | 22/30 [01:41\u003c00:37,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1241.424064918,"data":"[gpu1]  53%|█████▎    | 16/30 [01:15\u003c01:07,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1242.440350049,"data":"[gpu0]  77%|███████▋  | 23/30 [01:45\u003c00:32,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1246.135742349,"data":"[gpu1]  57%|█████▋    | 17/30 [01:19\u003c01:02,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1247.051016987,"data":"[gpu0]  80%|████████  | 24/30 [01:50\u003c00:27,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1250.966527755,"data":"[gpu1]  60%|██████    | 18/30 [01:24\u003c00:57,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1251.729513109,"data":"[gpu0]  83%|████████▎ | 25/30 [01:55\u003c00:23,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1255.848519186,"data":"[gpu1]  63%|██████▎   | 19/30 [01:29\u003c00:52,  4.80s/it]\r\n"}
+,{"stream_name":"stdout","time":1256.458552377,"data":"[gpu0]  87%|████████▋ | 26/30 [01:59\u003c00:18,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1260.715025592,"data":"[gpu1]  67%|██████▋   | 20/30 [01:34\u003c00:48,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1261.170493859,"data":"[gpu0]  90%|█████████ | 27/30 [02:04\u003c00:14,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1265.593888364,"data":"[gpu1]  70%|███████   | 21/30 [01:39\u003c00:43,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1265.899196634,"data":"[gpu0]  93%|█████████▎| 28/30 [02:09\u003c00:09,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1270.471224561,"data":"[gpu1]  73%|███████▎  | 22/30 [01:44\u003c00:38,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1270.623888279,"data":"[gpu0]  97%|█████████▋| 29/30 [02:13\u003c00:04,  4.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1270.62392029,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1270.623924712,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1275.374851832,"data":"[gpu1]  77%|███████▋  | 23/30 [01:49\u003c00:33,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1280.226940059,"data":"[gpu1]  80%|████████  | 24/30 [01:53\u003c00:29,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1285.085646044,"data":"[gpu1]  83%|████████▎ | 25/30 [01:58\u003c00:24,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1286.880603428,"data":"[gpu0] 19:32:45 [C01] done in 155.4 s -\u003e /kaggle/working/dumpling_out/clips/C01.mp4\r\n"}
+,{"stream_name":"stdout","time":1287.083957828,"data":"[gpu0] 19:32:45 [C02] 121 frames 480x832 steps=30 seed=7009\r\n"}
+,{"stream_name":"stdout","time":1287.135492921,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1287.441198698,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1289.932071664,"data":"[gpu1]  87%|████████▋ | 26/30 [02:03\u003c00:19,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1292.012374403,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1293.894405174,"data":"[gpu0]   3%|▎         | 1/30 [00:04\u003c02:12,  4.58s/it]\r\n"}
+,{"stream_name":"stdout","time":1294.811921328,"data":"[gpu1]  90%|█████████ | 27/30 [02:08\u003c00:14,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1298.471509232,"data":"[gpu0]   7%|▋         | 2/30 [00:06\u003c01:23,  2.98s/it]\r\n"}
+,{"stream_name":"stdout","time":1299.641169736,"data":"[gpu1]  93%|█████████▎| 28/30 [02:13\u003c00:09,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1303.048782354,"data":"[gpu0]  10%|█         | 3/30 [00:11\u003c01:40,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1304.473079522,"data":"[gpu1]  97%|█████████▋| 29/30 [02:18\u003c00:04,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1304.473132817,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1304.473138896,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1307.696400308,"data":"[gpu0]  13%|█▎        | 4/30 [00:15\u003c01:45,  4.06s/it]\r\n"}
+,{"stream_name":"stdout","time":1312.278553262,"data":"[gpu0]  17%|█▋        | 5/30 [00:20\u003c01:46,  4.25s/it]\r\n"}
+,{"stream_name":"stdout","time":1316.830413004,"data":"[gpu0]  20%|██        | 6/30 [00:24\u003c01:44,  4.37s/it]\r\n"}
+,{"stream_name":"stdout","time":1321.419459621,"data":"[gpu1] 19:33:20 [C01_land] done in 160.6 s -\u003e /kaggle/working/dumpling_out/clips/C01_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1321.419507742,"data":"[gpu0]  23%|██▎       | 7/30 [00:29\u003c01:42,  4.44s/it]\r\n"}
+,{"stream_name":"stdout","time":1321.675104371,"data":"[gpu1] 19:33:20 [C02_land] 121 frames 832x480 steps=30 seed=7009\r\n"}
+,{"stream_name":"stdout","time":1321.675144185,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1322.033495399,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1326.045784732,"data":"[gpu0]  27%|██▋       | 8/30 [00:33\u003c01:38,  4.49s/it]\r\n"}
+,{"stream_name":"stdout","time":1326.602494673,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1328.533675579,"data":"[gpu1]   3%|▎         | 1/30 [00:04\u003c02:13,  4.61s/it]\r\n"}
+,{"stream_name":"stdout","time":1330.720500453,"data":"[gpu0]  30%|███       | 9/30 [00:38\u003c01:34,  4.52s/it]\r\n"}
+,{"stream_name":"stdout","time":1333.314647098,"data":"[gpu1]   7%|▋         | 2/30 [00:06\u003c01:24,  3.02s/it]\r\n"}
+,{"stream_name":"stdout","time":1335.501997411,"data":"[gpu0]  33%|███▎      | 10/30 [00:43\u003c01:31,  4.57s/it]\r\n"}
+,{"stream_name":"stdout","time":1338.289851784,"data":"[gpu1]  10%|█         | 3/30 [00:11\u003c01:43,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1340.313841111,"data":"[gpu0]  37%|███▋      | 11/30 [00:48\u003c01:27,  4.63s/it]\r\n"}
+,{"stream_name":"stdout","time":1343.25406093,"data":"[gpu1]  13%|█▎        | 4/30 [00:16\u003c01:50,  4.25s/it]\r\n"}
+,{"stream_name":"stdout","time":1345.189379209,"data":"[gpu0]  40%|████      | 12/30 [00:52\u003c01:24,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1348.392123869,"data":"[gpu1]  17%|█▋        | 5/30 [00:21\u003c01:53,  4.53s/it]\r\n"}
+,{"stream_name":"stdout","time":1350.173861721,"data":"[gpu0]  43%|████▎     | 13/30 [00:57\u003c01:20,  4.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1353.580447194,"data":"[gpu1]  20%|██        | 6/30 [00:26\u003c01:53,  4.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1355.100811005,"data":"[gpu0]  47%|████▋     | 14/30 [01:02\u003c01:17,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1358.708300605,"data":"[gpu1]  23%|██▎       | 7/30 [00:31\u003c01:52,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1359.980761862,"data":"[gpu0]  50%|█████     | 15/30 [01:07\u003c01:12,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1363.741363849,"data":"[gpu1]  27%|██▋       | 8/30 [00:36\u003c01:49,  4.96s/it]\r\n"}
+,{"stream_name":"stdout","time":1364.854740461,"data":"[gpu0]  53%|█████▎    | 16/30 [01:12\u003c01:08,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1368.766769026,"data":"[gpu1]  30%|███       | 9/30 [00:41\u003c01:44,  4.99s/it]\r\n"}
+,{"stream_name":"stdout","time":1369.681237528,"data":"[gpu0]  57%|█████▋    | 17/30 [01:17\u003c01:03,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1373.647353014,"data":"[gpu1]  33%|███▎      | 10/30 [00:46\u003c01:39,  4.98s/it]\r\n"}
+,{"stream_name":"stdout","time":1374.461543515,"data":"[gpu0]  60%|██████    | 18/30 [01:22\u003c00:58,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1378.529188599,"data":"[gpu1]  37%|███▋      | 11/30 [00:51\u003c01:34,  4.96s/it]\r\n"}
+,{"stream_name":"stdout","time":1379.190000388,"data":"[gpu0]  63%|██████▎   | 19/30 [01:26\u003c00:53,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1383.360377018,"data":"[gpu1]  40%|████      | 12/30 [00:56\u003c01:28,  4.94s/it]\r\n"}
+,{"stream_name":"stdout","time":1383.869139491,"data":"[gpu0]  67%|██████▋   | 20/30 [01:31\u003c00:48,  4.80s/it]\r\n"}
+,{"stream_name":"stdout","time":1388.189783946,"data":"[gpu1]  43%|████▎     | 13/30 [01:01\u003c01:23,  4.91s/it]\r\n"}
+,{"stream_name":"stdout","time":1388.546232139,"data":"[gpu0]  70%|███████   | 21/30 [01:36\u003c00:42,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1392.970114682,"data":"[gpu1]  47%|████▋     | 14/30 [01:06\u003c01:18,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1393.174024958,"data":"[gpu0]  73%|███████▎  | 22/30 [01:41\u003c00:37,  4.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1397.735225934,"data":"[gpu1]  50%|█████     | 15/30 [01:10\u003c01:12,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1397.836950832,"data":"[gpu0]  77%|███████▋  | 23/30 [01:45\u003c00:32,  4.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1402.5108064,"data":"[gpu0]  80%|████████  | 24/30 [01:50\u003c00:28,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1402.511693227,"data":"[gpu1]  53%|█████▎    | 16/30 [01:15\u003c01:07,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1407.078364589,"data":"[gpu0]  83%|████████▎ | 25/30 [01:55\u003c00:23,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1407.231036816,"data":"[gpu1]  57%|█████▋    | 17/30 [01:20\u003c01:02,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1411.704448291,"data":"[gpu0]  87%|████████▋ | 26/30 [01:59\u003c00:18,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1412.009654554,"data":"[gpu1]  60%|██████    | 18/30 [01:25\u003c00:57,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1416.38223081,"data":"[gpu0]  90%|█████████ | 27/30 [02:04\u003c00:13,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1416.788760141,"data":"[gpu1]  63%|██████▎   | 19/30 [01:30\u003c00:52,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1421.002002122,"data":"[gpu0]  93%|█████████▎| 28/30 [02:08\u003c00:09,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1421.612055495,"data":"[gpu1]  67%|██████▋   | 20/30 [01:34\u003c00:47,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1425.677219294,"data":"[gpu0]  97%|█████████▋| 29/30 [02:13\u003c00:04,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1425.677267582,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1425.677275783,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.61s/it]\r\n"}
+,{"stream_name":"stdout","time":1426.437617307,"data":"[gpu1]  70%|███████   | 21/30 [01:39\u003c00:43,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1431.351909407,"data":"[gpu1]  73%|███████▎  | 22/30 [01:44\u003c00:38,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1436.270067086,"data":"[gpu1]  77%|███████▋  | 23/30 [01:49\u003c00:33,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1441.118392066,"data":"[gpu1]  80%|████████  | 24/30 [01:54\u003c00:29,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1442.041167068,"data":"[gpu0] 19:35:20 [C02] done in 155.2 s -\u003e /kaggle/working/dumpling_out/clips/C02.mp4\r\n"}
+,{"stream_name":"stdout","time":1442.297540086,"data":"[gpu0] 19:35:20 [C07] 121 frames 480x832 steps=30 seed=7010\r\n"}
+,{"stream_name":"stdout","time":1442.297620974,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1442.65473053,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1446.000185923,"data":"[gpu1]  83%|████████▎ | 25/30 [01:59\u003c00:24,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1447.217183782,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1449.093390541,"data":"[gpu0]   3%|▎         | 1/30 [00:04\u003c02:13,  4.60s/it]\r\n"}
+,{"stream_name":"stdout","time":1450.873882037,"data":"[gpu1]  87%|████████▋ | 26/30 [02:03\u003c00:19,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1453.76360724,"data":"[gpu0]   7%|▋         | 2/30 [00:06\u003c01:23,  3.00s/it]\r\n"}
+,{"stream_name":"stdout","time":1455.747924414,"data":"[gpu1]  90%|█████████ | 27/30 [02:08\u003c00:14,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1458.393761816,"data":"[gpu0]  10%|█         | 3/30 [00:11\u003c01:41,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1460.628447953,"data":"[gpu1]  93%|█████████▎| 28/30 [02:13\u003c00:09,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1463.014495202,"data":"[gpu0]  13%|█▎        | 4/30 [00:15\u003c01:46,  4.10s/it]\r\n"}
+,{"stream_name":"stdout","time":1465.456813492,"data":"[gpu1]  97%|█████████▋| 29/30 [02:18\u003c00:04,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1465.507418064,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1465.507458981,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1467.727389766,"data":"[gpu0]  17%|█▋        | 5/30 [00:20\u003c01:47,  4.29s/it]\r\n"}
+,{"stream_name":"stdout","time":1472.317965773,"data":"[gpu0]  20%|██        | 6/30 [00:25\u003c01:45,  4.42s/it]\r\n"}
+,{"stream_name":"stdout","time":1477.00207883,"data":"[gpu0]  23%|██▎       | 7/30 [00:29\u003c01:43,  4.49s/it]\r\n"}
+,{"stream_name":"stdout","time":1481.601580398,"data":"[gpu0]  27%|██▋       | 8/30 [00:34\u003c01:39,  4.54s/it]\r\n"}
+,{"stream_name":"stdout","time":1481.701833609,"data":"[gpu1] 19:36:00 [C02_land] done in 160.3 s -\u003e /kaggle/working/dumpling_out/clips/C02_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1481.956434766,"data":"[gpu1] 19:36:00 [C07_land] 121 frames 832x480 steps=30 seed=7010\r\n"}
+,{"stream_name":"stdout","time":1481.956472922,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1482.261096741,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1486.260707443,"data":"[gpu0]  30%|███       | 9/30 [00:38\u003c01:36,  4.57s/it]\r\n"}
+,{"stream_name":"stdout","time":1486.924776199,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1488.846889049,"data":"[gpu1]   3%|▎         | 1/30 [00:04\u003c02:14,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1490.983171288,"data":"[gpu0]  33%|███▎      | 10/30 [00:43\u003c01:31,  4.60s/it]\r\n"}
+,{"stream_name":"stdout","time":1493.627220734,"data":"[gpu1]   7%|▋         | 2/30 [00:06\u003c01:25,  3.04s/it]\r\n"}
+,{"stream_name":"stdout","time":1495.702406747,"data":"[gpu0]  37%|███▋      | 11/30 [00:48\u003c01:27,  4.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1498.605205046,"data":"[gpu1]  10%|█         | 3/30 [00:11\u003c01:43,  3.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1500.581304165,"data":"[gpu0]  40%|████      | 12/30 [00:53\u003c01:23,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1503.531791266,"data":"[gpu1]  13%|█▎        | 4/30 [00:16\u003c01:50,  4.26s/it]\r\n"}
+,{"stream_name":"stdout","time":1505.465221334,"data":"[gpu0]  43%|████▎     | 13/30 [00:57\u003c01:20,  4.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1508.666937318,"data":"[gpu1]  17%|█▋        | 5/30 [00:21\u003c01:53,  4.52s/it]\r\n"}
+,{"stream_name":"stdout","time":1510.393645352,"data":"[gpu0]  47%|████▋     | 14/30 [01:02\u003c01:16,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1513.794784874,"data":"[gpu1]  20%|██        | 6/30 [00:26\u003c01:53,  4.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1515.263340175,"data":"[gpu0]  50%|█████     | 15/30 [01:07\u003c01:12,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1518.813049348,"data":"[gpu1]  23%|██▎       | 7/30 [00:31\u003c01:51,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1520.084601534,"data":"[gpu0]  53%|█████▎    | 16/30 [01:12\u003c01:07,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1523.797388314,"data":"[gpu1]  27%|██▋       | 8/30 [00:36\u003c01:48,  4.92s/it]\r\n"}
+,{"stream_name":"stdout","time":1524.86523532,"data":"[gpu0]  57%|█████▋    | 17/30 [01:17\u003c01:02,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1528.73770216,"data":"[gpu1]  30%|███       | 9/30 [00:41\u003c01:43,  4.93s/it]\r\n"}
+,{"stream_name":"stdout","time":1529.645906677,"data":"[gpu0]  60%|██████    | 18/30 [01:22\u003c00:57,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1533.561964357,"data":"[gpu1]  33%|███▎      | 10/30 [00:46\u003c01:38,  4.92s/it]\r\n"}
+,{"stream_name":"stdout","time":1534.427495476,"data":"[gpu0]  63%|██████▎   | 19/30 [01:27\u003c00:52,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1538.449363604,"data":"[gpu1]  37%|███▋      | 11/30 [00:51\u003c01:33,  4.91s/it]\r\n"}
+,{"stream_name":"stdout","time":1539.161554396,"data":"[gpu0]  67%|██████▋   | 20/30 [01:31\u003c00:47,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1543.280720147,"data":"[gpu1]  40%|████      | 12/30 [00:56\u003c01:28,  4.89s/it]\r\n"}
+,{"stream_name":"stdout","time":1543.840223376,"data":"[gpu0]  70%|███████   | 21/30 [01:36\u003c00:42,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1548.065049657,"data":"[gpu1]  43%|████▎     | 13/30 [01:00\u003c01:22,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1548.471611619,"data":"[gpu0]  73%|███████▎  | 22/30 [01:41\u003c00:37,  4.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1552.846517935,"data":"[gpu1]  47%|████▋     | 14/30 [01:05\u003c01:17,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1553.152195441,"data":"[gpu0]  77%|███████▋  | 23/30 [01:45\u003c00:33,  4.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1557.625257302,"data":"[gpu1]  50%|█████     | 15/30 [01:10\u003c01:12,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1557.778178076,"data":"[gpu0]  80%|████████  | 24/30 [01:50\u003c00:28,  4.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1562.51234868,"data":"[gpu0]  83%|████████▎ | 25/30 [01:55\u003c00:23,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1562.512383499,"data":"[gpu1]  53%|█████▎    | 16/30 [01:15\u003c01:07,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1567.080391517,"data":"[gpu0]  87%|████████▋ | 26/30 [01:59\u003c00:18,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1567.233279332,"data":"[gpu1]  57%|█████▋    | 17/30 [01:20\u003c01:02,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1571.761846621,"data":"[gpu0]  90%|█████████ | 27/30 [02:04\u003c00:14,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1572.067273519,"data":"[gpu1]  60%|██████    | 18/30 [01:24\u003c00:57,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1576.440656959,"data":"[gpu0]  93%|█████████▎| 28/30 [02:09\u003c00:09,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1576.898810187,"data":"[gpu1]  63%|██████▎   | 19/30 [01:29\u003c00:52,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1581.11921365,"data":"[gpu0]  97%|█████████▋| 29/30 [02:13\u003c00:04,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1581.119257471,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1581.119263468,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1581.779331193,"data":"[gpu1]  67%|██████▋   | 20/30 [01:34\u003c00:48,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1586.65713533,"data":"[gpu1]  70%|███████   | 21/30 [01:39\u003c00:43,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1591.492574159,"data":"[gpu1]  73%|███████▎  | 22/30 [01:44\u003c00:38,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1596.469221391,"data":"[gpu1]  77%|███████▋  | 23/30 [01:49\u003c00:33,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1598.334510285,"data":"[gpu0] 19:37:57 [C07] done in 156.3 s -\u003e /kaggle/working/dumpling_out/clips/C07.mp4\r\n"}
+,{"stream_name":"stdout","time":1598.589351202,"data":"[gpu0] 19:37:57 [C13] 97 frames 480x832 steps=30 seed=7012\r\n"}
+,{"stream_name":"stdout","time":1598.589389638,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1598.896560436,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1601.236683065,"data":"[gpu1]  80%|████████  | 24/30 [01:54\u003c00:29,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1602.353754128,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1603.777539585,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:40,  3.47s/it]\r\n"}
+,{"stream_name":"stdout","time":1606.116345763,"data":"[gpu1]  83%|████████▎ | 25/30 [01:58\u003c00:24,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1607.287592816,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:03,  2.26s/it]\r\n"}
+,{"stream_name":"stdout","time":1610.799206886,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:16,  2.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1611.002807554,"data":"[gpu1]  87%|████████▋ | 26/30 [02:03\u003c00:19,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1614.363544027,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:20,  3.11s/it]\r\n"}
+,{"stream_name":"stdout","time":1615.83952781,"data":"[gpu1]  90%|█████████ | 27/30 [02:08\u003c00:14,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1617.874577686,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:21,  3.26s/it]\r\n"}
+,{"stream_name":"stdout","time":1620.726107385,"data":"[gpu1]  93%|█████████▎| 28/30 [02:13\u003c00:09,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1621.438374304,"data":"[gpu0]  20%|██        | 6/30 [00:18\u003c01:20,  3.35s/it]\r\n"}
+,{"stream_name":"stdout","time":1624.951203349,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:18,  3.42s/it]\r\n"}
+,{"stream_name":"stdout","time":1625.561861122,"data":"[gpu1]  97%|█████████▋| 29/30 [02:18\u003c00:04,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1625.561901296,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1625.561907466,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1628.607453852,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:16,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":1632.103801085,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:13,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":1635.664866241,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:10,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":1639.258615217,"data":"[gpu0]  37%|███▋      | 11/30 [00:36\u003c01:07,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":1642.811017247,"data":"[gpu0]  40%|████      | 12/30 [00:40\u003c01:03,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":1643.015369784,"data":"[gpu1] 19:38:41 [C07_land] done in 161.3 s -\u003e /kaggle/working/dumpling_out/clips/C07_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1643.269813295,"data":"[gpu1] 19:38:41 [C13_land] 97 frames 832x480 steps=30 seed=7012\r\n"}
+,{"stream_name":"stdout","time":1643.269846663,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1643.575234161,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1646.371593714,"data":"[gpu0]  43%|████▎     | 13/30 [00:43\u003c01:00,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":1647.183540464,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1648.658935614,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:43,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":1649.977801929,"data":"[gpu0]  47%|████▋     | 14/30 [00:47\u003c00:56,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":1652.368959123,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:05,  2.35s/it]\r\n"}
+,{"stream_name":"stdout","time":1653.641208157,"data":"[gpu0]  50%|█████     | 15/30 [00:51\u003c00:53,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":1656.084378601,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:19,  2.96s/it]\r\n"}
+,{"stream_name":"stdout","time":1657.305537229,"data":"[gpu0]  53%|█████▎    | 16/30 [00:54\u003c00:50,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":1659.959436092,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:24,  3.27s/it]\r\n"}
+,{"stream_name":"stdout","time":1661.014583825,"data":"[gpu0]  57%|█████▋    | 17/30 [00:58\u003c00:47,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1663.858735682,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.47s/it]\r\n"}
+,{"stream_name":"stdout","time":1664.774745261,"data":"[gpu0]  60%|██████    | 18/30 [01:02\u003c00:43,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1667.832713943,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1668.595522701,"data":"[gpu0]  63%|██████▎   | 19/30 [01:05\u003c00:40,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1671.84604995,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:26,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1672.456670823,"data":"[gpu0]  67%|██████▋   | 20/30 [01:09\u003c00:37,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1675.86444492,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:24,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1676.170318487,"data":"[gpu0]  70%|███████   | 21/30 [01:13\u003c00:33,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1679.733509965,"data":"[gpu1]  30%|███       | 9/30 [00:32\u003c01:21,  3.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1679.88607978,"data":"[gpu0]  73%|███████▎  | 22/30 [01:17\u003c00:30,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":1683.542118539,"data":"[gpu1]  33%|███▎      | 10/30 [00:36\u003c01:17,  3.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1683.593101715,"data":"[gpu0]  77%|███████▋  | 23/30 [01:21\u003c00:26,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1687.253641287,"data":"[gpu0]  80%|████████  | 24/30 [01:24\u003c00:22,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1687.355241762,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:13,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1690.969741454,"data":"[gpu0]  83%|████████▎ | 25/30 [01:28\u003c00:18,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1691.111619367,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:09,  3.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1694.516951858,"data":"[gpu0]  87%|████████▋ | 26/30 [01:32\u003c00:14,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1694.822383526,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1698.130980514,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:10,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1698.539206863,"data":"[gpu1]  47%|████▋     | 14/30 [00:51\u003c01:00,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1701.687257666,"data":"[gpu0]  93%|█████████▎| 28/30 [01:39\u003c00:07,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":1702.247188998,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1705.239530835,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1705.239575762,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":1705.239582685,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":1705.896224922,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1709.59639494,"data":"[gpu1]  57%|█████▋    | 17/30 [01:02\u003c00:48,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1713.261410882,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1716.918088053,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1718.45416758,"data":"[gpu0] 19:39:57 [C13] done in 120.1 s -\u003e /kaggle/working/dumpling_out/clips/C13.mp4\r\n"}
+,{"stream_name":"stdout","time":1718.708954487,"data":"[gpu0] 19:39:57 [C23] 121 frames 480x832 steps=30 seed=7015\r\n"}
+,{"stream_name":"stdout","time":1718.708992762,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1719.013978237,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1720.540151575,"data":"[gpu1]  67%|██████▋   | 20/30 [01:13\u003c00:36,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1723.695354327,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1724.244309021,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1725.465126213,"data":"[gpu0]   3%|▎         | 1/30 [00:04\u003c02:12,  4.58s/it]\r\n"}
+,{"stream_name":"stdout","time":1727.904395104,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1730.036860862,"data":"[gpu0]   7%|▋         | 2/30 [00:06\u003c01:23,  2.97s/it]\r\n"}
+,{"stream_name":"stdout","time":1731.56238354,"data":"[gpu1]  77%|███████▋  | 23/30 [01:24\u003c00:25,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":1734.613274205,"data":"[gpu0]  10%|█         | 3/30 [00:11\u003c01:40,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1735.274597218,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1738.982666705,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1739.23562442,"data":"[gpu0]  13%|█▎        | 4/30 [00:15\u003c01:45,  4.05s/it]\r\n"}
+,{"stream_name":"stdout","time":1742.688711428,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1743.858208805,"data":"[gpu0]  17%|█▋        | 5/30 [00:20\u003c01:46,  4.25s/it]\r\n"}
+,{"stream_name":"stdout","time":1746.450863035,"data":"[gpu1]  90%|█████████ | 27/30 [01:39\u003c00:11,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1748.538763447,"data":"[gpu0]  20%|██        | 6/30 [00:24\u003c01:45,  4.38s/it]\r\n"}
+,{"stream_name":"stdout","time":1750.166409813,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":1753.212740323,"data":"[gpu0]  23%|██▎       | 7/30 [00:29\u003c01:42,  4.47s/it]\r\n"}
+,{"stream_name":"stdout","time":1753.961291674,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1753.96133769,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1753.961345125,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1757.913487037,"data":"[gpu0]  27%|██▋       | 8/30 [00:34\u003c01:39,  4.54s/it]\r\n"}
+,{"stream_name":"stdout","time":1762.643054156,"data":"[gpu0]  30%|███       | 9/30 [00:38\u003c01:36,  4.59s/it]\r\n"}
+,{"stream_name":"stdout","time":1766.98149471,"data":"[gpu1] 19:40:45 [C13_land] done in 124.0 s -\u003e /kaggle/working/dumpling_out/clips/C13_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1767.184679525,"data":"[gpu1] 19:40:45 [C23_land] 121 frames 832x480 steps=30 seed=7015\r\n"}
+,{"stream_name":"stdout","time":1767.2357806,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1767.337309157,"data":"[gpu0]  33%|███▎      | 10/30 [00:43\u003c01:32,  4.63s/it]\r\n"}
+,{"stream_name":"stdout","time":1767.591140669,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1772.056047844,"data":"[gpu0]  37%|███▋      | 11/30 [00:48\u003c01:28,  4.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1772.30840248,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1774.287673523,"data":"[gpu1]   3%|▎         | 1/30 [00:04\u003c02:17,  4.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1776.82033792,"data":"[gpu0]  40%|████      | 12/30 [00:53\u003c01:24,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1779.158165888,"data":"[gpu1]   7%|▋         | 2/30 [00:06\u003c01:26,  3.10s/it]\r\n"}
+,{"stream_name":"stdout","time":1781.648237529,"data":"[gpu0]  43%|████▎     | 13/30 [00:57\u003c01:19,  4.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1784.19382586,"data":"[gpu1]  10%|█         | 3/30 [00:11\u003c01:45,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":1786.50774615,"data":"[gpu0]  47%|████▋     | 14/30 [01:02\u003c01:15,  4.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1789.148166468,"data":"[gpu1]  13%|█▎        | 4/30 [00:16\u003c01:52,  4.33s/it]\r\n"}
+,{"stream_name":"stdout","time":1791.384443015,"data":"[gpu0]  50%|█████     | 15/30 [01:07\u003c01:11,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1794.231600478,"data":"[gpu1]  17%|█▋        | 5/30 [00:21\u003c01:54,  4.59s/it]\r\n"}
+,{"stream_name":"stdout","time":1796.25666573,"data":"[gpu0]  53%|█████▎    | 16/30 [01:12\u003c01:07,  4.80s/it]\r\n"}
+,{"stream_name":"stdout","time":1799.297837435,"data":"[gpu1]  20%|██        | 6/30 [00:26\u003c01:54,  4.76s/it]\r\n"}
+,{"stream_name":"stdout","time":1801.078161525,"data":"[gpu0]  57%|█████▋    | 17/30 [01:17\u003c01:02,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1804.233134408,"data":"[gpu1]  23%|██▎       | 7/30 [00:31\u003c01:51,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1805.859981245,"data":"[gpu0]  60%|██████    | 18/30 [01:22\u003c00:57,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1809.154529005,"data":"[gpu1]  27%|██▋       | 8/30 [00:36\u003c01:47,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1810.571511646,"data":"[gpu0]  63%|██████▎   | 19/30 [01:26\u003c00:52,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1814.026869971,"data":"[gpu1]  30%|███       | 9/30 [00:41\u003c01:42,  4.89s/it]\r\n"}
+,{"stream_name":"stdout","time":1815.366244964,"data":"[gpu0]  67%|██████▋   | 20/30 [01:31\u003c00:47,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1818.856210668,"data":"[gpu1]  33%|███▎      | 10/30 [00:46\u003c01:37,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1820.025172978,"data":"[gpu0]  70%|███████   | 21/30 [01:36\u003c00:42,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":1823.734307849,"data":"[gpu1]  37%|███▋      | 11/30 [00:51\u003c01:32,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1824.702467296,"data":"[gpu0]  73%|███████▎  | 22/30 [01:40\u003c00:38,  4.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1828.51525089,"data":"[gpu1]  40%|████      | 12/30 [00:56\u003c01:27,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1829.378581684,"data":"[gpu0]  77%|███████▋  | 23/30 [01:45\u003c00:33,  4.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1833.345747168,"data":"[gpu1]  43%|████▎     | 13/30 [01:00\u003c01:22,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1834.057853713,"data":"[gpu0]  80%|████████  | 24/30 [01:50\u003c00:28,  4.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1838.157612586,"data":"[gpu1]  47%|████▋     | 14/30 [01:05\u003c01:17,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1838.72048602,"data":"[gpu0]  83%|████████▎ | 25/30 [01:55\u003c00:23,  4.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1842.941883678,"data":"[gpu1]  50%|█████     | 15/30 [01:10\u003c01:12,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1843.349215646,"data":"[gpu0]  87%|████████▋ | 26/30 [01:59\u003c00:18,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1847.841729146,"data":"[gpu1]  53%|█████▎    | 16/30 [01:15\u003c01:07,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1848.030324615,"data":"[gpu0]  90%|█████████ | 27/30 [02:04\u003c00:14,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1852.595972353,"data":"[gpu1]  57%|█████▋    | 17/30 [01:20\u003c01:02,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1852.748888893,"data":"[gpu0]  93%|█████████▎| 28/30 [02:09\u003c00:09,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1857.426777103,"data":"[gpu0]  97%|█████████▋| 29/30 [02:13\u003c00:04,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1857.426822269,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1857.426829725,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.61s/it]\r\n"}
+,{"stream_name":"stdout","time":1857.426835753,"data":"[gpu1]  60%|██████    | 18/30 [01:25\u003c00:57,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":1862.301343242,"data":"[gpu1]  63%|██████▎   | 19/30 [01:29\u003c00:53,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1867.183881294,"data":"[gpu1]  67%|██████▋   | 20/30 [01:34\u003c00:48,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1872.071410331,"data":"[gpu1]  70%|███████   | 21/30 [01:39\u003c00:43,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1873.710564087,"data":"[gpu0] 19:42:32 [C23] done in 155.2 s -\u003e /kaggle/working/dumpling_out/clips/C23.mp4\r\n"}
+,{"stream_name":"stdout","time":1873.9146937,"data":"[gpu0] 19:42:32 [C25] 121 frames 480x832 steps=30 seed=7025\r\n"}
+,{"stream_name":"stdout","time":1873.914742462,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1874.272700076,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":1876.915006329,"data":"[gpu1]  73%|███████▎  | 22/30 [01:44\u003c00:38,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1878.904100429,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1880.663171554,"data":"[gpu0]   3%|▎         | 1/30 [00:04\u003c02:12,  4.58s/it]\r\n"}
+,{"stream_name":"stdout","time":1881.782051595,"data":"[gpu1]  77%|███████▋  | 23/30 [01:49\u003c00:34,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1885.290369795,"data":"[gpu0]   7%|▋         | 2/30 [00:06\u003c01:23,  2.98s/it]\r\n"}
+,{"stream_name":"stdout","time":1886.665192209,"data":"[gpu1]  80%|████████  | 24/30 [01:54\u003c00:29,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1889.918990089,"data":"[gpu0]  10%|█         | 3/30 [00:11\u003c01:40,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":1891.537913982,"data":"[gpu1]  83%|████████▎ | 25/30 [01:59\u003c00:24,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1894.533361039,"data":"[gpu0]  13%|█▎        | 4/30 [00:15\u003c01:45,  4.07s/it]\r\n"}
+,{"stream_name":"stdout","time":1896.415558358,"data":"[gpu1]  87%|████████▋ | 26/30 [02:03\u003c00:19,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1899.11267605,"data":"[gpu0]  17%|█▋        | 5/30 [00:20\u003c01:46,  4.27s/it]\r\n"}
+,{"stream_name":"stdout","time":1901.249089089,"data":"[gpu1]  90%|█████████ | 27/30 [02:08\u003c00:14,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1903.78559492,"data":"[gpu0]  20%|██        | 6/30 [00:24\u003c01:45,  4.39s/it]\r\n"}
+,{"stream_name":"stdout","time":1906.123664312,"data":"[gpu1]  93%|█████████▎| 28/30 [02:13\u003c00:09,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1908.409129506,"data":"[gpu0]  23%|██▎       | 7/30 [00:29\u003c01:42,  4.47s/it]\r\n"}
+,{"stream_name":"stdout","time":1911.0392743,"data":"[gpu1]  97%|█████████▋| 29/30 [02:18\u003c00:04,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1911.039309332,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":1911.039317045,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1913.07754111,"data":"[gpu0]  27%|██▋       | 8/30 [00:34\u003c01:39,  4.52s/it]\r\n"}
+,{"stream_name":"stdout","time":1917.703896024,"data":"[gpu0]  30%|███       | 9/30 [00:38\u003c01:35,  4.56s/it]\r\n"}
+,{"stream_name":"stdout","time":1922.383620044,"data":"[gpu0]  33%|███▎      | 10/30 [00:43\u003c01:31,  4.59s/it]\r\n"}
+,{"stream_name":"stdout","time":1926.994555114,"data":"[gpu0]  37%|███▋      | 11/30 [00:48\u003c01:27,  4.61s/it]\r\n"}
+,{"stream_name":"stdout","time":1927.247402378,"data":"[gpu1] 19:43:25 [C23_land] done in 160.3 s -\u003e /kaggle/working/dumpling_out/clips/C23_land.mp4\r\n"}
+,{"stream_name":"stdout","time":1927.704818378,"data":"[gpu1] 19:43:26 [C25_land] 121 frames 832x480 steps=30 seed=7025\r\n"}
+,{"stream_name":"stdout","time":1927.7554058,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":1928.060660019,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":1931.669271604,"data":"[gpu0]  40%|████      | 12/30 [00:52\u003c01:23,  4.62s/it]\r\n"}
+,{"stream_name":"stdout","time":1932.735306805,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":1934.668127366,"data":"[gpu1]   3%|▎         | 1/30 [00:04\u003c02:14,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1936.344887924,"data":"[gpu0]  43%|████▎     | 13/30 [00:57\u003c01:18,  4.63s/it]\r\n"}
+,{"stream_name":"stdout","time":1939.443850497,"data":"[gpu1]   7%|▋         | 2/30 [00:06\u003c01:25,  3.04s/it]\r\n"}
+,{"stream_name":"stdout","time":1941.188640875,"data":"[gpu0]  47%|████▋     | 14/30 [01:02\u003c01:14,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":1944.374315251,"data":"[gpu1]  10%|█         | 3/30 [00:11\u003c01:43,  3.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1945.999573428,"data":"[gpu0]  50%|█████     | 15/30 [01:06\u003c01:10,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1949.407990079,"data":"[gpu1]  13%|█▎        | 4/30 [00:16\u003c01:50,  4.26s/it]\r\n"}
+,{"stream_name":"stdout","time":1950.884883936,"data":"[gpu0]  53%|█████▎    | 16/30 [01:11\u003c01:06,  4.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1954.548558304,"data":"[gpu1]  17%|█▋        | 5/30 [00:21\u003c01:53,  4.55s/it]\r\n"}
+,{"stream_name":"stdout","time":1955.820312285,"data":"[gpu0]  57%|█████▋    | 17/30 [01:16\u003c01:02,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":1959.681429449,"data":"[gpu1]  20%|██        | 6/30 [00:26\u003c01:54,  4.75s/it]\r\n"}
+,{"stream_name":"stdout","time":1960.750149151,"data":"[gpu0]  60%|██████    | 18/30 [01:21\u003c00:58,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":1964.71827466,"data":"[gpu1]  23%|██▎       | 7/30 [00:31\u003c01:52,  4.88s/it]\r\n"}
+,{"stream_name":"stdout","time":1965.584280346,"data":"[gpu0]  63%|██████▎   | 19/30 [01:26\u003c00:53,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1969.707000857,"data":"[gpu1]  27%|██▋       | 8/30 [00:36\u003c01:48,  4.93s/it]\r\n"}
+,{"stream_name":"stdout","time":1970.368753603,"data":"[gpu0]  67%|██████▋   | 20/30 [01:31\u003c00:48,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":1974.666410662,"data":"[gpu1]  30%|███       | 9/30 [00:41\u003c01:43,  4.94s/it]\r\n"}
+,{"stream_name":"stdout","time":1975.147516366,"data":"[gpu0]  70%|███████   | 21/30 [01:36\u003c00:43,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":1979.45682436,"data":"[gpu1]  33%|███▎      | 10/30 [00:46\u003c01:38,  4.93s/it]\r\n"}
+,{"stream_name":"stdout","time":1979.864310239,"data":"[gpu0]  73%|███████▎  | 22/30 [01:40\u003c00:38,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":1984.29393019,"data":"[gpu1]  37%|███▋      | 11/30 [00:51\u003c01:33,  4.91s/it]\r\n"}
+,{"stream_name":"stdout","time":1984.547785306,"data":"[gpu0]  77%|███████▋  | 23/30 [01:45\u003c00:33,  4.78s/it]\r\n"}
+,{"stream_name":"stdout","time":1989.124886706,"data":"[gpu1]  40%|████      | 12/30 [00:56\u003c01:27,  4.89s/it]\r\n"}
+,{"stream_name":"stdout","time":1989.227103367,"data":"[gpu0]  80%|████████  | 24/30 [01:50\u003c00:28,  4.76s/it]\r\n"}
+,{"stream_name":"stdout","time":1993.851190814,"data":"[gpu0]  83%|████████▎ | 25/30 [01:54\u003c00:23,  4.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1993.901615022,"data":"[gpu1]  43%|████▎     | 13/30 [01:01\u003c01:22,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":1998.52343216,"data":"[gpu0]  87%|████████▋ | 26/30 [01:59\u003c00:18,  4.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1998.675425646,"data":"[gpu1]  47%|████▋     | 14/30 [01:05\u003c01:17,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":2003.100650825,"data":"[gpu0]  90%|█████████ | 27/30 [02:04\u003c00:14,  4.69s/it]\r\n"}
+,{"stream_name":"stdout","time":2003.407093132,"data":"[gpu1]  50%|█████     | 15/30 [01:10\u003c01:12,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2007.801652685,"data":"[gpu0]  93%|█████████▎| 28/30 [02:08\u003c00:09,  4.67s/it]\r\n"}
+,{"stream_name":"stdout","time":2008.186972492,"data":"[gpu1]  53%|█████▎    | 16/30 [01:15\u003c01:07,  4.80s/it]\r\n"}
+,{"stream_name":"stdout","time":2012.388370265,"data":"[gpu0]  97%|█████████▋| 29/30 [02:13\u003c00:04,  4.65s/it]\r\n"}
+,{"stream_name":"stdout","time":2012.388417329,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.64s/it]\r\n"}
+,{"stream_name":"stdout","time":2012.388424553,"data":"[gpu0] 100%|██████████| 30/30 [02:18\u003c00:00,  4.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2012.997361617,"data":"[gpu1]  57%|█████▋    | 17/30 [01:20\u003c01:02,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":2017.756757797,"data":"[gpu1]  60%|██████    | 18/30 [01:24\u003c00:57,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":2022.641462322,"data":"[gpu1]  63%|██████▎   | 19/30 [01:29\u003c00:52,  4.79s/it]\r\n"}
+,{"stream_name":"stdout","time":2027.503813402,"data":"[gpu1]  67%|██████▋   | 20/30 [01:34\u003c00:48,  4.81s/it]\r\n"}
+,{"stream_name":"stdout","time":2028.016949993,"data":"[gpu0] 19:45:06 [C25] done in 154.3 s -\u003e /kaggle/working/dumpling_out/clips/C25.mp4\r\n"}
+,{"stream_name":"stdout","time":2028.323352767,"data":"[gpu0] 19:45:06 [C26] 97 frames 480x832 steps=30 seed=7026\r\n"}
+,{"stream_name":"stdout","time":2028.323394593,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":2028.628520776,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":2032.082029962,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":2032.335763811,"data":"[gpu1]  70%|███████   | 21/30 [01:39\u003c00:43,  4.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2033.50065397,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:40,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":2037.059534842,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:03,  2.26s/it]\r\n"}
+,{"stream_name":"stdout","time":2037.211630591,"data":"[gpu1]  73%|███████▎  | 22/30 [01:44\u003c00:38,  4.83s/it]\r\n"}
+,{"stream_name":"stdout","time":2040.636723992,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:16,  2.84s/it]\r\n"}
+,{"stream_name":"stdout","time":2042.089818163,"data":"[gpu1]  77%|███████▋  | 23/30 [01:49\u003c00:33,  4.84s/it]\r\n"}
+,{"stream_name":"stdout","time":2044.121698388,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:21,  3.12s/it]\r\n"}
+,{"stream_name":"stdout","time":2046.971797743,"data":"[gpu1]  80%|████████  | 24/30 [01:54\u003c00:29,  4.85s/it]\r\n"}
+,{"stream_name":"stdout","time":2047.682806285,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:21,  3.27s/it]\r\n"}
+,{"stream_name":"stdout","time":2051.245399317,"data":"[gpu0]  20%|██        | 6/30 [00:19\u003c01:20,  3.37s/it]\r\n"}
+,{"stream_name":"stdout","time":2051.856300004,"data":"[gpu1]  83%|████████▎ | 25/30 [01:58\u003c00:24,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":2054.855769502,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:19,  3.44s/it]\r\n"}
+,{"stream_name":"stdout","time":2056.686882554,"data":"[gpu1]  87%|████████▋ | 26/30 [02:03\u003c00:19,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":2058.414863815,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:16,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":2061.572449177,"data":"[gpu1]  90%|█████████ | 27/30 [02:08\u003c00:14,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":2061.980203055,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:13,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":2065.542166117,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:10,  3.53s/it]\r\n"}
+,{"stream_name":"stdout","time":2066.455460401,"data":"[gpu1]  93%|█████████▎| 28/30 [02:13\u003c00:09,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":2069.152679275,"data":"[gpu0]  37%|███▋      | 11/30 [00:36\u003c01:07,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":2071.337503009,"data":"[gpu1]  97%|█████████▋| 29/30 [02:18\u003c00:04,  4.87s/it]\r\n"}
+,{"stream_name":"stdout","time":2071.33754088,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.86s/it]\r\n"}
+,{"stream_name":"stdout","time":2071.337545246,"data":"[gpu1] 100%|██████████| 30/30 [02:23\u003c00:00,  4.77s/it]\r\n"}
+,{"stream_name":"stdout","time":2072.710034465,"data":"[gpu0]  40%|████      | 12/30 [00:40\u003c01:03,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":2076.27343311,"data":"[gpu0]  43%|████▎     | 13/30 [00:44\u003c01:00,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2079.837845029,"data":"[gpu0]  47%|████▋     | 14/30 [00:47\u003c00:56,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2083.406116041,"data":"[gpu0]  50%|█████     | 15/30 [00:51\u003c00:53,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2086.961987619,"data":"[gpu0]  53%|█████▎    | 16/30 [00:54\u003c00:49,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2087.527290693,"data":"[gpu1] 19:46:06 [C25_land] done in 160.3 s -\u003e /kaggle/working/dumpling_out/clips/C25_land.mp4\r\n"}
+,{"stream_name":"stdout","time":2087.733065574,"data":"[gpu1] 19:46:06 [C26_land] 97 frames 832x480 steps=30 seed=7026\r\n"}
+,{"stream_name":"stdout","time":2087.733102253,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":2088.087827211,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":2090.519118733,"data":"[gpu0]  57%|█████▋    | 17/30 [00:58\u003c00:46,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2091.632855847,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":2093.100926734,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:43,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2094.067530452,"data":"[gpu0]  60%|██████    | 18/30 [01:01\u003c00:42,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2096.763791998,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:05,  2.33s/it]\r\n"}
+,{"stream_name":"stdout","time":2097.68240862,"data":"[gpu0]  63%|██████▎   | 19/30 [01:05\u003c00:39,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":2100.429106819,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:19,  2.93s/it]\r\n"}
+,{"stream_name":"stdout","time":2101.293729067,"data":"[gpu0]  67%|██████▋   | 20/30 [01:09\u003c00:35,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":2104.2684009,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:24,  3.23s/it]\r\n"}
+,{"stream_name":"stdout","time":2105.008152292,"data":"[gpu0]  70%|███████   | 21/30 [01:12\u003c00:32,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":2108.007647397,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:25,  3.42s/it]\r\n"}
+,{"stream_name":"stdout","time":2108.720002614,"data":"[gpu0]  73%|███████▎  | 22/30 [01:16\u003c00:28,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":2111.92422418,"data":"[gpu1]  20%|██        | 6/30 [00:19\u003c01:25,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2112.484289186,"data":"[gpu0]  77%|███████▋  | 23/30 [01:20\u003c00:25,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":2115.941900202,"data":"[gpu1]  23%|██▎       | 7/30 [00:23\u003c01:24,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":2116.300126875,"data":"[gpu0]  80%|████████  | 24/30 [01:23\u003c00:22,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":2119.908193648,"data":"[gpu1]  27%|██▋       | 8/30 [00:27\u003c01:23,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":2120.061070266,"data":"[gpu0]  83%|████████▎ | 25/30 [01:27\u003c00:18,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2123.763106454,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2123.813991707,"data":"[gpu1]  30%|███       | 9/30 [00:31\u003c01:20,  3.84s/it]\r\n"}
+,{"stream_name":"stdout","time":2127.427844007,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:11,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2127.632118339,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:17,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":2131.089334926,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2131.394977473,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:13,  3.84s/it]\r\n"}
+,{"stream_name":"stdout","time":2134.826053374,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2134.826091949,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2134.826099177,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":2135.159750527,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2138.919822621,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.81s/it]\r\n"}
+,{"stream_name":"stdout","time":2142.633530914,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c01:00,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":2146.335708275,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":2147.876693661,"data":"[gpu0] 19:47:06 [C26] done in 119.9 s -\u003e /kaggle/working/dumpling_out/clips/C26.mp4\r\n"}
+,{"stream_name":"stdout","time":2148.131919867,"data":"[gpu0] 19:47:06 [C27] 97 frames 480x832 steps=30 seed=7027\r\n"}
+,{"stream_name":"stdout","time":2148.131961071,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":2148.436798038,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":2150.063326887,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":2151.940848269,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":2153.365372103,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:40,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":2153.772329592,"data":"[gpu1]  57%|█████▋    | 17/30 [01:01\u003c00:48,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":2156.874775991,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:03,  2.26s/it]\r\n"}
+,{"stream_name":"stdout","time":2157.485703002,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2160.334101239,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:16,  2.83s/it]\r\n"}
+,{"stream_name":"stdout","time":2161.199289277,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:41,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2163.892126877,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:20,  3.10s/it]\r\n"}
+,{"stream_name":"stdout","time":2164.982325144,"data":"[gpu1]  67%|██████▋   | 20/30 [01:13\u003c00:37,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2167.401337913,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:21,  3.25s/it]\r\n"}
+,{"stream_name":"stdout","time":2168.622845938,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2170.962954815,"data":"[gpu0]  20%|██        | 6/30 [00:18\u003c01:20,  3.35s/it]\r\n"}
+,{"stream_name":"stdout","time":2172.33612135,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2174.525361425,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:18,  3.41s/it]\r\n"}
+,{"stream_name":"stdout","time":2176.054020123,"data":"[gpu1]  77%|███████▋  | 23/30 [01:24\u003c00:25,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2178.084312882,"data":"[gpu0]  27%|██▋       | 8/30 [00:26\u003c01:16,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":2179.754912006,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2181.636904849,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:13,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":2183.471026151,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2185.200573508,"data":"[gpu0]  33%|███▎      | 10/30 [00:33\u003c01:10,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":2187.185560719,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2188.763336541,"data":"[gpu0]  37%|███▋      | 11/30 [00:36\u003c01:06,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":2190.950692852,"data":"[gpu1]  90%|█████████ | 27/30 [01:39\u003c00:11,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2192.325141357,"data":"[gpu0]  40%|████      | 12/30 [00:40\u003c01:03,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":2194.665406887,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2195.964267128,"data":"[gpu0]  43%|████▎     | 13/30 [00:43\u003c01:00,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":2198.378600967,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2198.378651932,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2198.378659798,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2199.493841795,"data":"[gpu0]  47%|████▋     | 14/30 [00:47\u003c00:56,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2203.050194749,"data":"[gpu0]  50%|█████     | 15/30 [00:51\u003c00:53,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2206.619014863,"data":"[gpu0]  53%|█████▎    | 16/30 [00:54\u003c00:49,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":2210.223653059,"data":"[gpu0]  57%|█████▋    | 17/30 [00:58\u003c00:46,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":2211.356010002,"data":"[gpu1] 19:48:10 [C26_land] done in 123.8 s -\u003e /kaggle/working/dumpling_out/clips/C26_land.mp4\r\n"}
+,{"stream_name":"stdout","time":2211.662260071,"data":"[gpu1] 19:48:10 [C27_land] 97 frames 832x480 steps=30 seed=7027\r\n"}
+,{"stream_name":"stdout","time":2211.71331492,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":2212.06952142,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":2213.799126663,"data":"[gpu0]  60%|██████    | 18/30 [01:01\u003c00:42,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":2215.621439018,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":2217.093523369,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:44,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2217.398814441,"data":"[gpu0]  63%|██████▎   | 19/30 [01:05\u003c00:39,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":2220.809461807,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:05,  2.35s/it]\r\n"}
+,{"stream_name":"stdout","time":2221.013433554,"data":"[gpu0]  67%|██████▋   | 20/30 [01:08\u003c00:35,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":2224.517741853,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:19,  2.96s/it]\r\n"}
+,{"stream_name":"stdout","time":2224.669753313,"data":"[gpu0]  70%|███████   | 21/30 [01:12\u003c00:32,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":2228.400237184,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:24,  3.27s/it]\r\n"}
+,{"stream_name":"stdout","time":2228.401799144,"data":"[gpu0]  73%|███████▎  | 22/30 [01:16\u003c00:28,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":2232.137222727,"data":"[gpu0]  77%|███████▋  | 23/30 [01:19\u003c00:25,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":2232.239399233,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":2235.890222319,"data":"[gpu0]  80%|████████  | 24/30 [01:23\u003c00:22,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":2236.246945256,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2239.707178808,"data":"[gpu0]  83%|████████▎ | 25/30 [01:27\u003c00:18,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2240.217587178,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:25,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2243.475871439,"data":"[gpu0]  87%|████████▋ | 26/30 [01:31\u003c00:14,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2244.189223691,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:24,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2247.19390058,"data":"[gpu0]  90%|█████████ | 27/30 [01:35\u003c00:11,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":2248.060197772,"data":"[gpu1]  30%|███       | 9/30 [00:32\u003c01:21,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":2250.857578492,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2251.874763312,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:17,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":2254.520357106,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2254.520393602,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2254.520400158,"data":"[gpu0] 100%|██████████| 30/30 [01:46\u003c00:00,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":2255.636845353,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:13,  3.84s/it]\r\n"}
+,{"stream_name":"stdout","time":2259.486008706,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2263.110736712,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":2266.84497453,"data":"[gpu1]  47%|████▋     | 14/30 [00:51\u003c01:00,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":2267.771995495,"data":"[gpu0] 19:49:06 [C27] done in 119.9 s -\u003e /kaggle/working/dumpling_out/clips/C27.mp4\r\n"}
+,{"stream_name":"stdout","time":2268.077508072,"data":"[gpu0] 19:49:06 [C29] 97 frames 480x832 steps=30 seed=7029\r\n"}
+,{"stream_name":"stdout","time":2268.077540629,"data":"[gpu0] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":2268.382764881,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":2270.520606578,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":2271.841519601,"data":"[gpu0]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":2273.215142242,"data":"[gpu0]   3%|▎         | 1/30 [00:03\u003c01:39,  3.44s/it]\r\n"}
+,{"stream_name":"stdout","time":2274.232382242,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":2276.675365942,"data":"[gpu0]   7%|▋         | 2/30 [00:04\u003c01:02,  2.24s/it]\r\n"}
+,{"stream_name":"stdout","time":2277.893012368,"data":"[gpu1]  57%|█████▋    | 17/30 [01:02\u003c00:48,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2280.180138981,"data":"[gpu0]  10%|█         | 3/30 [00:08\u003c01:15,  2.81s/it]\r\n"}
+,{"stream_name":"stdout","time":2281.554761859,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2283.693799767,"data":"[gpu0]  13%|█▎        | 4/30 [00:11\u003c01:20,  3.08s/it]\r\n"}
+,{"stream_name":"stdout","time":2285.215679184,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2287.198931415,"data":"[gpu0]  17%|█▋        | 5/30 [00:15\u003c01:20,  3.23s/it]\r\n"}
+,{"stream_name":"stdout","time":2288.921282288,"data":"[gpu1]  67%|██████▋   | 20/30 [01:13\u003c00:36,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":2290.774308961,"data":"[gpu0]  20%|██        | 6/30 [00:18\u003c01:19,  3.32s/it]\r\n"}
+,{"stream_name":"stdout","time":2292.569543685,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2294.194588388,"data":"[gpu0]  23%|██▎       | 7/30 [00:22\u003c01:17,  3.38s/it]\r\n"}
+,{"stream_name":"stdout","time":2296.274296052,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2297.750341616,"data":"[gpu0]  27%|██▋       | 8/30 [00:25\u003c01:15,  3.43s/it]\r\n"}
+,{"stream_name":"stdout","time":2299.987755475,"data":"[gpu1]  77%|███████▋  | 23/30 [01:24\u003c00:25,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2301.309850816,"data":"[gpu0]  30%|███       | 9/30 [00:29\u003c01:12,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":2303.702757202,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":2304.820077009,"data":"[gpu0]  33%|███▎      | 10/30 [00:32\u003c01:09,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":2307.407008497,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2308.424522742,"data":"[gpu0]  37%|███▋      | 11/30 [00:36\u003c01:06,  3.51s/it]\r\n"}
+,{"stream_name":"stdout","time":2311.119973873,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2311.98521205,"data":"[gpu0]  40%|████      | 12/30 [00:40\u003c01:03,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":2314.886166072,"data":"[gpu1]  90%|█████████ | 27/30 [01:39\u003c00:11,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2315.598149572,"data":"[gpu0]  43%|████▎     | 13/30 [00:43\u003c01:00,  3.54s/it]\r\n"}
+,{"stream_name":"stdout","time":2318.64475423,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2319.152377233,"data":"[gpu0]  47%|████▋     | 14/30 [00:47\u003c00:56,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":2322.508430774,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2322.508465717,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":2322.508471111,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2322.763465414,"data":"[gpu0]  50%|█████     | 15/30 [00:50\u003c00:53,  3.57s/it]\r\n"}
+,{"stream_name":"stdout","time":2326.370780171,"data":"[gpu0]  53%|█████▎    | 16/30 [00:54\u003c00:50,  3.58s/it]\r\n"}
+,{"stream_name":"stdout","time":2329.972010597,"data":"[gpu0]  57%|█████▋    | 17/30 [00:58\u003c00:46,  3.59s/it]\r\n"}
+,{"stream_name":"stdout","time":2333.583234167,"data":"[gpu0]  60%|██████    | 18/30 [01:01\u003c00:43,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2335.324087326,"data":"[gpu1] 19:50:14 [C27_land] done in 124.0 s -\u003e /kaggle/working/dumpling_out/clips/C27_land.mp4\r\n"}
+,{"stream_name":"stdout","time":2335.57789631,"data":"[gpu1] 19:50:14 [C29_land] 97 frames 832x480 steps=30 seed=7029\r\n"}
+,{"stream_name":"stdout","time":2335.62945796,"data":"[gpu1] `timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.\r\n"}
+,{"stream_name":"stdout","time":2335.934953357,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":2337.206584575,"data":"[gpu0]  63%|██████▎   | 19/30 [01:05\u003c00:39,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2339.580995149,"data":"[gpu1]   0%|          | 0/30 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":2340.803335447,"data":"[gpu0]  67%|██████▋   | 20/30 [01:08\u003c00:35,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2341.058062151,"data":"[gpu1]   3%|▎         | 1/30 [00:03\u003c01:45,  3.63s/it]\r\n"}
+,{"stream_name":"stdout","time":2344.453017063,"data":"[gpu0]  70%|███████   | 21/30 [01:12\u003c00:32,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2344.807280398,"data":"[gpu1]   7%|▋         | 2/30 [00:05\u003c01:06,  2.37s/it]\r\n"}
+,{"stream_name":"stdout","time":2348.106803061,"data":"[gpu0]  73%|███████▎  | 22/30 [01:16\u003c00:28,  3.61s/it]\r\n"}
+,{"stream_name":"stdout","time":2348.513303609,"data":"[gpu1]  10%|█         | 3/30 [00:08\u003c01:20,  2.99s/it]\r\n"}
+,{"stream_name":"stdout","time":2351.767660632,"data":"[gpu0]  77%|███████▋  | 23/30 [01:19\u003c00:25,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":2352.324667793,"data":"[gpu1]  13%|█▎        | 4/30 [00:12\u003c01:25,  3.29s/it]\r\n"}
+,{"stream_name":"stdout","time":2355.578381081,"data":"[gpu0]  80%|████████  | 24/30 [01:23\u003c00:21,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":2356.1831663,"data":"[gpu1]  17%|█▋        | 5/30 [00:16\u003c01:26,  3.47s/it]\r\n"}
+,{"stream_name":"stdout","time":2359.236681578,"data":"[gpu0]  83%|████████▎ | 25/30 [01:27\u003c00:18,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":2360.101831308,"data":"[gpu1]  20%|██        | 6/30 [00:20\u003c01:26,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":2363.001789058,"data":"[gpu0]  87%|████████▋ | 26/30 [01:30\u003c00:14,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":2364.065133675,"data":"[gpu1]  23%|██▎       | 7/30 [00:24\u003c01:25,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2366.703892801,"data":"[gpu0]  90%|█████████ | 27/30 [01:34\u003c00:11,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2367.971859605,"data":"[gpu1]  27%|██▋       | 8/30 [00:28\u003c01:23,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":2370.415565865,"data":"[gpu0]  93%|█████████▎| 28/30 [01:38\u003c00:07,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2371.787919695,"data":"[gpu1]  30%|███       | 9/30 [00:32\u003c01:20,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2374.071367914,"data":"[gpu0]  97%|█████████▋| 29/30 [01:42\u003c00:03,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2374.071410869,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":2374.071418146,"data":"[gpu0] 100%|██████████| 30/30 [01:45\u003c00:00,  3.52s/it]\r\n"}
+,{"stream_name":"stdout","time":2375.594286068,"data":"[gpu1]  33%|███▎      | 10/30 [00:35\u003c01:16,  3.83s/it]\r\n"}
+,{"stream_name":"stdout","time":2379.361083835,"data":"[gpu1]  37%|███▋      | 11/30 [00:39\u003c01:12,  3.82s/it]\r\n"}
+,{"stream_name":"stdout","time":2383.12546532,"data":"[gpu1]  40%|████      | 12/30 [00:43\u003c01:08,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":2386.924609948,"data":"[gpu1]  43%|████▎     | 13/30 [00:47\u003c01:04,  3.79s/it]\r\n"}
+,{"stream_name":"stdout","time":2386.925702112,"data":"[gpu0] 19:51:05 [C29] done in 119.1 s -\u003e /kaggle/working/dumpling_out/clips/C29.mp4\r\n"}
+,{"stream_name":"stdout","time":2390.582337341,"data":"[gpu1]  47%|████▋     | 14/30 [00:50\u003c01:00,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":2394.24073789,"data":"[gpu1]  50%|█████     | 15/30 [00:54\u003c00:56,  3.75s/it]\r\n"}
+,{"stream_name":"stdout","time":2397.945778431,"data":"[gpu1]  53%|█████▎    | 16/30 [00:58\u003c00:52,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":2401.64972876,"data":"[gpu1]  57%|█████▋    | 17/30 [01:02\u003c00:48,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2405.35689172,"data":"[gpu1]  60%|██████    | 18/30 [01:05\u003c00:44,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2409.011205236,"data":"[gpu1]  63%|██████▎   | 19/30 [01:09\u003c00:40,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2412.714422906,"data":"[gpu1]  67%|██████▋   | 20/30 [01:13\u003c00:36,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2416.418355006,"data":"[gpu1]  70%|███████   | 21/30 [01:16\u003c00:33,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2420.16265082,"data":"[gpu1]  73%|███████▎  | 22/30 [01:20\u003c00:29,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2423.834793057,"data":"[gpu1]  77%|███████▋  | 23/30 [01:24\u003c00:25,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":2427.54242984,"data":"[gpu1]  80%|████████  | 24/30 [01:27\u003c00:22,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2431.293955992,"data":"[gpu1]  83%|████████▎ | 25/30 [01:31\u003c00:18,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2435.001241918,"data":"[gpu1]  87%|████████▋ | 26/30 [01:35\u003c00:14,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":2438.707814638,"data":"[gpu1]  90%|█████████ | 27/30 [01:39\u003c00:11,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2442.466164034,"data":"[gpu1]  93%|█████████▎| 28/30 [01:42\u003c00:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2446.219796738,"data":"[gpu1]  97%|█████████▋| 29/30 [01:46\u003c00:03,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":2446.21983374,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":2446.219844365,"data":"[gpu1] 100%|██████████| 30/30 [01:50\u003c00:00,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":2458.071909529,"data":"[gpu1] 19:52:16 [C29_land] done in 122.7 s -\u003e /kaggle/working/dumpling_out/clips/C29_land.mp4\r\n"}
+,{"stream_name":"stdout","time":2460.668957353,"data":"19:52:19 finished: 32/32 clips ok. ZIP: /kaggle/working/dumpling_out/dumpling_clips.zip (74.2 MB)\r\n"}
+,{"stream_name":"stdout","time":2460.913885724,"data":"I1                               ok       179.3\n"}
+,{"stream_name":"stdout","time":2460.913916155,"data":"I1_land                          ok       183.0\n"}
+,{"stream_name":"stdout","time":2460.913921424,"data":"I2                               ok       120.4\n"}
+,{"stream_name":"stdout","time":2460.913926451,"data":"I2_land                          ok       125.2\n"}
+,{"stream_name":"stdout","time":2460.913931265,"data":"I3                               ok       120.7\n"}
+,{"stream_name":"stdout","time":2460.913935189,"data":"I3_land                          ok       123.9\n"}
+,{"stream_name":"stdout","time":2460.913939619,"data":"I5                               ok       121.4\n"}
+,{"stream_name":"stdout","time":2460.913943681,"data":"I5_land                          ok       124.7\n"}
+,{"stream_name":"stdout","time":2460.913948075,"data":"I5b                              ok       119.2\n"}
+,{"stream_name":"stdout","time":2460.913952819,"data":"I5b_land                         ok       124.0\n"}
+,{"stream_name":"stdout","time":2460.913957141,"data":"I5c                              ok       118.9\n"}
+,{"stream_name":"stdout","time":2460.913961679,"data":"I5c_land                         ok       123.5\n"}
+,{"stream_name":"stdout","time":2460.913966516,"data":"I6                               ok       119.7\n"}
+,{"stream_name":"stdout","time":2460.913970871,"data":"I6_land                          ok       124.6\n"}
+,{"stream_name":"stdout","time":2460.913975325,"data":"C01                              ok       155.4\n"}
+,{"stream_name":"stdout","time":2460.913980154,"data":"C01_land                         ok       160.6\n"}
+,{"stream_name":"stdout","time":2460.913985207,"data":"C02                              ok       155.2\n"}
+,{"stream_name":"stdout","time":2460.913989862,"data":"C02_land                         ok       160.3\n"}
+,{"stream_name":"stdout","time":2460.913994315,"data":"C07                              ok       156.3\n"}
+,{"stream_name":"stdout","time":2460.913999427,"data":"C07_land                         ok       161.3\n"}
+,{"stream_name":"stdout","time":2460.914004124,"data":"C13                              ok       120.1\n"}
+,{"stream_name":"stdout","time":2460.914008945,"data":"C13_land                         ok       124.0\n"}
+,{"stream_name":"stdout","time":2460.914025585,"data":"C23                              ok       155.2\n"}
+,{"stream_name":"stdout","time":2460.914029858,"data":"C23_land                         ok       160.3\n"}
+,{"stream_name":"stdout","time":2460.914033826,"data":"C25                              ok       154.3\n"}
+,{"stream_name":"stdout","time":2460.914037504,"data":"C25_land                         ok       160.3\n"}
+,{"stream_name":"stdout","time":2460.914041058,"data":"C26                              ok       119.9\n"}
+,{"stream_name":"stdout","time":2460.914044573,"data":"C26_land                         ok       123.8\n"}
+,{"stream_name":"stdout","time":2460.91404816,"data":"C27                              ok       119.9\n"}
+,{"stream_name":"stdout","time":2460.914052044,"data":"C27_land                         ok       124.0\n"}
+,{"stream_name":"stdout","time":2460.914056053,"data":"C29                              ok       119.1\n"}
+,{"stream_name":"stdout","time":2460.914059806,"data":"C29_land                         ok       122.7\n"}
+,{"stream_name":"stdout","time":2460.914064006,"data":"\n"}
+,{"stream_name":"stdout","time":2460.914067792,"data":"ZIP: /kaggle/working/dumpling_out/dumpling_clips.zip 74.2 MB\n"}
+,{"stream_name":"stdout","time":2461.164418535,"data":"Kaggle: open the Output tab / file panel on the right and download dumpling_clips.zip\n"}
+,{"stream_name":"stderr","time":2466.518399114,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2466.518433727,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2466.738483379,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2466.738517529,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2468.203883591,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2468.460951892,"data":"[NbConvertApp] Writing 2205395 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2471.002501412,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2471.942937892,"data":"[NbConvertApp] Writing 2598550 bytes to __results__.html\n"}
+]

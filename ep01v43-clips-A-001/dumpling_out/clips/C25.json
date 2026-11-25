@@ -1,0 +1,19 @@
+{
+ "id": "C25",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 7025,
+ "frames": 121,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 154.3,
+ "prompt": "Warm sepia dusk. The silhouette of the man seen from behind slowly lowers the spoon over the steaming dumpling, steam rises, lantern light flickers softly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C25.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}
