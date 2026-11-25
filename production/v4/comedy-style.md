@@ -21,7 +21,7 @@ Method note: web search only (page fetching was blocked in this environment), so
 | 3 | **Honest observation beats reference** | Bluey is built on the real behavior of kids and parents. (NPR, Ragan, Swinburne) | We joke on **behavior** (rushing, bragging, pretending it was the plan), not on pop-culture references that expire. |
 | 4 | **Comedy decompresses sincerity (and vice versa)** | Avatar: The Last Airbender writers rarely dwelled on the heaviest moments, using comic relief; Sokka's food obsession and puns, Iroh's tea and corny jokes, Zuko's temper are all character-based gags. (Screen Rant, WatchMojo, WhatCulture; some fan-list level). Gravity Falls creator Alex Hirsch frames episodes as a blend of humor, heart and action. (Animation Magazine, Collider) | Each ~30 s block ends on a laugh, but **Dad's page and the bridge moment are played straight**. The joke returns only after the heart beat has landed (callback "Co-host (approved)" then the snack grab). |
 | 5 | **Sincerity plus whimsy** | Hilda is described as a gentler cousin of Adventure Time with Miyazaki-style whimsy; critics single out specific bureaucratic details (elves and paperwork) as the adult-friendly joke. (Syfy Wire, Study Breaks) | Specific, odd, warm details: official-looking titles, a camel that is always calm, a "safety segment" sign. |
-| 6 | **Fast, constant, physical timing** | Spider-Verse reviewers praise "fine-tuned comic timing and constant action" and comic use of narration boxes, thought bubbles and onomatopoeia; its running recap gag ("one last time" becomes two, three, four) shows a repeating bit escalating. (Slant, Roger Ebert, SlashFilm) | On-screen text pops, sound-word cards and a repeating bit that escalates (lower-third titles, "For science!"). |
+| 6 | **Fast, constant, physical timing** | Spider-Verse reviewers praise "fine-tuned comic timing and constant action" and comic use of narration boxes, thought bubbles and onomatopoeia; its running recap gag ("one last time" becomes two, three, four) shows a repeating bit escalating. (Slant, Roger Ebert, SlashFilm) | On-screen text pops, sound-word cards and a repeating bit that escalates (lower-third titles, "For dumpling research!"). |
 | 7 | **Fourth wall works when it is part of the world** | GameSpot argues Spider-Verse's breaks don't feel like breaks because no layer separates storytelling from story. (GameSpot, Ebert) | The Boy is *literally a host*: talking to camera is the show's normal state, never a wink. Characters can use the "TV graphics" (lower thirds, intermission card) because they live inside a show. |
 | 8 | **Silent visual comedy** | Pixar shorts (Luxo Jr., For the Birds, Presto) get comedy from expressions, timing and gesture with little or no dialogue. (Story Museum, Screen Rant, TV Tropes **weak**) | At least **half of our laughs are visual-only** so they survive muted viewing and any language. |
 | 9 | **Anime visual shorthand replaces dialogue** | Large sweat drops, blank "..." faces and chibi switches signal comedy without a character repeating disbelief aloud. (japanesewithanime blog, TV Tropes **weak**, honeysanime) | Use a **few** of these (sweat drop, blank face, snap zoom, chibi 3-frame squash) as punctuation. No spoken "I can't believe it". |
@@ -96,12 +96,12 @@ Method note: web search only (page fetching was blocked in this environment), so
 
 ## 3. Uncle Fong's comic engine
 
-**The engine:** **confident appetite meets reality.** Every episode follows the same three-beat shape: **Hubris** (a big plan, a big title, "For science!") -> **Collapse** (physical consequence, then a tiny, humbled voice) -> **Dignity recovery** (he pretends it was the plan, or does it right and is quietly happy). One *sincere* moment per episode shows he loves the Boy and Dad.
+**The engine:** **confident appetite meets reality.** Every episode follows the same three-beat shape: **Hubris** (a big plan, a big title, "For dumpling research!") -> **Collapse** (physical consequence, then a tiny, humbled voice) -> **Dignity recovery** (he pretends it was the plan, or does it right and is quietly happy). One *sincere* moment per episode shows he loves the Boy and Dad.
 
 **What he wants:** food, and to be the host. **What stops him:** physics, heat, queues, the Boy.
 
 **Running gags (each max 3 appearances per episode: set, repeat, break):**
-1. **"For science!"**, said bold (hubris), later whispered or tender (callback). Never the same way twice.
+1. **"For dumpling research!"**, said bold (hubris), later whispered or tender (callback). Never the same way twice.
 2. **Lower-third titles:** a TV graphic under him that changes. Series standard: "UNCLE, co-host (self-appointed)" -> "(still self-appointed)" -> later "(approved)". A warm payoff, and a visual gag that needs no dialogue.
 3. **The steam toot:** his ears whistle like kettles when overheated or overjoyed. One big toot per episode (kids), plus one tiny toot as the final sting (everyone).
 4. **The rating:** he rates everything "ten out of ten". The Boy: "Yesterday, a napkin." The rating card is a recurring visual.
@@ -179,7 +179,7 @@ Method note: web search only (page fetching was blocked in this environment), so
 9. **Intermission card:** Uncle on fire-engine-red legs spinning in circles; Boy, calm: "We'll be right back." *Soft elevator music over a card: PLEASE ENJOY THIS BRIEF INTERMISSION.*
 10. **Tour-guide walk:** Boy walks backward: "On your left, a stone bridge." (Uncle floats by.) "On your right, a pagoda." (Uncle floats by.) "And behind me..." (glances) "...my uncle, being kidnapped by a smell."
 11. **Smell gag:** Uncle: "I smell... destiny." Boy: "That's the steamer." Uncle: "Destiny is steamed."
-12. **Rule of three, "For science!":** bold ("For science!") -> whispered to the dumpling ("For science.") -> tender at the very end ("For... science.") in later episodes.
+12. **Rule of three, "For dumpling research!":** bold ("For dumpling research!") -> whispered to the dumpling ("For dumpling research.") -> tender at the very end ("For... dumpling research.") in later episodes.
 13. **Uncle in the legend:** a paper-cut hero with a mustache. Boy: "That's not what he looked like." Uncle: "He had my energy."
 14. **Safety segment sign:** a giant card: SAFETY SEGMENT. Underneath, small print: *Brought to you by Uncle's tongue.*
 15. **Camel cameo:** a camel steps off a crowded metro car, nods to the Boy, walks away. Nobody reacts.

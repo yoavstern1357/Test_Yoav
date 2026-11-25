@@ -27,3 +27,9 @@
 ## Sound
 - Music: MINIMAL. Mostly ambience and SFX; music only under key moments.
 - Voices: the best FREE, secure, commercially licensed open-source TTS available (replace current Kokoro voices if a clearly better one exists).
+
+## Updates (creator, 2026-11-25, later)
+- Catchphrase is now **"For dumpling research!"** (was "For science!"); the whispered callback is "For dumpling research."
+- Drawing style: DELICATE, soft anime, but OUR OWN look, not fully Ghibli. Gentle clean line art, soft painterly shading, warm muted palette with the orange sash as the accent, slightly storybook texture. Avoid imitating any studio's signature look.
+- Characters (approved look test 3, village clothes): see production/v4/ep01-stills-ids.txt and gpu-results/look-test-3.
+- SERIES INTRO (every episode): about 8 s of fast frames of dumpling experiences, independent of the episode story: strong hook of both eating dumplings -> both enjoying themselves in a giant pool of dumplings -> both running through a city, fleeing a giant round dumpling with a big chomping mouth that chases them (original design, not any game character). Then the show title. See production/v4/series-intro.md.
