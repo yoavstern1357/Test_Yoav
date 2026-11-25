@@ -1,0 +1,17 @@
+{
+ "id": "I4_dive__v2",
+ "backend": "klein",
+ "seed": 5104,
+ "size": [
+  768,
+  1344
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 17.5,
+ "prompt": "Reference images: image 1 is the two characters (faces, bodies, clothes) to keep exactly. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). Same two characters as in the reference image: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash. The boy dives headfirst into a giant pool of dumplings, dumplings flying up all around him in a splash, the man laughing in the background. Dynamic, joyful. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. Vertical 9:16 frame. No text, no letters, no captions, no logos.",
+ "negative": "",
+ "refs": [
+  "refs/characters.jpg"
+ ]
+}

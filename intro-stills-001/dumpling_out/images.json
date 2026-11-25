@@ -1,0 +1,72 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 3,
+  "ref_max": 704
+ },
+ "images": [
+  {
+   "id": "I1_bite",
+   "seed": 5100,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "Same two characters as in the reference image: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash. Close-up of both of them biting into soup dumplings at the same moment, steam bursting out, eyes wide with joy, chopsticks in hand, warm stall light, energetic and appetizing. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I2_splash",
+   "seed": 5101,
+   "refs": [],
+   "prompt": "Extreme macro of a single soup dumpling bursting, golden soup splashing in slow motion, droplets in the air, steam, dark warm background. No people. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I3_pool",
+   "seed": 5102,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "Same two characters as in the reference image: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash. Wide shot: both of them floating happily in a giant pool completely filled with plump white dumplings like a ball pit, laughing; the man lounges on one huge dumpling like a pool float, the boy throws dumplings in the air. Sunny, playful, dreamlike. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I4_dive",
+   "seed": 5103,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "Same two characters as in the reference image: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash. The boy dives headfirst into a giant pool of dumplings, dumplings flying up all around him in a splash, the man laughing in the background. Dynamic, joyful. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I5_chase",
+   "seed": 5104,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "Same two characters as in the reference image: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash. An old Asian city street at dusk with red lanterns: both of them run toward the viewer, half-scared and half-laughing; behind them a GIANT round white dumpling with a huge open chomping mouth and pleated top rolls after them, soft and funny rather than scary. Dynamic perspective, motion. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I6_chomp",
+   "seed": 5105,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "the two characters (faces, bodies, clothes) to keep exactly"
+    }
+   ],
+   "prompt": "Same two characters as in the reference image: a small boy about 7 with short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash; and a big bald man with a thin black mustache, earth-brown linen work jacket with cloth knot buttons, dark trousers, wide orange cloth sash. Low angle on the lantern street: the giant round dumpling's huge mouth snaps shut right behind the boy and the man as they leap forward out of the frame, comic action, speed and motion. Delicate soft anime illustration in an original house style (not imitating any studio): gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle storybook paper texture, cinematic light. Vertical composition. No text."
+  }
+ ]
+}
