@@ -1,0 +1,187 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 2,
+  "ref_max": 704
+ },
+ "images": [
+  {
+   "id": "G00_grandma_ref",
+   "seed": 4100,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle.jpg",
+     "role": "drawing-style reference: this is how round characters are drawn in this series (round face, rosy cheeks, soft outlines)"
+    },
+    {
+     "path": "refs/style_stall_macro.jpg",
+     "role": "art style, color and warm light reference"
+    }
+   ],
+   "prompt": "Character reference sheet of the Grandma (short, round, kind old woman, round face, rosy cheeks, small gentle smile, grey hair in a small round bun with a wooden pin, soft sage-green jacket, cream apron; drawn with the same simple round shapes and soft outlines as the Boy and the Uncle). One character only, full body, standing relaxed and facing slightly to the side, hands gently together at her apron, plain warm cream background, no props, no other characters. She must look like a friendly sibling of the Uncle in drawing style, not a detailed realistic painting.",
+   "keep_characters": false
+  },
+  {
+   "id": "C10",
+   "seed": 1010,
+   "refs": [
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_uncle_eating.jpg",
+     "role": "art style, lighting and market setting reference"
+    }
+   ],
+   "prompt": "Extreme close-up of the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat) seen from the front: the frame is filled by his face, cropped through the top of his bald head and below his chin. Show his nose, thin black mustache, rosy cheeks and closed eyes with a calm, blissful little smile. A thin wisp of warm dumpling steam curls in front of his nose. Far behind him, softly blurred market stalls and red lanterns in warm morning light. Only the Uncle is in the frame."
+  },
+  {
+   "id": "C14",
+   "seed": 1014,
+   "refs": [
+    {
+     "path": "refs/boy.jpg",
+     "role": "the Boy character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_market_boy.jpg",
+     "role": "art style and setting reference: the same outdoor dumpling market lane"
+    }
+   ],
+   "prompt": "In the outdoor dumpling market lane of image 3. Foreground, centered, facing the viewer: the Boy (10 years old, round face, big dark eyes, short messy black hair, Vietnamese conical leaf hat with an orange chin ribbon, white kimono-style robe with an orange belt, white pants, brown sandals), calm and deadpan, holding a pair of chopsticks low in one hand like a microphone. Behind him: the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat) skidding to a stop with his sandals sliding and a small dust puff, a thin curl of steam leaking from one ear, his tongue sticking out, fanning his tongue with one hand, red-faced and embarrassed (this is the big comic burn-gag expression). The Boy stays calm."
+  },
+  {
+   "id": "C16",
+   "seed": 1016,
+   "refs": [
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_table_both.jpg",
+     "role": "art style, lighting and table setting reference"
+    }
+   ],
+   "prompt": "Extreme close-up of the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat): the tip of his nose almost touching a metal soup spoon that holds one steaming soup dumpling. His eyes are slightly crossed as he stares at it, one small sweat drop on his bald forehead, mouth pressed in a tense line under the thin black mustache, absolutely still. Warm table light, a bamboo steamer softly blurred in the background."
+  },
+  {
+   "id": "C17",
+   "seed": 1017,
+   "refs": [
+    {
+     "path": "refs/boy.jpg",
+     "role": "the Boy character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_table_both.jpg",
+     "role": "art style, lighting and setting reference: the wooden table with a bamboo steamer"
+    }
+   ],
+   "prompt": "Medium close-up at the wooden table of image 3. the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat) holds a spoon with a soup dumpling at his lips, eyes closed in quiet bliss with a gentle smile, a soft warm glow around him, a few tiny hearts and pink petals floating up. In the lower left foreground, seen from the side and slightly out of focus, the Boy (10 years old, round face, big dark eyes, short messy black hair, Vietnamese conical leaf hat with an orange chin ribbon, white kimono-style robe with an orange belt, white pants, brown sandals) watches him and nods, a small calm approving smile. A bamboo steamer of dumplings stands on the table."
+  },
+  {
+   "id": "C20",
+   "seed": 1020,
+   "refs": [
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_uncle_eating.jpg",
+     "role": "art style, lighting and market stall setting reference"
+    }
+   ],
+   "prompt": "Low-angle full-body shot of the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat) in a proud heroic pose in front of a sunny dumpling market stall: chest puffed, one foot forward, a white napkin tied around his neck flowing behind him like a cape, a soup spoon raised high in his right hand like a sword, a proud triumphant grin, one ear still faintly steaming. He is alone in the frame."
+  },
+  {
+   "id": "C26",
+   "seed": 1026,
+   "refs": [
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "the Grandma character reference (draw her exactly like this)"
+    },
+    {
+     "path": "refs/style_stall_macro.jpg",
+     "role": "art style, lighting and old dumpling stall setting reference"
+    }
+   ],
+   "prompt": "Seen from across a narrow old lane in warm morning light: the Grandma (short, round, kind old woman, round face, rosy cheeks, small gentle smile, grey hair in a small round bun with a wooden pin, soft sage-green jacket, cream apron; drawn with the same simple round shapes and soft outlines as the Boy and the Uncle) stands behind a small wooden dumpling stall, folding a soup dumpling between her hands, her hands slightly blurred from fast motion. Bamboo steamers with soft steam beside her, a few potted plants and a red paper lantern. Her face is calm, focused and kind. She is small in the frame, full figure visible, slightly right of center. No other characters, no sign text."
+  },
+  {
+   "id": "C27",
+   "seed": 1027,
+   "refs": [
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "the Grandma character reference (draw her exactly like this)"
+    },
+    {
+     "path": "refs/boy.jpg",
+     "role": "the Boy character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_table_both.jpg",
+     "role": "art style, lighting and wooden table setting reference"
+    }
+   ],
+   "prompt": "At the small dumpling stall. In the back, the Grandma (short, round, kind old woman, round face, rosy cheeks, small gentle smile, grey hair in a small round bun with a wooden pin, soft sage-green jacket, cream apron; drawn with the same simple round shapes and soft outlines as the Boy and the Uncle) points firmly with one finger at a plain wooden stool next to the table, her eyes wide as if she just remembered something. In the foreground, seen from three-quarter behind and turned toward her: the Boy (10 years old, round face, big dark eyes, short messy black hair, Vietnamese conical leaf hat with an orange chin ribbon, white kimono-style robe with an orange belt, white pants, brown sandals) with one eyebrow slightly raised, and beside him the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat) holding a closed leather journal. Warm morning light, steamers on the table."
+  },
+  {
+   "id": "C28",
+   "seed": 1028,
+   "refs": [
+    {
+     "path": "refs/boy.jpg",
+     "role": "the Boy character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/style_closeup_both.jpg",
+     "role": "art style and warm light reference"
+    }
+   ],
+   "prompt": "Soft close-up portrait of the Boy (10 years old, round face, big dark eyes, short messy black hair, Vietnamese conical leaf hat with an orange chin ribbon, white kimono-style robe with an orange belt, white pants, brown sandals): head and shoulders, facing the camera, a calm small warm smile, his eyes looking straight at the viewer, the hat ribbon lifting slightly in a breeze. Warm golden evening light, a softly blurred old town lane with red lanterns behind him. Leave the lower fifth of the frame calm and empty."
+  },
+  {
+   "id": "C29",
+   "seed": 1029,
+   "refs": [
+    {
+     "path": "refs/boy.jpg",
+     "role": "the Boy character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/uncle.jpg",
+     "role": "the Uncle character reference (draw him exactly like this)"
+    },
+    {
+     "path": "refs/camel.jpg",
+     "role": "the camel character reference (a friendly camel with a messy brown tuft and a red saddle blanket)"
+    },
+    {
+     "path": "refs/style_market_boy.jpg",
+     "role": "art style, lighting and market setting reference"
+    }
+   ],
+   "prompt": "In the sunny market lane of image 4. Foreground, centered, facing the viewer: the Boy (10 years old, round face, big dark eyes, short messy black hair, Vietnamese conical leaf hat with an orange chin ribbon, white kimono-style robe with an orange belt, white pants, brown sandals) with a deadpan calm face. Behind him on the right: the Uncle (big, round, jolly, bald head, thin black mustache, rosy cheeks, large white kimono-style robe with a wide orange belt and a few small sauce stains, no hat) sitting on a stool with his tongue sticking out into a small metal ice bucket, giving a thumbs-up with one hand, a tiny puff of steam from one ear. Beside the Uncle stands the camel from image 3, staring straight into the camera with a flat, unimpressed look."
+  }
+ ]
+}

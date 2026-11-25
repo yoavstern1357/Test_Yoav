@@ -13,6 +13,8 @@ Files in this folder:
 | `build_notebook.py` | Rebuilds the notebook from `generate_clips.py` (only needed after code edits). |
 | `sample/clips.json` | Three test clips using our existing art (`specs/puppets/uncle.png`, `boy.png`, `grandma.png`). |
 | `QUICKSTART-he.md` | Short Hebrew guide. |
+| `generate_images.py`, `dumpling_images.ipynb`, `build_images_notebook.py`, `nb_common.py` | The "stills" task (section 10): reference-guided images with an open model, replaces Canva image generation. |
+| `kaggle_run.py`, `jobs/run.json` | Automated Kaggle run (GitHub Actions). `task` selects clips or images (section 10). |
 
 ## 1. Which model, and why
 Researched 2026-11-25. Nothing could be run on a GPU while writing this (the build container has none and cannot reach huggingface.co),
@@ -137,3 +139,41 @@ No automatic camera move is applied to a clip (`motion` defaults to `static`); s
 - Tested here (no GPU): JSON validation, image preparation, frame counts, planning/time estimate, resume, 2-worker split, zip, notebook JSON and code syntax (a mock backend writes a dummy video), and the `clip` shot type in `make_episode.py`.
 - Checked against diffusers 0.43 source: pipeline classes, arguments, `encode_prompt` signatures, conditioning objects. Model id `Lightricks/LTX-Video-0.9.5` appears in the diffusers docs; `Wan-AI/Wan2.2-TI2V-5B-Diffusers` was confirmed by search; `Lightricks/LTX-Video-0.9.8-13B-distilled` is **unverified**.
 - **Not tested:** any real generation. Expect to fix small things on the first GPU run, which is why the smoke test exists.
+
+## 10. Stills: reference-guided images on the same free GPU (replaces rate-limited Canva generation)
+Researched 2026-11-25 (web search + diffusers 0.43 source; nothing could be run on a GPU here, so times are **estimates**).
+Goal: new start stills in OUR style with OUR characters, using the approved art as reference images, with a license that allows monetized YouTube.
+
+| Rank | Model | License | Characters from references | T4 16 GB (fp16 only) | Verdict |
+|---|---|---|---|---|---|
+| **1 (primary)** | **FLUX.2 [klein] 4B** (`black-forest-labs/FLUX.2-klein-4B`, `Flux2KleinPipeline`) | **Apache-2.0** (official card; the 9B is non-commercial) | Native multi-reference editing (up to 4 refs), 4 steps, no CFG | Transformer 8 GB fp16; text encoder (Qwen3-4B, 8 GB) is run first and released. Estimate **1-2 min per 768x1344 image** | Default (`backend: klein`) |
+| 2 (fallback) | **Qwen-Image-Edit-2511** (`Qwen/Qwen-Image-Edit-2511`, `QwenImageEditPlusPipeline`) | **Apache-2.0** | Best identity fidelity, up to 3 refs | 20B: needs NF4 (bitsandbytes) for transformer and text encoder + CPU offload; ~60 GB download; bf16 is emulated on a T4. Estimate **15-45 min per image** | Hero stills only (`backend: qwen`), experimental |
+| not used | OmniGen2 | Apache-2.0 | Multi-reference, weaker style fidelity | Fits with offload, but needs its own repo/flash-attn, not in diffusers | Third choice, not implemented |
+| not used | SDXL + IP-Adapter Plus, Kolors IP-Adapter | OpenRAIL++ / Apache-2.0 adapters | Style and face hint only; mixes two characters, poor for new poses | Fast | Weak consistency |
+| rejected | FLUX.2 klein 9B, FLUX.2 dev, FLUX.1 dev, FLUX.1 Kontext dev | **non-commercial** | | | Not allowed for monetized video |
+| rejected | PuLID / InstantID (InsightFace) | face-recognition weights are research/non-commercial (from memory, not re-checked) | Real faces only | | Not suitable for cartoons |
+Honest expectations: nobody has published T4 timings for klein; fp16 can overflow, so the script encodes prompts in bf16, runs the transformer and falls back to bf16 if the image is black (slower). Multi-reference degrades with many refs: keep to 2-4, give each ref a `role`, and expect about 1 in 3 images to need a re-roll (hence `variants: 2`).
+
+**Security.** Only the two official repos above; only `safetensors` (`use_safetensors=True`, `*.bin/*.pt/*.pkl/*.ckpt` are excluded from the download), no `trust_remote_code`, no third-party quantized re-uploads, no token needed. The exact commit that was used is written to `results.json` (`model_revision`); pass `--revision <hash>` to freeze it. The input dataset is private and contains only our own art.
+
+### Input: `images.json` + `refs/`
+```json
+{"defaults": {"backend": "klein", "width": 768, "height": 1344, "variants": 2, "ref_max": 704},
+ "images": [{"id": "C14", "seed": 1014, "prompt": "...", "negative": "", "keep_characters": true,
+             "refs": [{"path": "refs/boy.jpg", "role": "the Boy character reference"},
+                      "refs/style.jpg",
+                      "@G00_grandma_ref__v1"]}]}
+```
+`refs`: up to 4 (klein) / 3 (qwen) images, each a path or `{path, role}`. The script writes "image 1 is <role>; image 2 is ..." into the prompt, so scene text may say "the Boy from image 1". `@<id>` uses an image generated earlier in the same job as a reference (these run in a second phase; with variants write `@<id>__v1`), which is how Grandma stays the same in C26 and C27. `negative` is used by qwen; klein has no negative prompt (a non-empty value is appended as "Avoid: ..."). `ref_max` (default 704 px long side) keeps the token count, time and memory down. `keep_characters: false` for style-only refs. `upscale: [1080, 1920]` optionally Lanczos-upscales the output. Check without a GPU: `python3 generate_images.py --input <folder> --out /tmp/x --dry-run`. A mock backend (`--backend mock`) tests the whole batch/resume/phases/zip logic on a CPU.
+
+### Run it (automated)
+Put the job in `tools/episode_maker/gpu/jobs/run.json` and push (the workflow does the rest and pushes to branch `gpu-results`):
+```json
+{"run_id": "ep01v4-stills-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/ep01v4-stills", "backend": "klein", "smoke": false, "only": "", "max_minutes": 120}
+```
+First run: set `"smoke": true` (one low-resolution image, to see that the model downloads and loads). Results: `images/<id>.png`, `results.json`, `contact_sheet.jpg`. `task` defaults to `clips`, so old job files keep working. If the session has no GPU the notebook stops in step 2 with a clear message and `NO_GPU.txt`, and `kaggle_run.py` exits with code 2. The kernel metadata now sets `machine_shape: NvidiaTeslaT4` next to `enable_gpu` (the Kaggle CLI 2.x field that selects the accelerator); the missing `machine_shape` is the likely cause of the first smoke run having no GPU. Manual use: run `dumpling_images.ipynb` on Kaggle/Colab like the clips notebook (sections 3-4).
+Rebuild the notebooks after editing a generator: `python3 build_images_notebook.py` / `python3 build_notebook.py`.
+
+### Episode 1 stills
+`inputs/ep01v4-stills/` (about 1.2 MB) makes the 9 missing stills (C10, C14, C16, C17, C20, C26, C27, C28, C29) with 2 variants each, plus `G00_grandma_ref`, a new Grandma character sheet in the same round picture-book style as the Boy and the Uncle (the old painterly cut-out is deliberately NOT used as a reference). Refs: `boy.jpg`, `uncle.jpg` (from `specs/puppets`), `camel.jpg` (from the metro still) and finished stills as style references, all downscaled to <= 1024 px. Expressions are restrained by default; big ones only in C14 (the burn aftermath) and C20 (the proud hero pose). Pick the best variant per still, copy it to `specs/frames/ep01v4/Cxx.png`, then run the clips task.
+

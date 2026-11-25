@@ -3,6 +3,7 @@
 Run after editing generate_clips.py:  python3 build_notebook.py"""
 import json, os
 import nbformat
+from nb_common import GPU_CHECK, FIND_INPUT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 code = open(os.path.join(HERE, "generate_clips.py"), encoding="utf-8").read()
@@ -34,16 +35,8 @@ FORCE = False          # True = regenerate clips that already exist
 DTYPE = "auto"         # "auto" | "fp16" | "bf16" | "fp32" (try "bf16" if clips come out black or noisy)
 SMOKE_TEST = False     # True = first run ONE clip with 8 steps at low resolution, to check that everything works (~3 min)
 ''')
-md("## 2. Check the GPU and install")
-py('''
-import os, sys, subprocess, glob, shutil, zipfile
-ON_KAGGLE = os.path.exists("/kaggle/working")
-ON_COLAB = "COLAB_GPU" in os.environ or "google.colab" in sys.modules
-print("Kaggle" if ON_KAGGLE else "Colab" if ON_COLAB else "other machine")
-print(subprocess.run(["nvidia-smi", "-L"], capture_output=True, text=True).stdout or "NO GPU FOUND: turn on the accelerator and restart")
-OUT = "/kaggle/working/dumpling_out" if ON_KAGGLE else "/content/dumpling_out" if ON_COLAB else os.path.abspath("dumpling_out")
-os.makedirs(OUT, exist_ok=True)
-''')
+md("## 2. Check the GPU (stops here when there is none) and install")
+py(GPU_CHECK)
 py('''
 # diffusers >= 0.35 is needed for the LTX conditioning pipeline and Wan 2.2
 !pip install -q -U "diffusers>=0.35" "transformers>=4.51" accelerate sentencepiece protobuf ftfy imageio imageio-ffmpeg pillow numpy
@@ -57,14 +50,7 @@ md("""
 Order tried: Kaggle dataset (`/kaggle/input/*/clips.json`), `/content/dumpling_input`, Google Drive `MyDrive/dumpling_input`, otherwise (Colab) an upload prompt for `dumpling_input.zip`.
 """)
 py('''
-def find_input():
-    for pat in ("/kaggle/input/*/clips.json", "/kaggle/input/*/*/clips.json", "/content/dumpling_input/clips.json",
-                "/content/drive/MyDrive/dumpling_input/clips.json", "./dumpling_input/clips.json", "./clips.json"):
-        hit = sorted(glob.glob(pat))
-        if hit:
-            return os.path.dirname(hit[0])
-    return None
-
+''' + FIND_INPUT.replace('{F}', 'clips.json') + '''
 INPUT = find_input()
 if INPUT is None and ON_COLAB:
     try:                                   # option: Google Drive
