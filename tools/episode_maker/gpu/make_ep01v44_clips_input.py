@@ -13,6 +13,9 @@ NEG = ("realistic, photorealistic, 3D render, photo, style change, deformed hand
        "blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake, static image, frozen")
 
 
+HIGH = {"C03", "C07", "C10", "C11", "C17", "C18", "C19", "C23", "C25", "C35"}     # big body gags
+
+
 def words(t, n=110):
     w = t.split()
     return " ".join(w[:n])
@@ -31,7 +34,7 @@ def main():
         if c["method"] == "CODE" or (a.ids and c["id"] not in a.ids):
             continue
         seed += 3
-        item = {"id": c["id"], "prompt": words(c["action"]), "seconds": min(5.5, c["dur"] + 0.5), "seed": seed, "variants": 1, "motion": a.motion, "start": {}, "end": {}}
+        item = {"id": c["id"], "prompt": "The camera stays completely still, fixed framing, no zoom. " + words(c["action"]), "seconds": min(4.0, c["dur"] + 0.3) if c["dur"] > 2.5 else 2.5, "seed": seed, "variants": 1, "motion": "high" if c["peak"] or c["id"] in HIGH else a.motion, "start": {}, "end": {}}
         if a.steps:
             item["steps"] = a.steps
         for o, suf in (("portrait", ""), ("landscape", "_land")):
@@ -46,8 +49,8 @@ def main():
                 Image.open(p).convert("RGB").save(os.path.join(out, "images", base + suf + ".jpg"), quality=92)
                 item[key][o] = f"images/{base}{suf}.jpg"
         clips.append(item)
-    job = {"defaults": {"backend": a.backend, "width": 480, "height": 832, "fps": 24, "fit": "cover", "upscale": [720, 1280],
-                        "orientations": a.orient.split(","), "style": STYLE, "negative": NEG}, "clips": clips}
+    job = {"defaults": {"backend": a.backend, "width": 480, "height": 832, "fps": 24, "gen_fps": 12, "fit": "cover", "upscale": [720, 1280], "crf": 14,
+                        "post": {"rife": 2, "esrgan": True}, "motion": a.motion, "orientations": a.orient.split(","), "style": STYLE}, "clips": clips}
     json.dump(job, open(os.path.join(out, "clips.json"), "w"), indent=1)
     print(len(clips), "clips ->", out)
 
