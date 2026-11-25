@@ -1,0 +1,5 @@
+404 client error: not found for url: https://api.kaggle.com/v1/kernels.kernelsapiservice/getkernelsessionstatus
+
+the resource was not found. check the spelling of the reference you passed.
+references are usually '<owner>/<slug>', which you can find in the resource's url.
+to search for one, try 'kaggle search <query>'.
