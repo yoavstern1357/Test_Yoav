@@ -1,0 +1,22 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 4,
+  "ref_max": 704
+ },
+ "images": [
+  {
+   "id": "look3_village_clothes",
+   "seed": 3301,
+   "refs": [
+    {
+     "path": "refs/look2.jpg",
+     "role": "the two characters and the art style to keep (change only the clothes)"
+    }
+   ],
+   "prompt": "The same two characters as in the reference image (same faces, same body types, same refined TV anime style: a big bald man with a thin black mustache, and a small boy about 7 years old with short black hair wearing a Vietnamese conical leaf hat with an orange chin ribbon). They now wear simple rural East Asian village clothes of old times, NOT white robes, NOT karate uniforms: the boy wears a loose faded indigo-blue cotton tunic with side buttons, light hemp trousers rolled to the shin, a soft orange cloth sash, straw sandals and a small cloth bag; the man wears a loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, a wide orange cloth sash, straw sandals and a towel over one shoulder. Worn natural fabrics, muted earthy colors. They stand side by side in an old Chinese canal town at golden hour, rich painted background, cinematic light, natural relaxed poses, calm friendly expressions. Clean anime line art, cel shading. Vertical composition. No text."
+  }
+ ]
+}
