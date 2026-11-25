@@ -18,7 +18,10 @@ Do NOT use FLUX.2 klein 9B or any FLUX dev / Kontext dev model: they are non-com
                "refs": ["refs/uncle.jpg", {"path": "refs/style.jpg", "role": "art style reference"}, "@G00_grandma_ref__v1"]}]}
 A ref is a path, or {"path", "role"} (the role is written into the prompt as "image N is <role>"), or "@<id>" = an image
 generated earlier in the same job (second phase; with variants use "@<id>__v1").
-Results: <out>/images/<id>.png (+ <id>.json), <out>/results.json, <out>/contact_sheet.jpg, <out>/dumpling_images.zip.
+Orientations: every image is made in BOTH formats by default ("orientations": ["portrait", "landscape"], globally in "defaults" or per
+image). Portrait = <id>.png (768x1344), landscape = <id>_land.png (1344x768), same seed and refs, composition sentence adjusted
+("Vertical 9:16 composition" / "Wide horizontal 16:9 composition"). Use "orientations": ["portrait"] for e.g. character sheets.
+Results: <out>/images/<id>.png (+ <id>.json), <out>/results.json, <out>/contact_sheet.jpg (+ contact_sheet_land.jpg), <out>/dumpling_images.zip.
 Safe to stop and start again: finished images are skipped. With 2 GPUs the work is split over both automatically.
 Security: only the official model repos below, safetensors only (use_safetensors=True, pickle files are never downloaded),
 no trust_remote_code. The resolved model commit hash is written to results.json (pin it with "revision" to freeze a version).
@@ -26,10 +29,10 @@ no trust_remote_code. The resolved model commit hash is written to results.json 
 import argparse, json, math, os, re, shutil, subprocess, sys, threading, time, traceback, zipfile
 
 ROOT_DEFAULTS = dict(
-    backend="klein", width=768, height=1344, variants=1, ref_max=704, bg="#FFF3DC",
+    backend="klein", width=768, height=1344, variants=1, ref_max=704, bg="#FFF3DC", orientations=["portrait", "landscape"],
     style=("Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style "
            "reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. "
-           "Natural, restrained facial expressions unless the scene asks for a big one. Vertical 9:16 frame. "
+           "Natural, restrained facial expressions unless the scene asks for a big one. "
            "No text, no letters, no captions, no logos."),
     negative=None,          # None = backend default (klein: none, it has no negative prompt; qwen: see QWEN_NEGATIVE)
 )
@@ -69,6 +72,36 @@ def norm_ref(r, i):
     return dict(path=p, role=r.get("role"), dep=p[1:] if p.startswith("@") else None)
 
 
+ORIENTATIONS = ("portrait", "landscape")
+LAND_SUFFIX = "_land"
+COMPOSITION = {
+    "portrait": "Vertical 9:16 composition, tall framing with the subjects stacked top to bottom.",
+    "landscape": ("Wide horizontal 16:9 composition, cinematic widescreen framing with the subjects spread across the width "
+                  "and open space on both sides, not a cropped vertical picture."),
+}
+_VERT = re.compile(r"\bvertical(?:\s+9\s*:\s*16)?(?:\s+(?:composition|frame|framing))?\b[.,]?\s*", re.I)
+
+
+def orient_text(text, orient):
+    """Re-frame a prompt for an orientation. Landscape: 'Vertical composition' style phrases become 'Wide horizontal 16:9 composition.'
+    Returns (text, has_composition_phrase). Portrait text is left untouched (old prompts keep working)."""
+    if orient == "landscape":
+        new, n = _VERT.subn("Wide horizontal 16:9 composition. ", text)
+        return new.strip(), n > 0
+    return text, bool(_VERT.search(text))
+
+
+def land_id(i):
+    """'C10' -> 'C10_land', 'C10__v2' -> 'C10_land__v2'."""
+    base, sep, v = i.partition("__v")
+    return base + LAND_SUFFIX + (sep + v if sep else "")
+
+
+def orient_size(w, h, orient):
+    lo, hi = sorted((int(w), int(h)))
+    return (lo, hi) if orient == "portrait" else (hi, lo)
+
+
 def load_jobs(input_dir, overrides):
     path = os.path.join(input_dir, "images.json")
     data = json.load(open(path, encoding="utf-8"))
@@ -106,19 +139,38 @@ def load_jobs(input_dir, overrides):
         if j["negative"] is None:
             j["negative"] = QWEN_NEGATIVE if j["backend"] == "qwen" else ""
         j["seed"] = int(j.get("seed", 1000 + i))
+        orients = j.get("orientations") or ["portrait"]
+        if isinstance(orients, str):
+            orients = [orients]
+        bad = [o for o in orients if o not in ORIENTATIONS]
+        if bad:
+            raise ValueError(f"image {c['id']}: unknown orientation {bad} (use portrait / landscape)")
         nv = int(j.get("variants", 1))
-        for v in range(nv):
-            jj = dict(j)
-            jj["id"] = c["id"] if nv == 1 else f"{c['id']}__v{v + 1}"
-            jj["base_id"] = c["id"]
-            jj["seed"] = j["seed"] + v
-            if jj["id"] in seen:
-                raise ValueError(f"duplicate id {jj['id']}")
-            seen.add(jj["id"])
-            jj["full_prompt"] = build_prompt(jj)
-            jobs.append(jj)
+        for orient in orients:
+            for v in range(nv):
+                jj = dict(j)
+                stem = c["id"] + (LAND_SUFFIX if orient == "landscape" else "")
+                jj["orientation"] = orient
+                jj["id"] = stem if nv == 1 else f"{stem}__v{v + 1}"
+                jj["base_id"] = c["id"]
+                jj["stem"] = stem
+                jj["seed"] = j["seed"] + v                      # same seed in both orientations
+                if orient == "landscape" and j.get("size_landscape"):
+                    jj["width"], jj["height"] = [int(round(x / m) * m) for x in j["size_landscape"]]
+                else:
+                    jj["width"], jj["height"] = orient_size(j["width"], j["height"], orient)
+                if orient == "landscape" and j.get("prompt_landscape"):
+                    jj["prompt"] = j["prompt_landscape"]
+                if jj["id"] in seen:
+                    raise ValueError(f"duplicate id {jj['id']}")
+                seen.add(jj["id"])
+                jj["full_prompt"] = build_prompt(jj)
+                jobs.append(jj)
     for j in jobs:
+        j["refs"] = [dict(r) for r in j["refs"]]
         for r in j["refs"]:
+            if r["dep"] and j["orientation"] == "landscape" and land_id(r["dep"]) in seen:
+                r["dep"] = land_id(r["dep"])              # a landscape image uses the landscape version of a generated reference
             if r["dep"] and r["dep"] not in seen:
                 raise ValueError(f"image {j['id']}: ref '@{r['dep']}' is not an id in images.json (with variants use '@<id>__v1')")
             if r["dep"] == j["id"]:
@@ -127,16 +179,24 @@ def load_jobs(input_dir, overrides):
 
 
 def build_prompt(j):
-    """'Reference images: image 1 is ...' + scene + style (+ 'Avoid: ...' for backends without a negative prompt)."""
+    """'Reference images: image 1 is ...' + scene + style + composition (+ 'Avoid: ...' for backends without a negative prompt)."""
+    orient = j.get("orientation", "portrait")
     parts = []
     if j["refs"]:
         roles = "; ".join(f"image {k + 1} is {r['role'] or 'a reference'}" for k, r in enumerate(j["refs"]))
         keep = (" Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions)."
                 if j.get("keep_characters", True) else "")
         parts.append(f"Reference images: {roles}.{keep}")
-    parts.append(j["prompt"].strip())
+    scene, has_a = orient_text(j["prompt"].strip(), orient)
+    parts.append(scene)
+    if orient == "landscape" and j.get("prompt_extra_landscape"):
+        parts.append(j["prompt_extra_landscape"].strip())
+    has_b = False
     if j.get("style"):
-        parts.append(j["style"].strip())
+        st, has_b = orient_text(j["style"].strip(), orient)
+        parts.append(st)
+    if not (has_a or has_b):
+        parts.append(COMPOSITION[orient])
     if j["backend"] == "klein" and j.get("negative"):
         parts.append("Avoid: " + j["negative"].strip())
     return " ".join(p if p.endswith((".", "!", "?")) else p + "." for p in parts)
@@ -370,7 +430,7 @@ def run_worker(args, jobs, shard, phase):
                 return
             png, meta = out_paths(out, j["id"])
             t0 = time.time()
-            res = dict(id=j["id"], backend=bname, seed=j["seed"], size=[j["width"], j["height"]], steps=j["steps"])
+            res = dict(id=j["id"], orientation=j["orientation"], backend=bname, seed=j["seed"], size=[j["width"], j["height"]], steps=j["steps"])
             try:
                 mult = BACKENDS[bname]["mult"]
                 refs = []
@@ -396,8 +456,8 @@ def run_worker(args, jobs, shard, phase):
                     img = be.generate(j, refs)
                 if j.get("upscale"):
                     from PIL import Image
-                    img = img.resize(tuple(j["upscale"]), Image.LANCZOS)
-                img.save(png + ".part", format="PNG"); os.replace(png + ".part", png)
+                    img = img.resize(tuple(orient_size(*j["upscale"], j["orientation"])), Image.LANCZOS)
+                img.save(png + ".part", format="PNG", optimize=True); os.replace(png + ".part", png)
                 res.update(status="ok", seconds=round(time.time() - t0, 1))
                 log(f"[{j['id']}] done in {res['seconds']} s -> {png}")
             except Exception as ex:
@@ -440,25 +500,27 @@ def make_zip(out):
         d = os.path.join(out, "images")
         for f in sorted(os.listdir(d)) if os.path.isdir(d) else []:
             z.write(os.path.join(d, f), "images/" + f)
-        for f in ("results.json", "images.json", "contact_sheet.jpg"):
+        for f in ("results.json", "images.json", "contact_sheet.jpg", "contact_sheet_land.jpg"):
             if os.path.exists(os.path.join(out, f)):
                 z.write(os.path.join(out, f), f)
     return zp
 
 
-def contact_sheet(out, jobs, cols=5, cell=(216, 384)):
+def contact_sheet(out, jobs):
+    """contact_sheet.jpg (portrait images) and contact_sheet_land.jpg (landscape images), small JPEGs."""
     from PIL import Image, ImageDraw
-    done = [j for j in jobs if os.path.exists(out_paths(out, j["id"])[0])]
-    if not done:
-        return
-    rows = math.ceil(len(done) / cols)
-    sheet = Image.new("RGB", (cols * cell[0], rows * (cell[1] + 16)), "white")
-    d = ImageDraw.Draw(sheet)
-    for i, j in enumerate(done):
-        im = Image.open(out_paths(out, j["id"])[0]).convert("RGB"); im.thumbnail(cell)
-        x, y = (i % cols) * cell[0], (i // cols) * (cell[1] + 16)
-        sheet.paste(im, (x, y + 16)); d.text((x + 3, y + 2), j["id"], fill="black")
-    sheet.save(os.path.join(out, "contact_sheet.jpg"), quality=85)
+    for orient, name, cols, cell in (("portrait", "contact_sheet.jpg", 5, (216, 384)), ("landscape", "contact_sheet_land.jpg", 4, (384, 216))):
+        done = [j for j in jobs if j.get("orientation", "portrait") == orient and os.path.exists(out_paths(out, j["id"])[0])]
+        if not done:
+            continue
+        rows = math.ceil(len(done) / cols)
+        sheet = Image.new("RGB", (cols * cell[0], rows * (cell[1] + 16)), "white")
+        d = ImageDraw.Draw(sheet)
+        for i, j in enumerate(done):
+            im = Image.open(out_paths(out, j["id"])[0]).convert("RGB"); im.thumbnail(cell)
+            x, y = (i % cols) * cell[0], (i // cols) * (cell[1] + 16)
+            sheet.paste(im, (x, y + 16)); d.text((x + 3, y + 2), j["id"], fill="black")
+        sheet.save(os.path.join(out, name), quality=80)
 
 
 def collect_results(out, jobs, revision):
@@ -499,9 +561,10 @@ def estimate_minutes(j, out):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", required=True); ap.add_argument("--out", required=True)
-    ap.add_argument("--only", default=None, help="comma separated image ids (a base id matches all its variants)")
+    ap.add_argument("--only", default=None, help="comma separated image ids (a base id matches all its variants and both orientations; C10_land = landscape only)")
     ap.add_argument("--force", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--backend", default=None, choices=sorted(BACKENDS)); ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16"])
+    ap.add_argument("--limit", type=int, default=None, help="run only the first N jobs (smoke test: one variant, one orientation)")
     ap.add_argument("--steps", type=int, default=None); ap.add_argument("--guidance", type=float, default=None)
     ap.add_argument("--width", type=int, default=None); ap.add_argument("--height", type=int, default=None)
     ap.add_argument("--gpus", default="auto", help="auto | 1 | 2 (number of worker processes, one per GPU)")
@@ -513,7 +576,9 @@ def main():
     jobs = all_jobs
     if a.only:
         keep = set(a.only.split(","))
-        jobs = [j for j in jobs if j["id"] in keep or j["base_id"] in keep]
+        jobs = [j for j in jobs if j["id"] in keep or j["base_id"] in keep or j["stem"] in keep]
+    if a.limit:
+        jobs = jobs[:a.limit]
     os.makedirs(a.out, exist_ok=True)
     shutil.copy(os.path.join(a.input, "images.json"), os.path.join(a.out, "images.json"))
     done_ids = {j["id"] for j in jobs if os.path.exists(out_paths(a.out, j["id"])[0])}

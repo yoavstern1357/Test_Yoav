@@ -23,6 +23,9 @@ Works on **Kaggle** (GPU T4 x2 / P100) and **Google Colab** (free T4). Press **R
 3. Run all. Finished clips are skipped, so you can stop and run again at any time.
 4. Download `dumpling_clips.zip` (last cell).
 
+Every clip is made in both formats by default: `<id>.mp4` (vertical 9:16, 480x832) and `<id>_land.mp4` (horizontal 16:9, 832x480);
+the start image `images/X.png` is paired with `images/X_land.png` for the landscape clip when it exists. Per clip, `"orientations": ["portrait"]` makes only one.
+
 Step-by-step guide: `tools/episode_maker/gpu/README.md`.
 """)
 md("## 1. Settings (the only cell you may want to edit)")
@@ -80,7 +83,7 @@ py('''
 if SMOKE_TEST:
     first = __import__("json").load(open(os.path.join(INPUT, "clips.json")))
     first = (first["clips"] if isinstance(first, dict) else first)[0]["id"]
-    !python generate_clips.py --input "{INPUT}" --out "{OUT}_smoke" --backend {BACKEND} --only {first} --steps 8 --width 352 --height 608 --seconds 2 --gpus 1 --force
+    !python generate_clips.py --input "{INPUT}" --out "{OUT}_smoke" --backend {BACKEND} --only {first} --limit 1 --steps 8 --width 352 --height 608 --seconds 2 --gpus 1 --force
     print("If a clip appeared in", OUT + "_smoke/clips, everything works. Set SMOKE_TEST = False and run all.")
 ''')
 md("## 7. Generate all clips (this is the long step)")

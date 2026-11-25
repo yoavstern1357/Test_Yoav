@@ -16,7 +16,9 @@ that keeps our existing characters consistent by looking at reference images. Wo
 1. Turn on the GPU: Kaggle: right panel, *Session options*, *Accelerator* = GPU T4 x2, *Internet* = On. Colab: *Runtime, Change runtime type, T4 GPU*.
 2. Provide the inputs (`images.json` and a `refs/` folder): Kaggle Dataset, Google Drive folder `dumpling_input`, or a zip upload in step 4.
 3. Run all. Finished images are skipped, so you can stop and run again at any time.
-4. Download the PNGs from the Output tab (folder `dumpling_out/images`, plus `contact_sheet.jpg`).
+4. Download the PNGs from the Output tab (folder `dumpling_out/images`, plus `contact_sheet.jpg` and `contact_sheet_land.jpg`).
+   Every image is made in both formats: `<id>.png` (vertical 9:16, 768x1344) and `<id>_land.png` (horizontal 16:9, 1344x768).
+   Set `"orientations": ["portrait"]` on an image in `images.json` to make only one.
 
 If the session has no GPU the notebook stops in step 2 with a clear message. Guide: `tools/episode_maker/gpu/README.md`, section "Stills".
 """)
@@ -82,7 +84,7 @@ if SMOKE_TEST:
     items = json.load(open(os.path.join(INPUT, "images.json")))
     items = items["images"] if isinstance(items, dict) else items
     first = next(i["id"] for i in items if not any(str(r if isinstance(r, str) else r.get("path", "")).startswith("@") for r in i.get("refs", [])))
-    !python generate_images.py --input "{INPUT}" --out "{OUT}_smoke" --backend {BACKEND} --only {first} --width 512 --height 896 --gpus 1 --force
+    !python generate_images.py --input "{INPUT}" --out "{OUT}_smoke" --backend {BACKEND} --only {first} --limit 1 --width 512 --height 896 --gpus 1 --force
     print("If an image appeared in", OUT + "_smoke/images, everything works. Set SMOKE_TEST = False and run all.")
 ''')
 md("## 7. Generate all images (this is the long step: first the model download, about 16 GB for klein)")
@@ -100,9 +102,9 @@ if os.path.exists(rp):
     print("model commit:", res.get("model_revision"))
     for r in res["results"]:
         print(f"{r['id']:<32} {r['status']:<8} {r.get('seconds', '')}")
-cs = os.path.join(OUT, "contact_sheet.jpg")
-if os.path.exists(cs):
-    display(IPImage(filename=cs))
+for cs in (os.path.join(OUT, "contact_sheet.jpg"), os.path.join(OUT, "contact_sheet_land.jpg")):     # portrait, landscape
+    if os.path.exists(cs):
+        display(IPImage(filename=cs))
 zp = os.path.join(OUT, "dumpling_images.zip")
 print("\\nZIP:", zp, f"{os.path.getsize(zp) / 1e6:.1f} MB" if os.path.exists(zp) else "(not created yet)")
 ''')

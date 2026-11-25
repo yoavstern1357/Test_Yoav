@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Build a ~2 minute vertical episode video from a JSON spec.
+"""Build a ~2 minute episode video from a JSON spec, vertical 9:16 (1080x1920, Shorts) and/or horizontal 16:9 (1920x1080).
 
-    python3 make_episode.py specs/episode-01.json out.mp4 [--preview]
+    python3 make_episode.py specs/episode-01.json out.mp4 [--preview]            # portrait (default, as before)
+    python3 make_episode.py specs/episode-01.json out.mp4 --landscape            # 1920x1080
+    python3 make_episode.py specs/episode-01.json out.mp4 --both [--mobile]      # out.mp4 (9:16) + out-land.mp4 (16:9), audio mixed once
 
 Pipeline: neural TTS (Kokoro by default; optional engines in tts_engines.py, see voice_casts.json) -> timeline -> audio mix (voices, sfx, ambience,
 ducked music) -> frame renderer (Ken Burns, captions, cards, fx) -> ffmpeg.
@@ -22,6 +24,61 @@ FONT = "/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf"
 FONT_BOLD = "/usr/share/fonts/opentype/inter/Inter-Bold.otf"
 TTS_DIR = os.environ.get("TTS_DIR", os.path.join(os.path.dirname(__file__), "tts"))
 CACHE = os.environ.get("TTS_CACHE", "/tmp/dumpling_tts_cache")
+
+# ------------------------------------------------------------------ orientations (portrait 9:16 / landscape 16:9)
+LAND_SUFFIX = "_land"
+_WARNED = set()
+
+
+def warn_once(msg):
+    if msg not in _WARNED:
+        _WARNED.add(msg)
+        print("WARNING:", msg, flush=True)
+
+
+def land_name(name):
+    """'C01.png' -> 'C01_land.png' (the naming convention for the horizontal version of a still or clip)."""
+    stem, ext = os.path.splitext(name)
+    return stem + LAND_SUFFIX + ext
+
+
+def asset_candidates(val, orient):
+    """Names to try for a still/clip in an orientation, best first: [(name, exact)]. `val` is a file name ("C01.png": portrait,
+    with "C01_land.png" as its horizontal twin) or {"portrait": name, "landscape": name}. exact=False means the other orientation's
+    file is used and gets a center-cover crop."""
+    other = "landscape" if orient == "portrait" else "portrait"
+    if isinstance(val, dict):
+        c = [(val[orient], True)] if val.get(orient) else []
+        if val.get(other):
+            c.append((val[other], False))
+        return c
+    if orient == "portrait":
+        return [(val, True)]
+    return [(land_name(val), True), (val, False)]
+
+
+def orient_apply(shot, orient):
+    """Landscape: every shot key "X_land" overrides "X" (e.g. focus_land, zoom_land, caption_y_land, cards_land, puppets_land)."""
+    if orient != "landscape":
+        return shot
+    s = dict(shot)
+    if "caption_y_land" not in s:
+        s.pop("caption_y", None)             # caption_y is a portrait height; landscape uses spec caption_y_land (default 0.84)
+    for k in list(s):
+        if k.endswith(LAND_SUFFIX) and len(k) > len(LAND_SUFFIX):
+            s[k[:-len(LAND_SUFFIX)]] = s[k]
+    return s
+
+
+def video_size(spec, orient, preview=False):
+    """(W, H) for an orientation. spec "size" is the portrait size [1080, 1920]; "size_landscape" overrides the 16:9 size."""
+    if preview:
+        return (540, 960) if orient == "portrait" else (960, 540)
+    lo, hi = sorted(int(v) for v in spec.get("size", [1080, 1920]))
+    if orient == "portrait":
+        return lo, hi
+    sl = spec.get("size_landscape")
+    return tuple(int(v) for v in sl) if sl else (int(round(lo * 16 / 9)), lo)
 
 # Voice casting: (kokoro voice, speed, pitch ratio via resample trick)
 VOICES = {
@@ -162,6 +219,23 @@ def find_clip(spec, spec_dir, name):
     raise FileNotFoundError(f"clip not found: {name} (looked in clips_dir, frames_dir and next to the spec)")
 
 
+def find_clips(spec, spec_dir, val):
+    """Look a clip up for BOTH orientations: {"portrait": path | None, "landscape": path | None}, exact matches only
+    ("C01.mp4" -> C01.mp4 / C01_land.mp4, or a {"portrait", "landscape"} dict)."""
+    out = {}
+    for orient in ("portrait", "landscape"):
+        out[orient] = None
+        for name, exact in asset_candidates(val, orient):
+            if not exact:
+                continue
+            try:
+                out[orient] = find_clip(spec, spec_dir, name)
+                break
+            except FileNotFoundError:
+                pass
+    return out
+
+
 def probe_clip(path):
     r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate,duration:format=duration",
                         "-of", "json", path], capture_output=True, text=True, check=True)
@@ -175,8 +249,9 @@ class ClipReader:
     """Streams the frames of one AI clip (trim, speed, loop, last-frame hold) as PIL images at render size and fps.
     Frames are requested in time order; asking for an earlier frame restarts the decoder."""
 
-    def __init__(self, path, W, H, fps, trim, speed, loop):
+    def __init__(self, path, W, H, fps, trim, speed, loop, focus=(0.5, 0.5)):
         self.path, self.W, self.H, self.fps, self.loop = path, W, H, fps, bool(loop)
+        self.focus = focus
         src_dur, _ = probe_clip(path)
         t0 = float(trim[0]) if trim else 0.0
         t1 = float(trim[1]) if trim and len(trim) > 1 and trim[1] is not None else src_dur
@@ -188,7 +263,7 @@ class ClipReader:
     def _start(self):
         self.close()
         vf = (f"setpts=PTS/{self.speed},fps={self.fps},scale={self.W}:{self.H}:force_original_aspect_ratio=increase:flags=lanczos,"
-              f"crop={self.W}:{self.H}")
+              f"crop={self.W}:{self.H}:(iw-ow)*{float(self.focus[0]):.4f}:(ih-oh)*{float(self.focus[1]):.4f}")
         self.proc = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", f"{self.t0:.3f}", "-t", f"{self.t1 - self.t0:.3f}", "-i", self.path,
                                       "-vf", vf, "-an", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
         self.pos = 0
@@ -245,18 +320,22 @@ def build_timeline(spec, spec_dir="."):
     for sh in spec["shots"]:
         s = dict(sh)
         if s.get("clip"):      # AI-generated video clip: dur defaults to the (trimmed, sped-up) clip length
-            try:
-                s["clip_path"] = find_clip(spec, spec_dir, s["clip"])
-            except FileNotFoundError:
+            # both orientations are looked up (X.mp4 / X_land.mp4); the first one found (portrait first) sets duration and clip audio
+            paths = find_clips(spec, spec_dir, s["clip"])
+            if paths["portrait"] or paths["landscape"]:
+                s["clip_paths"] = paths
+                s["clip_path"] = paths["portrait"] or paths["landscape"]
+            else:
                 if not s.get("img"):
-                    raise
+                    find_clip(spec, spec_dir, asset_candidates(s["clip"], "portrait")[0][0])      # raises the usual FileNotFoundError
                 # animatic fallback: the start still with local motion, until the AI clip exists
                 s.pop("clip"); s.pop("trim", None); s.pop("speed", None); s.pop("reverse", None); s.pop("freeze", None)
                 s.update(s.pop("fb", {}))
                 s["fallback"] = True
         if s.get("clip"):
             if s.get("reverse"):
-                s["clip_path"] = reversed_clip(s["clip_path"])
+                s["clip_paths"] = {k: (reversed_clip(v) if v else None) for k, v in s["clip_paths"].items()}
+                s["clip_path"] = s["clip_paths"]["portrait"] or s["clip_paths"]["landscape"]
             if "dur" not in s:
                 cd, _ = probe_clip(s["clip_path"])
                 tr = s.get("trim")
@@ -386,14 +465,17 @@ def wrap_text(draw, text, fnt, maxw):
 _layer_cache = {}
 
 
-def caption_layer(text, who, W):
-    key = ("cap", text, who, W)
+def caption_layer(text, who, W, H=None):
+    """Burned-in caption (approved style: white/colour fill, thick brown stroke, extra bold). Portrait: 84% of the width.
+    Landscape (W > H): slightly smaller text, at most 60% of the width so it stays a compact block, lower center."""
+    land = bool(H) and W > H
+    key = ("cap", text, who, W, H if land else None)
     if key in _layer_cache:
         return _layer_cache[key]
-    size = int(W * 0.088)
+    size = int(H * 0.074) if land else int(W * 0.088)
     fnt = font(FONT, size)
     dummy = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
-    lines = wrap_text(dummy, text, fnt, W * 0.84)
+    lines = wrap_text(dummy, text, fnt, W * (0.60 if land else 0.84))
     lh = int(size * 1.22)
     h = lh * len(lines) + 40
     img = Image.new("RGBA", (W, h), (0, 0, 0, 0))
@@ -406,45 +488,49 @@ def caption_layer(text, who, W):
     return img
 
 
-def card_layer(card, W):
-    key = ("card", json.dumps(card, sort_keys=True), W)
+def card_layer(card, W, H=None):
+    land = bool(H) and W > H
+    key = ("card", json.dumps(card, sort_keys=True), W, H if land else None)
     if key in _layer_cache:
         return _layer_cache[key]
-    pad = int(W * 0.05)
-    cw = int(W * 0.84)
-    label_f, text_f = font(FONT, int(W * 0.040)), font(FONT, int(W * 0.062))
+    u = H if land else W                          # type scale: 1080 px in both orientations at full resolution
+    pad = int(u * 0.05)
+    cw = int(W * 0.50) if land else int(W * 0.84)
+    label_f, text_f = font(FONT, int(u * 0.040)), font(FONT, int(u * 0.062))
     dummy = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
     body = wrap_text(dummy, card["text"], text_f, cw - 2 * pad)
-    lh = int(W * 0.078)
-    ch = pad * 2 + int(W * 0.06) + lh * len(body)
+    lh = int(u * 0.078)
+    ch = pad * 2 + int(u * 0.06) + lh * len(body)
     img = Image.new("RGBA", (cw + 30, ch + 30), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((12, 20, cw + 12, ch + 20), radius=44, fill=(59, 42, 26, 90))     # shadow
     d.rounded_rectangle((8, 8, cw + 8, ch + 8), radius=44, fill=(255, 248, 236, 245), outline=(217, 72, 15, 255), width=8)
     d.text((8 + pad, 8 + pad * 0.8), card.get("label", "FUN FACT"), font=label_f, fill=(217, 72, 15, 255))
     for i, ln in enumerate(body):
-        d.text((8 + pad, 8 + pad * 0.8 + int(W * 0.07) + i * lh), ln, font=text_f, fill=(59, 42, 26, 255))
+        d.text((8 + pad, 8 + pad * 0.8 + int(u * 0.07) + i * lh), ln, font=text_f, fill=(59, 42, 26, 255))
     _layer_cache[key] = img
     return img
 
 
-def title_layer(card, W):
-    key = ("title", json.dumps(card, sort_keys=True), W)
+def title_layer(card, W, H=None):
+    land = bool(H) and W > H
+    key = ("title", json.dumps(card, sort_keys=True), W, H if land else None)
     if key in _layer_cache:
         return _layer_cache[key]
-    f1, f2 = font(FONT, int(W * 0.105)), font(FONT_BOLD, int(W * 0.058))
+    u = H if land else W
+    f1, f2 = font(FONT, int(u * 0.105)), font(FONT_BOLD, int(u * 0.058))
     dummy = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
-    l1 = wrap_text(dummy, card["text"], f1, W * 0.86)
-    h = len(l1) * int(W * 0.125) + int(W * 0.12)
+    l1 = wrap_text(dummy, card["text"], f1, W * (0.70 if land else 0.86))
+    h = len(l1) * int(u * 0.125) + int(u * 0.12)
     img = Image.new("RGBA", (W, h + 20), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     for i, ln in enumerate(l1):
         w = d.textlength(ln, font=f1)
-        d.text(((W - w) / 2, 10 + i * int(W * 0.125)), ln, font=f1, fill=(255, 255, 255, 255), stroke_width=10, stroke_fill=(217, 72, 15, 255))
+        d.text(((W - w) / 2, 10 + i * int(u * 0.125)), ln, font=f1, fill=(255, 255, 255, 255), stroke_width=10, stroke_fill=(217, 72, 15, 255))
     sub = card.get("sub", "")
     if sub:
         w = d.textlength(sub, font=f2)
-        d.text(((W - w) / 2, 10 + len(l1) * int(W * 0.125) + 6), sub, font=f2, fill=(255, 245, 230, 255), stroke_width=6, stroke_fill=(59, 42, 26, 255))
+        d.text(((W - w) / 2, 10 + len(l1) * int(u * 0.125) + 6), sub, font=f2, fill=(255, 245, 230, 255), stroke_width=6, stroke_fill=(59, 42, 26, 255))
     _layer_cache[key] = img
     return img
 
@@ -627,17 +713,23 @@ def voice_envelope(audio):
 
 
 class Renderer:
-    def __init__(self, spec, shots, W, H, fps, frames_dir):
-        self.spec, self.shots, self.W, self.H, self.fps = spec, shots, W, H, fps
+    def __init__(self, spec, shots, W, H, fps, frames_dir, orient=None):
+        self.orient = orient or ("landscape" if W > H else "portrait")
+        self.land = self.orient == "landscape"
+        self.U = H if self.land else W            # size unit for fx sprites, text and cards: 1080 px at full resolution in both orientations
+        self.shots = [orient_apply(s, self.orient) for s in shots]       # landscape: "<key>_land" overrides "<key>"
+        shots = self.shots
+        self.spec, self.W, self.H, self.fps = spec, W, H, fps
         self.frames_dir = frames_dir
         self.imgs = {}
+        self.picked = {}
         self.readers = {}
         for s in shots:
-            if s.get("img") and not s.get("clip_path"):
-                self.load(s["img"])
+            if s.get("img") and not self.clip_file(s):
+                self.load(self.pick(s["img"]))
             for k in ("bg", "fg"):
                 if s.get("layers", {}).get(k):
-                    self.load(s["layers"][k], rgba=(k == "fg"))
+                    self.load(self.pick(s["layers"][k]), rgba=(k == "fg"))
         self.pups = {}
         self.envs = {}
         self._cam = None
@@ -659,6 +751,35 @@ class Renderer:
             yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
             r2 = ((xx / W - 0.5) * 2) ** 2 * 0.8 + ((yy / H - 0.5) * 2) ** 2 * 0.9
             self.vig = (1 - v * 0.5 * np.clip(r2 - 0.25, 0, 1.2) ** 1.3)[..., None].astype(np.float32)
+
+    def pick(self, val):
+        """Resolve a still (or layer) for this orientation to an existing path: X.png / X_land.png, a {"portrait","landscape"} dict,
+        or the other orientation's picture (center-cover crop, with a warning)."""
+        key = json.dumps(val, sort_keys=True)
+        if key in self.picked:
+            return self.picked[key]
+        cands = asset_candidates(val, self.orient)
+        for name, exact in cands:
+            if os.path.exists(self.resolve(name)):
+                if not exact:
+                    warn_once(f"no {self.orient} version of {cands[0][0]}: using {name} with a center-cover crop (make {land_name(name) if self.land else name})")
+                self.picked[key] = name
+                return name
+        self.picked[key] = cands[0][0]
+        return cands[0][0]
+
+    def clip_file(self, s):
+        """Path of the AI clip for this orientation (X.mp4 / X_land.mp4), or None. Falls back to the other orientation's clip (cropped)."""
+        cp = s.get("clip_paths")
+        if not cp:
+            return s.get("clip_path")
+        mine = cp.get(self.orient)
+        if mine:
+            return mine
+        other = cp.get("landscape" if self.land else "portrait")
+        if other:
+            warn_once(f"no {self.orient} clip for {s.get('id') or s.get('clip')}: using {os.path.basename(other)} with a center-cover crop")
+        return other
 
     def resolve(self, name):
         p = os.path.join(self.frames_dir, name)
@@ -685,13 +806,14 @@ class Renderer:
         key = id(s)
         rd = self.readers.get(key)
         if rd is None:
-            rd = self.readers[key] = ClipReader(s["clip_path"], self.W, self.H, self.fps, s.get("trim"), s.get("speed"), s.get("loop"))
+            rd = self.readers[key] = ClipReader(self.clip_file(s), self.W, self.H, self.fps, s.get("trim"), s.get("speed"), s.get("loop"),
+                                                 s.get("crop_focus", (0.5, 0.5)))
         return rd.frame(t_local)
 
     def release_clips(self, gt):
         """Close decoders of shots that are over (keeps the number of ffmpeg processes small)."""
         for sh in self.shots:
-            if sh.get("clip_path") and id(sh) in self.readers and gt > sh["end"] + 1.0:
+            if self.clip_file(sh) and id(sh) in self.readers and gt > sh["end"] + 1.0:
                 self.readers.pop(id(sh)).close()
 
     # ---- camera
@@ -708,10 +830,10 @@ class Renderer:
     def base_frame(self, s, t_local):
         W, H = self.W, self.H
         layers = s.get("layers") or {}
-        if s.get("clip_path"):
+        if self.clip_file(s):
             img = self.clip_frame(s, t_local)
         else:
-            img = self.imgs[self.resolve(layers.get("bg") or s["img"])]
+            img = self.imgs[self.resolve(self.pick(layers.get("bg") or s["img"]))]
         tc = self.cam_time(s, t_local)
         p = tc / max(s["dur"], 0.01)
         mult = 1.0
@@ -745,7 +867,7 @@ class Renderer:
         fr = img.resize((W, H), Image.BICUBIC, box=box)
         self._cam = (box, img.size)
         if layers.get("fg"):      # foreground plane: moves faster than the background
-            fg = self.imgs[self.resolve(layers["fg"])]
+            fg = self.imgs[self.resolve(self.pick(layers["fg"]))]
             drift = math.sin(t_local * 0.6 + s["start"]) * 0.012
             fbox = camera_box(fg.size, W, H, s, p, mult, (off[0] + drift, off[1]), minz, pan_mult=2.2, zoom_mult=1.05)
             if sx or sy:
@@ -801,23 +923,23 @@ class Renderer:
             if kind == "dust":
                 x = (x0 + 0.012 * z * t + 0.03 * math.sin(t * 0.4 + a * 6)) % 1.0
                 y = (y0 - 0.010 * z * t + 0.02 * math.sin(t * 0.3 + b * 6)) % 1.0
-                r, al, col = W * (0.004 + 0.007 * z), 0.35 + 0.25 * math.sin(t * 1.5 + c * 9) ** 2, (255, 244, 214)
+                r, al, col = self.U * (0.004 + 0.007 * z), 0.35 + 0.25 * math.sin(t * 1.5 + c * 9) ** 2, (255, 244, 214)
             elif kind == "embers":
                 x = (x0 + 0.03 * math.sin(t * 1.1 + a * 9) * z) % 1.0
                 y = (y0 - 0.085 * z * t) % 1.12 - 0.05
-                r, al, col = W * (0.004 + 0.007 * z), 0.55 + 0.4 * math.sin(t * 9 + c * 20), (255, 168 + int(60 * b), 80)
+                r, al, col = self.U * (0.004 + 0.007 * z), 0.55 + 0.4 * math.sin(t * 9 + c * 20), (255, 168 + int(60 * b), 80)
             elif kind == "petals":
                 x = (x0 + 0.035 * z * t + 0.05 * math.sin(t * 1.2 + a * 9)) % 1.0
                 y = (y0 + 0.075 * z * t) % 1.1 - 0.05
-                r, al, col = W * (0.011 + 0.012 * z), 0.85, (255, 190 + int(25 * b), 205)
+                r, al, col = self.U * (0.011 + 0.012 * z), 0.85, (255, 190 + int(25 * b), 205)
             elif kind == "steam":
                 x = (x0 + 0.04 * math.sin(t * 0.5 + a * 9)) % 1.0
                 y = (y0 - 0.06 * z * t) % 1.2 - 0.1
-                r, al, col = W * (0.07 + 0.07 * z), 0.10 + 0.05 * z, (255, 255, 255)
+                r, al, col = self.U * (0.07 + 0.07 * z), 0.10 + 0.05 * z, (255, 255, 255)
             else:  # snow
                 x = (x0 + 0.03 * math.sin(t * 0.8 + a * 9) + 0.01 * t * z) % 1.0
                 y = (y0 + 0.07 * z * t) % 1.06 - 0.03
-                r, al, col = W * (0.004 + 0.008 * z), 0.8, (255, 255, 255)
+                r, al, col = self.U * (0.004 + 0.008 * z), 0.8, (255, 255, 255)
             R = max(2, int(r / 0.45 / 2) * 2)
             aq = int(max(0.0, min(1.0, al)) * 8)
             if aq <= 0:
@@ -1072,7 +1194,7 @@ class Renderer:
         fr = Image.blend(fr, tone, 0.55 * a)
         ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         dr = ImageDraw.Draw(ov)
-        sw = int(W * 0.085)
+        sw = int(self.U * 0.085)
         sp = int(H * 0.06)
         off = (dt * H * 3.2) % sp
         for x0 in (0, W - sw):
@@ -1084,7 +1206,7 @@ class Renderer:
         for _ in range(5):                           # tape glitch bars sweeping upward
             y = int((g.uniform(0, 1) - dt * 2.0) % 1.0 * H)
             dr.rectangle((sw, y, W - sw, y + int(g.uniform(0.004, 0.03) * H)), fill=(255, 250, 238, int(g.uniform(40, 120) * a)))
-        f = font(FONT, int(W * 0.075))
+        f = font(FONT, int(self.U * 0.075))
         if int(dt * 6) % 2 == 0:
             dr.text((sw + 30, int(H * 0.055)), "\u25C0\u25C0 REW", font=f, fill=(255, 240, 214, int(255 * a)), stroke_width=5, stroke_fill=(59, 42, 26, int(255 * a)))
         fr = fr.convert("RGBA"); fr.alpha_composite(ov)
@@ -1100,11 +1222,11 @@ class Renderer:
         tx, ty = cfg.get("x", 0.5) * W, cfg.get("y", 0.3) * H
         for i in range(cfg.get("n", 18)):
             g = np.random.default_rng(i * 13 + 1)
-            ang, r0 = g.uniform(0, 2 * math.pi), g.uniform(0.18, 0.5) * W
+            ang, r0 = g.uniform(0, 2 * math.pi), g.uniform(0.18, 0.5) * self.U
             ph = ((dt / d) * 1.4 + g.uniform(0, 0.6)) % 1.0
             rr = r0 * (1 - ph)
             x, y = tx + math.cos(ang) * rr, ty + math.sin(ang) * rr
-            rad = int(W * (0.03 + 0.06 * (1 - ph)))
+            rad = int(self.U * (0.03 + 0.06 * (1 - ph)))
             spr = soft_sprite(rad, 1.0).point(lambda v: int(v * 0.5 * math.sin(ph * math.pi)))
             fr.paste((255, 255, 255), (int(x - rad), int(y - rad)), spr)
         return fr
@@ -1137,9 +1259,9 @@ class Renderer:
                     life = 2.6
                     ph = (t_local / life + i / n) % 1.0
                     seed = (i * 7919) % 100 / 100
-                    x = (x0 + (x1 - x0) * seed) * W + math.sin(ph * 5 + i) * W * 0.03
+                    x = (x0 + (x1 - x0) * seed) * W + math.sin(ph * 5 + i) * self.U * 0.03
                     y = (ybase - ph * fx.get("rise", 0.35)) * H
-                    r = int(W * (0.10 + 0.10 * ph + 0.04 * seed))
+                    r = int(self.U * (0.10 + 0.10 * ph + 0.04 * seed))
                     a = math.sin(ph * math.pi) * fx.get("alpha", 0.55)
                     spr = soft_sprite(r, 1.0)
                     spr = spr.point(lambda v: int(v * a))
@@ -1150,7 +1272,7 @@ class Renderer:
                     ph = (lt * 0.5 + i * 0.19) % 1.0
                     x = (fx.get("x", 0.5) + math.sin(i * 2.3 + ph * 4) * 0.14) * W
                     y = (fx.get("y", 0.5) - ph * 0.28) * H
-                    sz = int(W * (0.045 + 0.02 * ((i * 37) % 5) / 5))
+                    sz = int(self.U * (0.045 + 0.02 * ((i * 37) % 5) / 5))
                     spr = heart_sprite(sz).point(lambda v: int(v * math.sin(ph * math.pi)))
                     frame.paste((255, 130, 160), (int(x - sz), int(y - sz)), spr)
             elif kind == "flash":
@@ -1167,13 +1289,15 @@ class Renderer:
         # cards
         for c in s.get("cards", []):
             dt = t_local - c["t"]
+            if self.land:                       # per-card landscape overrides: "y_land", "x_land", "text_land", ...
+                c = dict(c, **{k[:-len(LAND_SUFFIX)]: v for k, v in c.items() if k.endswith(LAND_SUFFIX)})
             if c.get("type") == "paper":
                 if 0 <= dt <= c["d"]:
                     import paper.cards as pcards
                     pcards.draw(frame, c, dt, W, H)
                 continue
             if 0 <= dt <= c["d"]:
-                lay = title_layer(c, W) if c["type"] == "title" else card_layer(c, W)
+                lay = title_layer(c, W, H) if c["type"] == "title" else card_layer(c, W, H)
                 pop = ease(dt / 0.22)
                 out = ease((c["d"] - dt) / 0.2)
                 a = min(pop, out)
@@ -1182,20 +1306,30 @@ class Renderer:
                 l2 = lay.resize((lw, lh), Image.BILINEAR)
                 if a < 1:
                     l2.putalpha(l2.getchannel("A").point(lambda v: int(v * a)))
+                if self.land:      # horizontal: fact cards sit in the upper third, titles a little higher than center; captions own the bottom
+                    cy = c["y"] if "y_land" in c else (0.42 if c["type"] == "title" else 0.30)
+                    cy = min(max(cy * H, lh / 2 + 0.05 * H), H - lh / 2 - 0.05 * H)
+                    frame.paste(l2, (int(c.get("x", 0.5) * W) - lw // 2, int(cy) - lh // 2), l2)
+                    continue
                 pos_y = int(c.get("y", 0.62) * H) - lh // 2
                 frame.paste(l2, ((W - lw) // 2, pos_y), l2)
-        # captions (burned in, safe zone above the Shorts UI)
+        # captions (burned in; portrait: safe zone above the Shorts UI, landscape: lower center, inside the 5% title-safe margin)
         for ln in s["lines"]:
             if ln.get("caption") is False:
                 continue
             dt = t_local - (ln["start"] - s["start"])
             if -0.02 <= dt <= ln["dur"] + 0.12:
-                lay = caption_layer(ln.get("caption", ln["text"]), ln["who"], W)
+                lay = caption_layer(ln.get("caption", ln["text"]), ln["who"], W, H)
                 pop = ease(max(dt, 0) / 0.12)
                 sc = 0.9 + 0.1 * pop
                 lw, lh = int(lay.width * sc), int(lay.height * sc)
                 l2 = lay.resize((lw, lh), Image.BILINEAR) if sc != 1 else lay
-                frame.paste(l2, ((W - lw) // 2, int(self.H * s.get("caption_y", self.spec.get("caption_y", 0.67))) - lh // 2), l2)
+                if self.land:
+                    cy = self.H * s.get("caption_y", self.spec.get("caption_y_land", 0.84))
+                    cy = min(max(cy, lh / 2 + 0.05 * self.H), self.H * 0.955 - lh / 2)
+                else:
+                    cy = self.H * s.get("caption_y", self.spec.get("caption_y", 0.67))
+                frame.paste(l2, ((W - lw) // 2, int(cy) - lh // 2), l2)
         return frame
 
     def post(self, fr):
@@ -1233,21 +1367,60 @@ class Renderer:
         return self.post(fr)
 
 
+def render_video(spec, shots, total, wav, W, H, fps, fdir, orient, out, mobile):
+    """Render one orientation to `out` (audio already mixed in `wav`); optionally the mobile version (720x1280 / 1280x720)."""
+    r = Renderer(spec, shots, W, H, fps, fdir, orient)
+    nframes = int(total * fps)
+    cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
+           "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
+           "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", out]
+    p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    for i in range(nframes):
+        r.fidx = i
+        p.stdin.write(r.frame_at(i / fps).tobytes())
+        if i % (fps * 10) == 0:
+            print(f"  [{orient}] frame {i}/{nframes}", flush=True)
+    p.stdin.close(); p.wait()
+    for rd in list(r.readers.values()):
+        rd.close()
+    print("done", out)
+    if mobile:
+        mob = os.path.splitext(out)[0] + "-mobile.mp4"
+        size = "scale=1280:720:flags=lanczos" if orient == "landscape" else "scale=720:1280:flags=lanczos"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-vf", size, "-c:v", "libx264",
+                        "-profile:v", "main", "-crf", "27", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-ac", "1",
+                        "-movflags", "+faststart", mob], check=True)
+        print("mobile", mob)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("spec"); ap.add_argument("out")
     ap.add_argument("--preview", action="store_true")
     ap.add_argument("--audio-only", action="store_true")
     ap.add_argument("--frames-dir", default=None)
-    ap.add_argument("--mobile", action="store_true", help="also write <out>-mobile.mp4 (720x1280, H.264 Main, crf 27, AAC 128k mono)")
+    ap.add_argument("--mobile", action="store_true", help="also write <out>-mobile.mp4 (720x1280 portrait / 1280x720 landscape, H.264 Main, crf 27, AAC 128k mono)")
+    og = ap.add_mutually_exclusive_group()
+    og.add_argument("--landscape", action="store_true", help="render the horizontal 16:9 version (1920x1080) to <out>")
+    og.add_argument("--portrait", action="store_true", help="render the vertical 9:16 version (1080x1920) to <out> (default; overrides spec orientation)")
+    og.add_argument("--both", action="store_true", help="render both: <out> (9:16) and <out stem>-land<ext> (16:9); audio is mixed once")
     a = ap.parse_args()
     spec = json.load(open(a.spec))
     PITCH_OVERRIDE.update(spec.get("voice_pitch", {}))
     set_cast(spec)
-    W, H = spec.get("size", [1080, 1920])
-    fps = spec.get("fps", 30)
-    if a.preview:
-        W, H, fps = 540, 960, 15
+    want = spec.get("orientation", "portrait")        # spec field: "portrait" | "landscape" | "both"
+    if want not in ("portrait", "landscape", "both"):
+        raise SystemExit(f"spec orientation must be portrait, landscape or both, not {want!r}")
+    if a.both:
+        want = "both"
+    elif a.landscape:
+        want = "landscape"
+    elif a.portrait:
+        want = "portrait"
+    stem, ext = os.path.splitext(a.out)
+    jobs = {"portrait": [("portrait", a.out)], "landscape": [("landscape", a.out)],
+            "both": [("portrait", a.out), ("landscape", f"{stem}-land{ext or '.mp4'}")]}[want]
+    fps = 15 if a.preview else spec.get("fps", 30)
     fdir = a.frames_dir or os.path.join(os.path.dirname(os.path.abspath(a.spec)), spec.get("frames_dir", "frames"))
     shots, total = build_timeline(spec, os.path.dirname(os.path.abspath(a.spec)))
     print(f"timeline: {len(shots)} shots, {total:.1f}s", flush=True)
@@ -1256,25 +1429,10 @@ def main():
     print("audio done", flush=True)
     if a.audio_only:
         return
-    r = Renderer(spec, shots, W, H, fps, fdir)
-    nframes = int(total * fps)
-    cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
-           "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
-           "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", a.out]
-    p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    for i in range(nframes):
-        r.fidx = i
-        p.stdin.write(r.frame_at(i / fps).tobytes())
-        if i % (fps * 10) == 0:
-            print(f"  frame {i}/{nframes}", flush=True)
-    p.stdin.close(); p.wait()
-    print("done", a.out)
-    if a.mobile:
-        mob = os.path.splitext(a.out)[0] + "-mobile.mp4"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a.out, "-vf", "scale=720:1280:flags=lanczos", "-c:v", "libx264",
-                        "-profile:v", "main", "-crf", "27", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-ac", "1",
-                        "-movflags", "+faststart", mob], check=True)
-        print("mobile", mob)
+    for orient, out in jobs:
+        W, H = video_size(spec, orient, a.preview)
+        print(f"rendering {orient} {W}x{H} -> {out}", flush=True)
+        render_video(spec, shots, total, wav, W, H, fps, fdir, orient, out, a.mobile)
 
 
 if __name__ == "__main__":

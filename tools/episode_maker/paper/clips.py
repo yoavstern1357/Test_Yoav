@@ -16,6 +16,17 @@ class Clip:
         raise NotImplementedError
 
     smooth_until = 0.0
+    # --- horizontal 16:9 version (render_clip(..., orient="landscape")) ---
+    # Default: the finished 1080x1920 frame is re-composed into 1920x1080: the sharp portrait frame (fitted to the height, or zoomed by
+    # land_zoom and cropped around land_focus(t)) stands on a blurred, darkened, widened copy of itself. A clip that has its own wide
+    # layout overrides frame_land(t, ts) and returns a 1920x1080 PIL image (or None to use the default).
+    land_zoom = 1.0
+
+    def land_focus(self, t):
+        return 0.5
+
+    def frame_land(self, t, ts):
+        return None
 
     def cacheable(self, t):
         return self.step is not None and t >= self.smooth_until
@@ -24,9 +35,40 @@ class Clip:
         return t if (not self.step or t < self.smooth_until) else step_t(t, self.step)
 
 
-def render_clip(clip, path, fps=FPS, scale=1.0, only=None):
+LW, LH = 1920, 1080
+_land_cache = {}
+
+
+def land_compose(img, zoom=1.0, focus=0.5):
+    """Portrait frame (W x H) -> landscape frame (1920 x 1080): sharp center column over a blurred, widened copy."""
+    key = (zoom,)
+    if key not in _land_cache:
+        fw = int(round(W * LH / H * zoom))                      # fitted column: full height at zoom 1, wider and cropped above
+        fh = int(round(LH * zoom))
+        m = Image.new("L", (LW, LH), 0)
+        ImageDraw.Draw(m).rectangle(((LW - fw) // 2, 0, (LW + fw) // 2, LH), fill=255)
+        glow = m.filter(ImageFilter.GaussianBlur(34)).point(lambda v: int(v * 0.42))
+        _land_cache[key] = (fw, fh, glow)
+    fw, fh, glow = _land_cache[key]
+    # background: the frame, covered to 1920 wide at 1/8 size, cropped at the focus height, then scaled up (so it is already soft)
+    small = img.resize((LW // 8, int(round(LW // 8 * H / W))), Image.BILINEAR)
+    bh = LH // 8
+    top = int(round((small.height - bh) * min(max(focus, 0.0), 1.0)))
+    bg = small.crop((0, top, small.width, top + bh)).resize((LW, LH), Image.BICUBIC).filter(ImageFilter.GaussianBlur(10))
+    bg = Image.blend(bg, Image.new("RGB", bg.size, (255, 244, 224)), 0.10)
+    bg.paste(Image.new("RGB", bg.size, (46, 32, 22)), (0, 0), glow)     # soft shadow around the column
+    fg = img.resize((fw, int(round(H * fw / W))), Image.LANCZOS)
+    y0 = int(round((fg.height - LH) * min(max(focus, 0.0), 1.0))) if fg.height > LH else 0
+    bg.paste(fg.crop((0, y0, fw, y0 + min(LH, fg.height))), ((LW - fw) // 2, 0))
+    return bg
+
+
+def render_clip(clip, path, fps=FPS, scale=1.0, only=None, orient="portrait"):
+    """Render a clip to `path` (or return the PIL frames when path is None). orient: "portrait" 1080x1920 | "landscape" 1920x1080."""
+    land = orient == "landscape"
     n = int(round(clip.dur * fps))
-    w, h = int(W * scale), int(H * scale)
+    ow, oh = (LW, LH) if land else (W, H)
+    w, h = int(ow * scale), int(oh * scale)
     wr = Writer(path, fps, w, h) if path else None
     last, lastkey, out = None, None, []
     for i in range(n):
@@ -39,6 +81,9 @@ def render_clip(clip, path, fps=FPS, scale=1.0, only=None):
             if img.size != (W, H):
                 img = img.resize((W, H))
             last, lastkey = img, ts
+        if land:
+            nat = clip.frame_land(t, ts)
+            img = nat if nat is not None else land_compose(img, clip.land_zoom, clip.land_focus(t))
         if scale != 1.0:
             img = img.resize((w, h), Image.LANCZOS)
         if wr:

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Put the clips from the notebook's dumpling_clips.zip where the episode spec expects them.
     python3 install_clips.py dumpling_clips.zip                 # variant 1 of every clip -> specs/clips/ep01v4/Cxx.mp4
-    python3 install_clips.py dumpling_clips.zip --pick C13=2 C08=2   # use variant 2 for these clips
+    python3 install_clips.py dumpling_clips.zip --pick C13=2 C08=2   # use variant 2 for these clips (both orientations)
+    python3 install_clips.py dumpling_clips.zip --pick C13_land=2    # variant 2 for the landscape clip only
+Portrait clips are installed as Cxx.mp4 and landscape clips as Cxx_land.mp4 (the naming make_episode.py looks for).
 Then re-render:  python3 make_episode.py specs/episode-01-v4.json out/episode-01-v4.mp4 --mobile
 (clips that are missing simply keep the animatic fallback)."""
 import argparse, os, re, shutil, sys, zipfile, tempfile
@@ -16,10 +18,10 @@ zipfile.ZipFile(a.zip).extractall(tmp)
 n = 0
 for root, _, files in os.walk(tmp):
     for f in files:
-        m = re.match(r"^(C\d+)(?:__v(\d+))?\.mp4$", f)
+        m = re.match(r"^(C\d+)(_land)?(?:__v(\d+))?\.mp4$", f)
         if not m:
             continue
-        cid, v = m.group(1), m.group(2) or "1"
-        if v == pick.get(cid, "1"):
+        cid, v = m.group(1) + (m.group(2) or ""), m.group(3) or "1"
+        if v == pick.get(cid, pick.get(m.group(1), "1")):
             shutil.copy(os.path.join(root, f), os.path.join(dest, cid + ".mp4")); n += 1
 print(n, "clips installed in", dest)

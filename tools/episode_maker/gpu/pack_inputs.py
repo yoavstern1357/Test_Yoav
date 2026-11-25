@@ -5,6 +5,8 @@
     python3 pack_inputs.py clips.json --out my_input --max-side 1920
 
 Image paths in clips.json are resolved relative to clips.json (or absolute) and rewritten to images/<name>.
+Landscape images are packed too: for "start": "x/C01.png" a sibling x/C01_land.png is picked up automatically (or give
+"start": {"portrait": "...", "landscape": "..."}); the packed clips.json then has {"portrait": ..., "landscape": ...}.
 Upload the ZIP (or the folder) as a Kaggle Dataset / to Colab / to Google Drive.  See README.md.
 """
 import argparse, hashlib, json, os, shutil, sys, zipfile
@@ -23,9 +25,20 @@ def main():
     src_dir = os.path.dirname(os.path.abspath(a.clips_json))
     data = json.load(open(a.clips_json, encoding="utf-8"))
     clips = data["clips"] if isinstance(data, dict) else data
+    def portrait_of(v):
+        return v.get("portrait") or v.get("landscape") if isinstance(v, dict) else v
+
+    def land_of(v):
+        """Landscape image of a start/end value: dict entry, or the sibling <name>_land<ext> if it exists."""
+        if isinstance(v, dict):
+            return v.get("landscape")
+        stem, ext = os.path.splitext(v)
+        cand = stem + "_land" + ext
+        return cand if os.path.exists(cand if os.path.isabs(cand) else os.path.normpath(os.path.join(src_dir, cand))) else None
+
     if a.skip_missing:
         def have(c):
-            return all(os.path.exists(c[k] if os.path.isabs(c[k]) else os.path.normpath(os.path.join(src_dir, c[k]))) for k in ("start", "end") if c.get(k))
+            return all(os.path.exists(portrait_of(c[k]) if os.path.isabs(portrait_of(c[k])) else os.path.normpath(os.path.join(src_dir, portrait_of(c[k])))) for k in ("start", "end") if c.get(k))
         skipped = [c["id"] for c in clips if not have(c)]
         clips = [c for c in clips if have(c)]
         if isinstance(data, dict):
@@ -54,10 +67,15 @@ def main():
         names[p] = "images/" + name
         return names[p]
 
+    n_land = 0
     for c in clips:
         for k in ("start", "end"):
             if c.get(k):
-                c[k] = put(c[k])
+                por, lnd = portrait_of(c[k]), land_of(c[k])
+                c[k] = put(por)
+                if lnd:
+                    c[k] = {"portrait": c[k], "landscape": put(lnd)}
+                    n_land += 1
     json.dump(data, open(os.path.join(out, "clips.json"), "w", encoding="utf-8"), indent=2)
     zp = out + ".zip"
     with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED) as z:
@@ -65,7 +83,7 @@ def main():
             for f in files:
                 fp = os.path.join(root, f)
                 z.write(fp, os.path.relpath(fp, out))
-    print(f"{len(clips)} clips, {len(names)} images")
+    print(f"{len(clips)} clips, {len(names)} images ({n_land} landscape start/end images; clips without one use a center crop of the portrait still)")
     print("folder:", out)
     print("zip   :", zp, f"({os.path.getsize(zp) / 1e6:.1f} MB)")
 

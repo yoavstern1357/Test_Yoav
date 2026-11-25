@@ -122,9 +122,16 @@ def draw(frame, c, dt, Wd, Hd):
     sp = card_sprite(c)
     if k == "lower" and c.get("flip_t") is not None and dt >= c["flip_t"] + 0.12:
         sp = cached(("lt", c.get("text"), c.get("text2b")), lambda: _lower_third(c.get("text", "UNCLE"), c.get("text2b", "")))
-    sc = Wd / 1080.0
-    x = c.get("x", 0.5) * Wd
-    y = c.get("y", 0.62) * Hd
+    land = Wd > Hd                                  # horizontal 16:9: sprites keep their 1080-reference pixel size relative to the HEIGHT
+    sc = (Hd if land else Wd) / 1080.0
+    if land:
+        # make_episode merges "<key>_land" overrides (x_land, y_land, text_land...) into the card before calling draw().
+        # Defaults: lower-thirds sit left of center; everything stays above the caption zone (lower 25%) and inside the 5% safe margin.
+        x = c.get("x", 0.3 if k == "lower" else 0.5) * Wd
+        y = (c.get("y", 0.62) if "y_land" in c else min(max(c.get("y", 0.62), 0.12), 0.58)) * Hd
+    else:
+        x = c.get("x", 0.5) * Wd
+        y = c.get("y", 0.62) * Hd
     sx = sy = 1.0
     rot = c.get("rot", 0.0)
     alpha = 1.0
@@ -134,7 +141,7 @@ def draw(frame, c, dt, Wd, Hd):
     q = dt / 0.24
     if k == "lower":
         e = out_cubic(seg(dt, 0, 0.35))
-        x = lerp(-0.6 * Wd, c.get("x", 0.5) * Wd, e)
+        x = lerp(-0.6 * Wd, x, e)
         if c.get("flip_t") is not None and abs(dt - c["flip_t"]) < 0.12:
             sy = abs((dt - c["flip_t"]) / 0.12)
         if c.get("flip_t") is not None and 0.12 <= dt - c["flip_t"] < 0.3:

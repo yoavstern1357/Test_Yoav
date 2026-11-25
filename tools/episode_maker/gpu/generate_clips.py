@@ -7,6 +7,10 @@
     python3 generate_clips.py --input ... --out ... --backend wan                    # fallback model
 
 `input` holds clips.json and the images it references (paths relative to clips.json).
+Orientations: every clip is made in BOTH formats by default ("orientations": ["portrait", "landscape"], in "defaults" or per clip).
+Portrait = <id>.mp4 (480x832 -> 720x1280), landscape = <id>_land.mp4 (832x480 -> 1280x720), same seed. The start (and end) image is
+picked per orientation: "start": "images/C01.png" uses images/C01_land.png for the landscape clip when that file exists, or give
+"start": {"portrait": "...", "landscape": "..."}. A missing landscape still falls back to a center crop of the portrait one (with a warning).
 Results: <out>/clips/<id>.mp4 (+ <id>.json), <out>/results.json, <out>/dumpling_clips.zip.
 Safe to stop and start again: finished clips are skipped.  With 2 GPUs (Kaggle T4 x2) the
 work is split over both automatically.  Needs: torch, diffusers, transformers, accelerate,
@@ -16,7 +20,7 @@ import argparse, json, os, sys, time, shutil, subprocess, threading, traceback, 
 
 ROOT_DEFAULTS = dict(
     backend="ltx", width=480, height=832, fps=24, seconds=5.0, fit="cover", bg="#FFF3DC", crf=16,
-    upscale=[720, 1280], variants=1,
+    upscale=[720, 1280], variants=1, orientations=["portrait", "landscape"], crop_focus=[0.5, 0.5],
     style=("soft children's picture-book 2D cartoon, round shapes, bright flat pastel colors, thick brown outlines, "
            "clean stable character design, smooth gentle animation"),
     negative=("photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, "
@@ -41,6 +45,34 @@ def log(*a):
 
 
 # ------------------------------------------------------------------ job list
+ORIENTATIONS = ("portrait", "landscape")
+LAND_SUFFIX = "_land"
+COMPOSITION = {"portrait": "vertical 9:16 composition", "landscape": "wide horizontal 16:9 composition"}
+
+
+def orient_size(w, h, orient):
+    """Portrait = short side first (480x832), landscape = long side first (832x480)."""
+    lo, hi = sorted((int(w), int(h)))
+    return (lo, hi) if orient == "portrait" else (hi, lo)
+
+
+def pick_image(value, orient, input_dir):
+    """Resolve a start/end image for an orientation. value = path | {"portrait": path, "landscape": path}.
+    A plain path means the portrait image; for landscape the sibling <name>_land<ext> is used when it exists.
+    Returns (relative path, exact) where exact=False means the other orientation's image will be center-cropped."""
+    ex = lambda r: bool(r) and os.path.exists(os.path.join(input_dir, r))
+    if isinstance(value, dict):
+        mine, other = value.get(orient), value.get("landscape" if orient == "portrait" else "portrait")
+        if ex(mine):
+            return mine, True
+        return (other, False) if ex(other) else (mine or other, True)
+    if orient == "portrait":
+        return value, True
+    stem, ext = os.path.splitext(value)
+    cand = stem + LAND_SUFFIX + ext
+    return (cand, True) if ex(cand) else (value, False)
+
+
 def load_jobs(input_dir, overrides):
     path = os.path.join(input_dir, "clips.json")
     data = json.load(open(path, encoding="utf-8"))
@@ -67,27 +99,42 @@ def load_jobs(input_dir, overrides):
         j["width"], j["height"] = int(round(j["width"] / m) * m), int(round(j["height"] / m) * m)
         n = max(9, round(float(j["seconds"]) * j["fps"]))
         j["frames"] = b["mod"] * round((n - 1) / b["mod"]) + 1
-        j["start_path"] = os.path.join(input_dir, j["start"])
-        j["end_path"] = os.path.join(input_dir, j["end"]) if j.get("end") else None
-        for p in (j["start_path"], j["end_path"]):
-            if p and not os.path.exists(p):
-                raise FileNotFoundError(f"clip {c['id']}: image not found: {p}")
         style = j.get("style", "")
-        j["full_prompt"] = (j["prompt"].rstrip(". ") + (". " + style if style else "")).strip()
         j["seed"] = int(j.get("seed", 1000 + i))
+        orients = j.get("orientations") or ["portrait"]
+        if isinstance(orients, str):
+            orients = [orients]
+        bad = [o for o in orients if o not in ORIENTATIONS]
+        if bad:
+            raise ValueError(f"clip {c['id']}: unknown orientation {bad} (use portrait / landscape)")
         nv = int(j.get("variants", 1))
-        for v in range(nv):
-            jj = dict(j)
-            jj["id"] = c["id"] if nv == 1 else f"{c['id']}__v{v + 1}"
-            jj["seed"] = j["seed"] + v
-            if jj["id"] in seen:
-                raise ValueError(f"duplicate id {jj['id']}")
-            seen.add(jj["id"])
-            jobs.append(jj)
+        for orient in orients:
+            sp, s_exact = pick_image(c["start"], orient, input_dir)
+            ep, e_exact = pick_image(c["end"], orient, input_dir) if c.get("end") else (None, True)
+            stem = c["id"] + (LAND_SUFFIX if orient == "landscape" else "")
+            base = dict(j)
+            base.update(orientation=orient, start=sp, end=ep, start_path=os.path.join(input_dir, sp),
+                        end_path=os.path.join(input_dir, ep) if ep else None, crop_fallback=not (s_exact and e_exact), stem=stem)
+            base["width"], base["height"] = orient_size(j["width"], j["height"], orient)
+            if j.get("upscale"):
+                base["upscale"] = list(orient_size(*j["upscale"], orient))
+            for p in (base["start_path"], base["end_path"]):
+                if p and not os.path.exists(p):
+                    raise FileNotFoundError(f"clip {c['id']} ({orient}): image not found: {p}")
+            base["full_prompt"] = (j["prompt"].rstrip(". ") + (". " + style if style else "") + ". " + COMPOSITION[orient].capitalize() + ".").strip()
+            for v in range(nv):
+                jj = dict(base)
+                jj["id"] = stem if nv == 1 else f"{stem}__v{v + 1}"
+                jj["base_id"] = c["id"]
+                jj["seed"] = j["seed"] + v                          # same seed in both orientations
+                if jj["id"] in seen:
+                    raise ValueError(f"duplicate id {jj['id']}")
+                seen.add(jj["id"])
+                jobs.append(jj)
     return jobs
 
 
-def prep_image(path, w, h, fit, bg):
+def prep_image(path, w, h, fit, bg, focus=(0.5, 0.5)):
     from PIL import Image
     im = Image.open(path)
     if im.mode in ("RGBA", "LA", "P"):
@@ -101,7 +148,7 @@ def prep_image(path, w, h, fit, bg):
     nw, nh = max(1, round(sw * s)), max(1, round(sh * s))
     im = im.resize((nw, nh), Image.LANCZOS)
     if fit == "cover":
-        l, t = (nw - w) // 2, (nh - h) // 2
+        l, t = round((nw - w) * focus[0]), round((nh - h) * focus[1])
         return im.crop((l, t, l + w, t + h))
     col = tuple(int(bg.lstrip("#")[k:k + 2], 16) for k in (0, 2, 4))
     can = Image.new("RGB", (w, h), col); can.paste(im, ((w - nw) // 2, (h - nh) // 2))
@@ -299,10 +346,11 @@ def run_worker(args, jobs, shard):
                 return
             mp4, meta = out_paths(out, j["id"])
             t0 = time.time()
-            res = dict(id=j["id"], backend=bname, seed=j["seed"], frames=j["frames"], size=[j["width"], j["height"]], steps=j["steps"])
+            res = dict(id=j["id"], orientation=j["orientation"], backend=bname, seed=j["seed"], frames=j["frames"], size=[j["width"], j["height"]], steps=j["steps"])
             try:
-                s_img = prep_image(j["start_path"], j["width"], j["height"], j["fit"], j["bg"])
-                e_img = prep_image(j["end_path"], j["width"], j["height"], j["fit"], j["bg"]) if j["end_path"] else None
+                fc = j.get("crop_focus") or (0.5, 0.5)
+                s_img = prep_image(j["start_path"], j["width"], j["height"], j["fit"], j["bg"], fc)
+                e_img = prep_image(j["end_path"], j["width"], j["height"], j["fit"], j["bg"], fc) if j["end_path"] else None
                 s_img.save(os.path.join(out, "prepped", j["id"] + ".png"))
                 log(f"[{j['id']}] {j['frames']} frames {j['width']}x{j['height']} steps={j['steps']} seed={j['seed']}")
                 try:
@@ -319,7 +367,7 @@ def run_worker(args, jobs, shard):
                     be._free()
                     j2 = dict(j); m = BACKENDS[bname]["res_mult"]
                     j2["width"], j2["height"] = [int(round(v * 0.8 / m) * m) for v in (j["width"], j["height"])]
-                    frames = be.generate(j2, prep_image(j["start_path"], j2["width"], j2["height"], j["fit"], j["bg"]), None)
+                    frames = be.generate(j2, prep_image(j["start_path"], j2["width"], j2["height"], j["fit"], j["bg"], fc), None)
                 write_video(frames, mp4, j["fps"], j.get("upscale"), j["crf"])
                 res.update(status="ok", seconds=round(time.time() - t0, 1))
                 log(f"[{j['id']}] done in {res['seconds']} s -> {mp4}")
@@ -330,7 +378,7 @@ def run_worker(args, jobs, shard):
                     be._free()
                 except Exception:
                     pass
-            json.dump(dict(res, prompt=j["full_prompt"], negative=j["negative"], start=j["start"], end=j.get("end")), open(meta, "w"), indent=1)
+            json.dump(dict(res, prompt=j["full_prompt"], negative=j["negative"], start=j["start"], end=j.get("end"), cropped_from_other_orientation=j.get("crop_fallback", False)), open(meta, "w"), indent=1)
         be.close()
 
 
@@ -372,9 +420,10 @@ def collect_results(out, jobs):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", required=True); ap.add_argument("--out", required=True)
-    ap.add_argument("--only", default=None, help="comma separated clip ids (base id matches all its variants)")
+    ap.add_argument("--only", default=None, help="comma separated clip ids (a base id matches all its variants and both orientations; C01_land = landscape only)")
     ap.add_argument("--force", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--backend", default=None, choices=sorted(BACKENDS)); ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16", "fp32"])
+    ap.add_argument("--limit", type=int, default=None, help="run only the first N jobs (smoke test: one variant, one orientation)")
     ap.add_argument("--steps", type=int, default=None); ap.add_argument("--guidance", type=float, default=None)
     ap.add_argument("--width", type=int, default=None); ap.add_argument("--height", type=int, default=None); ap.add_argument("--seconds", type=float, default=None)
     ap.add_argument("--gpus", default="auto", help="auto | 1 | 2 (number of worker processes, one per GPU)")
@@ -384,7 +433,13 @@ def main():
     jobs = load_jobs(a.input, dict(steps=a.steps, guidance=a.guidance, width=a.width, height=a.height, seconds=a.seconds, backend=a.backend))
     if a.only:
         keep = set(a.only.split(","))
-        jobs = [j for j in jobs if j["id"] in keep or j["id"].split("__v")[0] in keep]
+        jobs = [j for j in jobs if j["id"] in keep or j["id"].split("__v")[0] in keep or j["base_id"] in keep]
+    if a.limit:
+        jobs = jobs[:a.limit]
+    if not a.shard:
+        crops = sorted({j["stem"] for j in jobs if j.get("crop_fallback")})
+        if crops:
+            log(f"WARNING: {len(crops)} clip(s) have no start image for their orientation and use a center crop of the other one: {', '.join(crops)}")
     os.makedirs(a.out, exist_ok=True)
     shutil.copy(os.path.join(a.input, "clips.json"), os.path.join(a.out, "clips.json"))
     done = [j for j in jobs if os.path.exists(out_paths(a.out, j["id"])[0])]
@@ -395,7 +450,8 @@ def main():
             est = {"ltx": 6, "ltx13b": 10, "wan": 30, "mock": 0}[j["backend"]] * (j["steps"] / BACKENDS[j["backend"]]["steps"]) * (j["frames"] / 121) * (j["width"] * j["height"] / (480 * 832))
             tot += 0 if j["id"] in {d["id"] for d in done} else est
             print(f"  {j['id']:<28} {j['backend']:<7} {j['width']}x{j['height']} {j['frames']}f steps={j['steps']} seed={j['seed']} "
-                  f"{'DONE' if j in done else '~%.0f min on a T4 (estimate)' % est}")
+                  f"{'DONE' if j in done else '~%.0f min on a T4 (estimate)' % est}"
+                  f"{'  [center crop of the other orientation]' if j.get('crop_fallback') else ''}")
             print(f"      {j['full_prompt'][:140]}")
         log(f"estimated remaining GPU time: {tot:.0f} min (one T4; halve it with 2 GPUs). Estimates are not measured.")
         return
