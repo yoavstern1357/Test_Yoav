@@ -1,1 +1,1 @@
-{"run_id": "ep01v43-stills-fix-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/ep01v43-stills-fix", "smoke": false, "backend": "klein", "only": "", "max_minutes": 60}
+{"run_id": "ep01v43-clips-B-001", "task": "clips", "input": "tools/episode_maker/gpu/inputs/ep01v43-clips-B", "backend": "ltx", "smoke": false, "only": "", "max_minutes": 300}
