@@ -3,12 +3,14 @@ Writes out/ep01v43/code/Cxx.mp4 (1080x1920) and Cxx_land.mp4 (1920x1080)."""
 import argparse, os, sys, time
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from paper import clips3 as m
+import importlib
+m = None
 from paper.core import W, H, ROOT, Writer
 from paper.clips import LW, LH, land_compose, FPS
 
 
 def registry():
+    global m
     return {n: getattr(m, n)() for n in dir(m) if n.startswith("C") and n[1:3].isdigit() and isinstance(getattr(m, n), type) and getattr(m, n).__module__ == m.__name__}
 
 
@@ -47,11 +49,15 @@ def render(c, path, orient, scale=1.0):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("names", nargs="*")
-    ap.add_argument("--out", default=os.path.join(ROOT, "out", "ep01v43", "code"))
+    ap.add_argument("--module", default="clips3")
+    ap.add_argument("--out", default=None)
     ap.add_argument("--sheet"); ap.add_argument("--scale", type=float, default=1.0); ap.add_argument("--cols", type=int, default=8)
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--landscape", action="store_true"); g.add_argument("--both", action="store_true")
     a = ap.parse_args()
+    global m
+    m = importlib.import_module("paper." + a.module)
+    a.out = a.out or os.path.join(ROOT, "out", "ep01v43" if a.module == "clips3" else "ep01v44", "code")
     orients = ["portrait", "landscape"] if a.both else ["landscape"] if a.landscape else ["portrait"]
     reg = registry()
     os.makedirs(a.out, exist_ok=True)

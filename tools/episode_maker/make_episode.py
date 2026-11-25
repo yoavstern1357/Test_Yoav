@@ -620,7 +620,7 @@ def importance_map(img):
     return np.clip(imp / (np.percentile(imp, 97) + 1e-6), 0, 1.5), skin
 
 
-def safe_caption_y(frame, lay, land):
+def safe_caption_y(frame, lay, land, zone=None):
     """Vertical centre (fraction of the height) of the emptiest band for this caption, near the usual spot; faces, hands and dumplings are
     what the importance map marks, so the caption lands beside them (never over them when an empty band exists)."""
     imp, skin = importance_map(frame)
@@ -636,6 +636,10 @@ def safe_caption_y(frame, lay, land):
     default = 0.85 if land else 0.80
     lo = 0.10 if land else 0.12
     hi = 0.93 if land else 0.88
+    if zone == "top":                       # script zone hint: TOP = upper band, BOTTOM = lower band
+        lo, hi = (0.10, 0.30) if land else (0.12, 0.36)
+    elif zone == "bottom":
+        lo, hi = (0.66, 0.93) if land else (0.58, 0.88)
     best, bs = default, 1e9
     for cy in np.arange(lo, hi + 1e-6, 0.01):
         y0 = int((cy - lh_frac / 2 * (1.0)) * h); y1 = y0 + lh_px
@@ -1443,7 +1447,7 @@ class Renderer:
                 if manual is None and self.spec.get("caption_safe") and s.get("caption_auto", True):
                     ck = (s.get("id"), s.get("start"), ln.get("text"), ln.get("start"))
                     if ck not in self._capcy:
-                        self._capcy[ck] = safe_caption_y(frame, lay, self.land)
+                        self._capcy[ck] = safe_caption_y(frame, lay, self.land, s.get("caption_zone"))
                     cy = self._capcy[ck] * self.H
                 elif self.land:
                     cy = self.H * (manual if manual is not None else self.spec.get("caption_y_land", 0.84))

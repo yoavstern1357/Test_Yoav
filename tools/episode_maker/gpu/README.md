@@ -21,6 +21,7 @@ Files in this folder:
 | `kaggle_run.py`, `jobs/run.json` | Automated Kaggle run (GitHub Actions). `task` selects clips, images, tts or music (sections 10-12). |
 
 ## 1. Which model, and why
+**Update 2026-11-25 (measured on Kaggle T4, section 13): the table below is the pre-measurement research. The measured winner is `ltx98d` (LTX 0.9.8 13B distilled, nf4, 8 steps); the speed estimates here are superseded.**
 Researched 2026-11-25. Nothing could be run on a GPU while writing this (the build container has none and cannot reach huggingface.co),
 so speeds below are **estimates from public numbers, not measurements**. API usage was checked against the diffusers 0.43 source code.
 Run the 3-minute smoke test (section 3, step 8) before trusting a long batch.
@@ -219,3 +220,13 @@ Goal: an ORIGINAL anime-opening song sung in Japanese (Asian punk, 170-190 BPM) 
 
 Input: `inputs/opening-song/music.json` (`tracks[]`: `id`, `duration` seconds, `prompt` = style tags, `lyrics` with `[verse]` `[chorus]` `[inst]` tags, `seeds` list; defaults: `infer_step`, `guidance_scale`, `format`). One result per track and seed: `audio/<id>__s<seed>.flac`, plus `results.json` (peak, RMS, clipping, tempo estimate, model commit). Check without a GPU: `python3 generate_music.py --input inputs/opening-song --out /tmp/x --dry-run` (`--backend mock` runs the batch logic on a CPU).
 Job: `{"run_id": "opening-song-001", "task": "music", "input": "tools/episode_maker/gpu/inputs/opening-song", "backend": "acestep", "smoke": false, "only": "", "max_minutes": 120}`; `only` takes track ids or id prefixes (`intro_`), `smoke: true` renders one job. The installer keeps Kaggle's preinstalled torch (pins file, ACE-Step is installed `--no-deps` from GitHub). Rebuild the notebook after editing the generator: `python3 build_music_notebook.py`.
+
+## 13. Motion options (v4.4): LTX 0.9.8 distilled, keyframes, 12 fps + RIFE, CPU post-processing
+Measured comparison and recommendation: `production/v4/motion-tech.md` (read its "HOW TO USE" first). Short version:
+- `"backend": "ltx98d"`: LTX-Video 0.9.8 13B distilled, transformer quantized to 4 bit (bitsandbytes nf4, about 7 GB), 8 steps, no CFG. Measured on a Kaggle T4: **about 71 s for a 4 s 480x832 clip** (the 0.9.5 2B at 30 steps needs 105 s) and it moves and acts much better. Needs `bitsandbytes` (the notebook installs it).
+- Clip fields: `keyframes` (list of `{"image": ..., "t": seconds|"end", "strength": 0-1}`; `start`/`end` still work), `motion` (`low|medium|high` or 0-1, sets `cond_noise` and adds a "lively motion" phrase), `gen_fps` (generate at 12 and interpolate), `interp` / `post` (`{"rife": 2, "esrgan": true}`: CPU post-processing in a background thread, `postprocess.py`), `timesteps` (custom distilled schedule).
+- `"backend": "auto"` in the job file means: use the `backend` written on each clip in `clips.json` (one job can compare several models; with several backends and 2 GPUs each GPU takes whole backends).
+- `postprocess.py` can also be run by hand on any clip: `python3 postprocess.py in.mp4 out.mp4 --fps-in 12 --fps-out 24 --rife 2 --esrgan --size 720x1280` (RIFE x2 measured at 0.3 s per output frame at 480x832 on a 4-core CPU; Real-ESRGAN anime model about 8 s per 480x832 frame on a CPU but a fraction of a second on the GPU, which is used when present).
+- `wan` / `fastwan`: Wan2.2 TI2V-5B and its 3-step FastWan distillation. Tested, not recommended on the T4 (out of memory at 480x832, about 300 s per clip even at 384x672, the character drifts from the still). `end` for these uses an experimental last-frame trick (`wan_flf_class`, validated only on tiny random weights).
+- `build_motion_compare.py` builds the side-by-side video from result folders; `make_motion_compare_input.py` / `make_motion_compare2_input.py` rebuild the test inputs.
+

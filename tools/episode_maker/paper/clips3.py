@@ -346,6 +346,7 @@ class C21(Native):
 class C22(Native):
     """Legend, part 3: the small bun on a plate, a paper crowd gathers, the scroll rolls closed onto the stall (3 s)."""
     name, dur, step = "C22", 3.0, None
+    STALL = "C23"
 
     def scene(self, t):
         ts = step_t(t + 20.0, 8)
@@ -371,7 +372,7 @@ class C22(Native):
         close = smooth(seg(t, 1.6, 2.9))
         if close <= 0:
             return world
-        base = stall_base(land, 0.0, 1.0, 1.0, 1.0, name="C23")
+        base = stall_base(land, 0.0, 1.0, 1.0, 1.0, name=self.STALL)
         return scroll_open(base, world, 1.0 - close, vertical=not land)
 
 
