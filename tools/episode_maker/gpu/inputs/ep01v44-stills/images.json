@@ -1,0 +1,1195 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 1,
+  "ref_max": 704,
+  "orientations": [
+   "portrait",
+   "landscape"
+  ]
+ },
+ "images": [
+  {
+   "id": "C01",
+   "seed": 5007,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    }
+   ],
+   "prompt": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Extreme close-up, dead center: the Uncle's face, eyes wide and haunted, a blue ice pack strapped to his cheek, a bead of sweat on his bald head, tongue stiffly out, thin mustache drooping. Dark vignette, a thunderclap flash behind him. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C01_end",
+   "seed": 5007,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C01",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    }
+   ],
+   "prompt": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Medium shot pulled back one step: the Uncle on a small wooden stool in a stiff heroic pose, arms crossed, chin lifted in wounded dignity, ice pack on cheek, one wisp of steam from his left ear. Old Nanxiang lane softly blurred behind. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C02",
+   "seed": 5014,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Medium shot, old Nanxiang lane (canal and stone bridge softly blurred). The Boy steps in from the left holding a chopstick like a microphone, confident, a cheeky half-smile aimed at the lens. Behind him, out of focus on the right, the Uncle on his stool with the ice pack. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C02_end",
+   "seed": 5014,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C02",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Boy close to the lens, chopstick-mic raised, one eyebrow lifted in a 'so, mystery' look; behind him, blurred, the Uncle's limp hand just finishing a feeble wave, ice pack sliding off his cheek. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C03",
+   "seed": 5021,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Two-shot: the Boy in the foreground, flat-faced, not looking back; the Uncle behind him on the stool, ice pack sagging, jabbing one indignant finger upward. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C03_end",
+   "seed": 5021,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C03",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Same two-shot caught in a VHS-style rewind glitch: scan lines, the Uncle's steam streaming backward into his ears, the ice pack flying off his face back toward him, the Boy's finger pointing back like a remote control. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C06",
+   "seed": 5028,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Interior of a Shanghai metro car gliding over rooftops in golden morning light. The Boy sits with Dad's journal open on his knees, finger under the handwriting. Beside him the Uncle stands gripping a strap in a grand heroic pose, eyes closed, chin high, mustache fluttering as if in a sea breeze. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C06_end",
+   "seed": 5028,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C06",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The doors have just slid open at a small old station: the Uncle's eyes snap wide, pupils shrunk to dots, nose twitching toward the platform; the Boy looks up from the journal, calm, one eyebrow raised. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C07",
+   "seed": 5035,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Same open train doors: the Uncle frozen, nose twitching, eyes as dots; the Boy seated at the left, deadpan. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C07_end",
+   "seed": 5035,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C07",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The open doorway empty, a cartoon dust-cloud silhouette of the Uncle hanging in the air and speed lines pointing out onto the platform; the Boy alone, hat ribbon whipped sideways, eyes sliding to the lens; the camel stepping calmly through the doors (camel cameo). Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C08",
+   "seed": 5042,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Wide: an old canal lane in warm morning light, stone bridge at left. The Boy walks backward toward the lens, chopstick-mic in hand. Far behind him the Uncle zigzags over the bridge, his nose yanked forward by a visible ribbon of steamy scent, feet barely touching the ground. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C08_end",
+   "seed": 5042,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C08",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Boy mid-step, glancing at the lens; behind him a dust cloud where the Uncle just rounded a corner; ink-bloom title in the sky: #01 XIAOLONGBAO and NANXIANG · SHANGHAI, CHINA. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C09",
+   "seed": 5049,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Wide low angle: two small stout brick pagodas side by side (about 11 m, no hero angle), wind chimes in the foreground, soft leaves; the Boy small in the foreground pointing up. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C09_end",
+   "seed": 5049,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C09",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Same view after a slow push-in, the pagodas glowing in warm light; the Boy lowers his hand, softly awed; a sparrow perched on the left pagoda. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C10",
+   "seed": 5056,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Medium: the Uncle skids to a stop in front of the pagodas, panting, scent ribbon still tugging at his nose; he stares up, mouth open. The Boy stands beside him. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C10_end",
+   "seed": 5056,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C10",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle in a trembling salute, hand to brow, anime waterfall tears, chest out, mustache quivering; the Boy beside him, deadpan, a flat sweat drop above his head. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C11",
+   "seed": 5063,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). A tiny generic old stall (no sign text), stacked bamboo steamers breathing steam. The Uncle slides in crouched at the right edge, face in the steam, eyes glowing like headlights. The Boy at left, arms crossed. Grandma at the back kneading, not looking up. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C11_end",
+   "seed": 5063,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C11",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle's face wrapped in glowing steam, golden shonen-style aura lines radiating out, star sparkles in his eyes, mustache flared; the Boy flat-faced with a sweat drop; Grandma still kneading, one eyebrow lifted a millimeter. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C12",
+   "seed": 5070,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Medium at the counter: Grandma's floury hands and calm face; the Boy up on tiptoe, chin near the counter, eager; steam between them. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C12_end",
+   "seed": 5070,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C12",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Close on Grandma's hands holding up one perfect pleated dumpling; the Boy's eyes huge, mouth open; Grandma's eyes still on her work, one corner of her mouth up a hair. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C13",
+   "seed": 5077,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Macro on a wooden board: a block of amber pork-skin jelly, Grandma's cleaver raised above it, the Uncle's blurred face just entering at the edge of frame. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C13_end",
+   "seed": 5077,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C13",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    }
+   ],
+   "prompt": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: A neat heap of tiny glistening jelly cubes tumbling into a bowl of pink minced pork; the cleaver stuck upright, quivering; the Uncle's face now fully in frame, head tilted, eyes round. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C14",
+   "seed": 5084,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Macro: a bamboo steamer lid just lifting, steam parting; one dumpling with skin glowing translucent, jelly cubes visible inside. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C14_end",
+   "seed": 5084,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C14",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Extreme macro: golden soup pooling inside the see-through skin, one slow ripple crossing it, tiny sparkles; the Boy's eyes huge in the reflection. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C15",
+   "seed": 5091,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Medium at the counter: the Boy still dazzled, the Uncle beside him calm and professorial, one finger raised, steam-light gleaming on his bald head; Grandma folding in the background. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C15_end",
+   "seed": 5091,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C15",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Boy in profile in a flat anime stare, one huge sweat drop on his forehead; the Uncle serene and smug, finger still raised; Grandma at the back giving one tiny nod. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C16",
+   "seed": 5098,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Close on Grandma's hands holding a dough circle, the Boy's chin just above the counter, the Uncle at the edge of frame with his hands up, ready to count. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C16_end",
+   "seed": 5098,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C16",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Grandma lifts a finished dumpling with a twisted top knot; behind it the Uncle holds both hands up, all fingers spread, face crumpled in betrayal; the Boy deadpan holds out his own hands. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C17",
+   "seed": 5105,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). The Uncle at the counter in a determined crouch, towel tied round his forehead, sleeves rolled, a wobbly dough circle in his hands, tongue between his lips; behind him a dramatic sunburst of speed lines. Boy and Grandma at the sides. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C17_end",
+   "seed": 5105,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C17",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle holds up his 'dumpling' like a trophy: a lumpy crumpled pouch with a tail, flour on his nose, beaming; Grandma flat-faced; the Boy dead-eyed. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C18",
+   "seed": 5112,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Grandma sets a basket of six steaming dumplings on the counter with a thud, steam bursting; the Uncle's chopsticks poised, eyes narrowed in a duelist's stare, mustache bristling; the Boy in the foreground turned to the lens. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C18_end",
+   "seed": 5112,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C18",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle lifts one glowing dumpling high like a sword, aura roaring, chest out in a grand pose, mouth opening wide; the Boy in the foreground still facing the lens, mid-sentence, not turning around. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C19",
+   "seed": 5119,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Extreme close-up: the dumpling disappearing between the Uncle's lips, his cheeks rounding, eyes wide. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C19_end",
+   "seed": 5119,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C19",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Wide: the Uncle rocketing upward out of the top of frame, twin jets of steam from both ears; below, a dust shape where he stood; the Boy facing the lens, hat ribbon blown flat; Grandma unmoved. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C20",
+   "seed": 5126,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). A wooden water barrel by the stall: only the Uncle's sandals and legs stick out of it, kicking; steam hisses off the water. Grandma's arm extends sideways holding a blue ice pack, her eyes never leaving her dough; the Boy watches. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C20_end",
+   "seed": 5126,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C20",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle sits up in the barrel, water to his chest, ice pack pressed to his cheek, tongue out, humbled eyes, one wisp of steam from his ear; Grandma's hand already back at folding. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C21",
+   "seed": 5133,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Macro: Grandma's chopsticks pinching a dumpling by its twisted top knot, a porcelain spoon waiting below; soft steam; behind them, blurred, the Uncle's wet face hovering in the barrel, eyes locked on the dumpling. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C21_end",
+   "seed": 5133,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C21",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    }
+   ],
+   "prompt": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The dumpling resting on the spoon, sagging softly; steam rising; Grandma calm in soft focus behind; the Uncle's wet eyes still locked on it, dripping. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C22",
+   "seed": 5140,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Medium close: the Uncle, out of the barrel, holds the spoon with both hands, arms shaking like an earthquake, mustache quivering; the Boy's finger steadying his wrist; Grandma's chopstick approaching the dumpling. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C22_end",
+   "seed": 5140,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C22",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Macro: a tiny hole in the skin, a thread of steam curling out, a drop of golden soup glinting; the Uncle's two cross-eyed eyes staring at it from behind. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C23",
+   "seed": 5147,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Close: the Uncle with the spoon at his lips, eyes squeezed shut, brows knotted; the Boy anxious in the foreground; Grandma's hand sliding a small dish of black vinegar and ginger slivers into frame. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C23_end",
+   "seed": 5147,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C23",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle's face melted in bliss, eyes closed, a gentle smile; golden light and drifting petals around him, feet lifting a few centimeters off the stool, a soft halo; the Boy watching, hiding a smile. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C24",
+   "seed": 5154,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). The Uncle levitating in golden light, eyes closed, serene; the Boy at his side looking up. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C24_end",
+   "seed": 5154,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C24",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle settled back on the stool, eyes slowly open, tender, whispering to the empty spoon, one happy tear; the Boy's face soft and a little surprised. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C25",
+   "seed": 5161,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). The Uncle on the stool, glowing; one eye pops open and darts to the basket; Grandma deadpan behind the counter; the Boy beside him. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C25_end",
+   "seed": 5161,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C25",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle erupting into a sparkle pose, eyes as stars reflecting five dumplings, one tear of joy; Grandma flat; the Boy's hand over his face, smiling behind it. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C26",
+   "seed": 5168,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). The stall in warm late-morning light: the Boy sets Dad's journal on the counter and turns to Grandma, curious; the Uncle in the background chewing, cheeks full. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C26_end",
+   "seed": 5168,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C26",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: A giant paper scroll unrolled across the whole screen, edges rolling past, the frame turning sepia and vermilion ink-wash with drifting petals; the Uncle's frozen full-cheeked face visible in one corner. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C30",
+   "seed": 5175,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Back at the stall: the scroll rolled up on the counter; the Uncle standing on a stool in the exact hero pose, napkin tied as a cape, spoon raised like a sword, chin high; the Boy beside him with arms crossed. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C30_end",
+   "seed": 5175,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C30",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle's cape fluttering in the fan breeze, chin even higher; the Boy with a dry sideways smile; Grandma at the back folding, not looking up. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C31",
+   "seed": 5182,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Close-up of the Boy facing the lens; behind him, softly blurred, the Uncle still in cape pose. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C31_end",
+   "seed": 5182,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C31",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Boy's smile held after an 8-frame look-to-lens; behind him the napkin cape lies on the floor and the Uncle, unaware, still holds the spoon sword. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C32",
+   "seed": 5189,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Grandma mid-fold across the counter, looking at the Boy for the first time since the legend, flour on her cheek; steam between them; the Uncle in the background re-draping his napkin cape. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C32_end",
+   "seed": 5189,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C32",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Held close-up of Grandma's eyes with a band of anime shadow across them, a gentle gust lifting her headscarf; the Boy's hat ribbon fluttering, his eyes wide; warm light, soft piano. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C33",
+   "seed": 5196,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Sepia, warm dusk: Dad's silhouette from behind in the conical hat, seated on the same stool, lantern light, a spoon held above a steaming dumpling. Never his face. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C33_end",
+   "seed": 5196,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C33",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The same silhouette, the spoon lowered to the dumpling, steam rising, shoulders relaxed, the lantern glow softer. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C34",
+   "seed": 5203,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). The Boy and the Uncle side by side at the counter; the Uncle holds a spoon with a cooled dumpling, eyes fixed on it, mustache twitching with hunger. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C34_end",
+   "seed": 5203,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C34",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle placing the spoon in the Boy's hand; the Boy's small smile; soft warm light. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C35",
+   "seed": 5210,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Grandma leaning over the counter, pointing far to the south, smiling a little secret smile; the Boy and the Uncle in the foreground looking where she points. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C35_end",
+   "seed": 5210,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C35",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle in a full 'final form' power pose on a steamer crate, huge golden aura, the ground cracking, birds fleeing the pagodas, fist raised, mouth wide; he is already wearing a bulging travel bundle with a steamer strapped on; the Boy in the foreground, flat, looking to the lens. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C36",
+   "seed": 5217,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Soft close-up of the Boy, warm light, the stall blurred behind him, a small smile. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C36_end",
+   "seed": 5217,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C36",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Boy's eyes meet the lens; a tender smile; the hat ribbon stirs. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C37",
+   "seed": 5224,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). STING. The Boy in the foreground facing the lens; behind him the Uncle on the stool with his tongue in a bucket of ice giving a thumbs up; beside him the camel (cameo 2 of 2) staring into the lens. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C37_end",
+   "seed": 5224,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "@C37",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/both_eating.jpg",
+     "role": "the Uncle (the big fat bald man with the mustache): face, body shape and clothes to keep exactly; the boy beside him is the Boy"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag). the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Same frame; a puff of steam leaving the Uncle's ear; the camel's eyes closed mid-blink; cut to black on the next frame. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  }
+ ]
+}

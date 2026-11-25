@@ -13,3 +13,4 @@
 | opening-song-002 | music (ACE-Step v1 3.5B, 8 tracks x 2 seeds, 60 s + 16 s) | running (est. 35) | 2026-11-25 |
 | motion-compare-001 | measured: 2 GPUs x about 35 min (16 clips, 4 failed: Wan base worker killed by CPU RAM) | about 70 | 2026-11-25 |
 | motion-compare-002 | clips (LTX 0.9.8d tuning, 8 clips) | planned about 25 | 2026-11-25 |
+| ep01v44-voices-001 | tts (qwen3, 50 lines x 2 takes) | planned about 25 | 2026-11-25 |
