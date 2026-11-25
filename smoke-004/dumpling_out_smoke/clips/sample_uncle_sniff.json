@@ -1,0 +1,17 @@
+{
+ "id": "sample_uncle_sniff",
+ "backend": "ltx",
+ "seed": 11,
+ "frames": 49,
+ "size": [
+  352,
+  608
+ ],
+ "steps": 8,
+ "status": "ok",
+ "seconds": 56.0,
+ "prompt": "A big cheerful bald uncle with a thin mustache in a white kimono with a wide orange belt stands in a sunny old market street. He lifts his head, sniffs the air happily, then raises his chopsticks with a big laughing smile. Gentle natural body motion, the camera stays still. soft children's picture-book 2D cartoon, round shapes, bright flat pastel colors, thick brown outlines, clean stable character design, smooth gentle animation",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/uncle-094359.png",
+ "end": null
+}
