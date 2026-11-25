@@ -1,0 +1,112 @@
+{
+ "defaults": {
+  "orientations": [
+   "portrait"
+  ],
+  "seconds": 4,
+  "fps": 24,
+  "width": 480,
+  "height": 832,
+  "upscale": null,
+  "style": "soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "crf": 14
+ },
+ "clips": [
+  {
+   "id": "uncle_fixcam_med",
+   "backend": "ltx98d",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "medium"
+  },
+  {
+   "id": "uncle_fixcam_high",
+   "backend": "ltx98d",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "high"
+  },
+  {
+   "id": "chase_fixcam_med",
+   "backend": "ltx98d",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "medium"
+  },
+  {
+   "id": "gag_kf_end28",
+   "backend": "ltx98d",
+   "prompt": "the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae. After the jump he keeps cheering and wiggling in the air, ears still puffing steam. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "keyframes": [
+    {
+     "image": "images/gag_a.jpg",
+     "t": 0
+    },
+    {
+     "image": "images/gag_b.jpg",
+     "t": 2.8
+    }
+   ],
+   "motion": "high"
+  },
+  {
+   "id": "uncle_12fps_rife",
+   "backend": "ltx98d",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "medium",
+   "gen_fps": 12,
+   "post": {
+    "rife": 2
+   }
+  },
+  {
+   "id": "chase_12fps_esrgan_rife",
+   "backend": "ltx98d",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "medium",
+   "gen_fps": 12,
+   "post": {
+    "esrgan": true,
+    "rife": 2
+   },
+   "upscale": [
+    720,
+    1280
+   ]
+  },
+  {
+   "id": "uncle_4step",
+   "backend": "ltx98d",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "medium",
+   "timesteps": [
+    1000,
+    975,
+    725,
+    0.03
+   ],
+   "steps": 4
+  },
+  {
+   "id": "chase_576",
+   "backend": "ltx98d",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom.",
+   "seed": 4242,
+   "motion": "medium",
+   "width": 576,
+   "height": 1024
+  }
+ ]
+}

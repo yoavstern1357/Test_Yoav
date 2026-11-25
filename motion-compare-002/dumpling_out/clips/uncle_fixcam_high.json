@@ -1,0 +1,27 @@
+{
+ "id": "uncle_fixcam_high",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 4242,
+ "frames": 97,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/uncle.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 24.0,
+ "status": "ok",
+ "seconds": 207.3,
+ "gpu_seconds": 207.3,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/uncle.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

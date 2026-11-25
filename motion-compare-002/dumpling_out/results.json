@@ -1,0 +1,222 @@
+[
+ {
+  "id": "uncle_fixcam_med",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/uncle.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 24.0,
+  "status": "ok",
+  "seconds": 215.1,
+  "gpu_seconds": 215.1,
+  "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/uncle.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "uncle_fixcam_high",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/uncle.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 24.0,
+  "status": "ok",
+  "seconds": 207.3,
+  "gpu_seconds": 207.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/uncle.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "chase_fixcam_med",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/chase.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 24.0,
+  "status": "ok",
+  "seconds": 85.5,
+  "gpu_seconds": 85.5,
+  "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/chase.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "gag_kf_end28",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/gag_a.jpg",
+    0
+   ],
+   [
+    "images/gag_b.jpg",
+    64
+   ]
+  ],
+  "gen_fps": 24.0,
+  "status": "ok",
+  "seconds": 85.7,
+  "gpu_seconds": 85.7,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae. After the jump he keeps cheering and wiggling in the air, ears still puffing steam. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/gag_a.jpg",
+  "end": "images/gag_b.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "uncle_12fps_rife",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/uncle.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 45.4,
+  "gpu_seconds": 45.4,
+  "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/uncle.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "chase_12fps_esrgan_rife",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/chase.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 41.8,
+  "gpu_seconds": 41.8,
+  "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/chase.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "uncle_4step",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 97,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 4,
+  "keyframes": [
+   [
+    "images/uncle.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 24.0,
+  "status": "ok",
+  "seconds": 46.6,
+  "gpu_seconds": 46.6,
+  "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/uncle.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "chase_576",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 4242,
+  "frames": 97,
+  "size": [
+   576,
+   1024
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/chase.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 24.0,
+  "status": "ok",
+  "seconds": 135.2,
+  "gpu_seconds": 135.2,
+  "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "start": "images/chase.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ }
+]

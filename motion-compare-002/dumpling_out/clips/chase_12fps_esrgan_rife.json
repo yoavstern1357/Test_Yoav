@@ -1,0 +1,27 @@
+{
+ "id": "chase_12fps_esrgan_rife",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 4242,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/chase.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 41.8,
+ "gpu_seconds": 41.8,
+ "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up. The camera stays completely still, fixed framing, no zoom. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/chase.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}
