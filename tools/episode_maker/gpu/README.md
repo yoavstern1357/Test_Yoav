@@ -18,7 +18,7 @@ Files in this folder:
 | `sample/clips.json` | Three test clips using our existing art (`specs/puppets/uncle.png`, `boy.png`, `grandma.png`). |
 | `QUICKSTART-he.md` | Short Hebrew guide. |
 | `generate_images.py`, `dumpling_images.ipynb`, `build_images_notebook.py`, `nb_common.py` | The "stills" task (section 10): reference-guided images with an open model, replaces Canva image generation. |
-| `kaggle_run.py`, `jobs/run.json` | Automated Kaggle run (GitHub Actions). `task` selects clips or images (section 10). |
+| `kaggle_run.py`, `jobs/run.json` | Automated Kaggle run (GitHub Actions). `task` selects clips, images, tts or music (sections 10-12). |
 
 ## 1. Which model, and why
 Researched 2026-11-25. Nothing could be run on a GPU while writing this (the build container has none and cannot reach huggingface.co),
@@ -206,3 +206,16 @@ Not tested: listening quality (nobody has listened yet).
 Also available, not yet run: `qwen3custom` (Qwen3-TTS CustomVoice, 9 built-in speakers, `qwen_speaker`), `turbo`.
 `backend` in the job file may list several engines separated by commas; they run one after the other and write `dumpling_out/<engine>/audio`. The install step keeps Kaggle's preinstalled torch/torchvision/torchaudio (pins file + `--no-deps`; the first Chatterbox run failed because `pip install chatterbox-tts` replaced torch). Qwen3-TTS needs `transformers==4.57.3`, Chatterbox `5.2.0`: the installer switches between them per engine. Pitch check: Qwen3 gives clearly different characters (boy about 320 Hz, uncle 115-160 Hz, narrator 87 Hz); the Chatterbox/Orpheus boy is an adult male voice (about 100-117 Hz) because its reference/built-in voice is adult. Kaggle allows 2 concurrent GPU sessions, so a run can queue for an hour or more.
 
+
+## 12. Music: the opening song (task `music`)
+Goal: an ORIGINAL anime-opening song sung in Japanese (Asian punk, 170-190 BPM) for the series intro; lyrics and brief in `production/v4/opening-song.md`.
+
+| Model | License | Japanese vocals | Verdict |
+|---|---|---|---|
+| **ACE-Step v1 3.5B** (`ACE-Step/ACE-Step-v1-3.5B`, github `ace-step/ACE-Step`) | **Apache-2.0**, safetensors | Yes (one of its top-10 languages; lyrics are tokenized with cutlet/fugashi) | **Used** (`backend: acestep`). 8 GB VRAM is enough |
+| ACE-Step 1.5 (`ACE-Step/ACE-Step-1.5`) | MIT (code) | Yes (50+ languages) | Better quality, but needs `uv`, Python 3.11-3.12 and its own handler API: not implemented, try later |
+| YuE (`m-a-p/YuE-*`) | Apache-2.0 | Yes (via a Japanese-capable stage-1 model) | Needs about 24 GB VRAM for a full song (does not fit a T4), not implemented |
+| DiffRhythm, SongBloom | not verified here | | Not used |
+
+Input: `inputs/opening-song/music.json` (`tracks[]`: `id`, `duration` seconds, `prompt` = style tags, `lyrics` with `[verse]` `[chorus]` `[inst]` tags, `seeds` list; defaults: `infer_step`, `guidance_scale`, `format`). One result per track and seed: `audio/<id>__s<seed>.flac`, plus `results.json` (peak, RMS, clipping, tempo estimate, model commit). Check without a GPU: `python3 generate_music.py --input inputs/opening-song --out /tmp/x --dry-run` (`--backend mock` runs the batch logic on a CPU).
+Job: `{"run_id": "opening-song-001", "task": "music", "input": "tools/episode_maker/gpu/inputs/opening-song", "backend": "acestep", "smoke": false, "only": "", "max_minutes": 120}`; `only` takes track ids or id prefixes (`intro_`), `smoke: true` renders one job. The installer keeps Kaggle's preinstalled torch (pins file, ACE-Step is installed `--no-deps` from GitHub). Rebuild the notebook after editing the generator: `python3 build_music_notebook.py`.
