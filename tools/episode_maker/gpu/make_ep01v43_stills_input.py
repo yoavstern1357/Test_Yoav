@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds inputs/ep01v43-stills/images.json: every Episode 1 (v4.3) image-to-video start still (+ C14 end still, title plate,
 Grandma sheet) in the approved style S1 "soft watercolor anime", both orientations. Run: python3 make_ep01v43_stills_input.py"""
-import json, os
+import json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "inputs", "ep01v43-stills")
@@ -95,6 +95,39 @@ add("C29", f"{BOY} stands in the foreground looking at the viewer. Behind him {U
     "Funny, warm, soft evening light.", CHARS)
 add("C06_plate", "Quiet watercolor plate of an old canal town at dawn: a stone arch bridge, willows, low brick houses with grey tile roofs, a few small wooden boats, mist on the water, "
     "soft rose and gold sky. Wide, calm, a lot of empty sky at the top for a title. No people.", NOCHAR, v=2)
+
+
+# ---- fix pass (python3 make_ep01v43_stills_input.py fix): re-roll the stills where the first pass had the wrong cast / a hat on the Uncle / one pagoda
+if len(sys.argv) > 1 and sys.argv[1] == "fix":
+    R_BOY = {"path": "refs/boy_only.jpg", "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy, no other person)"}
+    NOHAT = " The Uncle's head is bald and completely bare: he wears NO hat at all."
+    GRAN = " Grandma has grey hair in a bun and wears NO hat; only the Boy wears a conical leaf hat."
+    keep = {"C08": dict(extra=" There are exactly TWO separate small brick pagodas standing side by side in the background, both clearly visible."),
+            "C12": dict(extra=GRAN + " Grandma clearly stands behind the counter pleating a dumpling in the foreground.", portrait_only=True),
+            "C14_end": dict(extra=NOHAT, land_only=True),
+            "C15": dict(extra=NOHAT + GRAN, land_only=True),
+            "C24": dict(extra=GRAN + " Only two people are in the picture: Grandma and the Boy. The Uncle is NOT in the picture.", refs=[R_BOY, R_G], portrait_only=True),
+            "C28": dict(extra=" Only the Boy is in the picture, alone, no other person, soft blurred village background.", refs=[R_BOY])}
+    out = []
+    for it in items:
+        k = keep.get(it["id"])
+        if not k:
+            continue
+        it = dict(it, prompt=it["prompt"].replace(STYLE, k["extra"].strip() + " " + STYLE), variants=4, seed=it["seed"] + 500)
+        if "refs" in k:
+            it["refs"] = k["refs"]
+        if k.get("portrait_only"):
+            it["orientations"] = ["portrait"]
+        if k.get("land_only"):
+            it["orientations"] = ["landscape"]
+        out.append(it)
+    items = out
+    OUT = OUT + "-fix"
+    # the Grandma reference is the first-pass sheet: copy it from the results into refs/ so this job is self-contained
+    for it in items:
+        for r in it["refs"]:
+            if isinstance(r, dict) and r["path"].startswith("@"):
+                r["path"] = "refs/grandma_ref.jpg"
 
 job = {"defaults": {"backend": "klein", "width": 768, "height": 1344, "variants": 2, "ref_max": 704, "orientations": ["portrait", "landscape"]}, "images": items}
 os.makedirs(OUT, exist_ok=True)

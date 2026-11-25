@@ -107,7 +107,7 @@ ai("C10", 6.0, ambience="shop", fb=dict(motion="zoom_in", zoom0=1.05, zoom=1.2, 
 # PEAK 1: the jelly reveal (wonder): lines first, then 5 fast macro cuts, whip-pans, one slow-motion ripple, a held beat
 ai("C11", 4.4, id="C11a", mood="tender", fb=dict(motion="zoom_in", zoom=1.12, focus=[0.5, 0.5], particles=dict(type="steam", n=12)),
    trim=[0.0, 4.4], lines=V("C11", [0]), sfx=[S(0.2, "lid", None, 0.7), S(0.3, "hiss", 2.0, 0.6)],
-   cards=[FACT(0.3, 3.5, "SOUP, SOLID", "The soup goes in as jelly", y=0.18)])
+   cards=[FACT(0.3, 3.5, "SOUP SECRET", "The soup goes in solid", y=0.18)])
 ai("C11", 0.8, id="C11b", trim=[0.5, 1.3], whip=True, fb=dict(motion="zoom_in", zoom0=1.6, zoom=1.9, focus=[0.45, 0.55]), sfx=[S(0.0, "sparkle", None, 0.6)])
 ai("C11", 0.8, id="C11c", trim=[1.3, 2.1], whip=True, fb=dict(motion="zoom_in", zoom0=2.2, zoom=2.5, focus=[0.55, 0.5]), sfx=[S(0.0, "whoosh", None, 0.5)])
 ai("C11", 2.4, id="C11d", trim=[2.1, 3.3], speed=0.6, whip=True, fb=dict(motion="zoom_in", zoom0=1.9, zoom=2.1, focus=[0.5, 0.45]),

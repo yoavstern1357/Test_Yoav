@@ -312,7 +312,7 @@ class C19(Native):
         if q <= 0:
             return base
         wf = world_frame(0.2 + max(0, t - 1.0) * 1.0)
-        world = land_compose(wf, 1.0, 0.7) if land else wf
+        world = land_compose(wf, 2.0, 0.78) if land else wf
         out = scroll_open(base, world, q, vertical=not land)
         return final_grain(out, 0.03)
 
@@ -323,7 +323,7 @@ class C20(Native):
 
     def draw(self, t, land):
         wf = world_frame(2.0 + t * (4.0 / 6.0) + 0.0)
-        return land_compose(wf, 1.0, 0.72) if land else wf
+        return land_compose(wf, 2.0, 0.78) if land else wf
 
 
 class C21(Native):
@@ -340,7 +340,7 @@ class C21(Native):
             fr = c.hero(ts) if ts < 3.0 else c.jelly(ts - 3.0)
         finally:
             c2.uncle_doll = orig
-        return land_compose(fr, 1.0, 0.72) if land else fr
+        return land_compose(fr, 2.0, 0.78) if (land and ts < 3.0) else land_compose(fr, 1.3, 0.5) if land else fr
 
 
 class C22(Native):
@@ -367,7 +367,7 @@ class C22(Native):
 
     def draw(self, t, land):
         fr = self.scene(t)
-        world = land_compose(fr, 1.0, 0.72) if land else fr
+        world = land_compose(fr, 2.0, 0.78) if land else fr
         close = smooth(seg(t, 1.6, 2.9))
         if close <= 0:
             return world
@@ -377,6 +377,10 @@ class C22(Native):
 
 class C27I(c2.C27I):
     name, dur, step = "C27I", 1.6, 12
+    land_zoom = 1.8
+
+    def land_focus(self, t):
+        return 0.7
 
     def frame(self, t, ts):
         return super().frame(t * 1.1 / 1.6, step_t(t * 1.1 / 1.6, 12))

@@ -1,0 +1,213 @@
+{
+ "defaults": {
+  "backend": "ltx",
+  "width": 480,
+  "height": 832,
+  "seconds": 4,
+  "fps": 24,
+  "fit": "cover",
+  "upscale": [
+   720,
+   1280
+  ],
+  "orientations": [
+   "portrait",
+   "landscape"
+  ],
+  "style": "soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake"
+ },
+ "clips": [
+  {
+   "id": "I1",
+   "prompt": "Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily.",
+   "seconds": 4,
+   "seed": 7001,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/I1.jpg",
+    "landscape": "images/I1_land.jpg"
+   }
+  },
+  {
+   "id": "I2",
+   "prompt": "Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle.",
+   "seconds": 4,
+   "seed": 7002,
+   "variants": 1,
+   "cond_noise": 0.25,
+   "start": {
+    "portrait": "images/I2.jpg"
+   }
+  },
+  {
+   "id": "I3",
+   "prompt": "Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking.",
+   "seconds": 4,
+   "seed": 7003,
+   "variants": 1,
+   "cond_noise": 0.25,
+   "start": {
+    "portrait": "images/I3.jpg",
+    "landscape": "images/I3_land.jpg"
+   }
+  },
+  {
+   "id": "I5",
+   "prompt": "The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up.",
+   "seconds": 4,
+   "seed": 7004,
+   "variants": 1,
+   "cond_noise": 0.3,
+   "start": {
+    "portrait": "images/I5.jpg",
+    "landscape": "images/I5_land.jpg"
+   }
+  },
+  {
+   "id": "I5b",
+   "prompt": "Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging.",
+   "seconds": 4,
+   "seed": 7005,
+   "variants": 1,
+   "cond_noise": 0.3,
+   "start": {
+    "portrait": "images/I5b.jpg",
+    "landscape": "images/I5b_land.jpg"
+   }
+  },
+  {
+   "id": "I5c",
+   "prompt": "A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling.",
+   "seconds": 4,
+   "seed": 7006,
+   "variants": 1,
+   "cond_noise": 0.3,
+   "start": {
+    "portrait": "images/I5c.jpg",
+    "landscape": "images/I5c_land.jpg"
+   }
+  },
+  {
+   "id": "I6",
+   "prompt": "Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly.",
+   "seconds": 4,
+   "seed": 7007,
+   "variants": 1,
+   "cond_noise": 0.3,
+   "start": {
+    "portrait": "images/I6.jpg",
+    "landscape": "images/I6_land.jpg"
+   }
+  },
+  {
+   "id": "C01",
+   "prompt": "Macro. One soup dumpling is lifted slowly on chopsticks above a bamboo basket, the thin skin sags like a small water balloon and the golden soup sways inside, steam drifts up. Slow and calm.",
+   "seconds": 5,
+   "seed": 7008,
+   "variants": 1,
+   "cond_noise": 0.12,
+   "start": {
+    "portrait": "images/C01.jpg",
+    "landscape": "images/C01_land.jpg"
+   }
+  },
+  {
+   "id": "C02",
+   "prompt": "the small boy in the conical leaf hat smiles warmly at the camera and glances sideways at his uncle. Behind him on the stool the big fat bald uncle with the mustache holds an ice pack on his cheek, fans his tongue with a napkin, faint steam from his ears, and lifts one limp hand.",
+   "seconds": 5,
+   "seed": 7009,
+   "variants": 1,
+   "cond_noise": 0.18,
+   "start": {
+    "portrait": "images/C02.jpg",
+    "landscape": "images/C02_land.jpg"
+   }
+  },
+  {
+   "id": "C07",
+   "prompt": "the small boy in the conical leaf hat walks backward toward the camera at an easy pace, smiling, the chopstick microphone in his hand, the camera tracks backward with him. Far behind, the big fat bald uncle with the mustache strolls across the lane rubbing his stomach. Willow branches sway.",
+   "seconds": 5,
+   "seed": 7010,
+   "variants": 1,
+   "cond_noise": 0.22,
+   "start": {
+    "portrait": "images/C07.jpg",
+    "landscape": "images/C07_land.jpg"
+   }
+  },
+  {
+   "id": "C13",
+   "prompt": "The chopsticks of the big fat bald uncle with the mustache dart toward the basket; the small boy in the conical leaf hat blocks them with his chopstick microphone like a barrier arm; the uncle lifts one dumpling like a trophy with his chest out. Grandma steps back. Steam drifts.",
+   "seconds": 4,
+   "seed": 7012,
+   "variants": 1,
+   "cond_noise": 0.22,
+   "start": {
+    "portrait": "images/C13.jpg",
+    "landscape": "images/C13_land.jpg"
+   }
+  },
+  {
+   "id": "C23",
+   "prompt": "The napkin cape of the big fat bald uncle with the mustache flutters in the breeze while he holds the spoon up like a sword, proud. the small boy in the conical leaf hat gives him a warm amused look, then turns toward the camera and smiles.",
+   "seconds": 5,
+   "seed": 7015,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C23.jpg",
+    "landscape": "images/C23_land.jpg"
+   }
+  },
+  {
+   "id": "C25",
+   "prompt": "Warm sepia dusk. The silhouette of the man seen from behind slowly lowers the spoon over the steaming dumpling, steam rises, lantern light flickers softly.",
+   "seconds": 5,
+   "seed": 7025,
+   "variants": 1,
+   "cond_noise": 0.12,
+   "start": {
+    "portrait": "images/C25.jpg",
+    "landscape": "images/C25_land.jpg"
+   }
+  },
+  {
+   "id": "C26",
+   "prompt": "the big fat bald uncle with the mustache waits calmly without moving, then slowly hands the spoon to the small boy in the conical leaf hat, who takes it with a small smile.",
+   "seconds": 4,
+   "seed": 7026,
+   "variants": 1,
+   "cond_noise": 0.18,
+   "start": {
+    "portrait": "images/C26.jpg",
+    "landscape": "images/C26_land.jpg"
+   }
+  },
+  {
+   "id": "C27",
+   "prompt": "Grandma leans in over the counter and points far away to the south with a secret smile. The boy looks where she points, and the fat uncle perks up with hungry eyes.",
+   "seconds": 4,
+   "seed": 7027,
+   "variants": 1,
+   "cond_noise": 0.22,
+   "start": {
+    "portrait": "images/C27.jpg",
+    "landscape": "images/C27_land.jpg"
+   }
+  },
+  {
+   "id": "C29",
+   "prompt": "The boy stands in front. Behind him the fat uncle with his tongue in a bucket of ice gives a thumbs up, one tiny puff of steam from his ear, and the camel beside him blinks slowly at the camera.",
+   "seconds": 4,
+   "seed": 7029,
+   "variants": 1,
+   "cond_noise": 0.18,
+   "start": {
+    "portrait": "images/C29.jpg",
+    "landscape": "images/C29_land.jpg"
+   }
+  }
+ ]
+}
