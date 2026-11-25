@@ -48,7 +48,7 @@ def main():
             res[r["id"]] = r
     info = {}
     for lid, ln in meta.items():
-        for take, suf in ((1, ""), (2, "__v2"), (3, "__v3"), (4, "__v4"), (5, "__v5")):
+        for take, suf in ((1, ""), (2, "__v2"), (3, "__v3"), (4, "__v4"), (5, "__v5"), (6, "__v6")):
             p = os.path.join(a.src, lid + suf + ".wav")
             if not os.path.exists(p):
                 continue
@@ -65,7 +65,7 @@ def main():
     rep = []
     for lid, ln in meta.items():
         cands = []
-        for take in (1, 2, 3, 4, 5):
+        for take in (1, 2, 3, 4, 5, 6):
             v = info.get((lid, take))
             if not v:
                 continue
