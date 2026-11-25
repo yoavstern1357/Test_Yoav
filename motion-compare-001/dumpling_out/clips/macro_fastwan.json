@@ -1,0 +1,27 @@
+{
+ "id": "macro_fastwan",
+ "orientation": "portrait",
+ "backend": "fastwan",
+ "seed": 4242,
+ "frames": 97,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 3,
+ "keyframes": [
+  [
+   "images/macro.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 24.0,
+ "status": "ok",
+ "seconds": 302.4,
+ "gpu_seconds": 302.4,
+ "prompt": "Macro. The soup dumpling lifts on the chopsticks, the thin skin sags and wobbles like a water balloon, golden soup ripples inside, steam curls and drifts, a drop falls back into the basket. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/macro.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

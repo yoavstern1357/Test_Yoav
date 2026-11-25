@@ -1,0 +1,31 @@
+{
+ "id": "gag_ltx095_kf",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 4242,
+ "frames": 97,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "keyframes": [
+  [
+   "images/gag_a.jpg",
+   0
+  ],
+  [
+   "images/gag_b.jpg",
+   96
+  ]
+ ],
+ "gen_fps": 24.0,
+ "status": "ok",
+ "seconds": 123.2,
+ "gpu_seconds": 123.2,
+ "prompt": "the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/gag_a.jpg",
+ "end": "images/gag_b.jpg",
+ "cropped_from_other_orientation": false
+}
