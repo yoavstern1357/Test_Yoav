@@ -20,6 +20,7 @@
 - Dad: sepia silhouette from behind only. Ending line "Dad was right...".
 
 ## Look (CHANGED by the creator)
+- Creator feedback on the first look test: the Uncle looks good; the Boy must be YOUNGER and SMALLER (about 7, reaching the Uncle's belt, round soft child face, big curious eyes).
 - "Refined anime": same characters and outfits (Boy: Vietnamese conical leaf hat with orange chin ribbon, white kimono, orange belt; Uncle: big, bald, thin mustache, white kimono, wide orange belt), but LESS childish: more natural proportions, cinematic lighting, rich painted backgrounds (in the spirit of Avatar / Ghibli-quality TV anime, never copying any design).
 
 ## Sound
