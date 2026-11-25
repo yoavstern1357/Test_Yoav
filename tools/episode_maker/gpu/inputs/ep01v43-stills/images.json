@@ -1,0 +1,414 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 2,
+  "ref_max": 704,
+  "orientations": [
+   "portrait",
+   "landscape"
+  ]
+ },
+ "images": [
+  {
+   "id": "G00_grandma_ref",
+   "seed": 3001,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Character reference sheet of Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands). One character only, full body, standing relaxed, facing slightly to the side, hands gently together at her apron, plain warm cream background, no props. She is drawn in the same delicate soft anime style as the characters of the style reference, a kind village cook. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false,
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C01",
+   "seed": 3002,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Macro close-up: one xiaolongbao soup dumpling lifted on a pair of chopsticks above a bamboo steamer basket, the skin so thin that the golden soup shows through, the dumpling sags like a small water balloon, thin steam drifting, warm morning light, shallow depth of field. No people. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C02",
+   "seed": 3003,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "Medium shot in an old canal-town lane (stone bridge and canal softly blurred behind): the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands facing the viewer with a small warm smile, holding a pair of chopsticks like a microphone. Behind him, sitting on a low stool, the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) presses an ice pack to his cheek and fans his tongue with a napkin, faint steam from his ears, dignified and slightly sulky. Morning light. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C05",
+   "seed": 3004,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "Interior of a Shanghai metro car sliding out of the city past low houses seen through the windows, soft daylight. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) sits on a seat with an old leather journal open on his knees, one finger under the handwriting. Beside him the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) sits upright, fast asleep, hugging a thermos, mouth slightly open. Calm, quiet mood. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C07",
+   "seed": 3005,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "Old canal lane in warm morning light, a stone bridge at the left, willow branches. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) walks toward the viewer mid-stride, looking at the lens with a relaxed smile, a chopstick microphone in his hand. Far behind him in the lane the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) ambles along rubbing his stomach. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C08",
+   "seed": 3006,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "Wide shot of an old canal town: two stout old brick pagodas standing side by side (small and squat, no hero angle) under a soft sky with wind chimes at a nearby eave. In the foreground, small in the frame, the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) points up at them and beside him the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) looks up in quiet wonder. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C09",
+   "seed": 3007,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "A tiny generic old dumpling stall with no sign text, stacked bamboo steamers breathing steam. Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) folds a dumpling with quick hands behind the counter. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands at the counter, leaning in, curious and a little shy. Behind him, soft and out of focus, the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) has his nose in the steam. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C10",
+   "seed": 3008,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Macro on a wooden chopping board: a block of amber pork-skin jelly, translucent and glossy, and a heavy kitchen knife beside it, a bowl of pink minced pork at the side. Warm kitchen light, steam far behind. No people, hands not visible. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C11",
+   "seed": 3009,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Macro on a bamboo steamer basket with its lid just lifted, steam parting, one soup dumpling in the middle with its thin skin glowing warmly from inside, golden light. No people. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C12",
+   "seed": 3010,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "Close shot across the stall counter: Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands)'s hands pleating a dumpling with quick fingers in the foreground; the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag)'s chin and eyes just above the counter edge watching closely; the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) at the edge of the frame counting on his fingers. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C13",
+   "seed": 3011,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "At a dumpling stall counter, Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) sets down a bamboo basket of six steaming dumplings, steam parting. the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals)'s chopsticks are already darting toward it, and the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) holds out a hand with his chopstick microphone to block them like a barrier arm, worried. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C14",
+   "seed": 3012,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "Close medium shot: the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) holds a whole steaming dumpling at his lips with chopsticks, eyes shining, just about to bite, proud and eager. Dumpling stall behind, warm light. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C14_end",
+   "seed": 3013,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) flies two meters up in the air above a dumpling stall, arms and legs spread, eyes squeezed, red face, both ears jetting long jets of white steam, his thin mustache standing straight up like antennae. This is the big comic burn gag: a big reaction, playful, never scary. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C15",
+   "seed": 3014,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "At the dumpling stall, the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) skids to a stop, sandals sliding, tongue sticking out, red-faced, steam leaking from one ear, fanning his tongue with one hand, humbled. Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) already holds out a cup of cold water to him, kind and a little teasing. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands beside him, concerned, hiding a smile. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C16",
+   "seed": 3015,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Macro: a pair of chopsticks gently pinching a soup dumpling by its twisted top knot, lifting it a little, a soup spoon waiting right below, steam rising, warm stall light. No people, no faces. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C17",
+   "seed": 3016,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Macro on a soup dumpling resting on a white soup spoon, a chopstick tip just above its skin about to open a tiny hole, a thread of steam, a glint of golden soup. No people. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C18",
+   "seed": 3017,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "Medium close-up: the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) with a soup spoon at his lips, eyes closed, shoulders relaxed, a small blissful smile, soft warm light. In the foreground, partly out of focus, the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) watches him and nods hopefully. Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) is a soft shape in the background. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C23",
+   "seed": 3018,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "At the dumpling stall, a rolled-up paper scroll lies on the counter. the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) stands in a proud hero pose with a napkin tied on as a cape and a soup spoon raised like a sword, chin lifted, dignified. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands beside him giving him a warm, amused, dry look. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C24",
+   "seed": 3019,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "Medium shot across the stall counter: Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) stops mid-fold with a half-folded dumpling in her hands and looks up straight at the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag)'s conical hat, amazed. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands at the counter looking up at her. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C25",
+   "seed": 3020,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Sepia and warm amber dusk. The silhouette of a man seen from BEHIND (no face visible), wearing a Vietnamese conical leaf hat, sitting on a small wooden stool at a dumpling stall counter, lantern light glowing, holding a spoon over a steaming dumpling. Quiet, tender and nostalgic. Only a warm sepia silhouette, no face. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  },
+  {
+   "id": "C26",
+   "seed": 3021,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) and the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) stand side by side at the stall in warm evening light; the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) holds a spoon with a cooled soup dumpling, calm, a little hoarse and tender, looking at the boy. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) looks up at him. Quiet warm mood. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C27",
+   "seed": 3022,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "@G00_grandma_ref__v1",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) leans over the counter and points far away to the south with a secret smile. In the foreground the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) and the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) look where she points, the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) perking up with hungry eyes. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C28",
+   "seed": 3023,
+   "variants": 3,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    }
+   ],
+   "prompt": "Soft close-up portrait of the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) in warm evening light, a small tender smile, looking straight into the lens, the orange chin ribbon of his hat stirring. Calm, heartfelt. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C29",
+   "seed": 3024,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands in the foreground looking at the viewer. Behind him the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) sits with his tongue in a bucket of ice, giving a happy thumbs up, and beside him a calm cartoon camel stares straight into the lens. Funny, warm, soft evening light. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C06_plate",
+   "seed": 3025,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/style_s1.jpg",
+     "role": "painting style, line quality and light reference only (do not copy the characters or the place)"
+    }
+   ],
+   "prompt": "Quiet watercolor plate of an old canal town at dawn: a stone arch bridge, willows, low brick houses with grey tile roofs, a few small wooden boats, mist on the water, soft rose and gold sky. Wide, calm, a lot of empty sky at the top for a title. No people. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "keep_characters": false
+  }
+ ]
+}
