@@ -1,0 +1,44 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 3,
+  "ref_max": 512
+ },
+ "images": [
+  {
+   "id": "I5_chase",
+   "seed": 5300,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the big bald man with a thin mustache (brown linen jacket, wide orange sash) from the reference image. FULL SPRINT toward the viewer down an old Asian lantern-lit street at dusk: both are RUNNING as fast as they can, mid-stride with legs off the ground, arms pumping, the boy holding his hat on his head, the man's towel flying behind him, both looking back over their shoulders half-scared and half-laughing. Behind them, filling the street, a GIANT round white dumpling with pleated top and a huge open mouth rolls and chomps after them. Low wide-angle camera, deep perspective. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Strong dynamic action pose, motion lines, dust kicked up. Vertical composition. No text."
+  },
+  {
+   "id": "I6_chomp",
+   "seed": 5301,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the big bald man with a thin mustache (brown linen jacket, wide orange sash) from the reference image. Comic action freeze: the boy and the man LEAP forward through the air toward the viewer, bodies stretched horizontally in a dive, eyes wide, while right behind their heels the giant dumpling's huge mouth snaps shut, crumbs and steam flying. Low angle, lantern street, strong speed lines. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Strong dynamic action pose, motion lines, dust kicked up. Vertical composition. No text."
+  },
+  {
+   "id": "I5b_chase_wide",
+   "seed": 5302,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the big bald man with a thin mustache (brown linen jacket, wide orange sash) from the reference image. Wide high-angle shot of a winding lantern street at dusk: two tiny running figures (the boy and the man) sprint away from a giant rolling white dumpling with an open mouth that is bouncing after them, knocking lanterns swinging. Playful, cinematic. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Strong dynamic action pose, motion lines, dust kicked up. Vertical composition. No text."
+  }
+ ]
+}
