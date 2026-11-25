@@ -75,8 +75,7 @@ def _rating(text="10/10"):
 
 
 def _tab(lines, col=OR, fill=(255, 246, 224, 255), size=52):
-    f = font(F_BLACK, size)
-    sps = [text_sprite(s, f, col if i == 0 else BR, 0, None, pad=14) for i, s in enumerate(lines)]
+    sps = [text_sprite(s, font(F_BLACK, size if i == 0 else int(size * .62)), col if i == 0 else BR, 0, None, pad=14) for i, s in enumerate(lines)]
     w = max(s.width for s in sps) + 70
     h = sum(s.height for s in sps) + 40
     c = Cv(w, h, ss=1)

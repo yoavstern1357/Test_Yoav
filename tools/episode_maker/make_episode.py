@@ -15,6 +15,7 @@ import soundfile as sf
 
 sys.path.insert(0, os.path.dirname(__file__))
 import synth
+import sfx_extra  # noqa: F401  (adds more sound effects to synth.SFX)
 from synth import SR
 
 FONT = "/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf"
@@ -38,10 +39,12 @@ FILL = {"boy": (255, 255, 255), "uncle": (255, 226, 140), "grandma": (255, 214, 
 _kokoro = None
 
 
-def tts(who, text):
+def tts(who, text, speed_mult=None):
     global _kokoro
     voice, speed, pitch = VOICES[who]
     pitch = PITCH_OVERRIDE.get(who, pitch)
+    if speed_mult:
+        speed = speed * float(speed_mult)
     key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, key + ".npy")
@@ -70,6 +73,27 @@ def tts(who, text):
 
 
 # ------------------------------------------------------------------ AI clips (`clip` shots)
+def echo_voice(a, delays=((0.13, 0.30), (0.27, 0.16), (0.43, 0.08))):
+    """Solemn hall echo for the Scroll Narrator: a few soft, darker repeats after the dry voice."""
+    n = len(a) + int(0.6 * SR)
+    out = np.zeros(n, np.float32)
+    out[: len(a)] += a
+    lp = signal.lfilter(*signal.butter(1, 2200, btype="low", fs=SR), a).astype(np.float32)
+    for d, g in delays:
+        i = int(d * SR)
+        out[i: i + len(a)] += lp * g
+    return out / max(1.0, float(np.abs(out).max()) / 0.95)
+
+
+def reversed_clip(path):
+    """Return a reversed copy of a (short) clip, cached in /tmp."""
+    os.makedirs("/tmp/dumpling_rev", exist_ok=True)
+    out = os.path.join("/tmp/dumpling_rev", hashlib.md5(path.encode()).hexdigest() + f"-{int(os.path.getmtime(path))}.mp4")
+    if not os.path.exists(out):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-vf", "reverse", "-an", "-c:v", "libx264", "-crf", "14", out], check=True)
+    return out
+
+
 def find_clip(spec, spec_dir, name):
     """Resolve a clip path: absolute, or relative to spec "clips_dir" (default "clips"), the frames dir, or the spec folder."""
     if os.path.isabs(name) and os.path.exists(name):
@@ -164,7 +188,18 @@ def build_timeline(spec, spec_dir="."):
     for sh in spec["shots"]:
         s = dict(sh)
         if s.get("clip"):      # AI-generated video clip: dur defaults to the (trimmed, sped-up) clip length
-            s["clip_path"] = find_clip(spec, spec_dir, s["clip"])
+            try:
+                s["clip_path"] = find_clip(spec, spec_dir, s["clip"])
+            except FileNotFoundError:
+                if not s.get("img"):
+                    raise
+                # animatic fallback: the start still with local motion, until the AI clip exists
+                s.pop("clip"); s.pop("trim", None); s.pop("speed", None); s.pop("reverse", None); s.pop("freeze", None)
+                s.update(s.pop("fb", {}))
+                s["fallback"] = True
+        if s.get("clip"):
+            if s.get("reverse"):
+                s["clip_path"] = reversed_clip(s["clip_path"])
             if "dur" not in s:
                 cd, _ = probe_clip(s["clip_path"])
                 tr = s.get("trim")
@@ -173,6 +208,7 @@ def build_timeline(spec, spec_dir="."):
                 s["dur"] = max(0.2, (a1 - a0) / float(s.get("speed") or 1.0))
             s.setdefault("motion", "static")      # no automatic camera move on top of a moving clip (opt in with motion/zoom/punch)
             s.setdefault("zoom0", 1.0)
+        s.pop("fb", None)
         if s.get("mood") and s["mood"] != mood:
             if s["mood"] in synth.NEW_MOODS or mood in synth.NEW_MOODS:
                 origin = t           # music bar grid restarts at a tempo change
@@ -180,9 +216,13 @@ def build_timeline(spec, spec_dir="."):
         s["start"] = t
         lines, cur = [], t + s.get("lead", 0.3)
         for ln in s.get("lines", []):
-            a = tts(ln["who"], ln["text"])
+            a = tts(ln["who"], ln["text"], ln.get("speed"))
+            if ln.get("gain"):
+                a = (a * float(ln["gain"])).astype(np.float32)
             at = t + ln["at"] if "at" in ln else cur
             dur = len(a) / SR
+            if ln.get("echo", ln["who"] == "narrator" and spec.get("narrator_echo", False)):
+                a = echo_voice(a)
             lines.append(dict(ln, start=at, dur=dur, audio=a))
             cur = at + dur + ln.get("gap", 0.18)
         s["lines"] = lines
@@ -536,7 +576,7 @@ class Renderer:
         self.imgs = {}
         self.readers = {}
         for s in shots:
-            if s.get("img"):
+            if s.get("img") and not s.get("clip_path"):
                 self.load(s["img"])
             for k in ("bg", "fg"):
                 if s.get("layers", {}).get(k):
@@ -563,13 +603,28 @@ class Renderer:
             r2 = ((xx / W - 0.5) * 2) ** 2 * 0.8 + ((yy / H - 0.5) * 2) ** 2 * 0.9
             self.vig = (1 - v * 0.5 * np.clip(r2 - 0.25, 0, 1.2) ** 1.3)[..., None].astype(np.float32)
 
-    def load(self, name, rgba=False):
+    def resolve(self, name):
         p = os.path.join(self.frames_dir, name)
+        if not os.path.exists(p) and self.spec.get("frames_fallback"):
+            alt = os.path.join(os.path.dirname(self.frames_dir.rstrip("/")), os.path.basename(self.spec["frames_fallback"].rstrip("/")), os.path.basename(name))
+            if os.path.exists(alt):
+                return alt
+        return p
+
+    def load(self, name, rgba=False):
+        p = self.resolve(name)
         if p not in self.imgs:
             self.imgs[p] = Image.open(p).convert("RGBA" if rgba else "RGB")
         return self.imgs[p]
 
     def clip_frame(self, s, t_local):
+        for fz in s.get("freeze", []):          # 8-frame look-to-lens holds: the clip stops for d seconds
+            if t_local >= fz["t"] + fz["d"]:
+                t_local -= fz["d"]
+            elif t_local >= fz["t"]:
+                t_local = fz["t"]
+        if s.get("on_twos"):                     # step the clip like hand-drawn animation (e.g. 12 fps)
+            t_local = math.floor(t_local * s["on_twos"] + 1e-6) / s["on_twos"]
         key = id(s)
         rd = self.readers.get(key)
         if rd is None:
@@ -599,7 +654,7 @@ class Renderer:
         if s.get("clip_path"):
             img = self.clip_frame(s, t_local)
         else:
-            img = self.imgs[os.path.join(self.frames_dir, layers.get("bg") or s["img"])]
+            img = self.imgs[self.resolve(layers.get("bg") or s["img"])]
         tc = self.cam_time(s, t_local)
         p = tc / max(s["dur"], 0.01)
         mult = 1.0
@@ -633,7 +688,7 @@ class Renderer:
         fr = img.resize((W, H), Image.BICUBIC, box=box)
         self._cam = (box, img.size)
         if layers.get("fg"):      # foreground plane: moves faster than the background
-            fg = self.imgs[os.path.join(self.frames_dir, layers["fg"])]
+            fg = self.imgs[self.resolve(layers["fg"])]
             drift = math.sin(t_local * 0.6 + s["start"]) * 0.012
             fbox = camera_box(fg.size, W, H, s, p, mult, (off[0] + drift, off[1]), minz, pan_mult=2.2, zoom_mult=1.05)
             if sx or sy:
@@ -926,6 +981,8 @@ class Renderer:
                 fr = self.speedlines(fr, t_local, c)
         if isinstance(s.get("impact"), dict):
             fr = self.impact_fx(fr, s, t_local)
+        if s.get("impact_frame"):
+            fr = self.impact_poster(fr, t_local, s["impact_frame"])
         return fr
 
     def whip(self, prev, cur, q):
@@ -941,6 +998,70 @@ class Renderer:
             o = min(max(off + int((i / (K - 1) - 0.5) * blur), 0), W)
             acc += wide[:, o:o + W]
         return Image.fromarray((acc / K).astype(np.uint8))
+
+    def reel(self, fr, t, cfg):
+        """Film-reel rewind: sepia flicker, sprocket strips racing upward, tape glitch bars and a REW mark."""
+        dt = t - cfg["t"]
+        d = cfg.get("d", 1.2)
+        if not (0 <= dt <= d):
+            return fr
+        W, H = self.W, self.H
+        a = min(1.0, dt / 0.08, (d - dt) / 0.12 + 0.2)
+        tone = ImageOps.colorize(ImageOps.grayscale(fr), (40, 26, 16), (255, 238, 205), (150, 106, 64))
+        fr = Image.blend(fr, tone, 0.55 * a)
+        ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        dr = ImageDraw.Draw(ov)
+        sw = int(W * 0.085)
+        sp = int(H * 0.06)
+        off = (dt * H * 3.2) % sp
+        for x0 in (0, W - sw):
+            dr.rectangle((x0, 0, x0 + sw, H), fill=(20, 14, 10, int(235 * a)))
+            for k in range(-1, H // sp + 2):
+                y = k * sp - off
+                dr.rounded_rectangle((x0 + sw * 0.28, y, x0 + sw * 0.72, y + sp * 0.5), 6, fill=(250, 238, 210, int(230 * a)))
+        g = np.random.default_rng(int(dt * 24) * 31 + 5)
+        for _ in range(5):                           # tape glitch bars sweeping upward
+            y = int((g.uniform(0, 1) - dt * 2.0) % 1.0 * H)
+            dr.rectangle((sw, y, W - sw, y + int(g.uniform(0.004, 0.03) * H)), fill=(255, 250, 238, int(g.uniform(40, 120) * a)))
+        f = font(FONT, int(W * 0.075))
+        if int(dt * 6) % 2 == 0:
+            dr.text((sw + 30, int(H * 0.055)), "\u25C0\u25C0 REW", font=f, fill=(255, 240, 214, int(255 * a)), stroke_width=5, stroke_fill=(59, 42, 26, int(255 * a)))
+        fr = fr.convert("RGBA"); fr.alpha_composite(ov)
+        return fr.convert("RGB")
+
+    def suck(self, fr, t, cfg):
+        """Soft white puffs fly INTO a point (steam sucked back into the ears)."""
+        dt = t - cfg["t"]
+        d = cfg.get("d", 1.0)
+        if not (0 <= dt <= d):
+            return fr
+        W, H = self.W, self.H
+        tx, ty = cfg.get("x", 0.5) * W, cfg.get("y", 0.3) * H
+        for i in range(cfg.get("n", 18)):
+            g = np.random.default_rng(i * 13 + 1)
+            ang, r0 = g.uniform(0, 2 * math.pi), g.uniform(0.18, 0.5) * W
+            ph = ((dt / d) * 1.4 + g.uniform(0, 0.6)) % 1.0
+            rr = r0 * (1 - ph)
+            x, y = tx + math.cos(ang) * rr, ty + math.sin(ang) * rr
+            rad = int(W * (0.03 + 0.06 * (1 - ph)))
+            spr = soft_sprite(rad, 1.0).point(lambda v: int(v * 0.5 * math.sin(ph * math.pi)))
+            fr.paste((255, 255, 255), (int(x - rad), int(y - rad)), spr)
+        return fr
+
+    def impact_poster(self, fr, t, cfg):
+        """Impact frame: a white flash, then a flat posterized red/brown/cream frame with radial burst lines (about 0.15 s)."""
+        dt = t - cfg["t"]
+        d = cfg.get("d", 0.16)
+        if not (0 <= dt <= d):
+            return fr
+        W, H = self.W, self.H
+        if dt < 0.04:
+            return Image.new("RGB", (W, H), (255, 252, 244))
+        g = ImageOps.autocontrast(ImageOps.grayscale(fr), cutoff=2)
+        g = g.point(lambda v: 0 if v < 70 else (110 if v < 150 else (190 if v < 225 else 255)))
+        pos = ImageOps.colorize(g, (30, 12, 8), (255, 240, 214), (217, 72, 15), blackpoint=0, whitepoint=255, midpoint=110)
+        self.speedlines(pos, t, {"t": cfg["t"] + 0.04, "d": d, "dir": "radial", "color": "dark"}, 1.0)
+        return pos
 
     def overlays(self, frame, s, t_local):
         W, H = self.W, self.H
@@ -976,11 +1097,20 @@ class Renderer:
                 if 0 <= dt <= fx.get("d", 0.12):
                     a = 1 - dt / fx.get("d", 0.12)
                     frame.paste(Image.blend(frame, Image.new("RGB", frame.size, (255, 255, 255)), 0.75 * a))
+            elif kind == "reel":
+                frame = self.reel(frame, t_local, fx)
+            elif kind == "suck":
+                frame = self.suck(frame, t_local, fx)
             elif kind == "vignette_warm":
                 pass
         # cards
         for c in s.get("cards", []):
             dt = t_local - c["t"]
+            if c.get("type") == "paper":
+                if 0 <= dt <= c["d"]:
+                    import paper.cards as pcards
+                    pcards.draw(frame, c, dt, W, H)
+                continue
             if 0 <= dt <= c["d"]:
                 lay = title_layer(c, W) if c["type"] == "title" else card_layer(c, W)
                 pop = ease(dt / 0.22)
@@ -1004,7 +1134,7 @@ class Renderer:
                 sc = 0.9 + 0.1 * pop
                 lw, lh = int(lay.width * sc), int(lay.height * sc)
                 l2 = lay.resize((lw, lh), Image.BILINEAR) if sc != 1 else lay
-                frame.paste(l2, ((W - lw) // 2, int(self.H * s.get("caption_y", 0.67)) - lh // 2), l2)
+                frame.paste(l2, ((W - lw) // 2, int(self.H * s.get("caption_y", self.spec.get("caption_y", 0.67))) - lh // 2), l2)
         return frame
 
     def post(self, fr):
