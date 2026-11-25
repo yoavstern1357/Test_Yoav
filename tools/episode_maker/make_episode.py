@@ -620,7 +620,7 @@ def importance_map(img):
     return np.clip(imp / (np.percentile(imp, 97) + 1e-6), 0, 1.5), skin
 
 
-def safe_caption_y(frame, lay, land, zone=None):
+def safe_caption_y(frame, lay, land, zone=None, avoid=()):
     """Vertical centre (fraction of the height) of the emptiest band for this caption, near the usual spot; faces, hands and dumplings are
     what the importance map marks, so the caption lands beside them (never over them when an empty band exists)."""
     imp, skin = importance_map(frame)
@@ -644,6 +644,8 @@ def safe_caption_y(frame, lay, land, zone=None):
     for cy in np.arange(lo, hi + 1e-6, 0.01):
         y0 = int((cy - lh_frac / 2 * (1.0)) * h); y1 = y0 + lh_px
         if y0 < 0 or y1 > h:
+            continue
+        if any(abs(cy - ay) < 0.5 * (ah + lh_frac) for ay, ah in avoid):
             continue
         reg = imp[y0:y1, x0:x1]
         sk = skin[y0:y1, x0:x1]
@@ -1447,7 +1449,14 @@ class Renderer:
                 if manual is None and self.spec.get("caption_safe") and s.get("caption_auto", True):
                     ck = (s.get("id"), s.get("start"), ln.get("text"), ln.get("start"))
                     if ck not in self._capcy:
-                        self._capcy[ck] = safe_caption_y(frame, lay, self.land, s.get("caption_zone"))
+                        avoid = []
+                        for cd in s.get("cards", []):          # keep clear of fact cards / titles of this shot
+                            if self.land:
+                                cyc = cd.get("y_land", 0.42 if cd.get("type") == "title" else 0.30) if cd.get("type") != "paper" else 0.3
+                            else:
+                                cyc = cd.get("y", 0.62)
+                            avoid.append((cyc, 0.16 if cd.get("type") in ("fact", "title") else 0.1))
+                        self._capcy[ck] = safe_caption_y(frame, lay, self.land, s.get("caption_zone"), avoid)
                     cy = self._capcy[ck] * self.H
                 elif self.land:
                     cy = self.H * (manual if manual is not None else self.spec.get("caption_y_land", 0.84))
