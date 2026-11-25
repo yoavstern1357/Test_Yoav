@@ -1,9 +1,9 @@
 # Episode 01 V4: "Uncle vs. Soup Dumpling" (China arc, part 1 of 3: Arrival)
 
-**Length:** about 2:02 · vertical 9:16 · **Location:** Shanghai, then Nanxiang (old town in Jiading District, Shanghai) · **Dumpling:** Xiaolongbao
+**Length:** about 2:05 (2:00 story + 5 s sign-off sting; inside the series range 1:50-2:10) · vertical 9:16 · **Location:** Shanghai, then Nanxiang (old town in Jiading District, Shanghai) · **Dumpling:** Xiaolongbao
 **Format:** a world food-travel show hosted by the Boy, set on the old Silk Road. The Boy (Bo) talks to camera, presents places, food and history. Uncle Fong is the chaotic co-host. Old legends are told by a grand, over-serious **Scroll Narrator** in a distinct paper-cut storybook look. Comedy rules: `production/v4/comedy-style.md`.
 **Voices:** `boy` (calm, precise, deadpan host), `uncle` (big, warm, loud; tiny when humbled), `narrator` (deep, solemn, a little echo, low gong before he speaks), `grandma`. Dad appears only as a sepia silhouette from behind and as the Boy's reading of his journal. Catchphrase: **"For science!"** (bold, then whispered). Last line: **"Dad was right..."**
-**Pace:** about 300 spoken words in about 2:02 (about 2.5 words/second, heart beat slower). 52 beats, average 2.3 s. A laugh beat every 5-7 seconds.
+**Pace:** about 285 spoken words in about 2:05 (about 2.3 words/second, the Dad beat slower). 56 beats, average 2.2 s. A laugh beat every 5-7 seconds.
 **Content research:** `production/v4/content-research.md` did not exist yet when this was written; this script keeps all facts from the checked v2 script and sources (see bottom). Re-check when that file lands.
 
 ## Spine of the episode (what the viewer feels)
@@ -46,7 +46,7 @@ Time is m:ss (render may stretch a shot slightly to fit the voice). Dialogue in 
 | 0:28.4 | 14 | The Boy points right with the mic. Two old brick pagodas rise in a low-angle hero shot. The Uncle floats past the pagodas on the right, still sleepily smiling, the steam ribbon now stretched like a leash. | BOY: “On your right, two very old pagodas.” | wind chimes |
 | 0:31.4 | 15 | The Boy pauses mid-stride. Without turning, he tilts the mic toward the Uncle behind him. | BOY: “Behind me, my uncle, kidnapped by a smell.” | whoosh |
 | 0:34.0 | 16 | Close-up. The Uncle's nose sniffs; his eyes spiral into heart-shaped steam. | UNCLE: “I smell... destiny.” | sniff |
-| 0:35.4 | 17 | Cut to the Boy, flat, 8 frames to lens. | BOY: “That's the steamer.” | tick |
+| 0:35.4 | 17 | Cut to the Boy, flat, 8 frames to lens. | BOY: “That's the steamer.” / UNCLE (dreamy): “Destiny is steamed.” | tick |
 
 ### D. THE GAG: THE BURN (0:36-0:48)
 | Time | # | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
@@ -88,7 +88,7 @@ Time is m:ss (render may stretch a shot slightly to fit the voice). Dialogue in 
 | Time | # | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
 |---|---|---|---|---|
 | 1:25.4 | 42 | A paper-cut card pops up next to the pagodas: [CARD: FUN FACT · Nanxiang: "xiaolong mantou"]. The Boy taps it with the mic. | BOY: “Fun fact: many in Nanxiang still say 'xiaolong mantou.'” | pop, sparkle |
-| 1:28.4 | 43 | Close two-shot. The Uncle holds up two fingers, then points at two dumplings. The Boy looks to lens. | UNCLE: “Two names? Two dumplings.” / BOY: “That's not how names work.” | boing, tick |
+| 1:28.4 | 43 | Close two-shot. The Uncle holds up two fingers, then points at two dumplings. The Boy looks to lens. | UNCLE: “Two names? Two dumplings.” / BOY: “That's not how names work.” / UNCLE: “That's how dumplings work.” | boing, tick |
 
 ### H. DAD'S PAGE AND THE BRIDGE (1:31-1:47)
 | Time | # | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
@@ -99,7 +99,7 @@ Time is m:ss (render may stretch a shot slightly to fit the voice). Dialogue in 
 | 1:40.0 | 47 | Dusk on the stone bridge, lanterns light one by one. The Boy and Uncle sit with their feet dangling, seen from behind. The Uncle sets one dumpling on a spoon, waits two full beats without moving (no gag), then hands it over. | UNCLE (soft): “Your dad picked a good first page.” | clink; piano |
 | 1:43.8 | 48 | Close-up, the Boy's eyes closed, a small smile. Quietly, to the Uncle. The lower-third flips under the Uncle: [CARD: UNCLE · co-host (approved)]. The Uncle's eyes shine; he sniffs. | BOY: “Co-host.” | sparkle, ding |
 
-### I. THE CLIFFHANGER AND THE SIGN-OFF (1:47-2:02)
+### I. THE CLIFFHANGER AND THE SIGN-OFF (1:47-2:05)
 | Time | # | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
 |---|---|---|---|---|
 | 1:46.8 | 49 | Smash cut, music jumps back to adventure. The Uncle immediately swallows the next dumpling whole, then fans his tongue with the journal. Quick tiny toot. | UNCLE: “Patience. Got it.” | toot, whoosh |
@@ -112,14 +112,14 @@ Time is m:ss (render may stretch a shot slightly to fit the voice). Dialogue in 
 | 2:03.0 | 56 | STING: pull back, the Uncle sits behind him with his tongue in an ice bucket giving a thumbs up; the camel stares into the lens beside him. One tiny toot. Cut to black with [CARD: NEXT: GUANGZHOU]. | | toot, cut |
 
 ## Dialogue map and word count
-Spoken words about 300. Voices: BOY about 150, UNCLE about 30, NARRATOR about 60, GRANDMA about 20 (see counter in the notes below).
+About 285 spoken words (counted from the voice column): BOY about 172, UNCLE about 42, NARRATOR about 51, GRANDMA about 20.
 
 ## Laugh-beat map (first 60 s, to check the density target of 5 per 30 s)
 - 0:00 (visual) floating Uncle behind the calm host · 0:03 (verbal) "He is not the host." / "Co-host!" · 0:05 "He is luggage." · 0:12 (visual) the camel stares into lens · 0:14 (visual) camel on the metro · 0:19 (visual) Uncle sits on the title · 0:25-0:34 (visual+verbal) tour-guide walk, "kidnapped by a smell" · 0:35 "That's the steamer." · 0:40-0:46 the burn: "For science!" -> impact -> "...There's soup inside." -> "We'll be right back." · 0:48 "brought to you by Uncle's tongue" · 0:54 "One of them has no eyelids." · 0:57 growl and steadying finger · 1:01 "Yesterday, a napkin."
 That is about 17 laugh beats in 60 s (about 8.5 per 30 s). Some are light; if the animator needs to trim, cut beats 12, 31 and 34 first.
 
 ## Callback map
-- **"Co-host" thread (rule of three):** 0:03 denied ("He is not the host") -> 0:19 / 0:03 lower-third "self-appointed" -> 1:43 "approved".
+- **"Co-host" thread (rule of three):** 0:03 denied ("He is not the host", lower-third "self-appointed") -> 0:19 the Uncle hijacks the title card -> 1:43 "Co-host." and the lower-third flips to "approved".
 - **"There's soup inside":** Boy warns (0:38) -> Uncle repeats it, humbled (0:45) -> Safety segment makes it right.
 - **"For science!":** bold (0:40) -> whispered (0:59).
 - **Uncle's face as the legend hero:** 1:09 -> 1:19 smash back.
