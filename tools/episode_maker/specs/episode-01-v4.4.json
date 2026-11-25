@@ -27,10 +27,19 @@
  "caption_y_land": 0.86,
  "narrator_echo": true,
  "snap_to_beat": false,
+ "audio_tracks": [
+  {
+   "file": "assets/music/opening_intro.wav",
+   "at": 0.0,
+   "gain": 0.7,
+   "mute_music": true,
+   "sfx_gain": 0.45
+  }
+ ],
  "shots": [
   {
    "id": "I1",
-   "dur": 1.2,
+   "dur": 1.6,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -79,7 +88,7 @@
   },
   {
    "id": "I2",
-   "dur": 1.0,
+   "dur": 1.3,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -112,7 +121,7 @@
   },
   {
    "id": "I3",
-   "dur": 1.3,
+   "dur": 2.0,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -156,7 +165,7 @@
   },
   {
    "id": "I5",
-   "dur": 1.3,
+   "dur": 1.9,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -204,7 +213,7 @@
   },
   {
    "id": "I5b",
-   "dur": 0.8,
+   "dur": 1.2,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -237,7 +246,7 @@
   },
   {
    "id": "I5c",
-   "dur": 0.7,
+   "dur": 1.0,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -279,7 +288,7 @@
   },
   {
    "id": "I6",
-   "dur": 0.7,
+   "dur": 1.0,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -320,7 +329,7 @@
   },
   {
    "id": "C90",
-   "dur": 1.5,
+   "dur": 1.6,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",

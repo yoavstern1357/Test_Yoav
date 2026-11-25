@@ -480,7 +480,25 @@ def render_audio(spec, shots, total, out_wav):
     k = int(0.18 * SR)
     smooth = np.convolve(mask, np.ones(k) / k, mode="same")
     duck = 1.0 - 0.62 * np.clip(smooth * 3.0, 0, 1)
-    mix = voice * 1.0 + sfx * 0.55 + amb * 0.5 + mus * 0.55 * duck
+    trk = np.zeros(n, np.float32)
+    for tr in spec.get("audio_tracks", []):      # e.g. the opening song: {"file": "assets/music/opening_intro.wav", "at": 0, "gain": 0.9, "mute_music": true, "sfx_gain": 0.5}
+        p = tr["file"] if os.path.isabs(tr["file"]) else os.path.join(os.path.dirname(os.path.abspath(__file__)), tr["file"])
+        if not os.path.exists(p):
+            warn_once(f"audio track missing: {p}")
+            continue
+        w, sr0 = sf.read(p, dtype="float32", always_2d=True)
+        w = w.mean(axis=1)
+        if sr0 != SR:
+            w = signal.resample_poly(w, SR, sr0).astype(np.float32)
+        a0 = int(tr.get("at", 0.0) * SR)
+        b0 = min(n, a0 + len(w))
+        trk[a0:b0] += w[: b0 - a0] * float(tr.get("gain", 1.0))
+        if tr.get("mute_music", True):
+            mus[a0:b0] = 0
+            amb[a0:b0] = 0
+        if "sfx_gain" in tr:
+            sfx[a0:b0] *= float(tr["sfx_gain"])
+    mix = voice * 1.0 + sfx * 0.55 + amb * 0.5 + mus * 0.55 * duck + trk
     # gentle fade-out
     f = int(1.2 * SR)
     end = int(total * SR)

@@ -108,19 +108,19 @@ def lines_of(c, over=None):
 
 # ---------------------------------------------------------------- the intro (placeholder cut until the opening song is mixed in)
 def intro():
-    ai("I1", 1.2, fb=dict(motion="zoom_in", zoom=1.14, focus=[0.55, 0.45], sway=0.3, particles=dict(type="steam", n=8)), mood="adventure",
+    ai("I1", 1.6, fb=dict(motion="zoom_in", zoom=1.14, focus=[0.55, 0.45], sway=0.3, particles=dict(type="steam", n=8)), mood="adventure",
        sfx=[S(0.0, "tick", None, 0.5), S(0.3, "crunch", None, 0.9), S(0.55, "hiss", 0.8, 0.5)], punch=[dict(t=0.3, scale=1.06)])
-    ai("I2", 1.0, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.5, 0.45]), whip=True, sfx=[S(0.1, "splash", None, 0.8), S(0.3, "sparkle", None, 0.5)])
-    ai("I3", 1.3, fb=dict(motion="pan_right", zoom0=1.05, zoom=1.12, focus=[0.55, 0.55], pan=0.06), whip=True,
+    ai("I2", 1.3, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.5, 0.45]), whip=True, sfx=[S(0.1, "splash", None, 0.8), S(0.3, "sparkle", None, 0.5)])
+    ai("I3", 2.0, fb=dict(motion="pan_right", zoom0=1.05, zoom=1.12, focus=[0.55, 0.55], pan=0.06), whip=True,
        sfx=[S(0.1, "plop", None, 0.6), S(0.35, "laugh", None, 0.8), S(0.7, "plop", None, 0.5), S(1.0, "bloop", None, 0.5)])
-    ai("I5", 1.3, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.5, 0.5], particles=dict(type="dust", n=14)), whip=True,
+    ai("I5", 1.9, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.5, 0.5], particles=dict(type="dust", n=14)), whip=True,
        sfx=[S(0.0, "rolling", 1.3, 0.8), S(0.2, "chomp", None, 0.7), S(0.7, "chomp", None, 0.7)], speedlines=dict(t=0.0, d=1.2, dir="radial"))
-    ai("I5b", 0.8, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.15, focus=[0.5, 0.5]), sfx=[S(0.0, "rolling", 0.8, 0.8), S(0.35, "chomp", None, 0.8)])
-    ai("I5c", 0.7, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.25, focus=[0.35, 0.55]),
+    ai("I5b", 1.2, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.15, focus=[0.5, 0.5]), sfx=[S(0.0, "rolling", 0.8, 0.8), S(0.35, "chomp", None, 0.8)])
+    ai("I5c", 1.0, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.25, focus=[0.35, 0.55]),
        sfx=[S(0.05, "shing", None, 0.8), S(0.25, "shing", None, 0.8), S(0.45, "shing", None, 0.8)], speedlines=dict(t=0.0, d=0.7, dir="horizontal"))
-    ai("I6", 0.7, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.55, 0.5]), sfx=[S(0.2, "chomp", None, 1.0), S(0.25, "impact", None, 0.6)],
+    ai("I6", 1.0, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.55, 0.5]), sfx=[S(0.2, "chomp", None, 1.0), S(0.25, "impact", None, 0.6)],
        impact=dict(t=0.2, amp=18), speedlines=dict(t=0.0, d=0.5, dir="radial"))
-    sh("C90", 1.5, clip=CODE % "C90", mood="adventure", sfx=[S(0.0, "gong", None, 0.8), S(0.05, "taiko", None, 0.8), S(0.1, "sting", None, 0.8)])
+    sh("C90", 1.6, clip=CODE % "C90", mood="adventure", sfx=[S(0.0, "gong", None, 0.8), S(0.05, "taiko", None, 0.8), S(0.1, "sting", None, 0.8)])
 
 
 def build():
@@ -191,7 +191,9 @@ def build():
 spec = dict(title="The Dumpling Boy: intro + Episode 01 v4.4 (How Does Soup Get Inside a Dumpling?)", size=[1080, 1920], fps=30, orientation="both",
             frames_dir="frames/ep01v44", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v44", voice_engine="gpu", voice_fallback=True, caption_safe=True,
             voice_speed={"boy": 1.17, "uncle": 1.25, "grandma": 1.25, "narrator": 1.15}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0,
-            caption_y=0.8, caption_y_land=0.86, narrator_echo=True, snap_to_beat=False)
+            caption_y=0.8, caption_y_land=0.86, narrator_echo=True, snap_to_beat=False,
+            # series opening song (ACE-Step, original): swap the file here when the creator picks another variant (tools/episode_maker/make_opening_cuts.py)
+            audio_tracks=[{"file": "assets/music/opening_intro.wav", "at": 0.0, "gain": 0.7, "mute_music": True, "sfx_gain": 0.45}])
 
 if __name__ == "__main__":
     build()
