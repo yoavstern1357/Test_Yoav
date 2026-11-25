@@ -9,3 +9,5 @@
 | ep01v43-clips-A-001 | clips (LTX 2B, 30 steps, 16 clips x 2 orientations, 1 variant) | running (est. 160) | 2026-11-25 |
 | ep01v43-clips-B-001 | clips (LTX 2B, 30 steps, 13 clips x 2 orientations, 1 variant) | running (est. 140) | 2026-11-25 |
 | motion-compare-001 | clips (R&D: LTX 0.9.5 vs LTX 0.9.8 13B-distilled nf4 vs Wan2.2 5B vs FastWan, 16 clips portrait) | planned about 90 per GPU x 2 (measured value to be filled in) | 2026-11-25 |
+| opening-song-001 | music (ACE-Step, bf16 decoder failed, no audio) | 33 | 2026-11-25 |
+| opening-song-002 | music (ACE-Step v1 3.5B, 8 tracks x 2 seeds, 60 s + 16 s) | running (est. 35) | 2026-11-25 |

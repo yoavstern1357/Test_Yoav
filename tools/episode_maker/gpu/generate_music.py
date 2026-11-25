@@ -101,12 +101,26 @@ class AceStep:
             try:
                 self.pipe = ACEStepPipeline(checkpoint_dir=self.ck, dtype=dtype, torch_compile=False, cpu_offload=off, overlapped_decode=True)
                 self.dtype, self.off = dtype, off
+                self._decoder_fp32()
                 log("ACE-Step pipeline ready", dtype, "cpu_offload" if off else "")
                 return
             except Exception as ex:      # noqa: BLE001
                 last = ex
                 log("pipeline init", dtype, "failed:", repr(ex)[:300])
         raise last
+
+    def _decoder_fp32(self):
+        """The mel decoder and vocoder (convolutions) fail in bf16 on a T4 (cuDNN: 'GET was unable to find an engine', first run
+        opening-song-001): load the checkpoints now and run only those two parts in float32; the transformer stays bf16."""
+        p = self.pipe
+        if not p.loaded:
+            p.load_checkpoint(self.ck)
+        d = p.music_dcae
+        d.float()
+        for name in ("decode", "decode_overlap"):
+            f = getattr(d, name)
+            setattr(d, name, (lambda f: lambda lat, *a, **k: f(lat.float(), *a, **k))(f))
+        log("decoder + vocoder cast to float32")
 
     def make(self, job, path):
         tmp = path + ".tmp.wav"
