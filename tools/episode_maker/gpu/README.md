@@ -195,5 +195,14 @@ Job (not triggered by the engineer; first run with `smoke: true`, which renders 
 {"run_id": "ep01v4-voices-001", "task": "tts", "input": "tools/episode_maker/gpu/inputs/ep01v4-voices", "backend": "chatterbox", "smoke": true, "only": "", "max_minutes": 60}
 ```
 Listening test first: `inputs/voice-test` has the 6 comparison lines. Results: `audio/<id>.wav`, `results.json` (model commit, duration, QC flags), `dumpling_tts.zip` (the workflow deletes zips; download the wavs from the `gpu-results` branch or Kaggle). Copy the WAVs to `tools/episode_maker/tts/gpu/` and render with `"voice_engine": "gpu"`. Rebuild the notebook after editing the generator: `python3 build_tts_notebook.py`.
-Not tested: any real generation (see voice-tech.md section 7).
+Not tested: listening quality (nobody has listened yet).
+
+**Run 2025-11-25 (`voices-test-002`, Kaggle T4, all 6 lines x 2 takes OK for three engines):**
+| Backend | Model / license | Voice | Time per line (T4) |
+|---|---|---|---|
+| `qwen3` | Qwen3-TTS 1.7B VoiceDesign, Apache-2.0 | text description per character (`qwen_voice` in `tts.json`) + style sentence per line (`qwen` in STYLES) | 3-17 s |
+| `chatterbox` | Chatterbox 0.5B, MIT | synthetic reference clip | 2-7 s |
+| `orpheus` | Orpheus 3B ft (unsloth mirror: the official repo is gated), declared Apache-2.0 on a Llama 3.2 base, check before monetizing | built-in voices | 7-25 s |
+Also available, not yet run: `qwen3custom` (Qwen3-TTS CustomVoice, 9 built-in speakers, `qwen_speaker`), `turbo`.
+`backend` in the job file may list several engines separated by commas; they run one after the other and write `dumpling_out/<engine>/audio`. The install step keeps Kaggle's preinstalled torch/torchvision/torchaudio (pins file + `--no-deps`; the first Chatterbox run failed because `pip install chatterbox-tts` replaced torch). Qwen3-TTS needs `transformers==4.57.3`, Chatterbox `5.2.0`: the installer switches between them per engine. Pitch check: Qwen3 gives clearly different characters (boy about 320 Hz, uncle 115-160 Hz, narrator 87 Hz); the Chatterbox/Orpheus boy is an adult male voice (about 100-117 Hz) because its reference/built-in voice is adult. Kaggle allows 2 concurrent GPU sessions, so a run can queue for an hour or more.
 
