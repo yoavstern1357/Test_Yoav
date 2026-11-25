@@ -87,3 +87,8 @@ python3 rig/rigdemo.py out/rig-test.mp4   # 10 s test: walk-in, sniff, gesture, 
 ```
 `rig/rig.py` = part hierarchy + procedural face (eyes, brows, mouth, pseudo-3D head turn); `rig/street.py` = perspective street background;
 `rig/rigdemo.py` = the timeline (keyframes in code).
+
+## AI clips: `clip` shot type
+A shot can be a video clip (for example from the free-GPU notebook in `gpu/`, see `gpu/README.md`) instead of a still:
+`{"clip": "c01.mp4", "trim": [0.4, 4.2], "speed": 1.0, "loop": false, "clip_audio": 0.8}` plus all the usual shot options (`lines`, `sfx`, `punch`, `speedlines`, `impact`, `cards`, `grade`, `transition`, ...).
+Clips are looked up in `clips_dir` (spec key, default `clips`), then `frames_dir`, then next to the spec; absolute paths work. `dur` defaults to the trimmed length, the last frame is held if the shot is longer (or `loop`), and no automatic camera move is added (`motion` defaults to `static`). Specs without `clip` render exactly as before.
