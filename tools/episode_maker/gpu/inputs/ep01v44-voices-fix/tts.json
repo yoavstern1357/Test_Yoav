@@ -1,0 +1,99 @@
+{
+ "defaults": {
+  "backend": "qwen3",
+  "seed": 31,
+  "variants": 4
+ },
+ "voices": {
+  "boy": {
+   "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host.",
+   "exaggeration_scale": 1.0
+  },
+  "uncle": {
+   "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved.",
+   "exaggeration_scale": 1.0
+  },
+  "grandma": {
+   "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice.",
+   "exaggeration_scale": 1.0
+  },
+  "narrator": {
+   "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses.",
+   "exaggeration_scale": 1.0
+  }
+ },
+ "lines": [
+  {
+   "id": "bcbe78da041f9acb",
+   "who": "uncle",
+   "text": "Veterans.",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Delivery: a single deadpan word, short, flat, solemn.",
+   "reuse": false
+  },
+  {
+   "id": "8ac1a4767295561c",
+   "who": "uncle",
+   "text": "Behold.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: a single reverent word, short, solemn and awed.",
+   "reuse": false
+  },
+  {
+   "id": "6b1711176fdb72df",
+   "who": "grandma",
+   "text": "Slowly.",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: a single flat deadpan word, short, calm.",
+   "reuse": false
+  },
+  {
+   "id": "8747d6caa38ddfec",
+   "who": "uncle",
+   "text": "For dumpling research!",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: bold, grand and booming, a deep chesty heroic shout, low voice, short and punchy.",
+   "reuse": false
+  },
+  {
+   "id": "d35d81f9a3e220af",
+   "who": "uncle",
+   "text": "Be cool. Be cool.",
+   "clip": "C22",
+   "style": "neutral",
+   "qwen": "Delivery: a tiny, shaky, whispered mantra, very short and quick, two clipped phrases, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "b2726fb4149734a9",
+   "who": "narrator",
+   "text": "LEGEND SAYS!",
+   "clip": "C26",
+   "style": "neutral",
+   "qwen": "Delivery: an explosive, booming epic shout, deep thunderous voice, short and punchy.",
+   "reuse": false
+  },
+  {
+   "id": "9cc814515ad2b4de",
+   "who": "boy",
+   "text": "...My dad?",
+   "clip": "C32",
+   "style": "neutral",
+   "qwen": "Delivery: barely audible, stunned, a small trembling child's voice, short.",
+   "reuse": false
+  },
+  {
+   "id": "0c5b8cf3d5eb2795",
+   "who": "uncle",
+   "text": "FOR DUMPLING RESEARCH!",
+   "clip": "C35",
+   "style": "neutral",
+   "qwen": "Delivery: volcanic, full power, a deep chesty roaring bass shout, huge and explosive, low voice, short and punchy.",
+   "reuse": false
+  }
+ ]
+}

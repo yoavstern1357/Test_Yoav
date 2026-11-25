@@ -15,3 +15,4 @@
 | motion-compare-002 | clips (LTX 0.9.8d tuning, 8 clips, measured) | about 35 (2 GPUs x 17 min) | 2026-11-25 |
 | ep01v44-voices-001 | tts (qwen3, 50 lines x 2 takes) | planned about 25 | 2026-11-25 |
 | ep01v44-stills-001 | images (klein, 64 keyframes x 2 orientations, 1 variant) | planned about 40 | 2026-11-25 |
+| ep01v44-voices-fix-001 | tts (qwen3, 8 lines x 4 takes) | planned about 12 | 2026-11-25 |
