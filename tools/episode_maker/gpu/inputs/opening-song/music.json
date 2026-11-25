@@ -1,0 +1,90 @@
+{
+ "defaults": {
+  "backend": "acestep",
+  "infer_step": 60,
+  "guidance_scale": 15.0,
+  "format": "flac"
+ },
+ "tracks": [
+  {
+   "id": "full_a",
+   "duration": 60,
+   "prompt": "japanese punk rock, anime opening theme, 180 bpm, very fast tempo, distorted electric guitars, driving punk drums, punchy bass, energetic female lead vocal, shouted gang vocals, catchy hook, high energy, bright, cheerful",
+   "lyrics": "[inst]\n\n[verse]\nぼうしをかぶって かけだした\nぺこぺこおなかの おじさんと\nゆげのむこうに みちがある\nとうさんのノートが よんでるよ\n\n[pre-chorus]\nひとくち かじれば ほら\nせかいが ひろがる\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[verse]\nおじさん またまた つまみぐい\nけんきゅうだよって いいわけだ\nでっかい ぎょうざが おいかけてくる\nにげろ にげろ ぜんそくりょく！\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[outro]\nダンプリング ボーイ！\n",
+   "seeds": [
+    101,
+    102
+   ]
+  },
+  {
+   "id": "full_b",
+   "duration": 60,
+   "prompt": "j-rock punk, anime tv opening, 185 bpm, fast, overdriven power chords, pounding drums, melodic bass, young energetic male lead vocal, gang shout chorus, hype, bright major key",
+   "lyrics": "[inst]\n\n[verse]\nぼうしをかぶって かけだした\nぺこぺこおなかの おじさんと\nゆげのむこうに みちがある\nとうさんのノートが よんでるよ\n\n[pre-chorus]\nひとくち かじれば ほら\nせかいが ひろがる\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[verse]\nおじさん またまた つまみぐい\nけんきゅうだよって いいわけだ\nでっかい ぎょうざが おいかけてくる\nにげろ にげろ ぜんそくりょく！\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[outro]\nダンプリング ボーイ！\n",
+   "seeds": [
+    202,
+    203
+   ]
+  },
+  {
+   "id": "full_c",
+   "duration": 60,
+   "prompt": "pop punk, japanese, anime opening, 175 bpm, fast tempo, crunchy distorted guitars, tight punk drums, bass, powerful energetic female vocal, group shouts, upbeat, sing-along hook",
+   "lyrics": "[inst]\n\n[verse]\nぼうしをかぶって かけだした\nぺこぺこおなかの おじさんと\nゆげのむこうに みちがある\nとうさんのノートが よんでるよ\n\n[pre-chorus]\nひとくち かじれば ほら\nせかいが ひろがる\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[verse]\nおじさん またまた つまみぐい\nけんきゅうだよって いいわけだ\nでっかい ぎょうざが おいかけてくる\nにげろ にげろ ぜんそくりょく！\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[outro]\nダンプリング ボーイ！\n",
+   "seeds": [
+    303,
+    304
+   ]
+  },
+  {
+   "id": "full_d",
+   "duration": 60,
+   "prompt": "asian punk rock, japanese anime opening, 190 bpm, very fast, fuzzy distorted guitar riffs, crash cymbals, driving drums, bass, energetic mixed male and female vocals, shouted gang vocals, stadium energy, fun",
+   "lyrics": "[inst]\n\n[verse]\nぼうしをかぶって かけだした\nぺこぺこおなかの おじさんと\nゆげのむこうに みちがある\nとうさんのノートが よんでるよ\n\n[pre-chorus]\nひとくち かじれば ほら\nせかいが ひろがる\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[verse]\nおじさん またまた つまみぐい\nけんきゅうだよって いいわけだ\nでっかい ぎょうざが おいかけてくる\nにげろ にげろ ぜんそくりょく！\n\n[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nギョーザ！ ショーロンポー！ ダンプリング！\nぼくらの たびは とまらない！\n\n[outro]\nダンプリング ボーイ！\n",
+   "seeds": [
+    404,
+    405
+   ]
+  },
+  {
+   "id": "intro_a",
+   "duration": 16,
+   "prompt": "japanese punk rock, anime opening theme, 180 bpm, very fast tempo, distorted electric guitars, driving punk drums, punchy bass, energetic female lead vocal, shouted gang vocals, catchy hook, high energy, bright, cheerful",
+   "lyrics": "[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nダンプリング ボーイ！\n",
+   "seeds": [
+    111,
+    112
+   ]
+  },
+  {
+   "id": "intro_b",
+   "duration": 16,
+   "prompt": "j-rock punk, anime tv opening, 185 bpm, fast, overdriven power chords, pounding drums, melodic bass, young energetic male lead vocal, gang shout chorus, hype, bright major key",
+   "lyrics": "[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nダンプリング ボーイ！\n",
+   "seeds": [
+    212,
+    213
+   ]
+  },
+  {
+   "id": "intro_c",
+   "duration": 16,
+   "prompt": "pop punk, japanese, anime opening, 175 bpm, fast tempo, crunchy distorted guitars, tight punk drums, bass, powerful energetic female vocal, group shouts, upbeat, sing-along hook",
+   "lyrics": "[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nダンプリング ボーイ！\n",
+   "seeds": [
+    313,
+    314
+   ]
+  },
+  {
+   "id": "intro_d",
+   "duration": 16,
+   "prompt": "asian punk rock, japanese anime opening, 190 bpm, very fast, fuzzy distorted guitar riffs, crash cymbals, driving drums, bass, energetic mixed male and female vocals, shouted gang vocals, stadium energy, fun",
+   "lyrics": "[chorus]\nギョーザ！ ショーロンポー！ ダンプリング！\nあつあつ ゆげを あげて とびこめ！\nダンプリング ボーイ！\n",
+   "seeds": [
+    414,
+    415
+   ]
+  }
+ ]
+}

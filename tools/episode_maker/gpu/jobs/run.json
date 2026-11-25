@@ -1,1 +1,1 @@
-{"run_id": "ep01v43-clips-B-001", "task": "clips", "input": "tools/episode_maker/gpu/inputs/ep01v43-clips-B", "backend": "ltx", "smoke": false, "only": "", "max_minutes": 300}
+{"run_id": "opening-song-001", "task": "music", "input": "tools/episode_maker/gpu/inputs/opening-song", "backend": "acestep", "smoke": false, "only": "", "max_minutes": 120}

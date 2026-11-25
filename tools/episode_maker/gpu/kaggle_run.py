@@ -5,7 +5,7 @@
 
 Job file (all keys except run_id and input are optional):
   {"run_id": "smoke-001", "input": "tools/episode_maker/gpu/inputs/sample",
-   "task": "clips",            # "clips" (default, image-to-video, input has clips.json), "images" (stills, images.json) or "tts" (voices, tts.json)
+   "task": "clips",            # "clips" (default, image-to-video, input has clips.json), "images" (stills, images.json) or "tts" (voices, tts.json) or "music" (songs, music.json)
    "notebook": "",            # default: dumpling_clips.ipynb / dumpling_images.ipynb (a file in this folder)
    "backend": "ltx",          # default ltx for clips, klein for images (images: klein | qwen), chatterbox for tts (chatterbox | turbo | orpheus)
    "smoke": true, "only": "", "max_minutes": 300,
@@ -21,6 +21,7 @@ TASKS = {
     "clips": ("dumpling_clips.ipynb", "clips.json", "ltx", "dumpling-clips-"),
     "images": ("dumpling_images.ipynb", "images.json", "klein", "dumpling-images-"),
     "tts": ("dumpling_tts.ipynb", "tts.json", "chatterbox", "dumpling-tts-"),     # voices: chatterbox | turbo | orpheus
+    "music": ("dumpling_music.ipynb", "music.json", "acestep", "dumpling-music-"),  # songs: acestep (ACE-Step v1 3.5B, Apache-2.0)
 }
 REPO = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 
