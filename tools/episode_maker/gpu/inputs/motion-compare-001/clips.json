@@ -1,0 +1,184 @@
+{
+ "defaults": {
+  "orientations": [
+   "portrait"
+  ],
+  "seconds": 4,
+  "fps": 24,
+  "width": 480,
+  "height": 832,
+  "upscale": null,
+  "style": "soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+  "crf": 14
+ },
+ "clips": [
+  {
+   "id": "uncle_ltx095",
+   "backend": "ltx",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement.",
+   "seed": 4242,
+   "steps": 30
+  },
+  {
+   "id": "chase_ltx095",
+   "backend": "ltx",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up.",
+   "seed": 4242,
+   "steps": 30
+  },
+  {
+   "id": "macro_ltx095",
+   "backend": "ltx",
+   "start": "images/macro.jpg",
+   "prompt": "Macro. The soup dumpling lifts on the chopsticks, the thin skin sags and wobbles like a water balloon, golden soup ripples inside, steam curls and drifts, a drop falls back into the basket.",
+   "seed": 4242,
+   "steps": 30
+  },
+  {
+   "id": "uncle_ltx098d",
+   "backend": "ltx98d",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement.",
+   "seed": 4242,
+   "motion": "medium"
+  },
+  {
+   "id": "chase_ltx098d",
+   "backend": "ltx98d",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up.",
+   "seed": 4242,
+   "motion": "medium"
+  },
+  {
+   "id": "macro_ltx098d",
+   "backend": "ltx98d",
+   "start": "images/macro.jpg",
+   "prompt": "Macro. The soup dumpling lifts on the chopsticks, the thin skin sags and wobbles like a water balloon, golden soup ripples inside, steam curls and drifts, a drop falls back into the basket.",
+   "seed": 4242,
+   "motion": "medium"
+  },
+  {
+   "id": "uncle_ltx098d_12fps",
+   "backend": "ltx98d",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement.",
+   "seed": 4242,
+   "motion": "medium",
+   "gen_fps": 12,
+   "post": {
+    "rife": 2
+   }
+  },
+  {
+   "id": "uncle_wan5b",
+   "backend": "wan",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement.",
+   "seed": 4242,
+   "steps": 16,
+   "guidance": 5.0
+  },
+  {
+   "id": "chase_wan5b",
+   "backend": "wan",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up.",
+   "seed": 4242,
+   "steps": 16,
+   "guidance": 5.0
+  },
+  {
+   "id": "macro_wan5b",
+   "backend": "wan",
+   "start": "images/macro.jpg",
+   "prompt": "Macro. The soup dumpling lifts on the chopsticks, the thin skin sags and wobbles like a water balloon, golden soup ripples inside, steam curls and drifts, a drop falls back into the basket.",
+   "seed": 4242,
+   "steps": 16,
+   "guidance": 5.0
+  },
+  {
+   "id": "uncle_fastwan",
+   "backend": "fastwan",
+   "start": "images/uncle.jpg",
+   "prompt": "Close-up. The big fat bald uncle with the thin mustache chews with his eyes closed in bliss, then his eyes pop wide open, his eyebrows shoot up, his cheeks puff out and he waves his chopsticks in shock, then a huge delighted grin. The small boy in the conical leaf hat giggles and looks up at him. Steam swirls. Expressive faces, big body movement.",
+   "seed": 4242,
+   "steps": 3,
+   "guidance": 1.0
+  },
+  {
+   "id": "chase_fastwan",
+   "backend": "fastwan",
+   "start": "images/chase.jpg",
+   "prompt": "The small boy and the big fat uncle run in panic toward the camera, arms flailing, mouths wide open screaming, eyes wide, sweat drops fly, the uncle's belly bounces with every step, the giant white dumpling with a huge chomping mouth rolls right behind them snapping its jaws, steam streams, dust kicks up.",
+   "seed": 4242,
+   "steps": 3,
+   "guidance": 1.0
+  },
+  {
+   "id": "macro_fastwan",
+   "backend": "fastwan",
+   "start": "images/macro.jpg",
+   "prompt": "Macro. The soup dumpling lifts on the chopsticks, the thin skin sags and wobbles like a water balloon, golden soup ripples inside, steam curls and drifts, a drop falls back into the basket.",
+   "seed": 4242,
+   "steps": 3,
+   "guidance": 1.0
+  },
+  {
+   "id": "gag_ltx095_kf",
+   "backend": "ltx",
+   "prompt": "the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae.",
+   "steps": 30,
+   "cond_noise": 0.35,
+   "seed": 4242,
+   "keyframes": [
+    {
+     "image": "images/gag_a.jpg",
+     "t": 0
+    },
+    {
+     "image": "images/gag_b.jpg",
+     "t": "end"
+    }
+   ]
+  },
+  {
+   "id": "gag_ltx098d_kf",
+   "backend": "ltx98d",
+   "prompt": "the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae.",
+   "motion": "high",
+   "seed": 4242,
+   "keyframes": [
+    {
+     "image": "images/gag_a.jpg",
+     "t": 0
+    },
+    {
+     "image": "images/gag_b.jpg",
+     "t": "end"
+    }
+   ]
+  },
+  {
+   "id": "gag_wan5b_kf",
+   "backend": "wan",
+   "prompt": "the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae.",
+   "steps": 16,
+   "guidance": 5.0,
+   "seed": 4242,
+   "keyframes": [
+    {
+     "image": "images/gag_a.jpg",
+     "t": 0
+    },
+    {
+     "image": "images/gag_b.jpg",
+     "t": "end"
+    }
+   ]
+  }
+ ]
+}

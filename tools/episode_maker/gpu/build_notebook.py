@@ -7,6 +7,7 @@ from nb_common import GPU_CHECK, FIND_INPUT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 code = open(os.path.join(HERE, "generate_clips.py"), encoding="utf-8").read()
+post_code = open(os.path.join(HERE, "postprocess.py"), encoding="utf-8").read()
 cells = []
 
 
@@ -30,7 +31,7 @@ Step-by-step guide: `tools/episode_maker/gpu/README.md`.
 """)
 md("## 1. Settings (the only cell you may want to edit)")
 py('''
-BACKEND = "ltx"        # "ltx" = primary (fast, 2B). "wan" = slower fallback with better motion. "ltx13b" = experimental (Kaggle only)
+BACKEND = "ltx"        # "ltx" = 0.9.5 2B (default). "ltx98d" = LTX 0.9.8 13B distilled in 4 bit (8 steps, any number of keyframes). "wan" / "fastwan" = Wan2.2 5B. "auto" = per-clip "backend" in clips.json
 GPUS = "auto"          # "auto" uses both T4s on Kaggle; "1" forces one
 MAX_MINUTES = 540      # stop starting new clips after this many minutes (Kaggle sessions end at 9-12 h)
 ONLY = ""              # e.g. "c01,c02" to run only some clips
@@ -42,12 +43,15 @@ md("## 2. Check the GPU (stops here when there is none) and install")
 py(GPU_CHECK)
 py('''
 # diffusers >= 0.35 is needed for the LTX conditioning pipeline and Wan 2.2
-!pip install -q -U "diffusers>=0.35" "transformers>=4.51" accelerate sentencepiece protobuf ftfy imageio imageio-ffmpeg pillow numpy
+!pip install -q -U "diffusers>=0.35" "transformers>=4.51" accelerate sentencepiece protobuf ftfy imageio imageio-ffmpeg pillow numpy bitsandbytes
+!df -h / /kaggle/working 2>/dev/null | cat
+!apt-get install -y -qq libvulkan1 > /dev/null 2>&1 || true      # needed by the RIFE binary of postprocess.py (CPU mode)
 import diffusers, torch, transformers
 print("diffusers", diffusers.__version__, "| torch", torch.__version__, "| cuda", torch.cuda.is_available(), "| gpus", torch.cuda.device_count())
 ''')
 md("## 3. The generator script (written to disk; also usable on any other GPU machine)")
 py("%%writefile generate_clips.py\n" + code)
+py("%%writefile postprocess.py\n" + post_code)
 md("""
 ## 4. Find the inputs
 Order tried: Kaggle dataset (`/kaggle/input/*/clips.json`), `/content/dumpling_input`, Google Drive `MyDrive/dumpling_input`, otherwise (Colab) an upload prompt for `dumpling_input.zip`.

@@ -8,3 +8,4 @@
 | ep01v43-stills-fix-001 | images (klein, 40 images) | 10 | 2026-11-25 |
 | ep01v43-clips-A-001 | clips (LTX 2B, 30 steps, 16 clips x 2 orientations, 1 variant) | running (est. 160) | 2026-11-25 |
 | ep01v43-clips-B-001 | clips (LTX 2B, 30 steps, 13 clips x 2 orientations, 1 variant) | running (est. 140) | 2026-11-25 |
+| motion-compare-001 | clips (R&D: LTX 0.9.5 vs LTX 0.9.8 13B-distilled nf4 vs Wan2.2 5B vs FastWan, 16 clips portrait) | planned about 90 per GPU x 2 (measured value to be filled in) | 2026-11-25 |
