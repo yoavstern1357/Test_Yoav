@@ -1368,7 +1368,7 @@ class Renderer:
             if ln.get("caption") is False:
                 continue
             dt = t_local - (ln["start"] - s["start"])
-            if -0.02 <= dt <= ln["dur"] + 0.12:
+            if -0.02 <= dt <= ln["dur"] + 0.04:
                 lay = caption_layer(ln.get("caption", ln["text"]), ln["who"], W, H)
                 pop = ease(max(dt, 0) / 0.12)
                 sc = 0.9 + 0.1 * pop
