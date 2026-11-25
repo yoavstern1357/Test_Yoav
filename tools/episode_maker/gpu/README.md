@@ -4,6 +4,10 @@ Turns approved still frames into 4-5 second animated clips with an open model th
 You upload a small package (`clips.json` + images), press **Run all**, and download a zip of mp4 clips. The local pipeline
 (`make_episode.py`) then cuts the clips together with voices, music and captions (section 7).
 
+**Both formats (production bible, "BOTH FORMATS").** Every still and every clip is made in two orientations from the same job: **vertical 9:16** (`<id>.png` 768x1344 / `<id>.mp4` 480x832 upscaled to 720x1280)
+and **horizontal 16:9** (`<id>_land.png` 1344x768 / `<id>_land.mp4` 832x480 upscaled to 1280x720), same seed and references, composition re-framed in the prompt ("Vertical 9:16 composition" vs "Wide horizontal 16:9 composition"), not cropped from one another.
+This doubles GPU time and result size; `"orientations": ["portrait"]` (globally in `defaults` or per item) makes only one. Sections 5 and 10 have the details.
+
 Files in this folder:
 | File | What it is |
 |---|---|
@@ -79,7 +83,7 @@ Colab has one T4 and less RAM, so use LTX only; the notebook already releases th
 ## 5. The input package: `clips.json`
 ```json
 {
-  "defaults": {"backend": "ltx", "width": 480, "height": 832, "seconds": 5, "fps": 24, "fit": "cover"},
+  "defaults": {"backend": "ltx", "width": 480, "height": 832, "seconds": 5, "fps": 24, "fit": "cover", "orientations": ["portrait", "landscape"]},
   "clips": [
     {"id": "c01_burn_gag",
      "start": "images/burn_start.png",
@@ -93,8 +97,10 @@ Colab has one T4 and less RAM, so use LTX only; the notebook already releases th
 | Field | Meaning |
 |---|---|
 | `id` | file name of the result (letters, digits, `_ . -`). With `variants: 3` you get `id__v1`, `__v2`, `__v3` with different seeds, and you pick the best one. |
-| `start` | **Required.** The approved still, becomes frame 1. Path is relative to `clips.json`. Use the full 1080x1920 Canva frame. |
-| `end` | Optional last frame (LTX only): use for big actions that end in a different pose. |
+| `start` | **Required.** The approved still, becomes frame 1. Path is relative to `clips.json`. For the vertical clip use the 9:16 still. For the horizontal clip the sibling `<name>_land.<ext>` (e.g. `images/C01_land.png`) is picked automatically; or give `{"portrait": "images/a.png", "landscape": "images/b.png"}`. If no landscape still exists the clip is made from a center crop of the portrait one (warning in the log, dry-run marks it, `results.json` has `cropped_from_other_orientation`): prefer generating the landscape stills first (section 10). |
+| `end` | Optional last frame (LTX only): use for big actions that end in a different pose. Same per-orientation rules as `start`. |
+| `orientations` | `["portrait", "landscape"]` (default, in `defaults` or per clip) or just one. Result files: `<id>.mp4` and `<id>_land.mp4` (with variants `<id>__v1.mp4`, `<id>_land__v1.mp4`); the same `seed` is used for both. `--only C01` matches both, `--only C01_land` only the horizontal one. |
+| `crop_focus` | `[x, y]` (0-1, default `[0.5, 0.5]`) where a center crop is taken when a still has to be cropped to the other orientation. |
 | `prompt` | **Required.** One paragraph, present tense, one action, describe the look of the characters, say "the camera stays still". A style sentence (soft picture-book cartoon, thick brown outlines) is appended automatically. |
 | `negative` | Optional. Default blocks photorealism, morphing, extra limbs, text and scene cuts. |
 | `seconds` | 4-5 recommended, 6 maximum on a T4. |
@@ -103,16 +109,16 @@ Colab has one T4 and less RAM, so use LTX only; the notebook already releases th
 | `fit` | `cover` (crop to 9:16, for full frames) or `contain` (pad, for cut-outs on transparent background; `bg` sets the colour). |
 | `cond_noise` | LTX only. Lower (0.05) = stays closer to the start image but moves less; higher (0.3) = more motion. Default 0.15. |
 | `backend` | Per clip override: `ltx`, `wan`, `ltx13b`. |
-| `width`, `height` | Generation size (multiple of 32). 480x832 is the sweet spot; 576x1024 is better looking and about 1.5x slower. Output is upscaled to 720x1280 (`upscale`) with Lanczos. |
-Image rules: 9:16, at least 720x1280, character not touching the edges, **no text inside the picture** (the model scrambles it; captions are added later), no more than 2-3 characters. Cut-outs (the files in `specs/puppets`) work only as a technical test.
-Before uploading you can check everything without a GPU: `python3 generate_clips.py --input <folder> --out /tmp/x --dry-run` (prints each clip, size, frame count and the time estimate).
+| `width`, `height` | Generation size of the **vertical** clip (multiple of 32); the horizontal clip swaps them (832x480). 480x832 / 832x480 is the sweet spot; 576x1024 / 1024x576 is better looking and about 1.5x slower. Output is upscaled to 720x1280 / 1280x720 (`upscale`, swapped the same way) with Lanczos. |
+Image rules: 9:16 (16:9 for the `_land` stills), at least 720x1280 (1280x720), character not touching the edges, **no text inside the picture** (the model scrambles it; captions are added later), no more than 2-3 characters. Cut-outs (the files in `specs/puppets`) work only as a technical test.
+Before uploading you can check everything without a GPU: `python3 generate_clips.py --input <folder> --out /tmp/x --dry-run` (prints each clip and orientation, size, frame count and the time estimate). `--backend mock` runs the whole batch on a CPU with dummy videos. `--limit 1` runs only the first job (used by the smoke test: one clip, one orientation).
 
 ## 6. Optional steps
 - **Upscale:** built in and cheap: 480x832 to 720x1280 with Lanczos and a light sharpen (`upscale` in `clips.json`, `null` to keep the native size). A neural upscaler (Real-ESRGAN ncnn) can be run later on a computer; the build container verified the same way of running RIFE on CPU (`production/v4/video-tech.md`).
 - **Interpolate:** not needed. LTX writes 24 fps natively. If a clip feels floaty, `make_episode.py` can step it "on twos" later, or run RIFE locally (CPU, about 0.4 s per frame).
 
 ## 7. Using the clips in an episode
-Unzip `dumpling_clips.zip` into a folder next to your spec (default `clips/`), then use a `clip` shot in the episode spec:
+Unzip `dumpling_clips.zip` into a folder next to your spec (default `clips/`) (for Episode 1: `python3 ep01v4/install_clips.py dumpling_clips.zip`, which installs `Cxx.mp4` and `Cxx_land.mp4`), then use a `clip` shot in the episode spec. Name only the vertical file: `make_episode.py` finds `<name>_land.mp4` for the horizontal render (or take `{"portrait": "...", "landscape": "..."}`); a missing landscape clip falls back to a center crop of the vertical one with a warning. Render both formats with `--both` (see `../README.md`):
 ```json
 {"id": "burn", "clip": "c01_burn_gag__v2.mp4", "trim": [0.4, 4.2], "speed": 1.0,
  "lines": [{"who": "uncle", "text": "Hot hot hot!"}], "punch": [{"t": 1.2, "scale": 1.12}],
@@ -138,6 +144,7 @@ No automatic camera move is applied to a clip (`motion` defaults to `static`); s
 ## 9. What has and has not been tested
 - Tested here (no GPU): JSON validation, image preparation, frame counts, planning/time estimate, resume, 2-worker split, zip, notebook JSON and code syntax (a mock backend writes a dummy video), and the `clip` shot type in `make_episode.py`.
 - Checked against diffusers 0.43 source: pipeline classes, arguments, `encode_prompt` signatures, conditioning objects. Model id `Lightricks/LTX-Video-0.9.5` appears in the diffusers docs; `Wan-AI/Wan2.2-TI2V-5B-Diffusers` was confirmed by search; `Lightricks/LTX-Video-0.9.8-13B-distilled` is **unverified**.
+- Orientations (vertical + horizontal jobs, `_land` naming, per-orientation start images, `--limit`) were tested with the mock backend and `--dry-run` on every input folder.
 - **Not tested:** any real generation. Expect to fix small things on the first GPU run, which is why the smoke test exists.
 
 ## 10. Stills: reference-guided images on the same free GPU (replaces rate-limited Canva generation)
@@ -158,24 +165,24 @@ Honest expectations: nobody has published T4 timings for klein; fp16 can overflo
 
 ### Input: `images.json` + `refs/`
 ```json
-{"defaults": {"backend": "klein", "width": 768, "height": 1344, "variants": 2, "ref_max": 704},
+{"defaults": {"backend": "klein", "width": 768, "height": 1344, "variants": 2, "ref_max": 704, "orientations": ["portrait", "landscape"]},
  "images": [{"id": "C14", "seed": 1014, "prompt": "...", "negative": "", "keep_characters": true,
              "refs": [{"path": "refs/boy.jpg", "role": "the Boy character reference"},
                       "refs/style.jpg",
                       "@G00_grandma_ref__v1"]}]}
 ```
-`refs`: up to 4 (klein) / 3 (qwen) images, each a path or `{path, role}`. The script writes "image 1 is <role>; image 2 is ..." into the prompt, so scene text may say "the Boy from image 1". `@<id>` uses an image generated earlier in the same job as a reference (these run in a second phase; with variants write `@<id>__v1`), which is how Grandma stays the same in C26 and C27. `negative` is used by qwen; klein has no negative prompt (a non-empty value is appended as "Avoid: ..."). `ref_max` (default 704 px long side) keeps the token count, time and memory down. `keep_characters: false` for style-only refs. `upscale: [1080, 1920]` optionally Lanczos-upscales the output. Check without a GPU: `python3 generate_images.py --input <folder> --out /tmp/x --dry-run`. A mock backend (`--backend mock`) tests the whole batch/resume/phases/zip logic on a CPU.
+`refs`: up to 4 (klein) / 3 (qwen) images, each a path or `{path, role}`. The script writes "image 1 is <role>; image 2 is ..." into the prompt, so scene text may say "the Boy from image 1". `@<id>` uses an image generated earlier in the same job as a reference (these run in a second phase; with variants write `@<id>__v1`), which is how Grandma stays the same in C26 and C27. `negative` is used by qwen; klein has no negative prompt (a non-empty value is appended as "Avoid: ..."). `ref_max` (default 704 px long side) keeps the token count, time and memory down. `keep_characters: false` for style-only refs. **Orientations:** `width`/`height` describe the vertical size (768x1344); the horizontal image swaps them (1344x768, both multiples of 32). Each item makes `<id>.png` and `<id>_land.png` (with variants `<id>__v1.png`, `<id>_land__v1.png`), same seed and same refs. The prompt gets a composition sentence ("Vertical 9:16 composition..." / "Wide horizontal 16:9 composition..."; existing "Vertical composition" phrases in a prompt are swapped for the horizontal wording in the landscape version); an item may add `prompt_extra_landscape` (appended to the landscape prompt only) or replace the whole text with `prompt_landscape`, or `size_landscape: [w, h]`. A `@<id>` reference resolves to the landscape version of that image for landscape jobs when it exists, otherwise to the portrait one (so a character sheet with `"orientations": ["portrait"]` is shared by both). `--only C10` matches both, `--only C10_land` only the horizontal one; `--limit 1` runs only the first job. Outputs are optimized PNGs; two small contact sheets are written: `contact_sheet.jpg` (vertical) and `contact_sheet_land.jpg` (horizontal). `upscale: [1080, 1920]` optionally Lanczos-upscales the output. Check without a GPU: `python3 generate_images.py --input <folder> --out /tmp/x --dry-run`. A mock backend (`--backend mock`) tests the whole batch/resume/phases/zip logic on a CPU.
 
 ### Run it (automated)
 Put the job in `tools/episode_maker/gpu/jobs/run.json` and push (the workflow does the rest and pushes to branch `gpu-results`):
 ```json
 {"run_id": "ep01v4-stills-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/ep01v4-stills", "backend": "klein", "smoke": false, "only": "", "max_minutes": 120}
 ```
-First run: set `"smoke": true` (one low-resolution image, to see that the model downloads and loads). Results: `images/<id>.png`, `results.json`, `contact_sheet.jpg`. `task` defaults to `clips`, so old job files keep working. If the session has no GPU the notebook stops in step 2 with a clear message and `NO_GPU.txt`, and `kaggle_run.py` exits with code 2. The kernel metadata now sets `machine_shape: NvidiaTeslaT4` next to `enable_gpu` (the Kaggle CLI 2.x field that selects the accelerator); the missing `machine_shape` is the likely cause of the first smoke run having no GPU. Manual use: run `dumpling_images.ipynb` on Kaggle/Colab like the clips notebook (sections 3-4).
+First run: set `"smoke": true` (one low-resolution image, to see that the model downloads and loads). Results: `images/<id>.png` and `images/<id>_land.png`, `results.json`, `contact_sheet.jpg`, `contact_sheet_land.jpg`. `task` defaults to `clips`, so old job files keep working. If the session has no GPU the notebook stops in step 2 with a clear message and `NO_GPU.txt`, and `kaggle_run.py` exits with code 2. The kernel metadata now sets `machine_shape: NvidiaTeslaT4` next to `enable_gpu` (the Kaggle CLI 2.x field that selects the accelerator); the missing `machine_shape` is the likely cause of the first smoke run having no GPU. Manual use: run `dumpling_images.ipynb` on Kaggle/Colab like the clips notebook (sections 3-4).
 Rebuild the notebooks after editing a generator: `python3 build_images_notebook.py` / `python3 build_notebook.py`.
 
 ### Episode 1 stills
-`inputs/ep01v4-stills/` (about 1.2 MB) makes the 9 missing stills (C10, C14, C16, C17, C20, C26, C27, C28, C29) with 2 variants each, plus `G00_grandma_ref`, a new Grandma character sheet in the same round picture-book style as the Boy and the Uncle (the old painterly cut-out is deliberately NOT used as a reference). Refs: `boy.jpg`, `uncle.jpg` (from `specs/puppets`), `camel.jpg` (from the metro still) and finished stills as style references, all downscaled to <= 1024 px. Expressions are restrained by default; big ones only in C14 (the burn aftermath) and C20 (the proud hero pose). Pick the best variant per still, copy it to `specs/frames/ep01v4/Cxx.png`, then run the clips task.
+`inputs/ep01v4-stills/` (about 1.2 MB) makes the 9 missing stills (C10, C14, C16, C17, C20, C26, C27, C28, C29) with 2 variants each, plus `G00_grandma_ref`, a new Grandma character sheet in the same round picture-book style as the Boy and the Uncle (the old painterly cut-out is deliberately NOT used as a reference). Refs: `boy.jpg`, `uncle.jpg` (from `specs/puppets`), `camel.jpg` (from the metro still) and finished stills as style references, all downscaled to <= 1024 px. Expressions are restrained by default; big ones only in C14 (the burn aftermath) and C20 (the proud hero pose). Both orientations are made by default (40 images instead of 20, about 26 min on one T4 by estimate). Pick the best variant per still and orientation, copy it to `specs/frames/ep01v4/Cxx.png` and `Cxx_land.png`, then run the clips task (its start images `Cxx.png` / `Cxx_land.png` pair up automatically, `pack_inputs.py` packs both).
 
 ## 11. Voices: expressive TTS on the same free GPU (task `tts`)
 Choice and licenses: `production/v4/voice-tech.md`. Backends: `chatterbox` (default, MIT, voice = a reference clip we synthesize), `turbo` (MIT, `[laugh]` tags), `orpheus` (built-in voices, `<laugh>` tags; check its license text first), `mock` (no GPU, tests the logic). Only official repos, safetensors, `torch.load` forced to `weights_only=True`, no token.

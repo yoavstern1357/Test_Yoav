@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Temporary start stills for clips whose real Canva still has not arrived yet, made from the stills that exist
 (crops/flips) and the Grandma cut-out. Written to specs/frames/ep01v4_placeholder/ ; real stills in specs/frames/ep01v4/
-always win automatically (the spec's frames_fallback). Run again any time:  python3 paper/make_placeholders.py"""
+always win automatically (the spec's frames_fallback). Run again any time:  python3 paper/make_placeholders.py
+Also writes the horizontal 16:9 twins Cxx_land.png (1920x1080, same recipe, wide crop) for the stills that are still placeholders."""
 import os, sys
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
@@ -13,9 +14,11 @@ W, H = 1080, 1920
 
 
 def crop916(img, cx, cy, zoom=1.0, flip=False):
-    vw = img.width / zoom; vh = vw * 16 / 9
+    """Crop to the current output aspect (W x H: 9:16 normally, 16:9 while the landscape twins are made) and scale to W x H."""
+    ar = W / H
+    vw = img.width / zoom; vh = vw / ar
     if vh > img.height / zoom * 1.0001:
-        vh = img.height / zoom; vw = vh * 9 / 16
+        vh = img.height / zoom; vw = vh * ar
     x0 = min(max(cx * img.width - vw / 2, 0), img.width - vw); y0 = min(max(cy * img.height - vh / 2, 0), img.height - vh)
     im = img.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((W, H), Image.LANCZOS)
     return ImageOps.mirror(im) if flip else im
@@ -60,18 +63,29 @@ def main():
         p = os.path.join(REAL, n + ".png")
         if os.path.exists(p):
             src[n] = Image.open(p).convert("RGB")
+    global W, H
     made, skipped = [], []
     for name, fn in RECIPES.items():
         out = os.path.join(OUT, name + ".png")
+        out_land = os.path.join(OUT, name + "_land.png")
         if os.path.exists(os.path.join(REAL, name + ".png")):
-            if os.path.exists(out): os.remove(out)
+            for f in (out, out_land):
+                if os.path.exists(f): os.remove(f)
             skipped.append(name); continue
         try:
+            W, H = 1080, 1920
             label(fn(src), name).save(out)
             made.append(name)
+            if os.path.exists(os.path.join(REAL, name + "_land.png")):
+                if os.path.exists(out_land): os.remove(out_land)       # the real horizontal still wins
+            else:
+                W, H = 1920, 1080
+                label(fn(src), name + " (16:9)").save(out_land)
         except KeyError as e:
             print("missing source still", e)
-    print("placeholders made:", made, "| real stills present, placeholder removed:", skipped)
+        finally:
+            W, H = 1080, 1920
+    print("placeholders made (vertical + horizontal):", made, "| real stills present, placeholder removed:", skipped)
 
 
 if __name__ == "__main__":

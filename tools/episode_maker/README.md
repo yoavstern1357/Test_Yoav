@@ -1,11 +1,11 @@
 # Episode Maker
 
-Builds a ~2-minute vertical episode video from a JSON spec, with **no paid video service**:
+Builds a ~2-minute episode video from a JSON spec, in **both formats** (vertical 9:16 for Shorts and horizontal 16:9 for regular YouTube), with **no paid video service**:
 
 - **Voices:** Kokoro neural TTS (open model, runs locally; cast in `VOICES`). Optional engines per episode or character: Supertonic, Pocket TTS (CPU) and Chatterbox/Orpheus (free Kaggle GPU); see "Voice engines" below
 - **Music + sound effects + ambience:** synthesized from scratch (`synth.py`), so nothing is licensed or sampled
 - **Picture:** Ken Burns camera moves, crossfades, burned-in captions, fun-fact cards, steam/hearts/flash effects
-- **Output:** 1080x1920 H.264 + AAC, loudness-normalized for Shorts
+- **Output:** 1080x1920 (9:16) and/or 1920x1080 (16:9) H.264 + AAC, loudness-normalized; mobile versions 720x1280 / 1280x720
 
 ## Setup (once)
 ```
@@ -27,9 +27,37 @@ Compare engines on 6 sample lines: `python3 voice_test.py` (writes `out/voice-te
 python3 make_episode.py specs/episode-01.json out/episode-01.mp4            # full quality
 python3 make_episode.py specs/episode-01.json out/preview.mp4 --preview     # fast low-res check
 python3 make_episode.py specs/episode-01.json out/episode-01.mp4 --mobile   # also writes out/episode-01-mobile.mp4
+python3 make_episode.py specs/episode-01-v4.json out/ep.mp4 --both --mobile  # out/ep.mp4 (9:16) + out/ep-land.mp4 (16:9) + both -mobile.mp4
 ```
-`--mobile`: 720x1280, H.264 Main, crf 27, AAC 128k mono, faststart.
+`--mobile`: 720x1280 (portrait) or 1280x720 (landscape), H.264 Main, crf 27, AAC 128k mono, faststart.
 Frames (the 1080x1920 PNGs, one per shot) live in `specs/frames/ep01/` and are named in the spec (`img`).
+
+## Both formats: vertical 9:16 and horizontal 16:9 (production bible, "BOTH FORMATS")
+Every episode and the series intro are delivered twice with the same length, voices, music and timing; only the picture is re-framed.
+| Option | What it does |
+|---|---|
+| (nothing) | Portrait 1080x1920, exactly as before. Old specs render unchanged. |
+| `--landscape` | Horizontal 1920x1080 to `<out>` (preview 960x540, mobile 1280x720). |
+| `--portrait` | Force vertical (overrides a spec `orientation`). |
+| `--both` | Portrait to `<out>` and landscape to `<out stem>-land<ext>`; the timeline and the audio mix are built once. |
+| spec `"orientation": "portrait" \| "landscape" \| "both"` | Same as the flags (flags win). Spec `size` is the portrait size; `size_landscape` overrides 1920x1080. |
+
+**Stills and clips per orientation.** A shot's `img` / `clip` (and `layers.bg|fg`) is a file name or `{"portrait": "...", "landscape": "..."}`.
+Naming convention: `C01.png` is the vertical still and `C01_land.png` its horizontal twin (same for clips: `C01.mp4` / `C01_land.mp4`; the GPU jobs in `gpu/` write exactly these names).
+The horizontal render looks for `X_land` first (also in `frames_fallback` and `clips_dir`); if only the vertical file exists it uses a **center-cover crop** of it and prints one warning per file
+(steer the crop with the shot's `focus`, or `focus_land`). The vertical render never uses a landscape file unless the dict form only names that one. Clips are cropped the same way (`crop_focus: [x, y]`, default center).
+Clip fallback: if neither orientation of a clip exists, the still (with `fb` motion) plays in both, as before. Durations and clip audio come from the vertical clip (else the horizontal one), so give both the same length.
+
+**Per-orientation overrides.** In the horizontal render every shot key `<key>_land` replaces `<key>` (e.g. `focus_land`, `zoom_land`, `motion_land`, `caption_y_land`, `cards_land`, `puppets_land`), and the same inside a card (`y_land`, `x_land`, `text_land`).
+
+**Layout per orientation** (type size is 1080 px-based in both, so the look is identical):
+| | Vertical 9:16 | Horizontal 16:9 |
+|---|---|---|
+| Captions (approved style: heavy white/colour text with brown stroke) | 84% of the width, `caption_y` default 0.67 (specs use 0.8: above the Shorts UI) | smaller type (7.4% of the height), at most 60% of the width, lower center, `caption_y_land` default 0.84, kept inside a 5% margin |
+| Title and fact cards | width 84%, `y` default 0.62 | fact card 50% of the width in the upper third (`y_land` default 0.30), title at 0.42; clamped inside a 5% margin |
+| Paper TV graphics (`{"type":"paper"}`) | scaled by width | scaled by height; `y` clamped to 0.12-0.58 (above the captions), lower-thirds left of center (`x` 0.3) unless `x_land`/`y_land` are given |
+| Particles, steam, hearts, reel, suck | sized by the width | sized by the height (same pixel size as vertical) |
+Test layout without any art: `python3 make_episode.py specs/episode-01-v4.json out/test.mp4 --both --preview` (placeholders for missing stills, center crops for missing `_land` stills; `out/` is git-ignored).
 
 ## Spec format (per shot)
 `img`, `dur` (minimum; extends automatically to fit the voice), `motion` (`zoom_in|zoom_out|pan_left|pan_right|pan_up|pan_down|static`),
@@ -97,11 +125,11 @@ python3 rig/rigdemo.py out/rig-test.mp4   # 10 s test: walk-in, sniff, gesture, 
 ## AI clips: `clip` shot type
 A shot can be a video clip (for example from the free-GPU notebook in `gpu/`, see `gpu/README.md`) instead of a still:
 `{"clip": "c01.mp4", "trim": [0.4, 4.2], "speed": 1.0, "loop": false, "clip_audio": 0.8}` plus all the usual shot options (`lines`, `sfx`, `punch`, `speedlines`, `impact`, `cards`, `grade`, `transition`, ...).
-Clips are looked up in `clips_dir` (spec key, default `clips`), then `frames_dir`, then next to the spec; absolute paths work. `dur` defaults to the trimmed length, the last frame is held if the shot is longer (or `loop`), and no automatic camera move is added (`motion` defaults to `static`). Specs without `clip` render exactly as before.
+Clips are looked up in `clips_dir` (spec key, default `clips`), then `frames_dir`, then next to the spec; absolute paths work. The horizontal render uses `<name>_land.mp4` (see "Both formats"). `dur` defaults to the trimmed length, the last frame is held if the shot is longer (or `loop`), and no automatic camera move is added (`motion` defaults to `static`). Specs without `clip` render exactly as before.
 
 ## V4 episode: paper-cut code clips + animatic with automatic AI-clip upgrade
 `specs/episode-01-v4.json` is the full 2:00 edit of Episode 1 V4 (29 clips C01-C29, script `scripts/episode-01-v4.1.md`). It is generated by `paper/build_spec_ep01v4.py` (timing check included).
-- **CODE clips** (`paper/`): `python3 -m paper.render [C03 C04 ...]` renders MP4s to `out/ep01v4/code/` (`--sheet x.png` writes a contact sheet instead). Procedural paper-cut art (PIL/numpy/OpenCV): `core.py` (paper textures, cut-paper sprites with rim + shadow, easing, ffmpeg writer), `shapes.py` (Uncle doll, camel, ships, buns, seal...), `worlds.py` (ink-wash map, desk, skyline), `clips.py` / `clips2.py` (C03 map and caravan, C04 Qinglong port, C06 journal, C07 title, C18 seal + tear + dawn village, C19 hero + jelly, C21 asterisk, C22 fun fact, C24 handwriting glow, C27I route south). Legend/map clips are stepped at 8 fps; cards and graphics are smooth.
+- **CODE clips** (`paper/`): `python3 -m paper.render [C03 C04 ...]` renders MP4s to `out/ep01v4/code/` (`--sheet x.png` writes a contact sheet instead). `--landscape` writes `Cxx_land.mp4` (1920x1080), `--both` writes both; the spec's `"clip": "../out/ep01v4/code/C03.mp4"` then finds `C03_land.mp4` for the horizontal render automatically. The horizontal clips are **re-composed from the finished vertical frame** (`land_compose` in `paper/clips.py`: the sharp frame as a center column, the sides continue its backdrop from its own edge columns, soft shadow); a clip with a wide layout of its own overrides `Clip.frame_land(t, ts)` (returns a 1920x1080 image), and `land_zoom` / `land_focus(t)` crop the column when a vertical clip should be punched in. The paper TV graphics (`paper/cards.py`) render natively in both aspect ratios. Procedural paper-cut art (PIL/numpy/OpenCV): `core.py` (paper textures, cut-paper sprites with rim + shadow, easing, ffmpeg writer), `shapes.py` (Uncle doll, camel, ships, buns, seal...), `worlds.py` (ink-wash map, desk, skyline), `clips.py` / `clips2.py` (C03 map and caravan, C04 Qinglong port, C06 journal, C07 title, C18 seal + tear + dawn village, C19 hero + jelly, C21 asterisk, C22 fun fact, C24 handwriting glow, C27I route south). Legend/map clips are stepped at 8 fps; cards and graphics are smooth.
 - **TV graphics** (`paper/cards.py`): shot card `{"type":"paper","kind":"lower|intermission|safety|fineprint|step|rating|recap|next|word", "t","d","y",...}` (lower-third can flip text at `flip_t`; `in: slam|pop|slide_down`; `slide_t` slides it out).
 - **AI-clip fallback**: a shot with `clip` + `img` + `fb {...}` plays `clips/ep01v4/Cxx.mp4` when it exists, otherwise the still `img` with the motion in `fb` (so the episode always renders; real clips take over automatically). `frames_fallback` names a folder of temporary stills (`paper/make_placeholders.py`); real stills in `frames_dir` win.
 - **New shot keys**: `reverse`, `freeze [{t,d}]` (8-frame look-to-lens hold), `on_twos` (e.g. 12), `black` (black lead-in), `fade_out`, `impact_frame {t,d}` (white flash then flat posterized red frame with burst lines), fx `reel` (film-reel rewind), fx `suck` (steam into a point). Spec keys: `caption_y` (default caption height), `narrator_echo`. Line keys: `speed`, `pitch`, `gain`, `echo`. More SFX in `sfx_extra.py` (stamp, scratch, snore, sniff, rewind, elevator, camel_bell, rooster, chop, ...).

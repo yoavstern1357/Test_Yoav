@@ -520,7 +520,7 @@ def title_layer(card, W, H=None):
     u = H if land else W
     f1, f2 = font(FONT, int(u * 0.105)), font(FONT_BOLD, int(u * 0.058))
     dummy = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
-    l1 = wrap_text(dummy, card["text"], f1, W * (0.70 if land else 0.86))
+    l1 = wrap_text(dummy, card["text"], f1, W * (0.88 if land else 0.86))
     h = len(l1) * int(u * 0.125) + int(u * 0.12)
     img = Image.new("RGBA", (W, h + 20), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
@@ -762,7 +762,7 @@ class Renderer:
         for name, exact in cands:
             if os.path.exists(self.resolve(name)):
                 if not exact:
-                    warn_once(f"no {self.orient} version of {cands[0][0]}: using {name} with a center-cover crop (make {land_name(name) if self.land else name})")
+                    warn_once(f"no {self.orient} file {cands[0][0]}: using {name} with a center-cover crop")
                 self.picked[key] = name
                 return name
         self.picked[key] = cands[0][0]

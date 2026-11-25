@@ -40,27 +40,31 @@ _land_cache = {}
 
 
 def land_compose(img, zoom=1.0, focus=0.5):
-    """Portrait frame (W x H) -> landscape frame (1920 x 1080): sharp center column over a blurred, widened copy."""
+    """Portrait frame (W x H) -> landscape frame (1920 x 1080): the sharp frame as a center column; the sides continue its backdrop
+    (the frame's own left/right edge columns, stretched sideways and softened, so sky/paper/desk colors carry on) with a soft shadow."""
     key = (zoom,)
     if key not in _land_cache:
         fw = int(round(W * LH / H * zoom))                      # fitted column: full height at zoom 1, wider and cropped above
-        fh = int(round(LH * zoom))
         m = Image.new("L", (LW, LH), 0)
         ImageDraw.Draw(m).rectangle(((LW - fw) // 2, 0, (LW + fw) // 2, LH), fill=255)
-        glow = m.filter(ImageFilter.GaussianBlur(34)).point(lambda v: int(v * 0.42))
-        _land_cache[key] = (fw, fh, glow)
-    fw, fh, glow = _land_cache[key]
-    # background: the frame, covered to 1920 wide at 1/8 size, cropped at the focus height, then scaled up (so it is already soft)
-    small = img.resize((LW // 8, int(round(LW // 8 * H / W))), Image.BILINEAR)
-    bh = LH // 8
-    top = int(round((small.height - bh) * min(max(focus, 0.0), 1.0)))
-    bg = small.crop((0, top, small.width, top + bh)).resize((LW, LH), Image.BICUBIC).filter(ImageFilter.GaussianBlur(10))
-    bg = Image.blend(bg, Image.new("RGB", bg.size, (255, 244, 224)), 0.10)
-    bg.paste(Image.new("RGB", bg.size, (46, 32, 22)), (0, 0), glow)     # soft shadow around the column
+        glow = m.filter(ImageFilter.GaussianBlur(30)).point(lambda v: int(v * 0.40))
+        yy = np.linspace(0, 1, LW)[None, :]
+        edge = np.clip(np.abs(yy - 0.5) * 2, 0, 1) ** 2.2         # darker toward the outer edges
+        _land_cache[key] = (fw, glow, (1 - 0.16 * edge)[..., None].astype(np.float32))
+    fw, glow, fall = _land_cache[key]
     fg = img.resize((fw, int(round(H * fw / W))), Image.LANCZOS)
     y0 = int(round((fg.height - LH) * min(max(focus, 0.0), 1.0))) if fg.height > LH else 0
-    bg.paste(fg.crop((0, y0, fw, y0 + min(LH, fg.height))), ((LW - fw) // 2, 0))
-    return bg
+    fg = fg.crop((0, y0, fw, y0 + min(LH, fg.height)))
+    side = (LW - fw) // 2
+    bg = Image.new("RGB", (LW, LH))
+    soft = fg.resize((max(8, fw // 14), max(8, fg.height // 14)), Image.BILINEAR).filter(ImageFilter.GaussianBlur(1.6)).resize(fg.size, Image.BICUBIC)
+    for x0, col in ((0, 0), (LW - side, fw - 6)):          # soft edge columns, so busy art (routes, text) does not turn into streaks
+        strip = soft.crop((col, 0, col + 6, fg.height)).resize((side, LH), Image.BILINEAR)
+        bg.paste(strip, (x0, 0))
+    bg = Image.fromarray(np.clip(np.asarray(bg, np.float32) * fall, 0, 255).astype(np.uint8))
+    bg.paste(Image.new("RGB", bg.size, (46, 32, 22)), (0, 0), glow)
+    bg.paste(fg, (side, 0))
+    return final_grain(bg, 0.03)
 
 
 def render_clip(clip, path, fps=FPS, scale=1.0, only=None, orient="portrait"):
