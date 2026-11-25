@@ -585,6 +585,62 @@ def title_layer(card, W, H=None):
     return img
 
 
+def importance_map(img):
+    """Where the eye goes: spectral-residual saliency + edge density + skin tones (faces, hands) + bright, saturated blobs, 0..1 at ~1/6 size."""
+    import cv2
+    a = np.asarray(img.convert("RGB"))
+    h, w = a.shape[:2]
+    k = max(1, int(round(max(h, w) / 220)))
+    sm = cv2.resize(a, (max(8, w // k), max(8, h // k)), interpolation=cv2.INTER_AREA)
+    g = cv2.cvtColor(sm, cv2.COLOR_RGB2GRAY).astype(np.float32) / 255.0
+    f = np.fft.fft2(g)
+    logamp = np.log(np.abs(f) + 1e-6)
+    phase = np.angle(f)
+    resid = logamp - cv2.blur(logamp, (3, 3))
+    sal = np.abs(np.fft.ifft2(np.exp(resid + 1j * phase))) ** 2
+    sal = cv2.GaussianBlur(sal.astype(np.float32), (0, 0), 2.0)
+    sal = (sal - sal.min()) / (sal.max() - sal.min() + 1e-9)
+    gx = cv2.Sobel(g, cv2.CV_32F, 1, 0, ksize=3); gy = cv2.Sobel(g, cv2.CV_32F, 0, 1, ksize=3)
+    edge = cv2.GaussianBlur(np.sqrt(gx ** 2 + gy ** 2), (0, 0), 2.0)
+    edge = np.clip(edge / (np.percentile(edge, 98) + 1e-6), 0, 1)
+    r, gg, b = [sm[..., i].astype(np.float32) for i in range(3)]
+    skin = ((r > 190) & (r > gg + 8) & (gg > b + 6) & (r < 255) & (gg > 140) & (b > 100) & (r - b < 110)).astype(np.float32)
+    skin = cv2.GaussianBlur(skin, (0, 0), 2.5)
+    hsv = cv2.cvtColor(sm, cv2.COLOR_RGB2HSV).astype(np.float32)
+    sat = np.clip((hsv[..., 1] - 90) / 120, 0, 1) * np.clip((hsv[..., 2] - 60) / 120, 0, 1)
+    imp = 0.45 * sal + 0.6 * edge + 1.1 * skin + 0.25 * cv2.GaussianBlur(sat, (0, 0), 2.0)
+    imp = cv2.GaussianBlur(imp, (0, 0), 2.5)
+    return np.clip(imp / (np.percentile(imp, 97) + 1e-6), 0, 1.5)
+
+
+def safe_caption_y(frame, lay, land):
+    """Vertical centre (fraction of the height) of the emptiest band for this caption, near the usual spot; faces, hands and dumplings are
+    what the importance map marks, so the caption lands beside them (never over them when an empty band exists)."""
+    imp = importance_map(frame)
+    h, w = imp.shape
+    H = frame.height
+    bbox = lay.getchannel("A").getbbox()
+    lh_frac = (bbox[3] - bbox[1]) / H if bbox else 0.12
+    lh_px = max(2, int(round(lh_frac * h)))
+    x0, x1 = (int(w * 0.17), int(w * 0.83)) if land else (int(w * 0.08), int(w * 0.92))
+    if bbox:
+        cw = (bbox[2] - bbox[0]) / lay.width
+        x0 = max(0, int(w * (0.5 - cw / 2))); x1 = min(w, int(w * (0.5 + cw / 2)))
+    default = 0.85 if land else 0.80
+    lo = 0.10 if land else 0.12
+    hi = 0.93 if land else 0.88
+    best, bs = default, 1e9
+    for cy in np.arange(lo, hi + 1e-6, 0.01):
+        y0 = int((cy - lh_frac / 2 * (1.0)) * h); y1 = y0 + lh_px
+        if y0 < 0 or y1 > h:
+            continue
+        reg = imp[y0:y1, x0:x1]
+        sc = float(reg.mean()) + 1.0 * float(np.percentile(reg, 93)) + 0.35 * abs(cy - default)
+        if sc < bs:
+            best, bs = float(cy), sc
+    return best
+
+
 def soft_sprite(r, alpha=0.5, color=(255, 255, 255)):
     key = ("spr", r, alpha, color)
     if key in _layer_cache:
@@ -773,6 +829,7 @@ class Renderer:
         self.frames_dir = frames_dir
         self.imgs = {}
         self.picked = {}
+        self._capcy = {}
         self.readers = {}
         for s in shots:
             if s.get("img") and not self.clip_file(s):
@@ -1374,11 +1431,18 @@ class Renderer:
                 sc = 0.9 + 0.1 * pop
                 lw, lh = int(lay.width * sc), int(lay.height * sc)
                 l2 = lay.resize((lw, lh), Image.BILINEAR) if sc != 1 else lay
-                if self.land:
-                    cy = self.H * s.get("caption_y", self.spec.get("caption_y_land", 0.84))
-                    cy = min(max(cy, lh / 2 + 0.05 * self.H), self.H * 0.955 - lh / 2)
+                manual = s.get("caption_y_land") if self.land else s.get("caption_y")      # manual per-shot position wins
+                if manual is None and self.spec.get("caption_safe") and s.get("caption_auto", True):
+                    ck = (s.get("id"), s.get("start"), ln.get("text"), ln.get("start"))
+                    if ck not in self._capcy:
+                        self._capcy[ck] = safe_caption_y(frame, lay, self.land)
+                    cy = self._capcy[ck] * self.H
+                elif self.land:
+                    cy = self.H * (manual if manual is not None else self.spec.get("caption_y_land", 0.84))
                 else:
-                    cy = self.H * s.get("caption_y", self.spec.get("caption_y", 0.67))
+                    cy = self.H * (manual if manual is not None else self.spec.get("caption_y", 0.67))
+                if self.land:
+                    cy = min(max(cy, lh / 2 + 0.05 * self.H), self.H * 0.955 - lh / 2)
                 frame.paste(l2, ((W - lw) // 2, int(cy) - lh // 2), l2)
         return frame
 

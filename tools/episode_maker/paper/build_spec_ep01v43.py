@@ -81,7 +81,7 @@ code("C90", 1.5, mood="adventure", sfx=[S(0.0, "gong", None, 0.8), S(0.05, "taik
 # ============================================================ A. COLD OPEN (0:00-0:12)
 ai("C01", 5.5, black=0.5, mood="off", ambience="shop",
    fb=dict(motion="zoom_in", zoom=1.18, focus=[0.5, 0.4], sway=0.4, particles=dict(type="steam", n=10)),
-   lines=V("C01", over={0: dict(lead=0.6)}), sfx=[S(0.5, "hiss", 2.5, 0.5), S(1.2, "creak", 0.8, 0.3)], caption_y=0.8)
+   lines=V("C01", over={0: dict(lead=0.6)}), sfx=[S(0.5, "hiss", 2.5, 0.5), S(1.2, "creak", 0.8, 0.3)])
 ai("C02", 6.5, ambience="water",
    fb=dict(motion="zoom_in", zoom=1.1, focus=[0.45, 0.5], sway=0.4),
    lines=V("C02", over={0: dict(gap=-0.3)}), sfx=[S(5.9, "thud", None, 0.7), S(5.95, "page", None, 0.6)])
@@ -173,7 +173,7 @@ ai("C29", 1.5, mood="off", fade_out=0.3, tail=0.0, fb=dict(motion="static", zoom
 
 spec = dict(title="The Dumpling Boy: intro + Episode 01 v4.3 (How Does Soup Get Inside a Dumpling?)", size=[1080, 1920], fps=30, orientation="both",
             frames_dir="frames/ep01v43", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v43",
-            voice_engine="gpu", voice_fallback=True, voice_speed={"boy": 1.17, "uncle": 1.3, "grandma": 1.3, "narrator": 1.2}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0, caption_y=0.8, caption_y_land=0.86,
+            voice_engine="gpu", voice_fallback=True, caption_safe=True, voice_speed={"boy": 1.17, "uncle": 1.3, "grandma": 1.3, "narrator": 1.2}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0, caption_y=0.8, caption_y_land=0.86,
             narrator_echo=True, snap_to_beat=False, shots=shots)
 
 if __name__ == "__main__":
