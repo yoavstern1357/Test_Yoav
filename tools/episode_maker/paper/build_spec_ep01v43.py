@@ -30,6 +30,8 @@ def ai(c, dur, id=None, trim=None, speed=None, fb=None, still=None, **kw):
     d = dict(clip=f"{c}.mp4", img=still or f"{c}.png", fb=base)
     if trim: d["trim"] = trim
     if speed: d["speed"] = speed
+    if not trim and not speed:
+        d["fit_clip"] = True
     d.update(kw)
     return sh(id or c, dur, **d)
 

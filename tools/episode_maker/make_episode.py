@@ -414,6 +414,13 @@ def build_timeline(spec, spec_dir="."):
         s["lines"] = lines
         end_voice = (lines[-1]["start"] + lines[-1]["dur"] + s.get("tail", 0.35)) if lines else t
         s["dur"] = max(s["dur"], end_voice - t)
+        if s.get("clip") and s.get("fit_clip") and s.get("clip_path"):
+            # stretch a shorter AI clip over the shot (slow motion, at most 0.6x) instead of freezing its last frame
+            cd, _ = probe_clip(s["clip_path"])
+            tr = s.get("trim")
+            src = (float(tr[1]) if tr and len(tr) > 1 and tr[1] is not None else cd) - (float(tr[0]) if tr else 0.0)
+            if src > 0 and s["dur"] > src:
+                s["speed"] = round(max(float(s.get("min_speed", 0.6)), src / s["dur"]), 3)
         if snap and mood != "off":   # round the cut to the nearest half-beat of the mood's tempo
             half = 30.0 / synth.mood_bpm(mood)
             need = s["dur"]
