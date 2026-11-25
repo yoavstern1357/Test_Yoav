@@ -16,3 +16,6 @@
 | ep01v44-voices-001 | tts (qwen3, 50 lines x 2 takes) | planned about 25 | 2026-11-25 |
 | ep01v44-stills-001 | images (klein, 64 keyframes x 2 orientations, 1 variant) | planned about 40 | 2026-11-25 |
 | ep01v44-voices-fix-001 | tts (qwen3, 8 lines x 4 takes) | planned about 12 | 2026-11-25 |
+| ep01v44-stills-001 | measured: 128 keyframes about 50 min wall | about 50 | 2026-11-25 |
+| ep01v44-voices-001 / -fix-001 | measured about 25 + 8 | about 33 | 2026-11-25 |
+| ep01v44-stills-fix-001 | images (klein, 22 items x 2 variants, re-rolls) | planned about 20 | 2026-11-25 |

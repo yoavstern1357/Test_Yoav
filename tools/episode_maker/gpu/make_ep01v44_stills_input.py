@@ -37,9 +37,17 @@ def comp(zone):
             else " Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds.")
 
 
+FIX = {"C07": ["landscape"], "C08": None, "C13": None, "C16": ["landscape"], "C21": ["portrait"], "C24": ["portrait"], "C26": ["landscape"],
+       "C30": ["landscape"], "C32": ["end", "portrait"], "C35": ["portrait"], "C37": ["end", "portrait"]}      # second pass: items of the first pass with duplicates, text or glitches
+NEGATIVE = "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces"
+
+
 def main():
-    name = sys.argv[1] if len(sys.argv) > 1 else "ep01v44-stills"
-    only = [a for a in sys.argv[2:]]
+    fix = len(sys.argv) > 1 and sys.argv[1] == "fix"
+    if fix:
+        sys.argv.pop(1)
+    name = sys.argv[1] if len(sys.argv) > 1 else ("ep01v44-stills-fix" if fix else "ep01v44-stills")
+    only = [a for a in sys.argv[2:]] or (list(FIX) if fix else [])
     out = os.path.join(HERE, "inputs", name)
     os.makedirs(os.path.join(out, "refs"), exist_ok=True)
     src = os.path.join(HERE, "inputs", "ep01v43-stills", "refs")
@@ -53,13 +61,14 @@ def main():
         seed += 7
         text = c["start_kf"] + " " + c["end_kf"]
         ws = who(text)
-        if re.search(r"silhouette", text):
+        if re.search(r"Dad's silhouette|silhouette from behind", text):
             ws = []
+        c = dict(c, end_kf=re.sub(r"ink-bloom title in the sky:.*", "an empty soft sky above (no text anywhere).", c["end_kf"]))
         refs = []
         if "uncle" in ws and "boy" in ws:
-            refs = [R["pair"], R["uncle"]]
+            refs = [R["pair"], R["boy"]] if fix else [R["pair"], R["uncle"]]
         elif "uncle" in ws:
-            refs = [R["uncle"], R["pair"]]
+            refs = [R["pair"]] if fix else [R["uncle"], R["pair"]]
         elif "boy" in ws:
             refs = [R["boy"]]
         if "grandma" in ws:
@@ -69,16 +78,39 @@ def main():
             refs = [R["style"]]
         cast = " ".join(f"{CAST[k]}." for k in ws)
         base = (cast + " " if cast else "") + c["start_kf"] + comp(c["zone"]) + " " + STYLE
-        it = {"id": c["id"], "seed": seed, "variants": 1, "refs": refs[:3], "prompt": base}
+        it = {"id": c["id"], "seed": seed + (900 if fix else 0), "variants": 2 if fix else 1, "refs": refs[:3], "prompt": base}
+        if fix:
+            it["negative"] = NEGATIVE
         if not keep:
             it["keep_characters"] = False
         items.append(it)
         endp = ("Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: "
                 + c["end_kf"] + comp(c["zone"]) + " " + STYLE)
-        e = {"id": c["id"] + "_end", "seed": seed, "variants": 1, "refs": [{"path": "@" + c["id"], "role": "the START frame of the same shot: keep place, characters, outfits and style identical"}] + refs[:2], "prompt": cast + " " + endp if cast else endp}
+        e = {"id": c["id"] + "_end", "seed": seed + (900 if fix else 0), "variants": 2 if fix else 1, "refs": [{"path": "@" + c["id"], "role": "the START frame of the same shot: keep place, characters, outfits and style identical"}] + refs[:2], "prompt": cast + " " + endp if cast else endp}
         if not keep:
             e["keep_characters"] = False
+        if fix:
+            e["negative"] = NEGATIVE
+            e["refs"][0]["path"] = "@" + c["id"] + "__v1"
         items.append(e)
+    if fix:                                    # keep only the listed items / orientations
+        kept = []
+        for it in items:
+            base = it["id"].replace("_end", "")
+            spec = FIX.get(base, "x")
+            if spec == "x":
+                continue
+            isend = it["id"].endswith("_end")
+            if spec is not None:
+                if "end" in spec and not isend and "start" not in spec and "end" in spec and base not in ("C32", "C37"):
+                    pass
+                orient = [o for o in spec if o in ("portrait", "landscape")]
+                if orient:
+                    it["orientations"] = orient
+                if spec == ["end"] and not isend:
+                    continue
+            kept.append(it)
+        items = kept
     job = {"defaults": {"backend": "klein", "width": 768, "height": 1344, "variants": 1, "ref_max": 704, "orientations": ["portrait", "landscape"]}, "images": items}
     json.dump(job, open(os.path.join(out, "images.json"), "w"), indent=1, ensure_ascii=False)
     print(len(items), "items ->", out)
