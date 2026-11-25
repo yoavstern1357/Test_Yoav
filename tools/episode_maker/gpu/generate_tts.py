@@ -31,18 +31,23 @@ BACKENDS = {
     "turbo": dict(repo="ResembleAI/chatterbox-turbo", pip="chatterbox-tts", sr=24000, license="MIT", needs_ref=True),
     "orpheus": dict(repo="canopylabs/orpheus-3b-0.1-ft", pip="transformers accelerate snac soundfile", sr=24000,
                     license="see model card (Apache-2.0 declared, Llama 3.2 base)", needs_ref=False),
+    "qwen3": dict(repo="Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign", pip="qwen-tts", sr=24000, license="Apache-2.0", needs_ref=False),
+    "qwen3custom": dict(repo="Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice", pip="qwen-tts", sr=24000, license="Apache-2.0", needs_ref=False),
     "mock": dict(repo="-", pip="", sr=24000, license="-", needs_ref=False),
 }
+# Orpheus: the official repo may be gated (needs a token); then the widely used ungated mirror of the same weights is tried.
+ORPHEUS_REPOS = ["canopylabs/orpheus-3b-0.1-ft", "unsloth/orpheus-3b-0.1-ft"]
+# Qwen3-TTS: the VoiceDesign model builds a voice from a text description (`qwen_voice` of each voice + a style sentence).
 # Emotion presets (Chatterbox: exaggeration 0.25-1.0, cfg_weight 0.2-0.7; lower cfg = slower, more deliberate). Orpheus uses `tag`.
 STYLES = {
-    "neutral": dict(exaggeration=0.5, cfg_weight=0.5),
-    "host": dict(exaggeration=0.55, cfg_weight=0.5),
-    "excited": dict(exaggeration=0.8, cfg_weight=0.35, tag="<gasp> "),
-    "tender": dict(exaggeration=0.4, cfg_weight=0.3),
-    "dreamy": dict(exaggeration=0.6, cfg_weight=0.3),
-    "tiny": dict(exaggeration=0.35, cfg_weight=0.3),
-    "solemn": dict(exaggeration=0.45, cfg_weight=0.25),
-    "laugh": dict(exaggeration=0.75, cfg_weight=0.4, tag="<laugh> "),
+    "neutral": dict(exaggeration=0.5, cfg_weight=0.5, qwen="Natural, relaxed and conversational."),
+    "host": dict(exaggeration=0.55, cfg_weight=0.5, qwen="Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice."),
+    "excited": dict(exaggeration=0.8, cfg_weight=0.35, tag="<gasp> ", qwen="Excited and delighted, fast and lively, with big expressive ups and downs in pitch."),
+    "tender": dict(exaggeration=0.4, cfg_weight=0.3, qwen="Soft, gentle and patient, tender and wise, slightly slower."),
+    "dreamy": dict(exaggeration=0.6, cfg_weight=0.3, qwen="Dreamy and wondering, slow, savouring each word, as if smelling something wonderful."),
+    "tiny": dict(exaggeration=0.35, cfg_weight=0.3, qwen="Small, quiet and amazed, a hushed whisper of surprise, with a short pause at the start."),
+    "solemn": dict(exaggeration=0.45, cfg_weight=0.25, qwen="Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace."),
+    "laugh": dict(exaggeration=0.75, cfg_weight=0.4, tag="<laugh> ", qwen="Laughing, joyful and playful."),
 }
 ORPHEUS_VOICES = ["tara", "leah", "jess", "leo", "dan", "mia", "zac", "zoe"]
 ID = re.compile(r"^[A-Za-z0-9_.\-]+$")
@@ -102,7 +107,7 @@ def settings(line, voices, styles):
     s = dict(styles.get(line.get("style", "neutral"), styles["neutral"]))
     v = voices[line["who"]]
     s["exaggeration"] = min(1.0, s["exaggeration"] * float(v.get("exaggeration_scale", 1.0)))
-    for k in ("temperature", "orpheus_voice"):
+    for k in ("temperature", "orpheus_voice", "qwen_voice", "qwen_speaker"):
         if k in v:
             s[k] = v[k]
     for k in ("exaggeration", "cfg_weight", "temperature"):
