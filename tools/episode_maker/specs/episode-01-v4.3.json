@@ -338,7 +338,7 @@
   },
   {
    "id": "C01",
-   "dur": 5.5,
+   "dur": 4.73,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -386,7 +386,7 @@
   },
   {
    "id": "C02",
-   "dur": 6.5,
+   "dur": 5.59,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -430,7 +430,7 @@
   },
   {
    "id": "C03",
-   "dur": 5.5,
+   "dur": 4.73,
    "tail": 0.15,
    "lead": 0.3,
    "transition": "fade",
@@ -477,7 +477,7 @@
   },
   {
    "id": "C04",
-   "dur": 6.0,
+   "dur": 5.16,
    "tail": 0.15,
    "lead": 0.3,
    "transition": "cut",
@@ -535,7 +535,7 @@
   },
   {
    "id": "C05",
-   "dur": 5.5,
+   "dur": 4.73,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -606,7 +606,7 @@
   },
   {
    "id": "C07",
-   "dur": 5.0,
+   "dur": 4.3,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -641,7 +641,7 @@
   },
   {
    "id": "C08",
-   "dur": 9.0,
+   "dur": 7.74,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -697,7 +697,7 @@
   },
   {
    "id": "C09",
-   "dur": 7.0,
+   "dur": 6.02,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -746,7 +746,7 @@
   },
   {
    "id": "C10",
-   "dur": 6.0,
+   "dur": 5.16,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -805,7 +805,7 @@
   },
   {
    "id": "C11a",
-   "dur": 4.4,
+   "dur": 3.78,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1029,7 +1029,7 @@
   },
   {
    "id": "C12",
-   "dur": 7.0,
+   "dur": 6.02,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1084,7 +1084,7 @@
   },
   {
    "id": "C13",
-   "dur": 4.0,
+   "dur": 3.44,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1285,7 +1285,7 @@
   },
   {
    "id": "C15",
-   "dur": 4.0,
+   "dur": 3.44,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1335,7 +1335,7 @@
   },
   {
    "id": "C16",
-   "dur": 5.0,
+   "dur": 4.3,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1369,7 +1369,7 @@
   },
   {
    "id": "C17",
-   "dur": 5.0,
+   "dur": 4.3,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1419,7 +1419,7 @@
   },
   {
    "id": "C18",
-   "dur": 6.0,
+   "dur": 5.16,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1503,7 +1503,7 @@
   },
   {
    "id": "C20",
-   "dur": 6.0,
+   "dur": 5.16,
    "tail": 0.15,
    "lead": 0.4,
    "transition": "cut",
@@ -1526,7 +1526,7 @@
   },
   {
    "id": "C21",
-   "dur": 5.0,
+   "dur": 4.3,
    "tail": 0.15,
    "lead": 0.3,
    "transition": "cut",
@@ -1596,7 +1596,7 @@
   },
   {
    "id": "C23",
-   "dur": 6.0,
+   "dur": 5.16,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1732,7 +1732,7 @@
   },
   {
    "id": "C24d",
-   "dur": 5.4,
+   "dur": 4.64,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "cut",
@@ -1765,7 +1765,7 @@
   },
   {
    "id": "C25",
-   "dur": 6.0,
+   "dur": 5.16,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "fade",
@@ -1811,7 +1811,7 @@
   },
   {
    "id": "C26",
-   "dur": 3.0,
+   "dur": 2.58,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "fade",
@@ -1914,7 +1914,7 @@
   },
   {
    "id": "C28",
-   "dur": 4.0,
+   "dur": 3.44,
    "tail": 0.15,
    "lead": 0.2,
    "transition": "fade",

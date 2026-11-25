@@ -11,9 +11,12 @@ from ep01v43_lines import LINES
 
 CODE = "../out/ep01v43/code/%s.mp4"
 shots = []
+FLOOR = 0.86
 
 
 def sh(id, dur, **kw):
+    if dur >= 3.0 and not id.startswith(("C27", "C19", "C22")):      # the script's minimum lengths are generous: voices set the real length
+        dur = round(dur * FLOOR, 2)
     d = dict(id=id, dur=dur, tail=0.15, lead=0.2, transition="cut")
     d.update(kw)
     shots.append(d)
