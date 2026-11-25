@@ -197,7 +197,7 @@ Job (not triggered by the engineer; first run with `smoke: true`, which renders 
 Listening test first: `inputs/voice-test` has the 6 comparison lines. Results: `audio/<id>.wav`, `results.json` (model commit, duration, QC flags), `dumpling_tts.zip` (the workflow deletes zips; download the wavs from the `gpu-results` branch or Kaggle). Copy the WAVs to `tools/episode_maker/tts/gpu/` and render with `"voice_engine": "gpu"`. Rebuild the notebook after editing the generator: `python3 build_tts_notebook.py`.
 Not tested: listening quality (nobody has listened yet).
 
-**Run 2025-11-25 (`voices-test-002`, Kaggle T4, all 6 lines x 2 takes OK for three engines):**
+**Run 2026-11-25 (`voices-test-002`, Kaggle T4, all 6 lines x 2 takes OK for three engines):**
 | Backend | Model / license | Voice | Time per line (T4) |
 |---|---|---|---|
 | `qwen3` | Qwen3-TTS 1.7B VoiceDesign, Apache-2.0 | text description per character (`qwen_voice` in `tts.json`) + style sentence per line (`qwen` in STYLES) | 3-17 s |
