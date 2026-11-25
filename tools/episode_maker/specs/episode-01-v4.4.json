@@ -20,12 +20,12 @@
  "voice_fallback": true,
  "caption_safe": true,
  "voice_speed": {
-  "boy": 1.17,
-  "uncle": 1.25,
-  "grandma": 1.25,
-  "narrator": 1.15
+  "boy": 1.28,
+  "uncle": 1.33,
+  "grandma": 1.38,
+  "narrator": 1.3
  },
- "max_pause": 0.35,
+ "max_pause": 0.3,
  "crf": 23,
  "grain": true,
  "vignette": 0.2,
@@ -47,8 +47,8 @@
   {
    "id": "I1",
    "dur": 1.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I1.mp4",
    "img": "I1.png",
@@ -96,8 +96,8 @@
   {
    "id": "I2",
    "dur": 1.3,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I2.mp4",
    "img": "I2.png",
@@ -129,8 +129,8 @@
   {
    "id": "I3",
    "dur": 2.0,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I3.mp4",
    "img": "I3.png",
@@ -173,8 +173,8 @@
   {
    "id": "I5",
    "dur": 1.9,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I5.mp4",
    "img": "I5.png",
@@ -221,8 +221,8 @@
   {
    "id": "I5b",
    "dur": 1.2,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I5b.mp4",
    "img": "I5b.png",
@@ -254,8 +254,8 @@
   {
    "id": "I5c",
    "dur": 1.0,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I5c.mp4",
    "img": "I5c.png",
@@ -296,8 +296,8 @@
   {
    "id": "I6",
    "dur": 1.0,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "I6.mp4",
    "img": "I6.png",
@@ -337,8 +337,8 @@
   {
    "id": "C90",
    "dur": 1.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "../out/ep01v44/code/C90.mp4",
    "mood": "adventure",
@@ -362,9 +362,9 @@
   },
   {
    "id": "C01",
-   "dur": 3.22,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.98,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C01.mp4",
    "img": "C01.png",
@@ -386,12 +386,12 @@
      "gain": 0.7
     },
     {
-     "t": 1.23,
+     "t": 1.14,
      "name": "gong",
      "gain": 0.7
     },
     {
-     "t": 2.35,
+     "t": 2.19,
      "name": "toot",
      "d": 0.8,
      "gain": 0.7
@@ -401,7 +401,7 @@
     {
      "who": "narrator",
      "text": "Behold! A legend... brought low by ONE dumpling.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -410,9 +410,9 @@
   },
   {
    "id": "C02",
-   "dur": 4.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 4.25,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C02.mp4",
    "img": "C02.png",
@@ -434,12 +434,12 @@
      "gain": 0.7
     },
     {
-     "t": 1.71,
+     "t": 1.59,
      "name": "chop",
      "gain": 0.7
     },
     {
-     "t": 3.32,
+     "t": 3.07,
      "name": "tick",
      "gain": 0.7
     }
@@ -448,7 +448,7 @@
     {
      "who": "boy",
      "text": "Welcome to The Dumpling Boy! Today's mystery: how does hot soup get inside a dumpling?",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -456,9 +456,9 @@
   },
   {
    "id": "C03",
-   "dur": 2.76,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.55,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C03.mp4",
    "img": "C03.png",
@@ -481,7 +481,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.03,
+     "t": 1.88,
      "name": "whoosh",
      "gain": 0.7
     }
@@ -490,21 +490,21 @@
     {
      "who": "uncle",
      "text": "Co-host!",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "He's the warning label. Let's rewind.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom"
   },
   {
    "id": "C04",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "../out/ep01v44/code/C04.mp4",
    "sfx": [
@@ -514,7 +514,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.68,
+     "t": 2.48,
      "name": "pen",
      "gain": 0.7
     }
@@ -523,7 +523,7 @@
     {
      "who": "boy",
      "text": "The Silk Road? Not one road. A web, by land and sea.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top",
@@ -531,9 +531,9 @@
   },
   {
    "id": "C05",
-   "dur": 4.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 4.25,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "../out/ep01v44/code/C05.mp4",
    "sfx": [
@@ -544,18 +544,18 @@
      "gain": 0.7
     },
     {
-     "t": 1.17,
+     "t": 1.09,
      "name": "flap",
      "gain": 0.7
     },
     {
-     "t": 2.25,
+     "t": 2.08,
      "name": "gull",
      "d": 0.8,
      "gain": 0.7
     },
     {
-     "t": 3.32,
+     "t": 3.07,
      "name": "clink",
      "gain": 0.7
     }
@@ -564,7 +564,7 @@
     {
      "who": "boy",
      "text": "Over a thousand years ago, Qinglong port, near Shanghai, shipped pottery to Japan and Korea.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top",
@@ -583,9 +583,9 @@
   },
   {
    "id": "C06",
-   "dur": 3.22,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.98,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C06.mp4",
    "img": "C06.png",
@@ -607,7 +607,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.35,
+     "t": 2.19,
      "name": "hiss",
      "d": 1.4,
      "gain": 0.7
@@ -617,7 +617,7 @@
     {
      "who": "boy",
      "text": "Dad's first page: be patient. The soup is the secret.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -625,9 +625,9 @@
   },
   {
    "id": "C07",
-   "dur": 2.76,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.55,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C07.mp4",
    "img": "C07.png",
@@ -649,7 +649,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.03,
+     "t": 1.88,
      "name": "ding",
      "gain": 0.7
     }
@@ -658,16 +658,16 @@
     {
      "who": "boy",
      "text": "Patient.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom"
   },
   {
    "id": "C08",
-   "dur": 3.22,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.98,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C08.mp4",
    "img": "C08.png",
@@ -689,7 +689,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.35,
+     "t": 2.19,
      "name": "gong",
      "gain": 0.7
     }
@@ -698,18 +698,29 @@
     {
      "who": "boy",
      "text": "Nanxiang. An old canal town, now part of Shanghai.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
    "ambience": "water",
-   "mood": "adventure"
+   "mood": "adventure",
+   "cards": [
+    {
+     "type": "title",
+     "text": "#01 XIAOLONGBAO",
+     "sub": "NANXIANG \u00b7 SHANGHAI, CHINA",
+     "t": 1.0,
+     "d": 2.2,
+     "y": 0.2,
+     "y_land": 0.24
+    }
+   ]
   },
   {
    "id": "C09",
-   "dur": 4.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 4.25,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C09.mp4",
    "img": "C09.png",
@@ -732,7 +743,7 @@
      "gain": 0.7
     },
     {
-     "t": 3.32,
+     "t": 3.07,
      "name": "ding",
      "gain": 0.7
     }
@@ -741,7 +752,7 @@
     {
      "who": "boy",
      "text": "Two pagodas, about a thousand years old. The temple burned in 1766. They're still standing.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top",
@@ -749,9 +760,9 @@
   },
   {
    "id": "C10",
-   "dur": 2.76,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.55,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C10.mp4",
    "img": "C10.png",
@@ -773,7 +784,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.03,
+     "t": 1.88,
      "name": "ding",
      "gain": 0.7
     }
@@ -782,17 +793,17 @@
     {
      "who": "uncle",
      "text": "Veterans.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "They're pagodas.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "uncle",
      "text": "Veterans.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -800,9 +811,9 @@
   },
   {
    "id": "C11",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -824,24 +835,24 @@
      "gain": 0.7
     },
     {
-     "t": 0.74,
+     "t": 0.69,
      "name": "whoosh",
      "gain": 0.7
     },
     {
-     "t": 1.39,
+     "t": 1.29,
      "name": "riser",
      "d": 1.5,
      "gain": 0.7
     },
     {
-     "t": 2.03,
+     "t": 1.89,
      "name": "growl",
      "d": 1.0,
      "gain": 0.7
     },
     {
-     "t": 2.68,
+     "t": 2.48,
      "name": "hiss",
      "d": 1.4,
      "gain": 0.7
@@ -851,17 +862,17 @@
     {
      "who": "narrator",
      "text": "Behold! The stall... of DESTINY.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "It's a stall.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "narrator",
      "text": "Of DESTINY.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -870,9 +881,9 @@
   },
   {
    "id": "C12",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C12.mp4",
    "img": "C12.png",
@@ -894,7 +905,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.68,
+     "t": 2.48,
      "name": "lid",
      "gain": 0.7
     }
@@ -903,12 +914,12 @@
     {
      "who": "boy",
      "text": "How do you get soup inside?",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "grandma",
      "text": "Everyone asks. First, you make it solid.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -916,9 +927,9 @@
   },
   {
    "id": "C13",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C13.mp4",
    "img": "C13.png",
@@ -940,7 +951,7 @@
      "gain": 0.7
     },
     {
-     "t": 3.0,
+     "t": 2.77,
      "name": "shing",
      "gain": 0.7
     }
@@ -949,7 +960,7 @@
     {
      "who": "grandma",
      "text": "Pork skin, boiled for hours. Chilled, it sets. Chopped into the meat.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top"
@@ -957,8 +968,8 @@
   {
    "id": "C14a",
    "dur": 1.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -983,7 +994,7 @@
      "gain": 0.7
     },
     {
-     "t": 1.55,
+     "t": 1.44,
      "name": "hiss",
      "d": 1.4,
      "gain": 0.7
@@ -1006,15 +1017,15 @@
     {
      "who": "boy",
      "text": "Wait. The soup goes in SOLID?",
-     "gap": 0.08
+     "gap": 0.05
     }
    ]
   },
   {
    "id": "C14b",
    "dur": 0.7,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1037,8 +1048,8 @@
   {
    "id": "C14c",
    "dur": 0.7,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1061,8 +1072,8 @@
   {
    "id": "C14d",
    "dur": 1.4,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1086,7 +1097,7 @@
     {
      "who": "uncle",
      "text": "Steam melts it back into soup.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "sfx": [
@@ -1100,8 +1111,8 @@
   {
    "id": "C14e",
    "dur": 0.9,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1122,9 +1133,9 @@
   },
   {
    "id": "C15",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C15.mp4",
    "img": "C15.png",
@@ -1150,7 +1161,7 @@
     {
      "who": "uncle",
      "text": "Never boil them. The skin bursts. Lunch is my field.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1158,9 +1169,9 @@
   },
   {
    "id": "C16",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C16.mp4",
    "img": "C16.png",
@@ -1186,12 +1197,12 @@
     {
      "who": "boy",
      "text": "How many folds?",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "grandma",
      "text": "Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1199,9 +1210,9 @@
   },
   {
    "id": "C17",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C17.mp4",
    "img": "C17.png",
@@ -1223,7 +1234,7 @@
      "gain": 0.7
     },
     {
-     "t": 3.0,
+     "t": 2.77,
      "name": "pop",
      "gain": 0.7
     }
@@ -1232,22 +1243,22 @@
     {
      "who": "narrator",
      "text": "The training arc begins!",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "uncle",
      "text": "Behold.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "grandma",
      "text": "That's a sock.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "A very ambitious sock.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1255,9 +1266,9 @@
   },
   {
    "id": "C18",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C18.mp4",
    "img": "C18.png",
@@ -1279,18 +1290,18 @@
      "gain": 0.7
     },
     {
-     "t": 0.96,
+     "t": 0.89,
      "name": "shing",
      "gain": 0.7
     },
     {
-     "t": 1.82,
+     "t": 1.69,
      "name": "riser",
      "d": 1.5,
      "gain": 0.7
     },
     {
-     "t": 2.68,
+     "t": 2.48,
      "name": "growl",
      "d": 1.0,
      "gain": 0.7
@@ -1300,17 +1311,17 @@
     {
      "who": "grandma",
      "text": "Slowly.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "uncle",
      "text": "For dumpling research!",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "Rule one of soup dumplings: don't...",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1320,8 +1331,8 @@
   {
    "id": "C19a",
    "dur": 1.0,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C19.mp4",
    "img": "C19.png",
@@ -1356,7 +1367,7 @@
     {
      "who": "narrator",
      "text": "But the dumpling... had a secret.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "mood": "tension",
@@ -1365,8 +1376,8 @@
   {
    "id": "C19b",
    "dur": 0.55,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C19.mp4",
    "img": "C19.png",
@@ -1395,8 +1406,8 @@
   {
    "id": "C19c",
    "dur": 0.55,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C19.mp4",
    "img": "C19.png",
@@ -1425,7 +1436,7 @@
   {
    "id": "C19d",
    "dur": 1.9,
-   "tail": 0.15,
+   "tail": 0.08,
    "lead": 1.6,
    "transition": "cut",
    "clip": "C19.mp4",
@@ -1480,15 +1491,15 @@
     {
      "who": "boy",
      "text": "...do that.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ]
   },
   {
    "id": "C20",
-   "dur": 3.22,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.98,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C20.mp4",
    "img": "C20.png",
@@ -1511,12 +1522,12 @@
      "gain": 0.7
     },
     {
-     "t": 1.23,
+     "t": 1.14,
      "name": "squeak",
      "gain": 0.7
     },
     {
-     "t": 2.35,
+     "t": 2.19,
      "name": "pop",
      "gain": 0.7
     }
@@ -1525,12 +1536,12 @@
     {
      "who": "uncle",
      "text": "...There was soup inside.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "grandma",
      "text": "Mm-hm. Everyone learns once.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1538,9 +1549,9 @@
   },
   {
    "id": "C21",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C21.mp4",
    "img": "C21.png",
@@ -1562,13 +1573,13 @@
      "gain": 0.7
     },
     {
-     "t": 1.55,
+     "t": 1.44,
      "name": "hiss",
      "d": 1.4,
      "gain": 0.7
     },
     {
-     "t": 3.0,
+     "t": 2.77,
      "name": "tick",
      "gain": 0.7
     }
@@ -1577,7 +1588,7 @@
     {
      "who": "grandma",
      "text": "Okay, watch. Lift it by the top knot. Onto a spoon.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top",
@@ -1585,9 +1596,9 @@
   },
   {
    "id": "C22",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C22.mp4",
    "img": "C22.png",
@@ -1610,7 +1621,7 @@
      "gain": 0.7
     },
     {
-     "t": 3.0,
+     "t": 2.77,
      "name": "growl",
      "d": 1.0,
      "gain": 0.7
@@ -1620,12 +1631,12 @@
     {
      "who": "grandma",
      "text": "Tiny hole. Let the steam out. Then wait.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "uncle",
      "text": "Be cool. Be cool.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1633,9 +1644,9 @@
   },
   {
    "id": "C23",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C23.mp4",
    "img": "C23.png",
@@ -1657,7 +1668,7 @@
      "gain": 0.7
     },
     {
-     "t": 3.0,
+     "t": 2.77,
      "name": "ding",
      "gain": 0.7
     }
@@ -1666,7 +1677,7 @@
     {
      "who": "grandma",
      "text": "Soup first. It's hot! Then the dumpling, with black vinegar and ginger.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1674,9 +1685,9 @@
   },
   {
    "id": "C24",
-   "dur": 4.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 4.25,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C24.mp4",
    "img": "C24.png",
@@ -1702,21 +1713,21 @@
     {
      "who": "uncle",
      "text": "Good soup can't be rushed. Someone waited hours for this.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "uncle",
      "text": "For dumpling research.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom"
   },
   {
    "id": "C25",
-   "dur": 2.76,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.55,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C25.mp4",
    "img": "C25.png",
@@ -1738,12 +1749,12 @@
      "gain": 0.7
     },
     {
-     "t": 1.07,
+     "t": 0.99,
      "name": "sparkle",
      "gain": 0.7
     },
     {
-     "t": 2.03,
+     "t": 1.88,
      "name": "riser",
      "d": 1.5,
      "gain": 0.7
@@ -1753,12 +1764,12 @@
     {
      "who": "uncle",
      "text": "Are there more?",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "grandma",
      "text": "Five.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1766,9 +1777,9 @@
   },
   {
    "id": "C26",
-   "dur": 3.22,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.98,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C26.mp4",
    "img": "C26.png",
@@ -1790,12 +1801,12 @@
      "gain": 0.7
     },
     {
-     "t": 1.23,
+     "t": 1.14,
      "name": "page",
      "gain": 0.7
     },
     {
-     "t": 2.35,
+     "t": 2.19,
      "name": "whoosh",
      "gain": 0.7
     }
@@ -1804,12 +1815,12 @@
     {
      "who": "boy",
      "text": "So who made the very first one?",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "narrator",
      "text": "LEGEND SAYS!",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top",
@@ -1817,9 +1828,9 @@
   },
   {
    "id": "C27",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "../out/ep01v44/code/C27.mp4",
    "sfx": [
@@ -1829,7 +1840,7 @@
      "gain": 0.7
     },
     {
-     "t": 3.0,
+     "t": 2.77,
      "name": "thud",
      "gain": 0.7
     }
@@ -1838,16 +1849,16 @@
     {
      "who": "narrator",
      "text": "Around the year 1871, in Nanxiang, a shopkeeper sold ONE enormous meat bun.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom"
   },
   {
    "id": "C28",
-   "dur": 4.14,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.82,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "../out/ep01v44/code/C28.mp4",
    "sfx": [
@@ -1861,7 +1872,7 @@
     {
      "who": "narrator",
      "text": "Nobody cared. So he made it smaller... and hid soup inside, set as jelly!",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -1870,9 +1881,9 @@
   },
   {
    "id": "C29",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "../out/ep01v44/code/C29.mp4",
    "sfx": [
@@ -1882,12 +1893,12 @@
      "gain": 0.7
     },
     {
-     "t": 1.39,
+     "t": 1.29,
      "name": "page",
      "gain": 0.7
     },
     {
-     "t": 2.68,
+     "t": 2.48,
      "name": "gong",
      "gain": 0.7
     }
@@ -1896,26 +1907,26 @@
     {
      "who": "narrator",
      "text": "It became famous... by SHRINKING!",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "Can we skip the dramatic voice?",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "narrator",
      "text": "No.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom"
   },
   {
    "id": "C30",
-   "dur": 3.22,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.98,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C30.mp4",
    "img": "C30.png",
@@ -1942,21 +1953,21 @@
     {
      "who": "boy",
      "text": "That's not what he looked like.",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "uncle",
      "text": "He had my energy.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom"
   },
   {
    "id": "C31",
-   "dur": 2.76,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.55,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C31.mp4",
    "img": "C31.png",
@@ -1978,7 +1989,7 @@
      "gain": 0.7
     },
     {
-     "t": 2.03,
+     "t": 1.88,
      "name": "page",
      "gain": 0.7
     }
@@ -1987,7 +1998,7 @@
     {
      "who": "boy",
      "text": "Legend. That's historian for 'please don't quote me.'",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top"
@@ -1995,8 +2006,8 @@
   {
    "id": "C32a",
    "dur": 0.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C32.mp4",
    "img": "C32.png",
@@ -2026,8 +2037,8 @@
   {
    "id": "C32b",
    "dur": 0.5,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C32.mp4",
    "img": "C32.png",
@@ -2062,8 +2073,8 @@
   {
    "id": "C32c",
    "dur": 0.5,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C32.mp4",
    "img": "C32.png",
@@ -2092,8 +2103,8 @@
   {
    "id": "C32d",
    "dur": 3.0,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C32.mp4",
    "img": "C32.png",
@@ -2117,7 +2128,7 @@
     {
      "who": "grandma",
      "text": "That hat... A man sat on that stool. He burned his tongue, too.",
-     "gap": 0.08,
+     "gap": 0.05,
      "lead": 0.3
     },
     {
@@ -2130,9 +2141,9 @@
   },
   {
    "id": "C33",
-   "dur": 4.6,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 4.25,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C33.mp4",
    "img": "C33.png",
@@ -2158,7 +2169,7 @@
     {
      "who": "boy",
      "text": "Dad wrote: rush it, get burned. Be patient, get the best part.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "bottom",
@@ -2166,9 +2177,9 @@
   },
   {
    "id": "C34",
-   "dur": 2.76,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 2.55,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C34.mp4",
    "img": "C34.png",
@@ -2195,8 +2206,8 @@
   {
    "id": "C35a",
    "dur": 2.0,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C35.mp4",
    "img": "C35.png",
@@ -2219,7 +2230,7 @@
     {
      "who": "grandma",
      "text": "Then he went south. To Guangzhou.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "sfx": [
@@ -2255,8 +2266,8 @@
   {
    "id": "C35b",
    "dur": 2.8,
-   "tail": 0.15,
-   "lead": 0.2,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C35.mp4",
    "img": "C35.png",
@@ -2278,12 +2289,12 @@
     {
      "who": "uncle",
      "text": "FOR DUMPLING RESEARCH!",
-     "gap": 0.08
+     "gap": 0.05
     },
     {
      "who": "boy",
      "text": "He's already packed.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "sfx": [
@@ -2322,9 +2333,9 @@
   },
   {
    "id": "C36",
-   "dur": 3.68,
-   "tail": 0.15,
-   "lead": 0.2,
+   "dur": 3.4,
+   "tail": 0.08,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C36.mp4",
    "img": "C36.png",
@@ -2344,7 +2355,7 @@
     {
      "who": "boy",
      "text": "Dad was right... the best part is worth the wait.",
-     "gap": 0.08
+     "gap": 0.05
     }
    ],
    "caption_zone": "top",
@@ -2354,7 +2365,7 @@
    "id": "C37",
    "dur": 2.0,
    "tail": 0.0,
-   "lead": 0.2,
+   "lead": 0.1,
    "transition": "cut",
    "clip": "C37.mp4",
    "img": "C37.png",

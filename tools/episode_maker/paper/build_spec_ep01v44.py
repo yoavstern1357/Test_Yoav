@@ -9,13 +9,13 @@ sys.path.insert(0, ROOT); sys.path.insert(0, HERE)
 from parse_ep01v44 import parse
 
 CODE = "../out/ep01v44/code/%s.mp4"
-FLOOR = 0.92          # the script's clip lengths are minimums; the voices set the real length
+FLOOR = 0.85          # the script's clip lengths are minimums; the voices set the real length
 shots = []
 intro_end = [0]
 
 
 def sh(id, dur, **kw):
-    d = dict(id=id, dur=dur, tail=0.15, lead=0.2, transition="cut")
+    d = dict(id=id, dur=dur, tail=0.08, lead=0.1, transition="cut")
     d.update(kw)
     shots.append(d)
     return d
@@ -97,7 +97,7 @@ def lines_of(c, over=None):
     out = []
     for i, l in enumerate(c["lines"]):
         who = "boy" if l["who"] == "dad" else l["who"]
-        d = dict(who=who, text=l["text"], gap=0.08)
+        d = dict(who=who, text=l["text"], gap=0.05)
         if re.search(r"off-screen|to lens|to the lens", l["tag"] + l["note"]):
             pass
         if over and i in over:
@@ -141,6 +141,8 @@ def build():
             kw["black"] = 0.3
         if cid == "C04":
             kw["transition"] = "cut"
+        if cid == "C08":                     # ink-bloom title cards in the sky (code overlay)
+            kw["cards"] = [dict(type="title", text="#01 XIAOLONGBAO", sub="NANXIANG · SHANGHAI, CHINA", t=1.0, d=2.2, y=0.2, y_land=0.24)]
         if c["method"] == "CODE":
             sh(cid, dur, clip=CODE % cid, sfx=sfx, **kw)
             if cid == "C05":
@@ -190,7 +192,7 @@ def build():
 
 spec = dict(title="The Dumpling Boy: intro + Episode 01 v4.4 (How Does Soup Get Inside a Dumpling?)", size=[1080, 1920], fps=30, orientation="both",
             frames_dir="frames/ep01v44", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v44", voice_engine="gpu", voice_cast={"narrator": {"engine": "prerendered", "dir": "tts/gpu", "pitch": 0.84}}, voice_fallback=True, caption_safe=True,
-            voice_speed={"boy": 1.17, "uncle": 1.25, "grandma": 1.25, "narrator": 1.15}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0,
+            voice_speed={"boy": 1.28, "uncle": 1.33, "grandma": 1.38, "narrator": 1.3}, max_pause=0.3, crf=23, grain=True, vignette=0.2, sway=0.0,
             caption_y=0.8, caption_y_land=0.86, narrator_echo=True, snap_to_beat=False,
             # series opening song (ACE-Step, original): swap the file here when the creator picks another variant (tools/episode_maker/make_opening_cuts.py)
             audio_tracks=[{"file": "assets/music/opening_intro.wav", "at": 0.0, "gain": 0.7, "mute_music": True, "sfx_gain": 0.45}])
