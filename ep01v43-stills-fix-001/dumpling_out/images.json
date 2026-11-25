@@ -1,0 +1,127 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 2,
+  "ref_max": 704,
+  "orientations": [
+   "portrait",
+   "landscape"
+  ]
+ },
+ "images": [
+  {
+   "id": "C08",
+   "seed": 3506,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "Wide shot of an old canal town: two stout old brick pagodas standing side by side (small and squat, no hero angle) under a soft sky with wind chimes at a nearby eave. In the foreground, small in the frame, the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) points up at them and beside him the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) looks up in quiet wonder. There are exactly TWO separate small brick pagodas standing side by side in the background, both clearly visible. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  },
+  {
+   "id": "C12",
+   "seed": 3510,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "Close shot across the stall counter: Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands)'s hands pleating a dumpling with quick fingers in the foreground; the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag)'s chin and eyes just above the counter edge watching closely; the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) at the edge of the frame counting on his fingers. Grandma has grey hair in a bun and wears NO hat; only the Boy wears a conical leaf hat. Grandma clearly stands behind the counter pleating a dumpling in the foreground. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C14_end",
+   "seed": 3513,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    }
+   ],
+   "prompt": "the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) flies two meters up in the air above a dumpling stall, arms and legs spread, eyes squeezed, red face, both ears jetting long jets of white steam, his thin mustache standing straight up like antennae. This is the big comic burn gag: a big reaction, playful, never scary. The Uncle's head is bald and completely bare: he wears NO hat at all. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C15",
+   "seed": 3514,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/both_standing.jpg",
+     "role": "the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "At the dumpling stall, the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) skids to a stop, sandals sliding, tongue sticking out, red-faced, steam leaking from one ear, fanning his tongue with one hand, humbled. Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) already holds out a cup of cold water to him, kind and a little teasing. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands beside him, concerned, hiding a smile. The Uncle's head is bald and completely bare: he wears NO hat at all. Grandma has grey hair in a bun and wears NO hat; only the Boy wears a conical leaf hat. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C24",
+   "seed": 3519,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy, no other person)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "Medium shot across the stall counter: Grandma (a short, round, kind old woman with a round rosy face, small gentle smile, grey hair in a small bun with a wooden pin, sage-green village jacket, cream apron, flour on her hands) stops mid-fold with a half-folded dumpling in her hands and looks up straight at the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag)'s conical hat, amazed. the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands at the counter looking up at her. Grandma has grey hair in a bun and wears NO hat; only the Boy wears a conical leaf hat. Only two people are in the picture: Grandma and the Boy. The Uncle is NOT in the picture. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos.",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C28",
+   "seed": 3523,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy, no other person)"
+    }
+   ],
+   "prompt": "Soft close-up portrait of the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) in warm evening light, a small tender smile, looking straight into the lens, the orange chin ribbon of his hat stirring. Calm, heartfelt. Only the Boy is in the picture, alone, no other person, soft blurred village background. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos."
+  }
+ ]
+}

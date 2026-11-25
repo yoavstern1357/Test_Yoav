@@ -1,0 +1,18 @@
+{
+ "id": "C28__v3",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 3525,
+ "size": [
+  768,
+  1344
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 15.2,
+ "prompt": "Reference images: image 1 is the Boy: his face, hat, village clothes and colors to keep exactly (only the boy, no other person). Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). Soft close-up portrait of the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) in warm evening light, a small tender smile, looking straight into the lens, the orange chin ribbon of his hat stirring. Calm, heartfelt. Only the Boy is in the picture, alone, no other person, soft blurred village background. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos. Vertical 9:16 composition, tall framing with the subjects stacked top to bottom.",
+ "negative": "",
+ "refs": [
+  "refs/boy_only.jpg"
+ ]
+}
