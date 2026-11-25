@@ -1,0 +1,18 @@
+{
+ "id": "C16_land__v3",
+ "orientation": "landscape",
+ "backend": "klein",
+ "seed": 3017,
+ "size": [
+  1344,
+  768
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 19.5,
+ "prompt": "Reference images: image 1 is painting style, line quality and light reference only (do not copy the characters or the place). Macro: a pair of chopsticks gently pinching a soup dumpling by its twisted top knot, lifting it a little, a soup spoon waiting right below, steam rising, warm stall light. No people, no faces. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos. Wide horizontal 16:9 composition, cinematic widescreen framing with the subjects spread across the width and open space on both sides, not a cropped vertical picture.",
+ "negative": "",
+ "refs": [
+  "refs/style_s1.jpg"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "C29_land__v2",
+ "orientation": "landscape",
+ "backend": "klein",
+ "seed": 3025,
+ "size": [
+  1344,
+  768
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 20.9,
+ "prompt": "Reference images: image 1 is the Boy and the Uncle: their faces, hat, village clothes and colors to keep exactly; image 2 is body-type reference: the Uncle is this FAT (big round belly, heavy round body, chubby cheeks); same face and clothes. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). the Boy (about 7, small, reaching only the man's belt, round soft child face, big curious dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag) stands in the foreground looking at the viewer. Behind him the Uncle (a very big, FAT, bald man: big round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket with cloth knot buttons stretched over his belly, wide dark trousers, wide orange cloth sash, towel over one shoulder, straw sandals) sits with his tongue in a bucket of ice, giving a happy thumbs up, and beside him a calm cartoon camel stares straight into the lens. Funny, warm, soft evening light. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, storybook feeling. Original house style, not imitating any specific studio. No text, no letters, no logos. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos. Wide horizontal 16:9 composition, cinematic widescreen framing with the subjects spread across the width and open space on both sides, not a cropped vertical picture.",
+ "negative": "",
+ "refs": [
+  "refs/both_standing.jpg",
+  "refs/fat_uncle_pool.jpg"
+ ]
+}
