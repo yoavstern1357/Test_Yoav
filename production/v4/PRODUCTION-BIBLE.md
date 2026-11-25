@@ -21,6 +21,7 @@
 
 ## Look (CHANGED by the creator)
 - Creator feedback on the first look test: the Uncle looks good; the Boy must be YOUNGER and SMALLER (about 7, reaching the Uncle's belt, round soft child face, big curious eyes).
+- COSTUMES CHANGED (creator, 2026-11-25): no white kimonos, nothing that looks like a karate uniform. Rural East Asian village clothes of old times, muted earthy natural fabrics. Boy: conical leaf hat with orange chin ribbon (kept), loose faded indigo cotton tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash, straw sandals, small cloth bag. Uncle: loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, wide orange cloth sash, straw sandals, towel over one shoulder. The orange sash stays as the shared family color.
 - "Refined anime": same characters and outfits (Boy: Vietnamese conical leaf hat with orange chin ribbon, white kimono, orange belt; Uncle: big, bald, thin mustache, white kimono, wide orange belt), but LESS childish: more natural proportions, cinematic lighting, rich painted backgrounds (in the spirit of Avatar / Ghibli-quality TV anime, never copying any design).
 
 ## Sound
