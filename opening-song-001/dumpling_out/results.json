@@ -1,0 +1,120 @@
+{
+ "backend": "acestep",
+ "license": "Apache-2.0",
+ "model": "ACE-Step/ACE-Step-v1-3.5B",
+ "model_revision": "82cd0d7b6322bd28cd4e830fe675ddb6180ce36c",
+ "results": [
+  {
+   "id": "full_a__s101",
+   "track": "full_a",
+   "seed": 101,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_a__s102",
+   "track": "full_a",
+   "seed": 102,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_b__s202",
+   "track": "full_b",
+   "seed": 202,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_b__s203",
+   "track": "full_b",
+   "seed": 203,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_c__s303",
+   "track": "full_c",
+   "seed": 303,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_c__s304",
+   "track": "full_c",
+   "seed": 304,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_d__s404",
+   "track": "full_d",
+   "seed": 404,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "full_d__s405",
+   "track": "full_d",
+   "seed": 405,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_a__s111",
+   "track": "intro_a",
+   "seed": 111,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_a__s112",
+   "track": "intro_a",
+   "seed": 112,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_b__s212",
+   "track": "intro_b",
+   "seed": 212,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_b__s213",
+   "track": "intro_b",
+   "seed": 213,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_c__s313",
+   "track": "intro_c",
+   "seed": 313,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_c__s314",
+   "track": "intro_c",
+   "seed": 314,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_d__s414",
+   "track": "intro_d",
+   "seed": 414,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  },
+  {
+   "id": "intro_d__s415",
+   "track": "intro_d",
+   "seed": 415,
+   "status": "error",
+   "error": "RuntimeError('GET was unable to find an engine to execute this computation')"
+  }
+ ]
+}
