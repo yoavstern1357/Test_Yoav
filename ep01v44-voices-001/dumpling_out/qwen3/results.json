@@ -1,0 +1,1438 @@
+{
+ "backend": "qwen3",
+ "license": "Apache-2.0",
+ "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+ "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+ "results": [
+  {
+   "id": "661d44378995a193",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 13.8,
+   "audio_seconds": 5.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: movie-trailer thunder, huge, solemn. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "661d44378995a193__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 11.7,
+   "audio_seconds": 4.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: movie-trailer thunder, huge, solemn. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "3c6c7ac27e4f8640",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 15.3,
+   "audio_seconds": 6.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright host energy, a dry little smile. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "3c6c7ac27e4f8640__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 16.3,
+   "audio_seconds": 6.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright host energy, a dry little smile. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "42afef6d44fabf36",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muffled by the ice pack, offended, big. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "42afef6d44fabf36__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.3,
+   "audio_seconds": 1.28,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: muffled by the ice pack, offended, big. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "4fd3a7c3c903cf73",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.3,
+   "audio_seconds": 2.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: not looking, flat and kind. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "4fd3a7c3c903cf73__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.8,
+   "audio_seconds": 2.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: not looking, flat and kind. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "aa88f785663c6bdc",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 11.4,
+   "audio_seconds": 4.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy storyteller, a spark of wonder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "aa88f785663c6bdc__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 10.9,
+   "audio_seconds": 4.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: easy storyteller, a spark of wonder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "aa30f5a61974dc5a",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 14.9,
+   "audio_seconds": 6.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: leaning in, wonder on the last half. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "aa30f5a61974dc5a__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 17.5,
+   "audio_seconds": 7.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: leaning in, wonder on the last half. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "2956e1b17d220145",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 10.6,
+   "audio_seconds": 4.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, reading, a half-smile. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "2956e1b17d220145__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 9.5,
+   "audio_seconds": 3.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, reading, a half-smile. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "9d410969e171ae40",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.1,
+   "audio_seconds": 0.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat, deadpan, a tiny pause before the word. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "9d410969e171ae40__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.2,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat, deadpan, a tiny pause before the word. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "8b127ba1ffea0f34",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 12.3,
+   "audio_seconds": 4.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: relaxed, glad to be here. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "8b127ba1ffea0f34__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 8.6,
+   "audio_seconds": 3.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: relaxed, glad to be here. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "2b57f87227e38018",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 19.1,
+   "audio_seconds": 7.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: fond, pointing, a little awed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "2b57f87227e38018__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 17.3,
+   "audio_seconds": 7.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: fond, pointing, a little awed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "bcbe78da041f9acb",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.1,
+   "audio_seconds": 1.12,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: choked, deeply moved. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "bcbe78da041f9acb__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.5,
+   "audio_seconds": 1.28,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: choked, deeply moved. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "3fc3fdac78979095",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.4,
+   "audio_seconds": 1.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "3fc3fdac78979095__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "bb6997d9fee62197",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 9.8,
+   "audio_seconds": 3.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: thunderous, awed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "bb6997d9fee62197__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 8.9,
+   "audio_seconds": 3.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: thunderous, awed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "14be63875120443f",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "14be63875120443f__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.7,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "0599b20d50aeffda",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: offended, louder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "0599b20d50aeffda__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 3.9,
+   "audio_seconds": 1.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: offended, louder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "d036dc83d3ca178d",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.2,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright, curious, a little shy. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "d036dc83d3ca178d__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.2,
+   "audio_seconds": 1.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bright, curious, a little shy. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "fa7b1c68c5044823",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 10.1,
+   "audio_seconds": 4.08,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, unhurried, eyes on her hands. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "fa7b1c68c5044823__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 8.5,
+   "audio_seconds": 3.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, unhurried, eyes on her hands. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "600457e9f4059919",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 12.4,
+   "audio_seconds": 5.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: matter-of-fact, hands busy. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "600457e9f4059919__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 17.7,
+   "audio_seconds": 7.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: matter-of-fact, hands busy. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "377bd6dc346fe346",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.1,
+   "audio_seconds": 2.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: breathless wonder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "377bd6dc346fe346__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.6,
+   "audio_seconds": 2.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: breathless wonder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "98b9639bc07ee268",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.7,
+   "audio_seconds": 3.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: low, dreamy, a cook who knows. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "98b9639bc07ee268__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 2.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: low, dreamy, a cook who knows. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "bdaa9a01ff31e8aa",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 14.3,
+   "audio_seconds": 5.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: calm, a cook who knows. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "bdaa9a01ff31e8aa__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 17.9,
+   "audio_seconds": 7.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: calm, a cook who knows. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "078a0f8da32861af",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 5.2,
+   "audio_seconds": 2.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: booming, training-montage hype. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "078a0f8da32861af__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 4.8,
+   "audio_seconds": 1.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: booming, training-montage hype. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "8ac1a4767295561c",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 4.3,
+   "audio_seconds": 1.68,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: panting, proud. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8ac1a4767295561c__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 1.12,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: panting, proud. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "87c706bc295384a8",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 6.2,
+   "audio_seconds": 2.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "87c706bc295384a8__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 1.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "2577a3179402347d",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 2.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, kind. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "2577a3179402347d__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.9,
+   "audio_seconds": 1.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, kind. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "6b1711176fdb72df",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 3.6,
+   "audio_seconds": 1.44,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat warning. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "6b1711176fdb72df__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 2.9,
+   "audio_seconds": 1.12,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat warning. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "8747d6caa38ddfec",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.8,
+   "audio_seconds": 2.72,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, thundering. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8747d6caa38ddfec__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.9,
+   "audio_seconds": 3.2,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, thundering. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "c5b75656ba70a120",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.5,
+   "audio_seconds": 2.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: earnest host, calm, back to the danger. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "c5b75656ba70a120__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.2,
+   "audio_seconds": 2.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: earnest host, calm, back to the danger. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "8ec1e0764c9ec7a0",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 8.8,
+   "audio_seconds": 3.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slow, horrified, whisper-hype. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "8ec1e0764c9ec7a0__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 9.1,
+   "audio_seconds": 3.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slow, horrified, whisper-hype. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "ee6e8143f7c02c7a",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.3,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat, as the toot fades. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "ee6e8143f7c02c7a__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.1,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat, as the toot fades. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "fcdf455d184b058b",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 14.1,
+   "audio_seconds": 5.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a teacher's calm, slow. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "fcdf455d184b058b__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 12.4,
+   "audio_seconds": 4.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a teacher's calm, slow. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "9d685bbc7a14b72d",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 9.5,
+   "audio_seconds": 3.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, showing. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "9d685bbc7a14b72d__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 9.8,
+   "audio_seconds": 3.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: softly, showing. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "d35d81f9a3e220af",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 9.8,
+   "audio_seconds": 3.92,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: trembling whisper, pleading. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "d35d81f9a3e220af__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 13.6,
+   "audio_seconds": 5.36,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: trembling whisper, pleading. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "898371b00261705c",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 15.4,
+   "audio_seconds": 6.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: pleased, quiet. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "898371b00261705c__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 18.3,
+   "audio_seconds": 7.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: pleased, quiet. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "2a8233be8ad7f8e4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 14.4,
+   "audio_seconds": 5.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet and real, low, almost to himself. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "2a8233be8ad7f8e4__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 10.7,
+   "audio_seconds": 4.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet and real, low, almost to himself. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "555f5ff3ce0193d2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 4.5,
+   "audio_seconds": 1.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: tender, to the spoon. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "555f5ff3ce0193d2__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 5.8,
+   "audio_seconds": 2.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: tender, to the spoon. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "e0525ab072619ffd",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.2,
+   "audio_seconds": 1.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: one eye open, hopeful, tiny. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "e0525ab072619ffd__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 1.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: one eye open, hopeful, tiny. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "7e9ce1d5a5146fe4",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 1.9,
+   "audio_seconds": 0.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: deadpan. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "7e9ce1d5a5146fe4__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 2.2,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: deadpan. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "b2726fb4149734a9",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 4.9,
+   "audio_seconds": 1.92,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: explosive, grand. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "b2726fb4149734a9__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 5.3,
+   "audio_seconds": 2.08,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: explosive, grand. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "5f761df999d37a0a",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 17.9,
+   "audio_seconds": 7.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, mock-solemn, unhurried. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "5f761df999d37a0a__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 21.8,
+   "audio_seconds": 8.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: grand, mock-solemn, unhurried. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "d0edf3eaf9f2769d",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 17.6,
+   "audio_seconds": 7.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: rising, playful grandeur. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "d0edf3eaf9f2769d__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 16.6,
+   "audio_seconds": 6.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: rising, playful grandeur. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "a8d72bb92bbef2aa",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 10.1,
+   "audio_seconds": 4.16,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: triumphant. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "a8d72bb92bbef2aa__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 7.2,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: triumphant. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "506ccf1520372245",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 6.4,
+   "audio_seconds": 2.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "506ccf1520372245__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 5.9,
+   "audio_seconds": 2.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "102107e3b4afe05f",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 2.1,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: firm, final. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "102107e3b4afe05f__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 1.8,
+   "audio_seconds": 0.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: firm, final. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "a116f77e5ae885b1",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 12.2,
+   "audio_seconds": 4.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, smiling. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "a116f77e5ae885b1__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 7.2,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: dry, smiling. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "1a015c2edd51bb5c",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 11.4,
+   "audio_seconds": 4.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slowing, then quiet, a little amazed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "1a015c2edd51bb5c__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 13.6,
+   "audio_seconds": 5.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: slowing, then quiet, a little amazed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "9cc814515ad2b4de",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 1.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "9cc814515ad2b4de__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 5.9,
+   "audio_seconds": 2.4,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "e36cfa9dbf8d5534",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 8.5,
+   "audio_seconds": 3.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet, reading, his voice a little tight. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "e36cfa9dbf8d5534__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 11.2,
+   "audio_seconds": 4.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: quiet, reading, his voice a little tight. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "0c5b8cf3d5eb2795",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 8.8,
+   "audio_seconds": 3.6,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: volcanic, full power. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "0c5b8cf3d5eb2795__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 5.4,
+   "audio_seconds": 2.16,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: volcanic, full power. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "736f5abd764ae8da",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "736f5abd764ae8da__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.5,
+   "audio_seconds": 1.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  }
+ ]
+}

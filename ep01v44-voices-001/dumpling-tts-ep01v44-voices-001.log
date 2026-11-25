@@ -1,0 +1,318 @@
+[{"stream_name":"stderr","time":8.464350581,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.464411988,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.464416708,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.464419258,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.06243319,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.062459993,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.062465113,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.062469097,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.271171502,"data":"Kaggle\n"}
+,{"stream_name":"stdout","time":10.271198575,"data":"GPU 0: Tesla T4 (UUID: GPU-65e55b7d-bc3d-de30-0c05-8f19a4b30f92)\n"}
+,{"stream_name":"stdout","time":10.271203992,"data":"GPU 1: Tesla T4 (UUID: GPU-6262b8dd-1ab9-2cb4-07cd-4a049e48f81e)\n"}
+,{"stream_name":"stdout","time":10.271208087,"data":"\n"}
+,{"stream_name":"stdout","time":10.305570514,"data":"Writing generate_tts.py\n"}
+,{"stream_name":"stdout","time":10.863711309,"data":"inputs: /kaggle/input/dumpling-input-ep01v44-voices-001\n"}
+,{"stream_name":"stdout","time":10.881346308,"data":"\n"}
+,{"stream_name":"stdout","time":10.881398362,"data":"==================== qwen3 ====================\n"}
+,{"stream_name":"stdout","time":11.143651032,"data":"21:52:33 pinned: torch==2.11.0+cu130 torchvision==0.26.0+cu130 torchaudio==2.11.0+cu130 torchcodec==0.11.0+cu130 triton==3.6.0 numpy==2.1.3\n"}
+,{"stream_name":"stdout","time":86.915782116,"data":"21:53:49 torch 2.11.0+cu130 cuda 13.0 ok\n"}
+,{"stream_name":"stdout","time":87.980881327,"data":"21:53:50 transformers 4.57.3\n"}
+,{"stream_name":"stdout","time":89.189590938,"data":"21:53:51 backend qwen3 (Apache-2.0): 50 lines, 50 to do, 2 variant(s)\n"}
+,{"stream_name":"stdout","time":89.190778106,"data":"21:53:51   661d44378995a193 narrator neutral | Behold! A legend... brought low by ONE dumpling.\n"}
+,{"stream_name":"stdout","time":89.191683923,"data":"21:53:51   3c6c7ac27e4f8640 boy neutral | Welcome to The Dumpling Boy! Today's mystery: how does hot soup get in\n"}
+,{"stream_name":"stdout","time":89.192755137,"data":"21:53:51   42afef6d44fabf36 uncle neutral | Co-host!\n"}
+,{"stream_name":"stdout","time":89.193608579,"data":"21:53:51   4fd3a7c3c903cf73 boy neutral | He's the warning label. Let's rewind.\n"}
+,{"stream_name":"stdout","time":89.194653684,"data":"21:53:51   aa88f785663c6bdc boy neutral | The Silk Road? Not one road. A web, by land and sea.\n"}
+,{"stream_name":"stdout","time":89.195474137,"data":"21:53:51   aa30f5a61974dc5a boy neutral | Over a thousand years ago, Qinglong port, near Shanghai, shipped potte\n"}
+,{"stream_name":"stdout","time":89.196530303,"data":"21:53:51   2956e1b17d220145 boy neutral | Dad's first page: be patient. The soup is the secret.\n"}
+,{"stream_name":"stdout","time":89.197409255,"data":"21:53:51   9d410969e171ae40 boy neutral | Patient.\n"}
+,{"stream_name":"stdout","time":89.198283022,"data":"21:53:51   8b127ba1ffea0f34 boy neutral | Nanxiang. An old canal town, now part of Shanghai.\n"}
+,{"stream_name":"stdout","time":89.199599159,"data":"21:53:51   2b57f87227e38018 boy neutral | Two pagodas, about a thousand years old. The temple burned in 1766. Th\n"}
+,{"stream_name":"stdout","time":89.200254202,"data":"21:53:51   bcbe78da041f9acb uncle neutral | Veterans.\n"}
+,{"stream_name":"stdout","time":89.201279257,"data":"21:53:51   3fc3fdac78979095 boy neutral | They're pagodas.\n"}
+,{"stream_name":"stdout","time":89.202201816,"data":"21:53:51   bb6997d9fee62197 narrator neutral | Behold! The stall... of DESTINY.\n"}
+,{"stream_name":"stdout","time":89.203253994,"data":"21:53:51   14be63875120443f boy neutral | It's a stall.\n"}
+,{"stream_name":"stdout","time":89.204061318,"data":"21:53:51   0599b20d50aeffda narrator neutral | Of DESTINY.\n"}
+,{"stream_name":"stdout","time":89.20508378,"data":"21:53:51   d036dc83d3ca178d boy neutral | How do you get soup inside?\n"}
+,{"stream_name":"stdout","time":89.205983438,"data":"21:53:51   fa7b1c68c5044823 grandma neutral | Everyone asks. First, you make it solid.\n"}
+,{"stream_name":"stdout","time":89.206879161,"data":"21:53:51   600457e9f4059919 grandma neutral | Pork skin, boiled for hours. Chilled, it sets. Chopped into the meat.\n"}
+,{"stream_name":"stdout","time":89.207893404,"data":"21:53:51   377bd6dc346fe346 boy neutral | Wait. The soup goes in SOLID?\n"}
+,{"stream_name":"stdout","time":89.208787447,"data":"21:53:51   98b9639bc07ee268 uncle neutral | Steam melts it back into soup.\n"}
+,{"stream_name":"stdout","time":89.210024011,"data":"21:53:51   bdaa9a01ff31e8aa uncle neutral | Never boil them. The skin bursts. Lunch is my field.\n"}
+,{"stream_name":"stdout","time":89.210904496,"data":"21:53:51   078a0f8da32861af narrator neutral | The training arc begins!\n"}
+,{"stream_name":"stdout","time":89.211800618,"data":"21:53:51   8ac1a4767295561c uncle neutral | Behold.\n"}
+,{"stream_name":"stdout","time":89.21285033,"data":"21:53:51   87c706bc295384a8 grandma neutral | That's a sock.\n"}
+,{"stream_name":"stdout","time":89.213784148,"data":"21:53:51   2577a3179402347d boy neutral | A very ambitious sock.\n"}
+,{"stream_name":"stdout","time":89.21456437,"data":"21:53:51   6b1711176fdb72df grandma neutral | Slowly.\n"}
+,{"stream_name":"stdout","time":89.215535758,"data":"21:53:51   8747d6caa38ddfec uncle neutral | For dumpling research!\n"}
+,{"stream_name":"stdout","time":89.216397336,"data":"21:53:51   c5b75656ba70a120 boy neutral | Rule one of soup dumplings: don't...\n"}
+,{"stream_name":"stdout","time":89.217406389,"data":"21:53:51   8ec1e0764c9ec7a0 narrator neutral | But the dumpling... had a secret.\n"}
+,{"stream_name":"stdout","time":89.218203738,"data":"21:53:51   ee6e8143f7c02c7a boy neutral | ...do that.\n"}
+,{"stream_name":"stdout","time":89.219224954,"data":"21:53:51   fcdf455d184b058b grandma neutral | Okay, watch. Lift it by the top knot. Onto a spoon.\n"}
+,{"stream_name":"stdout","time":89.220035128,"data":"21:53:51   9d685bbc7a14b72d grandma neutral | Tiny hole. Let the steam out. Then wait.\n"}
+,{"stream_name":"stdout","time":89.220979653,"data":"21:53:51   d35d81f9a3e220af uncle neutral | Be cool. Be cool.\n"}
+,{"stream_name":"stdout","time":89.22195622,"data":"21:53:51   898371b00261705c grandma neutral | Soup first. It's hot! Then the dumpling, with black vinegar and ginger\n"}
+,{"stream_name":"stdout","time":89.22281814,"data":"21:53:51   2a8233be8ad7f8e4 uncle neutral | Good soup can't be rushed. Someone waited hours for this.\n"}
+,{"stream_name":"stdout","time":89.2238581,"data":"21:53:51   555f5ff3ce0193d2 uncle neutral | For dumpling research.\n"}
+,{"stream_name":"stdout","time":89.224704205,"data":"21:53:51   e0525ab072619ffd uncle neutral | Are there more?\n"}
+,{"stream_name":"stdout","time":89.225403231,"data":"21:53:51   7e9ce1d5a5146fe4 grandma neutral | Five.\n"}
+,{"stream_name":"stdout","time":89.226125407,"data":"21:53:51   b2726fb4149734a9 narrator neutral | LEGEND SAYS!\n"}
+,{"stream_name":"stdout","time":89.227037085,"data":"21:53:51   5f761df999d37a0a narrator neutral | Around the year 1871, in Nanxiang, a shopkeeper sold ONE enormous meat\n"}
+,{"stream_name":"stdout","time":89.227807567,"data":"21:53:51   d0edf3eaf9f2769d narrator neutral | Nobody cared. So he made it smaller... and hid soup inside, set as jel\n"}
+,{"stream_name":"stdout","time":89.228521014,"data":"21:53:51   a8d72bb92bbef2aa narrator neutral | It became famous... by SHRINKING!\n"}
+,{"stream_name":"stdout","time":89.229181594,"data":"21:53:51   506ccf1520372245 boy neutral | Can we skip the dramatic voice?\n"}
+,{"stream_name":"stdout","time":89.229997568,"data":"21:53:51   102107e3b4afe05f narrator neutral | No.\n"}
+,{"stream_name":"stdout","time":89.23073892,"data":"21:53:51   a116f77e5ae885b1 boy neutral | Legend. That's historian for 'please don't quote me.'\n"}
+,{"stream_name":"stdout","time":89.231461878,"data":"21:53:51   1a015c2edd51bb5c grandma neutral | That hat... A man sat on that stool. He burned his tongue, too.\n"}
+,{"stream_name":"stdout","time":89.232119159,"data":"21:53:51   9cc814515ad2b4de boy neutral | ...My dad?\n"}
+,{"stream_name":"stdout","time":89.232857934,"data":"21:53:51   e36cfa9dbf8d5534 boy neutral | Dad wrote: rush it, get burned. Be patient, get the best part.\n"}
+,{"stream_name":"stdout","time":89.233620547,"data":"21:53:51   0c5b8cf3d5eb2795 uncle neutral | FOR DUMPLING RESEARCH!\n"}
+,{"stream_name":"stdout","time":89.234312121,"data":"21:53:51   736f5abd764ae8da boy neutral | He's already packed.\n"}
+,{"stream_name":"stdout","time":96.859490936,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stdout","time":96.860789104,"data":"I0000 00:00:1795643639.464899     108 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stdout","time":98.945079158,"data":"\n"}
+,{"stream_name":"stdout","time":98.946082986,"data":"********\n"}
+,{"stream_name":"stdout","time":98.946949931,"data":"Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.\n"}
+,{"stream_name":"stdout","time":98.947876137,"data":"********\n"}
+,{"stream_name":"stdout","time":98.948745503,"data":"\n"}
+,{"stream_name":"stdout","time":98.949687496,"data":"/bin/sh: 1: sox: not found\n"}
+,{"stream_name":"stdout","time":98.950525483,"data":"WARNING:sox:SoX could not be found!\n"}
+,{"stream_name":"stdout","time":98.951529605,"data":"\n"}
+,{"stream_name":"stdout","time":98.952314043,"data":"    If you do not have SoX, proceed here:\n"}
+,{"stream_name":"stdout","time":98.953145934,"data":"     - - - http://sox.sourceforge.net/ - - -\n"}
+,{"stream_name":"stdout","time":98.953886652,"data":"\n"}
+,{"stream_name":"stdout","time":98.95459493,"data":"    If you do (or think that you should) have SoX, double-check your\n"}
+,{"stream_name":"stdout","time":98.955407412,"data":"    path variables.\n"}
+,{"stream_name":"stdout","time":99.022402579,"data":"\n"}
+,{"stream_name":"stdout","time":125.051600526,"data":"\n"}
+,{"stream_name":"stdout","time":125.250657065,"data":"Fetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":127.122253146,"data":"Fetching 4 files:  25%|██▌       | 1/4 [00:00\u003c00:00,  4.90it/s]\n"}
+,{"stream_name":"stdout","time":127.122968263,"data":"Fetching 4 files:  75%|███████▌  | 3/4 [00:02\u003c00:00,  1.34it/s]\n"}
+,{"stream_name":"stdout","time":127.123824107,"data":"Fetching 4 files: 100%|██████████| 4/4 [00:02\u003c00:00,  1.93it/s]\n"}
+,{"stream_name":"stdout","time":132.181922906,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":143.867115578,"data":"21:54:46 qwen3 loaded Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign torch.float16\n"}
+,{"stream_name":"stdout","time":143.87502805,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":157.672003977,"data":"21:55:00 ok 661d44378995a193 5.52s in 13.8s\n"}
+,{"stream_name":"stdout","time":157.675097697,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":169.33833058,"data":"21:55:11 ok 661d44378995a193__v2 4.72s in 11.7s\n"}
+,{"stream_name":"stdout","time":169.345060694,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":184.667643046,"data":"21:55:27 ok 3c6c7ac27e4f8640 6.24s in 15.3s\n"}
+,{"stream_name":"stdout","time":184.674179735,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":201.020069864,"data":"21:55:43 ok 3c6c7ac27e4f8640__v2 6.64s in 16.3s\n"}
+,{"stream_name":"stdout","time":201.023197331,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":203.376280494,"data":"21:55:45 ok 42afef6d44fabf36 0.88s in 2.4s\n"}
+,{"stream_name":"stdout","time":203.382472452,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":206.675088806,"data":"21:55:49 ok 42afef6d44fabf36__v2 1.28s in 3.3s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":206.683346412,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":212.926657098,"data":"21:55:55 ok 4fd3a7c3c903cf73 2.48s in 6.3s\n"}
+,{"stream_name":"stdout","time":212.933443787,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":219.728936807,"data":"21:56:02 ok 4fd3a7c3c903cf73__v2 2.72s in 6.8s\n"}
+,{"stream_name":"stdout","time":219.735812339,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":231.145483978,"data":"21:56:13 ok aa88f785663c6bdc 4.64s in 11.4s\n"}
+,{"stream_name":"stdout","time":231.14815105,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":242.032510236,"data":"21:56:24 ok aa88f785663c6bdc__v2 4.4s in 10.9s\n"}
+,{"stream_name":"stdout","time":242.038809529,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":256.898431646,"data":"21:56:39 ok aa30f5a61974dc5a 6.0s in 14.9s\n"}
+,{"stream_name":"stdout","time":256.904841868,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":274.424245612,"data":"21:56:57 ok aa30f5a61974dc5a__v2 7.12s in 17.5s\n"}
+,{"stream_name":"stdout","time":274.426216679,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":285.007408274,"data":"21:57:07 ok 2956e1b17d220145 4.24s in 10.6s\n"}
+,{"stream_name":"stdout","time":285.014007314,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":294.515246427,"data":"21:57:17 ok 2956e1b17d220145__v2 3.84s in 9.5s\n"}
+,{"stream_name":"stdout","time":294.52147233,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":296.577334912,"data":"21:57:19 ok 9d410969e171ae40 0.72s in 2.1s\n"}
+,{"stream_name":"stdout","time":296.584899826,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":298.753496401,"data":"21:57:21 ok 9d410969e171ae40__v2 0.8s in 2.2s\n"}
+,{"stream_name":"stdout","time":298.761624664,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":311.106247777,"data":"21:57:33 ok 8b127ba1ffea0f34 4.96s in 12.3s\n"}
+,{"stream_name":"stdout","time":311.107775009,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":319.676420172,"data":"21:57:42 ok 8b127ba1ffea0f34__v2 3.44s in 8.6s\n"}
+,{"stream_name":"stdout","time":319.68313852,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":338.798567703,"data":"21:58:01 ok 2b57f87227e38018 7.6s in 19.1s\n"}
+,{"stream_name":"stdout","time":338.805343206,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":356.119204254,"data":"21:58:18 ok 2b57f87227e38018__v2 7.04s in 17.3s\n"}
+,{"stream_name":"stdout","time":356.120173971,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":359.181112787,"data":"21:58:21 ok bcbe78da041f9acb 1.12s in 3.1s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":359.187758118,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":362.641338993,"data":"21:58:25 ok bcbe78da041f9acb__v2 1.28s in 3.5s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":362.647848193,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":366.03393723,"data":"21:58:28 ok 3fc3fdac78979095 1.28s in 3.4s\n"}
+,{"stream_name":"stdout","time":366.041023112,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":368.429102809,"data":"21:58:31 ok 3fc3fdac78979095__v2 0.88s in 2.4s\n"}
+,{"stream_name":"stdout","time":368.435416792,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":378.226977886,"data":"21:58:40 ok bb6997d9fee62197 3.92s in 9.8s\n"}
+,{"stream_name":"stdout","time":378.234155718,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":387.172920917,"data":"21:58:49 ok bb6997d9fee62197__v2 3.6s in 8.9s\n"}
+,{"stream_name":"stdout","time":387.174014482,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":389.524490102,"data":"21:58:52 ok 14be63875120443f 0.88s in 2.4s\n"}
+,{"stream_name":"stdout","time":389.531925347,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":393.188435329,"data":"21:58:55 ok 14be63875120443f__v2 1.44s in 3.7s\n"}
+,{"stream_name":"stdout","time":393.195847816,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":396.953707829,"data":"21:58:59 ok 0599b20d50aeffda 1.44s in 3.8s\n"}
+,{"stream_name":"stdout","time":396.959381545,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":400.815212156,"data":"21:59:03 ok 0599b20d50aeffda__v2 1.52s in 3.9s\n"}
+,{"stream_name":"stdout","time":400.822209698,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":404.973005686,"data":"21:59:07 ok d036dc83d3ca178d 1.6s in 4.2s\n"}
+,{"stream_name":"stdout","time":404.979975549,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":408.193126552,"data":"21:59:10 ok d036dc83d3ca178d__v2 1.28s in 3.2s\n"}
+,{"stream_name":"stdout","time":408.199611333,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":418.327223022,"data":"21:59:20 ok fa7b1c68c5044823 4.08s in 10.1s\n"}
+,{"stream_name":"stdout","time":418.328135951,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":426.829614656,"data":"21:59:29 ok fa7b1c68c5044823__v2 3.44s in 8.5s\n"}
+,{"stream_name":"stdout","time":426.836471017,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":439.25925147,"data":"21:59:41 ok 600457e9f4059919 5.04s in 12.4s\n"}
+,{"stream_name":"stdout","time":439.26576719,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":456.959806375,"data":"21:59:59 ok 600457e9f4059919__v2 7.04s in 17.7s\n"}
+,{"stream_name":"stdout","time":456.960705998,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":463.075192178,"data":"22:00:05 ok 377bd6dc346fe346 2.4s in 6.1s\n"}
+,{"stream_name":"stdout","time":463.081850404,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":469.687878847,"data":"22:00:12 ok 377bd6dc346fe346__v2 2.64s in 6.6s\n"}
+,{"stream_name":"stdout","time":469.694427668,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":477.393212039,"data":"22:00:19 ok 98b9639bc07ee268 3.04s in 7.7s\n"}
+,{"stream_name":"stdout","time":477.399982418,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":484.68415764,"data":"22:00:27 ok 98b9639bc07ee268__v2 2.8s in 7.3s\n"}
+,{"stream_name":"stdout","time":484.690795722,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":499.027300264,"data":"22:00:41 ok bdaa9a01ff31e8aa 5.76s in 14.3s\n"}
+,{"stream_name":"stdout","time":499.028303837,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":516.934289519,"data":"22:00:59 ok bdaa9a01ff31e8aa__v2 7.28s in 17.9s\n"}
+,{"stream_name":"stdout","time":516.940661622,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":522.135449559,"data":"22:01:04 ok 078a0f8da32861af 2.0s in 5.2s\n"}
+,{"stream_name":"stdout","time":522.144349477,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":526.979469137,"data":"22:01:09 ok 078a0f8da32861af__v2 1.92s in 4.8s\n"}
+,{"stream_name":"stdout","time":526.986094455,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":531.260874863,"data":"22:01:13 ok 8ac1a4767295561c 1.68s in 4.3s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":531.261818088,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":534.08364929,"data":"22:01:16 ok 8ac1a4767295561c__v2 1.12s in 2.8s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":534.089890913,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":540.237831698,"data":"22:01:22 ok 87c706bc295384a8 2.48s in 6.2s\n"}
+,{"stream_name":"stdout","time":540.245235896,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":543.014357139,"data":"22:01:25 ok 87c706bc295384a8__v2 1.04s in 2.8s\n"}
+,{"stream_name":"stdout","time":543.020999858,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":550.295514543,"data":"22:01:32 ok 2577a3179402347d 2.88s in 7.3s\n"}
+,{"stream_name":"stdout","time":550.302385681,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":554.166125188,"data":"22:01:36 ok 2577a3179402347d__v2 1.52s in 3.9s\n"}
+,{"stream_name":"stdout","time":554.172355646,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":557.762870219,"data":"22:01:40 ok 6b1711176fdb72df 1.44s in 3.6s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":557.769401833,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":560.625417546,"data":"22:01:43 ok 6b1711176fdb72df__v2 1.12s in 2.9s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":560.632074143,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":567.418922621,"data":"22:01:50 ok 8747d6caa38ddfec 2.72s in 6.8s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":567.419764323,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":575.355500364,"data":"22:01:57 ok 8747d6caa38ddfec__v2 3.2s in 7.9s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":575.362229645,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":581.852272543,"data":"22:02:04 ok c5b75656ba70a120 2.56s in 6.5s\n"}
+,{"stream_name":"stdout","time":581.859046742,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":588.049092095,"data":"22:02:10 ok c5b75656ba70a120__v2 2.48s in 6.2s\n"}
+,{"stream_name":"stdout","time":588.05573269,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":596.845211518,"data":"22:02:19 ok 8ec1e0764c9ec7a0 3.52s in 8.8s\n"}
+,{"stream_name":"stdout","time":596.852110313,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":605.957668045,"data":"22:02:28 ok 8ec1e0764c9ec7a0__v2 3.68s in 9.1s\n"}
+,{"stream_name":"stdout","time":605.958431778,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":608.260688907,"data":"22:02:30 ok ee6e8143f7c02c7a 0.88s in 2.3s\n"}
+,{"stream_name":"stdout","time":608.267036226,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":610.348689973,"data":"22:02:32 ok ee6e8143f7c02c7a__v2 0.8s in 2.1s\n"}
+,{"stream_name":"stdout","time":610.35537581,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":624.418116684,"data":"22:02:47 ok fcdf455d184b058b 5.68s in 14.1s\n"}
+,{"stream_name":"stdout","time":624.424739334,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":636.866862914,"data":"22:02:59 ok fcdf455d184b058b__v2 4.96s in 12.4s\n"}
+,{"stream_name":"stdout","time":636.867858215,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":646.397496781,"data":"22:03:09 ok 9d685bbc7a14b72d 3.76s in 9.5s\n"}
+,{"stream_name":"stdout","time":646.404865158,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":656.216843436,"data":"22:03:18 ok 9d685bbc7a14b72d__v2 3.92s in 9.8s\n"}
+,{"stream_name":"stdout","time":656.224346254,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":665.983974472,"data":"22:03:28 ok d35d81f9a3e220af 3.92s in 9.8s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":665.99133471,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":679.551619186,"data":"22:03:42 ok d35d81f9a3e220af__v2 5.36s in 13.6s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":679.552788982,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":694.952774587,"data":"22:03:57 ok 898371b00261705c 6.24s in 15.4s\n"}
+,{"stream_name":"stdout","time":694.959250652,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":713.26810866,"data":"22:04:15 ok 898371b00261705c__v2 7.44s in 18.3s\n"}
+,{"stream_name":"stdout","time":713.26899121,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":727.67818468,"data":"22:04:30 ok 2a8233be8ad7f8e4 5.84s in 14.4s\n"}
+,{"stream_name":"stdout","time":727.684646311,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":738.389464383,"data":"22:04:40 ok 2a8233be8ad7f8e4__v2 4.4s in 10.7s\n"}
+,{"stream_name":"stdout","time":738.396029908,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":742.892293821,"data":"22:04:45 ok 555f5ff3ce0193d2 1.76s in 4.5s\n"}
+,{"stream_name":"stdout","time":742.898813046,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":748.836803632,"data":"22:04:51 ok 555f5ff3ce0193d2__v2 2.32s in 5.8s\n"}
+,{"stream_name":"stdout","time":748.83796969,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":751.893172999,"data":"22:04:54 ok e0525ab072619ffd 1.2s in 3.2s\n"}
+,{"stream_name":"stdout","time":751.900640519,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":754.733544356,"data":"22:04:57 ok e0525ab072619ffd__v2 1.12s in 2.8s\n"}
+,{"stream_name":"stdout","time":754.740304818,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":756.6251056,"data":"22:04:59 ok 7e9ce1d5a5146fe4 0.72s in 1.9s\n"}
+,{"stream_name":"stdout","time":756.632392076,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":758.825683831,"data":"22:05:01 ok 7e9ce1d5a5146fe4__v2 0.8s in 2.2s\n"}
+,{"stream_name":"stdout","time":758.832316313,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":763.713348432,"data":"22:05:06 ok b2726fb4149734a9 1.92s in 4.9s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":763.719638943,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":769.010175911,"data":"22:05:11 ok b2726fb4149734a9__v2 2.08s in 5.3s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":769.018349623,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":786.94931127,"data":"22:05:29 ok 5f761df999d37a0a 7.28s in 17.9s\n"}
+,{"stream_name":"stdout","time":786.950118767,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":808.760377501,"data":"22:05:51 ok 5f761df999d37a0a__v2 8.88s in 21.8s\n"}
+,{"stream_name":"stdout","time":808.767513867,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":826.335762318,"data":"22:06:08 ok d0edf3eaf9f2769d 7.12s in 17.6s\n"}
+,{"stream_name":"stdout","time":826.336611729,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":842.950451351,"data":"22:06:25 ok d0edf3eaf9f2769d__v2 6.8s in 16.6s\n"}
+,{"stream_name":"stdout","time":842.956795317,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":853.087890071,"data":"22:06:35 ok a8d72bb92bbef2aa 4.16s in 10.1s\n"}
+,{"stream_name":"stdout","time":853.094185262,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":860.345966135,"data":"22:06:42 ok a8d72bb92bbef2aa__v2 2.96s in 7.2s\n"}
+,{"stream_name":"stdout","time":860.346819503,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":866.782398117,"data":"22:06:49 ok 506ccf1520372245 2.64s in 6.4s\n"}
+,{"stream_name":"stdout","time":866.78862427,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":872.644137702,"data":"22:06:55 ok 506ccf1520372245__v2 2.4s in 5.9s\n"}
+,{"stream_name":"stdout","time":872.650088721,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":874.730520472,"data":"22:06:57 ok 102107e3b4afe05f 0.8s in 2.1s\n"}
+,{"stream_name":"stdout","time":874.736764906,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":876.524328092,"data":"22:06:59 ok 102107e3b4afe05f__v2 0.64s in 1.8s\n"}
+,{"stream_name":"stdout","time":876.53055268,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":888.706086473,"data":"22:07:11 ok a116f77e5ae885b1 4.88s in 12.2s\n"}
+,{"stream_name":"stdout","time":888.711789377,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":895.957820842,"data":"22:07:18 ok a116f77e5ae885b1__v2 2.96s in 7.2s\n"}
+,{"stream_name":"stdout","time":895.958704424,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":907.32240155,"data":"22:07:29 ok 1a015c2edd51bb5c 4.72s in 11.4s\n"}
+,{"stream_name":"stdout","time":907.32923037,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":920.957118063,"data":"22:07:43 ok 1a015c2edd51bb5c__v2 5.44s in 13.6s\n"}
+,{"stream_name":"stdout","time":920.96344234,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":925.103404994,"data":"22:07:47 ok 9cc814515ad2b4de 1.68s in 4.1s\n"}
+,{"stream_name":"stdout","time":925.109920779,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":931.029026243,"data":"22:07:53 ok 9cc814515ad2b4de__v2 2.4s in 5.9s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":931.029932038,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":939.467546162,"data":"22:08:02 ok e36cfa9dbf8d5534 3.44s in 8.5s\n"}
+,{"stream_name":"stdout","time":939.474061961,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":950.627228848,"data":"22:08:13 ok e36cfa9dbf8d5534__v2 4.56s in 11.2s\n"}
+,{"stream_name":"stdout","time":950.633377979,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":959.444860108,"data":"22:08:22 ok 0c5b8cf3d5eb2795 3.6s in 8.8s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":959.451348434,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":964.839748576,"data":"22:08:27 ok 0c5b8cf3d5eb2795__v2 2.16s in 5.4s\n"}
+,{"stream_name":"stdout","time":964.840740725,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":968.632899648,"data":"22:08:31 ok 736f5abd764ae8da 1.52s in 3.8s\n"}
+,{"stream_name":"stdout","time":968.639394066,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":972.114601724,"data":"22:08:34 ok 736f5abd764ae8da__v2 1.36s in 3.5s\n"}
+,{"stream_name":"stdout","time":972.921852566,"data":"22:08:35 done: 100 ok, 0 failed; zip /kaggle/working/dumpling_out/qwen3/dumpling_tts.zip\n"}
+,{"stream_name":"stdout","time":977.272970453,"data":"\n"}
+,{"stream_name":"stdout","time":977.273004143,"data":"SUMMARY {'qwen3': 'ok'}\n"}
+,{"stream_name":"stdout","time":977.325394989,"data":"backend: qwen3 | license: Apache-2.0 | model: Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign 5ecdb67327fd37bb2e042aab12ff7391903235d3\n"}
+,{"stream_name":"stdout","time":977.325421971,"data":"661d44378995a193             ok     5.52s [] \n"}
+,{"stream_name":"stdout","time":977.346215945,"data":"661d44378995a193__v2         ok     4.72s [] \n"}
+,{"stream_name":"stdout","time":977.353310699,"data":"3c6c7ac27e4f8640             ok     6.24s [] \n"}
+,{"stream_name":"stdout","time":977.361198336,"data":"3c6c7ac27e4f8640__v2         ok     6.64s [] \n"}
+,{"stream_name":"stdout","time":977.369023028,"data":"42afef6d44fabf36             ok     0.88s [] \n"}
+,{"stream_name":"stdout","time":977.371410846,"data":"42afef6d44fabf36__v2         ok     1.28s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":977.374075568,"data":"4fd3a7c3c903cf73             ok     2.48s [] \n"}
+,{"stream_name":"stdout","time":977.37930307,"data":"4fd3a7c3c903cf73__v2         ok     2.72s [] \n"}
+,{"stream_name":"stdout","time":977.38313111,"data":"aa88f785663c6bdc             ok     4.64s [] \n"}
+,{"stream_name":"stdout","time":977.388543938,"data":"aa88f785663c6bdc__v2         ok     4.4s [] \n"}
+,{"stream_name":"stdout","time":977.394164429,"data":"aa30f5a61974dc5a             ok     6.0s [] \n"}
+,{"stream_name":"stdout","time":977.400714762,"data":"aa30f5a61974dc5a__v2         ok     7.12s [] \n"}
+,{"stream_name":"stderr","time":979.926071167,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":979.926134662,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":980.086713984,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":980.086757398,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":980.916423474,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":981.09079386,"data":"[NbConvertApp] Writing 3440125 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":983.63901023,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":984.360510026,"data":"[NbConvertApp] Writing 3813784 bytes to __results__.html\n"}
+]
