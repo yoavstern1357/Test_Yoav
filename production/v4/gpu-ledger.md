@@ -12,6 +12,6 @@
 | opening-song-001 | music (ACE-Step, bf16 decoder failed, no audio) | 33 | 2026-11-25 |
 | opening-song-002 | music (ACE-Step v1 3.5B, 8 tracks x 2 seeds, 60 s + 16 s) | running (est. 35) | 2026-11-25 |
 | motion-compare-001 | measured: 2 GPUs x about 35 min (16 clips, 4 failed: Wan base worker killed by CPU RAM) | about 70 | 2026-11-25 |
-| motion-compare-002 | clips (LTX 0.9.8d tuning, 8 clips) | planned about 25 | 2026-11-25 |
+| motion-compare-002 | clips (LTX 0.9.8d tuning, 8 clips, measured) | about 35 (2 GPUs x 17 min) | 2026-11-25 |
 | ep01v44-voices-001 | tts (qwen3, 50 lines x 2 takes) | planned about 25 | 2026-11-25 |
 | ep01v44-stills-001 | images (klein, 64 keyframes x 2 orientations, 1 variant) | planned about 40 | 2026-11-25 |
