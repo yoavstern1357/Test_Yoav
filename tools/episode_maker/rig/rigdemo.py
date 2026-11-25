@@ -141,8 +141,8 @@ class Scene:
         liftL, liftR = max(0, sL), max(0, sR)
         pose = {}
         root = {}
-        pose["legL"] = dict(rot=e * 6 * liftL, ty=-e * 60 * liftL, sx=1 + 0.05 * e * liftL, sy=1 + 0.05 * e * liftL)
-        pose["legR"] = dict(rot=-e * 6 * liftR, ty=-e * 60 * liftR, sx=1 + 0.05 * e * liftR, sy=1 + 0.05 * e * liftR)
+        pose["legL"] = dict(rot=e * 6 * liftL, ty=-e * 80 * liftL, sx=1 + 0.05 * e * liftL, sy=1 + 0.05 * e * liftL)
+        pose["legR"] = dict(rot=-e * 6 * liftR, ty=-e * 80 * liftR, sx=1 + 0.05 * e * liftR, sy=1 + 0.05 * e * liftR)
         root["ty"] = -e * 14 * abs(math.sin(p))
         pose["torso"] = dict(tx=e * 16 * math.sin(p), rot=e * 2.2 * math.sin(p), sy=1 + e * 0.012 * math.sin(2 * p + 1))
         head = dict(rot=-e * 1.8 * math.sin(p) + 1.4 * e * math.sin(p - 0.9), ty=e * 3 * math.sin(2 * p))
@@ -249,8 +249,8 @@ class Scene:
         sL, sR = math.sin(p), -math.sin(p)
         liftL, liftR = max(0, sL), max(0, sR)
         pose, root = {}, {}
-        pose["legL"] = dict(rot=e * 7 * liftL, ty=-e * 70 * liftL)
-        pose["legR"] = dict(rot=-e * 7 * liftR, ty=-e * 70 * liftR)
+        pose["legL"] = dict(rot=e * 7 * liftL, ty=-e * 90 * liftL)
+        pose["legR"] = dict(rot=-e * 7 * liftR, ty=-e * 90 * liftR)
         root["ty"] = -e * 16 * abs(math.sin(p))
         pose["torso"] = dict(tx=e * 12 * math.sin(p), rot=e * 2.0 * math.sin(p))
         head = dict(rot=-e * 2.2 * math.sin(p) + 2.5 * e * math.sin(p - 1.1), ty=e * 3 * math.sin(2 * p))
