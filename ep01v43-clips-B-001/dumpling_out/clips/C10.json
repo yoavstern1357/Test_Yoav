@@ -1,0 +1,19 @@
+{
+ "id": "C10",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 7018,
+ "frames": 97,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 108.9,
+ "prompt": "The knife chops the block of amber jelly into tiny cubes, the cubes tumble into the bowl of pink minced pork. Steam drifts in the background. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C10.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

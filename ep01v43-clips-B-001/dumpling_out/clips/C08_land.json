@@ -1,0 +1,19 @@
+{
+ "id": "C08_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7011,
+ "frames": 121,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 217.0,
+ "prompt": "Slow push-in on the two old brick pagodas, wind chimes swing in the breeze. the small boy in the conical leaf hat points up at them, the big fat bald uncle with the mustache beside him looks up, and his gaze softens. A bird flies by. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C08_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

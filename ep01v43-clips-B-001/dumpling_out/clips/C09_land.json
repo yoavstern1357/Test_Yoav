@@ -1,0 +1,19 @@
+{
+ "id": "C09_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7017,
+ "frames": 121,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 164.1,
+ "prompt": "Grandma pleats one dumpling in two quick turns of her fingers and holds it up. The boy at the counter follows her fingers with his eyes. Steam rises from the bamboo steamers, the big uncle behind sniffs the steam. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C09_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

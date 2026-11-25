@@ -1,0 +1,19 @@
+{
+ "id": "C05_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7016,
+ "frames": 121,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 164.7,
+ "prompt": "The metro car sways gently, the small boy in the conical leaf hat reads the journal then looks out of the window with a small smile, buildings slide past outside. Beside him the big fat bald uncle with the mustache sleeps upright hugging a thermos, his mouth moves in his sleep. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C05_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

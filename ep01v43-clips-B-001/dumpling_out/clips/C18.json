@@ -1,0 +1,19 @@
+{
+ "id": "C18",
+ "orientation": "portrait",
+ "backend": "ltx",
+ "seed": 7023,
+ "frames": 121,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 144.1,
+ "prompt": "the big fat bald uncle with the mustache sips from the spoon with his eyes closed, his shoulders drop and he smiles a small blissful smile in soft warm light. the small boy in the conical leaf hat in the foreground nods. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Vertical 9:16 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C18.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

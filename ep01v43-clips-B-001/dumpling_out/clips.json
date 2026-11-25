@@ -1,0 +1,182 @@
+{
+ "defaults": {
+  "backend": "ltx",
+  "width": 480,
+  "height": 832,
+  "seconds": 4,
+  "fps": 24,
+  "fit": "cover",
+  "upscale": [
+   720,
+   1280
+  ],
+  "orientations": [
+   "portrait",
+   "landscape"
+  ],
+  "style": "soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady",
+  "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake"
+ },
+ "clips": [
+  {
+   "id": "C08",
+   "prompt": "Slow push-in on the two old brick pagodas, wind chimes swing in the breeze. the small boy in the conical leaf hat points up at them, the big fat bald uncle with the mustache beside him looks up, and his gaze softens. A bird flies by.",
+   "seconds": 5,
+   "seed": 7011,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C08.jpg",
+    "landscape": "images/C08_land.jpg"
+   }
+  },
+  {
+   "id": "C14",
+   "prompt": "the big fat bald uncle with the mustache pops the whole dumpling into his mouth, his cheeks puff out, one eye twitches, a sweat drop swells on his bald head, then he rockets up into the air, both ears blasting long jets of white steam, his mustache standing up like antennae.",
+   "seconds": 4,
+   "seed": 7013,
+   "variants": 1,
+   "cond_noise": 0.35,
+   "start": {
+    "portrait": "images/C14.jpg",
+    "landscape": "images/C14_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C14_end.jpg",
+    "landscape": "images/C14_end_land.jpg"
+   }
+  },
+  {
+   "id": "C15",
+   "prompt": "the big fat bald uncle with the mustache settles after skidding, fans his tongue with his hand, and takes the cup of cold water from Grandma, steam leaking from one ear. Grandma smiles kindly, the small boy in the conical leaf hat watches him with concern.",
+   "seconds": 4,
+   "seed": 7014,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C15.jpg",
+    "landscape": "images/C15_land.jpg"
+   }
+  },
+  {
+   "id": "C05",
+   "prompt": "The metro car sways gently, the small boy in the conical leaf hat reads the journal then looks out of the window with a small smile, buildings slide past outside. Beside him the big fat bald uncle with the mustache sleeps upright hugging a thermos, his mouth moves in his sleep.",
+   "seconds": 5,
+   "seed": 7016,
+   "variants": 1,
+   "cond_noise": 0.18,
+   "start": {
+    "portrait": "images/C05.jpg",
+    "landscape": "images/C05_land.jpg"
+   }
+  },
+  {
+   "id": "C09",
+   "prompt": "Grandma pleats one dumpling in two quick turns of her fingers and holds it up. The boy at the counter follows her fingers with his eyes. Steam rises from the bamboo steamers, the big uncle behind sniffs the steam.",
+   "seconds": 5,
+   "seed": 7017,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C09.jpg",
+    "landscape": "images/C09_land.jpg"
+   }
+  },
+  {
+   "id": "C10",
+   "prompt": "The knife chops the block of amber jelly into tiny cubes, the cubes tumble into the bowl of pink minced pork. Steam drifts in the background.",
+   "seconds": 4,
+   "seed": 7018,
+   "variants": 1,
+   "cond_noise": 0.22,
+   "start": {
+    "portrait": "images/C10.jpg",
+    "landscape": "images/C10_land.jpg"
+   }
+  },
+  {
+   "id": "C11",
+   "prompt": "The steamer lid lifts, steam parts, inside the dumpling skin the jelly cubes slowly melt into a golden pool and the skin glows warmly.",
+   "seconds": 5,
+   "seed": 7019,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C11.jpg",
+    "landscape": "images/C11_land.jpg"
+   }
+  },
+  {
+   "id": "C12",
+   "prompt": "Grandma's fingers spin the pleats of a dumpling quickly. the small boy in the conical leaf hat counts with his lips, the big fat bald uncle with the mustache counts on his fingers, loses count, starts again, then gives up with a shrug.",
+   "seconds": 5,
+   "seed": 7020,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C12.jpg",
+    "landscape": "images/C12_land.jpg"
+   }
+  },
+  {
+   "id": "C16",
+   "prompt": "Grandma's chopsticks lift the dumpling gently by its twisted top knot and set it down on the soup spoon, steam rises.",
+   "seconds": 4,
+   "seed": 7021,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C16.jpg",
+    "landscape": "images/C16_land.jpg"
+   }
+  },
+  {
+   "id": "C17",
+   "prompt": "A chopstick tip touches the dumpling skin and opens a tiny hole, a thread of steam curls out and a drop of golden soup glints.",
+   "seconds": 4,
+   "seed": 7022,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C17.jpg",
+    "landscape": "images/C17_land.jpg"
+   }
+  },
+  {
+   "id": "C18",
+   "prompt": "the big fat bald uncle with the mustache sips from the spoon with his eyes closed, his shoulders drop and he smiles a small blissful smile in soft warm light. the small boy in the conical leaf hat in the foreground nods.",
+   "seconds": 5,
+   "seed": 7023,
+   "variants": 1,
+   "cond_noise": 0.15,
+   "start": {
+    "portrait": "images/C18.jpg",
+    "landscape": "images/C18_land.jpg"
+   }
+  },
+  {
+   "id": "C24",
+   "prompt": "Grandma freezes mid-fold, then slowly looks up at the boy's conical hat with wide amazed eyes. the small boy in the conical leaf hat looks up at her, his eyes widen.",
+   "seconds": 5,
+   "seed": 7024,
+   "variants": 1,
+   "cond_noise": 0.2,
+   "start": {
+    "portrait": "images/C24.jpg",
+    "landscape": "images/C24_land.jpg"
+   }
+  },
+  {
+   "id": "C28",
+   "prompt": "Soft close-up. The boy's eyes come to the camera with a small smile, the ribbon of his hat stirs in the breeze, warm light.",
+   "seconds": 4,
+   "seed": 7028,
+   "variants": 1,
+   "cond_noise": 0.12,
+   "start": {
+    "portrait": "images/C28.jpg",
+    "landscape": "images/C28_land.jpg"
+   }
+  }
+ ]
+}

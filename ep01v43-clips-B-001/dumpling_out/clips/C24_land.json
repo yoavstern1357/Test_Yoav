@@ -1,0 +1,19 @@
+{
+ "id": "C24_land",
+ "orientation": "landscape",
+ "backend": "ltx",
+ "seed": 7024,
+ "frames": 121,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 30,
+ "status": "ok",
+ "seconds": 162.7,
+ "prompt": "Grandma freezes mid-fold, then slowly looks up at the boy's conical hat with wide amazed eyes. the small boy in the conical leaf hat looks up at her, his eyes widen. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, smooth natural animation, the camera stays steady. Wide horizontal 16:9 composition.",
+ "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake",
+ "start": "images/C24_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}
