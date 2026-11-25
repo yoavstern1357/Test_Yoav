@@ -15,11 +15,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
-      - run: pip install -q kaggle pillow
+      - run: pip install -q kaggle six pillow requests
       - name: Run on Kaggle
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-        run: python3 tools/episode_maker/gpu/kaggle_run.py tools/episode_maker/gpu/jobs/run.json --out results
+        run: mkdir -p results && python3 tools/episode_maker/gpu/kaggle_run.py tools/episode_maker/gpu/jobs/run.json --out results
       - name: Push results to branch gpu-results
         if: always()
         run: |
