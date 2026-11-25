@@ -4,12 +4,12 @@
 **Format:** a warm, curious food-travel show on the old Silk Road for everyone, hosted by the Boy (Bo), who talks to camera. Uncle Fong is the co-host: mostly the funny one, sometimes the wise one. One local teacher per episode (here: Grandma at her stall). A **Scroll Narrator** speaks only when a paper scroll unrolls on screen, for the one legend. Production rules: `production/v4/PRODUCTION-BIBLE.md` (v4.2, overrides everything else). Comedy rules: `production/v4/comedy-style.md`. Facts: `production/v4/content-research.md`, section "Episode 1".
 **Voices:** `boy` (warm, curious, clear; light humor, natural), `uncle` (big, warm; funny, but he can go quiet and say true things), `narrator` (deep, calm, a little echo, a low gong before he speaks; only inside the scroll), `grandma` (the stall owner: warm, brisk, always right). Dad only as a sepia silhouette from behind and as the Boy's reading of his journal. Catchphrase **"For science!"**. Last spoken line: **"Dad was right..."**
 **Look:** refined anime (natural proportions, cinematic light, painted backgrounds), per the bible. The scroll world is ink-wash paper-cut at about 8 fps.
-**Numbers:** 29 clips (C01-C29), 336 spoken words (counted below), 3 PEAK moments, 4 real facts + 1 legend, 2 fact cards, 19 image-to-video clips + 10 code/graphic clips. Music: only under the title, the jelly reveal, the burn aftermath, the scroll and the Dad beat; everything else is ambience and SFX.
+**Numbers:** 29 clips (C01-C29), 334 spoken words (counted below), 3 PEAK moments, 4 real facts + 1 legend, 2 fact cards, 19 image-to-video clips + 10 code/graphic clips. Music: only under the title, the jelly reveal, the burn aftermath, the scroll and the Dad beat; everything else is ambience and SFX.
 
 ## Changelog vs v4.1
 | # | Change | Why |
 |---|---|---|
-| 1 | **2:00 -> 2:30, 250 -> 336 spoken words.** More dialogue, with every fact said once, plainly, then a beat (2-3 s of image and ambience) to land. | Bible: 320-380 words, clearer messages |
+| 1 | **2:00 -> 2:30, 250 -> 334 spoken words.** More dialogue, with every fact said once, plainly, then a beat (2-3 s of image and ambience) to land. | Bible: 320-380 words, clearer messages |
 | 2 | **The hook is now a question for everyone:** "A dumpling with a spoonful of hot soup inside. In a skin you can almost see through." The quiet flash-forward (Uncle with an ice pack) promises the burn. | Adults and kids both want the answer |
 | 3 | **The Boy is warm and curious** (asks Grandma real questions, delighted by the answer), not deadpan. The "look-to-lens" is kept only twice. | Bible: host = warm and curious |
 | 4 | **Four real facts + one legend:** (1) Qinglong port shipped ceramics to Japan and Korea, (2) two brick pagodas about 1,000 years old that survived the 1766 temple fire, (3) the soup goes in as jelly and steam melts it (never boil them), (4) cooks disagree on the fold count (14, 16 or 18). Legend: the 1871 shop. | Bible: 3-4 facts + one legend |
@@ -56,7 +56,7 @@ The episode breathes: long holds, establishing shots and ambience (canal water, 
 ### B. THE OLD ROAD AND THE JOURNAL (0:13-0:31)
 | Clip | Time | # | Method | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
 |---|---|---|---|---|---|---|
-| C03 | 0:13.0 | B03 | CODE | Top-down. Dad's leather journal opens in warm light; an ink-wash map unrolls across the page; a dotted red route draws itself with a pen scratch; a tiny paper-cut caravan walks along it, the last camel turning its head to the lens (camel cameo 1 of 2). | BOY (V.O.): “The Silk Road was never one road. It was many, over land and over sea.” | page, pen scratch; strings low |
+| C03 | 0:13.0 | B03 | CODE | Top-down. Dad's leather journal opens in warm light; an ink-wash map unrolls across the page; a dotted red route draws itself with a pen scratch; a tiny paper-cut caravan walks along it, the last camel turning its head to the lens (camel cameo 1 of 2). | BOY (V.O.): “The Silk Road was never one road. It was many, by land and sea.” | page, pen scratch; strings low |
 | C04 | 0:18.0 | B04 | CODE | The route reaches a river-mouth harbor; ink-wash ships load stacks of bowls, the sails fill, the ships slide toward the edge of the map. Fact card 1 fades in and out: [CARD: QINGLONG PORT · its ceramics turn up in Japan and Korea]. | BOY (V.O.): “Near Shanghai, a port called Qinglong shipped ceramics to Japan and Korea over a thousand years ago.” | wood creak, gull, sails flap |
 | C05 | 0:25.0 | B05 | I2V | START STILL: a Shanghai metro car sliding out of the city into low houses; the Boy on a seat, the journal open on his knees, one finger under Dad's handwriting; the Uncle beside him, upright and asleep, hugging a thermos. ACTION: the train sways; the Boy reads, then looks out of the window with a small smile. | BOY (V.O.): “Dad's first page says: Shanghai. Be patient. The soup is the secret.” | train rhythm; no music |
 
@@ -109,7 +109,7 @@ The episode breathes: long holds, establishing shots and ambience (canal water, 
 | C29 | 2:28.5 | B29 | I2V | STING. START STILL: the Boy in the foreground; behind him the Uncle with his tongue in a bucket of ice giving a thumbs up, and the camel (cameo 2 of 2) beside him, staring into the lens. ACTION: one tiny toot of steam from the Uncle's ear; the camel blinks. Cut to black. | | toot, cut |
 
 ## Word count and rates (counted from the voice column)
-See the table at the end of the check run: **336 spoken words in 150 s (about 2.2 words/second overall)**. Busiest clips: C08 about 2.7 w/s, C13 2.5 w/s. No clip above 2.8 w/s; every fact is followed by at least one second of image and ambience. The Dad beat (C25) is 2.3 w/s and the Uncle's line (C26) 2.3 w/s with a held pause.
+**334 spoken words in 150 s (about 2.2 words/second overall)**, counted per clip from the voice column. Busiest clips: C01 and C08 about 2.8 w/s, C02, C09 and C20 about 2.6-2.7 w/s. No clip above 2.8 w/s; every fact is followed by at least one second of image and ambience. The Dad beat (C25) is 2.3 w/s and the Uncle's line (C26) 2.3 w/s with a held pause.
 
 ## Fact-landing check (each fact: said once, plainly, then a beat)
 | Fact | Where | Beat to land | Tag |
