@@ -1,0 +1,18 @@
+{
+ "id": "I6_chomp__v1",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5502,
+ "size": [
+  768,
+  1344
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 16.4,
+ "prompt": "Reference images: image 1 is character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the man from the reference image, but the man is now VERY FAT: a big round belly, heavy round body, chubby cheeks, bald, thin black mustache, brown linen jacket stretched over his belly, wide orange sash, towel on his shoulder. Comic action: the boy and the fat man LEAP forward through the air toward the viewer in panic, eyes huge, while right behind their heels the mouth of a GIANT dumpling that is instantly recognizable as a dumpling: a huge round white steamed dumpling with a classic pleated, twisted top, soft glossy skin, steam rising from it, with a big open chomping mouth full of soft round teeth, fully visible in the frame snaps shut, steam and crumbs flying. Low angle, strong speed lines. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos.",
+ "negative": "",
+ "refs": [
+  "refs/characters.jpg"
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 3,
+  "ref_max": 512
+ },
+ "images": [
+  {
+   "id": "I5_chase",
+   "seed": 5500,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the man from the reference image, but the man is now VERY FAT: a big round belly, heavy round body, chubby cheeks, bald, thin black mustache, brown linen jacket stretched over his belly, wide orange sash, towel on his shoulder. FULL SPRINT toward the viewer down an old Asian lantern-lit street at dusk, both truly SCARED: eyes wide, mouths open screaming, sweat drops, mid-stride with feet off the ground, arms flailing, the boy holding his hat, the fat man's belly bouncing. Right behind them, a GIANT dumpling that is instantly recognizable as a dumpling: a huge round white steamed dumpling with a classic pleated, twisted top, soft glossy skin, steam rising from it, with a big open chomping mouth full of soft round teeth, fully visible in the frame, rolling after them. Low wide-angle camera, motion lines, dust. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I5b_chase_wide",
+   "seed": 5501,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "Wide high-angle shot of a winding lantern street at dusk: the small boy and the very fat bald man run away in panic, and behind them a GIANT dumpling that is instantly recognizable as a dumpling: a huge round white steamed dumpling with a classic pleated, twisted top, soft glossy skin, steam rising from it, with a big open chomping mouth full of soft round teeth, fully visible in the frame bounces after them, knocking lanterns swinging. Clear silhouettes, playful and cinematic. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I6_chomp",
+   "seed": 5502,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the man from the reference image, but the man is now VERY FAT: a big round belly, heavy round body, chubby cheeks, bald, thin black mustache, brown linen jacket stretched over his belly, wide orange sash, towel on his shoulder. Comic action: the boy and the fat man LEAP forward through the air toward the viewer in panic, eyes huge, while right behind their heels the mouth of a GIANT dumpling that is instantly recognizable as a dumpling: a huge round white steamed dumpling with a classic pleated, twisted top, soft glossy skin, steam rising from it, with a big open chomping mouth full of soft round teeth, fully visible in the frame snaps shut, steam and crumbs flying. Low angle, strong speed lines. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I5c_shuriken",
+   "seed": 5503,
+   "refs": [],
+   "prompt": "Dynamic close-up: a small boy's hand (indigo sleeve, orange sash visible) flicks three golden pan-fried gyoza dumplings like throwing stars; the gyoza spin flat through the air with bright motion trails and little sparkles, toward a giant white dumpling in the blurred background. Action anime framing, speed lines. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I1_bite",
+   "seed": 5504,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the man from the reference image, but the man is now VERY FAT: a big round belly, heavy round body, chubby cheeks, bald, thin black mustache, brown linen jacket stretched over his belly, wide orange sash, towel on his shoulder. Close-up of both of them biting into soup dumplings at the same moment, steam bursting out, eyes wide with joy, chopsticks in hand, warm stall light, appetizing. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text."
+  },
+  {
+   "id": "I3_pool",
+   "seed": 5505,
+   "refs": [
+    {
+     "path": "refs/characters.jpg",
+     "role": "character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose"
+    }
+   ],
+   "prompt": "The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the man from the reference image, but the man is now VERY FAT: a big round belly, heavy round body, chubby cheeks, bald, thin black mustache, brown linen jacket stretched over his belly, wide orange sash, towel on his shoulder. Wide shot: both of them floating happily in a giant pool completely filled with plump white dumplings like a ball pit, laughing; the fat man lounges on one huge dumpling like a pool float, the boy throws dumplings in the air. Sunny, dreamlike. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text."
+  }
+ ]
+}

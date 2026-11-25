@@ -1,0 +1,18 @@
+{
+ "id": "I3_pool__v1",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5505,
+ "size": [
+  768,
+  1344
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 17.7,
+ "prompt": "Reference images: image 1 is character design only (faces, clothes); make the man much fatter; do NOT copy the standing pose. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). The boy (about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash) and the man from the reference image, but the man is now VERY FAT: a big round belly, heavy round body, chubby cheeks, bald, thin black mustache, brown linen jacket stretched over his belly, wide orange sash, towel on his shoulder. Wide shot: both of them floating happily in a giant pool completely filled with plump white dumplings like a ball pit, laughing; the fat man lounges on one huge dumpling like a pool float, the boy throws dumplings in the air. Sunny, dreamlike. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Vertical composition. No text. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos.",
+ "negative": "",
+ "refs": [
+  "refs/characters.jpg"
+ ]
+}

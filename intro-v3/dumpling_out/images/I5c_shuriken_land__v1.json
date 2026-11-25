@@ -1,0 +1,16 @@
+{
+ "id": "I5c_shuriken_land__v1",
+ "orientation": "landscape",
+ "backend": "klein",
+ "seed": 5503,
+ "size": [
+  1344,
+  768
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 16.1,
+ "prompt": "Dynamic close-up: a small boy's hand (indigo sleeve, orange sash visible) flicks three golden pan-fried gyoza dumplings like throwing stars; the gyoza spin flat through the air with bright motion trails and little sparkles, toward a giant white dumpling in the blurred background. Action anime framing, speed lines. Delicate soft anime illustration in an original house style: gentle clean line art, soft painterly shading, warm muted palette with orange accents, subtle paper texture, cinematic light. Wide horizontal 16:9 composition. No text. Soft picture-book 2D animation still in the same painted style, line quality and warm golden light as the style reference: round friendly shapes, soft brown outlines, bright pastel colors, clean simple shapes, warm light. Natural, restrained facial expressions unless the scene asks for a big one. No text, no letters, no captions, no logos.",
+ "negative": "",
+ "refs": []
+}
