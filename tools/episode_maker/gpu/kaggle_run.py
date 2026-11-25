@@ -92,7 +92,7 @@ def main():
     patch_notebook(os.path.join(HERE, "dumpling_clips.ipynb"), os.path.join(k_dir, "dumpling_clips.ipynb"), job)
     json.dump({"id": f"{user}/{k_slug}", "title": k_slug, "code_file": "dumpling_clips.ipynb",
                "language": "python", "kernel_type": "notebook", "is_private": True,
-               "enable_gpu": True, "enable_internet": True, "machine_shape": "NvidiaTeslaT4",
+               "enable_gpu": True, "enable_internet": True, "enable_tpu": False,
                "dataset_sources": [f"{user}/{ds_slug}"], "competition_sources": [], "kernel_sources": []},
               open(os.path.join(k_dir, "kernel-metadata.json"), "w"), indent=1)
     sh("kaggle", "kernels", "push", "-p", k_dir)
