@@ -1,0 +1,202 @@
+{
+ "backend": "chatterbox",
+ "license": "MIT",
+ "model": "ResembleAI/chatterbox",
+ "model_revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+ "results": [
+  {
+   "id": "decafd575e7010af",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 18.4,
+   "audio_seconds": 4.08,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice.",
+    "orpheus_voice": "leo",
+    "qwen_voice": "A warm, curious 11-year-old boy with a bright, clear, friendly voice, natural and expressive like a cheerful kids TV host.",
+    "qwen_speaker": "Aiden"
+   }
+  },
+  {
+   "id": "decafd575e7010af__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 4.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice.",
+    "orpheus_voice": "leo",
+    "qwen_voice": "A warm, curious 11-year-old boy with a bright, clear, friendly voice, natural and expressive like a cheerful kids TV host.",
+    "qwen_speaker": "Aiden"
+   }
+  },
+  {
+   "id": "be34de9e603269e7",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.4,
+   "audio_seconds": 3.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower.",
+    "orpheus_voice": "leo",
+    "qwen_voice": "A warm, curious 11-year-old boy with a bright, clear, friendly voice, natural and expressive like a cheerful kids TV host.",
+    "qwen_speaker": "Aiden"
+   }
+  },
+  {
+   "id": "be34de9e603269e7__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.6,
+   "audio_seconds": 3.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower.",
+    "orpheus_voice": "leo",
+    "qwen_voice": "A warm, curious 11-year-old boy with a bright, clear, friendly voice, natural and expressive like a cheerful kids TV host.",
+    "qwen_speaker": "Aiden"
+   }
+  },
+  {
+   "id": "a560256d9cfedd11",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 2.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.69,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word, as if smelling something wonderful.",
+    "orpheus_voice": "dan",
+    "qwen_voice": "A big, warm, jolly middle-aged man with a deep, rich, slightly husky voice, funny, playful and affectionate, very expressive.",
+    "qwen_speaker": "Ryan"
+   }
+  },
+  {
+   "id": "a560256d9cfedd11__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 1.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.69,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word, as if smelling something wonderful.",
+    "orpheus_voice": "dan",
+    "qwen_voice": "A big, warm, jolly middle-aged man with a deep, rich, slightly husky voice, funny, playful and affectionate, very expressive.",
+    "qwen_speaker": "Ryan"
+   }
+  },
+  {
+   "id": "b0969145c47a89a8",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 1.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.40249999999999997,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and amazed, a hushed whisper of surprise, with a short pause at the start.",
+    "orpheus_voice": "dan",
+    "qwen_voice": "A big, warm, jolly middle-aged man with a deep, rich, slightly husky voice, funny, playful and affectionate, very expressive.",
+    "qwen_speaker": "Ryan"
+   }
+  },
+  {
+   "id": "b0969145c47a89a8__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.3,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.40249999999999997,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and amazed, a hushed whisper of surprise, with a short pause at the start.",
+    "orpheus_voice": "dan",
+    "qwen_voice": "A big, warm, jolly middle-aged man with a deep, rich, slightly husky voice, funny, playful and affectionate, very expressive.",
+    "qwen_speaker": "Ryan"
+   }
+  },
+  {
+   "id": "8c42dabc6232e314",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 4.2,
+   "audio_seconds": 3.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8800000000000001,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "orpheus_voice": "tara",
+    "qwen_voice": "A kind elderly grandmother with a warm, slightly raspy voice, lively, affectionate and full of character.",
+    "qwen_speaker": "Serena"
+   }
+  },
+  {
+   "id": "8c42dabc6232e314__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 3.3,
+   "audio_seconds": 3.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8800000000000001,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "orpheus_voice": "tara",
+    "qwen_voice": "A kind elderly grandmother with a warm, slightly raspy voice, lively, affectionate and full of character.",
+    "qwen_speaker": "Serena"
+   }
+  },
+  {
+   "id": "09754a39c3897a23",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 7.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.36000000000000004,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace.",
+    "orpheus_voice": "zac",
+    "qwen_voice": "A deep, solemn, resonant male storyteller voice with a slow measured pace, like the narrator of an epic legend.",
+    "qwen_speaker": "Uncle_Fu"
+   }
+  },
+  {
+   "id": "09754a39c3897a23__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 7.3,
+   "audio_seconds": 7.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.36000000000000004,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace.",
+    "orpheus_voice": "zac",
+    "qwen_voice": "A deep, solemn, resonant male storyteller voice with a slow measured pace, like the narrator of an epic legend.",
+    "qwen_speaker": "Uncle_Fu"
+   }
+  }
+ ]
+}
