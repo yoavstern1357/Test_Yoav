@@ -463,7 +463,7 @@ class PostQueue:
                 post = j.get("post") or {}
                 t0 = time.time()
                 postprocess.process(raw, final, fps_in=j["gen_fps"], fps_out=j["fps"], interp=int(post.get("rife", j.get("interp") or 0)),
-                                    esrgan=bool(post.get("esrgan")), size=j.get("upscale"), crf=j["crf"], rife_model=post.get("rife_model", "rife-anime"))
+                                    esrgan=bool(post.get("esrgan")), size=j.get("upscale"), crf=j["crf"], rife_model=post.get("rife_model", "rife-v4.6"))
                 log(f"[{j['id']}] post-processed on CPU in {time.time() - t0:.0f} s -> {final}")
             except Exception as ex:
                 traceback.print_exc()
@@ -628,13 +628,13 @@ def main():
         log(f"{len(jobs)} clips ({len(done)} already done)")
         tot = 0
         for j in jobs:
-            est = {"ltx": 6, "ltx13b": 10, "ltx98d": 5, "wan": 30, "fastwan": 8, "mock": 0}[j["backend"]] * (j["steps"] / BACKENDS[j["backend"]]["steps"]) * (j["frames"] / 121) * (j["width"] * j["height"] / (480 * 832))
+            est = {"ltx": 1.8, "ltx13b": 3, "ltx98d": 1.2, "wan": 25, "fastwan": 5, "mock": 0}[j["backend"]] * (j["steps"] / BACKENDS[j["backend"]]["steps"]) * (j["frames"] / 97) * (j["width"] * j["height"] / (480 * 832))
             tot += 0 if j["id"] in {d["id"] for d in done} else est
             print(f"  {j['id']:<28} {j['backend']:<7} {j['width']}x{j['height']} {j['frames']}f steps={j['steps']} seed={j['seed']} "
                   f"{'DONE' if j in done else '~%.0f min on a T4 (estimate)' % est}"
                   f"{'  [center crop of the other orientation]' if j.get('crop_fallback') else ''}")
             print(f"      {j['full_prompt'][:140]}")
-        log(f"estimated remaining GPU time: {tot:.0f} min (one T4; halve it with 2 GPUs). Estimates are not measured.")
+        log(f"estimated remaining GPU time: {tot:.0f} min (one T4; halve it with 2 GPUs). Measured on a Kaggle T4 (97 frames 480x832): ltx 105 s, ltx98d 71 s, fastwan about 300 s; model load 1.5-3 min per session.")
         return
     if a.shard:
         i, n = [int(x) for x in a.shard.split("/")]

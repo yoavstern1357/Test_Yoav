@@ -11,3 +11,5 @@
 | motion-compare-001 | clips (R&D: LTX 0.9.5 vs LTX 0.9.8 13B-distilled nf4 vs Wan2.2 5B vs FastWan, 16 clips portrait) | planned about 90 per GPU x 2 (measured value to be filled in) | 2026-11-25 |
 | opening-song-001 | music (ACE-Step, bf16 decoder failed, no audio) | 33 | 2026-11-25 |
 | opening-song-002 | music (ACE-Step v1 3.5B, 8 tracks x 2 seeds, 60 s + 16 s) | running (est. 35) | 2026-11-25 |
+| motion-compare-001 | measured: 2 GPUs x about 35 min (16 clips, 4 failed: Wan base worker killed by CPU RAM) | about 70 | 2026-11-25 |
+| motion-compare-002 | clips (LTX 0.9.8d tuning, 8 clips) | planned about 25 | 2026-11-25 |

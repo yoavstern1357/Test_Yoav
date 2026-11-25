@@ -7,7 +7,7 @@
 Models (downloaded once to ~/.cache/dumpling, or $DUMPLING_CACHE):
   * realesr-animevideov3 (BSD-3-Clause, xinntao/Real-ESRGAN v0.2.5.0): tiny anime video upscaler, 4x, plain PyTorch. Measured on a 4-core CPU:
     about 8 s per 480x832 frame (13 min per 97-frame clip); on a GPU it takes a fraction of a second (the GPU is used when present, ESRGAN_DEVICE=cpu forces the CPU).
-  * rife-ncnn-vulkan 20221029 (MIT, nihui): model "rife-anime", run with `-g -1` (CPU).  Needs libvulkan1 (apt-get install -y libvulkan1).
+  * rife-ncnn-vulkan 20221029 (MIT, nihui): model "rife-v4.6" (the only family that supports -n; "rife-anime" does not), run with `-g -1` (CPU).  Needs libvulkan1 (apt-get install -y libvulkan1).
 Order: upscale first (n frames), RIFE second (on the final size): the upscaler is the expensive stage, so it sees the fewest frames.
 Also imported by generate_clips.py (PostQueue) so a Kaggle session post-processes clip N on the CPU while the GPU makes clip N+1.
 """
@@ -117,7 +117,7 @@ def rife_bin():
     return hit[0]
 
 
-def rife_frames(src_dir, dst_dir, factor, model="rife-anime"):
+def rife_frames(src_dir, dst_dir, factor, model="rife-v4.6"):
     n = len(glob.glob(os.path.join(src_dir, "*.png")))
     os.makedirs(dst_dir, exist_ok=True)
     try:
@@ -133,7 +133,7 @@ def rife_frames(src_dir, dst_dir, factor, model="rife-anime"):
 
 
 # ------------------------------------------------------------------ pipeline
-def process(src, dst, fps_in=24, fps_out=24, interp=0, esrgan=False, size=None, crf=16, rife_model="rife-anime"):
+def process(src, dst, fps_in=24, fps_out=24, interp=0, esrgan=False, size=None, crf=16, rife_model="rife-v4.6"):
     """src mp4 -> dst mp4. size = (w, h) of the final video (None = keep). interp = RIFE factor (2 doubles the frames)."""
     tmp = tempfile.mkdtemp(prefix="post_")
     try:
@@ -166,7 +166,7 @@ def main():
     ap.add_argument("--fps-in", type=float, default=24); ap.add_argument("--fps-out", type=float, default=24)
     ap.add_argument("--rife", type=int, default=0, help="interpolation factor (2 = 12 -> 24 fps)")
     ap.add_argument("--esrgan", action="store_true"); ap.add_argument("--size", default=None, help="final size, e.g. 720x1280")
-    ap.add_argument("--crf", type=int, default=16); ap.add_argument("--rife-model", default="rife-anime")
+    ap.add_argument("--crf", type=int, default=16); ap.add_argument("--rife-model", default="rife-v4.6")
     ap.add_argument("--bench", action="store_true")
     a = ap.parse_args()
     if a.bench:

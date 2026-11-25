@@ -1,1 +1,1 @@
-{"run_id": "opening-song-002", "task": "music", "input": "tools/episode_maker/gpu/inputs/opening-song", "backend": "acestep", "smoke": false, "only": "", "max_minutes": 120}
+{"run_id": "motion-compare-002", "task": "clips", "input": "tools/episode_maker/gpu/inputs/motion-compare-002", "backend": "auto", "smoke": false, "only": "", "max_minutes": 60}
