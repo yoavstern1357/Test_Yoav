@@ -1,0 +1,477 @@
+{
+ "defaults": {
+  "backend": "qwen3",
+  "seed": 11,
+  "variants": 2
+ },
+ "voices": {
+  "boy": {
+   "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host.",
+   "exaggeration_scale": 1.0
+  },
+  "uncle": {
+   "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved.",
+   "exaggeration_scale": 1.0
+  },
+  "grandma": {
+   "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice.",
+   "exaggeration_scale": 1.0
+  },
+  "narrator": {
+   "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses.",
+   "exaggeration_scale": 1.0
+  }
+ },
+ "lines": [
+  {
+   "id": "661d44378995a193",
+   "who": "narrator",
+   "text": "Behold! A legend... brought low by ONE dumpling.",
+   "clip": "C01",
+   "style": "neutral",
+   "qwen": "Delivery: movie-trailer thunder, huge, solemn. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "3c6c7ac27e4f8640",
+   "who": "boy",
+   "text": "Welcome to The Dumpling Boy! Today's mystery: how does hot soup get inside a dumpling?",
+   "clip": "C02",
+   "style": "neutral",
+   "qwen": "Delivery: bright host energy, a dry little smile. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "42afef6d44fabf36",
+   "who": "uncle",
+   "text": "Co-host!",
+   "clip": "C03",
+   "style": "neutral",
+   "qwen": "Delivery: muffled by the ice pack, offended, big. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "4fd3a7c3c903cf73",
+   "who": "boy",
+   "text": "He's the warning label. Let's rewind.",
+   "clip": "C03",
+   "style": "neutral",
+   "qwen": "Delivery: not looking, flat and kind. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "aa88f785663c6bdc",
+   "who": "boy",
+   "text": "The Silk Road? Not one road. A web, by land and sea.",
+   "clip": "C04",
+   "style": "neutral",
+   "qwen": "Delivery: easy storyteller, a spark of wonder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "aa30f5a61974dc5a",
+   "who": "boy",
+   "text": "Over a thousand years ago, Qinglong port, near Shanghai, shipped pottery to Japan and Korea.",
+   "clip": "C05",
+   "style": "neutral",
+   "qwen": "Delivery: leaning in, wonder on the last half. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "2956e1b17d220145",
+   "who": "boy",
+   "text": "Dad's first page: be patient. The soup is the secret.",
+   "clip": "C06",
+   "style": "neutral",
+   "qwen": "Delivery: softly, reading, a half-smile. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "9d410969e171ae40",
+   "who": "boy",
+   "text": "Patient.",
+   "clip": "C07",
+   "style": "neutral",
+   "qwen": "Delivery: flat, deadpan, a tiny pause before the word. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "8b127ba1ffea0f34",
+   "who": "boy",
+   "text": "Nanxiang. An old canal town, now part of Shanghai.",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Delivery: relaxed, glad to be here. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "2b57f87227e38018",
+   "who": "boy",
+   "text": "Two pagodas, about a thousand years old. The temple burned in 1766. They're still standing.",
+   "clip": "C09",
+   "style": "neutral",
+   "qwen": "Delivery: fond, pointing, a little awed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "bcbe78da041f9acb",
+   "who": "uncle",
+   "text": "Veterans.",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Delivery: choked, deeply moved. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "3fc3fdac78979095",
+   "who": "boy",
+   "text": "They're pagodas.",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "bb6997d9fee62197",
+   "who": "narrator",
+   "text": "Behold! The stall... of DESTINY.",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Delivery: thunderous, awed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "14be63875120443f",
+   "who": "boy",
+   "text": "It's a stall.",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "0599b20d50aeffda",
+   "who": "narrator",
+   "text": "Of DESTINY.",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Delivery: offended, louder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "d036dc83d3ca178d",
+   "who": "boy",
+   "text": "How do you get soup inside?",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Delivery: bright, curious, a little shy. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "fa7b1c68c5044823",
+   "who": "grandma",
+   "text": "Everyone asks. First, you make it solid.",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Delivery: dry, unhurried, eyes on her hands. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "600457e9f4059919",
+   "who": "grandma",
+   "text": "Pork skin, boiled for hours. Chilled, it sets. Chopped into the meat.",
+   "clip": "C13",
+   "style": "neutral",
+   "qwen": "Delivery: matter-of-fact, hands busy. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "377bd6dc346fe346",
+   "who": "boy",
+   "text": "Wait. The soup goes in SOLID?",
+   "clip": "C14",
+   "style": "neutral",
+   "qwen": "Delivery: breathless wonder. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "98b9639bc07ee268",
+   "who": "uncle",
+   "text": "Steam melts it back into soup.",
+   "clip": "C14",
+   "style": "neutral",
+   "qwen": "Delivery: low, dreamy, a cook who knows. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "bdaa9a01ff31e8aa",
+   "who": "uncle",
+   "text": "Never boil them. The skin bursts. Lunch is my field.",
+   "clip": "C15",
+   "style": "neutral",
+   "qwen": "Delivery: calm, a cook who knows. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "078a0f8da32861af",
+   "who": "narrator",
+   "text": "The training arc begins!",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: booming, training-montage hype. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "8ac1a4767295561c",
+   "who": "uncle",
+   "text": "Behold.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: panting, proud. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "87c706bc295384a8",
+   "who": "grandma",
+   "text": "That's a sock.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "2577a3179402347d",
+   "who": "boy",
+   "text": "A very ambitious sock.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: dry, kind. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "6b1711176fdb72df",
+   "who": "grandma",
+   "text": "Slowly.",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: flat warning. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "8747d6caa38ddfec",
+   "who": "uncle",
+   "text": "For dumpling research!",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: grand, thundering. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "c5b75656ba70a120",
+   "who": "boy",
+   "text": "Rule one of soup dumplings: don't...",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: earnest host, calm, back to the danger. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "8ec1e0764c9ec7a0",
+   "who": "narrator",
+   "text": "But the dumpling... had a secret.",
+   "clip": "C19",
+   "style": "neutral",
+   "qwen": "Delivery: slow, horrified, whisper-hype. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "ee6e8143f7c02c7a",
+   "who": "boy",
+   "text": "...do that.",
+   "clip": "C19",
+   "style": "neutral",
+   "qwen": "Delivery: flat, as the toot fades. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "fcdf455d184b058b",
+   "who": "grandma",
+   "text": "Okay, watch. Lift it by the top knot. Onto a spoon.",
+   "clip": "C21",
+   "style": "neutral",
+   "qwen": "Delivery: a teacher's calm, slow. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "9d685bbc7a14b72d",
+   "who": "grandma",
+   "text": "Tiny hole. Let the steam out. Then wait.",
+   "clip": "C22",
+   "style": "neutral",
+   "qwen": "Delivery: softly, showing. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "d35d81f9a3e220af",
+   "who": "uncle",
+   "text": "Be cool. Be cool.",
+   "clip": "C22",
+   "style": "neutral",
+   "qwen": "Delivery: trembling whisper, pleading. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "898371b00261705c",
+   "who": "grandma",
+   "text": "Soup first. It's hot! Then the dumpling, with black vinegar and ginger.",
+   "clip": "C23",
+   "style": "neutral",
+   "qwen": "Delivery: pleased, quiet. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "2a8233be8ad7f8e4",
+   "who": "uncle",
+   "text": "Good soup can't be rushed. Someone waited hours for this.",
+   "clip": "C24",
+   "style": "neutral",
+   "qwen": "Delivery: quiet and real, low, almost to himself. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "555f5ff3ce0193d2",
+   "who": "uncle",
+   "text": "For dumpling research.",
+   "clip": "C24",
+   "style": "neutral",
+   "qwen": "Delivery: tender, to the spoon. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "e0525ab072619ffd",
+   "who": "uncle",
+   "text": "Are there more?",
+   "clip": "C25",
+   "style": "neutral",
+   "qwen": "Delivery: one eye open, hopeful, tiny. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "7e9ce1d5a5146fe4",
+   "who": "grandma",
+   "text": "Five.",
+   "clip": "C25",
+   "style": "neutral",
+   "qwen": "Delivery: deadpan. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "b2726fb4149734a9",
+   "who": "narrator",
+   "text": "LEGEND SAYS!",
+   "clip": "C26",
+   "style": "neutral",
+   "qwen": "Delivery: explosive, grand. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "5f761df999d37a0a",
+   "who": "narrator",
+   "text": "Around the year 1871, in Nanxiang, a shopkeeper sold ONE enormous meat bun.",
+   "clip": "C27",
+   "style": "neutral",
+   "qwen": "Delivery: grand, mock-solemn, unhurried. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "d0edf3eaf9f2769d",
+   "who": "narrator",
+   "text": "Nobody cared. So he made it smaller... and hid soup inside, set as jelly!",
+   "clip": "C28",
+   "style": "neutral",
+   "qwen": "Delivery: rising, playful grandeur. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "a8d72bb92bbef2aa",
+   "who": "narrator",
+   "text": "It became famous... by SHRINKING!",
+   "clip": "C29",
+   "style": "neutral",
+   "qwen": "Delivery: triumphant. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "506ccf1520372245",
+   "who": "boy",
+   "text": "Can we skip the dramatic voice?",
+   "clip": "C29",
+   "style": "neutral",
+   "qwen": "Delivery: dry. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "102107e3b4afe05f",
+   "who": "narrator",
+   "text": "No.",
+   "clip": "C29",
+   "style": "neutral",
+   "qwen": "Delivery: firm, final. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "a116f77e5ae885b1",
+   "who": "boy",
+   "text": "Legend. That's historian for 'please don't quote me.'",
+   "clip": "C31",
+   "style": "neutral",
+   "qwen": "Delivery: dry, smiling. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "1a015c2edd51bb5c",
+   "who": "grandma",
+   "text": "That hat... A man sat on that stool. He burned his tongue, too.",
+   "clip": "C32",
+   "style": "neutral",
+   "qwen": "Delivery: slowing, then quiet, a little amazed. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "9cc814515ad2b4de",
+   "who": "boy",
+   "text": "...My dad?",
+   "clip": "C32",
+   "style": "neutral",
+   "qwen": "Delivery: barely audible, stunned. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "e36cfa9dbf8d5534",
+   "who": "boy",
+   "text": "Dad wrote: rush it, get burned. Be patient, get the best part.",
+   "clip": "C33",
+   "style": "neutral",
+   "qwen": "Delivery: quiet, reading, his voice a little tight. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "0c5b8cf3d5eb2795",
+   "who": "uncle",
+   "text": "FOR DUMPLING RESEARCH!",
+   "clip": "C35",
+   "style": "neutral",
+   "qwen": "Delivery: volcanic, full power. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  },
+  {
+   "id": "736f5abd764ae8da",
+   "who": "boy",
+   "text": "He's already packed.",
+   "clip": "C35",
+   "style": "neutral",
+   "qwen": "Delivery: flat. Natural, brisk comedic timing like real quick talk, no long pauses.",
+   "reuse": false
+  }
+ ]
+}

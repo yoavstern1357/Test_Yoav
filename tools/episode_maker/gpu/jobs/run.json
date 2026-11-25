@@ -1,1 +1,1 @@
-{"run_id": "motion-compare-002", "task": "clips", "input": "tools/episode_maker/gpu/inputs/motion-compare-002", "backend": "auto", "smoke": false, "only": "", "max_minutes": 60}
+{"run_id": "ep01v44-voices-001", "task": "tts", "input": "tools/episode_maker/gpu/inputs/ep01v44-voices", "backend": "qwen3", "smoke": false, "only": "", "max_minutes": 60}

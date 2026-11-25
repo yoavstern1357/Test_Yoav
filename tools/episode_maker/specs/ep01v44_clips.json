@@ -1,0 +1,915 @@
+[
+ {
+  "id": "C01",
+  "dur": 3.5,
+  "start": 0.0,
+  "method": "I2V",
+  "start_kf": "Extreme close-up, dead center: the Uncle's face, eyes wide and haunted, a blue ice pack strapped to his cheek, a bead of sweat on his bald head, tongue stiffly out, thin mustache drooping. Dark vignette, a thunderclap flash behind him.",
+  "end_kf": "Medium shot pulled back one step: the Uncle on a small wooden stool in a stiff heroic pose, arms crossed, chin lifted in wounded dignity, ice pack on cheek, one wisp of steam from his left ear. Old Nanxiang lane softly blurred behind.",
+  "action": "Slow heroic pull-back. The Uncle's right eye twitches; a giant sweat drop slides down his head; his lip trembles; then he lifts his chin and crosses his arms in wounded dignity. One tiny TOOT of steam from his left ear. Mustache droops a little more.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "movie-trailer thunder, huge, solemn",
+    "text": "Behold! A legend... brought low by ONE dumpling."
+   }
+  ],
+  "sfx": "thunder boom, low gong, tiny kettle toot",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (face and ice pack stay in the upper two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C02",
+  "dur": 5.0,
+  "start": 3.5,
+  "method": "I2V",
+  "start_kf": "Medium shot, old Nanxiang lane (canal and stone bridge softly blurred). The Boy steps in from the left holding a chopstick like a microphone, confident, a cheeky half-smile aimed at the lens. Behind him, out of focus on the right, the Uncle on his stool with the ice pack.",
+  "end_kf": "The Boy close to the lens, chopstick-mic raised, one eyebrow lifted in a 'so, mystery' look; behind him, blurred, the Uncle's limp hand just finishing a feeble wave, ice pack sliding off his cheek.",
+  "action": "The Boy strides in, spins to the lens, taps the chopstick-mic like an anchorman (bright, a little smug); on 'mystery' one eyebrow arches. Behind him the Uncle slowly raises a limp hand to wave, his ice pack slips, he catches it with dignity.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "bright host energy, a dry little smile",
+    "text": "Welcome to The Dumpling Boy! Today's mystery: how does hot soup get inside a dumpling?"
+   }
+  ],
+  "sfx": "bike bell, canal ambience, soft chopstick tap",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (Boy's face upper-middle, mic held above the lower third)",
+  "peak": false
+ },
+ {
+  "id": "C03",
+  "dur": 3.0,
+  "start": 8.5,
+  "method": "I2V",
+  "start_kf": "Two-shot: the Boy in the foreground, flat-faced, not looking back; the Uncle behind him on the stool, ice pack sagging, jabbing one indignant finger upward.",
+  "end_kf": "Same two-shot caught in a VHS-style rewind glitch: scan lines, the Uncle's steam streaming backward into his ears, the ice pack flying off his face back toward him, the Boy's finger pointing back like a remote control.",
+  "action": "The Uncle jabs a finger up, outraged (muffled). The Boy answers without turning, flat. In the last second everything rewinds at high speed: steam sucked back into his ears, ice pack flying off, tape-squeal glitch, ending in a white flash.",
+  "lines": [
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "muffled by the ice pack, offended, big",
+    "text": "Co-host!"
+   },
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "not looking, flat and kind",
+    "text": "He's the warning label. Let's rewind."
+   }
+  ],
+  "sfx": "rewind whirr, tape squeal, white-flash whoosh",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C04",
+  "dur": 4.0,
+  "start": 11.5,
+  "method": "CODE",
+  "start_kf": "Top-down: Dad's worn leather journal on a wooden table in warm light, a blank map page, an ink bottle, a brush.",
+  "end_kf": "The full ink-wash map: a branching web of dotted red routes across land and sea, tiny paper-cut caravans on the land lines, tiny ships on the sea lines; the last camel in the caravan has turned its head to look straight into the lens.",
+  "action": "The page flips open; ink spreads; routes draw themselves one after another into a web (pen scratches); paper camels wobble along; the last camel, calm and unimpressed, turns its head to the lens and blinks once (camel cameo 1 of 2).",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "V.O.",
+    "note": "easy storyteller, a spark of wonder",
+    "text": "The Silk Road? Not one road. A web, by land and sea."
+   }
+  ],
+  "sfx": "page flip, pen scratches, soft strings",
+  "zone": "top",
+  "zone_note": "TOP (map art lives in the lower two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C05",
+  "dur": 5.0,
+  "start": 15.5,
+  "method": "CODE",
+  "start_kf": "Zoom into the map's coast at a river mouth: a paper-cut harbor, stacks of bowls on the quay, paper sailors waiting. Fact card slot empty.",
+  "end_kf": "Three paper-cut ships with full sails sliding off the map's edge toward two small islands marked Japan and Korea; on the last ship a tiny paper Uncle stands on a tower of bowls in a captain pose, one hand shading his eyes, a chopstick planted like a flag.",
+  "action": "Paper sailors load bowl stacks that bounce; sails fill with a snap; the ships glide away over rolling ink waves. The paper Uncle strikes a captain pose, wobbles on the bowl tower, flaps his arms, saves himself. Fact card fades in and out: [CARD: QINGLONG PORT · pottery to Japan and Korea].",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "V.O.",
+    "note": "leaning in, wonder on the last half",
+    "text": "Over a thousand years ago, Qinglong port, near Shanghai, shipped pottery to Japan and Korea."
+   }
+  ],
+  "sfx": "wood creak, sails snap, gull, bowls clinking",
+  "zone": "top",
+  "zone_note": "TOP (ships sail in the lower two thirds; card sits mid-left)",
+  "peak": false
+ },
+ {
+  "id": "C06",
+  "dur": 3.5,
+  "start": 20.5,
+  "method": "I2V",
+  "start_kf": "Interior of a Shanghai metro car gliding over rooftops in golden morning light. The Boy sits with Dad's journal open on his knees, finger under the handwriting. Beside him the Uncle stands gripping a strap in a grand heroic pose, eyes closed, chin high, mustache fluttering as if in a sea breeze.",
+  "end_kf": "The doors have just slid open at a small old station: the Uncle's eyes snap wide, pupils shrunk to dots, nose twitching toward the platform; the Boy looks up from the journal, calm, one eyebrow raised.",
+  "action": "The train sways; the Boy reads with a soft half-smile; the Uncle sways like a captain on a ship, smug, nodding to 'patient'; a commuter ducks his waving arm. The train brakes, the doors hiss open, and the Uncle's eyes snap open as he sniffs the air.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "V.O.",
+    "note": "softly, reading, a half-smile",
+    "text": "Dad's first page: be patient. The soup is the secret."
+   }
+  ],
+  "sfx": "train rhythm, station chime, door hiss",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (floor and seats are empty)",
+  "peak": false
+ },
+ {
+  "id": "C07",
+  "dur": 3.0,
+  "start": 24.0,
+  "method": "I2V",
+  "start_kf": "Same open train doors: the Uncle frozen, nose twitching, eyes as dots; the Boy seated at the left, deadpan.",
+  "end_kf": "The open doorway empty, a cartoon dust-cloud silhouette of the Uncle hanging in the air and speed lines pointing out onto the platform; the Boy alone, hat ribbon whipped sideways, eyes sliding to the lens; the camel stepping calmly through the doors (camel cameo).",
+  "action": "The Uncle launches out like a cannonball (smear frames, speed lines), leaving a dust silhouette. The Boy's hat ribbon whips in the draft; after a beat he turns his head to the lens (8-frame look-to-lens), flat. The camel strolls out behind, unhurried.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "flat, deadpan, a tiny pause before the word",
+    "text": "Patient."
+   }
+  ],
+  "sfx": "cannonball whoosh, comic zing, dust puff",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C08",
+  "dur": 3.5,
+  "start": 27.0,
+  "method": "I2V",
+  "start_kf": "Wide: an old canal lane in warm morning light, stone bridge at left. The Boy walks backward toward the lens, chopstick-mic in hand. Far behind him the Uncle zigzags over the bridge, his nose yanked forward by a visible ribbon of steamy scent, feet barely touching the ground.",
+  "end_kf": "The Boy mid-step, glancing at the lens; behind him a dust cloud where the Uncle just rounded a corner; ink-bloom title in the sky: #01 XIAOLONGBAO and NANXIANG · SHANGHAI, CHINA.",
+  "action": "The Boy walks backward in an easy host stride, the camera tracking back with him; he never looks behind. The scent ribbon hauls the Uncle left, right, over the bridge, round the corner (stretch-and-snap). Title blooms in brush ink as the Boy stops.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "relaxed, glad to be here",
+    "text": "Nanxiang. An old canal town, now part of Shanghai."
+   }
+  ],
+  "sfx": "canal water, bike bell, gong plus one taiko hit for the title",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (title cards sit in the upper sky; captions never touch them)",
+  "peak": false
+ },
+ {
+  "id": "C09",
+  "dur": 5.0,
+  "start": 30.5,
+  "method": "I2V",
+  "start_kf": "Wide low angle: two small stout brick pagodas side by side (about 11 m, no hero angle), wind chimes in the foreground, soft leaves; the Boy small in the foreground pointing up.",
+  "end_kf": "Same view after a slow push-in, the pagodas glowing in warm light; the Boy lowers his hand, softly awed; a sparrow perched on the left pagoda.",
+  "action": "Slow push-in; chimes sway; the Boy points to each pagoda in turn, his face lit with wonder; leaves drift; at the last words a sparrow lands on a pagoda top. Hold two seconds in the quiet.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "fond, pointing, a little awed",
+    "text": "Two pagodas, about a thousand years old. The temple burned in 1766. They're still standing."
+   }
+  ],
+  "sfx": "wind chimes, breeze, sparrow chirp",
+  "zone": "top",
+  "zone_note": "TOP (open sky; Boy and pagodas fill the middle and bottom)",
+  "peak": false
+ },
+ {
+  "id": "C10",
+  "dur": 3.0,
+  "start": 35.5,
+  "method": "I2V",
+  "start_kf": "Medium: the Uncle skids to a stop in front of the pagodas, panting, scent ribbon still tugging at his nose; he stares up, mouth open. The Boy stands beside him.",
+  "end_kf": "The Uncle in a trembling salute, hand to brow, anime waterfall tears, chest out, mustache quivering; the Boy beside him, deadpan, a flat sweat drop above his head.",
+  "action": "Skid and stop; the Uncle's face goes solemn, a salute snaps up, tears pour like fountains; the scent ribbon yanks his nose but he resists, saluting harder; the Boy slowly turns his head to him, flat.",
+  "lines": [
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "choked, deeply moved",
+    "text": "Veterans."
+   },
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "flat",
+    "text": "They're pagodas."
+   },
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "sobbing, saluting harder",
+    "text": "Veterans."
+   }
+  ],
+  "sfx": "skid, sob-violin sting, comic ding",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C11",
+  "dur": 4.0,
+  "start": 38.5,
+  "method": "I2V",
+  "start_kf": "A tiny generic old stall (no sign text), stacked bamboo steamers breathing steam. The Uncle slides in crouched at the right edge, face in the steam, eyes glowing like headlights. The Boy at left, arms crossed. Grandma at the back kneading, not looking up.",
+  "end_kf": "The Uncle's face wrapped in glowing steam, golden shonen-style aura lines radiating out, star sparkles in his eyes, mustache flared; the Boy flat-faced with a sweat drop; Grandma still kneading, one eyebrow lifted a millimeter.",
+  "action": "The Uncle lands in a crouch and inhales; the steam spirals into his nose; eyes flash star-sparkles; a golden aura erupts, wind ruffles the steamers. The Boy looks to the lens, flat. Grandma keeps kneading, unimpressed.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "thunderous, awed",
+    "text": "Behold! The stall... of DESTINY."
+   },
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "flat",
+    "text": "It's a stall."
+   },
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "offended, louder",
+    "text": "Of DESTINY."
+   }
+  ],
+  "sfx": "gong, inhale whoosh, aura roar, steamer hiss",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (the counter hides the lower bodies)",
+  "peak": false
+ },
+ {
+  "id": "C12",
+  "dur": 4.0,
+  "start": 42.5,
+  "method": "I2V",
+  "start_kf": "Medium at the counter: Grandma's floury hands and calm face; the Boy up on tiptoe, chin near the counter, eager; steam between them.",
+  "end_kf": "Close on Grandma's hands holding up one perfect pleated dumpling; the Boy's eyes huge, mouth open; Grandma's eyes still on her work, one corner of her mouth up a hair.",
+  "action": "The Boy asks, bright and a little shy. Without looking up, Grandma flicks a dough circle into the air and, mid-answer, pleats it in two blurring turns and holds it up. The Boy's jaw drops; her face does not change.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "bright, curious, a little shy",
+    "text": "How do you get soup inside?"
+   },
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "dry, unhurried, eyes on her hands",
+    "text": "Everyone asks. First, you make it solid."
+   }
+  ],
+  "sfx": "dough slap, two quick pinches, steamer lids",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C13",
+  "dur": 4.5,
+  "start": 46.5,
+  "method": "I2V",
+  "start_kf": "Macro on a wooden board: a block of amber pork-skin jelly, Grandma's cleaver raised above it, the Uncle's blurred face just entering at the edge of frame.",
+  "end_kf": "A neat heap of tiny glistening jelly cubes tumbling into a bowl of pink minced pork; the cleaver stuck upright, quivering; the Uncle's face now fully in frame, head tilted, eyes round.",
+  "action": "The cleaver blurs: chop-chop-chop with a shonen slash glint at every cut; amber cubes jump like gems and tumble into the bowl. The Uncle's head sways side to side following the cleaver like a cat watching a toy.",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "matter-of-fact, hands busy",
+    "text": "Pork skin, boiled for hours. Chilled, it sets. Chopped into the meat."
+   }
+  ],
+  "sfx": "chop-chop-chop, glint shings, soft fold",
+  "zone": "top",
+  "zone_note": "TOP (macro action and the Uncle fill the lower two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C14",
+  "dur": 4.5,
+  "start": 51.0,
+  "method": "I2V",
+  "start_kf": "Macro: a bamboo steamer lid just lifting, steam parting; one dumpling with skin glowing translucent, jelly cubes visible inside.",
+  "end_kf": "Extreme macro: golden soup pooling inside the see-through skin, one slow ripple crossing it, tiny sparkles; the Boy's eyes huge in the reflection.",
+  "action": "PEAK 1. PEAK 1. The lid lifts; steam parts; edit: 6-8 fast macro cuts (cubes, steam, melt, ripple) with whip-pans, one slow-motion ripple, then a held breath. Fact card: [CARD: THE SOUP GOES IN SOLID]. On the last beat a giant sparkling eye fills the whole frame, blinks, and is gone (the Uncle, too close).",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "breathless wonder",
+    "text": "Wait. The soup goes in SOLID?"
+   },
+   {
+    "who": "uncle",
+    "tag": "V.O.",
+    "note": "low, dreamy, a cook who knows",
+    "text": "Steam melts it back into soup."
+   }
+  ],
+  "sfx": "lid lift, hiss, sparkle; music swell then a held breath",
+  "zone": "top",
+  "zone_note": "TOP (the dumpling is dead center, the lower third is free)",
+  "peak": true
+ },
+ {
+  "id": "C15",
+  "dur": 4.0,
+  "start": 55.5,
+  "method": "I2V",
+  "start_kf": "Medium at the counter: the Boy still dazzled, the Uncle beside him calm and professorial, one finger raised, steam-light gleaming on his bald head; Grandma folding in the background.",
+  "end_kf": "The Boy in profile in a flat anime stare, one huge sweat drop on his forehead; the Uncle serene and smug, finger still raised; Grandma at the back giving one tiny nod.",
+  "action": "The Uncle lectures like a cook, calm and sure. The Boy turns slowly, eyes widening, a huge sweat drop swelling. The Uncle shrugs coolly. Grandma's hands pause for one beat and she nods once, and the Uncle visibly glows with pride.",
+  "lines": [
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "calm, a cook who knows",
+    "text": "Never boil them. The skin bursts. Lunch is my field."
+   }
+  ],
+  "sfx": "soft fold sounds, small approving 'hm', sweat-drop plink",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C16",
+  "dur": 4.5,
+  "start": 59.5,
+  "method": "I2V",
+  "start_kf": "Close on Grandma's hands holding a dough circle, the Boy's chin just above the counter, the Uncle at the edge of frame with his hands up, ready to count.",
+  "end_kf": "Grandma lifts a finished dumpling with a twisted top knot; behind it the Uncle holds both hands up, all fingers spread, face crumpled in betrayal; the Boy deadpan holds out his own hands.",
+  "action": "Her fingers spin pleats in a blur; the Boy counts with his lips; the Uncle counts on his fingers, runs out, stares at his hands in betrayal, then silently borrows the Boy's hands, who allows it with a flat face. Grandma drops the dumpling into the steamer.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "curious",
+    "text": "How many folds?"
+   },
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "dry, proud, not looking up",
+    "text": "Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen."
+   }
+  ],
+  "sfx": "soft pinches, stall ambience, steamer lid",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C17",
+  "dur": 4.5,
+  "start": 64.0,
+  "method": "I2V",
+  "start_kf": "The Uncle at the counter in a determined crouch, towel tied round his forehead, sleeves rolled, a wobbly dough circle in his hands, tongue between his lips; behind him a dramatic sunburst of speed lines. Boy and Grandma at the sides.",
+  "end_kf": "The Uncle holds up his 'dumpling' like a trophy: a lumpy crumpled pouch with a tail, flour on his nose, beaming; Grandma flat-faced; the Boy dead-eyed.",
+  "action": "Training-arc hype: sweat flies, an aura flares, he pinches with trembling intensity, the dough stretches, wraps his thumb, pops; he thrusts the result into the air in triumph, glowing with pride.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "booming, training-montage hype",
+    "text": "The training arc begins!"
+   },
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "panting, proud",
+    "text": "Behold."
+   },
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "flat",
+    "text": "That's a sock."
+   },
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "dry, kind",
+    "text": "A very ambitious sock."
+   }
+  ],
+  "sfx": "drum-roll swell, dough squelch, pop",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C18",
+  "dur": 4.0,
+  "start": 68.5,
+  "method": "I2V",
+  "start_kf": "Grandma sets a basket of six steaming dumplings on the counter with a thud, steam bursting; the Uncle's chopsticks poised, eyes narrowed in a duelist's stare, mustache bristling; the Boy in the foreground turned to the lens.",
+  "end_kf": "The Uncle lifts one glowing dumpling high like a sword, aura roaring, chest out in a grand pose, mouth opening wide; the Boy in the foreground still facing the lens, mid-sentence, not turning around.",
+  "action": "The basket lands; steam rolls; Grandma, not looking, says one flat word. The Uncle draws his chopsticks in slow motion (SHING) and lifts a dumpling, aura erupting. The Boy addresses the lens with earnest host calm, his back to the danger.",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "flat warning",
+    "text": "Slowly."
+   },
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "grand, thundering",
+    "text": "For dumpling research!"
+   },
+   {
+    "who": "boy",
+    "tag": "to lens",
+    "note": "earnest host, calm, back to the danger",
+    "text": "Rule one of soup dumplings: don't..."
+   }
+  ],
+  "sfx": "basket thud, steam burst, slow-motion shing, aura roar",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (Boy's face upper third, Uncle's pose upper-middle)",
+  "peak": false
+ },
+ {
+  "id": "C19",
+  "dur": 4.5,
+  "start": 72.5,
+  "method": "I2V",
+  "start_kf": "Extreme close-up: the dumpling disappearing between the Uncle's lips, his cheeks rounding, eyes wide.",
+  "end_kf": "Wide: the Uncle rocketing upward out of the top of frame, twin jets of steam from both ears; below, a dust shape where he stood; the Boy facing the lens, hat ribbon blown flat; Grandma unmoved.",
+  "action": "PEAK 2. PEAK 2, one clip with 3-4 cuts: ECU mouth (gulp); ECU eye (twitch, veins); a sweat drop swells on his bald head; cheeks balloon; silence and a rising whine; IMPACT FRAME (white flash, radial lines, flat red silhouette, white dot eyes); he rockets up two meters; both ears blast one long TOOOOT; mustache stands up like antennae. The Boy never turns.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "slow, horrified, whisper-hype",
+    "text": "But the dumpling... had a secret."
+   },
+   {
+    "who": "boy",
+    "tag": "to lens",
+    "note": "flat, as the toot fades",
+    "text": "...do that."
+   }
+  ],
+  "sfx": "gulp, riser, impact crack, one long toot, then silence",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (ECU frames keep faces in the upper two thirds)",
+  "peak": true
+ },
+ {
+  "id": "C20",
+  "dur": 3.5,
+  "start": 77.0,
+  "method": "I2V",
+  "start_kf": "A wooden water barrel by the stall: only the Uncle's sandals and legs stick out of it, kicking; steam hisses off the water. Grandma's arm extends sideways holding a blue ice pack, her eyes never leaving her dough; the Boy watches.",
+  "end_kf": "The Uncle sits up in the barrel, water to his chest, ice pack pressed to his cheek, tongue out, humbled eyes, one wisp of steam from his ear; Grandma's hand already back at folding.",
+  "action": "The barrel sizzles; the legs kick; Grandma, who already had the ice pack out before he landed, drops it on his face without looking. He surfaces, trembling. In the tiniest voice he reports the finding.",
+  "lines": [
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "tiny voice, wheezing, humbled",
+    "text": "...There was soup inside."
+   },
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "deadpan, kind",
+    "text": "Mm-hm. Everyone learns once."
+   }
+  ],
+  "sfx": "sizzle, barrel slosh, squeak, ice-pack slap",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C21",
+  "dur": 4.5,
+  "start": 80.5,
+  "method": "I2V",
+  "start_kf": "Macro: Grandma's chopsticks pinching a dumpling by its twisted top knot, a porcelain spoon waiting below; soft steam; behind them, blurred, the Uncle's wet face hovering in the barrel, eyes locked on the dumpling.",
+  "end_kf": "The dumpling resting on the spoon, sagging softly; steam rising; Grandma calm in soft focus behind; the Uncle's wet eyes still locked on it, dripping.",
+  "action": "She lifts the dumpling by the knot, where it sags like a small water balloon, and sets it on the spoon. Behind her the Uncle leans closer and closer like a cat at a fish tank, water dripping off his mustache. A small badge fades in at a corner: [GROWN-UP HELP: HOT SOUP].",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "a teacher's calm, slow",
+    "text": "Okay, watch. Lift it by the top knot. Onto a spoon."
+   }
+  ],
+  "sfx": "soft clink, steam hiss, drip drip",
+  "zone": "top",
+  "zone_note": "TOP (macro action in the middle and lower half; badge in the top-right corner)",
+  "peak": false
+ },
+ {
+  "id": "C22",
+  "dur": 4.5,
+  "start": 85.0,
+  "method": "I2V",
+  "start_kf": "Medium close: the Uncle, out of the barrel, holds the spoon with both hands, arms shaking like an earthquake, mustache quivering; the Boy's finger steadying his wrist; Grandma's chopstick approaching the dumpling.",
+  "end_kf": "Macro: a tiny hole in the skin, a thread of steam curling out, a drop of golden soup glinting; the Uncle's two cross-eyed eyes staring at it from behind.",
+  "action": "A chopstick tip pokes a tiny hole; steam threads out. The Uncle whispers pleadingly to the dumpling. His stomach rumbles and the stacked steamers rattle; the Boy steadies the tower with one finger, not looking.",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "softly, showing",
+    "text": "Tiny hole. Let the steam out. Then wait."
+   },
+   {
+    "who": "uncle",
+    "tag": "to the dumpling",
+    "note": "trembling whisper, pleading",
+    "text": "Be cool. Be cool."
+   }
+  ],
+  "sfx": "soft poke, steam hiss, stomach rumble, rattling steamers",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C23",
+  "dur": 4.5,
+  "start": 89.5,
+  "method": "I2V",
+  "start_kf": "Close: the Uncle with the spoon at his lips, eyes squeezed shut, brows knotted; the Boy anxious in the foreground; Grandma's hand sliding a small dish of black vinegar and ginger slivers into frame.",
+  "end_kf": "The Uncle's face melted in bliss, eyes closed, a gentle smile; golden light and drifting petals around him, feet lifting a few centimeters off the stool, a soft halo; the Boy watching, hiding a smile.",
+  "action": "He sips slowly; his shoulders drop; his eyes pop open as star sparkles and close again; the background dissolves into a golden watercolor sunrise with floating petals (food power-up glow); he levitates slightly, hands folded. The Boy's anxious face melts into relief and amusement.",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "pleased, quiet",
+    "text": "Soup first. It's hot! Then the dumpling, with black vinegar and ginger."
+   }
+  ],
+  "sfx": "sip, soft ding, warm choir pad swell",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (levitating Uncle fills the upper two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C24",
+  "dur": 5.0,
+  "start": 94.0,
+  "method": "I2V",
+  "start_kf": "The Uncle levitating in golden light, eyes closed, serene; the Boy at his side looking up.",
+  "end_kf": "The Uncle settled back on the stool, eyes slowly open, tender, whispering to the empty spoon, one happy tear; the Boy's face soft and a little surprised.",
+  "action": "The sparkle softens. The Uncle speaks gently, eyes closed, no mugging at all: the one real, quiet moment. The Boy listens, eyebrows lifting in quiet respect. The Uncle lowers to the stool and whispers the catchphrase.",
+  "lines": [
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "quiet and real, low, almost to himself",
+    "text": "Good soup can't be rushed. Someone waited hours for this."
+   },
+   {
+    "who": "uncle",
+    "tag": "whisper",
+    "note": "tender, to the spoon",
+    "text": "For dumpling research."
+   }
+  ],
+  "sfx": "petal rustle, one warm piano note, spoon clink",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C25",
+  "dur": 3.0,
+  "start": 99.0,
+  "method": "I2V",
+  "start_kf": "The Uncle on the stool, glowing; one eye pops open and darts to the basket; Grandma deadpan behind the counter; the Boy beside him.",
+  "end_kf": "The Uncle erupting into a sparkle pose, eyes as stars reflecting five dumplings, one tear of joy; Grandma flat; the Boy's hand over his face, smiling behind it.",
+  "action": "One eye snaps open and he asks in a hopeful tiny voice. Grandma answers flat. His eyes turn into stars, the aura re-ignites, he squashes into a 3-frame chibi blob with a tear of joy rolling; the Boy facepalms and smiles behind his hand.",
+  "lines": [
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "one eye open, hopeful, tiny",
+    "text": "Are there more?"
+   },
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "deadpan",
+    "text": "Five."
+   }
+  ],
+  "sfx": "eye-pop ping, sparkle burst, aura whoomp",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C26",
+  "dur": 3.5,
+  "start": 102.0,
+  "method": "I2V",
+  "start_kf": "The stall in warm late-morning light: the Boy sets Dad's journal on the counter and turns to Grandma, curious; the Uncle in the background chewing, cheeks full.",
+  "end_kf": "A giant paper scroll unrolled across the whole screen, edges rolling past, the frame turning sepia and vermilion ink-wash with drifting petals; the Uncle's frozen full-cheeked face visible in one corner.",
+  "action": "The Boy asks; Grandma smiles and nudges the journal; its cover flares gold; a giant scroll bursts out and unrolls with a whoosh, wiping the screen into the paper-cut world (about 8 fps look). The Uncle sees it mid-chew and freezes, cheeks bulging.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "curious",
+    "text": "So who made the very first one?"
+   },
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "explosive, grand",
+    "text": "LEGEND SAYS!"
+   }
+  ],
+  "sfx": "gong, paper unrolling whoosh, plucked strings",
+  "zone": "top",
+  "zone_note": "TOP (the Boy and Grandma occupy the middle; the counter is clear at the bottom, but the scroll wipe uses the top)",
+  "peak": false
+ },
+ {
+  "id": "C27",
+  "dur": 4.5,
+  "start": 105.5,
+  "method": "CODE",
+  "start_kf": "Paper-cut dawn: pagoda silhouettes, a paper rooster, a round paper sun at the horizon, a little paper shop (no sign text) with an empty counter.",
+  "end_kf": "The paper shopkeeper (thin mustache, a little like the Uncle) stands behind his counter beside ONE giant bun the size of a barrel; a paper customer looks up at it and shrugs.",
+  "action": "Stepped animation: the sun rises; the rooster flaps; the shop shutters pop open; the giant bun rolls onto the counter with a thump; the customer shrugs; a paper fly buzzes past.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "grand, mock-solemn, unhurried",
+    "text": "Around the year 1871, in Nanxiang, a shopkeeper sold ONE enormous meat bun."
+   }
+  ],
+  "sfx": "rooster, thump, strings",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (the paper shop sits in the upper two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C28",
+  "dur": 4.5,
+  "start": 110.0,
+  "method": "CODE",
+  "start_kf": "The paper shopkeeper raising a rolling pin like a sword in a hero pose; the giant bun on the counter.",
+  "end_kf": "A small neat bun on a paper plate with a glowing amber jelly block inside; steam curling into a tiny paper dragon; a paper crowd gathering.",
+  "action": "The rolling pin swings in an ink-slash arc; the bun deflates in stepped frames like a balloon, whizzing round the shop, then lands small and neat; the jelly glows inside; steam becomes a tiny paper dragon.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "rising, playful grandeur",
+    "text": "Nobody cared. So he made it smaller... and hid soup inside, set as jelly!"
+   }
+  ],
+  "sfx": "swoosh, balloon whizz, sparkle, steamer",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C29",
+  "dur": 4.0,
+  "start": 114.5,
+  "method": "CODE",
+  "start_kf": "The paper crowd cheering around the small bun on its plate.",
+  "end_kf": "The scroll edges rolling closed from both sides; the tiny bun glowing like a star at the center.",
+  "action": "The crowd leaps; the bun rises on a pedestal like a sun; paper-star fireworks; the scroll starts to roll shut. The Boy interrupts from off-screen; the Narrator answers, offended.",
+  "lines": [
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "triumphant",
+    "text": "It became famous... by SHRINKING!"
+   },
+   {
+    "who": "boy",
+    "tag": "off-screen",
+    "note": "dry",
+    "text": "Can we skip the dramatic voice?"
+   },
+   {
+    "who": "narrator",
+    "tag": "",
+    "note": "firm, final",
+    "text": "No."
+   }
+  ],
+  "sfx": "fireworks pops, paper roll, gong",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C30",
+  "dur": 3.5,
+  "start": 118.5,
+  "method": "I2V",
+  "start_kf": "Back at the stall: the scroll rolled up on the counter; the Uncle standing on a stool in the exact hero pose, napkin tied as a cape, spoon raised like a sword, chin high; the Boy beside him with arms crossed.",
+  "end_kf": "The Uncle's cape fluttering in the fan breeze, chin even higher; the Boy with a dry sideways smile; Grandma at the back folding, not looking up.",
+  "action": "A breeze lifts the napkin cape dramatically; the Uncle's eyes narrow heroically, his mustache gleams. The Boy slowly looks up at him. The Uncle lifts his chin higher, utterly serene, not lowering the spoon.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "dry, fond",
+    "text": "That's not what he looked like."
+   },
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "dignified, not lowering the spoon",
+    "text": "He had my energy."
+   }
+  ],
+  "sfx": "fan whirr, cape flutter, tiny toot",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C31",
+  "dur": 3.0,
+  "start": 122.0,
+  "method": "I2V",
+  "start_kf": "Close-up of the Boy facing the lens; behind him, softly blurred, the Uncle still in cape pose.",
+  "end_kf": "The Boy's smile held after an 8-frame look-to-lens; behind him the napkin cape lies on the floor and the Uncle, unaware, still holds the spoon sword.",
+  "action": "The Boy turns to the lens with a raised eyebrow and delivers the line; behind him the Uncle's napkin cape slowly slides off his shoulders and lands on the floor, unnoticed.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "to lens",
+    "note": "dry, smiling",
+    "text": "Legend. That's historian for 'please don't quote me.'"
+   }
+  ],
+  "sfx": "soft cloth slide, paper roll closing",
+  "zone": "top",
+  "zone_note": "TOP (the Boy's face fills the lower two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C32",
+  "dur": 5.0,
+  "start": 125.0,
+  "method": "I2V",
+  "start_kf": "Grandma mid-fold across the counter, looking at the Boy for the first time since the legend, flour on her cheek; steam between them; the Uncle in the background re-draping his napkin cape.",
+  "end_kf": "Held close-up of Grandma's eyes with a band of anime shadow across them, a gentle gust lifting her headscarf; the Boy's hat ribbon fluttering, his eyes wide; warm light, soft piano.",
+  "action": "PEAK 3. PEAK 3. She freezes mid-fold and looks up at the hat. Edit: snap zooms (her eyes, the hat brim, her eyes) for about 1.5 s; a gust from nowhere whips away the Uncle's napkin cape and he clutches at it with a sweat drop. Then the pace drops to a long warm hold: her face softens, the Boy's eyes widen.",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "slowing, then quiet, a little amazed",
+    "text": "That hat... A man sat on that stool. He burned his tongue, too."
+   },
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "barely audible, stunned",
+    "text": "...My dad?"
+   }
+  ],
+  "sfx": "whoosh, riser, gust, then silence; soft piano begins",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (eyes and hat stay in the top two thirds)",
+  "peak": true
+ },
+ {
+  "id": "C33",
+  "dur": 5.0,
+  "start": 130.0,
+  "method": "I2V",
+  "start_kf": "Sepia, warm dusk: Dad's silhouette from behind in the conical hat, seated on the same stool, lantern light, a spoon held above a steaming dumpling. Never his face.",
+  "end_kf": "The same silhouette, the spoon lowered to the dumpling, steam rising, shoulders relaxed, the lantern glow softer.",
+  "action": "The spoon lowers very slowly; steam curls; the lantern flickers; one leaf drifts down. No jokes from here to the end of C34.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "V.O.",
+    "note": "quiet, reading, his voice a little tight",
+    "text": "Dad wrote: rush it, get burned. Be patient, get the best part."
+   }
+  ],
+  "sfx": "lantern crackle, soft piano, steam",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (silhouette and spoon in the upper two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C34",
+  "dur": 3.0,
+  "start": 135.0,
+  "method": "I2V",
+  "start_kf": "The Boy and the Uncle side by side at the counter; the Uncle holds a spoon with a cooled dumpling, eyes fixed on it, mustache twitching with hunger.",
+  "end_kf": "The Uncle placing the spoon in the Boy's hand; the Boy's small smile; soft warm light.",
+  "action": "The Uncle waits two full beats without moving, the hunger plain on his face, then gently hands the spoon to the Boy. The Boy takes it and smiles. No words.",
+  "lines": [],
+  "sfx": "spoon clink, piano tender",
+  "zone": "bottom",
+  "zone_note": "BOTTOM",
+  "peak": false
+ },
+ {
+  "id": "C35",
+  "dur": 5.0,
+  "start": 138.0,
+  "method": "I2V+CODE",
+  "start_kf": "Grandma leaning over the counter, pointing far to the south, smiling a little secret smile; the Boy and the Uncle in the foreground looking where she points.",
+  "end_kf": "The Uncle in a full 'final form' power pose on a steamer crate, huge golden aura, the ground cracking, birds fleeing the pagodas, fist raised, mouth wide; he is already wearing a bulging travel bundle with a steamer strapped on; the Boy in the foreground, flat, looking to the lens.",
+  "action": "Grandma points. Insert (code): on the journal map the dotted line glows and slides south down the coast to Guangzhou. The Uncle's ears perk (mustache antennae), then an aura erupts, the ground cracks, birds scatter. The Boy looks at the lens, flat.",
+  "lines": [
+   {
+    "who": "grandma",
+    "tag": "",
+    "note": "smiling, a little secret",
+    "text": "Then he went south. To Guangzhou."
+   },
+   {
+    "who": "uncle",
+    "tag": "",
+    "note": "volcanic, full power",
+    "text": "FOR DUMPLING RESEARCH!"
+   },
+   {
+    "who": "boy",
+    "tag": "to lens",
+    "note": "flat",
+    "text": "He's already packed."
+   }
+  ],
+  "sfx": "sparkle, pen scratch, aura blast, crack, wings flapping; adventure music sting",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (the Uncle's pose fills the upper two thirds)",
+  "peak": false
+ },
+ {
+  "id": "C36",
+  "dur": 4.0,
+  "start": 143.0,
+  "method": "I2V",
+  "start_kf": "Soft close-up of the Boy, warm light, the stall blurred behind him, a small smile.",
+  "end_kf": "The Boy's eyes meet the lens; a tender smile; the hat ribbon stirs.",
+  "action": "He takes a quiet breath, his smile settles, his eyes come to the lens; the ribbon stirs. Nothing else moves.",
+  "lines": [
+   {
+    "who": "boy",
+    "tag": "",
+    "note": "soft, to the lens, a small smile",
+    "text": "Dad was right... the best part is worth the wait."
+   }
+  ],
+  "sfx": "soft piano, breeze",
+  "zone": "top",
+  "zone_note": "TOP (the Boy's face is in the lower two thirds; keep the bottom free for the tail of the hat ribbon)",
+  "peak": false
+ },
+ {
+  "id": "C37",
+  "dur": 2.0,
+  "start": 147.0,
+  "method": "I2V",
+  "start_kf": "STING. The Boy in the foreground facing the lens; behind him the Uncle on the stool with his tongue in a bucket of ice giving a thumbs up; beside him the camel (cameo 2 of 2) staring into the lens.",
+  "end_kf": "Same frame; a puff of steam leaving the Uncle's ear; the camel's eyes closed mid-blink; cut to black on the next frame.",
+  "action": "The Uncle's thumbs-up wobbles; one tiny toot of steam from his ear; the camel blinks slowly. Cut to black. (Generate 3 s, trim to 2.0 s.)",
+  "lines": [],
+  "sfx": "toot, cut",
+  "zone": "bottom",
+  "zone_note": "BOTTOM (none needed: no speech)",
+  "peak": false
+ }
+]
