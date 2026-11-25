@@ -74,7 +74,8 @@ def uncle():
             (185, 745), (195, 700), (200, 600), (215, 500), (240, 400), (275, 330)]
     armR = [(595, 283), (680, 298), (770, 345), (845, 430), (885, 540), (898, 640), (895, 735), (850, 770), (835, 840), (790, 892),
             (745, 892), (725, 830), (722, 765), (718, 700), (710, 600), (690, 480), (655, 380), (615, 330)]
-    armL_m = poly_mask(shape, armL); armR_m = poly_mask(shape, armR)
+    chop = [(255, 425), (322, 492), (322, 520), (294, 520), (232, 456)]
+    armL_m = poly_mask(shape, armL) | poly_mask(shape, chop); armR_m = poly_mask(shape, armR)
     hem = [(100, 1030), (200, 1052), (300, 1075), (400, 1090), (500, 1090), (600, 1085), (700, 1068), (800, 1030)]
     below = hem_mask(shape, hem, above=False, off=6)
     legL_m = hem_mask(shape, hem, above=False, off=-34) & poly_mask(shape, [(178, 0), (452, 0), (452, H), (178, H)])
@@ -88,10 +89,16 @@ def uncle():
     kill |= below
     base_a[kill > 0] = 0
     # arms removed: fill with kimono colour and stroke the body edge
-    for am in (armL_m, armR_m):
+    yy, xx = np.mgrid[0:H, 0:W]
+    for am, piv in ((armL_m, (262, 335)), (armR_m, (640, 315))):
+        far = ((xx - piv[0]) ** 2 + (yy - piv[1]) ** 2) > 125 ** 2
         dil = cv2.dilate(am, np.ones((3, 3), np.uint8))
-        base_a[dil > 0] = 0
+        base_a[(dil > 0) & far] = 0
+    # chopsticks lay over the torso: paint that strip with kimono colour
+    cm = cv2.dilate(poly_mask(shape, chop), np.ones((5, 5), np.uint8))
     base[..., 3] = base_a.astype(np.uint8)
+    base[..., :3] = cv2.inpaint(base[..., :3], np.where((cm > 0) & (yy > 400), 255, 0).astype(np.uint8), 6, cv2.INPAINT_TELEA)
+    base[(cm > 0) & (yy > 400), 3] = 255
     # body edge strokes
     outline_poly(base, [(215, 520), (203, 600), (196, 700), (186, 745)], w=6)
     outline_poly(base, [(700, 480), (712, 600), (722, 700), (725, 760)], w=6)
@@ -124,10 +131,10 @@ def boy():
     head_m = poly_mask(shape, [(0, 0), (W, 0), (W, 270), (520, 330), (420, 372), (330, 392), (230, 392), (140, 372), (40, 330), (0, 270)])
     # keep everything above y=392 inside head only where hat/face (alpha handles the rest)
     head_m = (np.arange(H)[:, None] < 392).astype(np.uint8)[:, :].repeat(W, 1) * 255
-    armL = [(165, 440), (115, 490), (70, 560), (15, 685), (25, 705), (75, 740), (70, 800), (75, 865), (95, 893), (110, 880),
+    armL = [(165, 440), (115, 490), (70, 560), (15, 685), (25, 705), (70, 742), (58, 800), (60, 862), (90, 898), (112, 886),
             (105, 820), (112, 770), (150, 720), (165, 640), (172, 520)]
-    armR = [(385, 450), (420, 440), (455, 490), (500, 590), (548, 700), (500, 740), (480, 745), (480, 800), (478, 870),
-            (450, 893), (425, 893), (420, 850), (428, 780), (420, 740), (405, 700), (395, 600), (390, 500)]
+    armR = [(385, 450), (420, 440), (455, 490), (500, 590), (548, 700), (500, 740), (488, 747), (487, 800), (485, 870),
+            (455, 898), (422, 897), (420, 850), (428, 780), (420, 740), (405, 700), (395, 600), (390, 500)]
     armL_m = poly_mask(shape, armL); armR_m = poly_mask(shape, armR)
     hem = [(100, 898), (140, 900), (283, 910), (430, 895), (480, 890)]
     below = hem_mask(shape, hem, above=False, off=6)
@@ -141,8 +148,10 @@ def boy():
     # neck piece under the hat so a bobbing head never shows a hole
     neck = np.zeros((H, W), np.uint8); cv2.rectangle(neck, (228, 352), (336, 396), 255, -1)
     base[neck > 0, :3] = (246, 200, 165); a[neck > 0] = 255
-    for am in (armL_m, armR_m):
-        a[cv2.dilate(am, np.ones((3, 3), np.uint8)) > 0] = 0
+    yy, xx = np.mgrid[0:H, 0:W]
+    for am, piv in ((armL_m, (170, 455)), (armR_m, (385, 455))):
+        far = ((xx - piv[0]) ** 2 + (yy - piv[1]) ** 2) > 90 ** 2
+        a[(cv2.dilate(am, np.ones((3, 3), np.uint8)) > 0) & far] = 0
     base[..., 3] = a.astype(np.uint8)
     save_part(d, "torso", base, (base[..., 3] > 0).astype(np.uint8) * 255, dict(pivot=[283, 860], parent="root", z=20), parts)
     for nm, am, piv in (("armL", armL_m, [170, 455]), ("armR", armR_m, [385, 455])):

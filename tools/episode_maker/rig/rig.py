@@ -90,19 +90,21 @@ class Face:
                 spr = self.orig.copy(); spr[..., 3] = (m.astype(np.float32) * a / 255).astype(np.uint8)
                 self.arcs.append((spr[y0:y1, x0:x1].copy(), (x0, y0)))
                 rgb = cv2.inpaint(rgb, m, 4, cv2.INPAINT_TELEA)
-            # mouth: erase everything non-skin in the mouth box
+            # mouth: erase everything non-skin in the mouth box, refill with masked-blur skin
             x0, y0, x1, y1 = self.mouth_box
-            sub = rgb[y0:y1, x0:x1].astype(np.float32)
-            diff = np.abs(sub - skin).sum(-1)
-            m = np.zeros(rgb.shape[:2], np.uint8)
-            mm = (diff > 60).astype(np.uint8)
+            diff = np.abs(rgb.astype(np.float32) - skin).sum(-1)
+            mm = np.zeros(rgb.shape[:2], np.uint8)
+            mm[y0:y1, x0:x1] = (diff[y0:y1, x0:x1] > 55)
             mm = cv2.dilate(mm, np.ones((5, 5), np.uint8))
-            gx = np.arange(x0, x1)[None, :]; gy = np.arange(y0, y1)[:, None]
-            # keep the moustache tips: outside the centre only erase below y=214 (original coords)
+            gx = np.arange(rgb.shape[1])[None, :]; gy = np.arange(rgb.shape[0])[:, None]
             keep = (np.abs(gx - (451 - self.off[0])) > 36) & (gy < 214 - self.off[1])
             mm[keep] = 0
-            m[y0:y1, x0:x1] = mm * 255
-            rgb = cv2.inpaint(rgb, m, 5, cv2.INPAINT_TELEA)
+            mm[:y0, :] = 0; mm[y1:, :] = 0; mm[:, :x0] = 0; mm[:, x1:] = 0
+            valid = ((diff < 40) & (mm == 0)).astype(np.float32)
+            num = cv2.GaussianBlur(rgb.astype(np.float32) * valid[..., None], (0, 0), 9)
+            den = cv2.GaussianBlur(valid, (0, 0), 9)[..., None]
+            fill = num / np.maximum(den, 1e-3)
+            rgb = np.where(mm[..., None] > 0, fill, rgb).astype(np.uint8)
         self.clean[..., :3] = rgb
 
     # -- drawing helpers (4x supersampled) --
