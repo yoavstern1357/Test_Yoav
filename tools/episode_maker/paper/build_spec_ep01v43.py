@@ -14,7 +14,7 @@ shots = []
 
 
 def sh(id, dur, **kw):
-    d = dict(id=id, dur=dur, tail=0.25, transition="cut")
+    d = dict(id=id, dur=dur, tail=0.15, lead=0.2, transition="cut")
     d.update(kw)
     shots.append(d)
     return d
@@ -41,7 +41,7 @@ def V(clip, idx=None, **over):
     for i, (who, note, text) in enumerate(LINES[clip]):
         if idx is not None and i not in idx:
             continue
-        d = dict(who=who, text=text, gap=0.12)
+        d = dict(who=who, text=text, gap=0.08)
         d.update(over.get(i, {}))
         out.append(d)
     return out
@@ -59,11 +59,11 @@ def FACT(t, d, label, text, y=0.2):
 
 
 # ============================================================ SERIES INTRO (about 8.5 s): independent of the story
-ai("I1", 1.4, fb=dict(motion="zoom_in", zoom=1.14, focus=[0.55, 0.45], sway=0.3, particles=dict(type="steam", n=8)), mood="adventure",
+ai("I1", 1.2, fb=dict(motion="zoom_in", zoom=1.14, focus=[0.55, 0.45], sway=0.3, particles=dict(type="steam", n=8)), mood="adventure",
    sfx=[S(0.0, "tick", None, 0.5), S(0.3, "crunch", None, 0.9), S(0.55, "hiss", 0.8, 0.5)], punch=[dict(t=0.3, scale=1.06)])
 ai("I2", 1.0, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.5, 0.45]), whip=True,
    sfx=[S(0.1, "splash", None, 0.8), S(0.3, "sparkle", None, 0.5)])
-ai("I3", 1.5, fb=dict(motion="pan_right", zoom0=1.05, zoom=1.12, focus=[0.55, 0.55], pan=0.06), whip=True,
+ai("I3", 1.3, fb=dict(motion="pan_right", zoom0=1.05, zoom=1.12, focus=[0.55, 0.55], pan=0.06), whip=True,
    sfx=[S(0.1, "plop", None, 0.6), S(0.35, "laugh", None, 0.8), S(0.7, "plop", None, 0.5), S(1.0, "bloop", None, 0.5)])
 ai("I5", 1.3, fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.2, focus=[0.5, 0.5], particles=dict(type="dust", n=14)), whip=True,
    sfx=[S(0.0, "rolling", 1.3, 0.8), S(0.2, "chomp", None, 0.7), S(0.7, "chomp", None, 0.7)], speedlines=dict(t=0.0, d=1.2, dir="radial"))
@@ -78,15 +78,15 @@ code("C90", 1.5, mood="adventure", sfx=[S(0.0, "gong", None, 0.8), S(0.05, "taik
 # ============================================================ A. COLD OPEN (0:00-0:12)
 ai("C01", 5.5, black=0.5, mood="off", ambience="shop",
    fb=dict(motion="zoom_in", zoom=1.18, focus=[0.5, 0.4], sway=0.4, particles=dict(type="steam", n=10)),
-   lines=V("C01", over={0: dict(lead=0.9)}), sfx=[S(0.5, "hiss", 2.5, 0.5), S(1.2, "creak", 0.8, 0.3)], caption_y=0.8)
+   lines=V("C01", over={0: dict(lead=0.6)}), sfx=[S(0.5, "hiss", 2.5, 0.5), S(1.2, "creak", 0.8, 0.3)], caption_y=0.8)
 ai("C02", 6.5, ambience="water",
    fb=dict(motion="zoom_in", zoom=1.1, focus=[0.45, 0.5], sway=0.4),
    lines=V("C02", over={0: dict(gap=-0.3)}), sfx=[S(5.9, "thud", None, 0.7), S(5.95, "page", None, 0.6)])
 
 # ============================================================ B. THE OLD ROAD AND THE JOURNAL (0:12-0:30)
-code("C03", 5.5, mood="sparse", transition="fade", fade=0.35, lead=0.5, lines=V("C03"),
+code("C03", 5.5, mood="sparse", transition="fade", fade=0.35, lead=0.3, lines=V("C03"),
      sfx=[S(0.1, "thud", None, 0.8), S(0.14, "page", None, 0.8), S(1.4, "pen", 1.8, 0.6), S(2.6, "camel_bell", 1.0, 0.5), S(4.3, "camel_bell", 1.0, 0.7)])
-code("C04", 7.0, lead=0.5, lines=V("C04"),
+code("C04", 6.0, lead=0.3, lines=V("C04"),
      cards=[FACT(1.0, 4.2, "QINGLONG PORT", "Its ceramics turn up in Japan and Korea")],
      sfx=[S(0.3, "gull", 0.8, 0.5), S(1.4, "creak", 1.0, 0.6), S(3.2, "flap", 0.7, 0.6), S(5.0, "creak", 1.0, 0.5), S(5.4, "gull", 0.8, 0.5)])
 ai("C05", 5.5, mood="off", ambience="street", fb=dict(motion="zoom_in", zoom=1.14, focus=[0.46, 0.58], sway=0.6, particles=dict(type="dust", n=10)),
@@ -155,9 +155,9 @@ ai("C24", 5.4, id="C24d", still="C24.png", mood="tender", ambience="shop", fb=di
    lines=V("C24", over={0: dict(lead=0.3), 1: dict(gap=0.4)}))
 ai("C25", 6.0, mood="tender", ambience="night", transition="fade", fade=0.5, grade="sepia",
    fb=dict(motion="zoom_in", zoom=1.12, focus=[0.5, 0.55], particles=dict(type="dust", n=20), sway=0.2),
-   fx=[dict(type="steam", x=[0.55, 0.75], y=0.62, n=5, alpha=0.35)], lines=V("C25", over={0: dict(lead=0.6)}))
+   fx=[dict(type="steam", x=[0.55, 0.75], y=0.62, n=5, alpha=0.35)], lines=V("C25", over={0: dict(lead=0.4)}))
 ai("C26", 3.0, mood="tender", ambience="shop", transition="fade", fade=0.4, fb=dict(motion="zoom_in", zoom=1.08, focus=[0.5, 0.5], sway=0.2),
-   lines=V("C26", over={0: dict(lead=1.0), 1: dict(gap=0.4)}), sfx=[S(0.3, "clink", None, 0.4)])
+   lines=V("C26", over={0: dict(lead=0.6), 1: dict(gap=0.3)}), sfx=[S(0.3, "clink", None, 0.4)])
 
 # ============================================================ H. THE CLIFFHANGER AND THE SIGN-OFF (2:21-2:30)
 ai("C27", 2.0, id="C27a", mood="adventure", fb=dict(motion="zoom_in", zoom=1.12, focus=[0.5, 0.5], sway=0.4),
@@ -170,7 +170,7 @@ ai("C29", 1.5, mood="off", fade_out=0.3, tail=0.0, fb=dict(motion="static", zoom
 
 spec = dict(title="The Dumpling Boy: intro + Episode 01 v4.3 (How Does Soup Get Inside a Dumpling?)", size=[1080, 1920], fps=30, orientation="both",
             frames_dir="frames/ep01v43", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v43",
-            voice_engine="gpu", voice_fallback=True, voice_speed={"boy": 1.12, "uncle": 1.25, "grandma": 1.25, "narrator": 1.15}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0, caption_y=0.8, caption_y_land=0.86,
+            voice_engine="gpu", voice_fallback=True, voice_speed={"boy": 1.17, "uncle": 1.3, "grandma": 1.3, "narrator": 1.2}, max_pause=0.35, crf=23, grain=True, vignette=0.2, sway=0.0, caption_y=0.8, caption_y_land=0.86,
             narrator_echo=True, snap_to_beat=False, shots=shots)
 
 if __name__ == "__main__":
