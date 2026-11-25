@@ -118,7 +118,16 @@ def main():
                "enable_internet": True, "enable_tpu": False,
                "dataset_sources": [f"{user}/{ds_slug}"], "competition_sources": [], "kernel_sources": []},
               open(os.path.join(k_dir, "kernel-metadata.json"), "w"), indent=1)
-    sh("kaggle", "kernels", "push", "-p", k_dir)
+    # Kaggle allows at most 2 GPU sessions at a time: wait and retry while the account is busy
+    for attempt in range(80):                       # up to ~4 h of waiting
+        out = sh("kaggle", "kernels", "push", "-p", k_dir, check=False)
+        if "session count" in out.lower() or "maximum batch" in out.lower():
+            print(f"GPU sessions busy, waiting 3 min (attempt {attempt + 1})", flush=True)
+            time.sleep(180)
+            continue
+        if "error" in out.lower() and "successfully" not in out.lower():
+            sys.exit(f"kernel push failed: {out[-500:]}")
+        break
 
     # 3. wait
     t0 = time.time()
