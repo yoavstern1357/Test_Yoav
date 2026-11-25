@@ -37,6 +37,7 @@ def _hp(x, lo, order=2):
 def _env(n, a=0.01, r=0.1):
     e = np.ones(n)
     na, nr = max(1, int(a * SR)), max(1, int(r * SR))
+    na, nr = min(na, n), min(nr, n)          # very short sounds: clamp attack/release to the length
     e[:na] = np.linspace(0, 1, na)
     e[-nr:] = np.minimum(e[-nr:], np.linspace(1, 0, nr))
     return e
