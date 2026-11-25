@@ -1,1 +1,1 @@
-{"run_id": "intro-chase-v2", "task": "images", "input": "tools/episode_maker/gpu/inputs/intro-chase-v2", "smoke": false, "backend": "klein", "only": "", "max_minutes": 60}
+{"run_id": "intro-v3", "task": "images", "input": "tools/episode_maker/gpu/inputs/intro-v3", "smoke": false, "backend": "klein", "only": "", "max_minutes": 90}
