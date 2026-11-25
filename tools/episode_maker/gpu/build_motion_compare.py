@@ -20,6 +20,7 @@ SEGMENTS = [
     ("LTX 0.9.8d settings: camera and motion strength", [("uncle_ltx098d", "no camera sentence, motion medium"), ("uncle_fixcam_med", "fixed camera, medium"), ("uncle_fixcam_high", "fixed camera, high"), ("uncle_4step", "fixed camera, 4 steps")]),
     ("Cheaper: 12 fps generated + RIFE x2 (and Real-ESRGAN anime)", [("uncle_ltx098d", "24 fps generated"), ("uncle_12fps_rife", "12 fps + RIFE (CPU)"), ("chase_fixcam_med", "chase 24 fps"), ("chase_12fps_esrgan_rife", "chase 12 fps + ESRGAN + RIFE"), ("chase_576", "chase generated at 576x1024")]),
 ]
+FIRST_OF_SESSION = {"uncle_ltx095", "uncle_ltx098d", "uncle_fastwan", "uncle_fixcam_med", "uncle_fixcam_high"}   # their time includes the one-off model load (about 2 min)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
 
@@ -63,16 +64,18 @@ def main():
                     sub = f"{m.get('seconds', '?')} s on a T4 (incl. model load for the first clip)" if False else f"{m.get('seconds', '?')} s GPU, {m.get('steps', '?')} steps, {m.get('gen_fps', 24):g} fps"
                 except Exception:
                     sub = "ok"
+            if ok and cid in FIRST_OF_SESSION:
+                sub += " (+load)"
             lab = os.path.join(tmp, f"l{si}_{ci}.png")
             label_png(lab, CELL_W, name, sub, ok)
             cell = os.path.join(tmp, f"c{si}_{ci}.mp4")
             if ok:
                 vf = f"fps=24,scale={CELL_W}:{CELL_H}:flags=lanczos,setsar=1"
-                run(["ffmpeg", "-v", "error", "-y", "-i", clip, "-i", lab, "-filter_complex", f"[0:v]{vf}[v];[1:v]format=rgb24[l];[l][v]vstack,format=yuv420p[o]",
+                run(["ffmpeg", "-v", "error", "-y", "-i", clip, "-i", lab, "-filter_complex", f"[0:v]{vf},pad={CELL_W}:{CELL_H + LABEL_H}:0:{LABEL_H}:color=black[p];[p][1:v]overlay=0:0,format=yuv420p[o]",
                      "-map", "[o]", "-t", "4.05", "-r", "24", "-c:v", "libx264", "-crf", "17", cell])
             else:
                 bp = os.path.join(tmp, f"b{si}_{ci}.png"); Image.new("RGB", (CELL_W, CELL_H), (60, 60, 60)).save(bp)
-                run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", bp, "-i", lab, "-filter_complex", "[0:v]format=rgb24[v];[1:v]format=rgb24[l];[l][v]vstack,format=yuv420p[o]",
+                run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", bp, "-i", lab, "-filter_complex", f"[0:v]pad={CELL_W}:{CELL_H + LABEL_H}:0:{LABEL_H}:color=black[p];[p][1:v]overlay=0:0,format=yuv420p[o]",
                      "-map", "[o]", "-t", "4.05", "-r", "24", "-c:v", "libx264", "-crf", "17", cell])
             cells.append(cell)
         seg = os.path.join(tmp, f"seg{si}.mp4")
@@ -81,7 +84,7 @@ def main():
         im = Image.new("RGB", (W, 44), (0, 0, 0)); ImageDraw.Draw(im).text((10, 10), title, font=ImageFont.truetype(FONT, 20), fill=(255, 255, 255)); im.save(tp)
         inputs = sum([["-i", c] for c in cells], []) + ["-loop", "1", "-i", tp]
         n = len(cells)
-        fc = "".join(f"[{i}:v]" for i in range(n)) + f"hstack=inputs={n}[h];[h]pad={W}:ih:0:0:color=black[hp];[{n}:v]format=yuv420p[t];[t][hp]vstack,format=yuv420p,scale=1440:-2[o]"
+        fc = "".join(f"[{i}:v]" for i in range(n)) + f"hstack=inputs={n}[h];[h]pad={W}:ih+44:0:44:color=black[p];[p][{n}:v]overlay=0:0,format=yuv420p,scale=1440:-2[o]"
         run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "[o]", "-t", "4.05", "-r", "24", "-c:v", "libx264", "-crf", "18", seg])
         segs.append(seg)
     lst = os.path.join(tmp, "list.txt")
