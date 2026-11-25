@@ -1,0 +1,40 @@
+name: kaggle-gpu
+# Runs tools/episode_maker/gpu/jobs/run.json on Kaggle's free GPU and pushes the clips to branch gpu-results.
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["tools/episode_maker/gpu/jobs/run.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q kaggle pillow
+      - name: Run on Kaggle
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: python3 tools/episode_maker/gpu/kaggle_run.py tools/episode_maker/gpu/jobs/run.json --out results
+      - name: Push results to branch gpu-results
+        if: always()
+        run: |
+          RUN_ID=$(python3 -c "import json;print(json.load(open('tools/episode_maker/gpu/jobs/run.json'))['run_id'])")
+          mkdir -p /tmp/res/$RUN_ID && cp -r results/. /tmp/res/$RUN_ID/ || true
+          find /tmp/res -name "*.zip" -delete
+          git config user.name "gpu-bot"; git config user.email "actions@users.noreply.github.com"
+          if git fetch origin gpu-results; then
+            git checkout -B gpu-results FETCH_HEAD
+          else
+            git checkout --orphan gpu-results
+            git rm -rqf . && git clean -fdxq
+          fi
+          rm -rf ./$RUN_ID && cp -r /tmp/res/$RUN_ID ./$RUN_ID
+          git add $RUN_ID && git commit -m "GPU results $RUN_ID" && git push origin gpu-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: results, path: results}
