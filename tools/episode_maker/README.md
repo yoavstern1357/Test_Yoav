@@ -77,3 +77,13 @@ Characters are transparent PNG cut-outs in `specs/puppets/<name>.png` (boy, uncl
 - `hit`: damped squash-and-stretch spring (+ optional `hop`, `tilt`). `idle`: breathing, bob, sway multipliers.
 - Shot option `caption_y` (default 0.67) moves the burned-in caption so it does not cover faces (puppet shots use 0.8).
 - Needs the puppet files only (no extra Canva frames): new episodes = backgrounds + spec.
+
+## Rig animation (v4 test): `rig/`
+Skeletal 2D animation of the approved art (no GPU, no paid tool). See `production/v4/video-tech.md`.
+```
+pip install opencv-python-headless        # plus the packages above
+python3 rig/split_parts.py                # cut specs/puppets/*.png into parts -> specs/rigs/<name>/
+python3 rig/rigdemo.py out/rig-test.mp4   # 10 s test: walk-in, sniff, gesture, catch, chew, run-off (voices + sfx included)
+```
+`rig/rig.py` = part hierarchy + procedural face (eyes, brows, mouth, pseudo-3D head turn); `rig/street.py` = perspective street background;
+`rig/rigdemo.py` = the timeline (keyframes in code).

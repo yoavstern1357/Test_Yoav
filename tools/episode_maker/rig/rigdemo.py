@@ -109,14 +109,16 @@ class Scene:
         # per-character expression state memory
         self.last_eyes = None
         self.lblink = [0.0]
+        ts = np.arange(0, DUR + 1, 0.005)
+        self._ts = ts
+        self._zs = np.cumsum([K(x, [(0, 0.0), (0.5, 1.55), (2.9, 1.55), (3.5, 0.0)]) for x in ts]) * 0.005
+        self._ph = np.cumsum([K(x, [(0, 1.0), (2.8, 1.0), (3.45, 0.0)]) for x in ts]) * 0.005
 
     # camera / world
     def cam(self, t):
         v = K(t, [(0, 0.0), (0.5, 1.55), (2.9, 1.55), (3.5, 0.0)])
         # integrate speed numerically (cheap closed-form via sampling)
-        zs = 0.0
-        n = int(t / 0.02)
-        for i in range(n): zs += K(i * 0.02, [(0, 0.0), (0.5, 1.55), (2.9, 1.55), (3.5, 0.0)]) * 0.02
+        zs = float(np.interp(t, self._ts, self._zs))
         camz = 14.0 - zs
         camx = 0.05 * math.sin(t * 0.9) + (0.9 * smooth((t - 8.3) / 1.2) if t > 8.3 else 0)
         return camz, camx, K(t, [(0, 0.0), (3.5, 0.0)]) 
@@ -125,10 +127,7 @@ class Scene:
         """walk envelope e and phase p."""
         e = K(t, [(0, 1.0), (2.8, 1.0), (3.45, 0.0)])
         # phase = integral of speed
-        n = int(t / 0.01); ph = 0.0
-        for i in range(n):
-            tt = i * 0.01
-            ph += K(tt, [(0, 1.0), (2.8, 1.0), (3.45, 0.0)]) * 0.01
+        ph = float(np.interp(t, self._ts, self._ph))
         if t > 8.1 and c == "uncle":
             return 1.0, 0.0
         return e, ph
@@ -159,7 +158,7 @@ class Scene:
         head["ty"] += -8 * sniff
         # "For science!" 5.4-6.6: anticipation, arm up with overshoot, body lifts
         ant = pulse(t, 5.15, 5.45, 0.12, 0.1)
-        raise_ = K(t, [(5.3, 0), (5.45, -14), (5.62, 120), (5.78, 108), (6.7, 112), (6.9, 78), (6.97, 70), (7.2, 28), (7.45, 10), (7.9, 4)])
+        raise_ = K(t, [(5.3, 0), (5.45, -14), (5.62, 102), (5.78, 94), (6.7, 96), (6.9, 78), (6.97, 70), (7.2, 28), (7.45, 10), (7.9, 4)])
         if t > 5.3: armL["rot"] = raise_ + armL["rot"] * (1 - smooth((t - 5.3) / 0.2))
         up = pulse(t, 5.45, 6.6, 0.15, 0.3)
         root["ty"] += -26 * up
@@ -274,7 +273,7 @@ class Scene:
             s = math.sin(pr)
             pose["legL"] = dict(rot=24 * s * run, ty=-60 * max(0, s) * run); pose["legR"] = dict(rot=-24 * s * run, ty=-60 * max(0, -s) * run)
             root["ty"] = -22 * abs(math.sin(pr)) * run; pose["torso"] = dict(rot=7 * run, tx=0)
-            armL = dict(rot=30 * s + 20); armR = dict(rot=-30 * s - 20)
+            armL = dict(rot=armL['rot'] * (1 - run) + run * (30 * s + 20)); armR = dict(rot=armR['rot'] * (1 - run) + run * (-30 * s - 20))
             x = 0.27 * W + 1.45 * W * (smooth(u / 1.15) ** 1.3)
         pose["head"] = head; pose["armL"] = armL; pose["armR"] = armR
         pose["torso"].setdefault("tx", 0)
@@ -343,10 +342,10 @@ class Scene:
         sh = cv2.GaussianBlur(sh, (0, 0), 6)
         bgf = bg * (1 - sh[..., None]) + np.array([90, 60, 40], np.float32) * sh[..., None] * 0.0
         bgf = bg * (1 - sh[..., None] * 0.9)
-        nsub = 6 if (t > 7.85) else 1
+        nsub = 9 if (t > 7.85) else 1
         acc = np.zeros_like(canvas)
         for k in range(nsub):
-            dt = (k / (nsub - 1) - 0.5) * (0.5 / 24) if nsub > 1 else 0
+            dt = (k / (nsub - 1) - 0.5) * (0.42 / 24) if nsub > 1 else 0
             tt = t + dt
             up, ur, upos2, _ = self.uncle_pose(tt); bp, br, bpos2, _ = self.boy_pose(tt)
             c = np.zeros_like(canvas)
@@ -380,6 +379,7 @@ class Scene:
 
     def fx(self, out, t, upos, bpos):
         ov = Image.new("RGBA", (W * 2, H * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
+        lines = None
         def puff(x, y, u, r0, a0, n=5):
             for i in range(n):
                 ang = math.pi * (0.1 + 0.8 * i / (n - 1)) if n > 1 else 1.0
@@ -396,15 +396,22 @@ class Scene:
             puff(0.66 * W + 20, 1130, u, 36, 190, 7)
         # speed lines while uncle runs
         if t > 8.5:
+            lines = Image.new("RGBA", (W * 2, H * 2), (0, 0, 0, 0)); dl = ImageDraw.Draw(lines)
             a = clamp((t - 8.5) / 0.2) * (1 - clamp((t - 9.3) / 0.3))
             rnd = np.random.default_rng(int(t * 24))
             for i in range(14):
                 y = rnd.uniform(500, 1200); x0 = rnd.uniform(0, W * 1.2); ln = rnd.uniform(160, 420)
-                d.line([(x0 * 2, y * 2), ((x0 - ln) * 2, y * 2)], fill=(255, 250, 238, int(170 * a)), width=int(rnd.uniform(3, 7)))
+                dl.line([(x0 * 2, y * 2), ((x0 - ln) * 2, y * 2)], fill=(255, 250, 238, int(190 * a)), width=int(rnd.uniform(3, 7)))
         a = np.array(ov.resize((W, H), Image.LANCZOS)).astype(np.float32)
-        a = cv2.GaussianBlur(a, (0, 0), 3.0)
         al = a[..., 3:4] / 255
-        return out * (1 - al) + a[..., :3] * al
+        pm = cv2.GaussianBlur(a[..., :3] * al, (0, 0), 3.0)
+        alb = cv2.GaussianBlur(al[..., 0], (0, 0), 3.0)[..., None]
+        out = out * (1 - alb) + pm
+        if lines is not None:
+            la = np.array(lines.resize((W, H), Image.LANCZOS)).astype(np.float32)
+            lal = la[..., 3:4] / 255
+            out = out * (1 - lal) + la[..., :3] * lal
+        return out
 
 
 # Character.screen_point: map an original-art point on a part to screen coordinates
