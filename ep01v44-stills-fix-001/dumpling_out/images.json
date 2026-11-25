@@ -1,0 +1,507 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "variants": 1,
+  "ref_max": 704,
+  "orientations": [
+   "portrait",
+   "landscape"
+  ]
+ },
+ "images": [
+  {
+   "id": "C07",
+   "seed": 5907,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Same open train doors: the Uncle frozen, nose twitching, eyes as dots; the Boy seated at the left, deadpan. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C07_end",
+   "seed": 5907,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C07__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The open doorway empty, a cartoon dust-cloud silhouette of the Uncle hanging in the air and speed lines pointing out onto the platform; the Boy alone, hat ribbon whipped sideways, eyes sliding to the lens; the camel stepping calmly through the doors (camel cameo). Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C08",
+   "seed": 5914,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Wide: an old canal lane in warm morning light, stone bridge at left. The Boy walks backward toward the lens, chopstick-mic in hand. Far behind him the Uncle zigzags over the bridge, his nose yanked forward by a visible ribbon of steamy scent, feet barely touching the ground. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces"
+  },
+  {
+   "id": "C08_end",
+   "seed": 5914,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C08__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Boy mid-step, glancing at the lens; behind him a dust cloud where the Uncle just rounded a corner; an empty soft sky above (no text anywhere). Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces"
+  },
+  {
+   "id": "C13",
+   "seed": 5921,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Macro on a wooden board: a block of amber pork-skin jelly, Grandma's cleaver raised above it, the Uncle's blurred face just entering at the edge of frame. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces"
+  },
+  {
+   "id": "C13_end",
+   "seed": 5921,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C13__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: A neat heap of tiny glistening jelly cubes tumbling into a bowl of pink minced pork; the cleaver stuck upright, quivering; the Uncle's face now fully in frame, head tilted, eyes round. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces"
+  },
+  {
+   "id": "C16",
+   "seed": 5928,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Close on Grandma's hands holding a dough circle, the Boy's chin just above the counter, the Uncle at the edge of frame with his hands up, ready to count. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C16_end",
+   "seed": 5928,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C16__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Grandma lifts a finished dumpling with a twisted top knot; behind it the Uncle holds both hands up, all fingers spread, face crumpled in betrayal; the Boy deadpan holds out his own hands. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C21",
+   "seed": 5935,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Macro: Grandma's chopsticks pinching a dumpling by its twisted top knot, a porcelain spoon waiting below; soft steam; behind them, blurred, the Uncle's wet face hovering in the barrel, eyes locked on the dumpling. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C21_end",
+   "seed": 5935,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C21__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The dumpling resting on the spoon, sagging softly; steam rising; Grandma calm in soft focus behind; the Uncle's wet eyes still locked on it, dripping. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C24",
+   "seed": 5942,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). The Uncle levitating in golden light, eyes closed, serene; the Boy at his side looking up. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C24_end",
+   "seed": 5942,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C24__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle settled back on the stool, eyes slowly open, tender, whispering to the empty spoon, one happy tear; the Boy's face soft and a little surprised. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C26",
+   "seed": 5949,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). The stall in warm late-morning light: the Boy sets Dad's journal on the counter and turns to Grandma, curious; the Uncle in the background chewing, cheeks full. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C26_end",
+   "seed": 5949,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C26__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: A giant paper scroll unrolled across the whole screen, edges rolling past, the frame turning sepia and vermilion ink-wash with drifting petals; the Uncle's frozen full-cheeked face visible in one corner. Composition: keep the top third of the frame calm (sky, wall or background); faces and action in the lower two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C30",
+   "seed": 5956,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Back at the stall: the scroll rolled up on the counter; the Uncle standing on a stool in the exact hero pose, napkin tied as a cape, spoon raised like a sword, chin high; the Boy beside him with arms crossed. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C30_end",
+   "seed": 5956,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C30__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle's cape fluttering in the fan breeze, chin even higher; the Boy with a dry sideways smile; Grandma at the back folding, not looking up. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "landscape"
+   ]
+  },
+  {
+   "id": "C32",
+   "seed": 5963,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Grandma mid-fold across the counter, looking at the Boy for the first time since the legend, flour on her cheek; steam between them; the Uncle in the background re-draping his napkin cape. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C32_end",
+   "seed": 5963,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C32__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Held close-up of Grandma's eyes with a band of anime shadow across them, a gentle gust lifting her headscarf; the Boy's hat ribbon fluttering, his eyes wide; warm light, soft piano. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C35",
+   "seed": 5970,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    },
+    {
+     "path": "refs/grandma_ref.jpg",
+     "role": "Grandma: her face, grey bun, jacket and apron to keep exactly"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Grandma leaning over the counter, pointing far to the south, smiling a little secret smile; the Boy and the Uncle in the foreground looking where she points. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C35_end",
+   "seed": 5970,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C35__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Grandma (short, round, old, grey bun, no hat, green jacket, cream apron). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: The Uncle in a full 'final form' power pose on a steamer crate, huge golden aura, the ground cracking, birds fleeing the pagodas, fist raised, mouth wide; he is already wearing a bulging travel bundle with a steamer strapped on; the Boy in the foreground, flat, looking to the lens. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C37",
+   "seed": 5977,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). STING. The Boy in the foreground facing the lens; behind him the Uncle on the stool with his tongue in a bucket of ice giving a thumbs up; beside him the camel (cameo 2 of 2) staring into the lens. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  },
+  {
+   "id": "C37_end",
+   "seed": 5977,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "@C37__v1",
+     "role": "the START frame of the same shot: keep place, characters, outfits and style identical"
+    },
+    {
+     "path": "refs/fat_uncle_pool.jpg",
+     "role": "body-type reference: the Uncle is this FAT (big round belly, heavy round body); the boy is the Boy; keep both exactly"
+    },
+    {
+     "path": "refs/boy_only.jpg",
+     "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"
+    }
+   ],
+   "prompt": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash). the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions). Same scene, same place, same characters with the exact same faces, hats and clothes as image 1 (the start frame), a moment later: Same frame; a puff of steam leaving the Uncle's ear; the camel's eyes closed mid-blink; cut to black on the next frame. Composition: keep the lowest third of the frame calm (floor, counter or background); faces and action in the upper two thirds. Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, expressive anime-comedy faces. Original house style. No text, no letters, no logos.",
+   "negative": "duplicate characters, two uncles, two boys, extra people, text, letters, black patches, cropped faces",
+   "orientations": [
+    "portrait"
+   ]
+  }
+ ]
+}
