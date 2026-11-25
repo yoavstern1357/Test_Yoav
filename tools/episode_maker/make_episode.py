@@ -1508,7 +1508,7 @@ def render_video(spec, shots, total, wav, W, H, fps, fdir, orient, out, mobile):
     nframes = int(total * fps)
     cmd = ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(fps), "-i", "-",
            "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", str(spec.get("crf", 18)), "-pix_fmt", "yuv420p",
-           "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", out]
+           "-af", "loudnorm=I=-16:TP=-2:LRA=11", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", out]
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for i in range(nframes):
         r.fidx = i
@@ -1523,7 +1523,7 @@ def render_video(spec, shots, total, wav, W, H, fps, fdir, orient, out, mobile):
         mob = os.path.splitext(out)[0] + "-mobile.mp4"
         size = "scale=1280:720:flags=lanczos" if orient == "landscape" else "scale=720:1280:flags=lanczos"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-vf", size, "-c:v", "libx264",
-                        "-profile:v", "main", "-crf", "27", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k", "-ac", "1",
+                        "-profile:v", "main", "-crf", "27", "-pix_fmt", "yuv420p", "-af", "loudnorm=I=-16:TP=-2:LRA=11", "-c:a", "aac", "-b:a", "128k", "-ac", "1",
                         "-movflags", "+faststart", mob], check=True)
         print("mobile", mob)
 

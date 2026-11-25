@@ -18,10 +18,10 @@ def main():
     dur = float(p["format"]["duration"]); size = int(p["format"]["size"]) / 1e6
     v = [s for s in p["streams"] if s.get("width")][0]
     print(f"{os.path.basename(a.mp4)}: {dur:.2f} s  {v['width']}x{v['height']}  {size:.1f} MB")
-    r = run(["ffmpeg", "-nostats", "-i", a.mp4, "-af", "ebur128=peak=true", "-f", "null", "-"]).stderr
+    r = run(["ffmpeg", "-nostats", "-vn", "-i", a.mp4, "-af", "ebur128=peak=true", "-f", "null", "-"]).stderr
     m = re.findall(r"I:\s+(-?[\d.]+) LUFS", r), re.findall(r"Peak:\s+(-?[\d.]+) dBFS", r)
     print("loudness:", m[0][-1] if m[0] else "?", "LUFS integrated; true peak", m[1][-1] if m[1] else "?", "dBFS")
-    s = run(["ffmpeg", "-nostats", "-i", a.mp4, "-af", "silencedetect=noise=-45dB:d=1.2", "-f", "null", "-"]).stderr
+    s = run(["ffmpeg", "-nostats", "-vn", "-i", a.mp4, "-af", "silencedetect=noise=-45dB:d=1.2", "-f", "null", "-"]).stderr
     print("silences > 1.2 s:", re.findall(r"silence_start: ([\d.]+)", s) or "none")
     if a.sheet:
         n = a.cols * a.rows
