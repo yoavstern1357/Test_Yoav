@@ -7,12 +7,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(HERE), "paper"))
 from parse_ep01v44 import parse
 
-STYLE = ("Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, visible paper grain, airy light, "
-         "storybook feeling, expressive anime-comedy faces. Original house style, not imitating any specific studio. No text, no letters, no logos.")
+STYLE = ("Style: delicate soft anime with watercolor washes, thin warm-brown line art, gentle pastel-warm palette, paper grain, airy light, "
+         "expressive anime-comedy faces. Original house style. No text, no letters, no logos.")
 CAST = {
- "boy": "the Boy (about 7, small, reaching only the man's belt, round soft child face, big expressive dark eyes, short black hair, Vietnamese conical leaf hat with an orange chin ribbon, faded indigo village tunic, light hemp trousers rolled to the shin, orange cloth sash, small cloth bag)",
- "uncle": "the Uncle (a VERY FAT, comically over-the-top bald man: huge round belly, heavy round body, chubby cheeks, thin black mustache, earth-brown linen work jacket stretched over his belly, wide orange cloth sash, towel over one shoulder; exaggerated anime-comedy expressions and poses)",
- "grandma": "Grandma (a short, round, kind old village cook with a round face, grey hair in a small bun, NO hat, sage-green jacket, cream apron)",
+ "boy": "the Boy (small, about 7, conical leaf hat with orange chin ribbon, indigo tunic, orange sash)",
+ "uncle": "the Uncle (VERY FAT, bald, thin mustache, brown linen jacket, orange sash; comically exaggerated anime expressions)",
+ "grandma": "Grandma (short, round, old, grey bun, no hat, green jacket, cream apron)",
 }
 R = {
  "boy": {"path": "refs/boy_only.jpg", "role": "the Boy: his face, hat, village clothes and colors to keep exactly (only the boy)"},
