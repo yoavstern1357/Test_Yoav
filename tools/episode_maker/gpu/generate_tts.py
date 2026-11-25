@@ -110,7 +110,7 @@ def settings(line, voices, styles):
     for k in ("temperature", "orpheus_voice", "qwen_voice", "qwen_speaker"):
         if k in v:
             s[k] = v[k]
-    for k in ("exaggeration", "cfg_weight", "temperature"):
+    for k in ("exaggeration", "cfg_weight", "temperature", "qwen"):
         if k in line:
             s[k] = line[k]
     return s
