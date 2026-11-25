@@ -1,0 +1,1882 @@
+{
+ "title": "The Dumpling Boy: intro + Episode 01 v4.3 (How Does Soup Get Inside a Dumpling?)",
+ "size": [
+  1080,
+  1920
+ ],
+ "fps": 30,
+ "orientation": "both",
+ "frames_dir": "frames/ep01v43",
+ "frames_fallback": "frames/ep01v43",
+ "clips_dir": "clips/ep01v43",
+ "voice_engine": "gpu",
+ "voice_fallback": true,
+ "grain": true,
+ "vignette": 0.2,
+ "sway": 0.0,
+ "caption_y": 0.8,
+ "caption_y_land": 0.86,
+ "narrator_echo": true,
+ "snap_to_beat": false,
+ "shots": [
+  {
+   "id": "I1",
+   "dur": 1.4,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I1.mp4",
+   "img": "I1.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.14,
+    "sway": 0.3,
+    "focus": [
+     0.55,
+     0.45
+    ],
+    "particles": {
+     "type": "steam",
+     "n": 8
+    }
+   },
+   "mood": "adventure",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "tick",
+     "gain": 0.5
+    },
+    {
+     "t": 0.3,
+     "name": "crunch",
+     "gain": 0.9
+    },
+    {
+     "t": 0.55,
+     "name": "hiss",
+     "d": 0.8,
+     "gain": 0.5
+    }
+   ],
+   "punch": [
+    {
+     "t": 0.3,
+     "scale": 1.06
+    }
+   ]
+  },
+  {
+   "id": "I2",
+   "dur": 1.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I2.mp4",
+   "img": "I2.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.2,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.45
+    ]
+   },
+   "whip": true,
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "splash",
+     "gain": 0.8
+    },
+    {
+     "t": 0.3,
+     "name": "sparkle",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "I3",
+   "dur": 1.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I3.mp4",
+   "img": "I3.png",
+   "fb": {
+    "motion": "pan_right",
+    "zoom0": 1.05,
+    "zoom": 1.12,
+    "sway": 0.4,
+    "focus": [
+     0.55,
+     0.55
+    ],
+    "pan": 0.06
+   },
+   "whip": true,
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "plop",
+     "gain": 0.6
+    },
+    {
+     "t": 0.35,
+     "name": "laugh",
+     "gain": 0.8
+    },
+    {
+     "t": 0.7,
+     "name": "plop",
+     "gain": 0.5
+    },
+    {
+     "t": 1.0,
+     "name": "bloop",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "I5",
+   "dur": 1.3,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I5.mp4",
+   "img": "I5.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.2,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "particles": {
+     "type": "dust",
+     "n": 14
+    }
+   },
+   "whip": true,
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "rolling",
+     "d": 1.3,
+     "gain": 0.8
+    },
+    {
+     "t": 0.2,
+     "name": "chomp",
+     "gain": 0.7
+    },
+    {
+     "t": 0.7,
+     "name": "chomp",
+     "gain": 0.7
+    }
+   ],
+   "speedlines": {
+    "t": 0.0,
+    "d": 1.2,
+    "dir": "radial"
+   }
+  },
+  {
+   "id": "I5b",
+   "dur": 0.8,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I5b.mp4",
+   "img": "I5b.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.15,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "rolling",
+     "d": 0.8,
+     "gain": 0.8
+    },
+    {
+     "t": 0.35,
+     "name": "chomp",
+     "gain": 0.8
+    }
+   ]
+  },
+  {
+   "id": "I5c",
+   "dur": 0.7,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I5c.mp4",
+   "img": "I5c.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.25,
+    "sway": 0.4,
+    "focus": [
+     0.35,
+     0.55
+    ]
+   },
+   "sfx": [
+    {
+     "t": 0.05,
+     "name": "shing",
+     "gain": 0.8
+    },
+    {
+     "t": 0.25,
+     "name": "shing",
+     "gain": 0.8
+    },
+    {
+     "t": 0.45,
+     "name": "shing",
+     "gain": 0.8
+    }
+   ],
+   "speedlines": {
+    "t": 0.0,
+    "d": 0.7,
+    "dir": "horizontal"
+   }
+  },
+  {
+   "id": "I6",
+   "dur": 0.7,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "I6.mp4",
+   "img": "I6.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.2,
+    "sway": 0.4,
+    "focus": [
+     0.55,
+     0.5
+    ]
+   },
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "chomp",
+     "gain": 1.0
+    },
+    {
+     "t": 0.25,
+     "name": "impact",
+     "gain": 0.6
+    }
+   ],
+   "impact": {
+    "t": 0.2,
+    "amp": 18
+   },
+   "speedlines": {
+    "t": 0.0,
+    "d": 0.5,
+    "dir": "radial"
+   }
+  },
+  {
+   "id": "C90",
+   "dur": 1.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C90.mp4",
+   "mood": "adventure",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "gong",
+     "gain": 0.8
+    },
+    {
+     "t": 0.05,
+     "name": "taiko",
+     "gain": 0.8
+    },
+    {
+     "t": 0.1,
+     "name": "sting",
+     "gain": 0.8
+    }
+   ]
+  },
+  {
+   "id": "C01",
+   "dur": 5.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C01.mp4",
+   "img": "C01.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.18,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.4
+    ],
+    "particles": {
+     "type": "steam",
+     "n": 10
+    }
+   },
+   "black": 0.5,
+   "mood": "off",
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Hot soup, inside a dumpling... in a skin you can almost see through. How?"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.5,
+     "name": "hiss",
+     "d": 2.5,
+     "gain": 0.5
+    },
+    {
+     "t": 1.2,
+     "name": "creak",
+     "d": 0.8,
+     "gain": 0.3
+    }
+   ],
+   "caption_y": 0.8
+  },
+  {
+   "id": "C02",
+   "dur": 6.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C02.mp4",
+   "img": "C02.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.1,
+    "sway": 0.4,
+    "focus": [
+     0.45,
+     0.5
+    ]
+   },
+   "ambience": "water",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Welcome to The Dumpling Boy! Stick around, and my uncle will show you what not to do."
+    },
+    {
+     "who": "uncle",
+     "text": "I'm fine."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 5.9,
+     "name": "thud",
+     "gain": 0.7
+    },
+    {
+     "t": 5.95,
+     "name": "page",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "C03",
+   "dur": 5.5,
+   "tail": 0.3,
+   "transition": "fade",
+   "clip": "../out/ep01v43/code/C03.mp4",
+   "mood": "sparse",
+   "fade": 0.35,
+   "lead": 0.5,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "The Silk Road? Never one road, you know. Loads of them, by land and sea."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "thud",
+     "gain": 0.8
+    },
+    {
+     "t": 0.14,
+     "name": "page",
+     "gain": 0.8
+    },
+    {
+     "t": 1.4,
+     "name": "pen",
+     "d": 1.8,
+     "gain": 0.6
+    },
+    {
+     "t": 2.6,
+     "name": "camel_bell",
+     "d": 1.0,
+     "gain": 0.5
+    },
+    {
+     "t": 4.3,
+     "name": "camel_bell",
+     "d": 1.0,
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "C04",
+   "dur": 7.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C04.mp4",
+   "lead": 0.5,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Near Shanghai there was a port, Qinglong. Over a thousand years ago, its ships carried pottery to Japan and Korea."
+    }
+   ],
+   "cards": [
+    {
+     "type": "fact",
+     "t": 1.0,
+     "d": 4.2,
+     "label": "QINGLONG PORT",
+     "text": "Its ceramics turn up in Japan and Korea",
+     "y": 0.2,
+     "y_land": 0.28
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "gull",
+     "d": 0.8,
+     "gain": 0.5
+    },
+    {
+     "t": 1.4,
+     "name": "creak",
+     "d": 1.0,
+     "gain": 0.6
+    },
+    {
+     "t": 3.2,
+     "name": "flap",
+     "d": 0.7,
+     "gain": 0.6
+    },
+    {
+     "t": 5.0,
+     "name": "creak",
+     "d": 1.0,
+     "gain": 0.5
+    },
+    {
+     "t": 5.4,
+     "name": "gull",
+     "d": 0.8,
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C05",
+   "dur": 5.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C05.mp4",
+   "img": "C05.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.14,
+    "sway": 0.6,
+    "focus": [
+     0.46,
+     0.58
+    ],
+    "particles": {
+     "type": "dust",
+     "n": 10
+    }
+   },
+   "mood": "off",
+   "ambience": "street",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad's first page just says: Shanghai. Be patient. The soup is the secret."
+    },
+    {
+     "who": "uncle",
+     "text": "Mm... dumplings..."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "train",
+     "d": 5.2,
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C06",
+   "dur": 2.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C06.mp4",
+   "mood": "adventure",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "gong",
+     "gain": 0.9
+    },
+    {
+     "t": 0.05,
+     "name": "taiko",
+     "gain": 0.9
+    },
+    {
+     "t": 0.1,
+     "name": "sting",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "C07",
+   "dur": 5.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C07.mp4",
+   "img": "C07.png",
+   "fb": {
+    "motion": "zoom_out",
+    "zoom0": 1.12,
+    "zoom": 1.0,
+    "sway": 0.5,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "mood": "off",
+   "ambience": "water",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "This is Nanxiang, an old canal town. These days, it's part of Shanghai."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 3.6,
+     "name": "bike_bell",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C08",
+   "dur": 9.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C08.mp4",
+   "img": "C08.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.18,
+    "sway": 0.3,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "ambience": "water",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Two little brick pagodas, about a thousand years old."
+    },
+    {
+     "who": "uncle",
+     "text": "A thousand?"
+    },
+    {
+     "who": "boy",
+     "text": "The temple burned in 1766. They're still standing."
+    },
+    {
+     "who": "uncle",
+     "text": "Things that last. I like that."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "chimes",
+     "d": 3.0,
+     "gain": 0.5
+    },
+    {
+     "t": 5.0,
+     "name": "chimes",
+     "d": 3.0,
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "C09",
+   "dur": 7.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C09.mp4",
+   "img": "C09.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.12,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "particles": {
+     "type": "steam",
+     "n": 6
+    }
+   },
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Hello! Um, how do you get soup inside?"
+    },
+    {
+     "who": "grandma",
+     "text": "Everyone asks. You don't pour it in. You make it a jelly first."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "lid",
+     "gain": 0.5
+    },
+    {
+     "t": 2.0,
+     "name": "hiss",
+     "d": 1.5,
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "dur": 6.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C10.mp4",
+   "img": "C10.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.05,
+    "zoom": 1.2,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.55
+    ]
+   },
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "Pork skin, boiled for hours. Cold, it sets. Then I chop it, fold it into the meat."
+    },
+    {
+     "who": "boy",
+     "text": "Huh."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.5,
+     "name": "chop",
+     "gain": 0.9
+    },
+    {
+     "t": 0.7,
+     "name": "chop",
+     "gain": 0.9
+    },
+    {
+     "t": 0.9,
+     "name": "chop",
+     "gain": 0.9
+    },
+    {
+     "t": 1.1,
+     "name": "chop",
+     "gain": 0.9
+    },
+    {
+     "t": 2.6,
+     "name": "page",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "C11a",
+   "dur": 4.4,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C11.mp4",
+   "img": "C11.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.12,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "particles": {
+     "type": "steam",
+     "n": 12
+    }
+   },
+   "trim": [
+    0.0,
+    4.4
+   ],
+   "mood": "tender",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Then the steam melts it back into soup. That's why you never boil them."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "lid",
+     "gain": 0.7
+    },
+    {
+     "t": 0.3,
+     "name": "hiss",
+     "d": 2.0,
+     "gain": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "type": "fact",
+     "t": 0.3,
+     "d": 3.5,
+     "label": "SOUP, SOLID",
+     "text": "The soup goes in as jelly",
+     "y": 0.18,
+     "y_land": 0.28
+    }
+   ]
+  },
+  {
+   "id": "C11b",
+   "dur": 0.8,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C11.mp4",
+   "img": "C11.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.6,
+    "zoom": 1.9,
+    "sway": 0.4,
+    "focus": [
+     0.45,
+     0.55
+    ]
+   },
+   "trim": [
+    0.5,
+    1.3
+   ],
+   "whip": true,
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "sparkle",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "C11c",
+   "dur": 0.8,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C11.mp4",
+   "img": "C11.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 2.2,
+    "zoom": 2.5,
+    "sway": 0.4,
+    "focus": [
+     0.55,
+     0.5
+    ]
+   },
+   "trim": [
+    1.3,
+    2.1
+   ],
+   "whip": true,
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "whoosh",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C11d",
+   "dur": 2.4,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C11.mp4",
+   "img": "C11.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.9,
+    "zoom": 2.1,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.45
+    ]
+   },
+   "trim": [
+    2.1,
+    3.3
+   ],
+   "speed": 0.6,
+   "whip": true,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Wait, really? The soup goes in solid?"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.1,
+     "name": "ding",
+     "gain": 0.5
+    },
+    {
+     "t": 0.3,
+     "name": "sparkle",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "C11e",
+   "dur": 0.8,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C11.mp4",
+   "img": "C11.png",
+   "fb": {
+    "motion": "zoom_out",
+    "zoom0": 1.5,
+    "zoom": 1.15,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "trim": [
+    3.3,
+    4.1
+   ],
+   "whip": true,
+   "mood": "off",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "whoosh",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C11f",
+   "dur": 1.2,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C11.mp4",
+   "img": "C11.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.05,
+    "zoom": 1.1,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "particles": {
+     "type": "steam",
+     "n": 8
+    }
+   },
+   "trim": [
+    4.1,
+    5.3
+   ]
+  },
+  {
+   "id": "C12",
+   "dur": 7.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C12.mp4",
+   "img": "C12.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.12,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "mood": "off",
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "How many folds?"
+    },
+    {
+     "who": "grandma",
+     "text": "Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen."
+    },
+    {
+     "who": "uncle",
+     "text": "...six, seven... oh, hang on."
+    },
+    {
+     "who": "grandma",
+     "text": "Start again, dear."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.5,
+     "name": "page",
+     "gain": 0.3
+    },
+    {
+     "t": 4.0,
+     "name": "page",
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "C13",
+   "dur": 4.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C13.mp4",
+   "img": "C13.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.1,
+    "sway": 0.4,
+    "focus": [
+     0.55,
+     0.5
+    ]
+   },
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "Slowly, slowly!"
+    },
+    {
+     "who": "boy",
+     "text": "Uncle, wait. There's soup inside!"
+    },
+    {
+     "who": "uncle",
+     "text": "Relax. For dumpling research!"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "thud",
+     "gain": 0.6
+    },
+    {
+     "t": 0.6,
+     "name": "whoosh",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "C14a",
+   "dur": 1.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C14.mp4",
+   "img": "C14.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.4,
+    "zoom": 1.7,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.35
+    ]
+   },
+   "trim": [
+    0.0,
+    1.0
+   ],
+   "mood": "tension",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "pop",
+     "gain": 0.8
+    },
+    {
+     "t": 0.1,
+     "name": "riser",
+     "d": 1.9,
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "C14b",
+   "dur": 0.55,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C14.mp4",
+   "img": "C14.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 2.3,
+    "zoom": 2.6,
+    "sway": 0.4,
+    "focus": [
+     0.52,
+     0.3
+    ]
+   },
+   "trim": [
+    1.0,
+    1.55
+   ],
+   "shake": [
+    {
+     "t": 0.2,
+     "d": 0.3,
+     "amp": 6
+    }
+   ]
+  },
+  {
+   "id": "C14c",
+   "dur": 0.55,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C14.mp4",
+   "img": "C14.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 2.1,
+    "zoom": 2.4,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.12
+    ]
+   },
+   "trim": [
+    1.55,
+    2.1
+   ],
+   "shake": [
+    {
+     "t": 0.05,
+     "d": 0.4,
+     "amp": 8
+    }
+   ]
+  },
+  {
+   "id": "C14d",
+   "dur": 1.9,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C14.mp4",
+   "img": "C14_end.png",
+   "fb": {
+    "motion": "zoom_out",
+    "zoom0": 1.3,
+    "zoom": 1.0,
+    "sway": 0.0,
+    "focus": [
+     0.5,
+     0.3
+    ]
+   },
+   "trim": [
+    2.1,
+    4.0
+   ],
+   "mood": "off",
+   "impact": {
+    "t": 0.04,
+    "amp": 34
+   },
+   "impact_frame": {
+    "t": 0.0,
+    "d": 0.2
+   },
+   "speedlines": {
+    "t": 0.2,
+    "d": 0.9,
+    "dir": "radial"
+   },
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "crack",
+     "gain": 0.9
+    },
+    {
+     "t": 0.02,
+     "name": "gong",
+     "gain": 0.7
+    },
+    {
+     "t": 0.3,
+     "name": "toot",
+     "d": 1.6,
+     "gain": 1.0
+    }
+   ]
+  },
+  {
+   "id": "C15",
+   "dur": 4.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C15.mp4",
+   "img": "C15.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.1,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "...There was soup inside."
+    },
+    {
+     "who": "grandma",
+     "text": "Mm-hm. Everyone learns once."
+    },
+    {
+     "who": "boy",
+     "text": "Breathe, Uncle."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "squeak",
+     "gain": 0.7
+    },
+    {
+     "t": 2.2,
+     "name": "chug",
+     "d": 0.8,
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "C16",
+   "dur": 5.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C16.mp4",
+   "img": "C16.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.05,
+    "zoom": 1.2,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "Okay, watch. Lift it by the top knot, like this. Then onto a spoon."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 2.8,
+     "name": "clink",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "C17",
+   "dur": 5.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C17.mp4",
+   "img": "C17.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.1,
+    "zoom": 1.3,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "A tiny hole, to let the steam out."
+    },
+    {
+     "who": "boy",
+     "text": "Then we wait?"
+    },
+    {
+     "who": "grandma",
+     "text": "Good. Soup first."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.5,
+     "name": "pop",
+     "gain": 0.4
+    },
+    {
+     "t": 0.8,
+     "name": "hiss",
+     "d": 1.2,
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C18",
+   "dur": 6.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C18.mp4",
+   "img": "C18.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.14,
+    "sway": 0.3,
+    "focus": [
+     0.45,
+     0.45
+    ]
+   },
+   "mood": "tender",
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Better?"
+    },
+    {
+     "who": "uncle",
+     "text": "Oh... that's good. For dumpling research."
+    },
+    {
+     "who": "grandma",
+     "text": "Now the dumpling, with a little black vinegar and ginger."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.4,
+     "name": "sip",
+     "gain": 0.8
+    },
+    {
+     "t": 0.9,
+     "name": "ding",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "C19",
+   "dur": 3.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C19.mp4",
+   "mood": "sparse",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "So who made the very first one?"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.0,
+     "name": "gong",
+     "gain": 0.7
+    },
+    {
+     "t": 1.0,
+     "name": "swoosh_big",
+     "d": 1.0,
+     "gain": 0.5
+    },
+    {
+     "t": 1.1,
+     "name": "page",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "C20",
+   "dur": 6.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C20.mp4",
+   "lead": 0.4,
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "Legend says: around the year 1871, a shop in Nanxiang sold one very big meat bun."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 2.0,
+     "name": "rooster",
+     "d": 1.4,
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "C21",
+   "dur": 5.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C21.mp4",
+   "lead": 0.3,
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "He made it smaller. And inside, he hid soup, set as jelly."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.9,
+     "name": "swoosh_big",
+     "d": 0.5,
+     "gain": 0.5
+    },
+    {
+     "t": 2.6,
+     "name": "boing",
+     "gain": 0.4
+    },
+    {
+     "t": 3.2,
+     "name": "chop",
+     "gain": 0.8
+    },
+    {
+     "t": 3.4,
+     "name": "chop",
+     "gain": 0.8
+    },
+    {
+     "t": 4.2,
+     "name": "sparkle",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "C22",
+   "dur": 3.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C22.mp4",
+   "lead": 0.2,
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "It became famous by getting smaller."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 1.6,
+     "name": "page",
+     "gain": 0.7
+    },
+    {
+     "t": 2.6,
+     "name": "gong",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C23",
+   "dur": 6.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C23.mp4",
+   "img": "C23.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.12,
+    "sway": 0.3,
+    "focus": [
+     0.45,
+     0.5
+    ]
+   },
+   "mood": "off",
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "boy",
+     "text": "That's not what he looked like."
+    },
+    {
+     "who": "uncle",
+     "text": "He had my energy."
+    },
+    {
+     "who": "boy",
+     "text": "Many towns claim this dumpling. So: legend says."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "page",
+     "gain": 0.5
+    },
+    {
+     "t": 2.6,
+     "name": "toot",
+     "d": 0.2,
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "id": "C24a",
+   "dur": 0.6,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C24.mp4",
+   "img": "C24.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 2.0,
+    "zoom": 2.3,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.3
+    ]
+   },
+   "mood": "off",
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "whoosh",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "C24b",
+   "dur": 0.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C24.mp4",
+   "img": "C24.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 2.0,
+    "zoom": 2.2,
+    "sway": 0.4,
+    "focus": [
+     0.55,
+     0.68
+    ]
+   },
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "impact",
+     "gain": 0.5
+    },
+    {
+     "t": 0.0,
+     "name": "riser",
+     "d": 0.6,
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C24c",
+   "dur": 0.5,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C24.mp4",
+   "img": "C24.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 2.4,
+    "zoom": 2.7,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.28
+    ]
+   },
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "impact",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "C24d",
+   "dur": 5.4,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C24.mp4",
+   "img": "C24.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.05,
+    "zoom": 1.14,
+    "sway": 0.2,
+    "focus": [
+     0.5,
+     0.45
+    ]
+   },
+   "mood": "tender",
+   "ambience": "shop",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "That hat... A man sat on that stool, years ago. He burned his tongue, too."
+    },
+    {
+     "who": "boy",
+     "text": "My... dad?"
+    }
+   ]
+  },
+  {
+   "id": "C25",
+   "dur": 6.0,
+   "tail": 0.3,
+   "transition": "fade",
+   "clip": "C25.mp4",
+   "img": "C25.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.12,
+    "sway": 0.2,
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "particles": {
+     "type": "dust",
+     "n": 20
+    }
+   },
+   "mood": "tender",
+   "ambience": "night",
+   "fade": 0.5,
+   "grade": "sepia",
+   "fx": [
+    {
+     "type": "steam",
+     "x": [
+      0.55,
+      0.75
+     ],
+     "y": 0.62,
+     "n": 5,
+     "alpha": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad wrote... rush it, you get burned. Be patient, you get the best part."
+    }
+   ]
+  },
+  {
+   "id": "C26",
+   "dur": 3.0,
+   "tail": 0.3,
+   "transition": "fade",
+   "clip": "C26.mp4",
+   "img": "C26.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.08,
+    "sway": 0.2,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "mood": "tender",
+   "ambience": "shop",
+   "fade": 0.4,
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "Your dad picked a good first page."
+    },
+    {
+     "who": "boy",
+     "text": "...Yeah."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.3,
+     "name": "clink",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "C27a",
+   "dur": 2.0,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "C27.mp4",
+   "img": "C27.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.12,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "mood": "adventure",
+   "lines": [
+    {
+     "who": "grandma",
+     "text": "Then he went south. To Guangzhou."
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.2,
+     "name": "sparkle",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C27I",
+   "dur": 1.6,
+   "tail": 0.3,
+   "transition": "cut",
+   "clip": "../out/ep01v43/code/C27I.mp4",
+   "lines": [
+    {
+     "who": "uncle",
+     "text": "More dumplings?"
+    }
+   ],
+   "sfx": [
+    {
+     "t": 0.0,
+     "name": "sparkle",
+     "gain": 0.7
+    },
+    {
+     "t": 0.3,
+     "name": "pen",
+     "d": 1.0,
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "C28",
+   "dur": 4.0,
+   "tail": 0.3,
+   "transition": "fade",
+   "clip": "C28.mp4",
+   "img": "C28.png",
+   "fb": {
+    "motion": "zoom_in",
+    "zoom0": 1.0,
+    "zoom": 1.1,
+    "sway": 0.4,
+    "focus": [
+     0.5,
+     0.45
+    ],
+    "particles": {
+     "type": "dust",
+     "n": 10
+    }
+   },
+   "mood": "tender",
+   "fade": 0.3,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "Dad was right... the best part is worth the wait."
+    }
+   ]
+  },
+  {
+   "id": "C29",
+   "dur": 1.5,
+   "tail": 0.0,
+   "transition": "cut",
+   "clip": "C29.mp4",
+   "img": "C29.png",
+   "fb": {
+    "motion": "static",
+    "zoom0": 1.05,
+    "zoom": 1.05,
+    "sway": 0.0,
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "shake": [
+     {
+      "t": 0.5,
+      "d": 0.2,
+      "amp": 6
+     }
+    ]
+   },
+   "mood": "off",
+   "fade_out": 0.3,
+   "sfx": [
+    {
+     "t": 0.5,
+     "name": "toot",
+     "d": 0.35,
+     "gain": 0.8
+    }
+   ]
+  }
+ ]
+}

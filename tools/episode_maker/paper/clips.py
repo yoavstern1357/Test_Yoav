@@ -56,12 +56,12 @@ def land_compose(img, zoom=1.0, focus=0.5):
     y0 = int(round((fg.height - LH) * min(max(focus, 0.0), 1.0))) if fg.height > LH else 0
     fg = fg.crop((0, y0, fw, y0 + min(LH, fg.height)))
     side = (LW - fw) // 2
-    bg = Image.new("RGB", (LW, LH))
-    soft = fg.resize((max(8, fw // 14), max(8, fg.height // 14)), Image.BILINEAR).filter(ImageFilter.GaussianBlur(1.6)).resize(fg.size, Image.BICUBIC)
-    for x0, col in ((0, 0), (LW - side, fw - 6)):          # soft edge columns, so busy art (routes, text) does not turn into streaks
-        strip = soft.crop((col, 0, col + 6, fg.height)).resize((side, LH), Image.BILINEAR)
-        bg.paste(strip, (x0, 0))
-    bg = Image.fromarray(np.clip(np.asarray(bg, np.float32) * fall, 0, 255).astype(np.uint8))
+    # backdrop: the same frame scaled to cover the wide screen, heavily blurred and darkened (clean "blur fill", no streaks)
+    sc = LW / W
+    cov = img.resize((LW, int(H * sc * 0.5)), Image.BILINEAR)           # cheap: half-height copy, enough for a blurred fill
+    cy0 = int((cov.height - LH * 0.5) * min(max(focus, 0.0), 1.0)) if cov.height > LH * 0.5 else 0
+    cov = cov.crop((0, cy0, LW, cy0 + int(LH * 0.5))).filter(ImageFilter.GaussianBlur(14)).resize((LW, LH), Image.BICUBIC)
+    bg = Image.fromarray(np.clip(np.asarray(cov, np.float32) * fall * 0.82, 0, 255).astype(np.uint8))
     bg.paste(Image.new("RGB", bg.size, (46, 32, 22)), (0, 0), glow)
     bg.paste(fg, (side, 0))
     return final_grain(bg, 0.03)

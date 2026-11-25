@@ -18,6 +18,7 @@ import soundfile as sf
 sys.path.insert(0, os.path.dirname(__file__))
 import synth
 import sfx_extra  # noqa: F401  (adds more sound effects to synth.SFX)
+import sfx_extra2  # noqa: F401  (intro + v4.3 effects)
 from synth import SR
 
 FONT = "/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf"
@@ -147,6 +148,24 @@ def _finish(wav, sr, pitch):
 
 
 def tts(who, text, speed_mult=None, pitch_override=None):
+    """Voice line. With a "prerendered" (GPU) cast a missing WAV falls back to Kokoro with a warning (spec has "voice_fallback": true by default)."""
+    try:
+        return _tts(who, text, speed_mult, pitch_override)
+    except FileNotFoundError as ex:
+        if CAST.get(who, {}).get("engine") != "prerendered" or not FALLBACK_KOKORO:
+            raise
+        warn_once(f"voice fallback to Kokoro for {who}: {text[:50]!r}")
+        saved = CAST.pop(who)
+        try:
+            return _tts(who, text, speed_mult, pitch_override)
+        finally:
+            CAST[who] = saved
+
+
+FALLBACK_KOKORO = True
+
+
+def _tts(who, text, speed_mult=None, pitch_override=None):
     global _kokoro
     cast = CAST.get(who)
     engine = (cast or {}).get("engine", "kokoro")
@@ -1408,6 +1427,8 @@ def main():
     spec = json.load(open(a.spec))
     PITCH_OVERRIDE.update(spec.get("voice_pitch", {}))
     set_cast(spec)
+    global FALLBACK_KOKORO
+    FALLBACK_KOKORO = bool(spec.get("voice_fallback", True))
     want = spec.get("orientation", "portrait")        # spec field: "portrait" | "landscape" | "both"
     if want not in ("portrait", "landscape", "both"):
         raise SystemExit(f"spec orientation must be portrait, landscape or both, not {want!r}")
