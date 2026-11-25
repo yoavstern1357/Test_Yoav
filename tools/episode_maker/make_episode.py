@@ -163,11 +163,36 @@ def tts(who, text, speed_mult=None, pitch_override=None):
 
 
 FALLBACK_KOKORO = True
+VOICE_SPEED = {}          # spec "voice_speed": {"uncle": 1.2}: default speed multiplier per character (lines can still set their own "speed")
+MAX_PAUSE = 0.40          # spec "max_pause": longer silences INSIDE a pre-rendered (GPU) line are shortened to this many seconds
+
+
+def compress_pauses(wav, sr, max_pause=0.40, keep=0.30):
+    """Shorten silences longer than max_pause inside a line to `keep` seconds (TTS models stretch "..." into long gaps)."""
+    wav = np.asarray(wav, dtype=np.float32)
+    win = max(1, int(0.01 * sr))
+    env = np.sqrt(np.convolve(wav ** 2, np.ones(win) / win, mode="same"))
+    quiet = env < 0.012 * (env.max() or 1.0)
+    out, i, n = [], 0, len(wav)
+    while i < n:
+        j = i
+        while j < n and quiet[j] == quiet[i]:
+            j += 1
+        seg = wav[i:j]
+        if quiet[i] and 0 < i and j < n and (j - i) / sr > max_pause:
+            k = int(keep * sr)
+            f = int(0.03 * sr)
+            seg = np.concatenate([seg[:k // 2], seg[-(k - k // 2):]]) if k > 2 * f else seg[:k]
+        out.append(seg)
+        i = j
+    return np.concatenate(out) if out else wav
 
 
 def _tts(who, text, speed_mult=None, pitch_override=None):
     global _kokoro
     cast = CAST.get(who)
+    if speed_mult is None and who in VOICE_SPEED:
+        speed_mult = VOICE_SPEED[who]
     engine = (cast or {}).get("engine", "kokoro")
     voice, speed, pitch = VOICES[who]
     if engine == "kokoro" and cast:      # per-character Kokoro override: {"engine": "kokoro", "voice": "am_adam", "speed": 0.95, "pitch": 0.9}
@@ -182,7 +207,7 @@ def _tts(who, text, speed_mult=None, pitch_override=None):
             speed = speed * float(speed_mult)
         key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()   # unchanged: old caches stay valid
     else:
-        key = hashlib.md5(f"{engine}|{json.dumps(cast, sort_keys=True)}|{speed_mult}|{pitch}|{who}|{text}".encode()).hexdigest()
+        key = hashlib.md5(f"{engine}|{json.dumps(cast, sort_keys=True)}|{speed_mult}|{MAX_PAUSE}|{pitch}|{who}|{text}".encode()).hexdigest()
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, key + ".npy")
     if os.path.exists(path):
@@ -196,6 +221,7 @@ def _tts(who, text, speed_mult=None, pitch_override=None):
         import tts_engines
         if engine == "prerendered":
             wav, sr = tts_engines.prerendered(cast, who, text)
+            wav = compress_pauses(wav, sr, MAX_PAUSE)
             if speed_mult and abs(float(speed_mult) - 1.0) > 0.01:
                 wav, sr = _stretch(wav, sr, float(speed_mult))
         else:
@@ -1429,6 +1455,9 @@ def main():
     set_cast(spec)
     global FALLBACK_KOKORO
     FALLBACK_KOKORO = bool(spec.get("voice_fallback", True))
+    VOICE_SPEED.update(spec.get("voice_speed", {}))
+    global MAX_PAUSE
+    MAX_PAUSE = float(spec.get("max_pause", 0.40))
     want = spec.get("orientation", "portrait")        # spec field: "portrait" | "landscape" | "both"
     if want not in ("portrait", "landscape", "both"):
         raise SystemExit(f"spec orientation must be portrait, landscape or both, not {want!r}")

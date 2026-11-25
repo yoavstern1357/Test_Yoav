@@ -14,7 +14,7 @@ shots = []
 
 
 def sh(id, dur, **kw):
-    d = dict(id=id, dur=dur, tail=0.3, transition="cut")
+    d = dict(id=id, dur=dur, tail=0.25, transition="cut")
     d.update(kw)
     shots.append(d)
     return d
@@ -41,7 +41,7 @@ def V(clip, idx=None, **over):
     for i, (who, note, text) in enumerate(LINES[clip]):
         if idx is not None and i not in idx:
             continue
-        d = dict(who=who, text=text)
+        d = dict(who=who, text=text, gap=0.12)
         d.update(over.get(i, {}))
         out.append(d)
     return out
@@ -170,7 +170,7 @@ ai("C29", 1.5, mood="off", fade_out=0.3, tail=0.0, fb=dict(motion="static", zoom
 
 spec = dict(title="The Dumpling Boy: intro + Episode 01 v4.3 (How Does Soup Get Inside a Dumpling?)", size=[1080, 1920], fps=30, orientation="both",
             frames_dir="frames/ep01v43", frames_fallback="frames/ep01v43", clips_dir="clips/ep01v43",
-            voice_engine="gpu", voice_fallback=True, grain=True, vignette=0.2, sway=0.0, caption_y=0.8, caption_y_land=0.86,
+            voice_engine="gpu", voice_fallback=True, voice_speed={"boy": 1.12, "uncle": 1.25, "grandma": 1.25, "narrator": 1.15}, max_pause=0.35, grain=True, vignette=0.2, sway=0.0, caption_y=0.8, caption_y_land=0.86,
             narrator_echo=True, snap_to_beat=False, shots=shots)
 
 if __name__ == "__main__":

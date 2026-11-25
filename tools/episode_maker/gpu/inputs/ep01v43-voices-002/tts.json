@@ -1,0 +1,427 @@
+{
+ "defaults": {
+  "backend": "qwen3",
+  "seed": 7,
+  "variants": 3
+ },
+ "voices": {
+  "boy": {
+   "qwen_voice": "A 7-year-old boy with a bright, clear, warm child's voice, curious and natural, light humor, never shouting, like a friendly kid host.",
+   "exaggeration_scale": 1.0
+  },
+  "uncle": {
+   "qwen_voice": "A big, warm, middle-aged man with a deep, rich, jolly voice, a little husky, funny and affectionate, able to turn quiet and sincere.",
+   "exaggeration_scale": 1.0
+  },
+  "grandma": {
+   "qwen_voice": "An elderly woman, a kind village cook, with a warm, slightly raspy voice, brisk and teasing, patient with children.",
+   "exaggeration_scale": 1.0
+  },
+  "narrator": {
+   "qwen_voice": "A deep, calm, solemn male storyteller voice with a slow measured pace, like the narrator of an ancient legend.",
+   "exaggeration_scale": 1.0
+  }
+ },
+ "lines": [
+  {
+   "id": "fc0a6a4efb1d2bfa",
+   "who": "boy",
+   "text": "Hot soup, inside a dumpling... in a skin you can almost see through. How?",
+   "clip": "C01",
+   "style": "neutral",
+   "qwen": "Delivery: hushed, amazed, half to himself. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "175971ff0663f3c4",
+   "who": "boy",
+   "text": "Welcome to The Dumpling Boy! Stick around, and my uncle will show you what not to do.",
+   "clip": "C02",
+   "style": "neutral",
+   "qwen": "Delivery: warm, amused, to the lens. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "0dc2161283c760a1",
+   "who": "uncle",
+   "text": "I'm fine.",
+   "clip": "C02",
+   "style": "neutral",
+   "qwen": "Delivery: muffled by an ice pack, dignified. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "f7efd0965048c87d",
+   "who": "boy",
+   "text": "The Silk Road? Never one road, you know. Loads of them, by land and sea.",
+   "clip": "C03",
+   "style": "neutral",
+   "qwen": "Delivery: easy, storyteller, a little smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "9ae042009ba2f552",
+   "who": "boy",
+   "text": "Near Shanghai there was a port, Qinglong. Over a thousand years ago, its ships carried pottery to Japan and Korea.",
+   "clip": "C04",
+   "style": "neutral",
+   "qwen": "Delivery: leaning in, interested, then wondering on the last half. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "08c131e7e19ad6e6",
+   "who": "boy",
+   "text": "Dad's first page just says: Shanghai. Be patient. The soup is the secret.",
+   "clip": "C05",
+   "style": "neutral",
+   "qwen": "Delivery: softly, reading, thinking it over. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "e6e97fb18ef8307c",
+   "who": "uncle",
+   "text": "Mm... dumplings...",
+   "clip": "C05",
+   "style": "neutral",
+   "qwen": "Delivery: slurred, dreamy, talking in his sleep. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "3c0f60ebe6f0ce3a",
+   "who": "boy",
+   "text": "This is Nanxiang, an old canal town. These days, it's part of Shanghai.",
+   "clip": "C07",
+   "style": "neutral",
+   "qwen": "Delivery: relaxed, glad to be here. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "b11f83a2d82ef87a",
+   "who": "boy",
+   "text": "Two little brick pagodas, about a thousand years old.",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Delivery: fond, pointing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "428ad7f87c9467cb",
+   "who": "uncle",
+   "text": "A thousand?",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Delivery: awed, quiet. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "fe451674d799013d",
+   "who": "boy",
+   "text": "The temple burned in 1766. They're still standing.",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Delivery: easy, a small shrug. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "7060f1563c85fea2",
+   "who": "uncle",
+   "text": "Things that last. I like that.",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Delivery: soft, a little moved, then a held beat. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "1d22f55f55493315",
+   "who": "boy",
+   "text": "Hello! Um, how do you get soup inside?",
+   "clip": "C09",
+   "style": "neutral",
+   "qwen": "Delivery: bright, curious, a little shy. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "2d54b246aa498486",
+   "who": "grandma",
+   "text": "Everyone asks. You don't pour it in. You make it a jelly first.",
+   "clip": "C09",
+   "style": "neutral",
+   "qwen": "Delivery: brisk, teasing, eyes on her hands. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "f52900408645c1e6",
+   "who": "grandma",
+   "text": "Pork skin, boiled for hours. Cold, it sets. Then I chop it, fold it into the meat.",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Delivery: warm, hands busy, matter-of-fact. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "f8095ed6551a7793",
+   "who": "boy",
+   "text": "Huh.",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Delivery: under his breath, fascinated. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "98166281d4fb9d2b",
+   "who": "uncle",
+   "text": "Then the steam melts it back into soup. That's why you never boil them.",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Delivery: low, dreamy, a cook who knows. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "cc23c718b101b3ad",
+   "who": "boy",
+   "text": "Wait, really? The soup goes in solid?",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Delivery: breathless wonder, a half-laugh. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "165024b71c14afc1",
+   "who": "boy",
+   "text": "How many folds?",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Delivery: curious. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "a84b630238e31095",
+   "who": "grandma",
+   "text": "Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen.",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Delivery: amused, proud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "e36c3c6fce81d7d7",
+   "who": "uncle",
+   "text": "...six, seven... oh, hang on.",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Delivery: muttering, losing count. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "872952d7e2feb5a1",
+   "who": "grandma",
+   "text": "Start again, dear.",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Delivery: kindly, not looking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "145a48775bc5ba7f",
+   "who": "grandma",
+   "text": "Slowly, slowly!",
+   "clip": "C13",
+   "style": "neutral",
+   "qwen": "Delivery: quick, warm, a warning. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "35834c004f792557",
+   "who": "boy",
+   "text": "Uncle, wait. There's soup inside!",
+   "clip": "C13",
+   "style": "neutral",
+   "qwen": "Delivery: alarmed, low. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "092e872bd690d9c4",
+   "who": "uncle",
+   "text": "Relax. For dumpling research!",
+   "clip": "C13",
+   "style": "neutral",
+   "qwen": "Delivery: grand, relaxed, waving him off. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "2968bcbd72232911",
+   "who": "uncle",
+   "text": "...There was soup inside.",
+   "clip": "C15",
+   "style": "neutral",
+   "qwen": "Delivery: tiny voice, wheezing, humbled. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "68a7605d04699eb6",
+   "who": "grandma",
+   "text": "Mm-hm. Everyone learns once.",
+   "clip": "C15",
+   "style": "neutral",
+   "qwen": "Delivery: kind, a bit teasing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "fb12778e1af31de5",
+   "who": "boy",
+   "text": "Breathe, Uncle.",
+   "clip": "C15",
+   "style": "neutral",
+   "qwen": "Delivery: gentle, hiding a smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "366c810bcba8b1f7",
+   "who": "grandma",
+   "text": "Okay, watch. Lift it by the top knot, like this. Then onto a spoon.",
+   "clip": "C16",
+   "style": "neutral",
+   "qwen": "Delivery: patient, a teacher's calm. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "295fef823f07451c",
+   "who": "grandma",
+   "text": "A tiny hole, to let the steam out.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: softly, showing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "55607935df5df086",
+   "who": "boy",
+   "text": "Then we wait?",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: thinking aloud. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "4adeeffe064df9c2",
+   "who": "grandma",
+   "text": "Good. Soup first.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Delivery: approving. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "d1bc3c143135d5e4",
+   "who": "boy",
+   "text": "Better?",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: softly, hopeful. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "7837e620dcf33380",
+   "who": "uncle",
+   "text": "Oh... that's good. For dumpling research.",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: whispering, eyes closed, melting. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "3edea794e2e1a94b",
+   "who": "grandma",
+   "text": "Now the dumpling, with a little black vinegar and ginger.",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Delivery: pleased. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "e052a9f102bef0e6",
+   "who": "boy",
+   "text": "So who made the very first one?",
+   "clip": "C19",
+   "style": "neutral",
+   "qwen": "Delivery: curious, turning to her. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "38c721ae4c943d2d",
+   "who": "narrator",
+   "text": "Legend says: around the year 1871, a shop in Nanxiang sold one very big meat bun.",
+   "clip": "C20",
+   "style": "neutral",
+   "qwen": "Delivery: deep, grand, unhurried. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "fc04c41ace58d37c",
+   "who": "narrator",
+   "text": "He made it smaller. And inside, he hid soup, set as jelly.",
+   "clip": "C21",
+   "style": "neutral",
+   "qwen": "Delivery: rising, playful grandeur. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "05293ebe00424155",
+   "who": "narrator",
+   "text": "It became famous by getting smaller.",
+   "clip": "C22",
+   "style": "neutral",
+   "qwen": "Delivery: satisfied, closing. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "86137cc97dc36b9a",
+   "who": "boy",
+   "text": "That's not what he looked like.",
+   "clip": "C23",
+   "style": "neutral",
+   "qwen": "Delivery: dry, fond. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "1afa92d1f061c4b1",
+   "who": "uncle",
+   "text": "He had my energy.",
+   "clip": "C23",
+   "style": "neutral",
+   "qwen": "Delivery: dignified, not lowering the spoon. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "d77a16209cc1b840",
+   "who": "boy",
+   "text": "Many towns claim this dumpling. So: legend says.",
+   "clip": "C23",
+   "style": "neutral",
+   "qwen": "Delivery: to the lens, smiling. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "8d92038709deb28b",
+   "who": "grandma",
+   "text": "That hat... A man sat on that stool, years ago. He burned his tongue, too.",
+   "clip": "C24",
+   "style": "neutral",
+   "qwen": "Delivery: slowing down, then quiet and a little amazed. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "20eac48ff8555b36",
+   "who": "boy",
+   "text": "My... dad?",
+   "clip": "C24",
+   "style": "neutral",
+   "qwen": "Delivery: barely audible, stunned. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "cc1e33d297e866a4",
+   "who": "boy",
+   "text": "Dad wrote... rush it, you get burned. Be patient, you get the best part.",
+   "clip": "C25",
+   "style": "neutral",
+   "qwen": "Delivery: quiet, reading aloud, his voice a little tight. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "1d191fac263bd20b",
+   "who": "uncle",
+   "text": "Your dad picked a good first page.",
+   "clip": "C26",
+   "style": "neutral",
+   "qwen": "Delivery: soft, warm, hoarse. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "abc4a747e6fb29a9",
+   "who": "boy",
+   "text": "...Yeah.",
+   "clip": "C26",
+   "style": "neutral",
+   "qwen": "Delivery: a small smile, almost a breath. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "a5cac3b75b3db066",
+   "who": "grandma",
+   "text": "Then he went south. To Guangzhou.",
+   "clip": "C27",
+   "style": "neutral",
+   "qwen": "Delivery: smiling, a little secret. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "7146d41cda6232b2",
+   "who": "uncle",
+   "text": "More dumplings?",
+   "clip": "C27",
+   "style": "neutral",
+   "qwen": "Delivery: instantly perking up. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  },
+  {
+   "id": "034b8c85a93d3ec5",
+   "who": "boy",
+   "text": "Dad was right... the best part is worth the wait.",
+   "clip": "C28",
+   "style": "neutral",
+   "qwen": "Delivery: soft, to the lens, a small smile. Brisk, natural conversational pace like real quick talk, no long pauses, keep it flowing."
+  }
+ ]
+}

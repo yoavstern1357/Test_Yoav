@@ -11,6 +11,13 @@
  "clips_dir": "clips/ep01v43",
  "voice_engine": "gpu",
  "voice_fallback": true,
+ "voice_speed": {
+  "boy": 1.12,
+  "uncle": 1.25,
+  "grandma": 1.25,
+  "narrator": 1.15
+ },
+ "max_pause": 0.35,
  "grain": true,
  "vignette": 0.2,
  "sway": 0.0,
@@ -22,7 +29,7 @@
   {
    "id": "I1",
    "dur": 1.4,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I1.mp4",
    "img": "I1.png",
@@ -69,7 +76,7 @@
   {
    "id": "I2",
    "dur": 1.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I2.mp4",
    "img": "I2.png",
@@ -100,7 +107,7 @@
   {
    "id": "I3",
    "dur": 1.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I3.mp4",
    "img": "I3.png",
@@ -142,7 +149,7 @@
   {
    "id": "I5",
    "dur": 1.3,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I5.mp4",
    "img": "I5.png",
@@ -188,7 +195,7 @@
   {
    "id": "I5b",
    "dur": 0.8,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I5b.mp4",
    "img": "I5b.png",
@@ -219,7 +226,7 @@
   {
    "id": "I5c",
    "dur": 0.7,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I5c.mp4",
    "img": "I5c.png",
@@ -259,7 +266,7 @@
   {
    "id": "I6",
    "dur": 0.7,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "I6.mp4",
    "img": "I6.png",
@@ -298,7 +305,7 @@
   {
    "id": "C90",
    "dur": 1.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C90.mp4",
    "mood": "adventure",
@@ -323,7 +330,7 @@
   {
    "id": "C01",
    "dur": 5.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C01.mp4",
    "img": "C01.png",
@@ -347,7 +354,8 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Hot soup, inside a dumpling... in a skin you can almost see through. How?"
+     "text": "Hot soup, inside a dumpling... in a skin you can almost see through. How?",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -369,7 +377,7 @@
   {
    "id": "C02",
    "dur": 6.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C02.mp4",
    "img": "C02.png",
@@ -387,11 +395,13 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Welcome to The Dumpling Boy! Stick around, and my uncle will show you what not to do."
+     "text": "Welcome to The Dumpling Boy! Stick around, and my uncle will show you what not to do.",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "I'm fine."
+     "text": "I'm fine.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -410,7 +420,7 @@
   {
    "id": "C03",
    "dur": 5.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "fade",
    "clip": "../out/ep01v43/code/C03.mp4",
    "mood": "sparse",
@@ -419,7 +429,8 @@
    "lines": [
     {
      "who": "boy",
-     "text": "The Silk Road? Never one road, you know. Loads of them, by land and sea."
+     "text": "The Silk Road? Never one road, you know. Loads of them, by land and sea.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -456,14 +467,15 @@
   {
    "id": "C04",
    "dur": 7.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C04.mp4",
    "lead": 0.5,
    "lines": [
     {
      "who": "boy",
-     "text": "Near Shanghai there was a port, Qinglong. Over a thousand years ago, its ships carried pottery to Japan and Korea."
+     "text": "Near Shanghai there was a port, Qinglong. Over a thousand years ago, its ships carried pottery to Japan and Korea.",
+     "gap": 0.12
     }
    ],
    "cards": [
@@ -513,7 +525,7 @@
   {
    "id": "C05",
    "dur": 5.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C05.mp4",
    "img": "C05.png",
@@ -536,11 +548,13 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Dad's first page just says: Shanghai. Be patient. The soup is the secret."
+     "text": "Dad's first page just says: Shanghai. Be patient. The soup is the secret.",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "Mm... dumplings..."
+     "text": "Mm... dumplings...",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -555,7 +569,7 @@
   {
    "id": "C06",
    "dur": 2.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C06.mp4",
    "mood": "adventure",
@@ -580,7 +594,7 @@
   {
    "id": "C07",
    "dur": 5.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C07.mp4",
    "img": "C07.png",
@@ -599,7 +613,8 @@
    "lines": [
     {
      "who": "boy",
-     "text": "This is Nanxiang, an old canal town. These days, it's part of Shanghai."
+     "text": "This is Nanxiang, an old canal town. These days, it's part of Shanghai.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -613,7 +628,7 @@
   {
    "id": "C08",
    "dur": 9.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C08.mp4",
    "img": "C08.png",
@@ -631,19 +646,23 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Two little brick pagodas, about a thousand years old."
+     "text": "Two little brick pagodas, about a thousand years old.",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "A thousand?"
+     "text": "A thousand?",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "The temple burned in 1766. They're still standing."
+     "text": "The temple burned in 1766. They're still standing.",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "Things that last. I like that."
+     "text": "Things that last. I like that.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -664,7 +683,7 @@
   {
    "id": "C09",
    "dur": 7.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C09.mp4",
    "img": "C09.png",
@@ -686,11 +705,13 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Hello! Um, how do you get soup inside?"
+     "text": "Hello! Um, how do you get soup inside?",
+     "gap": 0.12
     },
     {
      "who": "grandma",
-     "text": "Everyone asks. You don't pour it in. You make it a jelly first."
+     "text": "Everyone asks. You don't pour it in. You make it a jelly first.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -710,7 +731,7 @@
   {
    "id": "C10",
    "dur": 6.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C10.mp4",
    "img": "C10.png",
@@ -728,11 +749,13 @@
    "lines": [
     {
      "who": "grandma",
-     "text": "Pork skin, boiled for hours. Cold, it sets. Then I chop it, fold it into the meat."
+     "text": "Pork skin, boiled for hours. Cold, it sets. Then I chop it, fold it into the meat.",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "Huh."
+     "text": "Huh.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -766,7 +789,7 @@
   {
    "id": "C11a",
    "dur": 4.4,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -792,7 +815,8 @@
    "lines": [
     {
      "who": "uncle",
-     "text": "Then the steam melts it back into soup. That's why you never boil them."
+     "text": "Then the steam melts it back into soup. That's why you never boil them.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -823,7 +847,7 @@
   {
    "id": "C11b",
    "dur": 0.8,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -853,7 +877,7 @@
   {
    "id": "C11c",
    "dur": 0.8,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -883,7 +907,7 @@
   {
    "id": "C11d",
    "dur": 2.4,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -906,7 +930,8 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Wait, really? The soup goes in solid?"
+     "text": "Wait, really? The soup goes in solid?",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -925,7 +950,7 @@
   {
    "id": "C11e",
    "dur": 0.8,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -956,7 +981,7 @@
   {
    "id": "C11f",
    "dur": 1.2,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C11.mp4",
    "img": "C11.png",
@@ -982,7 +1007,7 @@
   {
    "id": "C12",
    "dur": 7.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C12.mp4",
    "img": "C12.png",
@@ -1001,19 +1026,23 @@
    "lines": [
     {
      "who": "boy",
-     "text": "How many folds?"
+     "text": "How many folds?",
+     "gap": 0.12
     },
     {
      "who": "grandma",
-     "text": "Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen."
+     "text": "Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen.",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "...six, seven... oh, hang on."
+     "text": "...six, seven... oh, hang on.",
+     "gap": 0.12
     },
     {
      "who": "grandma",
-     "text": "Start again, dear."
+     "text": "Start again, dear.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1032,7 +1061,7 @@
   {
    "id": "C13",
    "dur": 4.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C13.mp4",
    "img": "C13.png",
@@ -1050,15 +1079,18 @@
    "lines": [
     {
      "who": "grandma",
-     "text": "Slowly, slowly!"
+     "text": "Slowly, slowly!",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "Uncle, wait. There's soup inside!"
+     "text": "Uncle, wait. There's soup inside!",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "Relax. For dumpling research!"
+     "text": "Relax. For dumpling research!",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1077,7 +1109,7 @@
   {
    "id": "C14a",
    "dur": 1.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1113,7 +1145,7 @@
   {
    "id": "C14b",
    "dur": 0.55,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1142,7 +1174,7 @@
   {
    "id": "C14c",
    "dur": 0.55,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14.png",
@@ -1171,7 +1203,7 @@
   {
    "id": "C14d",
    "dur": 1.9,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C14.mp4",
    "img": "C14_end.png",
@@ -1225,7 +1257,7 @@
   {
    "id": "C15",
    "dur": 4.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C15.mp4",
    "img": "C15.png",
@@ -1243,15 +1275,18 @@
    "lines": [
     {
      "who": "uncle",
-     "text": "...There was soup inside."
+     "text": "...There was soup inside.",
+     "gap": 0.12
     },
     {
      "who": "grandma",
-     "text": "Mm-hm. Everyone learns once."
+     "text": "Mm-hm. Everyone learns once.",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "Breathe, Uncle."
+     "text": "Breathe, Uncle.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1271,7 +1306,7 @@
   {
    "id": "C16",
    "dur": 5.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C16.mp4",
    "img": "C16.png",
@@ -1289,7 +1324,8 @@
    "lines": [
     {
      "who": "grandma",
-     "text": "Okay, watch. Lift it by the top knot, like this. Then onto a spoon."
+     "text": "Okay, watch. Lift it by the top knot, like this. Then onto a spoon.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1303,7 +1339,7 @@
   {
    "id": "C17",
    "dur": 5.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C17.mp4",
    "img": "C17.png",
@@ -1321,15 +1357,18 @@
    "lines": [
     {
      "who": "grandma",
-     "text": "A tiny hole, to let the steam out."
+     "text": "A tiny hole, to let the steam out.",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "Then we wait?"
+     "text": "Then we wait?",
+     "gap": 0.12
     },
     {
      "who": "grandma",
-     "text": "Good. Soup first."
+     "text": "Good. Soup first.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1349,7 +1388,7 @@
   {
    "id": "C18",
    "dur": 6.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C18.mp4",
    "img": "C18.png",
@@ -1368,15 +1407,18 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Better?"
+     "text": "Better?",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "Oh... that's good. For dumpling research."
+     "text": "Oh... that's good. For dumpling research.",
+     "gap": 0.12
     },
     {
      "who": "grandma",
-     "text": "Now the dumpling, with a little black vinegar and ginger."
+     "text": "Now the dumpling, with a little black vinegar and ginger.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1395,14 +1437,15 @@
   {
    "id": "C19",
    "dur": 3.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C19.mp4",
    "mood": "sparse",
    "lines": [
     {
      "who": "boy",
-     "text": "So who made the very first one?"
+     "text": "So who made the very first one?",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1427,14 +1470,15 @@
   {
    "id": "C20",
    "dur": 6.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C20.mp4",
    "lead": 0.4,
    "lines": [
     {
      "who": "narrator",
-     "text": "Legend says: around the year 1871, a shop in Nanxiang sold one very big meat bun."
+     "text": "Legend says: around the year 1871, a shop in Nanxiang sold one very big meat bun.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1449,14 +1493,15 @@
   {
    "id": "C21",
    "dur": 5.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C21.mp4",
    "lead": 0.3,
    "lines": [
     {
      "who": "narrator",
-     "text": "He made it smaller. And inside, he hid soup, set as jelly."
+     "text": "He made it smaller. And inside, he hid soup, set as jelly.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1491,14 +1536,15 @@
   {
    "id": "C22",
    "dur": 3.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C22.mp4",
    "lead": 0.2,
    "lines": [
     {
      "who": "narrator",
-     "text": "It became famous by getting smaller."
+     "text": "It became famous by getting smaller.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1517,7 +1563,7 @@
   {
    "id": "C23",
    "dur": 6.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C23.mp4",
    "img": "C23.png",
@@ -1536,15 +1582,18 @@
    "lines": [
     {
      "who": "boy",
-     "text": "That's not what he looked like."
+     "text": "That's not what he looked like.",
+     "gap": 0.12
     },
     {
      "who": "uncle",
-     "text": "He had my energy."
+     "text": "He had my energy.",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "Many towns claim this dumpling. So: legend says."
+     "text": "Many towns claim this dumpling. So: legend says.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1564,7 +1613,7 @@
   {
    "id": "C24a",
    "dur": 0.6,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C24.mp4",
    "img": "C24.png",
@@ -1590,7 +1639,7 @@
   {
    "id": "C24b",
    "dur": 0.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C24.mp4",
    "img": "C24.png",
@@ -1621,7 +1670,7 @@
   {
    "id": "C24c",
    "dur": 0.5,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C24.mp4",
    "img": "C24.png",
@@ -1646,7 +1695,7 @@
   {
    "id": "C24d",
    "dur": 5.4,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C24.mp4",
    "img": "C24.png",
@@ -1665,18 +1714,20 @@
    "lines": [
     {
      "who": "grandma",
-     "text": "That hat... A man sat on that stool, years ago. He burned his tongue, too."
+     "text": "That hat... A man sat on that stool, years ago. He burned his tongue, too.",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "My... dad?"
+     "text": "My... dad?",
+     "gap": 0.12
     }
    ]
   },
   {
    "id": "C25",
    "dur": 6.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "fade",
    "clip": "C25.mp4",
    "img": "C25.png",
@@ -1713,14 +1764,15 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Dad wrote... rush it, you get burned. Be patient, you get the best part."
+     "text": "Dad wrote... rush it, you get burned. Be patient, you get the best part.",
+     "gap": 0.12
     }
    ]
   },
   {
    "id": "C26",
    "dur": 3.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "fade",
    "clip": "C26.mp4",
    "img": "C26.png",
@@ -1740,11 +1792,13 @@
    "lines": [
     {
      "who": "uncle",
-     "text": "Your dad picked a good first page."
+     "text": "Your dad picked a good first page.",
+     "gap": 0.12
     },
     {
      "who": "boy",
-     "text": "...Yeah."
+     "text": "...Yeah.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1758,7 +1812,7 @@
   {
    "id": "C27a",
    "dur": 2.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "C27.mp4",
    "img": "C27.png",
@@ -1776,7 +1830,8 @@
    "lines": [
     {
      "who": "grandma",
-     "text": "Then he went south. To Guangzhou."
+     "text": "Then he went south. To Guangzhou.",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1790,13 +1845,14 @@
   {
    "id": "C27I",
    "dur": 1.6,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "cut",
    "clip": "../out/ep01v43/code/C27I.mp4",
    "lines": [
     {
      "who": "uncle",
-     "text": "More dumplings?"
+     "text": "More dumplings?",
+     "gap": 0.12
     }
    ],
    "sfx": [
@@ -1816,7 +1872,7 @@
   {
    "id": "C28",
    "dur": 4.0,
-   "tail": 0.3,
+   "tail": 0.25,
    "transition": "fade",
    "clip": "C28.mp4",
    "img": "C28.png",
@@ -1839,7 +1895,8 @@
    "lines": [
     {
      "who": "boy",
-     "text": "Dad was right... the best part is worth the wait."
+     "text": "Dad was right... the best part is worth the wait.",
+     "gap": 0.12
     }
    ]
   },
