@@ -207,7 +207,12 @@ def _tts(who, text, speed_mult=None, pitch_override=None):
             speed = speed * float(speed_mult)
         key = hashlib.md5(f"{voice}|{speed}|{pitch}|{text}".encode()).hexdigest()   # unchanged: old caches stay valid
     else:
-        key = hashlib.md5(f"{engine}|{json.dumps(cast, sort_keys=True)}|{speed_mult}|{MAX_PAUSE}|{pitch}|{who}|{text}".encode()).hexdigest()
+        stamp = ""
+        if engine == "prerendered":      # a re-picked take (new file) must not hit the cache of the old one
+            import tts_engines as _te
+            _p = os.path.join(os.path.expanduser(cast.get("dir", "tts/gpu")) if os.path.isabs(os.path.expanduser(cast.get("dir", "tts/gpu"))) else os.path.join(os.path.dirname(os.path.abspath(__file__)), cast.get("dir", "tts/gpu")), _te.line_key(who, text) + ".wav")
+            stamp = f"{os.path.getmtime(_p):.0f}|{os.path.getsize(_p)}" if os.path.exists(_p) else "missing"
+        key = hashlib.md5(f"{engine}|{json.dumps(cast, sort_keys=True)}|{speed_mult}|{MAX_PAUSE}|{pitch}|{who}|{text}|{stamp}".encode()).hexdigest()
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, key + ".npy")
     if os.path.exists(path):
