@@ -4,7 +4,7 @@
 **Format:** a warm, curious food-travel show on the old Silk Road for everyone, hosted by the Boy (Bo), who talks to camera. Uncle Fong is the co-host: mostly the funny one, sometimes the wise one. One local teacher per episode (here: Grandma at her stall). A **Scroll Narrator** speaks only when a paper scroll unrolls on screen, for the one legend. Production rules: `production/v4/PRODUCTION-BIBLE.md` (v4.2, overrides everything else). Comedy rules: `production/v4/comedy-style.md`. Facts: `production/v4/content-research.md`, section "Episode 1".
 **Voices:** `boy` (warm, curious, clear; light humor, natural, thinks out loud), `uncle` (big, warm; funny, but he can go quiet and say true things; real food knowledge in his own words), `narrator` (deep, calm, a little echo, a low gong before he speaks; only inside the scroll), `grandma` (the stall owner: a real elderly cook, kind, brisk, a bit teasing, always right). Dad only as a sepia silhouette from behind and as the Boy's reading of his journal. Catchphrase **"For science!"**. Last spoken line: **"Dad was right..."**
 **Look:** refined anime (natural proportions, cinematic light, painted backgrounds), per the bible. The scroll world is ink-wash paper-cut at about 8 fps.
-**Numbers:** 29 clips (C01-C29), WORDCOUNT_PLACEHOLDER spoken words (counted below), 3 PEAK moments, 4 real facts + 1 legend, 2 fact cards, 19 image-to-video clips + 10 code/graphic clips. Music: only under the title, the jelly reveal, the burn aftermath, the scroll and the Dad beat; everything else is ambience and SFX.
+**Numbers:** 29 clips (C01-C29), 382 spoken words (counted below), 3 PEAK moments, 4 real facts + 1 legend, 2 fact cards, 19 image-to-video clips + 10 code/graphic clips. Music: only under the title, the jelly reveal, the burn aftermath, the scroll and the Dad beat; everything else is ambience and SFX.
 
 ## Delivery key (for the voice actor / TTS)
 - Every spoken line carries a bracketed delivery note: `SPEAKER [how it is said]: “words”`. Brackets are never spoken and are not counted in the word count.
@@ -16,7 +16,7 @@
 | # | Change | Why (creator note: "expand the text to be a bit more human") |
 |---|---|---|
 | 1 | **Every line rewritten as talk, not narration**: contractions, fragments, small reactions (“Um,” “Mm.” “Okay, okay.” “Wait, really?” “Huh.”), people answering each other. Facts are now said in answer to a question or as a reaction to a discovery. | Real people, no lecture-y sentences |
-| 2 | **334 -> WORDCOUNT_PLACEHOLDER spoken words**, length unchanged at 2:30.0. Clip lengths re-balanced (front half tighter, the legend and the Dad beat keep their room), the three peaks unchanged. | Slight expansion, still flowing |
+| 2 | **334 -> 382 spoken words**, length unchanged at 2:30.0. Clip lengths re-balanced (front half tighter, the legend and the Dad beat keep their room), the three peaks unchanged. | Slight expansion, still flowing |
 | 3 | **The Boy thinks out loud** (“Dad's first page just says: Shanghai...”, “Then we wait?”, “Um, how do you get soup inside?”) and reacts like a curious kid (“Wait, really?”). He is warm, not a presenter reading a card. | Bible: host is warm and curious |
 | 4 | **The Uncle has his own voice**: sleep-talks on the train, quietly explains the steam, asks “More dumplings?” at the cliffhanger, answers the legend hero joke with “He had my energy.” His food knowledge (steam melts the jelly, never boil) comes as a real cook's remark, not a caption. | Bible: funny and wise, real food knowledge |
 | 5 | **Grandma speaks like an elderly cook**: “Everyone asks that.”, “Slowly, slowly!”, “Start again, dear.”, “Mm-hm. Everyone learns once.” She teases kindly and never explains more than one thing at a time. | Bible: local who teaches |
@@ -50,16 +50,16 @@ The episode breathes: long holds, establishing shots and ambience (canal water, 
 
 ## Beats
 
-### A. COLD OPEN (0:00-0:12.5): the question
+### A. COLD OPEN (0:00-0:12.0): the question
 | Clip | Time | # | Method | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
 |---|---|---|---|---|---|---|
 | C01 | 0:00.0 | B01 | I2V | START STILL: macro, one xiaolongbao lifted on chopsticks above a bamboo basket, the skin so thin the soup shows through, warm morning light. First 0.5 s black. ACTION: the chopsticks lift; the dumpling sags like a small water balloon and the soup sways inside; steam drifts. Slow and calm. | BOY (V.O.) [hushed, amazed, half to himself]: “Hot soup, inside a dumpling... in a skin you can almost see through. How?” | steam hiss, bamboo creak; no music |
-| C02 | 0:06.0 | B02 | I2V | START STILL: medium shot, the Boy in an old Nanxiang lane (canal and stone bridge softly blurred), chopstick-microphone in hand, a small warm smile to the lens. Behind him on a stool the Uncle, an ice pack on his cheek, fanning his tongue with a napkin, ears faintly steaming. ACTION: the Boy smiles to the lens, glances (eyes only) at the Uncle; the Uncle lifts one limp hand. End: the Boy closes the journal with a soft thud and the frame dissolves into the old map. | BOY [warm, amused, to the lens]: “Welcome to The Dumpling Boy! Stick around, and my uncle will show you what not to do.” / UNCLE (off, small) [muffled by the ice pack, dignified, over the last words]: “I'm fine.” | lane ambience, page thud |
+| C02 | 0:05.5 | B02 | I2V | START STILL: medium shot, the Boy in an old Nanxiang lane (canal and stone bridge softly blurred), chopstick-microphone in hand, a small warm smile to the lens. Behind him on a stool the Uncle, an ice pack on his cheek, fanning his tongue with a napkin, ears faintly steaming. ACTION: the Boy smiles to the lens, glances (eyes only) at the Uncle; the Uncle lifts one limp hand. End: the Boy closes the journal with a soft thud and the frame dissolves into the old map. | BOY [warm, amused, to the lens]: “Welcome to The Dumpling Boy! Stick around, and my uncle will show you what not to do.” / UNCLE (off, small) [muffled by the ice pack, dignified, over the last words]: “I'm fine.” | lane ambience, page thud |
 
-### B. THE OLD ROAD AND THE JOURNAL (0:12.5-0:30)
+### B. THE OLD ROAD AND THE JOURNAL (0:12.0-0:30)
 | Clip | Time | # | Method | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
 |---|---|---|---|---|---|---|
-| C03 | 0:12.5 | B03 | CODE | Top-down. Dad's leather journal opens in warm light; an ink-wash map unrolls across the page; a dotted red route draws itself with a pen scratch; a tiny paper-cut caravan walks along it, the last camel turning its head to the lens (camel cameo 1 of 2). | BOY (V.O.) [easy, storyteller, a little smile]: “The Silk Road? Never one road, you know. Loads of them, by land and sea.” | page, pen scratch; strings low |
+| C03 | 0:12.0 | B03 | CODE | Top-down. Dad's leather journal opens in warm light; an ink-wash map unrolls across the page; a dotted red route draws itself with a pen scratch; a tiny paper-cut caravan walks along it, the last camel turning its head to the lens (camel cameo 1 of 2). | BOY (V.O.) [easy, storyteller, a little smile]: “The Silk Road? Never one road, you know. Loads of them, by land and sea.” | page, pen scratch; strings low |
 | C04 | 0:17.5 | B04 | CODE | The route reaches a river-mouth harbor; ink-wash ships load stacks of bowls, the sails fill, the ships slide toward the edge of the map. Fact card 1 fades in and out: [CARD: QINGLONG PORT · its ceramics turn up in Japan and Korea]. | BOY (V.O.) [leaning in, interested, then wondering on the last half]: “Near Shanghai there was a port, Qinglong. Over a thousand years ago, its ships carried pottery to Japan and Korea.” | wood creak, gull, sails flap |
 | C05 | 0:24.5 | B05 | I2V | START STILL: a Shanghai metro car sliding out of the city into low houses; the Boy on a seat, the journal open on his knees, one finger under Dad's handwriting; the Uncle beside him, upright and asleep, hugging a thermos. ACTION: the train sways; the Boy reads, then looks out of the window with a small smile; the Uncle's mouth moves in his sleep. | BOY (V.O.) [softly, reading, thinking it over]: “Dad's first page just says: Shanghai. Be patient. The soup is the secret.” / UNCLE (asleep) [slurred, dreamy]: “Mm... dumplings...” | train rhythm; no music |
 
@@ -74,7 +74,7 @@ The episode breathes: long holds, establishing shots and ambience (canal water, 
 | Clip | Time | # | Method | ON-SCREEN ACTION (animation) | VOICE | SFX / MUSIC |
 |---|---|---|---|---|---|---|
 | C09 | 0:46.5 | B09 | I2V | START STILL: a tiny generic old stall (no sign text), stacked bamboo steamers, Grandma folding with quick hands; the Boy at the counter, leaning in, curious; the Uncle half out of focus behind, nose in the steam. ACTION: Grandma pleats one dumpling in two quick turns and holds it up; the Boy's eyes follow her fingers. | BOY [bright, curious, a little shy]: “Hello! Um, how do you get soup inside?” / GRANDMA [brisk, teasing, eyes on her hands]: “Everyone asks. You don't pour it in. You make it a jelly first.” | stall ambience, steamer lids |
-| C10 | 0:53.5 | B10 | I2V | START STILL: macro on a wooden board: a block of amber pork-skin jelly and Grandma's knife. ACTION: the knife chops the jelly into tiny cubes; the cubes tumble into a bowl of pink minced pork. | GRANDMA [warm, hands busy, matter-of-fact]: “Pork skin, boiled for hours. Cold, it sets. Then I chop it, and fold it into the meat.” / BOY (under his breath) [fascinated]: “Huh.” | chop, chop, soft fold |
+| C10 | 0:53.5 | B10 | I2V | START STILL: macro on a wooden board: a block of amber pork-skin jelly and Grandma's knife. ACTION: the knife chops the jelly into tiny cubes; the cubes tumble into a bowl of pink minced pork. | GRANDMA [warm, hands busy, matter-of-fact]: “Pork skin, boiled for hours. Cold, it sets. Then I chop it, fold it into the meat.” / BOY (under his breath) [fascinated]: “Huh.” | chop, chop, soft fold |
 | C11 | 0:59.5 | B11 | I2V | **PEAK 1.** START STILL: a steamer basket with the lid just lifted, one dumpling with the skin glowing. ACTION: the lid lifts; steam parts; inside the skin the jelly cubes slowly melt into a golden pool. Edit: 6-8 fast macro cuts (jelly, steam, melt, ripple), whip-pans, one slow-motion ripple, then a held beat. Fact card 2: [CARD: THE SOUP GOES IN SOLID]. | UNCLE [low, dreamy, a cook who knows]: “Then the steam melts it back into soup. That's why you never boil them.” / BOY [breathless wonder, a half-laugh]: “Wait, really? The soup goes in solid?” | lid lift, hiss, sparkle; music swell, then a held breath |
 | C12 | 1:07.5 | B12 | I2V | START STILL: close on Grandma's hands pleating, the Boy's chin just above the counter, the Uncle at the edge. ACTION: her fingers spin the pleats; the Boy counts with his lips; the Uncle counts on his fingers, loses count, and starts again, then gives up with a shrug. | BOY [curious]: “How many folds?” / GRANDMA [amused, proud]: “Fourteen, sixteen, eighteen. Every cook has a number. Mine's eighteen.” / UNCLE (counting) [muttering, losing it]: “...six, seven... oh, hang on.” / GRANDMA [kindly, not looking up]: “Start again, dear.” | soft pinches, stall ambience |
 
@@ -112,7 +112,42 @@ The episode breathes: long holds, establishing shots and ambience (canal water, 
 | C29 | 2:28.5 | B29 | I2V | STING. START STILL: the Boy in the foreground; behind him the Uncle with his tongue in a bucket of ice giving a thumbs up, and the camel (cameo 2 of 2) beside him, staring into the lens. ACTION: one tiny toot of steam from the Uncle's ear; the camel blinks. Cut to black. | | toot, cut |
 
 ## Word count and rates (counted from the voice column)
-WORDCOUNT_TABLE_PLACEHOLDER
+**382 spoken words in 150 s (about 2.5 words/second overall; about 2.7 counting only clips that have speech)**, counted per clip from the voice column (quoted text only; bracketed delivery notes and sound effects are not counted; v4.2 was 334).
+
+| Clip | Sec | Words | w/s |
+|---|---|---|---|
+| C01 | 5.5 | 14 | 2.5 |
+| C02 | 6.5 | 19 | 2.9 |
+| C03 | 5.5 | 15 | 2.7 |
+| C04 | 7 | 20 | 2.9 |
+| C05 | 5.5 | 15 | 2.7 |
+| C06 | 2.5 | 0 | 0.0 |
+| C07 | 5 | 13 | 2.6 |
+| C08 | 9 | 25 | 2.8 |
+| C09 | 7 | 21 | 3.0 |
+| C10 | 6 | 18 | 3.0 |
+| C11 | 8 | 21 | 2.6 |
+| C12 | 7 | 21 | 3.0 |
+| C13 | 4 | 10 | 2.5 |
+| C14 | 4 | 0 | 0.0 |
+| C15 | 4 | 10 | 2.5 |
+| C16 | 5 | 14 | 2.8 |
+| C17 | 5 | 14 | 2.8 |
+| C18 | 6 | 16 | 2.7 |
+| C19 | 3 | 7 | 2.3 |
+| C20 | 6 | 16 | 2.7 |
+| C21 | 5 | 12 | 2.4 |
+| C22 | 3 | 6 | 2.0 |
+| C23 | 6 | 18 | 3.0 |
+| C24 | 6.5 | 17 | 2.6 |
+| C25 | 6 | 14 | 2.3 |
+| C26 | 3 | 8 | 2.7 |
+| C27 | 3.5 | 8 | 2.3 |
+| C28 | 4 | 10 | 2.5 |
+| C29 | 1.5 | 0 | 0.0 |
+| **Total** | **150** | **382** | **2.5** |
+
+Busiest clips: C09, C12, C23 and C03 at about 3.0 w/s (each has quick back-and-forth or a short overlap, so it reads as fast talk, not a speech); no clip is above 3.0. Every fact is still followed by a beat of image and ambience: C04 ships sliding off the map (2 s), C08 the pagoda hold (2 s), C11 the held breath after the jelly, C12 the Uncle's lost count. The Dad beat (C25) is 2.3 w/s with a held pause, and the three silent clips (C06, C14, C29) stay silent.
 
 ## Fact-landing check (each fact: said once, plainly, then a beat)
 | Fact | Where | Beat to land | Tag |
@@ -125,14 +160,14 @@ WORDCOUNT_TABLE_PLACEHOLDER
 
 ## Callback map
 - **The question and its answer:** "How do you get soup inside?" (0:46.5) -> the soup goes in solid (0:59.5).
-- **The cold-open ice pack:** Uncle with an ice pack (0:06) -> the burn that earns it (1:18.5) -> tongue in the ice bucket (2:28.5).
+- **The cold-open ice pack:** Uncle with an ice pack (0:05.5) -> the burn that earns it (1:18.5) -> tongue in the ice bucket (2:28.5).
 - **"There's soup inside":** the Boy warns (1:14.5) -> the Uncle repeats it, humbled (1:22.5).
 - **"For science!":** bold and breezy (1:17) -> whispered at the sip (1:37).
 - **The burned-tongue chain (the heart of the episode):** the Uncle (1:18.5) -> Grandma: Dad burned his tongue too (2:05.5) -> Dad's line "get burned" (2:12) -> the Uncle hands the Boy the cooled dumpling (2:18) -> the ice bucket (2:28.5).
 - **"Mm... dumplings..." (asleep, 0:24.5) -> "More dumplings?" (2:21):** the Uncle's appetite, a gentle bookend.
 - **Uncle's face as the legend hero:** the paper owner (1:51.5) -> the napkin cape pose and "He had my energy" (1:59.5).
 - **"Things that last":** the pagodas (0:37.5) -> Dad's seat and Dad's page (2:05.5-2:18).
-- **Camel:** map caravan (0:12.5), sting (2:28.5).
+- **Camel:** map caravan (0:12.0), sting (2:28.5).
 
 ## Safety and sensitivity checks
 - The burn is steam, a red face and a tiny voice; cold water follows and the Uncle is fine in the next shot. The safe method (lift, spoon, tiny hole, wait, sip soup first, then the dumpling with vinegar and ginger) is shown and spoken in full in the same episode. No child copies the Uncle.
