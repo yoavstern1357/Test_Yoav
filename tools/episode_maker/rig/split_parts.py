@@ -90,9 +90,9 @@ def uncle():
     base_a[kill > 0] = 0
     # arms removed: fill with kimono colour and stroke the body edge
     yy, xx = np.mgrid[0:H, 0:W]
-    for am, piv in ((armL_m, (262, 335)), (armR_m, (640, 315))):
-        far = ((xx - piv[0]) ** 2 + (yy - piv[1]) ** 2) > 125 ** 2
-        dil = cv2.dilate(am, np.ones((3, 3), np.uint8))
+    for am, piv, rk in ((armL_m, (262, 335), 85), (armR_m, (640, 315), 150)):
+        far = ((xx - piv[0]) ** 2 + (yy - piv[1]) ** 2) > rk ** 2
+        dil = cv2.dilate(am, np.ones((7, 7), np.uint8))
         base_a[(dil > 0) & far] = 0
     # chopsticks lay over the torso: paint that strip with kimono colour
     cm = cv2.dilate(poly_mask(shape, chop), np.ones((5, 5), np.uint8))
@@ -151,7 +151,7 @@ def boy():
     yy, xx = np.mgrid[0:H, 0:W]
     for am, piv in ((armL_m, (170, 455)), (armR_m, (385, 455))):
         far = ((xx - piv[0]) ** 2 + (yy - piv[1]) ** 2) > 90 ** 2
-        a[(cv2.dilate(am, np.ones((3, 3), np.uint8)) > 0) & far] = 0
+        a[(cv2.dilate(am, np.ones((7, 7), np.uint8)) > 0) & far] = 0
     base[..., 3] = a.astype(np.uint8)
     save_part(d, "torso", base, (base[..., 3] > 0).astype(np.uint8) * 255, dict(pivot=[283, 860], parent="root", z=20), parts)
     for nm, am, piv in (("armL", armL_m, [170, 455]), ("armR", armR_m, [385, 455])):
