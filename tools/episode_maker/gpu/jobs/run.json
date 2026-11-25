@@ -1,1 +1,1 @@
-{"run_id": "smoke-003", "input": "tools/episode_maker/gpu/inputs/sample", "smoke": true, "backend": "ltx", "only": "", "max_minutes": 60}
+{"run_id": "smoke-004", "task": "clips", "input": "tools/episode_maker/gpu/inputs/sample", "smoke": true, "backend": "ltx", "only": "", "max_minutes": 60}
