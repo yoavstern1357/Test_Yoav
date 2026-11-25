@@ -1,0 +1,33 @@
+{
+  "defaults": {
+    "backend": "ltx",
+    "width": 480,
+    "height": 832,
+    "seconds": 5,
+    "fps": 24,
+    "fit": "contain",
+    "bg": "#FFF3DC"
+  },
+  "clips": [
+    {
+      "id": "sample_uncle_sniff",
+      "start": "../../specs/puppets/uncle.png",
+      "prompt": "A big cheerful bald uncle with a thin mustache in a white kimono with a wide orange belt stands in a sunny old market street. He lifts his head, sniffs the air happily, then raises his chopsticks with a big laughing smile. Gentle natural body motion, the camera stays still.",
+      "seed": 11
+    },
+    {
+      "id": "sample_boy_look",
+      "start": "../../specs/puppets/boy.png",
+      "prompt": "A small boy in a pointed straw hat with an orange chin ribbon and a white kimono with an orange belt stands in a sunny old market street. He looks to the left with curious wide eyes, then turns his head back and smiles. Gentle natural motion, the camera stays still.",
+      "negative_prompt_note": "optional per-clip field 'negative' replaces the default negative prompt",
+      "seed": 12
+    },
+    {
+      "id": "sample_grandma_pleat",
+      "start": "../../specs/puppets/grandma.png",
+      "fit": "contain",
+      "prompt": "A kind grandmother with a grey bun pleats a dumpling with both hands at her wooden food cart while steam rises from the bamboo steamer behind her. She glances up and gives a small warm smile. Soft gentle motion, the camera stays still.",
+      "seed": 13
+    }
+  ]
+}

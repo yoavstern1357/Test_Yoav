@@ -69,13 +69,110 @@ def tts(who, text):
     return wav
 
 
+# ------------------------------------------------------------------ AI clips (`clip` shots)
+def find_clip(spec, spec_dir, name):
+    """Resolve a clip path: absolute, or relative to spec "clips_dir" (default "clips"), the frames dir, or the spec folder."""
+    if os.path.isabs(name) and os.path.exists(name):
+        return name
+    for base in (spec.get("clips_dir", "clips"), spec.get("frames_dir", "frames"), "."):
+        p = os.path.join(spec_dir, base, name)
+        if os.path.exists(p):
+            return p
+    raise FileNotFoundError(f"clip not found: {name} (looked in clips_dir, frames_dir and next to the spec)")
+
+
+def probe_clip(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate,duration:format=duration",
+                        "-of", "json", path], capture_output=True, text=True, check=True)
+    j = json.loads(r.stdout)
+    dur = float((j.get("streams") or [{}])[0].get("duration") or j["format"]["duration"])
+    num, den = (j["streams"][0]["r_frame_rate"].split("/") + ["1"])[:2]
+    return dur, float(num) / float(den or 1)
+
+
+class ClipReader:
+    """Streams the frames of one AI clip (trim, speed, loop, last-frame hold) as PIL images at render size and fps.
+    Frames are requested in time order; asking for an earlier frame restarts the decoder."""
+
+    def __init__(self, path, W, H, fps, trim, speed, loop):
+        self.path, self.W, self.H, self.fps, self.loop = path, W, H, fps, bool(loop)
+        src_dur, _ = probe_clip(path)
+        t0 = float(trim[0]) if trim else 0.0
+        t1 = float(trim[1]) if trim and len(trim) > 1 and trim[1] is not None else src_dur
+        self.t0, self.t1, self.speed = t0, max(t1, t0 + 0.05), float(speed or 1.0)
+        self.n = max(1, int((self.t1 - self.t0) / self.speed * fps))
+        self.proc, self.pos, self.last = None, 0, None
+        self.fsize = W * H * 3
+
+    def _start(self):
+        self.close()
+        vf = (f"setpts=PTS/{self.speed},fps={self.fps},scale={self.W}:{self.H}:force_original_aspect_ratio=increase:flags=lanczos,"
+              f"crop={self.W}:{self.H}")
+        self.proc = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", f"{self.t0:.3f}", "-t", f"{self.t1 - self.t0:.3f}", "-i", self.path,
+                                      "-vf", vf, "-an", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+        self.pos = 0
+
+    def _next(self):
+        buf = self.proc.stdout.read(self.fsize) if self.proc else b""
+        if len(buf) < self.fsize:
+            self.close(); return False
+        self.last = Image.frombytes("RGB", (self.W, self.H), buf)
+        self.pos += 1
+        return True
+
+    def frame(self, t):
+        idx = int(max(t, 0) * self.fps)
+        if self.loop:
+            idx %= self.n
+        idx = min(idx, self.n - 1)
+        if self.proc is None and self.pos == 0 or idx < self.pos - 1:
+            self._start()
+        while self.pos <= idx and self.proc is not None:
+            if not self._next():
+                break
+        return self.last.copy() if self.last is not None else Image.new("RGB", (self.W, self.H), (0, 0, 0))
+
+    def close(self):
+        if self.proc is not None:
+            try:
+                self.proc.stdout.close(); self.proc.kill(); self.proc.wait()
+            except Exception:
+                pass
+        self.proc = None
+
+
+def clip_audio(path, trim, speed, gain_dur):
+    """Audio track of an AI clip (if it has one) as a mono float array at SR, or None."""
+    t0 = float(trim[0]) if trim else 0.0
+    cmd = ["ffmpeg", "-v", "error", "-ss", f"{t0:.3f}"] + (["-t", f"{float(trim[1]) - t0:.3f}"] if trim and len(trim) > 1 and trim[1] is not None else []) + \
+          ["-i", path, "-vn", "-ac", "1", "-ar", str(SR)]
+    sp = float(speed or 1.0)
+    if abs(sp - 1.0) > 1e-3 and 0.5 <= sp <= 2.0:
+        cmd += ["-af", f"atempo={sp}"]
+    cmd += ["-f", "f32le", "-"]
+    r = subprocess.run(cmd, capture_output=True)
+    if r.returncode != 0 or not r.stdout:
+        return None
+    return np.frombuffer(r.stdout, dtype=np.float32)
+
+
 # ------------------------------------------------------------------ timeline
-def build_timeline(spec):
+def build_timeline(spec, spec_dir="."):
     shots, t = [], 0.0
     snap = spec.get("snap_to_beat", False)
     mood, origin = "cozy", 0.0
     for sh in spec["shots"]:
         s = dict(sh)
+        if s.get("clip"):      # AI-generated video clip: dur defaults to the (trimmed, sped-up) clip length
+            s["clip_path"] = find_clip(spec, spec_dir, s["clip"])
+            if "dur" not in s:
+                cd, _ = probe_clip(s["clip_path"])
+                tr = s.get("trim")
+                a0 = float(tr[0]) if tr else 0.0
+                a1 = float(tr[1]) if tr and len(tr) > 1 and tr[1] is not None else cd
+                s["dur"] = max(0.2, (a1 - a0) / float(s.get("speed") or 1.0))
+            s.setdefault("motion", "static")      # no automatic camera move on top of a moving clip (opt in with motion/zoom/punch)
+            s.setdefault("zoom0", 1.0)
         if s.get("mood") and s["mood"] != mood:
             if s["mood"] in synth.NEW_MOODS or mood in synth.NEW_MOODS:
                 origin = t           # music bar grid restarts at a tempo change
@@ -120,6 +217,10 @@ def render_audio(spec, shots, total, out_wav):
     for sh in shots:
         for ln in sh["lines"]:
             put(voice, ln["audio"], ln["start"], 1.0)
+        if sh.get("clip_path") and sh.get("clip_audio"):
+            ca = clip_audio(sh["clip_path"], sh.get("trim"), sh.get("speed"), sh["dur"])
+            if ca is not None:
+                put(sfx, ca[: int(sh["dur"] * SR)], sh["start"], float(sh["clip_audio"]) if not isinstance(sh["clip_audio"], bool) else 1.0)
         for ev in sh.get("sfx", []):
             put(sfx, synth.SFX[ev["name"]](*([ev["d"]] if "d" in ev else [])), sh["start"] + ev["t"], ev.get("gain", 1.0))
         if sh.get("whip") and sh["start"] > 0:
@@ -433,8 +534,10 @@ class Renderer:
         self.spec, self.shots, self.W, self.H, self.fps = spec, shots, W, H, fps
         self.frames_dir = frames_dir
         self.imgs = {}
+        self.readers = {}
         for s in shots:
-            self.load(s["img"])
+            if s.get("img"):
+                self.load(s["img"])
             for k in ("bg", "fg"):
                 if s.get("layers", {}).get(k):
                     self.load(s["layers"][k], rgba=(k == "fg"))
@@ -466,6 +569,19 @@ class Renderer:
             self.imgs[p] = Image.open(p).convert("RGBA" if rgba else "RGB")
         return self.imgs[p]
 
+    def clip_frame(self, s, t_local):
+        key = id(s)
+        rd = self.readers.get(key)
+        if rd is None:
+            rd = self.readers[key] = ClipReader(s["clip_path"], self.W, self.H, self.fps, s.get("trim"), s.get("speed"), s.get("loop"))
+        return rd.frame(t_local)
+
+    def release_clips(self, gt):
+        """Close decoders of shots that are over (keeps the number of ffmpeg processes small)."""
+        for sh in self.shots:
+            if sh.get("clip_path") and id(sh) in self.readers and gt > sh["end"] + 1.0:
+                self.readers.pop(id(sh)).close()
+
     # ---- camera
     def cam_time(self, s, t):
         """Hit-stop: the camera freezes for 0.12 s at each impact."""
@@ -480,7 +596,10 @@ class Renderer:
     def base_frame(self, s, t_local):
         W, H = self.W, self.H
         layers = s.get("layers") or {}
-        img = self.imgs[os.path.join(self.frames_dir, layers.get("bg") or s["img"])]
+        if s.get("clip_path"):
+            img = self.clip_frame(s, t_local)
+        else:
+            img = self.imgs[os.path.join(self.frames_dir, layers.get("bg") or s["img"])]
         tc = self.cam_time(s, t_local)
         p = tc / max(s["dur"], 0.01)
         mult = 1.0
@@ -918,6 +1037,8 @@ class Renderer:
             pf = self.scene(prev, prev["dur"] + t_local)
             fr = Image.blend(pf, fr, ease(t_local / tf))
         fr = self.overlays(fr, s, t_local)
+        if self.readers and self.fidx % 30 == 0:
+            self.release_clips(gt)
         return self.post(fr)
 
 
@@ -936,7 +1057,7 @@ def main():
     if a.preview:
         W, H, fps = 540, 960, 15
     fdir = a.frames_dir or os.path.join(os.path.dirname(os.path.abspath(a.spec)), spec.get("frames_dir", "frames"))
-    shots, total = build_timeline(spec)
+    shots, total = build_timeline(spec, os.path.dirname(os.path.abspath(a.spec)))
     print(f"timeline: {len(shots)} shots, {total:.1f}s", flush=True)
     wav = a.out + ".audio.wav"
     render_audio(spec, shots, total, wav)
