@@ -1,0 +1,488 @@
+{
+ "backend": "qwen3",
+ "license": "Apache-2.0",
+ "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+ "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+ "results": [
+  {
+   "id": "bcbe78da041f9acb",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 4.5,
+   "audio_seconds": 1.68,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single deadpan word, short, flat, solemn.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "bcbe78da041f9acb__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.2,
+   "audio_seconds": 1.12,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single deadpan word, short, flat, solemn.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "bcbe78da041f9acb__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.6,
+   "audio_seconds": 0.96,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single deadpan word, short, flat, solemn.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "bcbe78da041f9acb__v4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.5,
+   "audio_seconds": 1.28,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single deadpan word, short, flat, solemn.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8ac1a4767295561c",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.9,
+   "audio_seconds": 1.44,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single reverent word, short, solemn and awed.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8ac1a4767295561c__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.3,
+   "audio_seconds": 0.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single reverent word, short, solemn and awed.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8ac1a4767295561c__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 2.7,
+   "audio_seconds": 0.96,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single reverent word, short, solemn and awed.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8ac1a4767295561c__v4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 3.0,
+   "audio_seconds": 1.04,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single reverent word, short, solemn and awed.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "6b1711176fdb72df",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 1.44,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single flat deadpan word, short, calm.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "6b1711176fdb72df__v2",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 0.96,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single flat deadpan word, short, calm.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "6b1711176fdb72df__v3",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 4.3,
+   "audio_seconds": 1.6,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single flat deadpan word, short, calm.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "6b1711176fdb72df__v4",
+   "who": "grandma",
+   "status": "ok",
+   "seconds": 2.6,
+   "audio_seconds": 0.96,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a single flat deadpan word, short, calm.",
+    "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice."
+   }
+  },
+  {
+   "id": "8747d6caa38ddfec",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 10.1,
+   "audio_seconds": 3.84,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bold, grand and booming, a deep chesty heroic shout, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8747d6caa38ddfec__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.0,
+   "audio_seconds": 2.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bold, grand and booming, a deep chesty heroic shout, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8747d6caa38ddfec__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.6,
+   "audio_seconds": 2.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bold, grand and booming, a deep chesty heroic shout, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "8747d6caa38ddfec__v4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 4.6,
+   "audio_seconds": 1.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: bold, grand and booming, a deep chesty heroic shout, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "d35d81f9a3e220af",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.7,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a tiny, shaky, whispered mantra, very short and quick, two clipped phrases, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "d35d81f9a3e220af__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 10.0,
+   "audio_seconds": 3.84,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a tiny, shaky, whispered mantra, very short and quick, two clipped phrases, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "d35d81f9a3e220af__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 7.0,
+   "audio_seconds": 2.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a tiny, shaky, whispered mantra, very short and quick, two clipped phrases, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "d35d81f9a3e220af__v4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.9,
+   "audio_seconds": 2.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: a tiny, shaky, whispered mantra, very short and quick, two clipped phrases, no long pauses.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "b2726fb4149734a9",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 6.4,
+   "audio_seconds": 2.48,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: an explosive, booming epic shout, deep thunderous voice, short and punchy.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "b2726fb4149734a9__v2",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 10.9,
+   "audio_seconds": 4.24,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: an explosive, booming epic shout, deep thunderous voice, short and punchy.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "b2726fb4149734a9__v3",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 4.3,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: an explosive, booming epic shout, deep thunderous voice, short and punchy.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "b2726fb4149734a9__v4",
+   "who": "narrator",
+   "status": "ok",
+   "seconds": 4.4,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: an explosive, booming epic shout, deep thunderous voice, short and punchy.",
+    "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses."
+   }
+  },
+  {
+   "id": "9cc814515ad2b4de",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.7,
+   "audio_seconds": 1.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned, a small trembling child's voice, short.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "9cc814515ad2b4de__v2",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 0.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned, a small trembling child's voice, short.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "9cc814515ad2b4de__v3",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 3.0,
+   "audio_seconds": 1.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned, a small trembling child's voice, short.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "9cc814515ad2b4de__v4",
+   "who": "boy",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 1.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: barely audible, stunned, a small trembling child's voice, short.",
+    "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host."
+   }
+  },
+  {
+   "id": "0c5b8cf3d5eb2795",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 8.0,
+   "audio_seconds": 2.88,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: volcanic, full power, a deep chesty roaring bass shout, huge and explosive, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "0c5b8cf3d5eb2795__v2",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 5.3,
+   "audio_seconds": 2.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: volcanic, full power, a deep chesty roaring bass shout, huge and explosive, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "0c5b8cf3d5eb2795__v3",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 6.1,
+   "audio_seconds": 2.24,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: volcanic, full power, a deep chesty roaring bass shout, huge and explosive, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  },
+  {
+   "id": "0c5b8cf3d5eb2795__v4",
+   "who": "uncle",
+   "status": "ok",
+   "seconds": 5.1,
+   "audio_seconds": 1.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Delivery: volcanic, full power, a deep chesty roaring bass shout, huge and explosive, low voice, short and punchy.",
+    "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved."
+   }
+  }
+ ]
+}

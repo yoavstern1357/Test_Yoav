@@ -1,0 +1,140 @@
+[{"stream_name":"stderr","time":9.19833388,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.198387909,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.198394911,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.198399178,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.853106079,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.853137836,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.853141556,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.853144549,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.101433854,"data":"Kaggle\n"}
+,{"stream_name":"stdout","time":11.101471283,"data":"GPU 0: Tesla T4 (UUID: GPU-b39ebfb8-d7f8-cd56-0602-c886289d98ff)\n"}
+,{"stream_name":"stdout","time":11.101475503,"data":"GPU 1: Tesla T4 (UUID: GPU-29631821-c237-6aa2-87ad-7698dba0f5fe)\n"}
+,{"stream_name":"stdout","time":11.101478457,"data":"\n"}
+,{"stream_name":"stdout","time":11.136927324,"data":"Writing generate_tts.py\n"}
+,{"stream_name":"stdout","time":11.491825672,"data":"inputs: /kaggle/input/datasets/thedumplingboy/dumpling-input-ep01v44-voices-fix-001\n"}
+,{"stream_name":"stdout","time":11.510106117,"data":"\n"}
+,{"stream_name":"stdout","time":11.510131502,"data":"==================== qwen3 ====================\n"}
+,{"stream_name":"stdout","time":11.751620944999999,"data":"22:12:07 pinned: torch==2.11.0+cu130 torchvision==0.26.0+cu130 torchaudio==2.11.0+cu130 torchcodec==0.11.0+cu130 triton==3.6.0 numpy==2.1.3\n"}
+,{"stream_name":"stdout","time":91.173479253,"data":"22:13:27 torch 2.11.0+cu130 cuda 13.0 ok\n"}
+,{"stream_name":"stdout","time":92.276773455,"data":"22:13:28 transformers 4.57.3\n"}
+,{"stream_name":"stdout","time":93.085111606,"data":"22:13:28 backend qwen3 (Apache-2.0): 8 lines, 8 to do, 4 variant(s)\n"}
+,{"stream_name":"stdout","time":93.087725777,"data":"22:13:28   bcbe78da041f9acb uncle neutral | Veterans.\n"}
+,{"stream_name":"stdout","time":93.090159894,"data":"22:13:28   8ac1a4767295561c uncle neutral | Behold.\n"}
+,{"stream_name":"stdout","time":93.091137925,"data":"22:13:28   6b1711176fdb72df grandma neutral | Slowly.\n"}
+,{"stream_name":"stdout","time":93.092073262,"data":"22:13:28   8747d6caa38ddfec uncle neutral | For dumpling research!\n"}
+,{"stream_name":"stdout","time":93.096046082,"data":"22:13:28   d35d81f9a3e220af uncle neutral | Be cool. Be cool.\n"}
+,{"stream_name":"stdout","time":93.097126397,"data":"22:13:28   b2726fb4149734a9 narrator neutral | LEGEND SAYS!\n"}
+,{"stream_name":"stdout","time":93.098173991,"data":"22:13:28   9cc814515ad2b4de boy neutral | ...My dad?\n"}
+,{"stream_name":"stdout","time":93.102187013,"data":"22:13:28   0c5b8cf3d5eb2795 uncle neutral | FOR DUMPLING RESEARCH!\n"}
+,{"stream_name":"stdout","time":101.037093887,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stdout","time":101.038213411,"data":"I0000 00:00:1795644816.904075     108 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stdout","time":103.238008489,"data":"\n"}
+,{"stream_name":"stdout","time":103.238651525,"data":"********\n"}
+,{"stream_name":"stdout","time":103.239462245,"data":"Warning: flash-attn is not installed. Will only run the manual PyTorch version. Please install flash-attn for faster inference.\n"}
+,{"stream_name":"stdout","time":103.240652641,"data":"********\n"}
+,{"stream_name":"stdout","time":103.241688868,"data":"\n"}
+,{"stream_name":"stdout","time":103.242552375,"data":"/bin/sh: 1: sox: not found\n"}
+,{"stream_name":"stdout","time":103.243559751,"data":"WARNING:sox:SoX could not be found!\n"}
+,{"stream_name":"stdout","time":103.244366044,"data":"\n"}
+,{"stream_name":"stdout","time":103.245338472,"data":"    If you do not have SoX, proceed here:\n"}
+,{"stream_name":"stdout","time":103.246263816,"data":"     - - - http://sox.sourceforge.net/ - - -\n"}
+,{"stream_name":"stdout","time":103.247211355,"data":"\n"}
+,{"stream_name":"stdout","time":103.248319065,"data":"    If you do (or think that you should) have SoX, double-check your\n"}
+,{"stream_name":"stdout","time":103.249343254,"data":"    path variables.\n"}
+,{"stream_name":"stdout","time":103.250221357,"data":"\n"}
+,{"stream_name":"stdout","time":130.720717349,"data":"\n"}
+,{"stream_name":"stdout","time":131.075345055,"data":"Fetching 4 files:   0%|          | 0/4 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":133.691996462,"data":"Fetching 4 files:  25%|██▌       | 1/4 [00:00\u003c00:01,  2.79it/s]\n"}
+,{"stream_name":"stdout","time":133.692977963,"data":"Fetching 4 files:  75%|███████▌  | 3/4 [00:02\u003c00:01,  1.06s/it]\n"}
+,{"stream_name":"stdout","time":133.694074484,"data":"Fetching 4 files: 100%|██████████| 4/4 [00:02\u003c00:00,  1.34it/s]\n"}
+,{"stream_name":"stdout","time":143.080057379,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":155.748203075,"data":"22:14:31 qwen3 loaded Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign torch.float16\n"}
+,{"stream_name":"stdout","time":155.755663186,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":160.223777954,"data":"22:14:36 ok bcbe78da041f9acb 1.68s in 4.5s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":160.230383547,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":163.441143335,"data":"22:14:39 ok bcbe78da041f9acb__v2 1.12s in 3.2s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":163.443934022,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":166.033282968,"data":"22:14:41 ok bcbe78da041f9acb__v3 0.96s in 2.6s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":166.041391886,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":169.518312498,"data":"22:14:45 ok bcbe78da041f9acb__v4 1.28s in 3.5s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":169.524955224,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":173.369940389,"data":"22:14:49 ok 8ac1a4767295561c 1.44s in 3.9s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":173.377174555,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":175.645917094,"data":"22:14:51 ok 8ac1a4767295561c__v2 0.8s in 2.3s\n"}
+,{"stream_name":"stdout","time":175.652806289,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":178.316149571,"data":"22:14:54 ok 8ac1a4767295561c__v3 0.96s in 2.7s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":178.322718925,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":181.332307323,"data":"22:14:57 ok 8ac1a4767295561c__v4 1.04s in 3.0s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":181.338999599,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":185.142927406,"data":"22:15:01 ok 6b1711176fdb72df 1.44s in 3.8s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":185.149395712,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":187.907664853,"data":"22:15:03 ok 6b1711176fdb72df__v2 0.96s in 2.8s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":187.914466336,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":192.239332806,"data":"22:15:08 ok 6b1711176fdb72df__v3 1.6s in 4.3s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":192.245891302,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":194.870626561,"data":"22:15:10 ok 6b1711176fdb72df__v4 0.96s in 2.6s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":194.874230284,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":205.003157617,"data":"22:15:20 ok 8747d6caa38ddfec 3.84s in 10.1s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":205.010034858,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":210.965965848,"data":"22:15:26 ok 8747d6caa38ddfec__v2 2.24s in 6.0s\n"}
+,{"stream_name":"stdout","time":210.973151033,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":217.526281743,"data":"22:15:33 ok 8747d6caa38ddfec__v3 2.48s in 6.6s\n"}
+,{"stream_name":"stdout","time":217.533688883,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":222.145754536,"data":"22:15:38 ok 8747d6caa38ddfec__v4 1.76s in 4.6s\n"}
+,{"stream_name":"stdout","time":222.15477875,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":229.902004661,"data":"22:15:45 ok d35d81f9a3e220af 2.96s in 7.7s\n"}
+,{"stream_name":"stdout","time":229.904228896,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":239.864442995,"data":"22:15:55 ok d35d81f9a3e220af__v2 3.84s in 10.0s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":239.873397725,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":246.879955856,"data":"22:16:02 ok d35d81f9a3e220af__v3 2.72s in 7.0s\n"}
+,{"stream_name":"stdout","time":246.886378285,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":253.749311246,"data":"22:16:09 ok d35d81f9a3e220af__v4 2.64s in 6.9s\n"}
+,{"stream_name":"stdout","time":253.756137544,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":260.164534012,"data":"22:16:16 ok b2726fb4149734a9 2.48s in 6.4s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":260.166891981,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":271.092221527,"data":"22:16:26 ok b2726fb4149734a9__v2 4.24s in 10.9s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":271.09937908,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":275.413914264,"data":"22:16:31 ok b2726fb4149734a9__v3 1.6s in 4.3s\n"}
+,{"stream_name":"stdout","time":275.42097422,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":279.81829865,"data":"22:16:35 ok b2726fb4149734a9__v4 1.6s in 4.4s\n"}
+,{"stream_name":"stdout","time":279.825423567,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":283.541458444,"data":"22:16:39 ok 9cc814515ad2b4de 1.36s in 3.7s\n"}
+,{"stream_name":"stdout","time":283.548229046,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":285.922246329,"data":"22:16:41 ok 9cc814515ad2b4de__v2 0.88s in 2.4s\n"}
+,{"stream_name":"stdout","time":285.929189617,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":288.89791342,"data":"22:16:44 ok 9cc814515ad2b4de__v3 1.12s in 3.0s\n"}
+,{"stream_name":"stdout","time":288.905246814,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":293.008268654,"data":"22:16:48 ok 9cc814515ad2b4de__v4 1.52s in 4.1s\n"}
+,{"stream_name":"stdout","time":293.010415511,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":300.990582324,"data":"22:16:56 ok 0c5b8cf3d5eb2795 2.88s in 8.0s ['slow_or_rambling']\n"}
+,{"stream_name":"stdout","time":300.997374735,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":306.323139234,"data":"22:17:02 ok 0c5b8cf3d5eb2795__v2 2.0s in 5.3s\n"}
+,{"stream_name":"stdout","time":306.331179675,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":312.375895672,"data":"22:17:08 ok 0c5b8cf3d5eb2795__v3 2.24s in 6.1s\n"}
+,{"stream_name":"stdout","time":312.382677775,"data":"Setting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\n"}
+,{"stream_name":"stdout","time":317.454000394,"data":"22:17:13 ok 0c5b8cf3d5eb2795__v4 1.92s in 5.1s\n"}
+,{"stream_name":"stdout","time":317.820879902,"data":"22:17:13 done: 32 ok, 0 failed; zip /kaggle/working/dumpling_out/qwen3/dumpling_tts.zip\n"}
+,{"stream_name":"stdout","time":322.414785947,"data":"\n"}
+,{"stream_name":"stdout","time":322.414822457,"data":"SUMMARY {'qwen3': 'ok'}\n"}
+,{"stream_name":"stdout","time":322.448127926,"data":"backend: qwen3 | license: Apache-2.0 | model: Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign 5ecdb67327fd37bb2e042aab12ff7391903235d3\n"}
+,{"stream_name":"stdout","time":322.448160277,"data":"bcbe78da041f9acb             ok     1.68s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.45946918,"data":"bcbe78da041f9acb__v2         ok     1.12s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.463287375,"data":"bcbe78da041f9acb__v3         ok     0.96s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.466618549,"data":"bcbe78da041f9acb__v4         ok     1.28s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.470588624,"data":"8ac1a4767295561c             ok     1.44s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.474686265,"data":"8ac1a4767295561c__v2         ok     0.8s [] \n"}
+,{"stream_name":"stdout","time":322.477734133,"data":"8ac1a4767295561c__v3         ok     0.96s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.481136693,"data":"8ac1a4767295561c__v4         ok     1.04s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.483823462,"data":"6b1711176fdb72df             ok     1.44s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.487896256,"data":"6b1711176fdb72df__v2         ok     0.96s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.491473495,"data":"6b1711176fdb72df__v3         ok     1.6s ['slow_or_rambling'] \n"}
+,{"stream_name":"stdout","time":322.49630345,"data":"6b1711176fdb72df__v4         ok     0.96s ['slow_or_rambling'] \n"}
+,{"stream_name":"stderr","time":325.093637166,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":325.093666511,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":325.254936186,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":325.254983223,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":326.067893531,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":326.18407776,"data":"[NbConvertApp] Writing 969436 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":328.784064722,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":329.452238114,"data":"[NbConvertApp] Writing 1345081 bytes to __results__.html\n"}
+]
