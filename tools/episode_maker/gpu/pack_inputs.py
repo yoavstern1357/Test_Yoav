@@ -17,11 +17,21 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("clips_json")
     ap.add_argument("--out", default=os.path.join(HERE, "..", "out", "gpu_input"))
+    ap.add_argument("--skip-missing", action="store_true", help="leave out clips whose start/end image does not exist yet")
     ap.add_argument("--max-side", type=int, default=1920, help="shrink bigger images (the models only use ~480x832 anyway)")
     a = ap.parse_args()
     src_dir = os.path.dirname(os.path.abspath(a.clips_json))
     data = json.load(open(a.clips_json, encoding="utf-8"))
     clips = data["clips"] if isinstance(data, dict) else data
+    if a.skip_missing:
+        def have(c):
+            return all(os.path.exists(c[k] if os.path.isabs(c[k]) else os.path.normpath(os.path.join(src_dir, c[k]))) for k in ("start", "end") if c.get(k))
+        skipped = [c["id"] for c in clips if not have(c)]
+        clips = [c for c in clips if have(c)]
+        if isinstance(data, dict):
+            data["clips"] = clips
+        if skipped:
+            print("skipped (image missing):", ", ".join(skipped))
     out = os.path.abspath(a.out)
     shutil.rmtree(out, ignore_errors=True)
     os.makedirs(os.path.join(out, "images"))

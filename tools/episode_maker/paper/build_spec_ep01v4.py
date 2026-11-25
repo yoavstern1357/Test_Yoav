@@ -60,9 +60,9 @@ def P(kind, t, d, y=0.6, **kw):
 ai("C01", 5.0, id="C01", black=0.6, mood="tension", ambience="street",
    fb=dict(motion="zoom_in", zoom=1.16, focus=[0.5, 0.36], sway=0.5, particles=dict(type="steam", n=10)),
    lines=[L("boy", "Welcome to The Dumpling Boy.", 0.7, 1.05),
-          L("boy", "That's my uncle. He's not the host.", 2.5, 1.22),
-          L("uncle", "Co-host!", 4.4, 1.1)],
-   sfx=[S(0.0, "gong"), S(0.25, "hiss", 2.0, 0.6), S(1.0, "toot", 0.8, 0.45), S(2.55, "toot", 1.1, 0.9), S(4.4, "boing", None, 0.5)],
+          L("boy", "That's my uncle. He's not the host.", 2.45, 1.35),
+          L("uncle", "Co-host!", 4.15, 1.15)],
+   sfx=[S(0.0, "gong"), S(0.25, "hiss", 2.0, 0.6), S(1.0, "toot", 0.8, 0.45), S(2.55, "toot", 1.1, 0.9), S(4.2, "boing", None, 0.5)],
    punch=[dict(t=2.6, scale=1.07)], shake=[dict(t=2.6, d=0.35, amp=10)],
    cards=[P("lower", 2.5, 2.5, y=0.405, text="UNCLE", text2="co-host (self-appointed)"), P("word", 2.65, 0.9, y=0.12, x=0.8, text="TOOT", size=150, rot=8)])
 ai("C01", 1.2, id="C02a", trim=[3.4, 4.6], mood="tension",
@@ -81,7 +81,7 @@ code("C03", 4.5, mood="sparse",
             L("boy", "And, probably, snacks.", 3.45, 1.2)],
      sfx=[S(0.12, "thud", None, 0.9), S(0.14, "page", None, 0.8), S(0.1, "gong", None, 0.7), S(0.9, "pen", 1.8, 0.7), S(1.3, "camel_bell", 1.0, 0.7),
           S(2.3, "snore", 1.8, 0.45), S(3.15, "camel_bell", 1.0, 0.8)])
-code("C04", 4.5, lines=[L("narrator", "Near Shanghai, old Qinglong port shipped ceramics along the sea Silk Road.", 0.15, 1.28)],
+code("C04", 4.5, lines=[L("narrator", "Near Shanghai, old Qinglong port shipped ceramics along the sea Silk Road.", 0.12, 1.38)],
      sfx=[S(0.2, "gull", 0.8, 0.5), S(1.0, "creak", 1.0, 0.6), S(2.5, "flap", 0.7, 0.6), S(3.3, "creak", 1.0, 0.5), S(3.6, "gull", 0.8, 0.5)])
 ai("C05", 4.0, mood="adventure", ambience="street",
    fb=dict(motion="zoom_in", zoom=1.14, focus=[0.46, 0.58], sway=0.6, particles=dict(type="dust", n=14)),
@@ -182,26 +182,26 @@ ai("C17", 3.0, id="C17b", trim=[2.0, 5.0],
 # ============================================================ F. "A LITTLE HISTORY": LEGEND SAYS (1:08.5-1:31.5)
 code("C18", 6.0, mood="sparse",
      lines=[L("boy", "A little history.", 0.15, 1.0),
-            L("narrator", "Legend says, around eighteen seventy-one, a shop in Nanxiang sold one big meat bun.", 2.0, 1.3, caption="Legend says, around 1871, a shop in Nanxiang sold one big meat bun.")],
-     sfx=[S(0.0, "gong", None, 0.7), S(0.9, "stamp", None, 1.0), S(1.0, "impact", None, 0.5), S(1.5, "tear", 0.5, 0.7), S(1.55, "swoosh_big", 0.5, 0.5), S(1.95, "gong", None, 0.55), S(3.0, "rooster", 1.4, 0.45), S(5.0, "boing", None, 0.3)])
+            L("narrator", "Legend says, around eighteen seventy-one, a shop in Nanxiang sold one big meat bun.", 1.72, 1.5, caption="Legend says, around 1871, a shop in Nanxiang sold one big meat bun.")],
+     sfx=[S(0.0, "gong", None, 0.7), S(0.9, "stamp", None, 1.0), S(1.0, "impact", None, 0.5), S(1.5, "tear", 0.5, 0.7), S(1.55, "swoosh_big", 0.5, 0.5), S(1.55, "gong", None, 0.6), S(3.0, "rooster", 1.4, 0.45), S(5.0, "boing", None, 0.3)])
 code("C19", 6.0,
-     lines=[L("narrator", "So he made it smaller, and added soup, set as jelly, that melts when steamed.", 0.3, 1.12)],
+     lines=[L("narrator", "So he made it smaller, and added soup, set as jelly, that melts when steamed.", 0.3, 1.3)],
      sfx=[S(0.1, "swoosh_big", 0.5, 0.5), S(1.05, "boing", None, 0.4), S(3.6, "chop", None, 0.9), S(3.8, "chop", None, 0.9), S(4.0, "chop", None, 0.9), S(4.2, "chop", None, 0.9),
           S(4.7, "flutter", 0.5, 0.7), S(5.05, "hiss", 0.9, 0.5), S(5.2, "sparkle", None, 0.7)])
-ai("C20", 2.0, id="C20a", trim=[0.0, 2.0], mood="adventure",
+ai("C20", 1.5, id="C20a", trim=[0.0, 1.5], mood="adventure",
    fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.12, focus=[0.5, 0.5]),
    fx=[dict(type="flash", t=0.0, d=0.25)],
-   lines=[L("boy", "That's not what he looked like.", 1.45, 1.2)],
    sfx=[S(0.0, "scratch", None, 0.9), S(0.5, "toot", 0.3, 0.5)])
-sh("C20b", 1.0, img="C14.png", motion="zoom_in", zoom0=1.55, zoom=1.6, focus=[0.45, 0.78], sway=0.0,
+sh("C20b", 1.3, img="C14.png", motion="zoom_in", zoom0=1.55, zoom=1.6, focus=[0.45, 0.78], sway=0.0,
+   lines=[L("boy", "That's not what he looked like.", 0.08, 1.25)],
    sfx=[S(0.0, "tick", None, 0.7)])
-ai("C20", 1.0, id="C20c", trim=[3.0, 4.0],
+ai("C20", 1.2, id="C20c", trim=[2.8, 4.0],
    fb=dict(motion="zoom_in", zoom0=1.25, zoom=1.4, focus=[0.45, 0.3]),
-   lines=[L("uncle", "He had my energy.", 0.0, 1.15)], punch=[dict(t=0.0, scale=1.15)])
+   lines=[L("uncle", "He had my energy.", 0.0, 1.25)], punch=[dict(t=0.0, scale=1.15)])
 code("C21", 3.0, lines=[L("boy", "Legend. That's historian for 'please don't quote me.'", 0.25, 1.12)],
      sfx=[S(1.2, "stamp", None, 0.9), S(1.9, "tick", None, 0.7)])
-code("C22", 4.0, lines=[L("boy", "Many in Nanxiang still say 'xiaolong mantou.'", 0.15, 1.12, caption="Many in Nanxiang still say \"xiaolong mantou.\""),
-                        L("uncle", "Two names? Two dumplings.", 2.35, 1.05)],
+code("C22", 4.0, lines=[L("boy", "Many in Nanxiang still say 'xiaolong mantou.'", 0.1, 1.3, caption="Many in Nanxiang still say \"xiaolong mantou.\""),
+                        L("uncle", "Two names? Two dumplings.", 2.2, 1.1)],
      sfx=[S(0.15, "pop", None, 0.8), S(3.2, "boing", None, 0.8), S(3.38, "boing", None, 0.6)])
 
 # ============================================================ G. DAD'S PAGE AND THE BRIDGE (1:31.5-1:45.5)
@@ -228,10 +228,10 @@ ai("C26", 3.0, id="C26b", trim=[0.0, 3.0],
 ai("C27", 1.5, id="C27a", trim=[0.0, 1.5], mood="adventure",
    fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.1, focus=[0.5, 0.5]),
    lines=[L("boy", "Sound familiar?", 0.3, 1.0)], sfx=[S(0.1, "boing", None, 0.6)])
-ai("C27", 1.8, id="C27b", trim=[1.5, 3.3], mood="epic",
+ai("C27", 2.4, id="C27b", trim=[1.5, 3.9], mood="epic",
    fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.15, focus=[0.45, 0.5]),
-   lines=[L("grandma", "Then he went south. To the dim sum city.", 0.1, 1.0)], sfx=[S(0.0, "whoosh", None, 0.5)])
-code("C27I", 1.7, sfx=[S(0.0, "sparkle", None, 0.7), S(0.3, "chug", 1.3, 0.5)])
+   lines=[L("grandma", "Then he went south. To the dim sum city.", 0.05, 1.08)], sfx=[S(0.0, "whoosh", None, 0.5)])
+code("C27I", 1.1, sfx=[S(0.0, "sparkle", None, 0.7), S(0.3, "chug", 1.3, 0.5)])
 ai("C28", 4.0, mood="tender", transition="fade", fade=0.3,
    fb=dict(motion="zoom_in", zoom0=1.0, zoom=1.1, focus=[0.5, 0.45], particles=dict(type="dust", n=14)),
    lines=[L("boy", "Dad was right... the best part is worth the wait.", 0.75, 0.97)],

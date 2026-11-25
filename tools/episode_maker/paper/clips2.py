@@ -112,13 +112,13 @@ class C06(Clip):
                 # handwriting reveals line by line
                 d = ImageDraw.Draw(fr, "RGBA")
                 for li, tx in enumerate(self.LINES):
-                    chars, wid = cached(("hl", li), lambda tx=tx, li=li: hand_line(tx, 130, seed=li + 4))
+                    chars, wid = cached(("hl", li), lambda tx=tx, li=li: hand_line(tx, 158, seed=li + 4))
                     rv = seg(t, 0.8 + li * 0.18, 0.95 + li * 0.18 + 0.1)
-                    draw_hand_line(fr, chars, wid, 170, 420 + li * 180, rv)
+                    draw_hand_line(fr, chars, wid, 150, 400 + li * 230, rv)
                 # little dumpling doodle
                 dd = cached(("doodle",), lambda: xlb(150))
                 if t > 1.2:
-                    blit(fr, dd, 800, 1240, rot=-12, alpha=min(1, (t - 1.2) * 4) * 0.8)
+                    blit(fr, dd, 790, 1330, rot=-12, scale=1.5, alpha=min(1, (t - 1.2) * 4) * 0.8)
         else:
             # flick to the last page: torn edge, fingertip slides along the tear
             q = seg(t, 1.55, 1.8)
@@ -836,3 +836,40 @@ class C24(Clip):
             fr = fr.resize((W, H), Image.BICUBIC, box=((W - vw) / 2, (H - vh) / 2 - 40 * (z - 1), (W + vw) / 2, (H + vh) / 2 - 40 * (z - 1)))
         dust(fr, t, 30, 8, 190)
         return final_grain(fr, 0.035)
+
+
+# ------------------------------------------------------------------ C27I: the dotted line glows and slides south
+from .clips import ROUTE, draw_route
+
+
+class C27I(Clip):
+    name, dur, step = "C27I", 1.1, 12
+
+    def frame(self, t, ts):
+        world = map_world()
+        v = View(640, 1560, 1.5)
+        fr = v.bg(world)
+        draw_route(fr, v, 1.0, ts, dot=10)
+        pts = catmull([(620, 1650), (590, 1730), (545, 1810), (470, 1890)], 12)
+        q = smooth(seg(ts, 0.1, 0.85))
+        n = int(len(pts) * q)
+        glow = Image.new("RGBA", fr.size, (0, 0, 0, 0))
+        gd = ImageDraw.Draw(glow)
+        for i in range(0, n, 2):
+            x, y = v.pt(*pts[i])
+            r = 16 * v.s
+            gd.ellipse((x - r * 2.2, y - r * 2.2, x + r * 2.2, y + r * 2.2), fill=(255, 190, 60, 120))
+        glow = glow.filter(ImageFilter.GaussianBlur(14))
+        fr.paste(glow, (0, 0), glow)
+        d = ImageDraw.Draw(fr)
+        for i in range(0, n, 2):
+            x, y = v.pt(*pts[i])
+            r = 9 * v.s
+            d.ellipse((x - r, y - r, x + r, y + r), fill=PAL["orange"], outline=(255, 244, 226), width=2)
+        if n > 0:
+            x, y = v.pt(*pts[min(n, len(pts)) - 1])
+            r = (24 + 6 * math.sin(ts * 20)) * v.s
+            d.ellipse((x - r, y - r, x + r, y + r), fill=(255, 220, 120))
+            d.ellipse((x - r * .5, y - r * .5, x + r * .5, y + r * .5), fill=(255, 250, 230))
+        # paper-cut compass arrow pointing south
+        return final_grain(fr, 0.04)

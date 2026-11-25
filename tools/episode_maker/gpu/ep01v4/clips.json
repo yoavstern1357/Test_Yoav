@@ -1,0 +1,190 @@
+{
+  "defaults": {
+    "backend": "ltx",
+    "width": 480,
+    "height": 832,
+    "seconds": 5,
+    "fps": 24,
+    "fit": "cover",
+    "upscale": [
+      720,
+      1280
+    ],
+    "style": "2D picture-book cartoon, soft round shapes, flat pastel colors, consistent character design, thick brown outlines, smooth gentle animation, the camera stays steady",
+    "negative": "realistic, photorealistic, 3D render, photo, style change, deformed hands, extra limbs, extra fingers, extra people, text, watermark, subtitles, logo, blurry, low quality, distorted face, changing clothes, morphing, flickering, scene cut, camera shake"
+  },
+  "clips": [
+    {
+      "id": "C01",
+      "start": "../../specs/frames/ep01v4/C01.png",
+      "prompt": "The boy in the center stands still and taps his chopstick microphone once, his hat ribbon flutters in the breeze. Behind him the uncle floats slowly turning in the air, steam jets from both of his ears like whistling kettles. The camera pushes in slowly.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1000,
+      "cond_noise": 0.15
+    },
+    {
+      "id": "C05",
+      "start": "../../specs/frames/ep01v4/C05.png",
+      "prompt": "The metro car sways gently with the rhythm of the train, the boy turns his open journal, the uncle snores with his head nodding, and the camel in the aisle slowly turns its head toward the camera and blinks. City lights slide past the window.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1017,
+      "cond_noise": 0.15
+    },
+    {
+      "id": "C08",
+      "start": "../../specs/frames/ep01v4/C08.png",
+      "prompt": "The boy walks backward toward the camera at a brisk host pace, his hat bouncing and his hand with the chopstick microphone swinging; lanterns and willow leaves sway. Far behind him the uncle floats slowly across the background on a ribbon of steam. The camera tracks backward with the boy.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1034,
+      "cond_noise": 0.22
+    },
+    {
+      "id": "C09",
+      "start": "../../specs/frames/ep01v4/C09.png",
+      "prompt": "The boy points his chopstick microphone to the right; behind him the uncle drifts slowly past with his eyes closed and a happy smile, tied to a stretched ribbon of steam like a leash; leaves and wind chimes sway.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1051,
+      "cond_noise": 0.18
+    },
+    {
+      "id": "C10",
+      "start": "../../specs/frames/ep01v4/C10.png",
+      "prompt": "Extreme close-up of the uncle's face: his nose sniffs twice, his closed eyes then open wide and turn into two heart-shaped puffs of steam, his thin mustache twitches.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1068,
+      "cond_noise": 0.22
+    },
+    {
+      "id": "C11",
+      "start": "../../specs/frames/ep01v4/C11.png",
+      "prompt": "The lid of the top bamboo steamer lifts slowly, steam parts like a curtain and a basket of glossy glowing dumplings appears; steam keeps rising and the lanterns sway softly.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1085,
+      "cond_noise": 0.15
+    },
+    {
+      "id": "C12",
+      "start": "../../specs/frames/ep01v4/C12.png",
+      "prompt": "The uncle's chopsticks dart toward a dumpling and bounce off the boy's chopstick held across like a barrier; the boy leans back, then the uncle lifts the dumpling high like a trophy with his chest puffed out and a huge grin.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1102,
+      "cond_noise": 0.2
+    },
+    {
+      "id": "C13",
+      "start": "../../specs/frames/ep01v4/C13.png",
+      "prompt": "The uncle puts the whole dumpling in his mouth, his cheeks puff out, one eye twitches and a sweat drop swells on his bald head; then he shoots straight up into the air with steam blasting from both ears and his mustache standing up.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1119,
+      "cond_noise": 0.3,
+      "end": "../../specs/frames/ep01v4/C13_end.png"
+    },
+    {
+      "id": "C14",
+      "start": "../../specs/frames/ep01v4/C14.png",
+      "prompt": "The uncle skids to a stop with steam still leaking from one ear and his tongue hanging out, fanning his tongue with his hand; the boy in the foreground stays perfectly still, looking at the camera.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1136,
+      "cond_noise": 0.18
+    },
+    {
+      "id": "C15",
+      "start": "../../specs/frames/ep01v4/C15.png",
+      "prompt": "Slow and calm: chopsticks lift one dumpling onto a soup spoon and steam rises from it; the uncle sits stiff and upright with an ice pack on his cheek; the boy holds the spoon steady. Symmetrical, solemn movement.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1153,
+      "cond_noise": 0.12
+    },
+    {
+      "id": "C16",
+      "start": "../../specs/frames/ep01v4/C16.png",
+      "prompt": "The uncle holds absolutely still with crossed eyes and his nose almost touching the spoon, a sweat drop slowly slides down his face, steam rises from the spoon and the steamer tower beside him wobbles slightly.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1170,
+      "cond_noise": 0.12
+    },
+    {
+      "id": "C17",
+      "start": "../../specs/frames/ep01v4/C17.png",
+      "prompt": "The uncle sips from the spoon and closes his eyes in bliss, soft golden light glows and tiny hearts and flower petals float upward; the boy nods with a small smile.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1187,
+      "cond_noise": 0.2
+    },
+    {
+      "id": "C20",
+      "start": "../../specs/frames/ep01v4/C20.png",
+      "prompt": "The uncle stands in a proud hero pose with a napkin cape and a soup spoon as a sword; the napkin cape flutters in the wind and the spoon rises slowly; a faint wisp of steam still comes from one ear.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1204,
+      "cond_noise": 0.2
+    },
+    {
+      "id": "C23",
+      "start": "../../specs/frames/ep01v4/C23.png",
+      "prompt": "Warm sepia dusk: Dad's silhouette seen from behind slowly lowers a spoon over a steaming dumpling, steam rises and curls; lantern light flickers gently. The camera barely moves.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1221,
+      "cond_noise": 0.1
+    },
+    {
+      "id": "C25",
+      "start": "../../specs/frames/ep01v4/C25.png",
+      "prompt": "Seen from behind at dusk, the uncle sets one dumpling on a spoon and waits without moving, then slowly hands the spoon to the boy; their feet dangle gently over the water and lantern light glints on the canal.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1238,
+      "cond_noise": 0.12
+    },
+    {
+      "id": "C26",
+      "start": "../../specs/frames/ep01v4/C26.png",
+      "prompt": "The old grandma folds dumplings with fast blurry hands, then freezes mid-fold and looks up in surprise, then hurries toward the camera with a determined look.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1255,
+      "cond_noise": 0.22
+    },
+    {
+      "id": "C27",
+      "start": "../../specs/frames/ep01v4/C27.png",
+      "prompt": "The grandma points at the old stool, then turns and points far into the distance toward the south; the boy in the foreground raises one eyebrow and looks at the camera.",
+      "seconds": 5,
+      "variants": 2,
+      "seed": 1272,
+      "cond_noise": 0.2
+    },
+    {
+      "id": "C28",
+      "start": "../../specs/frames/ep01v4/C28.png",
+      "prompt": "Soft close-up: the boy's eyes move to the camera and he gives a small warm smile; his hat ribbon stirs gently in a breeze and the warm light glows.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1289,
+      "cond_noise": 0.1
+    },
+    {
+      "id": "C29",
+      "start": "../../specs/frames/ep01v4/C29.png",
+      "prompt": "One tiny puff of steam toots from the uncle's ear while he gives a thumbs up with his tongue in an ice bucket; the camel beside him blinks slowly and stares at the camera.",
+      "seconds": 4,
+      "variants": 2,
+      "seed": 1306,
+      "cond_noise": 0.15
+    }
+  ]
+}

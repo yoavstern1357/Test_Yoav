@@ -49,14 +49,14 @@
     {
      "who": "boy",
      "text": "That's my uncle. He's not the host.",
-     "at": 2.5,
-     "speed": 1.22
+     "at": 2.45,
+     "speed": 1.35
     },
     {
      "who": "uncle",
      "text": "Co-host!",
-     "at": 4.4,
-     "speed": 1.1
+     "at": 4.15,
+     "speed": 1.15
     }
    ],
    "sfx": [
@@ -83,7 +83,7 @@
      "gain": 0.9
     },
     {
-     "t": 4.4,
+     "t": 4.2,
      "name": "boing",
      "gain": 0.5
     }
@@ -299,8 +299,8 @@
     {
      "who": "narrator",
      "text": "Near Shanghai, old Qinglong port shipped ceramics along the sea Silk Road.",
-     "at": 0.15,
-     "speed": 1.28
+     "at": 0.12,
+     "speed": 1.38
     }
    ],
    "sfx": [
@@ -1528,8 +1528,8 @@
     {
      "who": "narrator",
      "text": "Legend says, around eighteen seventy-one, a shop in Nanxiang sold one big meat bun.",
-     "at": 2.0,
-     "speed": 1.3,
+     "at": 1.72,
+     "speed": 1.5,
      "caption": "Legend says, around 1871, a shop in Nanxiang sold one big meat bun."
     }
    ],
@@ -1562,9 +1562,9 @@
      "gain": 0.5
     },
     {
-     "t": 1.95,
+     "t": 1.55,
      "name": "gong",
-     "gain": 0.55
+     "gain": 0.6
     },
     {
      "t": 3.0,
@@ -1590,7 +1590,7 @@
      "who": "narrator",
      "text": "So he made it smaller, and added soup, set as jelly, that melts when steamed.",
      "at": 0.3,
-     "speed": 1.12
+     "speed": 1.3
     }
    ],
    "sfx": [
@@ -1646,7 +1646,7 @@
   },
   {
    "id": "C20a",
-   "dur": 2.0,
+   "dur": 1.5,
    "tail": 0.0,
    "transition": "cut",
    "clip": "C20.mp4",
@@ -1663,7 +1663,7 @@
    },
    "trim": [
     0.0,
-    2.0
+    1.5
    ],
    "mood": "adventure",
    "fx": [
@@ -1671,14 +1671,6 @@
      "type": "flash",
      "t": 0.0,
      "d": 0.25
-    }
-   ],
-   "lines": [
-    {
-     "who": "boy",
-     "text": "That's not what he looked like.",
-     "at": 1.45,
-     "speed": 1.2
     }
    ],
    "sfx": [
@@ -1697,7 +1689,7 @@
   },
   {
    "id": "C20b",
-   "dur": 1.0,
+   "dur": 1.3,
    "tail": 0.0,
    "transition": "cut",
    "img": "C14.png",
@@ -1709,6 +1701,14 @@
     0.78
    ],
    "sway": 0.0,
+   "lines": [
+    {
+     "who": "boy",
+     "text": "That's not what he looked like.",
+     "at": 0.08,
+     "speed": 1.25
+    }
+   ],
    "sfx": [
     {
      "t": 0.0,
@@ -1719,7 +1719,7 @@
   },
   {
    "id": "C20c",
-   "dur": 1.0,
+   "dur": 1.2,
    "tail": 0.0,
    "transition": "cut",
    "clip": "C20.mp4",
@@ -1735,7 +1735,7 @@
     ]
    },
    "trim": [
-    3.0,
+    2.8,
     4.0
    ],
    "lines": [
@@ -1743,7 +1743,7 @@
      "who": "uncle",
      "text": "He had my energy.",
      "at": 0.0,
-     "speed": 1.15
+     "speed": 1.25
     }
    ],
    "punch": [
@@ -1790,15 +1790,15 @@
     {
      "who": "boy",
      "text": "Many in Nanxiang still say 'xiaolong mantou.'",
-     "at": 0.15,
-     "speed": 1.12,
+     "at": 0.1,
+     "speed": 1.3,
      "caption": "Many in Nanxiang still say \"xiaolong mantou.\""
     },
     {
      "who": "uncle",
      "text": "Two names? Two dumplings.",
-     "at": 2.35,
-     "speed": 1.05
+     "at": 2.2,
+     "speed": 1.1
     }
    ],
    "sfx": [
@@ -2113,7 +2113,7 @@
   },
   {
    "id": "C27b",
-   "dur": 1.8,
+   "dur": 2.4,
    "tail": 0.0,
    "transition": "cut",
    "clip": "C27.mp4",
@@ -2130,15 +2130,15 @@
    },
    "trim": [
     1.5,
-    3.3
+    3.9
    ],
    "mood": "epic",
    "lines": [
     {
      "who": "grandma",
      "text": "Then he went south. To the dim sum city.",
-     "at": 0.1,
-     "speed": 1.0
+     "at": 0.05,
+     "speed": 1.08
     }
    ],
    "sfx": [
@@ -2151,7 +2151,7 @@
   },
   {
    "id": "C27I",
-   "dur": 1.7,
+   "dur": 1.1,
    "tail": 0.0,
    "transition": "cut",
    "clip": "../out/ep01v4/code/C27I.mp4",
