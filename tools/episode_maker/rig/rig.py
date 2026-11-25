@@ -211,7 +211,7 @@ class Face:
         cx, cy = self.turn_c; rx, ry = self.turn_r
         r2 = ((xx - cx) / rx) ** 2 + ((yy - cy) / ry) ** 2
         wgt = np.clip(1 - r2, 0, 1) ** 0.8
-        sx = turn * 0.2 * rx * wgt
+        sx = turn * 0.28 * rx * wgt
         sy = pitch * 0.14 * ry * wgt
         # cheek puff (chewing): push outward horizontally in the lower face
         if cheek:

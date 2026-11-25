@@ -129,6 +129,8 @@ def render(t, cam_z, cam_x, rays=True):
             top = [P(X, b["h"], z0 - 0.15), P(X, b["h"] + 0.9, z0 + 0.2), P(X, b["h"] + 0.9, z1 - 0.2), P(X, b["h"], z1 + 0.15)]
             d.polygon(top, fill=mix(b["roof"], HAZE, fog * 0.6 + 0.1), outline=line)
         else:
+            if dist < 2.6:
+                continue
             sway = math.sin(t * 1.7 + zc) * 0.12
             fog = min(1.0, dist / 70)
             Z = zc

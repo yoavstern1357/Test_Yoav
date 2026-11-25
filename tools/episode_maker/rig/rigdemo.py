@@ -16,7 +16,7 @@ from rig import Character, T, R, S, about, smooth
 import street
 
 W, H = street.W, street.H
-DUR = 9.6
+DUR = 10.0
 
 # ----------------------------------------------------------------- helpers
 def K(t, pts, ease=True):
@@ -159,7 +159,7 @@ class Scene:
         head["ty"] += -8 * sniff
         # "For science!" 5.4-6.6: anticipation, arm up with overshoot, body lifts
         ant = pulse(t, 5.15, 5.45, 0.12, 0.1)
-        raise_ = K(t, [(5.3, 0), (5.45, -14), (5.62, 92), (5.78, 78), (6.3, 80), (6.75, 62), (7.0, 28), (7.25, 12), (7.55, 4), (8.0, 4)])
+        raise_ = K(t, [(5.3, 0), (5.45, -14), (5.62, 120), (5.78, 108), (6.7, 112), (6.9, 78), (6.97, 70), (7.2, 28), (7.45, 10), (7.9, 4)])
         if t > 5.3: armL["rot"] = raise_ + armL["rot"] * (1 - smooth((t - 5.3) / 0.2))
         up = pulse(t, 5.45, 6.6, 0.15, 0.3)
         root["ty"] += -26 * up
@@ -261,7 +261,7 @@ class Scene:
         pan = pulse(t, 6.5, 7.9, 0.12, 0.3)
         if pan > 0:
             wob = math.sin((t - 6.5) * 14) * 6
-            armL = dict(rot=armL["rot"] * (1 - pan) + pan * (95 + wob)); armR = dict(rot=armR["rot"] * (1 - pan) + pan * (-95 - wob))
+            armL = dict(rot=armL["rot"] * (1 - pan) + pan * (72 + wob)); armR = dict(rot=armR["rot"] * (1 - pan) + pan * (-72 - wob))
             hop = max(0, math.sin((t - 6.5) * 9)) * pulse(t, 6.5, 7.3, 0.05, 0.3)
             root["ty"] = root.get("ty", 0) - 30 * hop
             head["rot"] += 4 * math.sin((t - 6.5) * 9) * pan
@@ -275,7 +275,7 @@ class Scene:
             pose["legL"] = dict(rot=24 * s * run, ty=-60 * max(0, s) * run); pose["legR"] = dict(rot=-24 * s * run, ty=-60 * max(0, -s) * run)
             root["ty"] = -22 * abs(math.sin(pr)) * run; pose["torso"] = dict(rot=7 * run, tx=0)
             armL = dict(rot=30 * s + 20); armR = dict(rot=-30 * s - 20)
-            x = 0.27 * W + 1.4 * W * (smooth(u / 1.0) ** 1.3)
+            x = 0.27 * W + 1.45 * W * (smooth(u / 1.15) ** 1.3)
         pose["head"] = head; pose["armL"] = armL; pose["armR"] = armR
         pose["torso"].setdefault("tx", 0)
         return pose, root, (x, 1176), e
@@ -332,20 +332,21 @@ class Scene:
         bp, br, bpos, be = self.boy_pose(t)
         self.upos = upos
         # catch point: chopstick tip when the arm is at the catch angle
-        cp_pose = dict(up); cp_pose["armL"] = dict(rot=62)
-        self.catch_pt = self.uncle.screen_point(upos, cp_pose, "armL", (140, 335), root=ur)
+        cu, cr_, cpos, _ = self.uncle_pose(6.97)
+        self.catch_pt = self.uncle.screen_point(cpos, cu, "armL", (140, 335), root=cr_)
+        tip_now = self.uncle.screen_point(upos, up, "armL", (140, 335), root=ur)
         # shadows
         sh = np.zeros((H, W), np.float32)
-        for (pos, w, lift) in ((upos, 300, -ur.get("ty", 0)), (bpos, 160, -br.get("ty", 0))):
-            a = 0.30 * math.exp(-max(0, lift) / 200)
+        for (pos, w, lift) in ((upos, 210, -ur.get("ty", 0)), (bpos, 115, -br.get("ty", 0))):
+            a = 0.22 * math.exp(-max(0, lift) / 200)
             cv2.ellipse(sh, (int(pos[0]), int(pos[1] - 8)), (int(w * (1 - max(0, lift) / 700)), int(w * 0.14)), 0, 0, 360, a, -1, cv2.LINE_AA)
         sh = cv2.GaussianBlur(sh, (0, 0), 6)
         bgf = bg * (1 - sh[..., None]) + np.array([90, 60, 40], np.float32) * sh[..., None] * 0.0
         bgf = bg * (1 - sh[..., None] * 0.9)
-        nsub = 3 if (t > 8.0) else 1
+        nsub = 6 if (t > 7.85) else 1
         acc = np.zeros_like(canvas)
         for k in range(nsub):
-            dt = (k - (nsub - 1) / 2) * (1 / 24 / nsub) * 1.0 if nsub > 1 else 0
+            dt = (k / (nsub - 1) - 0.5) * (0.5 / 24) if nsub > 1 else 0
             tt = t + dt
             up, ur, upos2, _ = self.uncle_pose(tt); bp, br, bpos2, _ = self.boy_pose(tt)
             c = np.zeros_like(canvas)
@@ -354,12 +355,12 @@ class Scene:
             self.boy.render(c, bpos2, bp, face=self.boy_face(tt), root=br)
             acc += c / nsub
         # dumpling (in front of uncle's face, behind hand) - keep simple: on top
-        if 5.99 < t < 7.05:
-            dpos = self.dump_pos(t) if t < 6.95 else self.mouth_pt(upos, up, ur)
-            if t >= 6.95:
-                u = (t - 6.95) / 0.1
-                cp = np.array(self.catch_pt); mp = np.array(self.mouth_pt(upos, up, ur))
-                dpos = tuple(cp * (1 - clamp(u)) + mp * clamp(u))
+        if 5.99 < t < 7.12:
+            dpos = self.dump_pos(t)
+            if t >= 6.97:
+                u = smooth((t - 7.0) / 0.12)
+                cp = np.array(tip_now); mp = np.array(self.mouth_pt(upos, up, ur))
+                dpos = tuple(cp * (1 - u) + mp * u)
             self.draw_dumpling(acc, dpos, t)
         out = bgf * (1 - acc[..., 3:4] / 255) + acc[..., :3]
         # petals + light
@@ -370,7 +371,7 @@ class Scene:
         out = self.fx(out, t, upos, bpos)
         # vignette + warm grade
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
-        v = 1 - 0.25 * (((xx - W / 2) / (W / 1.2)) ** 2 + ((yy - H / 2) / (H / 1.2)) ** 2)
+        v = 1 - 0.14 * (((xx - W / 2) / (W / 1.2)) ** 2 + ((yy - H / 2) / (H / 1.2)) ** 2)
         out = out * v[..., None] * np.array([1.02, 1.0, 0.96], np.float32)
         return np.clip(out, 0, 255).astype(np.uint8)
 
@@ -401,6 +402,7 @@ class Scene:
                 y = rnd.uniform(500, 1200); x0 = rnd.uniform(0, W * 1.2); ln = rnd.uniform(160, 420)
                 d.line([(x0 * 2, y * 2), ((x0 - ln) * 2, y * 2)], fill=(255, 250, 238, int(170 * a)), width=int(rnd.uniform(3, 7)))
         a = np.array(ov.resize((W, H), Image.LANCZOS)).astype(np.float32)
+        a = cv2.GaussianBlur(a, (0, 0), 3.0)
         al = a[..., 3:4] / 255
         return out * (1 - al) + a[..., :3] * al
 
