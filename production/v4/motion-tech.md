@@ -85,3 +85,6 @@ Checked with web search only (huggingface.co is not reachable from the build con
 - Start-up cost: model download is not cached between Kaggle sessions; batch large.
 - Not tested: Wan 2.1 FLF2V 14B (GGUF Q4 needs about 10 GB plus offload; expected 20+ min per clip, rejected on budget), LTX 0.9.8 latent upsampler (second pass 2x; could replace Real-ESRGAN but costs GPU time), keyframes with 3+ stills (code path validated on a tiny model and in the mock backend only; two-keyframe path validated on real weights).
 - Two workers loading the same big model at the same time worked for ltx98d (shard-wise 4-bit loading); two Wan workers did not (RAM). Run Wan with `--gpus 1` if it is ever needed.
+
+## KNOWN BUG (found 2026-11-26 in ep01v44-clips-001)
+The RIFE x2 pass in postprocess.py writes every interpolated (even-numbered) frame corrupted (horizontal stripes). Until fixed, set "post": {"rife": 0} (or drop interpolated frames on install: `select='not(mod(n\,2))',setpts=N/12/TB,fps=24`, which gives clean anime-style "on twos" motion; this is what Episode 1 v4.4 uses).
