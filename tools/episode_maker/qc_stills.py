@@ -36,6 +36,7 @@ TH = dict(
     person_min_h=0.12,   # ignore person boxes shorter than this share of the frame height (background crowd, props)
     soft=0.45,           # sharpness / folder median below this = SOFT
     small_face=8.0,      # largest face height in % of the frame height
+    min_face=0.035,      # ignore face boxes shorter than this share of the frame height (lanterns, buttons, background)
 )
 
 
@@ -64,9 +65,12 @@ class Faces:
             self.det.setInputSize((g.shape[1], g.shape[0]))
             _, d = self.det.detect(g)
             for x in ([] if d is None else d):
-                if x[14] >= TH["face_score"] and x[3] / sc >= 0.025 * img.shape[0]:
+                if x[14] >= TH["face_score"] and x[3] / sc >= TH["min_face"] * img.shape[0]:
                     out.append((x[:4] / sc, float(x[14])))
-        return nms(out, 0.3, contain=0.6)
+        keep = nms(out, 0.3, contain=0.6)
+        # a face whose centre lies inside a bigger kept face is a part of it (mouth or eye found at another scale)
+        return [(b, s) for b, s in keep if not any(k[2] > b[2] and k[0] < b[0] + b[2] / 2 < k[0] + k[2] and k[1] < b[1] + b[3] / 2 < k[1] + k[3]
+                                                      for k, _ in keep)]
 
 
 class Persons:
@@ -131,17 +135,13 @@ def base_id(sid):
 
 
 def script_expect(path):
-    """START column -> <id>, END column -> <id>_end (character names via qc_clips.CHAR_WORDS)."""
+    """Characters named in the START or END column -> both <id> and <id>_end. The END column often describes only what
+    changes, so the union is the expectation for both stills (as in qc_clips.load_script_chars)."""
     out = {}
-    for ln in open(path, encoding="utf-8"):
-        m = re.match(r"\|\s*(C\d+)\b", ln)
-        if not m:
+    for cid, s, e in QC.script_rows(path):     # v4.5+ tables: the Faces column; older tables: START / END cells
+        if cid in out:                          # first table wins (later tables, e.g. timing, reuse the clip ids)
             continue
-        cells = [c.strip() for c in ln.strip().strip("|").split("|")]
-        if len(cells) < 5:
-            continue
-        out[m.group(1)] = QC.expected_chars(cells[3])
-        out[m.group(1) + "_end"] = QC.expected_chars(cells[4])
+        out[cid] = out[cid + "_end"] = sorted(set(s) | set(e))
     return out
 
 
@@ -238,6 +238,7 @@ def main():
     ap.add_argument("--no-land", action="store_true", help="skip *_land stills")
     ap.add_argument("--md"); ap.add_argument("--json"); ap.add_argument("--sheet", help="contact sheet PNG with boxes and flags")
     ap.add_argument("--sheet-cols", type=int, default=8)
+    ap.add_argument("--gt", help="JSON {\"dup\": [still ids with a duplicated/extra person seen by eye]}: prints precision/recall of DUP")
     ap.add_argument("--fetch-models", action="store_true")
     a = ap.parse_args()
     if a.fetch_models:
@@ -277,6 +278,15 @@ def main():
         for x in r["flags"]:
             fl[x] = fl.get(x, 0) + 1
     summary = f"{len(rows)} stills: {n['FAIL']} FAIL, {n['WARN']} WARN, {n['PASS']} PASS. Flags: " + ", ".join(f"{k} {v}" for k, v in sorted(fl.items(), key=lambda x: -x[1]))
+    if a.gt:
+        gt = set(json.load(open(a.gt))["dup"])
+        ids = {r["id"] for r in rows}
+        gt &= ids
+        flagged = {r["id"] for r in rows if "DUP" in r["flags"]}
+        tp = flagged & gt
+        summary += (f"\nDUP vs ground truth ({len(gt)} stills with a duplicate/extra person by eye): flagged {len(flagged)}, "
+                    f"true {len(tp)}, precision {len(tp) / max(1, len(flagged)):.2f}, recall {len(tp) / max(1, len(gt)):.2f}. "
+                    f"Missed: {' '.join(sorted(gt - flagged)) or '-'}. False alarms: {' '.join(sorted(flagged - gt)) or '-'}")
     print("\n".join(lines)); print(summary)
     if a.md:
         open(a.md, "w").write("\n".join(lines) + "\n\n" + summary + "\n")

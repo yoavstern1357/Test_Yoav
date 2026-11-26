@@ -150,22 +150,34 @@ def load_clip_prompts(path):
     return {c["id"]: c.get("prompt", "") for c in j.get("clips", [])}
 
 
-def load_script_chars(path):
-    """Expected on-screen characters per clip from an episode script table (scripts/episode-XX.md):
-    rows '| Cxx (..) | time | method | START KEYFRAME | END KEYFRAME | ...' -> names in START or END."""
-    out = {}
-    if not path or not os.path.exists(path):
-        return out
+def script_rows(path):
+    """Yield (clip id, start names, end names) from an episode script table.
+    v4.5+ tables (header with 'Faces' and 'START keyframe', see paper/lint_shotlist.py): the Faces column ('2: Boy, Uncle
+    (+hands: Grandma)') gives the visible faces for START and END; hands/backs are not faces.
+    Older tables ('| Cxx (..) | time | method | START KEYFRAME | END KEYFRAME | ...'): names found in the START / END cells."""
+    cols = None
     for ln in open(path, encoding="utf-8"):
+        cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+        if ln.startswith("|") and cells and cells[0].lower() == "clip":
+            low = [c.lower() for c in cells]
+            cols = low if "faces" in low else None
+            continue
         m = re.match(r"\|\s*(C\d+)\b", ln)
         if not m:
             continue
-        cells = [c.strip() for c in ln.strip().strip("|").split("|")]
-        if len(cells) < 5:
-            continue
-        names = set(expected_chars(cells[3])) | set(expected_chars(cells[4]))
-        out[m.group(1)] = sorted(names)
-    return out
+        if cols and len(cells) == len(cols):
+            faces = cells[cols.index("faces")]
+            names = expected_chars(re.sub(r"\(\+[^)]*\)", "", faces))
+            yield m.group(1), names, names
+        elif len(cells) >= 5:
+            yield m.group(1), expected_chars(cells[3]), expected_chars(cells[4])
+
+
+def load_script_chars(path):
+    """Expected on-screen characters per clip (names in START or END) from an episode script table."""
+    if not path or not os.path.exists(path):
+        return {}
+    return {cid: sorted(set(s) | set(e)) for cid, s, e in script_rows(path)}
 
 
 def timing_from_spec(spec_path):

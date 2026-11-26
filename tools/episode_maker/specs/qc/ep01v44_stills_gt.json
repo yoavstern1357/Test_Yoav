@@ -1,0 +1,4 @@
+{"note": "Episode 1 v4.4 keyframe stills (specs/frames/ep01v44, 127 files) with a duplicated character or an unscripted extra person, judged by eye on 2026-11-26 from contact sheets and zooms. Ambiguous: C07_end/C07_end_land (intended dust-cloud silhouette, counted as in fix-plan.md), C35_end_land (Grandma in the Uncle's clothes: a costume swap, not counted).",
+ "dup": ["C07_end", "C08", "C08_end", "C11", "C11_end", "C13", "C13_end", "C19_end", "C20", "C20_end", "C21", "C21_end", "C32", "C35_end",
+         "C02_land", "C02_end_land", "C06_land", "C06_end_land", "C07_end_land", "C08_land", "C11_land", "C11_end_land", "C13_land", "C13_end_land",
+         "C15_land", "C15_end_land", "C16_end_land", "C17_land", "C17_end_land", "C23_land", "C32_land", "C32_end_land", "C34_land", "C34_end_land"]}
