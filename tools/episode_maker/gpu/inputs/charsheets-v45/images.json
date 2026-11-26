@@ -1,0 +1,222 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "width": 768,
+  "height": 1344,
+  "size_landscape": [
+   1536,
+   864
+  ],
+  "variants": 4,
+  "ref_max": 704,
+  "orientations": [
+   "landscape"
+  ]
+ },
+ "images": [
+  {
+   "id": "boy_turn",
+   "seed": 4501,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/boy_a.jpg",
+     "role": "the Boy (face, hat, clothes, colors, proportions); only this one child"
+    },
+    {
+     "path": "refs/boy_b.jpg",
+     "role": "the same Boy standing (full body); only this one child"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Boy. No other person anywhere on the sheet. Sheet content: character turnaround of the Boy (a small boy about 7 years old (child proportions, head large for the body, reaches an adult's belt), round soft child face, big curious dark eyes, short black hair, conical woven leaf hat with an orange chin ribbon, loose faded indigo cotton village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash tied at the waist, straw sandals, small cream cloth shoulder bag), drawn four times side by side in one row, full body from head to feet, standing in a relaxed neutral pose with arms slightly away from the body, the same height and scale in all four, feet on the same baseline: 1) front view, 2) three-quarter view, 3) side profile view, 4) back view. Calm neutral friendly expression.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "boy_expr",
+   "seed": 4511,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/boy_a.jpg",
+     "role": "the Boy (face, hat, clothes, colors, proportions); only this one child"
+    },
+    {
+     "path": "refs/boy_b.jpg",
+     "role": "the same Boy standing (full body); only this one child"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Boy. No other person anywhere on the sheet. Sheet content: eight head-and-shoulders portraits of the Boy (a small boy about 7 years old (child proportions, head large for the body, reaches an adult's belt), round soft child face, big curious dark eyes, short black hair, conical woven leaf hat with an orange chin ribbon, loose faded indigo cotton village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash tied at the waist, straw sandals, small cream cloth shoulder bag), arranged in a clean 4 x 2 grid, every portrait the same size, facing the viewer (front view, very slight three-quarter turn), same lighting: top row left to right: neutral calm; big laugh (eyes squeezed shut, mouth wide open); shocked (eyes very wide, jaw dropped); scared (wide trembling eyes, sweat drop, mouth open in fear); bottom row left to right: smug (half-closed eyes, sly closed-mouth smile, chin lifted); sad-tender (soft wet eyes, small gentle sad smile); determined (furrowed brows, firm closed mouth); deadpan (flat half-lidded eyes, straight mouth, no emotion). Expressive anime-comedy faces but the same face design, hat/hair and clothes in all eight.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "boy_hands",
+   "seed": 4521,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/boy_a.jpg",
+     "role": "the Boy (face, hat, clothes, colors, proportions); only this one child"
+    },
+    {
+     "path": "refs/boy_b.jpg",
+     "role": "the same Boy standing (full body); only this one child"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Boy. No other person anywhere on the sheet. Sheet content: hand-pose sheet: only the hands of the Boy (small child hands with short soft fingers and indigo tunic cuffs), each hand with exactly five fingers, eight drawings in a 4 x 2 grid: open palm wave; pointing index finger; thumbs up; closed fist; holding chopsticks; holding a small round steamed dumpling between two fingers; relaxed hand seen from the side; counting three on the fingers. Only hands with a little of the sleeve, no faces, no bodies.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "boy_mouths",
+   "seed": 4531,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/boy_a.jpg",
+     "role": "the Boy (face, hat, clothes, colors, proportions); only this one child"
+    },
+    {
+     "path": "refs/boy_b.jpg",
+     "role": "the same Boy standing (full body); only this one child"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Boy. No other person anywhere on the sheet. Sheet content: lip-sync mouth chart of the Boy (a small boy about 7 years old (child proportions, head large for the body, reaches an adult's belt), round soft child face, big curious dark eyes, short black hair, conical woven leaf hat with an orange chin ribbon, loose faded indigo cotton village tunic with side buttons, light hemp trousers rolled to the shin, soft orange cloth sash tied at the waist, straw sandals, small cream cloth shoulder bag): the same close-up face drawn six times in a 3 x 2 grid, front view, IDENTICAL head, eyes, eyebrows, hat and lighting in all six panels; ONLY the mouth changes: 1) closed relaxed mouth (M, B, P); 2) slightly open, teeth almost together (S, T, E); 3) open mouth (A as in 'cat'); 4) wide open mouth (AH, shout); 5) round open O mouth (OH); 6) small pursed round mouth (OO, W). Calm neutral eyes in every panel.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "uncle_turn",
+   "seed": 4601,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/uncle_a.jpg",
+     "role": "the Uncle (face, mustache, body size, clothes, colors); only this one man"
+    },
+    {
+     "path": "refs/uncle_b.jpg",
+     "role": "the same Uncle in another pose (body shape, sash, towel); only this one man"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Uncle. No other person anywhere on the sheet. Sheet content: character turnaround of the Uncle (a VERY FAT grown man with a big round belly, heavy round body, chubby cheeks, bald head with a little dark hair at the back, thin black mustache, loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, wide orange cloth sash tied at the side with long ends, brown sandals, a white towel over one shoulder), drawn four times side by side in one row, full body from head to feet, standing in a relaxed neutral pose with arms slightly away from the body, the same height and scale in all four, feet on the same baseline: 1) front view, 2) three-quarter view, 3) side profile view, 4) back view. Calm neutral friendly expression.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "uncle_expr",
+   "seed": 4611,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/uncle_a.jpg",
+     "role": "the Uncle (face, mustache, body size, clothes, colors); only this one man"
+    },
+    {
+     "path": "refs/uncle_b.jpg",
+     "role": "the same Uncle in another pose (body shape, sash, towel); only this one man"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Uncle. No other person anywhere on the sheet. Sheet content: eight head-and-shoulders portraits of the Uncle (a VERY FAT grown man with a big round belly, heavy round body, chubby cheeks, bald head with a little dark hair at the back, thin black mustache, loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, wide orange cloth sash tied at the side with long ends, brown sandals, a white towel over one shoulder), arranged in a clean 4 x 2 grid, every portrait the same size, facing the viewer (front view, very slight three-quarter turn), same lighting: top row left to right: neutral calm; big laugh (eyes squeezed shut, mouth wide open); shocked (eyes very wide, jaw dropped); scared (wide trembling eyes, sweat drop, mouth open in fear); bottom row left to right: smug (half-closed eyes, sly closed-mouth smile, chin lifted); sad-tender (soft wet eyes, small gentle sad smile); determined (furrowed brows, firm closed mouth); deadpan (flat half-lidded eyes, straight mouth, no emotion). Expressive anime-comedy faces but the same face design, hat/hair and clothes in all eight.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "uncle_hands",
+   "seed": 4621,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/uncle_a.jpg",
+     "role": "the Uncle (face, mustache, body size, clothes, colors); only this one man"
+    },
+    {
+     "path": "refs/uncle_b.jpg",
+     "role": "the same Uncle in another pose (body shape, sash, towel); only this one man"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Uncle. No other person anywhere on the sheet. Sheet content: hand-pose sheet: only the hands of the Uncle (big chubby man's hands with thick short fingers and brown linen jacket cuffs), each hand with exactly five fingers, eight drawings in a 4 x 2 grid: open palm wave; pointing index finger; thumbs up; closed fist; holding chopsticks; holding a small round steamed dumpling between two fingers; relaxed hand seen from the side; counting three on the fingers. Only hands with a little of the sleeve, no faces, no bodies.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "uncle_mouths",
+   "seed": 4631,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_a.jpg",
+     "role": "the Uncle (face, mustache, body size, clothes, colors); only this one man"
+    },
+    {
+     "path": "refs/uncle_b.jpg",
+     "role": "the same Uncle in another pose (body shape, sash, towel); only this one man"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: the Uncle. No other person anywhere on the sheet. Sheet content: lip-sync mouth chart of the Uncle (a VERY FAT grown man with a big round belly, heavy round body, chubby cheeks, bald head with a little dark hair at the back, thin black mustache, loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, wide orange cloth sash tied at the side with long ends, brown sandals, a white towel over one shoulder): the same close-up face drawn six times in a 3 x 2 grid, front view, IDENTICAL head, eyes, eyebrows, bald head and mustache and lighting in all six panels; ONLY the mouth changes: 1) closed relaxed mouth (M, B, P); 2) slightly open, teeth almost together (S, T, E); 3) open mouth (A as in 'cat'); 4) wide open mouth (AH, shout); 5) round open O mouth (OH); 6) small pursed round mouth (OO, W). Calm neutral eyes in every panel.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "grandma_turn",
+   "seed": 4701,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/grandma_a.jpg",
+     "role": "Grandma (face, hair bun, clothes, colors); only this one woman"
+    },
+    {
+     "path": "refs/grandma_b.jpg",
+     "role": "the same Grandma standing (full body); only this one woman"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: Grandma. No other person anywhere on the sheet. Sheet content: character turnaround of Grandma (a short, round, kind old woman, grey hair in a neat bun, rosy cheeks, gentle smiling eyes, pale sage-green long-sleeved tunic with buttons, a long white apron, sage-green trousers, brown shoes), drawn four times side by side in one row, full body from head to feet, standing in a relaxed neutral pose with arms slightly away from the body, the same height and scale in all four, feet on the same baseline: 1) front view, 2) three-quarter view, 3) side profile view, 4) back view. Calm neutral friendly expression.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "grandma_expr",
+   "seed": 4711,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/grandma_a.jpg",
+     "role": "Grandma (face, hair bun, clothes, colors); only this one woman"
+    },
+    {
+     "path": "refs/grandma_b.jpg",
+     "role": "the same Grandma standing (full body); only this one woman"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: Grandma. No other person anywhere on the sheet. Sheet content: eight head-and-shoulders portraits of Grandma (a short, round, kind old woman, grey hair in a neat bun, rosy cheeks, gentle smiling eyes, pale sage-green long-sleeved tunic with buttons, a long white apron, sage-green trousers, brown shoes), arranged in a clean 4 x 2 grid, every portrait the same size, facing the viewer (front view, very slight three-quarter turn), same lighting: top row left to right: neutral calm; big laugh (eyes squeezed shut, mouth wide open); shocked (eyes very wide, jaw dropped); scared (wide trembling eyes, sweat drop, mouth open in fear); bottom row left to right: smug (half-closed eyes, sly closed-mouth smile, chin lifted); sad-tender (soft wet eyes, small gentle sad smile); determined (furrowed brows, firm closed mouth); deadpan (flat half-lidded eyes, straight mouth, no emotion). Expressive anime-comedy faces but the same face design, hat/hair and clothes in all eight.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "grandma_hands",
+   "seed": 4721,
+   "variants": 4,
+   "refs": [
+    {
+     "path": "refs/grandma_a.jpg",
+     "role": "Grandma (face, hair bun, clothes, colors); only this one woman"
+    },
+    {
+     "path": "refs/grandma_b.jpg",
+     "role": "the same Grandma standing (full body); only this one woman"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: Grandma. No other person anywhere on the sheet. Sheet content: hand-pose sheet: only the hands of Grandma (small soft old woman's hands, a little flour on the fingertips, sage-green sleeve cuffs), each hand with exactly five fingers, eight drawings in a 4 x 2 grid: open palm wave; pointing index finger; thumbs up; closed fist; holding chopsticks; holding a small round steamed dumpling between two fingers; relaxed hand seen from the side; counting three on the fingers. Only hands with a little of the sleeve, no faces, no bodies.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  },
+  {
+   "id": "grandma_mouths",
+   "seed": 4731,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/grandma_a.jpg",
+     "role": "Grandma (face, hair bun, clothes, colors); only this one woman"
+    },
+    {
+     "path": "refs/grandma_b.jpg",
+     "role": "the same Grandma standing (full body); only this one woman"
+    }
+   ],
+   "prompt": "Character model sheet. Exactly ONE character on the whole sheet: Grandma. No other person anywhere on the sheet. Sheet content: lip-sync mouth chart of Grandma (a short, round, kind old woman, grey hair in a neat bun, rosy cheeks, gentle smiling eyes, pale sage-green long-sleeved tunic with buttons, a long white apron, sage-green trousers, brown shoes): the same close-up face drawn six times in a 3 x 2 grid, front view, IDENTICAL head, eyes, eyebrows, hair bun and lighting in all six panels; ONLY the mouth changes: 1) closed relaxed mouth (M, B, P); 2) slightly open, teeth almost together (S, T, E); 3) open mouth (A as in 'cat'); 4) wide open mouth (AH, shout); 5) round open O mouth (OH); 6) small pursed round mouth (OO, W). Calm neutral eyes in every panel.",
+   "style": "Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos."
+  }
+ ]
+}
