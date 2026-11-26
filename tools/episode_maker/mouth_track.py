@@ -11,8 +11,9 @@ How it works:
   2. Every frame: pyramidal Lucas-Kanade optical flow on corner features inside the face box (forward-backward checked),
      a RANSAC similarity transform (shift + scale + rotation) moves the mouth point; features are re-seeded when they
      run out. On-twos duplicate frames give an identity transform.
-  3. Drift correction: when YuNet finds a confident face whose mouth lies near the tracked point, the point is pulled
-     15% toward it (the landmark offset measured on frame 1 is kept).
+  3. Drift correction: each frame the drawn mouth stroke is searched near the tracked point; when it has about the
+     frame-1 width the point is pulled 30% toward it. Otherwise a confident YuNet face at the frame-1 detection scale
+     pulls it 15% (YuNet landmarks on anime faces shift between scales, so only the same scale is comparable).
 Output JSON: {"fps", "w", "h", "face_h", "mouth_w", "frames": [{"x", "y", "s", "a", "ok"}]}  s = face scale vs frame 1,
 a = head roll in degrees, ok = false when tracking lost (the overlay then hides the sprite).
 Limits: assumes a fixed camera and a calm head (talk shots under fix-plan Fix 2); big head turns or a face leaving the
@@ -100,7 +101,7 @@ def refine_mouth(f, guess, face_h):
     return (X0 + x + (w + k - 1) / 2.0, Y0 + y + h / 2.0), float(w)
 
 
-def track(frames, start, face_h, box, yunet=None, det_offset=None, fps=24.0):
+def track(frames, start, face_h, box, yunet=None, det_offset=None, det_scale=0.5, mouth_w=None):
     H, W = frames[0].shape[:2]
     pt = np.array(start, float)
     S, A = 1.0, 0.0
@@ -140,9 +141,16 @@ def track(frames, start, face_h, box, yunet=None, det_offset=None, fps=24.0):
                 ok_track = False
             if pts is None or len(pts) < 40:
                 pts = seed(gray, pt, S)
-        # drift correction toward a confident detection near the tracked point
-        if yunet is not None and det_offset is not None:
-            for d in yunet.detect(frames[i], scales=(0.5,)):
+        # drift correction 1 (preferred): the drawn mouth stroke near the tracked point, if it still looks like the frame-1 mouth
+        corrected = False
+        if mouth_w:
+            q, w = refine_mouth(frames[i], tuple(pt), face_h * S)
+            if w and abs(w - mouth_w * S) < 0.4 * mouth_w * S and np.linalg.norm(np.array(q) - pt) < 0.06 * face_h * S:
+                pt = 0.7 * pt + 0.3 * np.array(q)
+                corrected = True
+        # drift correction 2: a confident YuNet face at the SAME scale as on frame 1 (landmarks shift between scales)
+        if not corrected and yunet is not None and det_offset is not None:
+            for d in yunet.detect(frames[i], scales=(det_scale,)):
                 if d["score"] < 0.6:
                     continue
                 dm = mouth_of(d) + det_offset * S
@@ -172,7 +180,7 @@ def main():
         sys.exit("cannot read " + a.clip)
     H, W = frames[0].shape[:2]
     yunet = None if (a.point and a.no_drift) else Yunet()
-    det_offset, mouth_w, source = None, None, "manual"
+    det_offset, mouth_w, source, det_scale = None, None, "manual", 0.5
     if a.point:
         x, y = [float(v) for v in a.point.split(",")]
         face_h = a.face_h or 0.16 * H
@@ -182,7 +190,11 @@ def main():
             fs = yunet.detect(frames[0])
             near = [d for d in fs if np.linalg.norm(mouth_of(d) - start) < 0.3 * face_h]
             if near:
-                det_offset = (np.array(start) - mouth_of(near[0]))
+                det_offset, det_scale = (np.array(start) - mouth_of(near[0])), near[0]["scale"]
+            if not a.no_refine:
+                q, mouth_w = refine_mouth(frames[0], start, face_h)
+                if mouth_w:
+                    start = q
     else:
         fs = yunet.detect(frames[0])
         if not fs:
@@ -196,9 +208,10 @@ def main():
         start = tuple(mouth_of(d))
         if not a.no_refine:
             start, mouth_w = refine_mouth(frames[0], start, face_h)
-        det_offset = np.array(start) - mouth_of(d)
+        det_offset, det_scale = np.array(start) - mouth_of(d), d["scale"]
         source = f"yunet score {d['score']:.2f} at scale {d['scale']}"
-    fr = track(frames, start, face_h, box, None if a.no_drift else yunet, det_offset, fps)
+    fr = track(frames, start, face_h, box, None if a.no_drift else yunet, det_offset, det_scale,
+               None if a.no_drift else mouth_w)
     res = dict(clip=os.path.basename(a.clip), fps=fps, w=W, h=H, face_h=round(float(face_h), 1), face_box=[round(float(v), 1) for v in box],
                mouth_w=round(mouth_w, 1) if mouth_w else None, source=source, frames=fr)
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
