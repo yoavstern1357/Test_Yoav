@@ -7,3 +7,4 @@ out/
 __pycache__/
 specs/clips/
 !gpu/inputs/*/refs/*.wav
+assets/qc_models/
