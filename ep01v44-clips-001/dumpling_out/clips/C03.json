@@ -1,0 +1,31 @@
+{
+ "id": "C03",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8009,
+ "frames": 41,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C03.jpg",
+   0
+  ],
+  [
+   "images/C03_end.jpg",
+   40
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 53.3,
+ "gpu_seconds": 53.3,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle jabs a finger up, outraged (muffled). The Boy answers without turning, flat. In the last second everything rewinds at high speed: steam sucked back into his ears, ice pack flying off, tape-squeal glitch, ending in a white flash. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C03.jpg",
+ "end": "images/C03_end.jpg",
+ "cropped_from_other_orientation": false
+}

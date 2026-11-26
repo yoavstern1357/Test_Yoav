@@ -1,0 +1,31 @@
+{
+ "id": "C32",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8081,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C32.jpg",
+   0
+  ],
+  [
+   "images/C32_end_land.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 60.2,
+ "gpu_seconds": 60.2,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 3. PEAK 3. She freezes mid-fold and looks up at the hat. Edit: snap zooms (her eyes, the hat brim, her eyes) for about 1.5 s; a gust from nowhere whips away the Uncle's napkin cape and he clutches at it with a sweat drop. Then the pace drops to a long warm hold: her face softens, the Boy's eyes widen. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C32.jpg",
+ "end": "images/C32_end_land.jpg",
+ "cropped_from_other_orientation": true
+}

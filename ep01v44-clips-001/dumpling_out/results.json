@@ -1,0 +1,2364 @@
+[
+ {
+  "id": "C01",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8003,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C01.jpg",
+    0
+   ],
+   [
+    "images/C01_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 175.6,
+  "gpu_seconds": 175.6,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. Slow heroic pull-back. The Uncle's right eye twitches; a giant sweat drop slides down his head; his lip trembles; then he lifts his chin and crosses his arms in wounded dignity. One tiny TOOT of steam from his left ear. Mustache droops a little more. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C01.jpg",
+  "end": "images/C01_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C01_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8003,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C01_land.jpg",
+    0
+   ],
+   [
+    "images/C01_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 174.4,
+  "gpu_seconds": 174.4,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. Slow heroic pull-back. The Uncle's right eye twitches; a giant sweat drop slides down his head; his lip trembles; then he lifts his chin and crosses his arms in wounded dignity. One tiny TOOT of steam from his left ear. Mustache droops a little more. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C01_land.jpg",
+  "end": "images/C01_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C02",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8006,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C02.jpg",
+    0
+   ],
+   [
+    "images/C02_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 54.1,
+  "gpu_seconds": 54.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy strides in, spins to the lens, taps the chopstick-mic like an anchorman (bright, a little smug); on 'mystery' one eyebrow arches. Behind him the Uncle slowly raises a limp hand to wave, his ice pack slips, he catches it with dignity. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C02.jpg",
+  "end": "images/C02_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C02_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8006,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C02_land.jpg",
+    0
+   ],
+   [
+    "images/C02_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.9,
+  "gpu_seconds": 50.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy strides in, spins to the lens, taps the chopstick-mic like an anchorman (bright, a little smug); on 'mystery' one eyebrow arches. Behind him the Uncle slowly raises a limp hand to wave, his ice pack slips, he catches it with dignity. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C02_land.jpg",
+  "end": "images/C02_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C03",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8009,
+  "frames": 41,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C03.jpg",
+    0
+   ],
+   [
+    "images/C03_end.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 53.3,
+  "gpu_seconds": 53.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle jabs a finger up, outraged (muffled). The Boy answers without turning, flat. In the last second everything rewinds at high speed: steam sucked back into his ears, ice pack flying off, tape-squeal glitch, ending in a white flash. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C03.jpg",
+  "end": "images/C03_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C03_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8009,
+  "frames": 41,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C03_land.jpg",
+    0
+   ],
+   [
+    "images/C03_end_land.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 46.4,
+  "gpu_seconds": 46.4,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle jabs a finger up, outraged (muffled). The Boy answers without turning, flat. In the last second everything rewinds at high speed: steam sucked back into his ears, ice pack flying off, tape-squeal glitch, ending in a white flash. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C03_land.jpg",
+  "end": "images/C03_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C06",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8012,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C06.jpg",
+    0
+   ],
+   [
+    "images/C06_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 57.4,
+  "gpu_seconds": 57.4,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The train sways; the Boy reads with a soft half-smile; the Uncle sways like a captain on a ship, smug, nodding to 'patient'; a commuter ducks his waving arm. The train brakes, the doors hiss open, and the Uncle's eyes snap open as he sniffs the air. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C06.jpg",
+  "end": "images/C06_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C06_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8012,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C06_land.jpg",
+    0
+   ],
+   [
+    "images/C06_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.1,
+  "gpu_seconds": 59.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The train sways; the Boy reads with a soft half-smile; the Uncle sways like a captain on a ship, smug, nodding to 'patient'; a commuter ducks his waving arm. The train brakes, the doors hiss open, and the Uncle's eyes snap open as he sniffs the air. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C06_land.jpg",
+  "end": "images/C06_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C07",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8015,
+  "frames": 41,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C07.jpg",
+    0
+   ],
+   [
+    "images/C07_end.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 44.3,
+  "gpu_seconds": 44.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle launches out like a cannonball (smear frames, speed lines), leaving a dust silhouette. The Boy's hat ribbon whips in the draft; after a beat he turns his head to the lens (8-frame look-to-lens), flat. The camel strolls out behind, unhurried. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C07.jpg",
+  "end": "images/C07_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C07_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8015,
+  "frames": 41,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C07_land.jpg",
+    0
+   ],
+   [
+    "images/C07_end_land.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 49.0,
+  "gpu_seconds": 49.0,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle launches out like a cannonball (smear frames, speed lines), leaving a dust silhouette. The Boy's hat ribbon whips in the draft; after a beat he turns his head to the lens (8-frame look-to-lens), flat. The camel strolls out behind, unhurried. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C07_land.jpg",
+  "end": "images/C07_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C08",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8018,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C08.jpg",
+    0
+   ],
+   [
+    "images/C08_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.9,
+  "gpu_seconds": 50.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy walks backward in an easy host stride, the camera tracking back with him; he never looks behind. The scent ribbon hauls the Uncle left, right, over the bridge, round the corner (stretch-and-snap). Title blooms in brush ink as the Boy stops. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C08.jpg",
+  "end": "images/C08_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C08_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8018,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C08_land.jpg",
+    0
+   ],
+   [
+    "images/C08_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.1,
+  "gpu_seconds": 51.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy walks backward in an easy host stride, the camera tracking back with him; he never looks behind. The scent ribbon hauls the Uncle left, right, over the bridge, round the corner (stretch-and-snap). Title blooms in brush ink as the Boy stops. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C08_land.jpg",
+  "end": "images/C08_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C09",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8021,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C09.jpg",
+    0
+   ],
+   [
+    "images/C09_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.6,
+  "gpu_seconds": 51.6,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. Slow push-in; chimes sway; the Boy points to each pagoda in turn, his face lit with wonder; leaves drift; at the last words a sparrow lands on a pagoda top. Hold two seconds in the quiet. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C09.jpg",
+  "end": "images/C09_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C09_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8021,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C09_land.jpg",
+    0
+   ],
+   [
+    "images/C09_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.9,
+  "gpu_seconds": 50.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. Slow push-in; chimes sway; the Boy points to each pagoda in turn, his face lit with wonder; leaves drift; at the last words a sparrow lands on a pagoda top. Hold two seconds in the quiet. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C09_land.jpg",
+  "end": "images/C09_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C10",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8024,
+  "frames": 41,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C10.jpg",
+    0
+   ],
+   [
+    "images/C10_end.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.9,
+  "gpu_seconds": 51.9,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Skid and stop; the Uncle's face goes solemn, a salute snaps up, tears pour like fountains; the scent ribbon yanks his nose but he resists, saluting harder; the Boy slowly turns his head to him, flat. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C10.jpg",
+  "end": "images/C10_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C10_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8024,
+  "frames": 41,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C10_land.jpg",
+    0
+   ],
+   [
+    "images/C10_end_land.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 47.3,
+  "gpu_seconds": 47.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Skid and stop; the Uncle's face goes solemn, a salute snaps up, tears pour like fountains; the scent ribbon yanks his nose but he resists, saluting harder; the Boy slowly turns his head to him, flat. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C10_land.jpg",
+  "end": "images/C10_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C11",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8027,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C11.jpg",
+    0
+   ],
+   [
+    "images/C11_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 60.3,
+  "gpu_seconds": 60.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle lands in a crouch and inhales; the steam spirals into his nose; eyes flash star-sparkles; a golden aura erupts, wind ruffles the steamers. The Boy looks to the lens, flat. Grandma keeps kneading, unimpressed. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C11.jpg",
+  "end": "images/C11_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C11_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8027,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C11_land.jpg",
+    0
+   ],
+   [
+    "images/C11_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.3,
+  "gpu_seconds": 59.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle lands in a crouch and inhales; the steam spirals into his nose; eyes flash star-sparkles; a golden aura erupts, wind ruffles the steamers. The Boy looks to the lens, flat. Grandma keeps kneading, unimpressed. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C11_land.jpg",
+  "end": "images/C11_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C12",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8030,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C12.jpg",
+    0
+   ],
+   [
+    "images/C12_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.1,
+  "gpu_seconds": 51.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy asks, bright and a little shy. Without looking up, Grandma flicks a dough circle into the air and, mid-answer, pleats it in two blurring turns and holds it up. The Boy's jaw drops; her face does not change. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C12.jpg",
+  "end": "images/C12_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C12_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8030,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C12_land.jpg",
+    0
+   ],
+   [
+    "images/C12_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.8,
+  "gpu_seconds": 50.8,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy asks, bright and a little shy. Without looking up, Grandma flicks a dough circle into the air and, mid-answer, pleats it in two blurring turns and holds it up. The Boy's jaw drops; her face does not change. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C12_land.jpg",
+  "end": "images/C12_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C13",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8033,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C13.jpg",
+    0
+   ],
+   [
+    "images/C13_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.9,
+  "gpu_seconds": 50.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The cleaver blurs: chop-chop-chop with a shonen slash glint at every cut; amber cubes jump like gems and tumble into the bowl. The Uncle's head sways side to side following the cleaver like a cat watching a toy. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C13.jpg",
+  "end": "images/C13_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C13_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8033,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C13_land.jpg",
+    0
+   ],
+   [
+    "images/C13_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.9,
+  "gpu_seconds": 50.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The cleaver blurs: chop-chop-chop with a shonen slash glint at every cut; amber cubes jump like gems and tumble into the bowl. The Uncle's head sways side to side following the cleaver like a cat watching a toy. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C13_land.jpg",
+  "end": "images/C13_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C14",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8036,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C14.jpg",
+    0
+   ],
+   [
+    "images/C14_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.1,
+  "gpu_seconds": 51.1,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 1. PEAK 1. The lid lifts; steam parts; edit: 6-8 fast macro cuts (cubes, steam, melt, ripple) with whip-pans, one slow-motion ripple, then a held breath. Fact card: [CARD: THE SOUP GOES IN SOLID]. On the last beat a giant sparkling eye fills the whole frame, blinks, and is gone (the Uncle, too close). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C14.jpg",
+  "end": "images/C14_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C14_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8036,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C14_land.jpg",
+    0
+   ],
+   [
+    "images/C14_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 52.7,
+  "gpu_seconds": 52.7,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 1. PEAK 1. The lid lifts; steam parts; edit: 6-8 fast macro cuts (cubes, steam, melt, ripple) with whip-pans, one slow-motion ripple, then a held breath. Fact card: [CARD: THE SOUP GOES IN SOLID]. On the last beat a giant sparkling eye fills the whole frame, blinks, and is gone (the Uncle, too close). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C14_land.jpg",
+  "end": "images/C14_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C15",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8039,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C15.jpg",
+    0
+   ],
+   [
+    "images/C15_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.1,
+  "gpu_seconds": 59.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle lectures like a cook, calm and sure. The Boy turns slowly, eyes widening, a huge sweat drop swelling. The Uncle shrugs coolly. Grandma's hands pause for one beat and she nods once, and the Uncle visibly glows with pride. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C15.jpg",
+  "end": "images/C15_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C15_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8039,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C15_land.jpg",
+    0
+   ],
+   [
+    "images/C15_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.4,
+  "gpu_seconds": 59.4,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle lectures like a cook, calm and sure. The Boy turns slowly, eyes widening, a huge sweat drop swelling. The Uncle shrugs coolly. Grandma's hands pause for one beat and she nods once, and the Uncle visibly glows with pride. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C15_land.jpg",
+  "end": "images/C15_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C16",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8042,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C16.jpg",
+    0
+   ],
+   [
+    "images/C16_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 57.1,
+  "gpu_seconds": 57.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. Her fingers spin pleats in a blur; the Boy counts with his lips; the Uncle counts on his fingers, runs out, stares at his hands in betrayal, then silently borrows the Boy's hands, who allows it with a flat face. Grandma drops the dumpling into the steamer. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C16.jpg",
+  "end": "images/C16_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C16_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8042,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C16_land.jpg",
+    0
+   ],
+   [
+    "images/C16_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 55.6,
+  "gpu_seconds": 55.6,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. Her fingers spin pleats in a blur; the Boy counts with his lips; the Uncle counts on his fingers, runs out, stares at his hands in betrayal, then silently borrows the Boy's hands, who allows it with a flat face. Grandma drops the dumpling into the steamer. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C16_land.jpg",
+  "end": "images/C16_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C17",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8045,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C17.jpg",
+    0
+   ],
+   [
+    "images/C17_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.1,
+  "gpu_seconds": 51.1,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Training-arc hype: sweat flies, an aura flares, he pinches with trembling intensity, the dough stretches, wraps his thumb, pops; he thrusts the result into the air in triumph, glowing with pride. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C17.jpg",
+  "end": "images/C17_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C17_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8045,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C17_land.jpg",
+    0
+   ],
+   [
+    "images/C17_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.3,
+  "gpu_seconds": 50.3,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Training-arc hype: sweat flies, an aura flares, he pinches with trembling intensity, the dough stretches, wraps his thumb, pops; he thrusts the result into the air in triumph, glowing with pride. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C17_land.jpg",
+  "end": "images/C17_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C18",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8048,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C18.jpg",
+    0
+   ],
+   [
+    "images/C18_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.9,
+  "gpu_seconds": 50.9,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The basket lands; steam rolls; Grandma, not looking, says one flat word. The Uncle draws his chopsticks in slow motion (SHING) and lifts a dumpling, aura erupting. The Boy addresses the lens with earnest host calm, his back to the danger. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C18.jpg",
+  "end": "images/C18_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C18_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8048,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C18_land.jpg",
+    0
+   ],
+   [
+    "images/C18_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.6,
+  "gpu_seconds": 50.6,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The basket lands; steam rolls; Grandma, not looking, says one flat word. The Uncle draws his chopsticks in slow motion (SHING) and lifts a dumpling, aura erupting. The Boy addresses the lens with earnest host calm, his back to the danger. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C18_land.jpg",
+  "end": "images/C18_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C19",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8051,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C19.jpg",
+    0
+   ],
+   [
+    "images/C19_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 55.4,
+  "gpu_seconds": 55.4,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 2. PEAK 2, one clip with 3-4 cuts: ECU mouth (gulp); ECU eye (twitch, veins); a sweat drop swells on his bald head; cheeks balloon; silence and a rising whine; IMPACT FRAME (white flash, radial lines, flat red silhouette, white dot eyes); he rockets up two meters; both ears blast one long TOOOOT; mustache stands up like antennae. The Boy never turns. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C19.jpg",
+  "end": "images/C19_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C19_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8051,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C19_land.jpg",
+    0
+   ],
+   [
+    "images/C19_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 52.4,
+  "gpu_seconds": 52.4,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 2. PEAK 2, one clip with 3-4 cuts: ECU mouth (gulp); ECU eye (twitch, veins); a sweat drop swells on his bald head; cheeks balloon; silence and a rising whine; IMPACT FRAME (white flash, radial lines, flat red silhouette, white dot eyes); he rockets up two meters; both ears blast one long TOOOOT; mustache stands up like antennae. The Boy never turns. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C19_land.jpg",
+  "end": "images/C19_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C20",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8054,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C20.jpg",
+    0
+   ],
+   [
+    "images/C20_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.9,
+  "gpu_seconds": 59.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The barrel sizzles; the legs kick; Grandma, who already had the ice pack out before he landed, drops it on his face without looking. He surfaces, trembling. In the tiniest voice he reports the finding. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C20.jpg",
+  "end": "images/C20_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C20_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8054,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C20_land.jpg",
+    0
+   ],
+   [
+    "images/C20_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.6,
+  "gpu_seconds": 59.6,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The barrel sizzles; the legs kick; Grandma, who already had the ice pack out before he landed, drops it on his face without looking. He surfaces, trembling. In the tiniest voice he reports the finding. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C20_land.jpg",
+  "end": "images/C20_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C21",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8057,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C21.jpg",
+    0
+   ],
+   [
+    "images/C21_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 53.4,
+  "gpu_seconds": 53.4,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. She lifts the dumpling by the knot, where it sags like a small water balloon, and sets it on the spoon. Behind her the Uncle leans closer and closer like a cat at a fish tank, water dripping off his mustache. A small badge fades in at a corner: [GROWN-UP HELP: HOT SOUP]. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C21.jpg",
+  "end": "images/C21_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C21_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8057,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C21_land.jpg",
+    0
+   ],
+   [
+    "images/C21_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.5,
+  "gpu_seconds": 51.5,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. She lifts the dumpling by the knot, where it sags like a small water balloon, and sets it on the spoon. Behind her the Uncle leans closer and closer like a cat at a fish tank, water dripping off his mustache. A small badge fades in at a corner: [GROWN-UP HELP: HOT SOUP]. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C21_land.jpg",
+  "end": "images/C21_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C22",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8060,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C22.jpg",
+    0
+   ],
+   [
+    "images/C22_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.7,
+  "gpu_seconds": 50.7,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. A chopstick tip pokes a tiny hole; steam threads out. The Uncle whispers pleadingly to the dumpling. His stomach rumbles and the stacked steamers rattle; the Boy steadies the tower with one finger, not looking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C22.jpg",
+  "end": "images/C22_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C22_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8060,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C22_land.jpg",
+    0
+   ],
+   [
+    "images/C22_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.2,
+  "gpu_seconds": 50.2,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. A chopstick tip pokes a tiny hole; steam threads out. The Uncle whispers pleadingly to the dumpling. His stomach rumbles and the stacked steamers rattle; the Boy steadies the tower with one finger, not looking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C22_land.jpg",
+  "end": "images/C22_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C23",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8063,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C23.jpg",
+    0
+   ],
+   [
+    "images/C23_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.8,
+  "gpu_seconds": 50.8,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. He sips slowly; his shoulders drop; his eyes pop open as star sparkles and close again; the background dissolves into a golden watercolor sunrise with floating petals (food power-up glow); he levitates slightly, hands folded. The Boy's anxious face melts into relief and amusement. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C23.jpg",
+  "end": "images/C23_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C23_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8063,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C23_land.jpg",
+    0
+   ],
+   [
+    "images/C23_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 53.1,
+  "gpu_seconds": 53.1,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. He sips slowly; his shoulders drop; his eyes pop open as star sparkles and close again; the background dissolves into a golden watercolor sunrise with floating petals (food power-up glow); he levitates slightly, hands folded. The Boy's anxious face melts into relief and amusement. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C23_land.jpg",
+  "end": "images/C23_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C24",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8066,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C24.jpg",
+    0
+   ],
+   [
+    "images/C24_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 57.2,
+  "gpu_seconds": 57.2,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The sparkle softens. The Uncle speaks gently, eyes closed, no mugging at all: the one real, quiet moment. The Boy listens, eyebrows lifting in quiet respect. The Uncle lowers to the stool and whispers the catchphrase. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C24.jpg",
+  "end": "images/C24_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C24_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8066,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C24_land.jpg",
+    0
+   ],
+   [
+    "images/C24_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 58.9,
+  "gpu_seconds": 58.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The sparkle softens. The Uncle speaks gently, eyes closed, no mugging at all: the one real, quiet moment. The Boy listens, eyebrows lifting in quiet respect. The Uncle lowers to the stool and whispers the catchphrase. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C24_land.jpg",
+  "end": "images/C24_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C25",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8069,
+  "frames": 41,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C25.jpg",
+    0
+   ],
+   [
+    "images/C25_end.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 52.5,
+  "gpu_seconds": 52.5,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. One eye snaps open and he asks in a hopeful tiny voice. Grandma answers flat. His eyes turn into stars, the aura re-ignites, he squashes into a 3-frame chibi blob with a tear of joy rolling; the Boy facepalms and smiles behind his hand. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C25.jpg",
+  "end": "images/C25_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C25_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8069,
+  "frames": 41,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C25_land.jpg",
+    0
+   ],
+   [
+    "images/C25_end_land.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 48.4,
+  "gpu_seconds": 48.4,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. One eye snaps open and he asks in a hopeful tiny voice. Grandma answers flat. His eyes turn into stars, the aura re-ignites, he squashes into a 3-frame chibi blob with a tear of joy rolling; the Boy facepalms and smiles behind his hand. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C25_land.jpg",
+  "end": "images/C25_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C26",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8072,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C26.jpg",
+    0
+   ],
+   [
+    "images/C26_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.7,
+  "gpu_seconds": 50.7,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy asks; Grandma smiles and nudges the journal; its cover flares gold; a giant scroll bursts out and unrolls with a whoosh, wiping the screen into the paper-cut world (about 8 fps look). The Uncle sees it mid-chew and freezes, cheeks bulging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C26.jpg",
+  "end": "images/C26_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C26_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8072,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C26_land.jpg",
+    0
+   ],
+   [
+    "images/C26_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 49.7,
+  "gpu_seconds": 49.7,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy asks; Grandma smiles and nudges the journal; its cover flares gold; a giant scroll bursts out and unrolls with a whoosh, wiping the screen into the paper-cut world (about 8 fps look). The Uncle sees it mid-chew and freezes, cheeks bulging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C26_land.jpg",
+  "end": "images/C26_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C30",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8075,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C30.jpg",
+    0
+   ],
+   [
+    "images/C30_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 51.0,
+  "gpu_seconds": 51.0,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. A breeze lifts the napkin cape dramatically; the Uncle's eyes narrow heroically, his mustache gleams. The Boy slowly looks up at him. The Uncle lifts his chin higher, utterly serene, not lowering the spoon. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C30.jpg",
+  "end": "images/C30_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C30_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8075,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C30_land.jpg",
+    0
+   ],
+   [
+    "images/C30_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.1,
+  "gpu_seconds": 50.1,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. A breeze lifts the napkin cape dramatically; the Uncle's eyes narrow heroically, his mustache gleams. The Boy slowly looks up at him. The Uncle lifts his chin higher, utterly serene, not lowering the spoon. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C30_land.jpg",
+  "end": "images/C30_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C31",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8078,
+  "frames": 41,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C31.jpg",
+    0
+   ],
+   [
+    "images/C31_end.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 46.8,
+  "gpu_seconds": 46.8,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy turns to the lens with a raised eyebrow and delivers the line; behind him the Uncle's napkin cape slowly slides off his shoulders and lands on the floor, unnoticed. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C31.jpg",
+  "end": "images/C31_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C31_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8078,
+  "frames": 41,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C31_land.jpg",
+    0
+   ],
+   [
+    "images/C31_end_land.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 47.4,
+  "gpu_seconds": 47.4,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy turns to the lens with a raised eyebrow and delivers the line; behind him the Uncle's napkin cape slowly slides off his shoulders and lands on the floor, unnoticed. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C31_land.jpg",
+  "end": "images/C31_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C32",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8081,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C32.jpg",
+    0
+   ],
+   [
+    "images/C32_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 60.2,
+  "gpu_seconds": 60.2,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 3. PEAK 3. She freezes mid-fold and looks up at the hat. Edit: snap zooms (her eyes, the hat brim, her eyes) for about 1.5 s; a gust from nowhere whips away the Uncle's napkin cape and he clutches at it with a sweat drop. Then the pace drops to a long warm hold: her face softens, the Boy's eyes widen. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C32.jpg",
+  "end": "images/C32_end_land.jpg",
+  "cropped_from_other_orientation": true
+ },
+ {
+  "id": "C32_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8081,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C32_land.jpg",
+    0
+   ],
+   [
+    "images/C32_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 59.9,
+  "gpu_seconds": 59.9,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 3. PEAK 3. She freezes mid-fold and looks up at the hat. Edit: snap zooms (her eyes, the hat brim, her eyes) for about 1.5 s; a gust from nowhere whips away the Uncle's napkin cape and he clutches at it with a sweat drop. Then the pace drops to a long warm hold: her face softens, the Boy's eyes widen. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C32_land.jpg",
+  "end": "images/C32_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C33",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8084,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C33.jpg",
+    0
+   ],
+   [
+    "images/C33_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 55.5,
+  "gpu_seconds": 55.5,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The spoon lowers very slowly; steam curls; the lantern flickers; one leaf drifts down. No jokes from here to the end of C34. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C33.jpg",
+  "end": "images/C33_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C33_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8084,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C33_land.jpg",
+    0
+   ],
+   [
+    "images/C33_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 54.6,
+  "gpu_seconds": 54.6,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The spoon lowers very slowly; steam curls; the lantern flickers; one leaf drifts down. No jokes from here to the end of C34. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C33_land.jpg",
+  "end": "images/C33_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C34",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8087,
+  "frames": 41,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C34.jpg",
+    0
+   ],
+   [
+    "images/C34_end.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 44.8,
+  "gpu_seconds": 44.8,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle waits two full beats without moving, the hunger plain on his face, then gently hands the spoon to the Boy. The Boy takes it and smiles. No words. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C34.jpg",
+  "end": "images/C34_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C34_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8087,
+  "frames": 41,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C34_land.jpg",
+    0
+   ],
+   [
+    "images/C34_end_land.jpg",
+    40
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 43.9,
+  "gpu_seconds": 43.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle waits two full beats without moving, the hunger plain on his face, then gently hands the spoon to the Boy. The Boy takes it and smiles. No words. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C34_land.jpg",
+  "end": "images/C34_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C35",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8090,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C35.jpg",
+    0
+   ],
+   [
+    "images/C35_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.8,
+  "gpu_seconds": 50.8,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Grandma points. Insert (code): on the journal map the dotted line glows and slides south down the coast to Guangzhou. The Uncle's ears perk (mustache antennae), then an aura erupts, the ground cracks, birds scatter. The Boy looks at the lens, flat. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C35.jpg",
+  "end": "images/C35_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C35_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8090,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C35_land.jpg",
+    0
+   ],
+   [
+    "images/C35_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 50.6,
+  "gpu_seconds": 50.6,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Grandma points. Insert (code): on the journal map the dotted line glows and slides south down the coast to Guangzhou. The Uncle's ears perk (mustache antennae), then an aura erupts, the ground cracks, birds scatter. The Boy looks at the lens, flat. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C35_land.jpg",
+  "end": "images/C35_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C36",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8093,
+  "frames": 49,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C36.jpg",
+    0
+   ],
+   [
+    "images/C36_end.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 52.9,
+  "gpu_seconds": 52.9,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. He takes a quiet breath, his smile settles, his eyes come to the lens; the ribbon stirs. Nothing else moves. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C36.jpg",
+  "end": "images/C36_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C36_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8093,
+  "frames": 49,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C36_land.jpg",
+    0
+   ],
+   [
+    "images/C36_end_land.jpg",
+    48
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 54.2,
+  "gpu_seconds": 54.2,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. He takes a quiet breath, his smile settles, his eyes come to the lens; the ribbon stirs. Nothing else moves. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C36_land.jpg",
+  "end": "images/C36_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C37",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8096,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C37.jpg",
+    0
+   ],
+   [
+    "images/C37_end.jpg",
+    32
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 46.6,
+  "gpu_seconds": 46.6,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle's thumbs-up wobbles; one tiny toot of steam from his ear; the camel blinks slowly. Cut to black. (Generate 3 s, trim to 2.0 s.). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C37.jpg",
+  "end": "images/C37_end.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "C37_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8096,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/C37_land.jpg",
+    0
+   ],
+   [
+    "images/C37_end_land.jpg",
+    32
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 44.7,
+  "gpu_seconds": 44.7,
+  "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle's thumbs-up wobbles; one tiny toot of steam from his ear; the camel blinks slowly. Cut to black. (Generate 3 s, trim to 2.0 s.). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/C37_land.jpg",
+  "end": "images/C37_end_land.jpg",
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I1",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8099,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I1.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 38.6,
+  "gpu_seconds": 38.6,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I1.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I1_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8099,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I1_land.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 33.5,
+  "gpu_seconds": 33.5,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I1_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I2",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8102,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I2.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 31.5,
+  "gpu_seconds": 31.5,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I2.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I2_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8102,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I2.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 30.7,
+  "gpu_seconds": 30.7,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I2.jpg",
+  "end": null,
+  "cropped_from_other_orientation": true
+ },
+ {
+  "id": "I3",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8105,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I3.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 31.6,
+  "gpu_seconds": 31.6,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I3.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I3_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8105,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I3_land.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 30.8,
+  "gpu_seconds": 30.8,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I3_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8108,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I5.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 31.6,
+  "gpu_seconds": 31.6,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I5.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8108,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I5_land.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 31.5,
+  "gpu_seconds": 31.5,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I5_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5b",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8111,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I5b.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 31.4,
+  "gpu_seconds": 31.4,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I5b.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5b_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8111,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I5b_land.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 37.0,
+  "gpu_seconds": 37.0,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I5b_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5c",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8114,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I5c.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 36.5,
+  "gpu_seconds": 36.5,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I5c.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I5c_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8114,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I5c_land.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 37.8,
+  "gpu_seconds": 37.8,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I5c_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I6",
+  "orientation": "portrait",
+  "backend": "ltx98d",
+  "seed": 8117,
+  "frames": 33,
+  "size": [
+   480,
+   832
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I6.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 39.5,
+  "gpu_seconds": 39.5,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I6.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ },
+ {
+  "id": "I6_land",
+  "orientation": "landscape",
+  "backend": "ltx98d",
+  "seed": 8117,
+  "frames": 33,
+  "size": [
+   832,
+   480
+  ],
+  "steps": 8,
+  "keyframes": [
+   [
+    "images/I6_land.jpg",
+    0
+   ]
+  ],
+  "gen_fps": 12.0,
+  "status": "ok",
+  "seconds": 36.0,
+  "gpu_seconds": 36.0,
+  "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+  "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+  "start": "images/I6_land.jpg",
+  "end": null,
+  "cropped_from_other_orientation": false
+ }
+]

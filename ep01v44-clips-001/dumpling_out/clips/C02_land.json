@@ -1,0 +1,31 @@
+{
+ "id": "C02_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8006,
+ "frames": 49,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C02_land.jpg",
+   0
+  ],
+  [
+   "images/C02_end_land.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 50.9,
+ "gpu_seconds": 50.9,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy strides in, spins to the lens, taps the chopstick-mic like an anchorman (bright, a little smug); on 'mystery' one eyebrow arches. Behind him the Uncle slowly raises a limp hand to wave, his ice pack slips, he catches it with dignity. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C02_land.jpg",
+ "end": "images/C02_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

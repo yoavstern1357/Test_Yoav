@@ -1,0 +1,31 @@
+{
+ "id": "C16_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8042,
+ "frames": 49,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C16_land.jpg",
+   0
+  ],
+  [
+   "images/C16_end_land.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 55.6,
+ "gpu_seconds": 55.6,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. Her fingers spin pleats in a blur; the Boy counts with his lips; the Uncle counts on his fingers, runs out, stares at his hands in betrayal, then silently borrows the Boy's hands, who allows it with a flat face. Grandma drops the dumpling into the steamer. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C16_land.jpg",
+ "end": "images/C16_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

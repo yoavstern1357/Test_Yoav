@@ -1,0 +1,31 @@
+{
+ "id": "C07_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8015,
+ "frames": 41,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C07_land.jpg",
+   0
+  ],
+  [
+   "images/C07_end_land.jpg",
+   40
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 49.0,
+ "gpu_seconds": 49.0,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle launches out like a cannonball (smear frames, speed lines), leaving a dust silhouette. The Boy's hat ribbon whips in the draft; after a beat he turns his head to the lens (8-frame look-to-lens), flat. The camel strolls out behind, unhurried. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C07_land.jpg",
+ "end": "images/C07_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

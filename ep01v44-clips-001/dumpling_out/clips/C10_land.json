@@ -1,0 +1,31 @@
+{
+ "id": "C10_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8024,
+ "frames": 41,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C10_land.jpg",
+   0
+  ],
+  [
+   "images/C10_end_land.jpg",
+   40
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 47.3,
+ "gpu_seconds": 47.3,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Skid and stop; the Uncle's face goes solemn, a salute snaps up, tears pour like fountains; the scent ribbon yanks his nose but he resists, saluting harder; the Boy slowly turns his head to him, flat. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C10_land.jpg",
+ "end": "images/C10_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

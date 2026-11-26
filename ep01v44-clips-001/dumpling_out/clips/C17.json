@@ -1,0 +1,31 @@
+{
+ "id": "C17",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8045,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C17.jpg",
+   0
+  ],
+  [
+   "images/C17_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 51.1,
+ "gpu_seconds": 51.1,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Training-arc hype: sweat flies, an aura flares, he pinches with trembling intensity, the dough stretches, wraps his thumb, pops; he thrusts the result into the air in triumph, glowing with pride. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C17.jpg",
+ "end": "images/C17_end.jpg",
+ "cropped_from_other_orientation": false
+}

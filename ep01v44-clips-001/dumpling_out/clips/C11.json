@@ -1,0 +1,31 @@
+{
+ "id": "C11",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8027,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C11.jpg",
+   0
+  ],
+  [
+   "images/C11_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 60.3,
+ "gpu_seconds": 60.3,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle lands in a crouch and inhales; the steam spirals into his nose; eyes flash star-sparkles; a golden aura erupts, wind ruffles the steamers. The Boy looks to the lens, flat. Grandma keeps kneading, unimpressed. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C11.jpg",
+ "end": "images/C11_end.jpg",
+ "cropped_from_other_orientation": false
+}

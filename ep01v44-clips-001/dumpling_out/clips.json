@@ -1,0 +1,621 @@
+{
+ "defaults": {
+  "backend": "ltx98d",
+  "width": 480,
+  "height": 832,
+  "fps": 24,
+  "gen_fps": 12,
+  "fit": "cover",
+  "upscale": [
+   720,
+   1280
+  ],
+  "crf": 14,
+  "post": {
+   "rife": 2,
+   "esrgan": true
+  },
+  "motion": "medium",
+  "orientations": [
+   "portrait",
+   "landscape"
+  ],
+  "style": "soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation"
+ },
+ "clips": [
+  {
+   "id": "C01",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Slow heroic pull-back. The Uncle's right eye twitches; a giant sweat drop slides down his head; his lip trembles; then he lifts his chin and crosses his arms in wounded dignity. One tiny TOOT of steam from his left ear. Mustache droops a little more.",
+   "seconds": 3.8,
+   "seed": 8003,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C01.jpg",
+    "landscape": "images/C01_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C01_end.jpg",
+    "landscape": "images/C01_end_land.jpg"
+   }
+  },
+  {
+   "id": "C02",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy strides in, spins to the lens, taps the chopstick-mic like an anchorman (bright, a little smug); on 'mystery' one eyebrow arches. Behind him the Uncle slowly raises a limp hand to wave, his ice pack slips, he catches it with dignity.",
+   "seconds": 4.0,
+   "seed": 8006,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C02.jpg",
+    "landscape": "images/C02_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C02_end.jpg",
+    "landscape": "images/C02_end_land.jpg"
+   }
+  },
+  {
+   "id": "C03",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle jabs a finger up, outraged (muffled). The Boy answers without turning, flat. In the last second everything rewinds at high speed: steam sucked back into his ears, ice pack flying off, tape-squeal glitch, ending in a white flash.",
+   "seconds": 3.3,
+   "seed": 8009,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C03.jpg",
+    "landscape": "images/C03_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C03_end.jpg",
+    "landscape": "images/C03_end_land.jpg"
+   }
+  },
+  {
+   "id": "C06",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The train sways; the Boy reads with a soft half-smile; the Uncle sways like a captain on a ship, smug, nodding to 'patient'; a commuter ducks his waving arm. The train brakes, the doors hiss open, and the Uncle's eyes snap open as he sniffs the air.",
+   "seconds": 3.8,
+   "seed": 8012,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C06.jpg",
+    "landscape": "images/C06_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C06_end.jpg",
+    "landscape": "images/C06_end_land.jpg"
+   }
+  },
+  {
+   "id": "C07",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle launches out like a cannonball (smear frames, speed lines), leaving a dust silhouette. The Boy's hat ribbon whips in the draft; after a beat he turns his head to the lens (8-frame look-to-lens), flat. The camel strolls out behind, unhurried.",
+   "seconds": 3.3,
+   "seed": 8015,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C07.jpg",
+    "landscape": "images/C07_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C07_end.jpg",
+    "landscape": "images/C07_end_land.jpg"
+   }
+  },
+  {
+   "id": "C08",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy walks backward in an easy host stride, the camera tracking back with him; he never looks behind. The scent ribbon hauls the Uncle left, right, over the bridge, round the corner (stretch-and-snap). Title blooms in brush ink as the Boy stops.",
+   "seconds": 3.8,
+   "seed": 8018,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C08.jpg",
+    "landscape": "images/C08_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C08_end.jpg",
+    "landscape": "images/C08_end_land.jpg"
+   }
+  },
+  {
+   "id": "C09",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Slow push-in; chimes sway; the Boy points to each pagoda in turn, his face lit with wonder; leaves drift; at the last words a sparrow lands on a pagoda top. Hold two seconds in the quiet.",
+   "seconds": 4.0,
+   "seed": 8021,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C09.jpg",
+    "landscape": "images/C09_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C09_end.jpg",
+    "landscape": "images/C09_end_land.jpg"
+   }
+  },
+  {
+   "id": "C10",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Skid and stop; the Uncle's face goes solemn, a salute snaps up, tears pour like fountains; the scent ribbon yanks his nose but he resists, saluting harder; the Boy slowly turns his head to him, flat.",
+   "seconds": 3.3,
+   "seed": 8024,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C10.jpg",
+    "landscape": "images/C10_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C10_end.jpg",
+    "landscape": "images/C10_end_land.jpg"
+   }
+  },
+  {
+   "id": "C11",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle lands in a crouch and inhales; the steam spirals into his nose; eyes flash star-sparkles; a golden aura erupts, wind ruffles the steamers. The Boy looks to the lens, flat. Grandma keeps kneading, unimpressed.",
+   "seconds": 4.0,
+   "seed": 8027,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C11.jpg",
+    "landscape": "images/C11_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C11_end.jpg",
+    "landscape": "images/C11_end_land.jpg"
+   }
+  },
+  {
+   "id": "C12",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy asks, bright and a little shy. Without looking up, Grandma flicks a dough circle into the air and, mid-answer, pleats it in two blurring turns and holds it up. The Boy's jaw drops; her face does not change.",
+   "seconds": 4.0,
+   "seed": 8030,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C12.jpg",
+    "landscape": "images/C12_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C12_end.jpg",
+    "landscape": "images/C12_end_land.jpg"
+   }
+  },
+  {
+   "id": "C13",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The cleaver blurs: chop-chop-chop with a shonen slash glint at every cut; amber cubes jump like gems and tumble into the bowl. The Uncle's head sways side to side following the cleaver like a cat watching a toy.",
+   "seconds": 4.0,
+   "seed": 8033,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C13.jpg",
+    "landscape": "images/C13_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C13_end.jpg",
+    "landscape": "images/C13_end_land.jpg"
+   }
+  },
+  {
+   "id": "C14",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. PEAK 1. PEAK 1. The lid lifts; steam parts; edit: 6-8 fast macro cuts (cubes, steam, melt, ripple) with whip-pans, one slow-motion ripple, then a held breath. Fact card: [CARD: THE SOUP GOES IN SOLID]. On the last beat a giant sparkling eye fills the whole frame, blinks, and is gone (the Uncle, too close).",
+   "seconds": 4.0,
+   "seed": 8036,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C14.jpg",
+    "landscape": "images/C14_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C14_end.jpg",
+    "landscape": "images/C14_end_land.jpg"
+   }
+  },
+  {
+   "id": "C15",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle lectures like a cook, calm and sure. The Boy turns slowly, eyes widening, a huge sweat drop swelling. The Uncle shrugs coolly. Grandma's hands pause for one beat and she nods once, and the Uncle visibly glows with pride.",
+   "seconds": 4.0,
+   "seed": 8039,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C15.jpg",
+    "landscape": "images/C15_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C15_end.jpg",
+    "landscape": "images/C15_end_land.jpg"
+   }
+  },
+  {
+   "id": "C16",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Her fingers spin pleats in a blur; the Boy counts with his lips; the Uncle counts on his fingers, runs out, stares at his hands in betrayal, then silently borrows the Boy's hands, who allows it with a flat face. Grandma drops the dumpling into the steamer.",
+   "seconds": 4.0,
+   "seed": 8042,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C16.jpg",
+    "landscape": "images/C16_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C16_end.jpg",
+    "landscape": "images/C16_end_land.jpg"
+   }
+  },
+  {
+   "id": "C17",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Training-arc hype: sweat flies, an aura flares, he pinches with trembling intensity, the dough stretches, wraps his thumb, pops; he thrusts the result into the air in triumph, glowing with pride.",
+   "seconds": 4.0,
+   "seed": 8045,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C17.jpg",
+    "landscape": "images/C17_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C17_end.jpg",
+    "landscape": "images/C17_end_land.jpg"
+   }
+  },
+  {
+   "id": "C18",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The basket lands; steam rolls; Grandma, not looking, says one flat word. The Uncle draws his chopsticks in slow motion (SHING) and lifts a dumpling, aura erupting. The Boy addresses the lens with earnest host calm, his back to the danger.",
+   "seconds": 4.0,
+   "seed": 8048,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C18.jpg",
+    "landscape": "images/C18_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C18_end.jpg",
+    "landscape": "images/C18_end_land.jpg"
+   }
+  },
+  {
+   "id": "C19",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. PEAK 2. PEAK 2, one clip with 3-4 cuts: ECU mouth (gulp); ECU eye (twitch, veins); a sweat drop swells on his bald head; cheeks balloon; silence and a rising whine; IMPACT FRAME (white flash, radial lines, flat red silhouette, white dot eyes); he rockets up two meters; both ears blast one long TOOOOT; mustache stands up like antennae. The Boy never turns.",
+   "seconds": 4.0,
+   "seed": 8051,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C19.jpg",
+    "landscape": "images/C19_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C19_end.jpg",
+    "landscape": "images/C19_end_land.jpg"
+   }
+  },
+  {
+   "id": "C20",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The barrel sizzles; the legs kick; Grandma, who already had the ice pack out before he landed, drops it on his face without looking. He surfaces, trembling. In the tiniest voice he reports the finding.",
+   "seconds": 3.8,
+   "seed": 8054,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C20.jpg",
+    "landscape": "images/C20_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C20_end.jpg",
+    "landscape": "images/C20_end_land.jpg"
+   }
+  },
+  {
+   "id": "C21",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. She lifts the dumpling by the knot, where it sags like a small water balloon, and sets it on the spoon. Behind her the Uncle leans closer and closer like a cat at a fish tank, water dripping off his mustache. A small badge fades in at a corner: [GROWN-UP HELP: HOT SOUP].",
+   "seconds": 4.0,
+   "seed": 8057,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C21.jpg",
+    "landscape": "images/C21_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C21_end.jpg",
+    "landscape": "images/C21_end_land.jpg"
+   }
+  },
+  {
+   "id": "C22",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. A chopstick tip pokes a tiny hole; steam threads out. The Uncle whispers pleadingly to the dumpling. His stomach rumbles and the stacked steamers rattle; the Boy steadies the tower with one finger, not looking.",
+   "seconds": 4.0,
+   "seed": 8060,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C22.jpg",
+    "landscape": "images/C22_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C22_end.jpg",
+    "landscape": "images/C22_end_land.jpg"
+   }
+  },
+  {
+   "id": "C23",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. He sips slowly; his shoulders drop; his eyes pop open as star sparkles and close again; the background dissolves into a golden watercolor sunrise with floating petals (food power-up glow); he levitates slightly, hands folded. The Boy's anxious face melts into relief and amusement.",
+   "seconds": 4.0,
+   "seed": 8063,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C23.jpg",
+    "landscape": "images/C23_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C23_end.jpg",
+    "landscape": "images/C23_end_land.jpg"
+   }
+  },
+  {
+   "id": "C24",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The sparkle softens. The Uncle speaks gently, eyes closed, no mugging at all: the one real, quiet moment. The Boy listens, eyebrows lifting in quiet respect. The Uncle lowers to the stool and whispers the catchphrase.",
+   "seconds": 4.0,
+   "seed": 8066,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C24.jpg",
+    "landscape": "images/C24_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C24_end.jpg",
+    "landscape": "images/C24_end_land.jpg"
+   }
+  },
+  {
+   "id": "C25",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. One eye snaps open and he asks in a hopeful tiny voice. Grandma answers flat. His eyes turn into stars, the aura re-ignites, he squashes into a 3-frame chibi blob with a tear of joy rolling; the Boy facepalms and smiles behind his hand.",
+   "seconds": 3.3,
+   "seed": 8069,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C25.jpg",
+    "landscape": "images/C25_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C25_end.jpg",
+    "landscape": "images/C25_end_land.jpg"
+   }
+  },
+  {
+   "id": "C26",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy asks; Grandma smiles and nudges the journal; its cover flares gold; a giant scroll bursts out and unrolls with a whoosh, wiping the screen into the paper-cut world (about 8 fps look). The Uncle sees it mid-chew and freezes, cheeks bulging.",
+   "seconds": 3.8,
+   "seed": 8072,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C26.jpg",
+    "landscape": "images/C26_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C26_end.jpg",
+    "landscape": "images/C26_end_land.jpg"
+   }
+  },
+  {
+   "id": "C30",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. A breeze lifts the napkin cape dramatically; the Uncle's eyes narrow heroically, his mustache gleams. The Boy slowly looks up at him. The Uncle lifts his chin higher, utterly serene, not lowering the spoon.",
+   "seconds": 3.8,
+   "seed": 8075,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C30.jpg",
+    "landscape": "images/C30_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C30_end.jpg",
+    "landscape": "images/C30_end_land.jpg"
+   }
+  },
+  {
+   "id": "C31",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy turns to the lens with a raised eyebrow and delivers the line; behind him the Uncle's napkin cape slowly slides off his shoulders and lands on the floor, unnoticed.",
+   "seconds": 3.3,
+   "seed": 8078,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C31.jpg",
+    "landscape": "images/C31_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C31_end.jpg",
+    "landscape": "images/C31_end_land.jpg"
+   }
+  },
+  {
+   "id": "C32",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. PEAK 3. PEAK 3. She freezes mid-fold and looks up at the hat. Edit: snap zooms (her eyes, the hat brim, her eyes) for about 1.5 s; a gust from nowhere whips away the Uncle's napkin cape and he clutches at it with a sweat drop. Then the pace drops to a long warm hold: her face softens, the Boy's eyes widen.",
+   "seconds": 4.0,
+   "seed": 8081,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C32.jpg",
+    "landscape": "images/C32_land.jpg"
+   },
+   "end": {
+    "landscape": "images/C32_end_land.jpg"
+   }
+  },
+  {
+   "id": "C33",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The spoon lowers very slowly; steam curls; the lantern flickers; one leaf drifts down. No jokes from here to the end of C34.",
+   "seconds": 4.0,
+   "seed": 8084,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C33.jpg",
+    "landscape": "images/C33_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C33_end.jpg",
+    "landscape": "images/C33_end_land.jpg"
+   }
+  },
+  {
+   "id": "C34",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle waits two full beats without moving, the hunger plain on his face, then gently hands the spoon to the Boy. The Boy takes it and smiles. No words.",
+   "seconds": 3.3,
+   "seed": 8087,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C34.jpg",
+    "landscape": "images/C34_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C34_end.jpg",
+    "landscape": "images/C34_end_land.jpg"
+   }
+  },
+  {
+   "id": "C35",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Grandma points. Insert (code): on the journal map the dotted line glows and slides south down the coast to Guangzhou. The Uncle's ears perk (mustache antennae), then an aura erupts, the ground cracks, birds scatter. The Boy looks at the lens, flat.",
+   "seconds": 4.0,
+   "seed": 8090,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/C35.jpg",
+    "landscape": "images/C35_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C35_end.jpg",
+    "landscape": "images/C35_end_land.jpg"
+   }
+  },
+  {
+   "id": "C36",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. He takes a quiet breath, his smile settles, his eyes come to the lens; the ribbon stirs. Nothing else moves.",
+   "seconds": 4.0,
+   "seed": 8093,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C36.jpg",
+    "landscape": "images/C36_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C36_end.jpg",
+    "landscape": "images/C36_end_land.jpg"
+   }
+  },
+  {
+   "id": "C37",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle's thumbs-up wobbles; one tiny toot of steam from his ear; the camel blinks slowly. Cut to black. (Generate 3 s, trim to 2.0 s.)",
+   "seconds": 2.5,
+   "seed": 8096,
+   "variants": 1,
+   "motion": "medium",
+   "start": {
+    "portrait": "images/C37.jpg",
+    "landscape": "images/C37_land.jpg"
+   },
+   "end": {
+    "portrait": "images/C37_end.jpg",
+    "landscape": "images/C37_end_land.jpg"
+   }
+  },
+  {
+   "id": "I1",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Close-up. The boy and the big fat uncle bite into soup dumplings at the same moment, steam bursts out of the dumplings, their eyes go wide with joy, they chew happily.",
+   "seconds": 3.0,
+   "seed": 8099,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I1.jpg",
+    "landscape": "images/I1_land.jpg"
+   }
+  },
+  {
+   "id": "I2",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle.",
+   "seconds": 3.0,
+   "seed": 8102,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I2.jpg"
+   }
+  },
+  {
+   "id": "I3",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking.",
+   "seconds": 3.0,
+   "seed": 8105,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I3.jpg",
+    "landscape": "images/I3_land.jpg"
+   }
+  },
+  {
+   "id": "I5",
+   "prompt": "The camera tracks them. The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up.",
+   "seconds": 3.0,
+   "seed": 8108,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I5.jpg",
+    "landscape": "images/I5_land.jpg"
+   }
+  },
+  {
+   "id": "I5b",
+   "prompt": "The camera tracks them. Wide view of the lantern street. The boy and the fat uncle run away in panic, and behind them the giant dumpling with the big chomping mouth bounces after them, lanterns swinging.",
+   "seconds": 3.0,
+   "seed": 8111,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I5b.jpg",
+    "landscape": "images/I5b_land.jpg"
+   }
+  },
+  {
+   "id": "I5c",
+   "prompt": "The camera stays completely still, fixed framing, no zoom. A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling.",
+   "seconds": 3.0,
+   "seed": 8114,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I5c.jpg",
+    "landscape": "images/I5c_land.jpg"
+   }
+  },
+  {
+   "id": "I6",
+   "prompt": "The camera tracks them. Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly.",
+   "seconds": 3.0,
+   "seed": 8117,
+   "variants": 1,
+   "motion": "high",
+   "start": {
+    "portrait": "images/I6.jpg",
+    "landscape": "images/I6_land.jpg"
+   }
+  }
+ ]
+}

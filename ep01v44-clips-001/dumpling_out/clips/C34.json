@@ -1,0 +1,31 @@
+{
+ "id": "C34",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8087,
+ "frames": 41,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C34.jpg",
+   0
+  ],
+  [
+   "images/C34_end.jpg",
+   40
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 44.8,
+ "gpu_seconds": 44.8,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle waits two full beats without moving, the hunger plain on his face, then gently hands the spoon to the Boy. The Boy takes it and smiles. No words. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C34.jpg",
+ "end": "images/C34_end.jpg",
+ "cropped_from_other_orientation": false
+}

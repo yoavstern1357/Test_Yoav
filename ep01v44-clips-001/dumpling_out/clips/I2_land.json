@@ -1,0 +1,27 @@
+{
+ "id": "I2_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8102,
+ "frames": 33,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/I2.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 30.7,
+ "gpu_seconds": 30.7,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Macro slow motion. A soup dumpling bursts and golden soup splashes up in a crown of droplets that hang in the air, steam curls up, droplets sparkle. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/I2.jpg",
+ "end": null,
+ "cropped_from_other_orientation": true
+}

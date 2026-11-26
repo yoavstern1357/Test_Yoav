@@ -1,0 +1,31 @@
+{
+ "id": "C35",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8090,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C35.jpg",
+   0
+  ],
+  [
+   "images/C35_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 50.8,
+ "gpu_seconds": 50.8,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Grandma points. Insert (code): on the journal map the dotted line glows and slides south down the coast to Guangzhou. The Uncle's ears perk (mustache antennae), then an aura erupts, the ground cracks, birds scatter. The Boy looks at the lens, flat. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C35.jpg",
+ "end": "images/C35_end.jpg",
+ "cropped_from_other_orientation": false
+}

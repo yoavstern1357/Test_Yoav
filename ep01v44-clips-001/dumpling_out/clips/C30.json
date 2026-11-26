@@ -1,0 +1,31 @@
+{
+ "id": "C30",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8075,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C30.jpg",
+   0
+  ],
+  [
+   "images/C30_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 51.0,
+ "gpu_seconds": 51.0,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. A breeze lifts the napkin cape dramatically; the Uncle's eyes narrow heroically, his mustache gleams. The Boy slowly looks up at him. The Uncle lifts his chin higher, utterly serene, not lowering the spoon. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C30.jpg",
+ "end": "images/C30_end.jpg",
+ "cropped_from_other_orientation": false
+}

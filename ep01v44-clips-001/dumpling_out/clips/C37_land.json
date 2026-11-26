@@ -1,0 +1,31 @@
+{
+ "id": "C37_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8096,
+ "frames": 33,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C37_land.jpg",
+   0
+  ],
+  [
+   "images/C37_end_land.jpg",
+   32
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 44.7,
+ "gpu_seconds": 44.7,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle's thumbs-up wobbles; one tiny toot of steam from his ear; the camel blinks slowly. Cut to black. (Generate 3 s, trim to 2.0 s.). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C37_land.jpg",
+ "end": "images/C37_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

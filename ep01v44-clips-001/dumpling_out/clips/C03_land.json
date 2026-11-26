@@ -1,0 +1,31 @@
+{
+ "id": "C03_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8009,
+ "frames": 41,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C03_land.jpg",
+   0
+  ],
+  [
+   "images/C03_end_land.jpg",
+   40
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 46.4,
+ "gpu_seconds": 46.4,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. The Uncle jabs a finger up, outraged (muffled). The Boy answers without turning, flat. In the last second everything rewinds at high speed: steam sucked back into his ears, ice pack flying off, tape-squeal glitch, ending in a white flash. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C03_land.jpg",
+ "end": "images/C03_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

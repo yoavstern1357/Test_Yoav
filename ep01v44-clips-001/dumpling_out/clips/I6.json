@@ -1,0 +1,27 @@
+{
+ "id": "I6",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8117,
+ "frames": 33,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/I6.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 39.5,
+ "gpu_seconds": 39.5,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. Low angle. The giant dumpling's huge mouth snaps shut with a chomp just behind the boy and the fat uncle as they leap forward out of frame, dust and crumbs fly. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/I6.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

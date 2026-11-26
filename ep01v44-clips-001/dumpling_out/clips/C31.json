@@ -1,0 +1,31 @@
+{
+ "id": "C31",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8078,
+ "frames": 41,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C31.jpg",
+   0
+  ],
+  [
+   "images/C31_end.jpg",
+   40
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 46.8,
+ "gpu_seconds": 46.8,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. The Boy turns to the lens with a raised eyebrow and delivers the line; behind him the Uncle's napkin cape slowly slides off his shoulders and lands on the floor, unnoticed. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C31.jpg",
+ "end": "images/C31_end.jpg",
+ "cropped_from_other_orientation": false
+}

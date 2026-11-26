@@ -1,0 +1,31 @@
+{
+ "id": "C14_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8036,
+ "frames": 49,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C14_land.jpg",
+   0
+  ],
+  [
+   "images/C14_end_land.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 52.7,
+ "gpu_seconds": 52.7,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 1. PEAK 1. The lid lifts; steam parts; edit: 6-8 fast macro cuts (cubes, steam, melt, ripple) with whip-pans, one slow-motion ripple, then a held breath. Fact card: [CARD: THE SOUP GOES IN SOLID]. On the last beat a giant sparkling eye fills the whole frame, blinks, and is gone (the Uncle, too close). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C14_land.jpg",
+ "end": "images/C14_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

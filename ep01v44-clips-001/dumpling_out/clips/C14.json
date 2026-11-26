@@ -1,0 +1,31 @@
+{
+ "id": "C14",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8036,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C14.jpg",
+   0
+  ],
+  [
+   "images/C14_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 51.1,
+ "gpu_seconds": 51.1,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. PEAK 1. PEAK 1. The lid lifts; steam parts; edit: 6-8 fast macro cuts (cubes, steam, melt, ripple) with whip-pans, one slow-motion ripple, then a held breath. Fact card: [CARD: THE SOUP GOES IN SOLID]. On the last beat a giant sparkling eye fills the whole frame, blinks, and is gone (the Uncle, too close). soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C14.jpg",
+ "end": "images/C14_end.jpg",
+ "cropped_from_other_orientation": false
+}

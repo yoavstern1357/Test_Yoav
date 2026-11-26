@@ -1,0 +1,31 @@
+{
+ "id": "C24",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8066,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C24.jpg",
+   0
+  ],
+  [
+   "images/C24_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 57.2,
+ "gpu_seconds": 57.2,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. The sparkle softens. The Uncle speaks gently, eyes closed, no mugging at all: the one real, quiet moment. The Boy listens, eyebrows lifting in quiet respect. The Uncle lowers to the stool and whispers the catchphrase. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C24.jpg",
+ "end": "images/C24_end.jpg",
+ "cropped_from_other_orientation": false
+}

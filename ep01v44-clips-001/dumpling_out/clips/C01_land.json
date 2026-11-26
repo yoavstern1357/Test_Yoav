@@ -1,0 +1,31 @@
+{
+ "id": "C01_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8003,
+ "frames": 49,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C01_land.jpg",
+   0
+  ],
+  [
+   "images/C01_end_land.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 174.4,
+ "gpu_seconds": 174.4,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. Slow heroic pull-back. The Uncle's right eye twitches; a giant sweat drop slides down his head; his lip trembles; then he lifts his chin and crosses his arms in wounded dignity. One tiny TOOT of steam from his left ear. Mustache droops a little more. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C01_land.jpg",
+ "end": "images/C01_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

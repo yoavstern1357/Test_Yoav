@@ -1,0 +1,31 @@
+{
+ "id": "C15_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8039,
+ "frames": 49,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C15_land.jpg",
+   0
+  ],
+  [
+   "images/C15_end_land.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 59.4,
+ "gpu_seconds": 59.4,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. The Uncle lectures like a cook, calm and sure. The Boy turns slowly, eyes widening, a huge sweat drop swelling. The Uncle shrugs coolly. Grandma's hands pause for one beat and she nods once, and the Uncle visibly glows with pride. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C15_land.jpg",
+ "end": "images/C15_end_land.jpg",
+ "cropped_from_other_orientation": false
+}

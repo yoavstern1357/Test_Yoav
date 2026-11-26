@@ -1,0 +1,27 @@
+{
+ "id": "I5c",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8114,
+ "frames": 33,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/I5c.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 36.5,
+ "gpu_seconds": 36.5,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. A hand flicks three small gyoza dumplings like throwing stars, they spin fast through the air with glowing motion trails toward the giant dumpling. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/I5c.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

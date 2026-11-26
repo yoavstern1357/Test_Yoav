@@ -1,0 +1,27 @@
+{
+ "id": "I5_land",
+ "orientation": "landscape",
+ "backend": "ltx98d",
+ "seed": 8108,
+ "frames": 33,
+ "size": [
+  832,
+  480
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/I5_land.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 31.5,
+ "gpu_seconds": 31.5,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera tracks them. The boy and the fat uncle run toward the camera down a lantern-lit street in full panic, eyes wide, mouths open screaming, arms flailing. Right behind them a giant white dumpling with a huge chomping mouth rolls after them, its mouth opening and closing, steam rising from its top, dust kicks up. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Wide horizontal 16:9 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/I5_land.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

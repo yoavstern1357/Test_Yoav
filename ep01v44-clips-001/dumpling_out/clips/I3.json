@@ -1,0 +1,27 @@
+{
+ "id": "I3",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8105,
+ "frames": 33,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/I3.jpg",
+   0
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 31.6,
+ "gpu_seconds": 31.6,
+ "prompt": "Lively, continuous, expressive full-body motion, constantly moving, no still moments. The camera stays completely still, fixed framing, no zoom. Both float in a giant pool full of white dumplings like a ball pit, laughing. The dumplings bob and roll gently, the boy waves his arm, the fat uncle lounges back on a big dumpling float and laughs, his belly shaking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/I3.jpg",
+ "end": null,
+ "cropped_from_other_orientation": false
+}

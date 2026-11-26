@@ -1,0 +1,31 @@
+{
+ "id": "C22",
+ "orientation": "portrait",
+ "backend": "ltx98d",
+ "seed": 8060,
+ "frames": 49,
+ "size": [
+  480,
+  832
+ ],
+ "steps": 8,
+ "keyframes": [
+  [
+   "images/C22.jpg",
+   0
+  ],
+  [
+   "images/C22_end.jpg",
+   48
+  ]
+ ],
+ "gen_fps": 12.0,
+ "status": "ok",
+ "seconds": 50.7,
+ "gpu_seconds": 50.7,
+ "prompt": "The camera stays completely still, fixed framing, no zoom. A chopstick tip pokes a tiny hole; steam threads out. The Uncle whispers pleadingly to the dumpling. His stomach rumbles and the stacked steamers rattle; the Boy steadies the tower with one finger, not looking. soft watercolor anime, delicate gentle line art, warm muted palette, consistent character design, expressive anime-comedy faces, smooth fluid animation. Vertical 9:16 composition.",
+ "negative": "photorealistic, 3d render, blurry, low quality, distorted face, extra limbs, extra fingers, deformed hands, changing clothes, morphing, flickering, text, watermark, subtitles, jitter, shaky camera, cut, scene change",
+ "start": "images/C22.jpg",
+ "end": "images/C22_end.jpg",
+ "cropped_from_other_orientation": false
+}
