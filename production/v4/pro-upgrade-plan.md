@@ -11,6 +11,12 @@ Goal: take The Dumpling Boy from "good AI prototype" to the level of a professio
 6. **Editing and finish.** No color grade, simple cuts, little camera design, no per-shot review gate before render.
 7. **Packaging.** No thumbnails, titles or channel assets built for the new format.
 
+## Defects the creator confirmed on v4.4 (2026-11-26, top priority)
+- **Duplicated characters** inside shots (a character appears twice, extra people, doubled limbs).
+- **Smeared / melting faces** in many clips.
+- **Out-of-sync** mouths and action versus the voices.
+Research and fix plans: `production/v4/quality-research.md`, `production/v4/fix-plan.md`, `production/v4/tools-buying-plan.md`.
+
 ## Upgrade tracks (in priority order)
 A. **Character lock (free).** Train a small LoRA per character (Boy, Uncle, Grandma) on Kaggle from the approved art; build model sheets (turnaround + 12 expressions + hands). All new stills use the LoRA, so faces stay identical.
 B. **Motion (free, plus optional paid hero shots).** Fix the RIFE bug and deliver 24 fps; use LTX-Video 0.9.8 for most shots; use a stronger model (Veo through the Gemini API with new-account credit, or Wan on a pay-per-use GPU) for 6-8 hero shots per episode (burn, chase, legend). Add an automatic QC gate per clip: stripe scan, face-stability score, text detector, then auto re-roll of failures.
