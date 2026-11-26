@@ -1,0 +1,19 @@
+{
+ "id": "uncle_mouths_land__v1",
+ "orientation": "landscape",
+ "backend": "klein",
+ "seed": 4631,
+ "size": [
+  1536,
+  864
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 25.4,
+ "prompt": "Reference images: image 1 is the Uncle (face, mustache, body size, clothes, colors); only this one man; image 2 is the same Uncle in another pose (body shape, sash, towel); only this one man. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). Character model sheet. Exactly ONE character on the whole sheet: the Uncle. No other person anywhere on the sheet. Sheet content: lip-sync mouth chart of the Uncle (a VERY FAT grown man with a big round belly, heavy round body, chubby cheeks, bald head with a little dark hair at the back, thin black mustache, loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, wide orange cloth sash tied at the side with long ends, brown sandals, a white towel over one shoulder): the same close-up face drawn six times in a 3 x 2 grid, front view, IDENTICAL head, eyes, eyebrows, bald head and mustache and lighting in all six panels; ONLY the mouth changes: 1) closed relaxed mouth (M, B, P); 2) slightly open, teeth almost together (S, T, E); 3) open mouth (A as in 'cat'); 4) wide open mouth (AH, shout); 5) round open O mouth (OH); 6) small pursed round mouth (OO, W). Calm neutral eyes in every panel. Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos. Wide horizontal 16:9 composition, cinematic widescreen framing with the subjects spread across the width and open space on both sides, not a cropped vertical picture.",
+ "negative": "",
+ "refs": [
+  "refs/uncle_a.jpg",
+  "refs/uncle_b.jpg"
+ ]
+}

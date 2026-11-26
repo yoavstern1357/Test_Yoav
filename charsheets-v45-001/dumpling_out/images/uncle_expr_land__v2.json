@@ -1,0 +1,19 @@
+{
+ "id": "uncle_expr_land__v2",
+ "orientation": "landscape",
+ "backend": "klein",
+ "seed": 4612,
+ "size": [
+  1536,
+  864
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 27.5,
+ "prompt": "Reference images: image 1 is the Uncle (face, mustache, body size, clothes, colors); only this one man; image 2 is the same Uncle in another pose (body shape, sash, towel); only this one man. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). Character model sheet. Exactly ONE character on the whole sheet: the Uncle. No other person anywhere on the sheet. Sheet content: eight head-and-shoulders portraits of the Uncle (a VERY FAT grown man with a big round belly, heavy round body, chubby cheeks, bald head with a little dark hair at the back, thin black mustache, loose earth-brown linen work jacket with cloth knot buttons, wide dark trousers, wide orange cloth sash tied at the side with long ends, brown sandals, a white towel over one shoulder), arranged in a clean 4 x 2 grid, every portrait the same size, facing the viewer (front view, very slight three-quarter turn), same lighting: top row left to right: neutral calm; big laugh (eyes squeezed shut, mouth wide open); shocked (eyes very wide, jaw dropped); scared (wide trembling eyes, sweat drop, mouth open in fear); bottom row left to right: smug (half-closed eyes, sly closed-mouth smile, chin lifted); sad-tender (soft wet eyes, small gentle sad smile); determined (furrowed brows, firm closed mouth); deadpan (flat half-lidded eyes, straight mouth, no emotion). Expressive anime-comedy faces but the same face design, hat/hair and clothes in all eight. Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos. Wide horizontal 16:9 composition, cinematic widescreen framing with the subjects spread across the width and open space on both sides, not a cropped vertical picture.",
+ "negative": "",
+ "refs": [
+  "refs/uncle_a.jpg",
+  "refs/uncle_b.jpg"
+ ]
+}

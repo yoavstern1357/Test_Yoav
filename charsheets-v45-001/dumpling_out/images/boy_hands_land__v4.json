@@ -1,0 +1,19 @@
+{
+ "id": "boy_hands_land__v4",
+ "orientation": "landscape",
+ "backend": "klein",
+ "seed": 4524,
+ "size": [
+  1536,
+  864
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 25.1,
+ "prompt": "Reference images: image 1 is the Boy (face, hat, clothes, colors, proportions); only this one child; image 2 is the same Boy standing (full body); only this one child. Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). Character model sheet. Exactly ONE character on the whole sheet: the Boy. No other person anywhere on the sheet. Sheet content: hand-pose sheet: only the hands of the Boy (small child hands with short soft fingers and indigo tunic cuffs), each hand with exactly five fingers, eight drawings in a 4 x 2 grid: open palm wave; pointing index finger; thumbs up; closed fist; holding chopsticks; holding a small round steamed dumpling between two fingers; relaxed hand seen from the side; counting three on the fingers. Only hands with a little of the sleeve, no faces, no bodies. Delicate soft anime character-design sheet in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette, subtle paper grain. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frames or borders. No text, no labels, no numbers, no letters, no logos. Wide horizontal 16:9 composition, cinematic widescreen framing with the subjects spread across the width and open space on both sides, not a cropped vertical picture.",
+ "negative": "",
+ "refs": [
+  "refs/boy_a.jpg",
+  "refs/boy_b.jpg"
+ ]
+}
