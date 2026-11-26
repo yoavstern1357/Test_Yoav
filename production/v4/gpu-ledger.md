@@ -21,3 +21,4 @@
 | ep01v44-stills-fix-001 | images (klein, 22 items x 2 variants, re-rolls) | planned about 20 | 2026-11-25 |
 | ep01v44-stills-fix-001 | measured about 25 | about 25 | 2026-11-26 |
 | ep01v44-clips-001 | clips (ltx98d, 8 steps, gen 12 fps + RIFE + ESRGAN, 39 clips x 2 orientations, 1 variant) | planned about 45 (two T4) | 2026-11-26 |
+| charsheets-v45-001 | images (klein, 42 single-character sheets at 1536x864: turnaround/expressions/hands/mouths, old designs; superseded by the redesign decision) | about 28 (2 GPUs x 14 min session) | 2026-11-26 |
