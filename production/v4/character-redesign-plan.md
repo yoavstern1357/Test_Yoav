@@ -1,7 +1,7 @@
 # Character redesign plan (art direction and character design)
 
 Written: 2026-11-26 · Role: art director and character designer · Status: **PLAN ONLY, waiting for creator approval (Gate 0)**. No GPU job was run and no image was generated for this plan.
-Read with: `production/v4/PRODUCTION-BIBLE.md` (all creator decisions), `production/v4/fix-plan.md` (Fix 1 sheets, Fix 5 mouths, Fix 8 LoRAs), `production/v4/quality-research.md` (rubric C1-C7, G2), `production/v4/director-treatment.md` (acting notes, Camel, Grandma beats).
+Read with: `production/v4/PRODUCTION-BIBLE.md` (all creator decisions, including the 1-minute format change of 2026-11-26), `production/v4/fix-plan.md` (Fix 1 sheets, Fix 5 mouths, Fix 8 LoRAs), `production/v4/quality-research.md` (rubric C1-C7, G2), `production/v4/director-treatment.md` (acting notes, Camel, Grandma beats).
 
 **What is fixed by the creator and is NOT up for redesign:** Boy about 7, conical leaf hat with orange chin ribbon, village clothes (faded indigo tunic, rolled hemp trousers, orange sash, straw sandals). Uncle fat, bald, thin mustache, comically ridiculous, earth-brown linen jacket, dark trousers, wide orange sash, towel; the intro-v3 variant-2 Uncle "looks good" and is the anchor. Grandma = the old master. Dad = sepia silhouette from behind only. Style = delicate soft anime, our own look, not Ghibli, no studio imitation. Orange sash = shared family accent, adults included. No kimono, nothing karate-like. Jokes on the Uncle's behavior only, never his weight, never on a people or place.
 
@@ -15,7 +15,8 @@ Read with: `production/v4/PRODUCTION-BIBLE.md` (all creator decisions), `product
 2. **Pro fix = the classic trio of shapes plus one family construction kit:** Boy = **triangle** (Dad's oversized hat) on a small bean; Uncle = **circle/egg** with a white vertical towel and a horizontal orange band; Grandma = **square block** with a small triangle crown (bun and two pins). One shared eye, brow, nose, mouth and line system so they are one family in one frame.
 3. **"Simple enough to draw 1000 times" = simple enough for the AI 1000 times:** each lead gets at most 7 locked features, each big enough to survive at phone size (at least about 3% of the character's height); everything smaller is either removed or declared free (allowed to vary).
 4. **Three directions per character** (A = refine the current look, B = bold shape-language redesign, C = cinematic, more naturalistic and detailed). **Recommendation: B for all three leads, with the Uncle changing the least** (same body, jacket, towel, sash; only a fully bald dome, a thin curled mustache per the written rule, and a face rebuilt on the family kit). Supporting cast: B for the guest-teacher kit, the Camel and the Giant Dumpling.
-5. **Process: 4 creator gates, about 12-14 GPU-h in total over about 2 weeks**, of which only about 1.2 GPU-h comes before the creator chooses a direction. The LoRA step replaces fix-plan Fix 8 (same budget line), so the redesign adds only about 4-5 GPU-h to the plan. Keyframe stills for Ep 1 should wait for Gate 3 so we don't make them twice.
+5. **Process: 4 creator gates, about 11-15 GPU-h in total over about 2 weeks**, of which only about 0.75 GPU-h comes before the creator chooses a direction. The LoRA step replaces fix-plan Fix 8 (same budget line), so the redesign adds only about 4-5 GPU-h to the plan. Keyframe stills for Ep 1 should wait for Gate 3 so we don't make them twice.
+6. **The 1-minute format (bible, 2026-11-26) raises the bar:** 20-26 clips of 2-3 s, a 0-3 s hook and a title hit of 2 s or less mean every character must be named by the viewer in **under half a second, in any shot size, often mid-action**. That favors B even more (section 1.4).
 
 ---
 
@@ -51,6 +52,14 @@ Looked at: intro-v3 `I1_bite__v2`, `I3_pool__v2`, `I5_chase__v2`, `I6_chomp__v2`
 5. **Lock list / free list / banned list per character** (section 3), so prompts, QC (rubric C4) and LoRA captions all name the same things.
 6. **Supporting cast:** make Grandma a real "master" design, make the Giant Dumpling read as a dumpling first and a monster second, and fix the Camel's species and silhouette.
 7. **Documents:** `production/character-bible.md` is stale (10-year-old boy, white kimono, "For science!"). After Gate 3 it is replaced by the new sheets and prompt blocks.
+
+### 1.4 What the 1-minute format changes for character design
+The bible's format change (about 1:00, hard max 1:15; hook 0-3 s; title hit of 2 s or less; 20-26 AI clips of 2-3 s; about 150-170 words; max 2 faces per clip) changes the design brief in five concrete ways:
+1. **Recognition in under 0.5 s.** A 2-3 s shot leaves no time to "find" who is who. The test at every gate becomes: shown for 0.5 s at phone size, can a viewer name each character? (Gate check in 5.3.) Big shape + value block + one color accent do this; small details (ribbon string, buttons, pocket) do not.
+2. **The hook frame is a character frame.** The 0-3 s hook is "the funniest or most surprising image", usually the Uncle mid-gag or the Boy's reaction. So each lead needs 2-3 instantly readable **signature hook poses** (Uncle: chopsticks-trophy pose, burned-tongue steam, food-coma; Boy: brim-push wonder, deadpan stare; Grandma: eye-opening). They go on the pose sheet and become reusable hook templates.
+3. **Expressions must read without context.** There is no time for build-up, so each of the 12 expressions is designed to be legible alone, in a 3/4 close-up, in one frame (big brows, mouth shapes, eye shapes; gag symbols such as sweat drops and steam only where listed).
+4. **Fewer clips, fewer re-rolls, but each clip matters more.** With about 20-26 clips per episode, one duplicated or off-model character is 4-5% of the episode. Lock lists and LoRAs pay off faster per episode; the per-episode guest must be designed in a cheap template (B kit) because there are more episodes per arc.
+5. **Silhouette in motion.** Most shots are moving, short and close; the identity carriers must survive motion blur and cropping at the chest: hat brim and ribbon (Boy), bald dome and mustache (Uncle), bun and pins (Grandma) all sit at head level, so a chest-up shot still shows the full identity. This is why B moves the key features to the head.
 
 ---
 
@@ -256,7 +265,8 @@ Prompt template B: `[Name], a [trade] from [place], [N] heads tall, [primary sha
 3. **Story lives in the design:** Dad's oversized hat (Grandma recognizes it), Dad's journal in the sash pouch, the Uncle's research chopsticks, the master's rolling pin. Props carry personality without dialogue.
 4. **Comedy range is designed** (mobile brows, acting mustache, brim reveal, master's eye-opening, chibi gag sheet), matching the v4.4 directive for big anime comedy while keeping identity locked (R8).
 5. **The Uncle the creator likes stays himself:** same body, jacket, sash, towel; only three changes (fully bald dome, thin curled mustache per the written rule, family-kit face). If the creator wants zero change, Uncle A is fully compatible with Boy B and Grandma B.
-6. **C** is the right choice only if the show moves toward fewer, longer, prestige episodes with paid video tools; on the free pipeline its detail will drift and smear (fix-plan R4: small faces at 480x832).
+6. **Built for 2-3 s shots:** B puts the identity at head level (brim and ribbon, dome and mustache, bun and pins) and gives each lead hook poses that read in one frame, which the 1-minute format needs (section 1.4).
+7. **C** is the right choice only if the show moves toward fewer, longer, prestige episodes with paid video tools; on the free pipeline its detail will drift and smear (fix-plan R4: small faces at 480x832), and in 2-3 s shots its subtle details are not seen anyway.
 
 ---
 
@@ -274,6 +284,7 @@ Location after approval: `production/v4/model-sheets/<character>/` (Boy, Uncle, 
 | `<c>_mouths.png` + `mouths/*.png` | Mouth chart for Rhubarb shapes A-H + X, front and 3/4, cut out as transparent sprites | fix-plan Fix 5a |
 | `<c>_hands.png` | 8 hand poses: relaxed, point, open palm, fist, holding chopsticks, holding the signature prop, thumbs-up, scared spread; 4 fingers + thumb drawn simply | stills, QC C6 |
 | `<c>_poses.png` | Idle, walk (contact, down, passing, up), run (4 keys), signature pose, 4 gag poses (chibi, shock, collapse, triumph) | video keyframes |
+| `<c>_hooks.png` | 2-3 signature hook poses per lead that read in one frame at phone size (section 1.4), in portrait close and medium framing | 0-3 s hooks, thumbnails |
 | `<c>_gag.png` | Chibi 2.5-head version + 3 designed off-model faces, lock list kept | gag beats (C7) |
 | `<c>_color.png` | Base / shadow / blush / line swatches with hex; the character under 4 lights: day exterior, warm interior, lantern night, sepia memory | color QC (G2), backgrounds |
 | `<c>_props.png` | Signature props in 3 views with scale to the hand | stills |
@@ -319,6 +330,7 @@ Between gates the automatic checks run first (5.3), so the creator only sees ima
 - GPU-h are counted the way `production/v4/gpu-ledger.md` counts them; every job logs there. Trainer: an MIT/Apache trainer with FLUX.2 klein support (AI-Toolkit is the one BFL lists; verify its license file and T4/fp16 support in the smoke test). Camel LoRA only if the Camel drifts in practice (+1.5 GPU-h); the Giant Dumpling needs no LoRA (prompt + one reference).
 
 ### 5.3 Automatic checks at each gate (CPU, no GPU)
+- **Half-second test (1-minute format):** a flash board shows each concept for 0.5 s at phone size (full body and chest-up crop); each lead must be named correctly by a viewer who has not seen the board before (or by Claude on a blind randomized board).
 - **Silhouette distinctness:** black fill on the flat background, scaled to the same height; overlap (IoU) between any two leads below 0.70 [Assumption: calibrate], and a person (or Claude) names each character from the 64 px strip.
 - **Value separation:** the main mass of each lead at least 25 luma steps from the other two leads' main masses and from the background band planned behind him or her.
 - **Palette:** median color of each locked part within Delta E 2000 of 6 of the swatch (rubric G2).
@@ -329,7 +341,7 @@ Between gates the automatic checks run first (5.3), so the creator only sees ima
 ### 5.4 Hand-offs to the other agents (after Gate 3)
 | Agent / skill | Receives |
 |---|---|
-| Script writer (`write-episode-script`) | New signature beats: Boy's brim push and hand-on-hat run, the Uncle's chopstick draw and mustache acting, Grandma's eye-opening event, the Camel's chew-and-stare; the gag-sheet list (which off-model moments exist); size chart for staging 2-shots |
+| Script writer (`write-episode-script`) | Hook-pose templates for the 0-3 s hook (`<c>_hooks.png`); new signature beats: Boy's brim push and hand-on-hat run, the Uncle's chopstick draw and mustache acting, Grandma's eye-opening event, the Camel's chew-and-stare; the gag-sheet list (which off-model moments exist); size chart for staging 2-shots |
 | Stills / keyframes (`make-episode-v4`, fix-plan Fix 1) | `<c>.prompt.md` blocks, `refs/` files, negative block, LoRA trigger words, "one character sheet per visible character" rule, background value rule (25 luma behind characters) |
 | Video / motion | Idle, walk, run definitions; secondary-motion list (ribbon tails, sash tails, towel, mustache, bun pins stay rigid); gag deformation list; "camera at or below the Boy's eye line for his talk shots" |
 | Lip-sync (fix-plan Fix 5a) | Mouth charts and transparent mouth sprites per character |
