@@ -25,12 +25,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("name"); ap.add_argument("ids", nargs="*")
     ap.add_argument("--backend", default="ltx98d"); ap.add_argument("--orient", default="portrait,landscape")
-    ap.add_argument("--steps", type=int); ap.add_argument("--motion", default="medium")
+    ap.add_argument("--intro", action="store_true"); ap.add_argument("--no-episode", action="store_true"); ap.add_argument("--steps", type=int); ap.add_argument("--motion", default="medium")
     a = ap.parse_args()
     out = os.path.join(HERE, "inputs", a.name)
     os.makedirs(os.path.join(out, "images"), exist_ok=True)
     clips, seed = [], 8000
-    for c in parse():
+    for c in ([] if a.no_episode else parse()):
         if c["method"] == "CODE" or (a.ids and c["id"] not in a.ids):
             continue
         seed += 3
@@ -49,6 +49,25 @@ def main():
                 Image.open(p).convert("RGB").save(os.path.join(out, "images", base + suf + ".jpg"), quality=92)
                 item[key][o] = f"images/{base}{suf}.jpg"
         clips.append(item)
+    if a.intro:       # series intro clips from the locked intro stills (specs/frames/ep01v43/I*.png), prompts from the v4.3 plan
+        import importlib.util
+        sp = importlib.util.spec_from_file_location("v43c", os.path.join(HERE, "make_ep01v43_clips_input.py")); mod = importlib.util.module_from_spec(sp); sp.loader.exec_module(mod)
+        F43 = os.path.join(HERE, "..", "specs", "frames", "ep01v43")
+        for cid, (prompt, secs, cn, g) in mod.CLIPS.items():
+            if not cid.startswith("I"):
+                continue
+            seed += 3
+            cam = "The camera tracks them." if cid in ("I5", "I5b", "I6") else "The camera stays completely still, fixed framing, no zoom."
+            item = {"id": cid, "prompt": cam + " " + prompt, "seconds": 3.0, "seed": seed, "variants": 1, "motion": "high", "start": {}}
+            for o, suf in (("portrait", ""), ("landscape", "_land")):
+                if o not in a.orient:
+                    continue
+                p = os.path.join(F43, cid + suf + ".png")
+                if not os.path.exists(p):
+                    continue
+                Image.open(p).convert("RGB").save(os.path.join(out, "images", cid + suf + ".jpg"), quality=92)
+                item["start"][o] = f"images/{cid}{suf}.jpg"
+            clips.append(item)
     job = {"defaults": {"backend": a.backend, "width": 480, "height": 832, "fps": 24, "gen_fps": 12, "fit": "cover", "upscale": [720, 1280], "crf": 14,
                         "post": {"rife": 2, "esrgan": True}, "motion": a.motion, "orientations": a.orient.split(","), "style": STYLE}, "clips": clips}
     json.dump(job, open(os.path.join(out, "clips.json"), "w"), indent=1)
