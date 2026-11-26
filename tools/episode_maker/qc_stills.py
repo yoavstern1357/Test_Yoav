@@ -8,6 +8,7 @@ For every still: count people two ways and compare with the expected number of c
   text     PP-OCRv3 DB text detector (Apache-2.0, shared with qc_clips.py)
   sharp    Laplacian variance at 480 px width, relative to the median of the folder (SOFT below TH["soft"])
 Flags: DUP (count > expected: duplicate / extra character), MISSING (count < expected), FACE_DUP (faces alone > expected),
+       DUP_ID? (two faces whose torsos have the same costume colour: a doubled character even when the count is right; WARN),
        SOFT, TEXT, SMALL_FACE (largest face under TH["small_face"] % of the frame height: smear risk in video).
 Output: Markdown/JSON report and a contact sheet PNG with the boxes (faces green, persons blue) and the flags drawn in red.
 
@@ -36,7 +37,7 @@ TH = dict(
     person_min_h=0.12,   # ignore person boxes shorter than this share of the frame height (background crowd, props)
     soft=0.45,           # sharpness / folder median below this = SOFT
     small_face=8.0,      # largest face height in % of the frame height
-    min_face=0.035,      # ignore face boxes shorter than this share of the frame height (lanterns, buttons, background)
+    min_face=0.040,      # ignore face boxes shorter than this share of the frame height (lanterns, buttons, background)
 )
 
 
@@ -123,6 +124,29 @@ def nms(items, iou_th, contain=1.0):
     return keep
 
 
+# Costume colours per character (OpenCV HSV, H 0-180): the torso just below each face is classified, two faces with the same
+# costume = "DUP_ID?" (a doubled character even when the head count is right). Design-specific: update after the redesign.
+COSTUME = {
+    "boy": dict(h=(95, 130), s_min=40, v_max=256),       # faded indigo tunic
+    "uncle": dict(h=(8, 28), s_min=70, v_max=210),       # earth-brown linen jacket
+    "grandma": dict(h=(35, 90), s_min=25, v_max=256),    # sage-green tunic
+}
+
+
+def costume_of(img, b, min_share=0.15):
+    x, y, w, h = b[:4]
+    H, W = img.shape[:2]
+    x0, x1 = int(max(0, x - 0.2 * w)), int(min(W, x + 1.2 * w))
+    y0, y1 = int(min(H, y + 1.15 * h)), int(min(H, y + 2.3 * h))
+    if y1 - y0 < 4 or x1 - x0 < 4:
+        return None
+    hsv = cv2.cvtColor(img[y0:y1, x0:x1], cv2.COLOR_BGR2HSV).reshape(-1, 3).astype(int)
+    share = {k: float(((hsv[:, 0] >= c["h"][0]) & (hsv[:, 0] <= c["h"][1]) & (hsv[:, 1] > c["s_min"]) & (hsv[:, 2] < c["v_max"])).mean())
+             for k, c in COSTUME.items()}
+    k = max(share, key=share.get)
+    return k if share[k] > min_share else None
+
+
 def sharpness(img):
     g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     g = cv2.resize(g, (480, int(round(g.shape[0] * 480 / g.shape[1]))), interpolation=cv2.INTER_AREA).astype(np.float32)
@@ -166,6 +190,7 @@ def analyse(path, faces, persons, text):
         f = faces(img)
         r["faces"] = len(f); r["face_boxes"] = [[round(float(v)) for v in b] + [round(s, 2)] for b, s in f]
         r["face_h"] = round(float(100.0 * max((b[3] for b, _ in f), default=0) / img.shape[0]), 1)
+        r["costumes"] = [costume_of(img, b) for b, _ in f]
     if persons.ok:
         p = persons(img)
         r["persons"] = len(p); r["person_boxes"] = [[round(float(v)) for v in b] + [round(s, 2)] for b, s in p]
@@ -187,6 +212,10 @@ def flag(r, exp, med_sharp):
             F.append("FACE_DUP")
         if count < n_exp:
             F.append("MISSING")
+    cs = [c for c in r.get("costumes", []) if c]
+    same = sorted({c for c in cs if cs.count(c) > 1})
+    if same and "DUP" not in F:
+        F.append("DUP_ID?(" + ",".join(same) + ")")
     if med_sharp and r["sharp"] / med_sharp < TH["soft"]:
         F.append("SOFT")
     if r.get("text"):
@@ -194,7 +223,7 @@ def flag(r, exp, med_sharp):
     if r.get("faces") and 0 < r.get("face_h", 0) < TH["small_face"]:
         F.append("SMALL_FACE")
     r["flags"] = F
-    r["verdict"] = "FAIL" if {"DUP", "TEXT"} & set(F) else ("WARN" if F else "PASS")
+    r["verdict"] = "FAIL" if {"DUP", "TEXT"} & set(F) else ("WARN" if F else "PASS")   # DUP_ID? = WARN (a human looks)
     return r
 
 
@@ -282,11 +311,13 @@ def main():
         gt = set(json.load(open(a.gt))["dup"])
         ids = {r["id"] for r in rows}
         gt &= ids
-        flagged = {r["id"] for r in rows if "DUP" in r["flags"]}
-        tp = flagged & gt
-        summary += (f"\nDUP vs ground truth ({len(gt)} stills with a duplicate/extra person by eye): flagged {len(flagged)}, "
-                    f"true {len(tp)}, precision {len(tp) / max(1, len(flagged)):.2f}, recall {len(tp) / max(1, len(gt)):.2f}. "
-                    f"Missed: {' '.join(sorted(gt - flagged)) or '-'}. False alarms: {' '.join(sorted(flagged - gt)) or '-'}")
+        for label, test in (("DUP (count)", lambda F: "DUP" in F),
+                            ("DUP or DUP_ID? (count or costume)", lambda F: any(x == "DUP" or x.startswith("DUP_ID") for x in F))):
+            flagged = {r["id"] for r in rows if test(r["flags"])}
+            tp = flagged & gt
+            summary += (f"\n{label} vs ground truth ({len(gt)} stills with a duplicate/extra person by eye): flagged {len(flagged)}, "
+                        f"true {len(tp)}, precision {len(tp) / max(1, len(flagged)):.2f}, recall {len(tp) / max(1, len(gt)):.2f}. "
+                        f"Missed: {' '.join(sorted(gt - flagged)) or '-'}. False alarms: {' '.join(sorted(flagged - gt)) or '-'}")
     print("\n".join(lines)); print(summary)
     if a.md:
         open(a.md, "w").write("\n".join(lines) + "\n\n" + summary + "\n")
