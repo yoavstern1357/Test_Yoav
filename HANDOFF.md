@@ -1,6 +1,19 @@
 # HANDOFF: The Dumpling Boy
 
-Last updated: 2026-11-24. Branch: `claude/youtube-monetization-page-1sa7gr`. Read `CLAUDE.md` for the rules.
+Last updated: 2026-11-26. Working branch: `claude/charming-euler-0laws8` (GPU outputs on branch `gpu-results`). Read `CLAUDE.md` and `production/v4/PRODUCTION-BIBLE.md` (all decisions, incl. "v4.4 DIRECTIVES") first.
+
+## 0. Current status (v4.4)
+- **Episode 1 v4.4 rendered** (2:46, both 9:16 and 16:9): anime-TV opening with an original Japanese punk song (ACE-Step), full AI motion clips (LTX-Video 0.9.8 distilled on Kaggle), anime-comedy script `scripts/episode-01-v4.4.md`, Qwen3-TTS voices, safe caption placement. Files (git-ignored): `tools/episode_maker/out/episode-01-v4.4{,-land}{,-mobile}.mp4`. Sent to the creator; awaiting notes. Not uploaded.
+- Decisions pending from the creator: opening-song style (placeholder: style B, intro_b__s212), final voice approval, notes on v4.4.
+- Scripts v4.2 exist for Episodes 2-3 (need the v4.4 anime-comedy pass); creator said: focus on Episode 1 only for now.
+- Agents hit the weekly model limit (resets 2026-11-30 05:00 UTC).
+
+## 0.1 Pipeline (free)
+- **GPU (Kaggle T4 x2, ~30 h/week, max 2 sessions)** driven by GitHub Actions: edit `tools/episode_maker/gpu/jobs/run.json` (unique run_id, task images|clips|tts|music, input folder) and push; results land on branch `gpu-results/<run_id>/`. Secret `KAGGLE_API_TOKEN` is set in the repo. See `tools/episode_maker/gpu/README.md`, `production/v4/motion-tech.md`, `production/v4/voice-tech.md`, `production/v4/gpu-ledger.md`.
+- Stills: FLUX.2 klein 4B (Apache-2.0) with reference images; Uncle locked to gpu-results/intro-v3 variant 2; style "soft watercolor anime".
+- Clips: backend `ltx98d`; KNOWN BUG: RIFE x2 corrupts interpolated frames, so drop every 2nd frame on install (12 fps "on twos"); see motion-tech.md.
+- Spec + render: `tools/episode_maker/paper/build_spec_ep01v44.py` then `python3 make_episode.py specs/episode-01-v4.4.json out/episode-01-v4.4.mp4 --both`; mobile versions re-encoded at ~780 kbps to stay under 20 MB.
+- Canva is only a fallback (rate-limited).
 
 ## 1. Status
 | Item | State |

@@ -1,6 +1,6 @@
 ---
 name: write-episode-script
-description: Write or revise an episode script for The Dumpling Boy (about 2:00, one dumpling, English, with history beat, journal clue, upload text and sources). Use when the user asks for a new episode, a rewrite, or script fixes.
+description: Write or revise an episode script for The Dumpling Boy (about 2:00, one dumpling, English, with history beat, journal clue, upload text and sources). Use when the user asks for a new episode, a rewrite, or script fixes. Current format: see production/v4/PRODUCTION-BIBLE.md and scripts/episode-01-v4.4.md.
 ---
 
 # Write an episode script
