@@ -165,7 +165,7 @@ def analyse(path, faces, persons, text):
     if faces.ok:
         f = faces(img)
         r["faces"] = len(f); r["face_boxes"] = [[round(float(v)) for v in b] + [round(s, 2)] for b, s in f]
-        r["face_h"] = round(100.0 * max((b[3] for b, _ in f), default=0) / img.shape[0], 1)
+        r["face_h"] = round(float(100.0 * max((b[3] for b, _ in f), default=0) / img.shape[0]), 1)
     if persons.ok:
         p = persons(img)
         r["persons"] = len(p); r["person_boxes"] = [[round(float(v)) for v in b] + [round(s, 2)] for b, s in p]
