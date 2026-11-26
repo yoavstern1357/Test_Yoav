@@ -36,6 +36,7 @@ TH = dict(
     jump=0.45,          # 1 - correlation between consecutive unique frames (64 px thumbnails)
     key_start=0.80,     # correlation of frame 1 with the START keyframe
     key_end=0.70,       # correlation of the last frame with the END keyframe
+    key_pair=0.80,      # correlation START vs END keyframe: below this the pair is a different shot (morph / duplicate risk)
     slowmo=0.85,        # edit speed below this = stretched motion (12 fps on twos becomes about 8 fps)
     trunc=0.85,         # share of the clip shown below this = end keyframe / payoff cut off
     freeze=0.30,        # seconds of frozen last frame in the edit
@@ -149,6 +150,24 @@ def load_clip_prompts(path):
     return {c["id"]: c.get("prompt", "") for c in j.get("clips", [])}
 
 
+def load_script_chars(path):
+    """Expected on-screen characters per clip from an episode script table (scripts/episode-XX.md):
+    rows '| Cxx (..) | time | method | START KEYFRAME | END KEYFRAME | ...' -> names in START or END."""
+    out = {}
+    if not path or not os.path.exists(path):
+        return out
+    for ln in open(path, encoding="utf-8"):
+        m = re.match(r"\|\s*(C\d+)\b", ln)
+        if not m:
+            continue
+        cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+        if len(cells) < 5:
+            continue
+        names = set(expected_chars(cells[3])) | set(expected_chars(cells[4]))
+        out[m.group(1)] = sorted(names)
+    return out
+
+
 def timing_from_spec(spec_path):
     """Use make_episode.build_timeline to see how each clip is used in the edit (needs the voices on disk)."""
     sys.path.insert(0, HERE)
@@ -176,7 +195,7 @@ def timing_from_spec(spec_path):
     return per
 
 
-def analyse(path, faces, text, frames_dir=None, prompt=None, sample_faces=16, sample_text=5):
+def analyse(path, faces, text, frames_dir=None, prompt=None, sample_faces=16, sample_text=5, chars=None):
     cid = os.path.splitext(os.path.basename(path))[0]
     meta = probe(path)
     fr = read_frames(path)
@@ -253,9 +272,13 @@ def analyse(path, faces, text, frames_dir=None, prompt=None, sample_faces=16, sa
             r["key_start"] = round(corr(cv2.imread(ks), fr[0]), 2)
         if os.path.exists(ke):
             r["key_end"] = round(corr(cv2.imread(ke), fr[-1]), 2)
+        if os.path.exists(ks) and os.path.exists(ke):   # very different START/END stills make the model morph or duplicate
+            r["key_pair"] = round(corr(cv2.imread(ks), cv2.imread(ke)), 2)
+        if faces.ok and os.path.exists(ks):              # duplicates are mostly baked into the stills: count faces there too
+            r["faces_key"] = len(faces(cv2.imread(ks)))
     # expected characters from the clip prompt
-    if prompt is not None:
-        ex = expected_chars(prompt)
+    if chars is not None or prompt is not None:
+        ex = chars if chars is not None else expected_chars(prompt)
         r["expect"] = len(ex)
         r["chars"] = ",".join(ex)
     # flags
@@ -285,6 +308,10 @@ def analyse(path, faces, text, frames_dir=None, prompt=None, sample_faces=16, sa
         F.append("START_MISMATCH")
     if r.get("key_end") is not None and r["key_end"] < TH["key_end"]:
         F.append("END_MISS")
+    if r.get("key_pair") is not None and r["key_pair"] < TH["key_pair"]:
+        F.append("MORPH_RISK")
+    if r.get("expect") and r.get("faces_key", 0) > r["expect"]:
+        F.append("DUP_IN_STILL?")
     if r["w"] and r["h"] and max(r["w"], r["h"]) < 1280:
         F.append("LOWRES")
     return r
@@ -292,7 +319,7 @@ def analyse(path, faces, text, frames_dir=None, prompt=None, sample_faces=16, sa
 
 def score(r):
     """FAIL = a defect the creator would see; WARN = risk; PASS otherwise."""
-    hard = {"STRIPES", "FACE_SMEAR", "JUMP", "TEXT", "DUP?", "SPEED", "LOWRES"}
+    hard = {"STRIPES", "FACE_SMEAR", "JUMP", "TEXT", "DUP?", "DUP_IN_STILL?", "MORPH_RISK", "SPEED", "LOWRES"}
     soft = {"SOFT", "FACE_ADDED", "FACE_LOST", "CROWD", "SMALL_FACE", "START_MISMATCH", "END_MISS", "SLOWMO", "TRUNC", "FREEZE"}
     names = {re.sub(r"\(.*", "", f) for f in r["flags"]}
     if names & hard:
@@ -307,6 +334,7 @@ def main():
     ap.add_argument("inputs", nargs="*", help="clip files or folders")
     ap.add_argument("--frames", help="folder with <id>.png / <id>_end.png keyframes (+ _land)")
     ap.add_argument("--clips-json", help="clips.json of the GPU job (prompts -> expected characters)")
+    ap.add_argument("--script", help="episode script .md: expected characters per clip from the START/END keyframe columns")
     ap.add_argument("--spec", help="episode spec: adds edit timing (slow motion, truncation, frozen tail)")
     ap.add_argument("--only", nargs="*", default=[], help="clip ids to check (prefix match)")
     ap.add_argument("--json", help="write the full report as JSON")
@@ -330,6 +358,7 @@ def main():
     if not text.ok:
         print("note: no text model (run --fetch-models); text check skipped", file=sys.stderr)
     prompts = load_clip_prompts(a.clips_json)
+    script_chars = load_script_chars(a.script)
     timing = {}
     if a.spec:
         try:
@@ -340,7 +369,7 @@ def main():
     for f in files:
         cid = os.path.splitext(os.path.basename(f))[0]
         base = cid[:-5] if cid.endswith("_land") else cid
-        r = analyse(f, faces, text, a.frames, prompts.get(base) if prompts else None)
+        r = analyse(f, faces, text, a.frames, prompts.get(base) if prompts else None, chars=script_chars.get(base))
         t = timing.get(base)
         if t:
             r["edit_speed"] = round(t["speed"], 2)
@@ -359,8 +388,8 @@ def main():
         if r["id"].endswith("_land") and r["id"][:-5] in by and abs(by[r["id"][:-5]]["dur"] - r["dur"]) > 0.3:
             r["flags"].append("SPEED")
         r["verdict"] = score(r)
-    cols = ["id", "verdict", "dur", "eff_fps", "stripes", "sharp_drop", "faces_first", "faces_last", "faces_max", "expect", "face_h", "face_sharp",
-            "jump", "jump_at", "text_frames", "key_start", "key_end", "edit_speed", "shown", "frozen", "flags"]
+    cols = ["id", "verdict", "dur", "eff_fps", "stripes", "sharp_drop", "faces_first", "faces_last", "faces_max", "faces_key", "expect", "face_h", "face_sharp",
+            "jump", "jump_at", "text_frames", "key_start", "key_end", "key_pair", "edit_speed", "shown", "frozen", "flags"]
     cols = [c for c in cols if any(c in r for r in rows)]
 
     def cell(r, c):
