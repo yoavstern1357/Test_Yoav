@@ -43,7 +43,7 @@ def main():
             for key, base in (("start", c["id"]), ("end", c["id"] + "_end")):
                 p = os.path.join(FRAMES, base + suf + ".png")
                 if not os.path.exists(p):
-                    if o == "landscape":
+                    if o == "landscape" or key == "end":
                         continue
                     sys.exit(f"missing keyframe {p}")
                 Image.open(p).convert("RGB").save(os.path.join(out, "images", base + suf + ".jpg"), quality=92)

@@ -19,3 +19,5 @@
 | ep01v44-stills-001 | measured: 128 keyframes about 50 min wall | about 50 | 2026-11-25 |
 | ep01v44-voices-001 / -fix-001 | measured about 25 + 8 | about 33 | 2026-11-25 |
 | ep01v44-stills-fix-001 | images (klein, 22 items x 2 variants, re-rolls) | planned about 20 | 2026-11-25 |
+| ep01v44-stills-fix-001 | measured about 25 | about 25 | 2026-11-26 |
+| ep01v44-clips-001 | clips (ltx98d, 8 steps, gen 12 fps + RIFE + ESRGAN, 39 clips x 2 orientations, 1 variant) | planned about 45 (two T4) | 2026-11-26 |
