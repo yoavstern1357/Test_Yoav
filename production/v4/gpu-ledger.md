@@ -26,3 +26,5 @@
 | voice-samples-001 | tts (qwen3 VoiceDesign 25 designs x 4 lines [capped 9.5 min], chatterbox 10 refs x 4 lines [3 min], orpheus 4 voices x 4 lines [3.5 min]; free voice samples for the creator) | planned about 20 (1 session, caps per engine) | 2026-11-28 |
 | voice-samples-001 | status 2026-11-28 13:50 UTC: job pushed 12:29, still running or queued on Kaggle after 80 min (character-sheet job ran in parallel); no result yet. Expected about 20 GPU minutes once it runs (qwen3 capped 9.5 min, chatterbox 3, orpheus 3.5) | pending | 2026-11-28 |
 | charsheets-v5-s1-001 | RESULT: the Kaggle kernel stayed `kernelworkerstatus.queued` for the whole 330-min runner timeout (2026-11-28 12:26-17:58 UTC); it never started, no images. The other agent's `voice-samples-001` (pushed 12:29) was queued the same way. | 0 used | 2026-11-28 |
+
+Prepared, not yet run: `music-cues-v5-001` (music, ACE-Step, 12 instrumental cues, est. 14 min, cap 15). See `production/v4/music-cues-v5.md`.
