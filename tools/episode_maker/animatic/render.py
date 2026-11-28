@@ -114,6 +114,8 @@ def audio(ep, lay, total, out_wav, silences):
         return m
     mm = synth.music(total, mood_at, change_times=[c[0] for c in chg])
     mus[: len(mm)] = mm
+    if os.environ.get("MUSIC_BED") != "1":      # creator feedback 2026-11-28: no synthesized music bed (set MUSIC_BED=1 to bring it back)
+        mus[:] = 0
     # held tone: Episode 1 C19-C20 (music drops out on "Wait", one tone, cut at the end)
     if ep == "ep01":
         a = [o for o in lay if o["id"] in ("C19", "C20")]
