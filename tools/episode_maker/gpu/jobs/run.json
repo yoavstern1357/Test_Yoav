@@ -1,1 +1,1 @@
-{"run_id": "charsheets-v5-s1-002", "task": "images", "input": "tools/episode_maker/gpu/inputs/charsheets-v5-s1", "backend": "klein", "smoke": false, "only": "", "max_minutes": 40}
+{"run_id": "voice-samples-002", "task": "tts", "input": "tools/episode_maker/gpu/inputs/voice-samples", "backend": "qwen3,chatterbox,orpheus", "smoke": false, "only": "", "max_minutes": 20}
