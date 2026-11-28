@@ -1,0 +1,155 @@
+{
+ "backend": "orpheus",
+ "license": "see model card (Apache-2.0 declared, Llama 3.2 base)",
+ "model": "unsloth/orpheus-3b-0.1-ft",
+ "model_revision": "eae2b6e5e429c81b95ac42a883ac64f126583d43",
+ "results": [
+  {
+   "id": "orpheus__uncle__1__l1",
+   "who": "orpheus__uncle__1",
+   "status": "ok",
+   "seconds": 13.1,
+   "audio_seconds": 3.41,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful and playful.",
+    "orpheus_voice": "dan"
+   }
+  },
+  {
+   "id": "orpheus__uncle__1__l2",
+   "who": "orpheus__uncle__1",
+   "status": "ok",
+   "seconds": 5.7,
+   "audio_seconds": 1.71,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and amazed, a hushed whisper of surprise, with a short pause at the start.",
+    "orpheus_voice": "dan"
+   }
+  },
+  {
+   "id": "orpheus__uncle__1__l3",
+   "who": "orpheus__uncle__1",
+   "status": "ok",
+   "seconds": 14.6,
+   "audio_seconds": 4.44,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.6,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word, as if smelling something wonderful.",
+    "orpheus_voice": "dan"
+   }
+  },
+  {
+   "id": "orpheus__uncle__1__l4",
+   "who": "orpheus__uncle__1",
+   "status": "ok",
+   "seconds": 17.5,
+   "audio_seconds": 5.29,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower.",
+    "orpheus_voice": "dan"
+   }
+  },
+  {
+   "id": "orpheus__narrator__1__l1",
+   "who": "orpheus__narrator__1",
+   "status": "ok",
+   "seconds": 20.9,
+   "audio_seconds": 6.23,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace.",
+    "orpheus_voice": "zac"
+   }
+  },
+  {
+   "id": "orpheus__narrator__1__l2",
+   "who": "orpheus__narrator__1",
+   "status": "ok",
+   "seconds": 14.5,
+   "audio_seconds": 4.35,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace.",
+    "orpheus_voice": "zac"
+   }
+  },
+  {
+   "id": "orpheus__narrator__1__l3",
+   "who": "orpheus__narrator__1",
+   "status": "ok",
+   "seconds": 16.4,
+   "audio_seconds": 4.95,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower.",
+    "orpheus_voice": "zac"
+   }
+  },
+  {
+   "id": "orpheus__narrator__1__l4",
+   "who": "orpheus__narrator__1",
+   "status": "ok",
+   "seconds": 19.3,
+   "audio_seconds": 5.8,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "orpheus_voice": "zac"
+   }
+  },
+  {
+   "id": "orpheus__grandma__1__l1",
+   "who": "orpheus__grandma__1",
+   "status": "ok",
+   "seconds": 24.2,
+   "audio_seconds": 7.25,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "orpheus_voice": "tara"
+   }
+  },
+  {
+   "id": "orpheus__grandma__1__l2",
+   "who": "orpheus__grandma__1",
+   "status": "ok",
+   "seconds": 24.6,
+   "audio_seconds": 7.34,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful and playful.",
+    "orpheus_voice": "tara"
+   }
+  }
+ ]
+}

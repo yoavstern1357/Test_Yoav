@@ -1,0 +1,753 @@
+{
+ "backend": "qwen3",
+ "license": "Apache-2.0",
+ "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+ "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+ "results": [
+  {
+   "id": "qwen3__boy__2__l1",
+   "who": "qwen3__boy__2",
+   "status": "ok",
+   "seconds": 11.8,
+   "audio_seconds": 4.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A seven-year-old boy with a soft, warm, slightly shy child's voice, high and gentle, curious, a little breathy when amazed."
+   }
+  },
+  {
+   "id": "qwen3__boy__2__l2",
+   "who": "qwen3__boy__2",
+   "status": "ok",
+   "seconds": 10.3,
+   "audio_seconds": 4.16,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A seven-year-old boy with a soft, warm, slightly shy child's voice, high and gentle, curious, a little breathy when amazed."
+   }
+  },
+  {
+   "id": "qwen3__boy__2__l3",
+   "who": "qwen3__boy__2",
+   "status": "ok",
+   "seconds": 7.0,
+   "audio_seconds": 2.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A seven-year-old boy with a soft, warm, slightly shy child's voice, high and gentle, curious, a little breathy when amazed."
+   }
+  },
+  {
+   "id": "qwen3__boy__2__l4",
+   "who": "qwen3__boy__2",
+   "status": "ok",
+   "seconds": 11.6,
+   "audio_seconds": 4.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A seven-year-old boy with a soft, warm, slightly shy child's voice, high and gentle, curious, a little breathy when amazed."
+   }
+  },
+  {
+   "id": "qwen3__uncle__2__l1",
+   "who": "qwen3__uncle__2",
+   "status": "ok",
+   "seconds": 4.8,
+   "audio_seconds": 1.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful, playful and over the top.",
+    "qwen_voice": "A big, warm bear of a man in his forties, deep rich baritone, jolly and generous, bursts into booming enthusiasm, then turns quiet and tender."
+   }
+  },
+  {
+   "id": "qwen3__uncle__2__l2",
+   "who": "qwen3__uncle__2",
+   "status": "ok",
+   "seconds": 4.0,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and stunned, a short pause at the start.",
+    "qwen_voice": "A big, warm bear of a man in his forties, deep rich baritone, jolly and generous, bursts into booming enthusiasm, then turns quiet and tender."
+   }
+  },
+  {
+   "id": "qwen3__uncle__2__l3",
+   "who": "qwen3__uncle__2",
+   "status": "ok",
+   "seconds": 14.2,
+   "audio_seconds": 5.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.6,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word.",
+    "qwen_voice": "A big, warm bear of a man in his forties, deep rich baritone, jolly and generous, bursts into booming enthusiasm, then turns quiet and tender."
+   }
+  },
+  {
+   "id": "qwen3__uncle__2__l4",
+   "who": "qwen3__uncle__2",
+   "status": "ok",
+   "seconds": 9.6,
+   "audio_seconds": 3.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A big, warm bear of a man in his forties, deep rich baritone, jolly and generous, bursts into booming enthusiasm, then turns quiet and tender."
+   }
+  },
+  {
+   "id": "qwen3__grandma__2__l1",
+   "who": "qwen3__grandma__2",
+   "status": "ok",
+   "seconds": 15.9,
+   "audio_seconds": 6.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "An elderly woman, calm and precise, a warm raspy alto, teasing with a smile in her voice, unhurried."
+   }
+  },
+  {
+   "id": "qwen3__grandma__2__l2",
+   "who": "qwen3__grandma__2",
+   "status": "ok",
+   "seconds": 10.8,
+   "audio_seconds": 4.48,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful, playful and over the top.",
+    "qwen_voice": "An elderly woman, calm and precise, a warm raspy alto, teasing with a smile in her voice, unhurried."
+   }
+  },
+  {
+   "id": "qwen3__grandma__2__l3",
+   "who": "qwen3__grandma__2",
+   "status": "ok",
+   "seconds": 12.6,
+   "audio_seconds": 5.12,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "An elderly woman, calm and precise, a warm raspy alto, teasing with a smile in her voice, unhurried."
+   }
+  },
+  {
+   "id": "qwen3__grandma__2__l4",
+   "who": "qwen3__grandma__2",
+   "status": "ok",
+   "seconds": 9.7,
+   "audio_seconds": 4.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "An elderly woman, calm and precise, a warm raspy alto, teasing with a smile in her voice, unhurried."
+   }
+  },
+  {
+   "id": "qwen3__narrator__2__l1",
+   "who": "qwen3__narrator__2",
+   "status": "ok",
+   "seconds": 11.9,
+   "audio_seconds": 4.88,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend.",
+    "qwen_voice": "A deep, regal male voice, slow and measured, like an ancient king reading a scroll aloud, with a hint of amusement."
+   }
+  },
+  {
+   "id": "qwen3__narrator__2__l2",
+   "who": "qwen3__narrator__2",
+   "status": "ok",
+   "seconds": 10.4,
+   "audio_seconds": 4.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend.",
+    "qwen_voice": "A deep, regal male voice, slow and measured, like an ancient king reading a scroll aloud, with a hint of amusement."
+   }
+  },
+  {
+   "id": "qwen3__narrator__2__l3",
+   "who": "qwen3__narrator__2",
+   "status": "ok",
+   "seconds": 11.3,
+   "audio_seconds": 4.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A deep, regal male voice, slow and measured, like an ancient king reading a scroll aloud, with a hint of amusement."
+   }
+  },
+  {
+   "id": "qwen3__narrator__2__l4",
+   "who": "qwen3__narrator__2",
+   "status": "ok",
+   "seconds": 8.9,
+   "audio_seconds": 3.68,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A deep, regal male voice, slow and measured, like an ancient king reading a scroll aloud, with a hint of amusement."
+   }
+  },
+  {
+   "id": "qwen3__host__2__l1",
+   "who": "qwen3__host__2",
+   "status": "ok",
+   "seconds": 14.1,
+   "audio_seconds": 5.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A warm, friendly young child host, about eight years old, clear and cheerful, speaking straight to the audience like a kids' documentary presenter."
+   }
+  },
+  {
+   "id": "qwen3__host__2__l2",
+   "who": "qwen3__host__2",
+   "status": "ok",
+   "seconds": 5.7,
+   "audio_seconds": 2.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A warm, friendly young child host, about eight years old, clear and cheerful, speaking straight to the audience like a kids' documentary presenter."
+   }
+  },
+  {
+   "id": "qwen3__host__2__l3",
+   "who": "qwen3__host__2",
+   "status": "ok",
+   "seconds": 12.0,
+   "audio_seconds": 4.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A warm, friendly young child host, about eight years old, clear and cheerful, speaking straight to the audience like a kids' documentary presenter."
+   }
+  },
+  {
+   "id": "qwen3__host__2__l4",
+   "who": "qwen3__host__2",
+   "status": "ok",
+   "seconds": 3.3,
+   "audio_seconds": 1.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A warm, friendly young child host, about eight years old, clear and cheerful, speaking straight to the audience like a kids' documentary presenter."
+   }
+  },
+  {
+   "id": "qwen3__boy__3__l1",
+   "who": "qwen3__boy__3",
+   "status": "ok",
+   "seconds": 7.0,
+   "audio_seconds": 2.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A small, sweet-voiced young boy around six or seven, bright and clear, earnest and full of wonder, speaks quickly when excited and trails off when unsure."
+   }
+  },
+  {
+   "id": "qwen3__boy__3__l2",
+   "who": "qwen3__boy__3",
+   "status": "ok",
+   "seconds": 8.0,
+   "audio_seconds": 3.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A small, sweet-voiced young boy around six or seven, bright and clear, earnest and full of wonder, speaks quickly when excited and trails off when unsure."
+   }
+  },
+  {
+   "id": "qwen3__boy__3__l3",
+   "who": "qwen3__boy__3",
+   "status": "ok",
+   "seconds": 7.2,
+   "audio_seconds": 2.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A small, sweet-voiced young boy around six or seven, bright and clear, earnest and full of wonder, speaks quickly when excited and trails off when unsure."
+   }
+  },
+  {
+   "id": "qwen3__boy__3__l4",
+   "who": "qwen3__boy__3",
+   "status": "ok",
+   "seconds": 10.0,
+   "audio_seconds": 4.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A small, sweet-voiced young boy around six or seven, bright and clear, earnest and full of wonder, speaks quickly when excited and trails off when unsure."
+   }
+  },
+  {
+   "id": "qwen3__uncle__3__l1",
+   "who": "qwen3__uncle__3",
+   "status": "ok",
+   "seconds": 4.6,
+   "audio_seconds": 1.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful, playful and over the top.",
+    "qwen_voice": "A very deep, gravelly, large man's voice, slow and dignified like a retired opera singer, who sometimes erupts into manic, squeaky comic shouting."
+   }
+  },
+  {
+   "id": "qwen3__uncle__3__l2",
+   "who": "qwen3__uncle__3",
+   "status": "ok",
+   "seconds": 4.5,
+   "audio_seconds": 1.84,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and stunned, a short pause at the start.",
+    "qwen_voice": "A very deep, gravelly, large man's voice, slow and dignified like a retired opera singer, who sometimes erupts into manic, squeaky comic shouting."
+   }
+  },
+  {
+   "id": "qwen3__uncle__3__l3",
+   "who": "qwen3__uncle__3",
+   "status": "ok",
+   "seconds": 22.4,
+   "audio_seconds": 9.28,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.6,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word.",
+    "qwen_voice": "A very deep, gravelly, large man's voice, slow and dignified like a retired opera singer, who sometimes erupts into manic, squeaky comic shouting."
+   }
+  },
+  {
+   "id": "qwen3__uncle__3__l4",
+   "who": "qwen3__uncle__3",
+   "status": "ok",
+   "seconds": 12.9,
+   "audio_seconds": 5.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A very deep, gravelly, large man's voice, slow and dignified like a retired opera singer, who sometimes erupts into manic, squeaky comic shouting."
+   }
+  },
+  {
+   "id": "qwen3__grandma__3__l1",
+   "who": "qwen3__grandma__3",
+   "status": "ok",
+   "seconds": 16.3,
+   "audio_seconds": 6.72,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A wise old grandmother with a soft, thin, slightly trembling voice, gentle and patient, very clear diction, dry humour."
+   }
+  },
+  {
+   "id": "qwen3__grandma__3__l2",
+   "who": "qwen3__grandma__3",
+   "status": "ok",
+   "seconds": 11.2,
+   "audio_seconds": 4.56,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful, playful and over the top.",
+    "qwen_voice": "A wise old grandmother with a soft, thin, slightly trembling voice, gentle and patient, very clear diction, dry humour."
+   }
+  },
+  {
+   "id": "qwen3__grandma__3__l3",
+   "who": "qwen3__grandma__3",
+   "status": "ok",
+   "seconds": 10.5,
+   "audio_seconds": 4.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A wise old grandmother with a soft, thin, slightly trembling voice, gentle and patient, very clear diction, dry humour."
+   }
+  },
+  {
+   "id": "qwen3__grandma__3__l4",
+   "who": "qwen3__grandma__3",
+   "status": "ok",
+   "seconds": 13.5,
+   "audio_seconds": 5.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A wise old grandmother with a soft, thin, slightly trembling voice, gentle and patient, very clear diction, dry humour."
+   }
+  },
+  {
+   "id": "qwen3__narrator__3__l1",
+   "who": "qwen3__narrator__3",
+   "status": "ok",
+   "seconds": 11.2,
+   "audio_seconds": 4.64,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend.",
+    "qwen_voice": "A rich, resonant bass voice, a royal storyteller, grand and unhurried, a smile beneath the solemnity, with long dramatic pauses."
+   }
+  },
+  {
+   "id": "qwen3__narrator__3__l2",
+   "who": "qwen3__narrator__3",
+   "status": "ok",
+   "seconds": 9.6,
+   "audio_seconds": 3.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend.",
+    "qwen_voice": "A rich, resonant bass voice, a royal storyteller, grand and unhurried, a smile beneath the solemnity, with long dramatic pauses."
+   }
+  },
+  {
+   "id": "qwen3__narrator__3__l3",
+   "who": "qwen3__narrator__3",
+   "status": "ok",
+   "seconds": 11.9,
+   "audio_seconds": 4.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A rich, resonant bass voice, a royal storyteller, grand and unhurried, a smile beneath the solemnity, with long dramatic pauses."
+   }
+  },
+  {
+   "id": "qwen3__narrator__3__l4",
+   "who": "qwen3__narrator__3",
+   "status": "ok",
+   "seconds": 9.5,
+   "audio_seconds": 3.92,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A rich, resonant bass voice, a royal storyteller, grand and unhurried, a smile beneath the solemnity, with long dramatic pauses."
+   }
+  },
+  {
+   "id": "qwen3__host__3__l1",
+   "who": "qwen3__host__3",
+   "status": "ok",
+   "seconds": 13.8,
+   "audio_seconds": 5.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A gentle, curious young boy narrator, soft and thoughtful, reading from a storybook, calm pace, smiling."
+   }
+  },
+  {
+   "id": "qwen3__host__3__l2",
+   "who": "qwen3__host__3",
+   "status": "ok",
+   "seconds": 6.9,
+   "audio_seconds": 2.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A gentle, curious young boy narrator, soft and thoughtful, reading from a storybook, calm pace, smiling."
+   }
+  },
+  {
+   "id": "qwen3__host__3__l3",
+   "who": "qwen3__host__3",
+   "status": "ok",
+   "seconds": 10.1,
+   "audio_seconds": 4.16,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A gentle, curious young boy narrator, soft and thoughtful, reading from a storybook, calm pace, smiling."
+   }
+  },
+  {
+   "id": "qwen3__host__3__l4",
+   "who": "qwen3__host__3",
+   "status": "ok",
+   "seconds": 2.6,
+   "audio_seconds": 1.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A gentle, curious young boy narrator, soft and thoughtful, reading from a storybook, calm pace, smiling."
+   }
+  },
+  {
+   "id": "qwen3__boy__4__l1",
+   "who": "qwen3__boy__4",
+   "status": "ok",
+   "seconds": 8.1,
+   "audio_seconds": 3.36,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A young child, about seven years old, a boy with a light, innocent voice, cheerful and a bit hesitant, wide-eyed with wonder, like a gentle storybook hero."
+   }
+  },
+  {
+   "id": "qwen3__boy__4__l2",
+   "who": "qwen3__boy__4",
+   "status": "ok",
+   "seconds": 8.1,
+   "audio_seconds": 3.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch.",
+    "qwen_voice": "A young child, about seven years old, a boy with a light, innocent voice, cheerful and a bit hesitant, wide-eyed with wonder, like a gentle storybook hero."
+   }
+  },
+  {
+   "id": "qwen3__boy__4__l3",
+   "who": "qwen3__boy__4",
+   "status": "ok",
+   "seconds": 8.0,
+   "audio_seconds": 3.28,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A young child, about seven years old, a boy with a light, innocent voice, cheerful and a bit hesitant, wide-eyed with wonder, like a gentle storybook hero."
+   }
+  },
+  {
+   "id": "qwen3__boy__4__l4",
+   "who": "qwen3__boy__4",
+   "status": "ok",
+   "seconds": 10.7,
+   "audio_seconds": 4.32,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, with a smile in the voice.",
+    "qwen_voice": "A young child, about seven years old, a boy with a light, innocent voice, cheerful and a bit hesitant, wide-eyed with wonder, like a gentle storybook hero."
+   }
+  },
+  {
+   "id": "qwen3__uncle__4__l1",
+   "who": "qwen3__uncle__4",
+   "status": "ok",
+   "seconds": 6.8,
+   "audio_seconds": 2.8,
+   "flags": [
+    "slow_or_rambling"
+   ],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful, playful and over the top.",
+    "qwen_voice": "A middle-aged man with a deep, warm, chesty voice, a hungry food lover, dramatic and theatrical, gasping with delight, soft and kind when serious."
+   }
+  },
+  {
+   "id": "qwen3__uncle__4__l2",
+   "who": "qwen3__uncle__4",
+   "status": "ok",
+   "seconds": 3.9,
+   "audio_seconds": 1.6,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and stunned, a short pause at the start.",
+    "qwen_voice": "A middle-aged man with a deep, warm, chesty voice, a hungry food lover, dramatic and theatrical, gasping with delight, soft and kind when serious."
+   }
+  },
+  {
+   "id": "qwen3__uncle__4__l3",
+   "who": "qwen3__uncle__4",
+   "status": "ok",
+   "seconds": 18.2,
+   "audio_seconds": 7.52,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.6,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word.",
+    "qwen_voice": "A middle-aged man with a deep, warm, chesty voice, a hungry food lover, dramatic and theatrical, gasping with delight, soft and kind when serious."
+   }
+  },
+  {
+   "id": "qwen3__uncle__4__l4",
+   "who": "qwen3__uncle__4",
+   "status": "ok",
+   "seconds": 12.3,
+   "audio_seconds": 4.96,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A middle-aged man with a deep, warm, chesty voice, a hungry food lover, dramatic and theatrical, gasping with delight, soft and kind when serious."
+   }
+  },
+  {
+   "id": "qwen3__grandma__4__l1",
+   "who": "qwen3__grandma__4",
+   "status": "ok",
+   "seconds": 12.6,
+   "audio_seconds": 5.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A brisk, sharp-witted elderly cook, low scratchy voice, matter-of-fact with a hint of amusement, pronounces every word exactly."
+   }
+  },
+  {
+   "id": "qwen3__grandma__4__l2",
+   "who": "qwen3__grandma__4",
+   "status": "ok",
+   "seconds": 10.8,
+   "audio_seconds": 4.4,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful, playful and over the top.",
+    "qwen_voice": "A brisk, sharp-witted elderly cook, low scratchy voice, matter-of-fact with a hint of amusement, pronounces every word exactly."
+   }
+  },
+  {
+   "id": "qwen3__grandma__4__l3",
+   "who": "qwen3__grandma__4",
+   "status": "ok",
+   "seconds": 12.2,
+   "audio_seconds": 5.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and sincere, slightly slower.",
+    "qwen_voice": "A brisk, sharp-witted elderly cook, low scratchy voice, matter-of-fact with a hint of amusement, pronounces every word exactly."
+   }
+  },
+  {
+   "id": "qwen3__grandma__4__l4",
+   "who": "qwen3__grandma__4",
+   "status": "ok",
+   "seconds": 11.7,
+   "audio_seconds": 4.8,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational.",
+    "qwen_voice": "A brisk, sharp-witted elderly cook, low scratchy voice, matter-of-fact with a hint of amusement, pronounces every word exactly."
+   }
+  }
+ ]
+}

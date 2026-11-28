@@ -1,0 +1,485 @@
+{
+ "backend": "chatterbox",
+ "license": "MIT",
+ "model": "ResembleAI/chatterbox",
+ "model_revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+ "results": [
+  {
+   "id": "chatterbox__boy__1__l1",
+   "who": "chatterbox__boy__1",
+   "status": "ok",
+   "seconds": 17.1,
+   "audio_seconds": 3.58,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational."
+   }
+  },
+  {
+   "id": "chatterbox__boy__1__l2",
+   "who": "chatterbox__boy__1",
+   "status": "ok",
+   "seconds": 3.3,
+   "audio_seconds": 3.14,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+   }
+  },
+  {
+   "id": "chatterbox__boy__1__l3",
+   "who": "chatterbox__boy__1",
+   "status": "ok",
+   "seconds": 3.6,
+   "audio_seconds": 3.38,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__boy__1__l4",
+   "who": "chatterbox__boy__1",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 4.18,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice."
+   }
+  },
+  {
+   "id": "chatterbox__boy__2__l1",
+   "who": "chatterbox__boy__2",
+   "status": "ok",
+   "seconds": 3.0,
+   "audio_seconds": 2.62,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational."
+   }
+  },
+  {
+   "id": "chatterbox__boy__2__l2",
+   "who": "chatterbox__boy__2",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 2.54,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+   }
+  },
+  {
+   "id": "chatterbox__boy__2__l3",
+   "who": "chatterbox__boy__2",
+   "status": "ok",
+   "seconds": 3.1,
+   "audio_seconds": 2.98,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__boy__2__l4",
+   "who": "chatterbox__boy__2",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 3.82,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__1__l1",
+   "who": "chatterbox__uncle__1",
+   "status": "ok",
+   "seconds": 2.7,
+   "audio_seconds": 2.06,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful and playful."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__1__l2",
+   "who": "chatterbox__uncle__1",
+   "status": "ok",
+   "seconds": 2.5,
+   "audio_seconds": 1.98,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and amazed, a hushed whisper of surprise, with a short pause at the start."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__1__l3",
+   "who": "chatterbox__uncle__1",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 4.1,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.6,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word, as if smelling something wonderful."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__1__l4",
+   "who": "chatterbox__uncle__1",
+   "status": "ok",
+   "seconds": 4.8,
+   "audio_seconds": 4.62,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__2__l1",
+   "who": "chatterbox__uncle__2",
+   "status": "ok",
+   "seconds": 2.3,
+   "audio_seconds": 1.66,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful and playful."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__2__l2",
+   "who": "chatterbox__uncle__2",
+   "status": "ok",
+   "seconds": 1.9,
+   "audio_seconds": 1.3,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.3,
+    "qwen": "Small, quiet and amazed, a hushed whisper of surprise, with a short pause at the start."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__2__l3",
+   "who": "chatterbox__uncle__2",
+   "status": "ok",
+   "seconds": 3.2,
+   "audio_seconds": 2.9,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.6,
+    "cfg_weight": 0.3,
+    "qwen": "Dreamy and wondering, slow, savouring each word, as if smelling something wonderful."
+   }
+  },
+  {
+   "id": "chatterbox__uncle__2__l4",
+   "who": "chatterbox__uncle__2",
+   "status": "ok",
+   "seconds": 3.7,
+   "audio_seconds": 3.58,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__1__l1",
+   "who": "chatterbox__grandma__1",
+   "status": "ok",
+   "seconds": 4.6,
+   "audio_seconds": 4.5,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__1__l2",
+   "who": "chatterbox__grandma__1",
+   "status": "ok",
+   "seconds": 3.5,
+   "audio_seconds": 3.38,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful and playful."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__1__l3",
+   "who": "chatterbox__grandma__1",
+   "status": "ok",
+   "seconds": 3.6,
+   "audio_seconds": 3.5,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__1__l4",
+   "who": "chatterbox__grandma__1",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 4.18,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__2__l1",
+   "who": "chatterbox__grandma__2",
+   "status": "ok",
+   "seconds": 4.0,
+   "audio_seconds": 3.86,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__2__l2",
+   "who": "chatterbox__grandma__2",
+   "status": "ok",
+   "seconds": 2.8,
+   "audio_seconds": 2.46,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.75,
+    "cfg_weight": 0.4,
+    "tag": "<laugh> ",
+    "qwen": "Laughing, joyful and playful."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__2__l3",
+   "who": "chatterbox__grandma__2",
+   "status": "ok",
+   "seconds": 3.0,
+   "audio_seconds": 2.74,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__grandma__2__l4",
+   "who": "chatterbox__grandma__2",
+   "status": "ok",
+   "seconds": 3.8,
+   "audio_seconds": 3.7,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "qwen": "Natural, relaxed and conversational."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__1__l1",
+   "who": "chatterbox__narrator__1",
+   "status": "ok",
+   "seconds": 4.3,
+   "audio_seconds": 4.04,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__1__l2",
+   "who": "chatterbox__narrator__1",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 4.0,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__1__l3",
+   "who": "chatterbox__narrator__1",
+   "status": "ok",
+   "seconds": 4.9,
+   "audio_seconds": 4.76,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__1__l4",
+   "who": "chatterbox__narrator__1",
+   "status": "ok",
+   "seconds": 3.5,
+   "audio_seconds": 3.2,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__2__l1",
+   "who": "chatterbox__narrator__2",
+   "status": "ok",
+   "seconds": 5.1,
+   "audio_seconds": 5.06,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__2__l2",
+   "who": "chatterbox__narrator__2",
+   "status": "ok",
+   "seconds": 3.6,
+   "audio_seconds": 3.5,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.45,
+    "cfg_weight": 0.25,
+    "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend, measured pace."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__2__l3",
+   "who": "chatterbox__narrator__2",
+   "status": "ok",
+   "seconds": 3.9,
+   "audio_seconds": 3.86,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__narrator__2__l4",
+   "who": "chatterbox__narrator__2",
+   "status": "ok",
+   "seconds": 3.2,
+   "audio_seconds": 2.98,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+   }
+  },
+  {
+   "id": "chatterbox__host__1__l1",
+   "who": "chatterbox__host__1",
+   "status": "ok",
+   "seconds": 4.5,
+   "audio_seconds": 4.5,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice."
+   }
+  },
+  {
+   "id": "chatterbox__host__1__l2",
+   "who": "chatterbox__host__1",
+   "status": "ok",
+   "seconds": 2.4,
+   "audio_seconds": 1.98,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.8,
+    "cfg_weight": 0.35,
+    "tag": "<gasp> ",
+    "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+   }
+  },
+  {
+   "id": "chatterbox__host__1__l3",
+   "who": "chatterbox__host__1",
+   "status": "ok",
+   "seconds": 4.1,
+   "audio_seconds": 3.98,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.4,
+    "cfg_weight": 0.3,
+    "qwen": "Soft, gentle and patient, tender and wise, slightly slower."
+   }
+  },
+  {
+   "id": "chatterbox__host__1__l4",
+   "who": "chatterbox__host__1",
+   "status": "ok",
+   "seconds": 2.1,
+   "audio_seconds": 1.54,
+   "flags": [],
+   "settings": {
+    "exaggeration": 0.55,
+    "cfg_weight": 0.5,
+    "qwen": "Warm, friendly and curious, like a cheerful host welcoming the audience, with a smile in the voice."
+   }
+  }
+ ]
+}
