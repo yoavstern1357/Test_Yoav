@@ -1,5 +1,7 @@
 # Episode 02 V4.1: "Uncle vs. the See-Through Dumpling" (China arc, part 2 of 3: Culture)
 
+> OLD numbering, superseded: old Episode 2 (Guangzhou, har gow) is now Episode 3 in the plain consecutive numbering (Episode 2 is now the Dad/book episode).
+
 **Length:** exactly 2:00.0 including the 1.5 s sign-off sting · vertical 9:16 · **Location:** Guangzhou (Canton): the Pearl River at dawn, then a busy morning-tea hall · **Dumpling:** Har gow (steamed shrimp dumpling)
 **Format:** a world food-travel show on the old Silk Road, hosted by the Boy (Bo), who talks to camera. Uncle Fong is the chaotic co-host. Old legends and old history are told by a grand, over-serious **Scroll Narrator** in a paper-cut look. Comedy rules: `production/v4/comedy-style.md`. Inspirations: `production/v4/inspiration-board.md` (numbers "I1-I15" refer to its cards). Facts: `production/v4/content-research.md`, section "Episode 2".
 **Voices:** `boy` (calm, precise, deadpan host), `uncle` (big, warm, loud; tiny when humbled), `narrator` (deep, solemn, a little echo, a low gong before he speaks), `grandma` (also plays Auntie Lan, the fictional dim sum cook: same voice profile, brisker and lighter, quick to laugh). Dad only as the Boy's reading of his journal. Catchphrase **"For science!"**. Last spoken line: **"Dad was right..."**

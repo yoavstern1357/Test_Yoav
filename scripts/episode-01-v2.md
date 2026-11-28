@@ -1,5 +1,7 @@
 # Episode 01 V2: "Uncle vs. Soup Dumpling" (China arc, part 1 of 3: Arrival)
 
+> OLD numbering, superseded: this draft is the whole old Episode 1. In the plain numbering it is split into Episode 1 and Episode 2 (current scripts: `scripts/episode-01-v5.md`, `scripts/episode-02-v5.md`).
+
 **Length:** 2:00 (57 shots, avg 2.1 s) · vertical 9:16 · YouTube Short · **Location:** Shanghai, then Nanxiang (old town on the outskirts of Shanghai) · **Dumpling:** Xiaolongbao
 **Direction:** same story, facts and approved v1 drawing style as `episode-01-xiaolongbao.md`; faster, living camera, anime-like rhythm (see `production/v2-direction.md`). Voices: `narrator` (calm, deeper), `boy` (older, steadier), `uncle`, `grandma`. Dialogue stays under 3 words per second. Catchphrase: **"For science!"** (said at the gag, whispered back as a callback before the sip). Safety beat kept: lift, spoon, tiny hole, wait, sip. No personal names.
 

@@ -1,5 +1,7 @@
 # Episode 01 V4.2: "How Does Soup Get Inside a Dumpling?" (China arc, part 1 of 3: Arrival)
 
+> OLD numbering, superseded: this draft is the whole old Episode 1. In the plain numbering it is split into Episode 1 and Episode 2 (current scripts: `scripts/episode-01-v5.md`, `scripts/episode-02-v5.md`).
+
 **Length:** exactly 2:30.0 including the 1.5 s sign-off sting · vertical 9:16 · **Location:** Nanxiang, an old canal town now part of Shanghai (Jiading District) · **Dumpling:** Xiaolongbao
 **Format:** a warm, curious food-travel show on the old Silk Road for everyone, hosted by the Boy (Bo), who talks to camera. Uncle Fong is the co-host: mostly the funny one, sometimes the wise one. One local teacher per episode (here: Grandma at her stall). A **Scroll Narrator** speaks only when a paper scroll unrolls on screen, for the one legend. Production rules: `production/v4/PRODUCTION-BIBLE.md` (v4.2, overrides everything else). Comedy rules: `production/v4/comedy-style.md`. Facts: `production/v4/content-research.md`, section "Episode 1".
 **Voices:** `boy` (warm, curious, clear; light humor, natural), `uncle` (big, warm; funny, but he can go quiet and say true things), `narrator` (deep, calm, a little echo, a low gong before he speaks; only inside the scroll), `grandma` (the stall owner: warm, brisk, always right). Dad only as a sepia silhouette from behind and as the Boy's reading of his journal. Catchphrase **"For science!"**. Last spoken line: **"Dad was right..."**

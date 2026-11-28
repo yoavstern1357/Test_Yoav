@@ -15,7 +15,7 @@ Rule of thumb: **a 6-year-old laughs at the Uncle, and a 40-year-old learns some
 - **No Uncle secret, no torn page, no quarrel.** The Uncle is Dad's brother and the Boy's loud, hungry co-host; his arc is learning to cook, not only eat.
 - Each country (arc) ends with a **stamp** on the map and one line Dad wrote. In Season 1 the four lines read as one message: *Be patient. Make them together. Keep it simple. Cook it for someone you love.* Each stamp also gives one concrete technique that goes into Dad's Dumpling.
 - Dad is only a sepia silhouette from behind. His fate is never stated in Season 1. **One gentle beat comes at Huế (Season 2).** No jokes within 10 s of a Dad beat.
-- **Ep 11 (S1 finale, Iloilo):** the stamp lines are read as one message, the first half of Dad's Dumpling is cooked together, and a drawing of the hat points to Vietnam. **Ep 14 (Huế):** where the hat comes from. **Ep 38 (Venice):** Dad's Dumpling is cooked and the Boy writes the blank last page.
+- **Ep 12 (S1 finale, Iloilo):** the stamp lines are read as one message, the first half of Dad's Dumpling is cooked together, and a drawing of the hat points to Vietnam. **Ep 15 (Huế):** where the hat comes from. **Ep 39 (Venice):** Dad's Dumpling is cooked and the Boy writes the blank last page.
 
 ## Two kinds of upload, one per week
 | Kind | Length | What |
@@ -32,16 +32,16 @@ Rule of thumb: **a 6-year-old laughs at the Uncle, and a 40-year-old learns some
 | **3** | **Stamp** | A battle or a rival round, then the **map stamp**: Dad's line, the technique, a one-frame page-piece drawing, a next-country hook |
 
 ## Recurring ingredients
-- **The rival host "Pepper"** (working name) and her producer **"Auntie Clip"** arrive in **Ep 5** (week 8), return about 1 episode in 3, and change (rival, frenemy, friend). Never humiliated; jokes stay on the Uncle; no real creator or platform is parodied.
+- **The rival host "Pepper"** (working name) and her producer **"Auntie Clip"** arrive in **Ep 6** (week 8), return about 1 episode in 3, and change (rival, frenemy, friend). Never humiliated; jokes stay on the Uncle; no real creator or platform is parodied.
 - **Battles** are a repeatable beat with fairness rules (a local master judges, same ingredients, no humiliation, taste rounds only, no speed eating). Details: plan 3.9.
-- Running gags that escalate: the Uncle's "sock" dumplings (until he folds a real one in Ep 11), "For dumpling research!", the lower third "co-host (self-appointed)", the ice pack, the Camel.
+- Running gags that escalate: the Uncle's "sock" dumplings (until he folds a real one in Ep 12), "For dumpling research!", the lower third "co-host (self-appointed)", the ice pack, the Camel.
 
 ## Season map (Silk Road route)
 Full plan: **[`season-map.md`](season-map.md)** (v6 renumbering at its top) and the plan's tables.
-- **Season 1 "The Eastern Sea" (Ep 1a, 1b, 2-11):** China (Nanxiang x2, Guangzhou) -> South Korea (Seoul, Chuncheon, Busan) -> Japan (Kobe, Utsunomiya, Yokohama) -> Philippines (Vigan, Binondo, Molo). 12 story + 6 recipe Shorts = 18 uploads.
-- **Season 2 "The Southern Sea" (Ep 12-20):** Vietnam (Hanoi, Hội An, Huế) -> Thailand, Malaysia, Singapore -> India. 9 story + 4 recipe Shorts.
-- **Season 3 "The Steppe and the Sands" (Ep 21-29):** Mongolia -> Russia (Siberia), Kazakhstan, Kyrgyzstan -> Uzbekistan. 9 story + 4 recipe Shorts.
-- **Season 4 "The Road West" (Ep 30-38):** Azerbaijan, Georgia, Armenia -> Türkiye -> Italy (finale: Venice, Marco Polo). 9 story + 4 recipe Shorts (plus an optional full-recipe Short of Dad's Dumpling).
+- **Season 1 "The Eastern Sea" (Ep 1-12):** China (Nanxiang x2, Guangzhou) -> South Korea (Seoul, Chuncheon, Busan) -> Japan (Kobe, Utsunomiya, Yokohama) -> Philippines (Vigan, Binondo, Molo). 12 story + 6 recipe Shorts = 18 uploads.
+- **Season 2 "The Southern Sea" (Ep 13-21):** Vietnam (Hanoi, Hội An, Huế) -> Thailand, Malaysia, Singapore -> India. 9 story + 4 recipe Shorts.
+- **Season 3 "The Steppe and the Sands" (Ep 22-30):** Mongolia -> Russia (Siberia), Kazakhstan, Kyrgyzstan -> Uzbekistan. 9 story + 4 recipe Shorts.
+- **Season 4 "The Road West" (Ep 31-39):** Azerbaijan, Georgia, Armenia -> Türkiye -> Italy (finale: Venice, Marco Polo). 9 story + 4 recipe Shorts (plus an optional full-recipe Short of Dad's Dumpling).
 - Whole series: 39 story uploads + 18 recipe Shorts = 57 uploads, about 13 months at 1 per week.
 
 ## Accuracy rules (for the history parts)

@@ -1,5 +1,7 @@
 # Episode 03: "Uncle vs. Potsticker" (China arc, part 3 of 3: Recipe + Recap)
 
+> OLD numbering, superseded: old Episode 3 (guotie) is no longer a story episode; it becomes recipe Short R1.
+
 **Length:** about 2:08 (1:50–2:10) · vertical 9:16 · YouTube Short (fast recipe montage; the full written recipe goes in the description, see "Full recipe (for description)" below)
 **Location:** Beijing, China: a snowy hutong lane at Spring Festival, then the Wang family's warm courtyard kitchen · **Dumpling:** Guotie 锅贴 (potstickers, pan-fried); jiaozi 饺子 (boiled) as the "or" option
 

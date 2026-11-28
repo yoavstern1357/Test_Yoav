@@ -1,5 +1,7 @@
 # Episode 01 V4.5: "How Does Soup Get Inside a Dumpling?" (1-minute cut; China arc, part 1 of 3)
 
+> OLD numbering, superseded: this draft is the whole old Episode 1. In the plain numbering it is split into Episode 1 and Episode 2 (current scripts: `scripts/episode-01-v5.md`, `scripts/episode-02-v5.md`).
+
 **Length:** **1:08.5 planned** (hard max 1:15, target about 1:00; the final length is set by the voices at natural speed, see "Production order") · no separate opening: hook first, then a 1.0 s title hit from the opening-song sting · vertical 9:16 first, 16:9 re-framed from the portrait clips where possible · **Location:** Nanxiang, an old canal town in Shanghai (Jiading District) · **Dumpling:** Xiaolongbao
 **Clips:** **20 AI clips** (2.0-3.5 s, image-to-video, START + END keyframes) + 4 CODE clips (title hit, impact effect, legend scroll). **114 spoken words**, 1 legend beat (8.0 s), 1 Dad beat, "For dumpling research!" once (volcanic), last spoken line "Dad was right...".
 **Rules:** `production/v4/PRODUCTION-BIBLE.md` (FORMAT CHANGE: ~1-MINUTE EPISODES overrides earlier lengths), `production/v4/shot-rules.md` (every AI clip below obeys it; `tools/episode_maker/paper/lint_shotlist.py` enforces it), `production/v4/fix-plan.md` Fix 2-4, `production/v4/comedy-style.md`.

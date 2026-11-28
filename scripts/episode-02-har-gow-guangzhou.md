@@ -1,5 +1,7 @@
 # Episode 02: "Uncle vs. See-Through Dumpling" (China arc, part 2 of 3: Culture)
 
+> OLD numbering, superseded: old Episode 2 (Guangzhou, har gow) is now Episode 3 in the plain consecutive numbering (Episode 2 is now the Dad/book episode).
+
 **Length:** about 2:06 (1:50–2:10) · vertical 9:16 · YouTube Short · **Location:** Guangzhou (Canton), China: the Pearl River at dawn, then a busy morning teahouse · **Dumpling:** Har gow 蝦餃 (steamed shrimp dumpling)
 
 ## Script

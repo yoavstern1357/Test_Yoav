@@ -23,7 +23,7 @@ Grandma, the old dumpling master: a tiny, sturdy elderly woman, 4.25 heads tall,
 
 **Dad (memory only, unchanged):** a soft sepia silhouette of a tall slim man from behind, wearing the same conical leaf hat, warm golden light, no visible face, ever. Story status: Dad **vanished** and left his dumpling book (never said blunt; one gentle beat at Huế). Ending line of every episode: **"Dad was right..."**
 
-**Recurring cast (see the v6 plan, 3.4-3.5):** the Narrator (epic voice), the Camel (silent), the rival host **"Pepper"** and her producer **"Auntie Clip"** (working names, arrive in Ep 5, design pending), local masters per country ("Dad's Leaf Hat friends"). Reference images for stills: see `production/v4/ep01-stills-ids.txt` and the model-sheet package (the Canva IDs below belong to the legacy look).
+**Recurring cast (see the v6 plan, 3.4-3.5):** the Narrator (epic voice), the Camel (silent), the rival host **"Pepper"** and her producer **"Auntie Clip"** (working names, arrive in Ep 6, design pending), local masters per country ("Dad's Leaf Hat friends"). Reference images for stills: see `production/v4/ep01-stills-ids.txt` and the model-sheet package (the Canva IDs below belong to the legacy look).
 
 ---
 

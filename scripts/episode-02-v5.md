@@ -1,27 +1,27 @@
-# Episode 01B V5: "The Stool Nobody Sits On" (1-minute episode; China arc, part 2 of 4: the hat, Dad's book, Guangzhou)
+# Episode 02 V5: "The Stool Nobody Sits On" (1-minute episode; China arc, part 2 of 4: the hat, Dad's book, Guangzhou)
 
 **Length:** **1:09.5 planned** (hard max 1:15, target about 1:00; the final length is set by the voices at natural speed) · hook first, then a 1.0 s title hit · vertical 9:16 first, 16:9 re-framed where possible · **Location:** the same stall in Nanxiang, Shanghai · **Dumpling:** Xiaolongbao (this episode is about the people and the patience, not a new dumpling)
-**Clips:** **23 AI clips** (2.0-3.5 s, START + END keyframes) + 1 CODE clip (title hit). **113 spoken words**, **no legend scroll** (it was in 1A), one **Dad beat of 6.0 s** (C12-C13), "For dumpling research!" once (volcanic), last spoken line "Dad was right...", camel sting as the final clip.
+**Clips:** **23 AI clips** (2.0-3.5 s, START + END keyframes) + 1 CODE clip (title hit). **113 spoken words**, **no legend scroll** (it was in Episode 1), one **Dad beat of 6.0 s** (C12-C13), "For dumpling research!" once (volcanic), last spoken line "Dad was right...", camel sting as the final clip.
 **Rules:** `production/v4/PRODUCTION-BIBLE.md` (v5 DECISIONS at the end override everything above them), `production/v4/shot-rules.md` (every AI clip obeys it; `tools/episode_maker/paper/lint_shotlist.py` enforces it), `production/v4/comedy-style.md`.
 **Status:** DRAFT for the creator. The script is shown to the creator in Hebrew in chat and approved there BEFORE any production.
-**Standalone test:** a viewer who skips 1A still gets (0-3 s) a funny, curious hook (the Uncle frozen mid-sit, a spoon on his forehead, "Nobody sits on that stool. Nobody."), the host, the place, the book, a patience lesson with a payoff, and a hook to Guangzhou. Anything from 1A is re-told in one line.
+**Standalone test:** a viewer who skips Episode 1 still gets (0-3 s) a funny, curious hook (the Uncle frozen mid-sit, a spoon on his forehead, "Nobody sits on that stool. Nobody."), the host, the place, the book, a patience lesson with a payoff, and a hook to Guangzhou. Anything from Episode 1 is re-told in one line.
 **Voices:** `boy` (WARM, curious, soft about Dad), `uncle` (operatic: GRAND, TINY), `grandma` (brisk, flat, kind, never the joke; softens at the hat), `narrator` is not used in this episode.
 **Characters (v5 lock):** Boy about 7: conical leaf hat with orange chin ribbon, faded indigo village tunic, rolled hemp trousers, orange cloth sash, straw sandals. Uncle: big, fully bald round head, thin long curled-tip black mustache, thick brows, earth-brown linen jacket with mandarin collar, wide orange sash, white towel on one shoulder, charcoal trousers, straw sandals, **never a hat** (the travel bundle sits on his back, never on his head). Grandma: white-grey bun with two crossed wooden pins, jade-green jacket, cream apron, orange sash. Dad: a sepia silhouette from behind, never a face, never named in a prompt.
 **Story rules (v5):** NO secret for the Uncle (no torn page, no quarrel). Dad simply went away and left his book; the Boy believes the answers are in it. Said once, gently (C12), never blunt, and **no jokes within 10 s of the Dad beat** (last joke 0:24.5, beat 0:35.0-0:41.0, next joke 0:51.5).
-**Series position:** 1A (`scripts/episode-01a-v5.md`) ends with the Boy finding Dad's doodle on the stool. 1B opens on that stool.
+**Series position:** Episode 1 (`scripts/episode-01-v5.md`) ends with the Boy finding Dad's doodle on the stool. Episode 2 opens on that stool.
 
 ## Production order (voice-first, do not reorder)
 0. **Creator gate:** the Hebrew reading copy is approved in chat. Nothing below starts before that.
-1. **Lint:** `python3 tools/episode_maker/paper/lint_shotlist.py scripts/episode-01b-v5.md` must print `RESULT: PASS`.
+1. **Lint:** `python3 tools/episode_maker/paper/lint_shotlist.py scripts/episode-02-v5.md` must print `RESULT: PASS`.
 2. **Final voices at natural speed** (Qwen3-TTS, 2-3 takes per line); no `voice_speed`. Cut words, never speed up. The Dad beat is recorded as the quietest, slowest takes.
 3. **Word timestamps** (forced alignment, CPU).
 4. **Animatic** from the START stills + voices (creator gate). Check the joke-free window: last joke to the Dad beat and Dad beat to next joke are both >= 10 s.
-5. **Stills** (one clean sheet per visible character, head count in the prompt, END made as an edit of START; `tools/episode_maker/qc_stills.py --script scripts/episode-01b-v5.md`). The book page has no readable writing; only brush strokes and a sketch.
+5. **Stills** (one clean sheet per visible character, head count in the prompt, END made as an edit of START; `tools/episode_maker/qc_stills.py --script scripts/episode-02-v5.md`). The book page has no readable writing; only brush strokes and a sketch.
 6. **Clips at exact length**, prompts compiled from the fields below.
-7. **QC gate:** `tools/episode_maker/qc_clips.py` (with `--script scripts/episode-01b-v5.md --spec ...`); TRUNC, SLOWMO, FREEZE, DUP?, DUP_IN_STILL?, MORPH_RISK, TEXT, FACE_SMEAR must be 0; re-roll failed ids (seed + 1, max 2).
+7. **QC gate:** `tools/episode_maker/qc_clips.py` (with `--script scripts/episode-02-v5.md --spec ...`); TRUNC, SLOWMO, FREEZE, DUP?, DUP_IN_STILL?, MORPH_RISK, TEXT, FACE_SMEAR must be 0; re-roll failed ids (seed + 1, max 2).
 8. Mouths, EDIT effects, captions, mix (-14 LUFS / -1 dBTP), both orientations.
 
-## Spine (bible 60-s structure, 1B version)
+## Spine (bible 60-s structure, Episode 2 version)
 | Bible slot | Here | Clips |
 |---|---|---|
 | Hook 0-3 s | 0:00.0 The Uncle frozen mid-sit, a wooden spoon on his forehead: "Nobody sits on that stool. Nobody." | C01 |
@@ -52,7 +52,7 @@ Same columns and rules as `scripts/episode-01-v4.5.md`. This episode has one new
 | Clip | Dur | Start | Method | Faces | Shot | START keyframe | END keyframe | ACTION + facial beats | VOICE | Mouth | Motion | EDIT | SFX | Caption |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | C01 | 3.0 | 0:00.0 | AI | 1: Uncle (+hands: Grandma) | CU · face 45% | Close-up of the Uncle, completely bald with a thin curled mustache and an earth-brown linen jacket, frozen bent halfway down toward a small worn wooden stool, eyes wide and guilty; the tip of a wooden spoon held by an old woman's floury hand is pressed against his forehead; only the hand is visible; an old canal lane softly blurred behind him, morning light. | Same framing and light; change only: one bead of sweat on his bald head and his eyes slid sideways to the spoon. | He freezes bent over the stool; his eyes slide slowly to the spoon pressed against his forehead. | GRANDMA (off) [flat, absolute]: “Nobody sits on that stool. Nobody.” | closed | low | Wooden "tock" on the spoon touch at 0.0 s; sweat-drop sprite 1.2-3.0 s; camera bump on the second "Nobody"; slow digital push 1.00 to 1.06. | wooden tock, canal water, tiny gulp | BOTTOM (face and spoon in the upper two thirds) |
-| K01 | 1.0 | 0:03.0 | CODE | 0 | full | Cream paper plate with brush-ink texture. | The show logo stamped in the centre, one curl of steam rising from it. | Title hit: the logo stamps in on the opening-song sting, ink splash, steam curl. | — | closed | medium | "THE DUMPLING BOY" logo (code card) with the small tag "#1B"; 1.0 s cut of the song sting; hard cut out on the downbeat. | song sting, ink splat | none (logo centre) |
+| K01 | 1.0 | 0:03.0 | CODE | 0 | full | Cream paper plate with brush-ink texture. | The show logo stamped in the centre, one curl of steam rising from it. | Title hit: the logo stamps in on the opening-song sting, ink splash, steam curl. | — | closed | medium | "THE DUMPLING BOY" logo (code card) with the small tag "#2"; 1.0 s cut of the song sting; hard cut out on the downbeat. | song sting, ink splat | none (logo centre) |
 | C02 | 3.5 | 0:04.0 | AI | 2: Boy, Uncle | CU · face 35% | Close-up of the Boy in his conical leaf hat with an orange chin ribbon facing the lens with calm host poise; behind him, soft and out of focus, the Uncle still frozen bent halfway down toward a small wooden stool. | Same framing; change only: the Boy's eyebrow raised and the out-of-focus Uncle behind him has not moved at all. | The Boy gives the lens one calm, deadpan look; behind him, blurred, the Uncle stays frozen mid-bend. | BOY (on) [calm host, deadpan]: “Welcome to Nanxiang. He's... stuck.” | overlay | low | Place card "NANXIANG · SHANGHAI, CHINA" ink-blooms in the TOP band 0.3-2.8 s; 8-frame look-to-lens hold on the last word. | canal water, bike bell, comic plink | BOTTOM (Boy's face upper half) |
 | C03 | 3.0 | 0:07.5 | AI | 1: Boy | MCU · face 30% | Medium close-up of the Boy at a small steaming food stall in an old canal town, holding a small worn leather book tied with a string in both hands, a warm smile; bamboo steamers softly blurred behind him, warm morning light. | Same framing and light; change only: he lifts the book a little higher toward the lens. | A warm host smile; he lifts the little book toward the lens, proud and a bit shy. | BOY (on) [warm, a little proud]: “I follow my dad's dumpling book.” | overlay | low | Camera bump on "dumpling book"; the book gets a soft glow outline 1.2-2.4 s (code). | soft chopstick tap, steamer hiss | BOTTOM |
 | C04 | 3.0 | 0:10.5 | AI | 1: Uncle | CU · face 42% | Close-up of the Uncle, completely bald with a thin curled mustache, bent halfway down, a sly innocent face, one eyebrow raised, lips pressed in a thin hopeful smile. | Same framing; change only: his sly smile broadened and his eyes darted sideways. | He keeps the innocent face; his eyes dart sideways to check he is not watched. | UNCLE (on) [sly whisper, thoroughly unconvincing]: “I'm not sitting. It's research.” | overlay | low | Tiny sweat-drop sprite at the end; creak sound on the stool. | stool creak, comic plink | BOTTOM |
@@ -107,7 +107,7 @@ Same columns and rules as `scripts/episode-01-v4.5.md`. This episode has one new
 ## Safety and sensitivity checks
 - **Dad beat:** C12-C13 only (6.0 s). Sepia silhouette from behind, no face, never named in a prompt; the line is gentle ("Dad went away. His book stayed.") and said once; there is no mention of death or danger. No joke inside 10 s on either side (last joke 0:24.5, first joke after 0:51.5).
 - **No secret for the Uncle, no torn page:** the Uncle knows nothing more than the Boy; the book is whole; page one is simply "be patient".
-- **Grown-up step:** C16 repeats the safe method (tiny hole, cool, sip) with the GROWN-UP HELP: HOT SOUP badge, so the burn lesson from 1A is closed in this episode too.
+- **Grown-up step:** C16 repeats the safe method (tiny hole, cool, sip) with the GROWN-UP HELP: HOT SOUP badge, so the burn lesson from Episode 1 is closed in this episode too.
 - **Jokes only on the Uncle** (his hovering, his "research", his dramatic hunger, his nine seconds of patience). Grandma delivers one dry line ("Then perish quietly.") as the straight reply, never as the butt.
 - **No text in AI shots:** the book page is a sketch and brush strokes; the stool carving is a doodle; the map inset, fold counter, place card and badge are code overlays.
 - **Uncle design:** every Uncle START says "completely bald with a thin curled mustache"; no hat of any kind.
@@ -117,20 +117,20 @@ Same columns and rules as `scripts/episode-01-v4.5.md`. This episode has one new
 1. C04 "I'm not sitting. It's research." (3.0 s): first to cut if over 1:15, restore for laughs.
 2. The second sentence of C21 ("Of course.") and C18's "I counted." (about 1.0 s each).
 3. A Boy aside about the book's cover and the string (2.5 s).
-4. Grandma's longer story of the man and the dumpling (v4.4 "He burned his tongue too", 3.5 s): a possible 1A/1B bridge line.
+4. Grandma's longer story of the man and the dumpling (v4.4 "He burned his tongue too", 3.5 s): a possible Episode 1 / Episode 2 bridge line.
 5. The Silk Road map card (v4.4, 20 s): arc compilation.
 
 ## Upload details
 - **Title options (pick one):**
   1. `Nobody Sits On This Stool... Here's Why 🥟`
-  2. `Dad's Dumpling Book: Page One 📖🥟 | The Dumpling Boy #1B`
+  2. `Dad's Dumpling Book: Page One 📖🥟 | The Dumpling Boy #2`
   3. `18 Folds, No Hurry 🥟 (The Uncle Cannot Wait)`
 - **Description:**
 ```
 🥟 Support the journey → https://thedumplingboy.netlify.app
 A fast, funny food-travel show on the old Silk Road: a boy, his (very hungry) uncle, and Dad's dumpling book. Stop 1, part 2: Grandma's stall in Nanxiang, Shanghai.
 
-Why won't Grandma let anyone sit on that stool? And what is on page one of Dad's book? (Part 1A, the soup dumpling and the legend, is in the previous Short.)
+Why won't Grandma let anyone sit on that stool? And what is on page one of Dad's book? (Episode 1, the soup dumpling and the legend, is in the previous Short.)
 A classic soup dumpling is folded by hand with about 18 pleats; the number varies from shop to shop, and more folds usually mean a thinner skin.
 Safe way to eat one (grown-ups help with hot soup): tiny hole, let it cool, sip the soup first.
 The stall, the stool, Grandma, the book and the camel are fiction.
@@ -138,7 +138,7 @@ The stall, the stool, Grandma, the book and the camel are fiction.
 Next: Guangzhou.
 #dumplings #xiaolongbao #shanghai #silkroad #animation #foodtravel #shorts
 ```
-- **Loop idea:** C23 hard-cuts to black on the camel blink and the Short restarts on the spoon-on-forehead hook ("Nobody sits on that stool"), so the answer to "what was Dad right about?" invites a replay. Group 1A and 1B with the YouTube "Shorts series" feature.
+- **Loop idea:** C23 hard-cuts to black on the camel blink and the Short restarts on the spoon-on-forehead hook ("Nobody sits on that stool"), so the answer to "what was Dad right about?" invites a replay. Group Episode 1 and Episode 2 with the YouTube "Shorts series" feature.
 - **Pinned comment:** `The Uncle lasted 9 seconds. How long can YOU wait for a soup dumpling to cool? ⏱️🥟 And did you spot the camel? 🐪`
 - Channel: The Dumpling Boy (@TheDumplingBoy.studio). Business contact: thedumplingboy.studio@gmail.com.
 

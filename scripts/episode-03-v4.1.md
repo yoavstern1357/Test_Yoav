@@ -1,5 +1,7 @@
 # Episode 03 V4.1: "Uncle vs. the Frozen Ears" (China arc, part 3 of 3: Recipe + Recap)
 
+> OLD numbering, superseded: old Episode 3 (guotie) is no longer a story episode; it becomes recipe Short R1.
+
 **Length:** exactly 2:00.0 including the 1.5 s sign-off sting · vertical 9:16 · **Location:** Beijing at Spring Festival: a snowy hutong lane, then the Wang family's warm courtyard kitchen · **Dumpling:** Guotie (pan-fried potstickers); jiaozi (boiled) as the "or" option
 **Format:** a world food-travel show on the old Silk Road, hosted by the Boy (Bo), who talks to camera. Uncle Fong is the chaotic co-host. Old legends and old history are told by a grand, over-serious **Scroll Narrator** in a paper-cut look. This is the arc's **recipe + China recap** episode (`production/series-format.md`): a fast recipe montage with one step per clip, then the China recap, the map stamp and the cliffhanger. The full written recipe is in the description. Comedy rules: `production/v4/comedy-style.md`. Facts: `production/v4/content-research.md`, section "Episode 3".
 **Voices:** `boy` (calm, precise, deadpan host), `uncle` (big, warm, loud; tiny when humbled), `narrator` (deep, solemn, a little echo, a low gong before he speaks), `grandpa` (Grandpa Wang, a fictional Beijing grandfather: warm, low, dry; one NEW voice profile). Mei (about 9, his granddaughter, fictional) has no spoken lines: she does the helper jobs on screen. Dad only as a sepia silhouette from behind. Catchphrase **"For science!"**. Last spoken line: **"Dad was right..."**

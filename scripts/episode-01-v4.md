@@ -1,5 +1,7 @@
 # Episode 01 V4: "Uncle vs. Soup Dumpling" (China arc, part 1 of 3: Arrival)
 
+> OLD numbering, superseded: this draft is the whole old Episode 1. In the plain numbering it is split into Episode 1 and Episode 2 (current scripts: `scripts/episode-01-v5.md`, `scripts/episode-02-v5.md`).
+
 **Length:** about 2:05 (2:00 story + 5 s sign-off sting; inside the series range 1:50-2:10) · vertical 9:16 · **Location:** Shanghai, then Nanxiang (old town in Jiading District, Shanghai) · **Dumpling:** Xiaolongbao
 **Format:** a world food-travel show hosted by the Boy, set on the old Silk Road. The Boy (Bo) talks to camera, presents places, food and history. Uncle Fong is the chaotic co-host. Old legends are told by a grand, over-serious **Scroll Narrator** in a distinct paper-cut storybook look. Comedy rules: `production/v4/comedy-style.md`.
 **Voices:** `boy` (calm, precise, deadpan host), `uncle` (big, warm, loud; tiny when humbled), `narrator` (deep, solemn, a little echo, low gong before he speaks), `grandma`. Dad appears only as a sepia silhouette from behind and as the Boy's reading of his journal. Catchphrase: **"For science!"** (bold, then whispered). Last line: **"Dad was right..."**

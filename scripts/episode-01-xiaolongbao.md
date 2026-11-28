@@ -1,5 +1,7 @@
 # Episode 01: "Uncle vs. Soup Dumpling" (China arc, part 1 of 3: Arrival)
 
+> OLD numbering, superseded: this draft is the whole old Episode 1. In the plain numbering it is split into Episode 1 and Episode 2 (current scripts: `scripts/episode-01-v5.md`, `scripts/episode-02-v5.md`).
+
 **Length:** about 2:00 (1:50–2:10) · vertical 9:16 · YouTube Short · **Location:** Shanghai, then Nanxiang, an old town on the outskirts of Shanghai, China · **Dumpling:** Xiaolongbao
 
 ## Script
