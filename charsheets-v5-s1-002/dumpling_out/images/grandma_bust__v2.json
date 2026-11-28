@@ -1,0 +1,18 @@
+{
+ "id": "grandma_bust__v2",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5351,
+ "size": [
+  768,
+  960
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 13.5,
+ "prompt": "Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clothes and the bun described in the text. Character design portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a deep jade-green cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, slight three-quarter view, warm calm expression, the face large and clear. Vertical composition. Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos. Avoid: glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text.",
+ "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+ "refs": [
+  "refs/grandma_face.jpg"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "id": "uncle_bust__v3",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5252,
+ "size": [
+  768,
+  960
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 11.4,
+ "prompt": "Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head is NOT in this reference: draw the head as described in the text. Character design portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks, an earth-brown linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, slight three-quarter view, warm calm expression, the face large and clear. Vertical composition. Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos. Avoid: hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text.",
+ "negative": "hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+ "refs": [
+  "refs/uncle_body.jpg"
+ ]
+}

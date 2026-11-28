@@ -1,0 +1,19 @@
+{
+ "id": "boy_bust__v2",
+ "orientation": "portrait",
+ "backend": "klein",
+ "seed": 5151,
+ "size": [
+  768,
+  960
+ ],
+ "steps": 4,
+ "status": "ok",
+ "seconds": 11.8,
+ "prompt": "Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image 2 is the same Boy, second angle of the face and hat (ignore its background and any strap). Create a NEW image; keep every character exactly as in its reference (same face, hat, clothes, colors and proportions). Character design portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, slight three-quarter view, warm calm expression, the face large and clear. Vertical composition. Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos. Avoid: second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text.",
+ "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+ "refs": [
+  "refs/boy_head.jpg",
+  "refs/boy_head2.jpg"
+ ]
+}

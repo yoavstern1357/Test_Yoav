@@ -1,0 +1,401 @@
+[{"stream_name":"stderr","time":9.177483945,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.177534663,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.177541583,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.177545975,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.83591867,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.835948068,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.835953688,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.835958673,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.114992545,"data":"Kaggle\n"}
+,{"stream_name":"stdout","time":11.115019931,"data":"GPU 0: Tesla T4 (UUID: GPU-59421075-acd5-0cf6-473d-de9285cc6663)\n"}
+,{"stream_name":"stdout","time":11.115032517,"data":"GPU 1: Tesla T4 (UUID: GPU-7bb41082-b80e-e0fa-d578-1fc328d59ac9)\n"}
+,{"stream_name":"stdout","time":11.115036146,"data":"\n"}
+,{"stream_name":"stdout","time":41.790697439,"data":"\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\r\n"}
+,{"stream_name":"stdout","time":41.790726738000004,"data":"bigframes 2.51.0 requires google-cloud-bigquery-storage\u003c3.0.0,\u003e=2.30.0, which is not installed.\r\n"}
+,{"stream_name":"stdout","time":41.790732022,"data":"ydata-profiling 4.18.4 requires numpy\u003c2.4,\u003e=1.22, but you have numpy 2.5.5 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790736335,"data":"litellm 1.109.1 requires huggingface-hub\u003c2.0,\u003e=0.34.0, but you have huggingface-hub 2.5.0 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790740558,"data":"dopamine-rl 4.1.2 requires gym\u003c=0.25.2, but you have gym 0.26.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790744438,"data":"datasets 4.8.5 requires huggingface-hub\u003c2.0,\u003e=0.25.0, but you have huggingface-hub 2.5.0 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790748483,"data":"moviepy 1.0.3 requires decorator\u003c5.0,\u003e=4.0.2, but you have decorator 5.3.1 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790752442,"data":"ydf 0.15.0 requires protobuf\u003c7.0.0,\u003e=5.29.1, but you have protobuf 7.36.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790756427,"data":"numba 0.61.2 requires numpy\u003c2.3,\u003e=1.24, but you have numpy 2.5.5 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":41.790760271,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\u001b[0m\u001b[31m\r\n"}
+,{"stream_name":"stderr","time":60.786806888,"data":"Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\n"}
+,{"stream_name":"stderr","time":60.786842722,"data":"\n"}
+,{"stream_name":"stderr","time":60.786849798,"data":"Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\n"}
+,{"stream_name":"stdout","time":67.900907928,"data":"\u001b[0mdiffusers 0.43.0 | transformers 5.24.1 | torch 2.11.0+cu130 | cuda True | gpus 2\n"}
+,{"stream_name":"stdout","time":67.930504989,"data":"Writing generate_images.py\n"}
+,{"stream_name":"stdout","time":68.261912884,"data":"inputs: /kaggle/input/datasets/thedumplingboy/dumpling-input-charsheets-v5-s1-002\n"}
+,{"stream_name":"stdout","time":68.502684423,"data":"18:37:59 19 images (0 already done)\r\n"}
+,{"stream_name":"stdout","time":68.603817154,"data":"  boy_full__v1                 klein  768x1344 steps=4 seed=5100 phase=1 refs=2 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.603845903,"data":"      Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image \r\n"}
+,{"stream_name":"stdout","time":68.603850788,"data":"  boy_full__v2                 klein  768x1344 steps=4 seed=5101 phase=1 refs=2 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.603854396,"data":"      Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image \r\n"}
+,{"stream_name":"stdout","time":68.603858083,"data":"  boy_full__v3                 klein  768x1344 steps=4 seed=5102 phase=1 refs=2 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.603861783,"data":"      Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image \r\n"}
+,{"stream_name":"stdout","time":68.603869776,"data":"  boy_bust__v1                 klein  768x960 steps=4 seed=5150 phase=1 refs=2 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.603872421,"data":"      Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image \r\n"}
+,{"stream_name":"stdout","time":68.603875262,"data":"  boy_bust__v2                 klein  768x960 steps=4 seed=5151 phase=1 refs=2 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.603877654,"data":"      Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image \r\n"}
+,{"stream_name":"stdout","time":68.60388025,"data":"  boy_bust__v3                 klein  768x960 steps=4 seed=5152 phase=1 refs=2 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.603882676,"data":"      Reference images: image 1 is the Boy's face, hat and painting style (head only; ignore its background and any other person; its shoulder strap must NOT be copied); image \r\n"}
+,{"stream_name":"stdout","time":68.65453779,"data":"  uncle_full__v1               klein  768x1344 steps=4 seed=5200 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654564643,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.654570213,"data":"  uncle_full__v2               klein  768x1344 steps=4 seed=5201 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654574516,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.654578951,"data":"  uncle_full__v3               klein  768x1344 steps=4 seed=5202 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654582952,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.654598404,"data":"  uncle_full__v4               klein  768x1344 steps=4 seed=5203 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654602436,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.654606857,"data":"  uncle_bust__v1               klein  768x960 steps=4 seed=5250 phase=1 refs=1 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654610653,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.654619079,"data":"  uncle_bust__v2               klein  768x960 steps=4 seed=5251 phase=1 refs=1 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654621791,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.654624679,"data":"  uncle_bust__v3               klein  768x960 steps=4 seed=5252 phase=1 refs=1 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.654627373,"data":"      Reference images: image 1 is the Uncle's body: linen jacket cloth, mandarin collar, knot buttons, towel, orange sash, trousers, sandals, and the painting style. His head \r\n"}
+,{"stream_name":"stdout","time":68.705825585,"data":"  grandma_full__v1             klein  768x1344 steps=4 seed=5300 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.705860896,"data":"      Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clot\r\n"}
+,{"stream_name":"stdout","time":68.705867428,"data":"  grandma_full__v2             klein  768x1344 steps=4 seed=5301 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.705872036,"data":"      Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clot\r\n"}
+,{"stream_name":"stdout","time":68.705877141,"data":"  grandma_full__v3             klein  768x1344 steps=4 seed=5302 phase=1 refs=1 ~0.5 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.705882179,"data":"      Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clot\r\n"}
+,{"stream_name":"stdout","time":68.705887679,"data":"  grandma_bust__v1             klein  768x960 steps=4 seed=5350 phase=1 refs=1 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.705892617,"data":"      Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clot\r\n"}
+,{"stream_name":"stdout","time":68.705897004,"data":"  grandma_bust__v2             klein  768x960 steps=4 seed=5351 phase=1 refs=1 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.705901183,"data":"      Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clot\r\n"}
+,{"stream_name":"stdout","time":68.705905995,"data":"  grandma_bust__v3             klein  768x960 steps=4 seed=5352 phase=1 refs=1 ~0.4 min on a T4 (estimate)\r\n"}
+,{"stream_name":"stdout","time":68.705926654,"data":"      Reference images: image 1 is painting style and the kind round face language only. Her clothes and hair in this reference are OLD and must NOT be copied: use the new clot\r\n"}
+,{"stream_name":"stdout","time":68.70593108,"data":"18:37:59 estimated GPU time: 9 min on one T4 (about half with 2 GPUs) plus the model download. Estimates are not measured.\r\n"}
+,{"stream_name":"stdout","time":69.269917447,"data":"18:37:59 downloading black-forest-labs/FLUX.2-klein-4B (safetensors only) ...\r\n"}
+,{"stream_name":"stdout","time":69.77646359,"data":"\rDownloading bytes:                                          |  0.00B            \r\n"}
+,{"stream_name":"stdout","time":69.776489664,"data":"\rReconstructing (incomplete total...): |            |  0.00B /  0.00B            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":69.776496595,"data":"\r\n"}
+,{"stream_name":"stdout","time":70.031410608,"data":"\rFetching 18 files:   0%|                                 | 0/18 [00:00\u003c?, ?it/s]\u001b[A\u001b[AWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":70.031443356,"data":"\r\n"}
+,{"stream_name":"stdout","time":70.031448881,"data":"\rReconstructing (incomplete total...):   0%|        |  0.00B / 1.54kB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.031454439,"data":"\rReconstructing (incomplete total...): 100%|████████| 1.54kB / 1.54kB            \u001b[A\rDownloading bytes: █████████████████████████████████████████| 1.54kB            \r\n"}
+,{"stream_name":"stdout","time":70.031461288,"data":"\r\n"}
+,{"stream_name":"stdout","time":70.03146596,"data":"\rFetching 18 files:   6%|█▍                       | 1/18 [00:00\u003c00:04,  3.95it/s]\u001b[A\u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.031470721,"data":"\rReconstructing (incomplete total...):   4%|▎       | 1.54kB / 34.4kB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.080921531,"data":"\rReconstructing (incomplete total...):  99%|███████▉| 34.4kB / 34.6kB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.080947584,"data":"\rReconstructing (incomplete total...):  99%|███████▉| 34.6kB / 35.1kB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.080956772,"data":"\rReconstructing (incomplete total...):  99%|███████▉| 35.1kB / 35.5kB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.132554563,"data":"\rReconstructing (incomplete total...):  98%|███████▊| 35.5kB / 36.2kB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.132581463,"data":"\rReconstructing (incomplete total...):   0%|        | 36.2kB / 8.06GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.132586404,"data":"\rReconstructing (incomplete total...):   0%|        | 36.2kB / 8.06GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.286953354,"data":"\rReconstructing (incomplete total...):   0%|        | 36.2kB / 8.06GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.286990076,"data":"\rReconstructing (incomplete total...):   0%|        | 36.2kB / 8.06GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.28699547,"data":"\rReconstructing (incomplete total...):   0%|        | 40.4kB / 8.06GB            \u001b[A\rDownloading bytes:                                          | 40.4kB            \r\n"}
+,{"stream_name":"stdout","time":70.287000057,"data":"\rReconstructing (incomplete total...):   0%|        | 40.4kB / 8.06GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.287013129,"data":"\r\n"}
+,{"stream_name":"stdout","time":70.28701738,"data":"\rFetching 18 files:  39%|█████████▋               | 7/18 [00:00\u003c00:00, 15.42it/s]\u001b[A\u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.287022626,"data":"\rReconstructing (incomplete total...):   0%|        | 40.4kB / 8.06GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.339670993,"data":"\rReconstructing (incomplete total...):   0%|        | 41.0kB / 15.8GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.339696893,"data":"\rReconstructing (incomplete total...):   0%|        | 1.71MB / 15.8GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.339701821,"data":"\rReconstructing (incomplete total...):   0%|        | 1.72MB / 16.0GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.539814364,"data":"\rReconstructing (incomplete total...):   0%|        | 1.72MB / 16.0GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.539844472,"data":"\rReconstructing (incomplete total...):   0%|        | 4.50MB / 16.0GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":70.539850544,"data":"\rReconstructing (incomplete total...):   0%|        | 4.50MB / 16.0GB            \u001b[A\rDownloading bytes:                                          | 4.50MB            \r\n"}
+,{"stream_name":"stdout","time":70.539855939,"data":"\r\n"}
+,{"stream_name":"stdout","time":70.590193852,"data":"\rFetching 18 files:  67%|████████████████        | 12/18 [00:00\u003c00:00, 17.99it/s]\u001b[A\u001b[A\r\n"}
+,{"stream_name":"stdout","time":71.65541806,"data":"\rReconstructing (incomplete total...):   0%|        | 4.50MB / 16.0GB            \u001b[A\rDownloading bytes:                                          | 7.62MB            \r\n"}
+,{"stream_name":"stdout","time":71.70763748,"data":"\rReconstructing (incomplete total...):   0%|        | 15.9MB / 16.0GB            \u001b[A\r\n"}
+,{"stream_name":"stdout","time":71.708336298,"data":"\r\n"}
+,{"stream_name":"stdout","time":72.126246579,"data":"\rFetching 18 files:  78%|██████████████████▋     | 14/18 [00:01\u003c00:00,  5.68it/s]\u001b[A\u001b[A\rDownloading bytes:                                          | 44.1MB, 4.24MB/s  \rDownloading bytes: ▏                                        | 94.1MB, 35.8MB/s  \rDownloading bytes: ▍                                        |  155MB, 87.3MB/s  \rDownloading bytes: ▌                                        |  218MB,  158MB/s  \r\n"}
+,{"stream_name":"stdout","time":72.235253263,"data":"\rReconstructing (incomplete total...):   1%|        |  150MB / 16.0GB, 9.61MB/s  \u001b[A\rDownloading bytes: ▋                                        |  273MB,  235MB/s  \r\n"}
+,{"stream_name":"stdout","time":72.441775355,"data":"\rReconstructing (incomplete total...):   2%|▏       |  284MB / 16.0GB, 94.0MB/s  \u001b[A\rDownloading bytes: ▊                                        |  324MB,  291MB/s  \rDownloading bytes: █                                        |  390MB,  337MB/s  \r\n"}
+,{"stream_name":"stdout","time":72.549981224,"data":"\rReconstructing (incomplete total...):   2%|▏       |  351MB / 16.0GB,  200MB/s  \u001b[A\rDownloading bytes: █▏                                       |  450MB,  409MB/s  \r\n"}
+,{"stream_name":"stdout","time":72.763657741,"data":"\rReconstructing (incomplete total...):   3%|▏       |  418MB / 16.0GB,  224MB/s  \u001b[A\rDownloading bytes: █▎                                       |  510MB,  446MB/s  \r\n"}
+,{"stream_name":"stdout","time":72.871112906,"data":"\rReconstructing (incomplete total...):   3%|▏       |  485MB / 16.0GB,  277MB/s  \u001b[A\rDownloading bytes: █▌                                       |  610MB,  486MB/s  \r\n"}
+,{"stream_name":"stdout","time":73.346712946,"data":"\rReconstructing (incomplete total...):   4%|▎       |  620MB / 16.0GB,  291MB/s  \u001b[A\rDownloading bytes: █▊                                       |  696MB,  489MB/s  \rDownloading bytes: █▉                                       |  747MB,  464MB/s  \rDownloading bytes: ██                                       |  808MB,  472MB/s  \rDownloading bytes: ██▏                                      |  868MB,  502MB/s  \r\n"}
+,{"stream_name":"stdout","time":73.459170695,"data":"\rReconstructing (incomplete total...):   5%|▍       |  794MB / 16.0GB,  453MB/s  \u001b[A\rDownloading bytes: ██▎                                      |  919MB,  487MB/s  \r\n"}
+,{"stream_name":"stdout","time":74.138478468,"data":"\rReconstructing (incomplete total...):   6%|▍       |  955MB / 16.0GB,  396MB/s  \u001b[A\rDownloading bytes: ██▍                                      |  970MB,  492MB/s  \rDownloading bytes: ██▋                                      | 1.03GB,  497MB/s  \rDownloading bytes: ██▊                                      | 1.09GB,  528MB/s  \rDownloading bytes: ███                                      | 1.19GB,  542MB/s  \rDownloading bytes: ███▏                                     | 1.24GB,  573MB/s  \rDownloading bytes: ███▎                                     | 1.31GB,  573MB/s  \r\n"}
+,{"stream_name":"stdout","time":74.34685487,"data":"\rReconstructing (incomplete total...):   7%|▌       | 1.11GB / 16.0GB,  551MB/s  \u001b[A\rDownloading bytes: ███▌                                     | 1.37GB,  585MB/s  \rDownloading bytes: ███▋                                     | 1.42GB,  507MB/s  \r\n"}
+,{"stream_name":"stdout","time":74.874693795,"data":"\rReconstructing (incomplete total...):   8%|▋       | 1.31GB / 16.0GB,  366MB/s  \u001b[A\rDownloading bytes: ███▉                                     | 1.53GB,  518MB/s  \rDownloading bytes: ████                                     | 1.60GB,  599MB/s  \rDownloading bytes: ████▎                                    | 1.66GB,  605MB/s  \r\n"}
+,{"stream_name":"stdout","time":75.61324842,"data":"\rReconstructing (incomplete total...):   9%|▋       | 1.44GB / 16.0GB,  486MB/s  \u001b[A\rDownloading bytes: ████▌                                    | 1.77GB,  611MB/s  \rDownloading bytes: ████▋                                    | 1.83GB,  587MB/s  \rDownloading bytes: ████▉                                    | 1.91GB,  592MB/s  \rDownloading bytes: █████                                    | 1.97GB,  542MB/s  \rDownloading bytes: █████                                    | 1.97GB,  573MB/s  \rDownloading bytes: █████▏                                   | 2.04GB,  573MB/s  \rDownloading bytes: █████▍                                   | 2.11GB,  528MB/s  \r\n"}
+,{"stream_name":"stdout","time":75.821461242,"data":"\rReconstructing (incomplete total...):  10%|▊       | 1.56GB / 16.0GB,  396MB/s  \u001b[A\rDownloading bytes: █████▌                                   | 2.17GB,  500MB/s  \r\n"}
+,{"stream_name":"stdout","time":76.080516233,"data":"\rReconstructing (incomplete total...):  12%|▉       | 1.84GB / 16.0GB,  282MB/s  \u001b[A\rDownloading bytes: █████▋                                   | 2.24GB,  422MB/s  \r\n"}
+,{"stream_name":"stdout","time":77.606888932,"data":"\rReconstructing (incomplete total...):  16%|█▏      | 2.49GB / 16.0GB,  446MB/s  \u001b[A\rDownloading bytes: █████▉                                   | 2.33GB,  396MB/s  \rDownloading bytes: ██████▏                                  | 2.39GB,  415MB/s  \rDownloading bytes: ██████▎                                  | 2.45GB,  442MB/s  \rDownloading bytes: ██████▍                                  | 2.51GB,  472MB/s  \rDownloading bytes: ██████▌                                  | 2.56GB,  499MB/s  \rDownloading bytes: ██████▋                                  | 2.62GB,  513MB/s  \rDownloading bytes: ██████▉                                  | 2.69GB,  534MB/s  \rDownloading bytes: ███████                                  | 2.75GB,  511MB/s  \rDownloading bytes: ███████▏                                 | 2.81GB,  539MB/s  \rDownloading bytes: ███████▍                                 | 2.89GB,  550MB/s  \rDownloading bytes: ███████▌                                 | 2.94GB,  527MB/s  \rDownloading bytes: ███████▋                                 | 3.00GB,  530MB/s  \rDownloading bytes: ███████▊                                 | 3.06GB,  533MB/s  \rDownloading bytes: ███████▉                                 | 3.12GB,  541MB/s  \r\n"}
+,{"stream_name":"stdout","time":78.333314767,"data":"\rReconstructing (incomplete total...):  16%|█▎      | 2.62GB / 16.0GB,  885MB/s  \u001b[A\rDownloading bytes: ████████▏                                | 3.21GB,  557MB/s  \rDownloading bytes: ████████▍                                | 3.28GB,  581MB/s  \rDownloading bytes: ████████▌                                | 3.34GB,  544MB/s  \rDownloading bytes: ████████▋                                | 3.40GB,  549MB/s  \rDownloading bytes: ████████▊                                | 3.45GB,  549MB/s  \rDownloading bytes: █████████                                | 3.51GB,  550MB/s  \r\n"}
+,{"stream_name":"stdout","time":79.016645206,"data":"\rReconstructing (incomplete total...):  17%|█▍      | 2.75GB / 16.0GB,  372MB/s  \u001b[A\rDownloading bytes: █████████▏                               | 3.58GB,  532MB/s  \rDownloading bytes: █████████▎                               | 3.64GB,  560MB/s  \rDownloading bytes: █████████▌                               | 3.71GB,  570MB/s  \rDownloading bytes: █████████▋                               | 3.78GB,  578MB/s  \rDownloading bytes: █████████▊                               | 3.83GB,  504MB/s  \r\n"}
+,{"stream_name":"stdout","time":79.481792022,"data":"\rReconstructing (incomplete total...):  22%|█▊      | 3.51GB / 16.0GB,  317MB/s  \u001b[A\rDownloading bytes: █████████▉                               | 3.89GB,  506MB/s  \rDownloading bytes: ██████████                               | 3.94GB,  451MB/s  \rDownloading bytes: ██████████▏                              | 3.99GB,  383MB/s  \rDownloading bytes: ██████████▎                              | 4.04GB,  405MB/s  \r\n"}
+,{"stream_name":"stdout","time":80.901228616,"data":"\rReconstructing (incomplete total...):  23%|█▊      | 3.60GB / 16.0GB,  543MB/s  \u001b[A\rDownloading bytes: ██████████▍                              | 4.09GB,  413MB/s  \rDownloading bytes: ██████████▋                              | 4.15GB,  441MB/s  \rDownloading bytes: ██████████▊                              | 4.20GB,  450MB/s  \rDownloading bytes: ██████████▉                              | 4.25GB,  390MB/s  \rDownloading bytes: ███████████                              | 4.31GB,  397MB/s  \rDownloading bytes: ███████████▏                             | 4.35GB,  362MB/s  \rDownloading bytes: ███████████▎                             | 4.40GB,  371MB/s  \rDownloading bytes: ███████████▍                             | 4.45GB,  409MB/s  \rDownloading bytes: ███████████▌                             | 4.50GB,  432MB/s  \rDownloading bytes: ███████████▋                             | 4.56GB,  453MB/s  \rDownloading bytes: ███████████▊                             | 4.62GB,  489MB/s  \rDownloading bytes: ███████████▉                             | 4.67GB,  508MB/s  \r\n"}
+,{"stream_name":"stdout","time":82.984190687,"data":"\rReconstructing (incomplete total...):  23%|█▊      | 3.67GB / 16.0GB,  475MB/s  \u001b[A\rDownloading bytes: ████████████                             | 4.72GB,  512MB/s  \rDownloading bytes: ████████████▎                            | 4.78GB,  515MB/s  \rDownloading bytes: ████████████▍                            | 4.85GB,  528MB/s  \rDownloading bytes: ████████████▌                            | 4.92GB,  588MB/s  \rDownloading bytes: ████████████▊                            | 4.99GB,  574MB/s  \rDownloading bytes: ████████████▉                            | 5.04GB,  496MB/s  \rDownloading bytes: █████████████                            | 5.11GB,  503MB/s  \rDownloading bytes: █████████████▎                           | 5.18GB,  549MB/s  \rDownloading bytes: █████████████▍                           | 5.25GB,  549MB/s  \rDownloading bytes: █████████████▌                           | 5.30GB,  486MB/s  \rDownloading bytes: █████████████▋                           | 5.31GB,  533MB/s  \rDownloading bytes: █████████████▊                           | 5.38GB,  533MB/s  \rDownloading bytes: █████████████▉                           | 5.45GB,  547MB/s  \rDownloading bytes: ██████████████                           | 5.47GB,  471MB/s  \rDownloading bytes: ██████████████▏                          | 5.52GB,  471MB/s  \rDownloading bytes: ██████████████▎                          | 5.59GB,  489MB/s  \rDownloading bytes: ██████████████▍                          | 5.64GB,  499MB/s  \rDownloading bytes: ██████████████▌                          | 5.69GB,  502MB/s  \r\n"}
+,{"stream_name":"stdout","time":86.420603811,"data":"\rReconstructing (incomplete total...):  24%|█▉      | 3.81GB / 16.0GB,  265MB/s  \u001b[A\rDownloading bytes: ██████████████▊                          | 5.76GB,  509MB/s  \rDownloading bytes: ██████████████▊                          | 5.76GB,  398MB/s  \rDownloading bytes: ██████████████▉                          | 5.81GB,  398MB/s  \rDownloading bytes: ███████████████                          | 5.86GB,  413MB/s  \rDownloading bytes: ███████████████▏                         | 5.91GB,  438MB/s  \rDownloading bytes: ███████████████▎                         | 5.96GB,  456MB/s  \rDownloading bytes: ███████████████▍                         | 6.02GB,  477MB/s  \rDownloading bytes: ███████████████▌                         | 6.07GB,  488MB/s  \rDownloading bytes: ███████████████▋                         | 6.13GB,  496MB/s  \rDownloading bytes: ███████████████▊                         | 6.18GB,  519MB/s  \rDownloading bytes: ████████████████                         | 6.25GB,  536MB/s  \rDownloading bytes: ████████████████▏                        | 6.31GB,  569MB/s  \r\n"}
+,{"stream_name":"stdout","time":86.420657017,"data":"\rReconstructing (incomplete total...):  25%|█▉      | 3.94GB / 16.0GB,  162MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":86.81159889,"data":"\rReconstructing (incomplete total...):  28%|██▏     | 4.48GB / 16.0GB,  131MB/s  \u001b[A\rDownloading bytes: ████████████████▎                        | 6.37GB,  563MB/s  \rDownloading bytes: ████████████████▍                        | 6.43GB,  176MB/s  \rDownloading bytes: ████████████████▋                        | 6.48GB,  214MB/s  \rDownloading bytes: ████████████████▊                        | 6.55GB,  263MB/s  \rDownloading bytes: ████████████████▉                        | 6.61GB,  319MB/s  \rDownloading bytes: █████████████████                        | 6.66GB,  372MB/s  \rDownloading bytes: █████████████████▏                       | 6.72GB,  413MB/s  \rDownloading bytes: █████████████████▍                       | 6.80GB,  450MB/s  \rDownloading bytes: █████████████████▌                       | 6.87GB,  449MB/s  \r\n"}
+,{"stream_name":"stdout","time":89.797139486,"data":"\rReconstructing (incomplete total...):  31%|██▍     | 4.95GB / 16.0GB,  279MB/s  \u001b[A\rDownloading bytes: █████████████████▊                       | 6.93GB,  491MB/s  \rDownloading bytes: █████████████████▉                       | 7.00GB,  154MB/s  \rDownloading bytes: ██████████████████                       | 7.06GB,  186MB/s  \rDownloading bytes: ██████████████████▏                      | 7.10GB,  222MB/s  \rDownloading bytes: ██████████████████▎                      | 7.16GB,  223MB/s  \rDownloading bytes: ██████████████████▍                      | 7.21GB,  273MB/s  \rDownloading bytes: ██████████████████▋                      | 7.26GB,  304MB/s  \rDownloading bytes: ██████████████████▊                      | 7.31GB,  351MB/s  \r\n"}
+,{"stream_name":"stdout","time":89.797184424,"data":"\r\n"}
+,{"stream_name":"stdout","time":95.221973742,"data":"\rFetching 18 files:  83%|████████████████████    | 15/18 [00:19\u003c00:00,  5.68it/s]\u001b[A\u001b[A\r\n"}
+,{"stream_name":"stdout","time":95.27622997,"data":"\rReconstructing (incomplete total...):  43%|███▍    | 6.82GB / 16.0GB,  265MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":95.327693503,"data":"\rReconstructing (incomplete total...):  46%|███▋    | 7.39GB / 16.0GB,  230MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":95.437407652,"data":"\rReconstructing (incomplete total...):  46%|███▋    | 7.39GB / 16.0GB,  230MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":104.771177706,"data":"\rReconstructing (incomplete total...):  47%|███▊    | 7.54GB / 16.0GB,  230MB/s  \u001b[A\rDownloading bytes: ██████████████████▉                      | 7.37GB,  380MB/s  \rDownloading bytes: ██████████████████▉                      | 7.40GB, 22.7MB/s  \rDownloading bytes: ███████████████████                      | 7.44GB, 28.4MB/s  \rDownloading bytes: ███████████████████▏                     | 7.48GB, 36.6MB/s  \rDownloading bytes: ███████████████████▎                     | 7.52GB, 47.9MB/s  \rDownloading bytes: ███████████████████▍                     | 7.56GB, 64.0MB/s  \rDownloading bytes: ███████████████████▌                     | 7.60GB, 84.4MB/s  \rDownloading bytes: ███████████████████▌                     | 7.64GB,  113MB/s  \rDownloading bytes: ███████████████████▋                     | 7.69GB,  144MB/s  \rDownloading bytes: ███████████████████▊                     | 7.73GB,  182MB/s  \rDownloading bytes: ███████████████████▉                     | 7.77GB,  222MB/s  \rDownloading bytes: ████████████████████▏                    | 7.85GB,  258MB/s  \rDownloading bytes: ████████████████████▏                    | 7.89GB,  302MB/s  \rDownloading bytes: ████████████████████▍                    | 7.94GB,  325MB/s  \rDownloading bytes: ████████████████████▌                    | 7.99GB,  354MB/s  \rDownloading bytes: ████████████████████▋                    | 8.05GB,  386MB/s  \rDownloading bytes: ████████████████████▊                    | 8.11GB,  431MB/s  \rDownloading bytes: ████████████████████▉                    | 8.16GB,  467MB/s  \rDownloading bytes: █████████████████████                    | 8.22GB,  492MB/s  \rDownloading bytes: █████████████████████▏                   | 8.27GB,  508MB/s  \rDownloading bytes: █████████████████████▎                   | 8.33GB,  520MB/s  \rDownloading bytes: █████████████████████▌                   | 8.38GB,  526MB/s  \rDownloading bytes: █████████████████████▋                   | 8.44GB,  531MB/s  \rDownloading bytes: █████████████████████▊                   | 8.49GB,  532MB/s  \rDownloading bytes: █████████████████████▉                   | 8.55GB,  534MB/s  \rDownloading bytes: ██████████████████████▏                  | 8.65GB,  538MB/s  \rDownloading bytes: ██████████████████████▎                  | 8.71GB,  563MB/s  \rDownloading bytes: ██████████████████████▌                  | 8.77GB,  539MB/s  \rDownloading bytes: ██████████████████████▋                  | 8.83GB,  544MB/s  \rDownloading bytes: ██████████████████████▊                  | 8.88GB,  543MB/s  \rDownloading bytes: ██████████████████████▉                  | 8.94GB,  545MB/s  \rDownloading bytes: ███████████████████████                  | 9.00GB,  553MB/s  \rDownloading bytes: ███████████████████████▎                 | 9.09GB,  566MB/s  \rDownloading bytes: ███████████████████████▌                 | 9.17GB,  563MB/s  \rDownloading bytes: ███████████████████████▋                 | 9.23GB,  572MB/s  \rDownloading bytes: ███████████████████████▉                 | 9.34GB,  579MB/s  \rDownloading bytes: ████████████████████████▏                | 9.44GB,  602MB/s  \rDownloading bytes: ████████████████████████▍                | 9.50GB,  570MB/s  \rDownloading bytes: ████████████████████████▌                | 9.56GB,  570MB/s  \rDownloading bytes: ████████████████████████▋                | 9.63GB,  579MB/s  \r\n"}
+,{"stream_name":"stdout","time":105.089187901,"data":"\rReconstructing (incomplete total...):  49%|███▉    | 7.82GB / 16.0GB,  238MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":105.354724349,"data":"\rReconstructing (incomplete total...):  53%|████▏   | 8.42GB / 16.0GB,  136MB/s  \u001b[A\rDownloading bytes: ████████████████████████▊                | 9.69GB,  551MB/s  \rDownloading bytes: ████████████████████████▉                | 9.74GB, 42.1MB/s  \r\n"}
+,{"stream_name":"stdout","time":109.069223355,"data":"\rReconstructing (incomplete total...):  58%|████▌   | 9.22GB / 16.0GB,  178MB/s  \u001b[A\rDownloading bytes: █████████████████████████                | 9.78GB, 52.5MB/s  \rDownloading bytes: █████████████████████████▏               | 9.81GB, 63.2MB/s  \rDownloading bytes: █████████████████████████▎               | 9.85GB, 75.6MB/s  \rDownloading bytes: █████████████████████████▍               | 9.90GB, 95.6MB/s  \rDownloading bytes: █████████████████████████▌               | 9.96GB,  127MB/s  \rDownloading bytes: █████████████████████████▋               | 10.0GB,  175MB/s  \rDownloading bytes: █████████████████████████▊               | 10.1GB,  225MB/s  \rDownloading bytes: █████████████████████████▉               | 10.1GB,  269MB/s  \rDownloading bytes: ██████████████████████████               | 10.2GB,  320MB/s  \rDownloading bytes: ██████████████████████████▎              | 10.3GB,  368MB/s  \rDownloading bytes: ██████████████████████████▌              | 10.3GB,  461MB/s  \rDownloading bytes: ██████████████████████████▋              | 10.4GB,  486MB/s  \rDownloading bytes: ██████████████████████████▊              | 10.5GB,  463MB/s  \rDownloading bytes: ██████████████████████████▉              | 10.5GB,  486MB/s  \rDownloading bytes: ███████████████████████████▏             | 10.6GB,  496MB/s  \rDownloading bytes: ███████████████████████████▎             | 10.6GB,  528MB/s  \rDownloading bytes: ███████████████████████████▍             | 10.7GB,  540MB/s  \rDownloading bytes: ███████████████████████████▌             | 10.8GB,  551MB/s  \r\n"}
+,{"stream_name":"stdout","time":109.985689544,"data":"\rReconstructing (incomplete total...):  60%|████▊   | 9.51GB / 16.0GB,  253MB/s  \u001b[A\rDownloading bytes: ███████████████████████████▋             | 10.8GB,  414MB/s  \rDownloading bytes: ███████████████████████████▊             | 10.9GB, 88.7MB/s  \r\n"}
+,{"stream_name":"stdout","time":110.966186483,"data":"\rReconstructing (incomplete total...):  60%|████▊   | 9.64GB / 16.0GB,  192MB/s  \u001b[A\rDownloading bytes: ███████████████████████████▉             | 10.9GB,  102MB/s  \rDownloading bytes: ████████████████████████████             | 10.9GB, 89.0MB/s  \rDownloading bytes: ████████████████████████████             | 11.0GB,  101MB/s  \rDownloading bytes: ████████████████████████████▏            | 11.0GB,  118MB/s  \r\n"}
+,{"stream_name":"stdout","time":111.23108136,"data":"\rReconstructing (incomplete total...):  61%|████▉   | 9.77GB / 16.0GB,  186MB/s  \u001b[A\rDownloading bytes: ████████████████████████████▎            | 11.0GB,  143MB/s  \rDownloading bytes: ████████████████████████████▍            | 11.1GB,  112MB/s  \r\n"}
+,{"stream_name":"stdout","time":117.35460845,"data":"\rReconstructing (incomplete total...):  71%|█████▋  | 11.3GB / 16.0GB,  178MB/s  \u001b[A\rDownloading bytes: ████████████████████████████▍            | 11.1GB,  123MB/s  \rDownloading bytes: ████████████████████████████▍            | 11.1GB,  127MB/s  \rDownloading bytes: ████████████████████████████▌            | 11.1GB,  137MB/s  \rDownloading bytes: ████████████████████████████▋            | 11.2GB,  156MB/s  \rDownloading bytes: ████████████████████████████▋            | 11.2GB,  163MB/s  \rDownloading bytes: ████████████████████████████▋            | 11.2GB,  173MB/s  \rDownloading bytes: ████████████████████████████▊            | 11.2GB,  182MB/s  \rDownloading bytes: ████████████████████████████▉            | 11.3GB,  186MB/s  \rDownloading bytes: ████████████████████████████▉            | 11.3GB,  200MB/s  \rDownloading bytes: █████████████████████████████            | 11.3GB,  227MB/s  \rDownloading bytes: █████████████████████████████▏           | 11.4GB,  248MB/s  \rDownloading bytes: █████████████████████████████▏           | 11.4GB,  257MB/s  \rDownloading bytes: █████████████████████████████▎           | 11.4GB,  268MB/s  \rDownloading bytes: █████████████████████████████▍           | 11.5GB,  317MB/s  \rDownloading bytes: █████████████████████████████▌           | 11.5GB,  380MB/s  \rDownloading bytes: █████████████████████████████▋           | 11.6GB,  414MB/s  \rDownloading bytes: █████████████████████████████▊           | 11.6GB,  441MB/s  \rDownloading bytes: █████████████████████████████▉           | 11.7GB,  450MB/s  \rDownloading bytes: ██████████████████████████████           | 11.7GB,  432MB/s  \rDownloading bytes: ██████████████████████████████▏          | 11.8GB,  351MB/s  \rDownloading bytes: ██████████████████████████████▎          | 11.8GB,  310MB/s  \rDownloading bytes: ██████████████████████████████▍          | 11.9GB,  327MB/s  \rDownloading bytes: ██████████████████████████████▌          | 11.9GB,  300MB/s  \rDownloading bytes: ██████████████████████████████▋          | 12.0GB,  321MB/s  \rDownloading bytes: ██████████████████████████████▊          | 12.0GB,  295MB/s  \rDownloading bytes: ██████████████████████████████▉          | 12.1GB,  316MB/s  \rDownloading bytes: ███████████████████████████████          | 12.1GB,  297MB/s  \rDownloading bytes: ███████████████████████████████▏         | 12.2GB,  333MB/s  \rDownloading bytes: ███████████████████████████████▎         | 12.2GB,  386MB/s  \rDownloading bytes: ███████████████████████████████▍         | 12.3GB,  429MB/s  \rDownloading bytes: ███████████████████████████████▋         | 12.3GB,  468MB/s  \rDownloading bytes: ███████████████████████████████▊         | 12.4GB,  499MB/s  \rDownloading bytes: ████████████████████████████████         | 12.5GB,  522MB/s  \r\n"}
+,{"stream_name":"stdout","time":120.466415305,"data":"\rReconstructing (incomplete total...):  72%|█████▊  | 11.6GB / 16.0GB,  476MB/s  \u001b[A\rDownloading bytes: ████████████████████████████████▏        | 12.5GB,  589MB/s  \rDownloading bytes: ████████████████████████████████▎        | 12.6GB, 90.0MB/s  \rDownloading bytes: ████████████████████████████████▍        | 12.6GB,  109MB/s  \rDownloading bytes: ████████████████████████████████▌        | 12.7GB,  135MB/s  \r\n"}
+,{"stream_name":"stdout","time":120.838907228,"data":"\rReconstructing (incomplete total...):  81%|██████▍ | 12.9GB / 16.0GB,  201MB/s  \u001b[A\rDownloading bytes: ████████████████████████████████▋        | 12.7GB,  166MB/s  \r\n"}
+,{"stream_name":"stdout","time":133.277551237,"data":"\rReconstructing (incomplete total...):  85%|██████▊ | 13.6GB / 16.0GB,  274MB/s  \u001b[A\rDownloading bytes: ████████████████████████████████▋        | 12.8GB, 44.7MB/s  \rDownloading bytes: ████████████████████████████████▊        | 12.8GB, 55.2MB/s  \rDownloading bytes: ████████████████████████████████▉        | 12.8GB, 71.9MB/s  \rDownloading bytes: █████████████████████████████████        | 12.9GB, 96.4MB/s  \rDownloading bytes: █████████████████████████████████▏       | 12.9GB,  124MB/s  \rDownloading bytes: █████████████████████████████████▎       | 13.0GB,  155MB/s  \rDownloading bytes: █████████████████████████████████▍       | 13.0GB,  188MB/s  \rDownloading bytes: █████████████████████████████████▍       | 13.1GB,  224MB/s  \rDownloading bytes: █████████████████████████████████▋       | 13.1GB,  261MB/s  \rDownloading bytes: █████████████████████████████████▊       | 13.2GB,  296MB/s  \rDownloading bytes: █████████████████████████████████▉       | 13.2GB,  313MB/s  \rDownloading bytes: ██████████████████████████████████       | 13.3GB,  337MB/s  \rDownloading bytes: ██████████████████████████████████▏      | 13.3GB,  354MB/s  \rDownloading bytes: ██████████████████████████████████▎      | 13.4GB,  356MB/s  \rDownloading bytes: ██████████████████████████████████▍      | 13.4GB,  366MB/s  \rDownloading bytes: ██████████████████████████████████▌      | 13.5GB,  374MB/s  \rDownloading bytes: ██████████████████████████████████▋      | 13.5GB,  392MB/s  \rDownloading bytes: ██████████████████████████████████▊      | 13.6GB,  438MB/s  \rDownloading bytes: ██████████████████████████████████▉      | 13.6GB,  476MB/s  \rDownloading bytes: ███████████████████████████████████      | 13.7GB,  507MB/s  \rDownloading bytes: ███████████████████████████████████▎     | 13.7GB,  527MB/s  \rDownloading bytes: ███████████████████████████████████▍     | 13.8GB,  549MB/s  \rDownloading bytes: ███████████████████████████████████▋     | 13.9GB,  561MB/s  \r\n"}
+,{"stream_name":"stdout","time":135.548937402,"data":"\rReconstructing (incomplete total...):  91%|███████▎| 14.6GB / 16.0GB,  360MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":135.549226205,"data":"\r\n"}
+,{"stream_name":"stdout","time":135.602426421,"data":"\rFetching 18 files:  89%|█████████████████████▎  | 16/18 [01:05\u003c00:15,  7.97s/it]\u001b[A\u001b[A\r\n"}
+,{"stream_name":"stdout","time":136.110315777,"data":"\rReconstructing (incomplete total...):  93%|███████▍| 14.8GB / 16.0GB,  160MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":136.96944124,"data":"\rReconstructing (incomplete total...): 100%|████████| 16.0GB / 16.0GB,  147MB/s  \u001b[A\r\n"}
+,{"stream_name":"stdout","time":136.969468979,"data":"\r\n"}
+,{"stream_name":"stdout","time":145.974418014,"data":"\rFetching 18 files:  94%|██████████████████████▋ | 17/18 [01:07\u003c00:06,  7.00s/it]\u001b[A\u001b[A\rDownloading bytes: ███████████████████████████████████▋     | 13.9GB,  561MB/s  \r\n"}
+,{"stream_name":"stdout","time":145.974455112,"data":"\r\n"}
+,{"stream_name":"stdout","time":145.974458729,"data":"\rFetching 18 files: 100%|████████████████████████| 18/18 [01:16\u003c00:00,  7.35s/it]\u001b[A\u001b[A\rFetching 18 files: 100%|████████████████████████| 18/18 [01:16\u003c00:00,  4.23s/it]\r\n"}
+,{"stream_name":"stdout","time":145.974471286,"data":"\rDownloading bytes: █████████████████████████████████████████| 13.9GB,  561MB/s  \rDownload complete: █████████████████████████████████████████| 13.9GB,  561MB/s  \r\n"}
+,{"stream_name":"stdout","time":145.97447458,"data":"\rReconstruction complete: 100%|█████████████████████| 16.0GB / 16.0GB,  250MB/s  \u001b[A18:39:16 model ready, commit e7b7dc27f91deacad38e78976d1f2b499d76a294\r\n"}
+,{"stream_name":"stdout","time":146.025675634,"data":"18:39:16 2 GPUs: phase 1, starting 2 workers\r\n"}
+,{"stream_name":"stdout","time":146.127475178,"data":"[gpu1] 18:39:16 worker 2/2 phase 1: 9 images to do\r\n"}
+,{"stream_name":"stdout","time":146.127505116,"data":"[gpu0] 18:39:16 worker 1/2 phase 1: 10 images to do\r\n"}
+,{"stream_name":"stdout","time":148.816397187,"data":"[gpu0] 18:39:19 backend klein model=black-forest-labs/FLUX.2-klein-4B dtype=torch.float16 gpu=Tesla T4\r\n"}
+,{"stream_name":"stdout","time":148.816429792,"data":"[gpu1] 18:39:19 backend klein model=black-forest-labs/FLUX.2-klein-4B dtype=torch.float16 gpu=Tesla T4\r\n"}
+,{"stream_name":"stdout","time":149.781334631,"data":"\r\n"}
+,{"stream_name":"stdout","time":152.062324624,"data":"\rReconstruction complete: 100%|█████████████████████| 16.0GB / 16.0GB,  250MB/s  \u001b[A[gpu1] Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\r\n"}
+,{"stream_name":"stdout","time":152.062361292,"data":"[gpu0] Disabling torchao because diffusers requires `torchao\u003e=0.15.0` but found version 0.10.0. Upgrade it with `pip install -U 'torchao\u003e=0.15.0'`.\r\n"}
+,{"stream_name":"stdout","time":163.014624166,"data":"[gpu0] /usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\r\n"}
+,{"stream_name":"stdout","time":163.014656883,"data":"[gpu0]   deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\r\n"}
+,{"stream_name":"stdout","time":163.014662417,"data":"[gpu1] /usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.\r\n"}
+,{"stream_name":"stdout","time":163.014667175,"data":"[gpu1]   deprecate(\"torch_dtype\", \"1.0.0\", _TORCH_DTYPE_DEPRECATION_MESSAGE)\r\n"}
+,{"stream_name":"stdout","time":163.532969982,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":163.570992828,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":163.978307532,"data":"[gpu0] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":163.978465661,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":164.079395866,"data":"[gpu0] Loading weights:   0%|          | 0/398 [00:00\u003c?, ?it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":164.079446128,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":164.282535661,"data":"[gpu0] Loading weights:  54%|█████▍    | 214/398 [00:00\u003c00:00, 1934.45it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":164.282569968,"data":"[gpu0] Loading weights: 100%|██████████| 398/398 [00:00\u003c00:00, 1338.43it/s]\r\n"}
+,{"stream_name":"stdout","time":164.333906418,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":164.435953984,"data":"[gpu1] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":164.690699955,"data":"[gpu1] Loading pipeline components...:  33%|███▎      | 1/3 [00:00\u003c00:01,  1.10it/s]\r\n"}
+,{"stream_name":"stdout","time":164.690739998,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":164.741607463,"data":"[gpu1] Loading weights:   0%|          | 0/398 [00:00\u003c?, ?it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":164.741671765,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":164.84283411,"data":"[gpu1] Loading weights:  62%|██████▏   | 247/398 [00:00\u003c00:00, 2463.26it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":164.842859503,"data":"[gpu1] Loading weights: 100%|██████████| 398/398 [00:00\u003c00:00, 2494.87it/s]\r\n"}
+,{"stream_name":"stdout","time":164.842864471,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":165.096726407,"data":"[gpu0] Loading pipeline components...:  33%|███▎      | 1/3 [00:00\u003c00:01,  1.32it/s]\r\n"}
+,{"stream_name":"stdout","time":167.022695549,"data":"[gpu1] Loading pipeline components...:  67%|██████▋   | 2/3 [00:01\u003c00:00,  1.64it/s]\r\n"}
+,{"stream_name":"stdout","time":167.022746599,"data":"[gpu0] Loading pipeline components...:  67%|██████▋   | 2/3 [00:01\u003c00:00,  1.29it/s]\r\n"}
+,{"stream_name":"stdout","time":167.022752694,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:03\u003c00:00,  1.32s/it]\r\n"}
+,{"stream_name":"stdout","time":167.022757364,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:03\u003c00:00,  1.15s/it]\r\n"}
+,{"stream_name":"stdout","time":167.022761858,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:03\u003c00:00,  1.28s/it]\r\n"}
+,{"stream_name":"stdout","time":167.022766229,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:03\u003c00:00,  1.14s/it]\r\n"}
+,{"stream_name":"stdout","time":203.623732796,"data":"[gpu1] 18:40:14 prompts encoded for 9 images with the text encoder in torch.bfloat16 (encoder released)\r\n"}
+,{"stream_name":"stdout","time":203.651553362,"data":"[gpu1] 18:40:14 [boy_full__v2] 768x1344 steps=4 seed=5101 refs=[(256, 256), (352, 288)]\r\n"}
+,{"stream_name":"stdout","time":203.905555568,"data":"[gpu1] /usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.\r\n"}
+,{"stream_name":"stdout","time":203.905586519,"data":"[gpu1]   warnings.warn(\r\n"}
+,{"stream_name":"stdout","time":204.159017214,"data":"[gpu1] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":204.159047508,"data":"[gpu1] The config attributes {'force_upcast': True} were passed to AutoencoderKLFlux2, but are not expected and will be ignored. Please verify your config.json configuration file.\r\n"}
+,{"stream_name":"stdout","time":204.51669168,"data":"[gpu0] 18:40:14 prompts encoded for 10 images with the text encoder in torch.bfloat16 (encoder released)\r\n"}
+,{"stream_name":"stdout","time":204.516723297,"data":"[gpu0] 18:40:14 [boy_full__v1] 768x1344 steps=4 seed=5100 refs=[(256, 256), (352, 288)]\r\n"}
+,{"stream_name":"stdout","time":204.775608222,"data":"[gpu0] /usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.\r\n"}
+,{"stream_name":"stdout","time":204.775705425,"data":"[gpu0]   warnings.warn(\r\n"}
+,{"stream_name":"stdout","time":205.030186917,"data":"[gpu0] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":205.030267038,"data":"[gpu0] The config attributes {'force_upcast': True} were passed to AutoencoderKLFlux2, but are not expected and will be ignored. Please verify your config.json configuration file.\r\n"}
+,{"stream_name":"stdout","time":205.434942447,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":205.690733692,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":235.659292438,"data":"[gpu1] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":235.66021126,"data":"[gpu0] Loading pipeline components...:   0%|          | 0/3 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":235.660231543,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:29\u003c00:00,  9.98s/it]\r\n"}
+,{"stream_name":"stdout","time":235.660239565,"data":"[gpu0] Loading pipeline components...: 100%|██████████| 3/3 [00:29\u003c00:00,  9.98s/it]\r\n"}
+,{"stream_name":"stdout","time":235.660245729,"data":"[gpu1] Loading pipeline components...:  67%|██████▋   | 2/3 [00:30\u003c00:15, 15.09s/it]\r\n"}
+,{"stream_name":"stdout","time":235.66027777,"data":"[gpu1] Loading pipeline components...: 100%|██████████| 3/3 [00:30\u003c00:00, 10.06s/it]\r\n"}
+,{"stream_name":"stdout","time":238.229128283,"data":"[gpu0] 18:40:48 pipeline loaded \r\n"}
+,{"stream_name":"stdout","time":238.229158982,"data":"[gpu1] 18:40:48 pipeline loaded \r\n"}
+,{"stream_name":"stdout","time":242.583348618,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":242.583380588,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":242.940609339,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":242.940640811,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":245.276518731,"data":"[gpu0]  25%|██▌       | 1/4 [00:00\u003c00:01,  2.75it/s]\r\n"}
+,{"stream_name":"stdout","time":245.428855798,"data":"[gpu1]  25%|██▌       | 1/4 [00:00\u003c00:01,  2.71it/s]\r\n"}
+,{"stream_name":"stdout","time":247.611189332,"data":"[gpu0]  50%|█████     | 2/4 [00:02\u003c00:03,  1.51s/it]\r\n"}
+,{"stream_name":"stdout","time":247.96693093,"data":"[gpu1]  50%|█████     | 2/4 [00:02\u003c00:03,  1.60s/it]\r\n"}
+,{"stream_name":"stdout","time":249.995030851,"data":"[gpu0]  75%|███████▌  | 3/4 [00:05\u003c00:01,  1.89s/it]\r\n"}
+,{"stream_name":"stdout","time":249.995123536,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  2.08s/it]\r\n"}
+,{"stream_name":"stdout","time":249.995131079,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  1.84s/it]\r\n"}
+,{"stream_name":"stdout","time":250.451734456,"data":"[gpu1]  75%|███████▌  | 3/4 [00:05\u003c00:02,  2.03s/it]\r\n"}
+,{"stream_name":"stdout","time":250.451766761,"data":"[gpu1] 100%|██████████| 4/4 [00:07\u003c00:00,  2.22s/it]\r\n"}
+,{"stream_name":"stdout","time":250.451772419,"data":"[gpu1] 100%|██████████| 4/4 [00:07\u003c00:00,  1.97s/it]\r\n"}
+,{"stream_name":"stdout","time":257.394101481,"data":"[gpu0] 18:41:07 [boy_full__v1] done in 52.9 s -\u003e /kaggle/working/dumpling_out/images/boy_full__v1.png\r\n"}
+,{"stream_name":"stdout","time":257.495917203,"data":"[gpu0] 18:41:07 [boy_full__v3] 768x1344 steps=4 seed=5102 refs=[(256, 256), (352, 288)]\r\n"}
+,{"stream_name":"stdout","time":257.799260388,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":258.45850241,"data":"[gpu1] 18:41:08 [boy_full__v2] done in 54.9 s -\u003e /kaggle/working/dumpling_out/images/boy_full__v2.png\r\n"}
+,{"stream_name":"stdout","time":258.458552634,"data":"[gpu1] 18:41:08 [boy_bust__v1] 768x960 steps=4 seed=5150 refs=[(256, 256), (352, 288)]\r\n"}
+,{"stream_name":"stdout","time":258.761126362,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":260.231219251,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":260.688272859,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":262.616588349,"data":"[gpu1]  50%|█████     | 2/4 [00:01\u003c00:01,  1.04it/s]\r\n"}
+,{"stream_name":"stdout","time":262.616650949,"data":"[gpu0]  50%|█████     | 2/4 [00:02\u003c00:02,  1.22s/it]\r\n"}
+,{"stream_name":"stdout","time":264.488156045,"data":"[gpu1]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.35s/it]\r\n"}
+,{"stream_name":"stdout","time":264.488192491,"data":"[gpu1] 100%|██████████| 4/4 [00:05\u003c00:00,  1.55s/it]\r\n"}
+,{"stream_name":"stdout","time":264.488199049,"data":"[gpu1] 100%|██████████| 4/4 [00:05\u003c00:00,  1.43s/it]\r\n"}
+,{"stream_name":"stdout","time":265.046138148,"data":"[gpu0]  75%|███████▌  | 3/4 [00:04\u003c00:01,  1.71s/it]\r\n"}
+,{"stream_name":"stdout","time":265.046173485,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  1.97s/it]\r\n"}
+,{"stream_name":"stdout","time":265.046178086,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  1.81s/it]\r\n"}
+,{"stream_name":"stdout","time":270.040099114,"data":"[gpu1] 18:41:20 [boy_bust__v1] done in 11.5 s -\u003e /kaggle/working/dumpling_out/images/boy_bust__v1.png\r\n"}
+,{"stream_name":"stdout","time":270.040140292,"data":"[gpu1] 18:41:20 [boy_bust__v3] 768x960 steps=4 seed=5152 refs=[(256, 256), (352, 288)]\r\n"}
+,{"stream_name":"stdout","time":270.317353905,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":272.295296783,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":272.499346696,"data":"[gpu0] 18:41:22 [boy_full__v3] done in 15.1 s -\u003e /kaggle/working/dumpling_out/images/boy_full__v3.png\r\n"}
+,{"stream_name":"stdout","time":272.499502291,"data":"[gpu0] 18:41:23 [boy_bust__v2] 768x960 steps=4 seed=5151 refs=[(256, 256), (352, 288)]\r\n"}
+,{"stream_name":"stdout","time":272.805540027,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":274.227483644,"data":"[gpu1]  50%|█████     | 2/4 [00:01\u003c00:01,  1.01it/s]\r\n"}
+,{"stream_name":"stdout","time":274.583129623,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":276.209286292,"data":"[gpu1]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.38s/it]\r\n"}
+,{"stream_name":"stdout","time":276.209358776,"data":"[gpu1] 100%|██████████| 4/4 [00:05\u003c00:00,  1.60s/it]\r\n"}
+,{"stream_name":"stdout","time":276.209366112,"data":"[gpu1] 100%|██████████| 4/4 [00:05\u003c00:00,  1.47s/it]\r\n"}
+,{"stream_name":"stdout","time":276.361825246,"data":"[gpu0]  50%|█████     | 2/4 [00:01\u003c00:01,  1.12it/s]\r\n"}
+,{"stream_name":"stdout","time":278.084848497,"data":"[gpu0]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.25s/it]\r\n"}
+,{"stream_name":"stdout","time":278.084885785,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.43s/it]\r\n"}
+,{"stream_name":"stdout","time":278.084910933,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.32s/it]\r\n"}
+,{"stream_name":"stdout","time":282.134584875,"data":"[gpu1] 18:41:32 [boy_bust__v3] done in 12.1 s -\u003e /kaggle/working/dumpling_out/images/boy_bust__v3.png\r\n"}
+,{"stream_name":"stdout","time":282.1348354,"data":"[gpu1] 18:41:32 [uncle_full__v2] 768x1344 steps=4 seed=5201 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":282.48885218,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":284.314127515,"data":"[gpu0] 18:41:34 [boy_bust__v2] done in 11.8 s -\u003e /kaggle/working/dumpling_out/images/boy_bust__v2.png\r\n"}
+,{"stream_name":"stdout","time":284.314207809,"data":"[gpu0] 18:41:34 [uncle_full__v1] 768x1344 steps=4 seed=5200 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":284.719787134,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":285.279384151,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":287.259591631,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":288.072905984,"data":"[gpu1]  50%|█████     | 2/4 [00:02\u003c00:02,  1.41s/it]\r\n"}
+,{"stream_name":"stdout","time":289.746890406,"data":"[gpu0]  50%|█████     | 2/4 [00:02\u003c00:02,  1.28s/it]\r\n"}
+,{"stream_name":"stdout","time":290.910226074,"data":"[gpu1]  75%|███████▌  | 3/4 [00:05\u003c00:01,  1.99s/it]\r\n"}
+,{"stream_name":"stdout","time":290.910265744,"data":"[gpu1] 100%|██████████| 4/4 [00:08\u003c00:00,  2.30s/it]\r\n"}
+,{"stream_name":"stdout","time":290.910271646,"data":"[gpu1] 100%|██████████| 4/4 [00:08\u003c00:00,  2.11s/it]\r\n"}
+,{"stream_name":"stdout","time":292.27612924,"data":"[gpu0]  75%|███████▌  | 3/4 [00:05\u003c00:01,  1.78s/it]\r\n"}
+,{"stream_name":"stdout","time":292.276186745,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  2.06s/it]\r\n"}
+,{"stream_name":"stdout","time":292.276193469,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  1.89s/it]\r\n"}
+,{"stream_name":"stdout","time":299.432160122,"data":"[gpu1] 18:41:49 [uncle_full__v2] done in 17.3 s -\u003e /kaggle/working/dumpling_out/images/uncle_full__v2.png\r\n"}
+,{"stream_name":"stdout","time":299.482688175,"data":"[gpu1] 18:41:49 [uncle_full__v4] 768x1344 steps=4 seed=5203 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":299.786169094,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":300.669209679,"data":"[gpu0] 18:41:51 [uncle_full__v1] done in 16.3 s -\u003e /kaggle/working/dumpling_out/images/uncle_full__v1.png\r\n"}
+,{"stream_name":"stdout","time":300.669272257,"data":"[gpu0] 18:41:51 [uncle_full__v3] 768x1344 steps=4 seed=5202 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":300.950407341,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":302.829545712,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":303.534494969,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":305.86259088,"data":"[gpu1]  50%|█████     | 2/4 [00:03\u003c00:03,  1.52s/it]\r\n"}
+,{"stream_name":"stdout","time":306.11566098,"data":"[gpu0]  50%|█████     | 2/4 [00:02\u003c00:02,  1.30s/it]\r\n"}
+,{"stream_name":"stdout","time":308.640806581,"data":"[gpu0]  75%|███████▌  | 3/4 [00:05\u003c00:01,  1.83s/it]\r\n"}
+,{"stream_name":"stdout","time":308.640844246,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  2.10s/it]\r\n"}
+,{"stream_name":"stdout","time":308.640851339,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  1.93s/it]\r\n"}
+,{"stream_name":"stdout","time":308.894534948,"data":"[gpu1]  75%|███████▌  | 3/4 [00:06\u003c00:02,  2.15s/it]\r\n"}
+,{"stream_name":"stdout","time":308.894567752,"data":"[gpu1] 100%|██████████| 4/4 [00:09\u003c00:00,  2.48s/it]\r\n"}
+,{"stream_name":"stdout","time":308.894604548,"data":"[gpu1] 100%|██████████| 4/4 [00:09\u003c00:00,  2.28s/it]\r\n"}
+,{"stream_name":"stdout","time":317.101410458,"data":"[gpu0] 18:42:07 [uncle_full__v3] done in 16.5 s -\u003e /kaggle/working/dumpling_out/images/uncle_full__v3.png\r\n"}
+,{"stream_name":"stdout","time":317.101470433,"data":"[gpu0] 18:42:07 [uncle_bust__v1] 768x960 steps=4 seed=5250 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":317.404947255,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":318.267903009,"data":"[gpu1] 18:42:08 [uncle_full__v4] done in 18.8 s -\u003e /kaggle/working/dumpling_out/images/uncle_full__v4.png\r\n"}
+,{"stream_name":"stdout","time":318.267940788,"data":"[gpu1] 18:42:08 [uncle_bust__v2] 768x960 steps=4 seed=5251 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":318.625875696,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":319.235464192,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":320.759759249,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":321.013578803,"data":"[gpu0]  50%|█████     | 2/4 [00:01\u003c00:01,  1.09it/s]\r\n"}
+,{"stream_name":"stdout","time":322.791411479,"data":"[gpu0]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.28s/it]\r\n"}
+,{"stream_name":"stdout","time":322.791447923,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.47s/it]\r\n"}
+,{"stream_name":"stdout","time":322.791455008,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.35s/it]\r\n"}
+,{"stream_name":"stdout","time":322.842747442,"data":"[gpu1]  50%|█████     | 2/4 [00:02\u003c00:02,  1.07s/it]\r\n"}
+,{"stream_name":"stdout","time":324.867207489,"data":"[gpu1]  75%|███████▌  | 3/4 [00:04\u003c00:01,  1.49s/it]\r\n"}
+,{"stream_name":"stdout","time":324.917732603,"data":"[gpu1] 100%|██████████| 4/4 [00:06\u003c00:00,  1.71s/it]\r\n"}
+,{"stream_name":"stdout","time":324.917790813,"data":"[gpu1] 100%|██████████| 4/4 [00:06\u003c00:00,  1.57s/it]\r\n"}
+,{"stream_name":"stdout","time":327.895183176,"data":"[gpu0] 18:42:18 [uncle_bust__v1] done in 10.8 s -\u003e /kaggle/working/dumpling_out/images/uncle_bust__v1.png\r\n"}
+,{"stream_name":"stdout","time":327.895317514,"data":"[gpu0] 18:42:18 [uncle_bust__v3] 768x960 steps=4 seed=5252 refs=[(256, 640)]\r\n"}
+,{"stream_name":"stdout","time":328.19797114,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":330.013864636,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":330.366230893,"data":"[gpu1] 18:42:20 [uncle_bust__v2] done in 12.1 s -\u003e /kaggle/working/dumpling_out/images/uncle_bust__v2.png\r\n"}
+,{"stream_name":"stdout","time":330.417719662,"data":"[gpu1] 18:42:20 [grandma_full__v1] 768x1344 steps=4 seed=5300 refs=[(352, 640)]\r\n"}
+,{"stream_name":"stdout","time":330.909907899,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":331.789023475,"data":"[gpu0]  50%|█████     | 2/4 [00:01\u003c00:01,  1.10it/s]\r\n"}
+,{"stream_name":"stdout","time":333.514665541,"data":"[gpu0]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.27s/it]\r\n"}
+,{"stream_name":"stdout","time":333.514707742,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.45s/it]\r\n"}
+,{"stream_name":"stdout","time":333.514728603,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.34s/it]\r\n"}
+,{"stream_name":"stdout","time":333.818825415,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":336.756733039,"data":"[gpu1]  50%|█████     | 2/4 [00:02\u003c00:02,  1.49s/it]\r\n"}
+,{"stream_name":"stdout","time":339.290126489,"data":"[gpu0] 18:42:29 [uncle_bust__v3] done in 11.4 s -\u003e /kaggle/working/dumpling_out/images/uncle_bust__v3.png\r\n"}
+,{"stream_name":"stdout","time":339.290157733,"data":"[gpu0] 18:42:29 [grandma_full__v2] 768x1344 steps=4 seed=5301 refs=[(352, 640)]\r\n"}
+,{"stream_name":"stdout","time":339.643182708,"data":"[gpu1]  75%|███████▌  | 3/4 [00:05\u003c00:02,  2.08s/it]\r\n"}
+,{"stream_name":"stdout","time":339.643227991,"data":"[gpu1] 100%|██████████| 4/4 [00:08\u003c00:00,  2.38s/it]\r\n"}
+,{"stream_name":"stdout","time":339.643235097,"data":"[gpu1] 100%|██████████| 4/4 [00:08\u003c00:00,  2.19s/it]\r\n"}
+,{"stream_name":"stdout","time":339.745343753,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":342.436821932,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":345.074002749,"data":"[gpu0]  50%|█████     | 2/4 [00:02\u003c00:02,  1.35s/it]\r\n"}
+,{"stream_name":"stdout","time":347.660151064,"data":"[gpu0]  75%|███████▌  | 3/4 [00:05\u003c00:01,  1.89s/it]\r\n"}
+,{"stream_name":"stdout","time":347.660183478,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  2.16s/it]\r\n"}
+,{"stream_name":"stdout","time":347.660188501,"data":"[gpu0] 100%|██████████| 4/4 [00:07\u003c00:00,  1.99s/it]\r\n"}
+,{"stream_name":"stdout","time":348.571470838,"data":"[gpu1] 18:42:39 [grandma_full__v1] done in 18.2 s -\u003e /kaggle/working/dumpling_out/images/grandma_full__v1.png\r\n"}
+,{"stream_name":"stdout","time":348.571533026,"data":"[gpu1] 18:42:39 [grandma_full__v3] 768x1344 steps=4 seed=5302 refs=[(352, 640)]\r\n"}
+,{"stream_name":"stdout","time":349.025631194,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":351.96277875,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":354.856115473,"data":"[gpu1]  50%|█████     | 2/4 [00:02\u003c00:02,  1.47s/it]\r\n"}
+,{"stream_name":"stdout","time":357.441139504,"data":"[gpu0] 18:42:47 [grandma_full__v2] done in 18.2 s -\u003e /kaggle/working/dumpling_out/images/grandma_full__v2.png\r\n"}
+,{"stream_name":"stdout","time":357.492667418,"data":"[gpu0] 18:42:47 [grandma_bust__v1] 768x960 steps=4 seed=5350 refs=[(352, 640)]\r\n"}
+,{"stream_name":"stdout","time":357.745810978,"data":"[gpu1]  75%|███████▌  | 3/4 [00:05\u003c00:02,  2.06s/it]\r\n"}
+,{"stream_name":"stdout","time":357.745835061,"data":"[gpu1] 100%|██████████| 4/4 [00:08\u003c00:00,  2.37s/it]\r\n"}
+,{"stream_name":"stdout","time":357.74583937,"data":"[gpu1] 100%|██████████| 4/4 [00:08\u003c00:00,  2.18s/it]\r\n"}
+,{"stream_name":"stdout","time":357.948449274,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":359.927809034,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":361.840964172,"data":"[gpu0]  50%|█████     | 2/4 [00:01\u003c00:01,  1.03it/s]\r\n"}
+,{"stream_name":"stdout","time":363.732254286,"data":"[gpu0]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.36s/it]\r\n"}
+,{"stream_name":"stdout","time":363.732287188,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.57s/it]\r\n"}
+,{"stream_name":"stdout","time":363.732326185,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.44s/it]\r\n"}
+,{"stream_name":"stdout","time":367.021521142,"data":"[gpu1] 18:42:57 [grandma_full__v3] done in 18.5 s -\u003e /kaggle/working/dumpling_out/images/grandma_full__v3.png\r\n"}
+,{"stream_name":"stdout","time":367.072044834,"data":"[gpu1] 18:42:57 [grandma_bust__v2] 768x960 steps=4 seed=5351 refs=[(352, 640)]\r\n"}
+,{"stream_name":"stdout","time":367.4764701,"data":"[gpu1] \r\n"}
+,{"stream_name":"stdout","time":369.75812087,"data":"[gpu1]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":370.011855098,"data":"[gpu0] 18:43:00 [grandma_bust__v1] done in 12.5 s -\u003e /kaggle/working/dumpling_out/images/grandma_bust__v1.png\r\n"}
+,{"stream_name":"stdout","time":370.011928471,"data":"[gpu0] 18:43:00 [grandma_bust__v3] 768x960 steps=4 seed=5352 refs=[(352, 640)]\r\n"}
+,{"stream_name":"stdout","time":370.420047681,"data":"[gpu0] \r\n"}
+,{"stream_name":"stdout","time":371.943866016,"data":"[gpu1]  50%|█████     | 2/4 [00:02\u003c00:02,  1.12s/it]\r\n"}
+,{"stream_name":"stdout","time":372.401661319,"data":"[gpu0]   0%|          | 0/4 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":374.176507718,"data":"[gpu1]  75%|███████▌  | 3/4 [00:04\u003c00:01,  1.58s/it]\r\n"}
+,{"stream_name":"stdout","time":374.176559601,"data":"[gpu1] 100%|██████████| 4/4 [00:06\u003c00:00,  1.82s/it]\r\n"}
+,{"stream_name":"stdout","time":374.176566141,"data":"[gpu1] 100%|██████████| 4/4 [00:06\u003c00:00,  1.67s/it]\r\n"}
+,{"stream_name":"stdout","time":374.329099322,"data":"[gpu0]  50%|█████     | 2/4 [00:01\u003c00:01,  1.02it/s]\r\n"}
+,{"stream_name":"stdout","time":376.256763327,"data":"[gpu0]  75%|███████▌  | 3/4 [00:03\u003c00:01,  1.38s/it]\r\n"}
+,{"stream_name":"stdout","time":376.256797086,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.59s/it]\r\n"}
+,{"stream_name":"stdout","time":376.25680166,"data":"[gpu0] 100%|██████████| 4/4 [00:05\u003c00:00,  1.46s/it]\r\n"}
+,{"stream_name":"stdout","time":380.509459693,"data":"[gpu1] 18:43:11 [grandma_bust__v2] done in 13.5 s -\u003e /kaggle/working/dumpling_out/images/grandma_bust__v2.png\r\n"}
+,{"stream_name":"stdout","time":381.626863519,"data":"[gpu0] 18:43:12 [grandma_bust__v3] done in 11.6 s -\u003e /kaggle/working/dumpling_out/images/grandma_bust__v3.png\r\n"}
+,{"stream_name":"stdout","time":389.894209461,"data":"18:43:20 finished: 19/19 images ok. ZIP: /kaggle/working/dumpling_out/dumpling_images.zip (13.3 MB)\r\n"}
+,{"stream_name":"stdout","time":389.89424257,"data":"\rDownload complete: █████████████████████████████████████████| 13.9GB,  561MB/s  \r\n"}
+,{"stream_name":"stdout","time":389.894248657,"data":"\rReconstruction complete: 100%|█████████████████████| 16.0GB / 16.0GB,  250MB/s  \r\n"}
+,{"stream_name":"stdout","time":390.109611567,"data":"model commit: e7b7dc27f91deacad38e78976d1f2b499d76a294\n"}
+,{"stream_name":"stdout","time":390.109643719,"data":"boy_full__v1                     ok       52.9\n"}
+,{"stream_name":"stdout","time":390.109647249,"data":"boy_full__v2                     ok       54.9\n"}
+,{"stream_name":"stdout","time":390.109649709,"data":"boy_full__v3                     ok       15.1\n"}
+,{"stream_name":"stdout","time":390.109652099,"data":"boy_bust__v1                     ok       11.5\n"}
+,{"stream_name":"stdout","time":390.109654374,"data":"boy_bust__v2                     ok       11.8\n"}
+,{"stream_name":"stdout","time":390.109664758,"data":"boy_bust__v3                     ok       12.1\n"}
+,{"stream_name":"stdout","time":390.109667144,"data":"uncle_full__v1                   ok       16.3\n"}
+,{"stream_name":"stdout","time":390.109670289,"data":"uncle_full__v2                   ok       17.3\n"}
+,{"stream_name":"stdout","time":390.109690433,"data":"uncle_full__v3                   ok       16.5\n"}
+,{"stream_name":"stdout","time":390.109694515,"data":"uncle_full__v4                   ok       18.8\n"}
+,{"stream_name":"stdout","time":390.109698157,"data":"uncle_bust__v1                   ok       10.8\n"}
+,{"stream_name":"stdout","time":390.109701745,"data":"uncle_bust__v2                   ok       12.1\n"}
+,{"stream_name":"stdout","time":390.109705493,"data":"uncle_bust__v3                   ok       11.4\n"}
+,{"stream_name":"stdout","time":390.109709323,"data":"grandma_full__v1                 ok       18.2\n"}
+,{"stream_name":"stdout","time":390.10971276,"data":"grandma_full__v2                 ok       18.2\n"}
+,{"stream_name":"stdout","time":390.109715975,"data":"grandma_full__v3                 ok       18.5\n"}
+,{"stream_name":"stdout","time":390.109719202,"data":"grandma_bust__v1                 ok       12.5\n"}
+,{"stream_name":"stdout","time":390.109722403,"data":"grandma_bust__v2                 ok       13.5\n"}
+,{"stream_name":"stdout","time":390.109739885,"data":"grandma_bust__v3                 ok       11.6\n"}
+,{"stream_name":"stdout","time":390.133143843,"data":"\n"}
+,{"stream_name":"stdout","time":390.133168828,"data":"ZIP: /kaggle/working/dumpling_out/dumpling_images.zip 13.3 MB\n"}
+,{"stream_name":"stdout","time":390.173400918,"data":"Kaggle: open the Output tab / file panel on the right and download dumpling_out/images (or dumpling_images.zip)\n"}
+,{"stream_name":"stderr","time":396.022151897,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":396.022194646,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":396.344147917,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":396.344193598,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":398.274167334,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":398.424673436,"data":"[NbConvertApp] Writing 349661 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":401.050514186,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":402.130388281,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":402.130432996,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":402.130819411,"data":"[NbConvertApp] Writing 520655 bytes to __results__.html\n"}
+]
