@@ -1,1 +1,1 @@
-{"run_id": "voice-samples-002", "task": "tts", "input": "tools/episode_maker/gpu/inputs/voice-samples", "backend": "qwen3,chatterbox,orpheus", "smoke": false, "only": "", "max_minutes": 20}
+{"run_id": "music-cues-v5-001", "task": "music", "input": "tools/episode_maker/gpu/inputs/music-cues-v5", "backend": "acestep", "smoke": false, "only": "", "max_minutes": 15}
