@@ -56,3 +56,16 @@
 - About **150-170 spoken words**, roughly **20-26 AI clips** of 2-3 s, max 2 faces per clip (shot-rules). Fewer clips means fewer GPU hours and fewer defects.
 - Recipe break every 3rd episode: a 20-25 s "recipe in 20 seconds" segment inside the minute, or its own 60-s recipe Short.
 - Series planning: counts and arcs are re-planned for 1-minute episodes (more episodes per arc is fine, a weekly cadence becomes 2 per week feasible).
+
+## v5 DECISIONS (creator, 2026-11-28) — highest priority, override everything above where they conflict
+**Characters.** Direction A for the Boy and Grandma = POLISH the existing designs (same look, drift removed, locked feature lists from `character-redesign-plan.md`). The UNCLE = bold variant B: fully bald round head, thin long curled-tip black mustache + thick brows, earth-brown linen jacket with mandarin collar, wide orange sash, white towel on shoulder, charcoal trousers, straw sandals, never a hat. (This supersedes the "keep intro-v3 variant-2 Uncle" lock; the new Uncle must still read as the same warm, big, funny man.) Grandma exactly as in the plan (white-grey bun with two crossed wooden pins, jade-green jacket, cream apron, orange sash).
+**Series structure** (`series-structure-plan.md`, with these changes):
+- Season split 12 / 9 / 9 / 9 episodes.
+- NO secret for the Uncle (no torn page, no quarrel between brothers).
+- Dad simply disappeared and left a BOOK (his dumpling journal). The Boy believes the answers are in the book. Said gently, once, around Huế; never blunt, no jokes within 10 s of a Dad beat.
+- RIVAL: not present from the start. A rival host arrives only after several episodes, and in between there are cooking / eating dumpling BATTLES (a recurring contest beat). Working name "Pepper". Rules in the plan stay: no real creator or platform parody, the rival is never humiliated, jokes stay on the Uncle.
+- RECIPE: a SEPARATE Short after every 2 story episodes, about a NEW dumpling (own 60-s recipe Short with grown-up-step badges, doneness temps, allergy line). Not inside the story episodes.
+- CADENCE: 1 per week at the start (free resources). Story episodes and recipe Shorts share the calendar; build a bank before launch.
+**Episode 1:** 114 spoken words per 1-minute episode; Ep 1 is SPLIT into two 1-minute episodes (1a: soup dumpling + the scroll legend; 1b: Dad, the book, the hook). The script of each episode is shown to the creator in Hebrew in chat and approved there BEFORE any production.
+**Tools:** FREE ONLY, with research (Kaggle via GitHub Actions + free/open models). No purchases. Voice: keep Qwen3-TTS as default, produce as many free voice samples as possible for the creator to listen to.
+**Opening song:** keep style 2 (male) as placeholder. **Work mode:** run continuously and autonomously, as cheaply as possible, delegating to sub-agents; the creator approves results only (scripts in Hebrew in chat, then animatic, then final).
