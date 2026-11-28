@@ -35,7 +35,15 @@ _k = {}
 
 
 def pshift(w, st):
-    return librosa.effects.pitch_shift(w, sr=SR, n_steps=st) if abs(st) > 0.05 else w
+    if abs(st) <= 0.05:
+        return w
+    pad = np.zeros(SR // 4, np.float32)
+    x = np.nan_to_num(np.concatenate([pad, w, pad]).astype(np.float32))
+    try:
+        y = librosa.effects.pitch_shift(x, sr=SR, n_steps=float(st))
+    except Exception:           # librosa 1.0 phase-vocoder edge case on some inputs: other FFT size
+        y = librosa.effects.pitch_shift(x, sr=SR, n_steps=float(st), n_fft=1024, hop_length=256)
+    return y[len(pad):len(pad) + len(w)]
 
 
 def raw(cand, text, speed_mult=1.0, extra_st=0.0):
@@ -122,7 +130,7 @@ def pick():
                      jitter=round(float(np.mean(jit)), 2), wps=round(words / sum(durs), 2), secs=round(time.time() - t0))
             tgt = TARGET_HZ[who]
             # score: understood (low WER) + alive (pitch range 5-9 st) + not robotic (frame-to-frame jitter below 1.3 st) + near target pitch
-            e["score"] = round(-5 * e["wer"] + 0.15 * min(e["range_st"], 9) - 0.6 * max(0, e["jitter"] - 1.3) - abs(np.log2(max(e["f0"], 1) / tgt)), 3)
+            e["score"] = round(float(-5 * e["wer"] + 0.15 * min(e["range_st"], 9) - 0.6 * max(0, e["jitter"] - 1.3) - abs(np.log2(max(e["f0"], 1) / tgt))), 3)
             res[who].append(e)
             print(who, e, flush=True)
     json.dump(res, open(os.path.join(OUT, "voice_pick.json"), "w"), indent=1)
