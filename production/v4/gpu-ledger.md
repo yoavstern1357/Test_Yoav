@@ -23,3 +23,4 @@
 | ep01v44-clips-001 | clips (ltx98d, 8 steps, gen 12 fps + RIFE + ESRGAN, 39 clips x 2 orientations, 1 variant) | planned about 45 (two T4) | 2026-11-26 |
 | charsheets-v45-001 | images (klein, 42 single-character sheets at 1536x864: turnaround/expressions/hands/mouths, old designs; superseded by the redesign decision) | about 28 (2 GPUs x 14 min session) | 2026-11-26 |
 | charsheets-v5-s1-001 | images (klein, 19 single-character concept candidates 768x1344/768x960: Boy A-polished, Uncle bold bald/curled mustache, Grandma master) | planned about 9 T4-min (about 5 min wall on T4 x2 + start-up) | 2026-11-28 |
+| voice-samples-001 | tts (qwen3 VoiceDesign 25 designs x 4 lines [capped 9.5 min], chatterbox 10 refs x 4 lines [3 min], orpheus 4 voices x 4 lines [3.5 min]; free voice samples for the creator) | planned about 20 (1 session, caps per engine) | 2026-11-28 |

@@ -90,6 +90,8 @@ def load_job(input_dir, args):
         if not str(ln.get("text", "")).strip():
             raise ValueError(f"line {lid}: empty text")
         v = voices[ln["who"]]
+        if v.get("backends") and d["backend"] not in v["backends"]:      # voice made for other engines only (voice-sample jobs)
+            continue
         if BACKENDS[d["backend"]]["needs_ref"]:
             ref = os.path.join(input_dir, v.get("ref", ""))
             if not os.path.isfile(ref):
@@ -190,7 +192,7 @@ class Orpheus:
         t = self.torch
         t.manual_seed(seed)
         voice = st.get("orpheus_voice", "tara")
-        text = line.get("text_gpu") or (st.get("tag", "") + line["text"])
+        text = line.get("text_orpheus") or line.get("text_gpu") or (st.get("tag", "") + line["text"])
         ids = self.tok(f"{voice}: {text}", return_tensors="pt").input_ids
         inp = t.cat([t.tensor([[self.START]]), ids, t.tensor([[self.END1, self.END2]])], 1).cuda()
         with t.no_grad():
@@ -392,7 +394,7 @@ def main():
             sys.exit("NO GPU FOUND: stopping instead of wasting time on a CPU run.")
         be = make_backend(a)
     for ln in todo:
-        if time.time() - t0 > a.max_minutes * 60:
+        if time.time() - t0 > float(d.get("max_minutes", {}).get(a.backend, a.max_minutes)) * 60:
             log("time limit reached, stopping (run again to resume)")
             break
         st = settings(ln, voices, styles)

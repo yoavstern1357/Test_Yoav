@@ -1,0 +1,1289 @@
+{
+ "defaults": {
+  "backend": "qwen3",
+  "seed": 21,
+  "variants": 1,
+  "max_minutes": {
+   "qwen3": 9.5,
+   "chatterbox": 3,
+   "orpheus": 3.5
+  }
+ },
+ "voices": {
+  "qwen3__boy__2": {
+   "qwen_voice": "A seven-year-old boy with a soft, warm, slightly shy child's voice, high and gentle, curious, a little breathy when amazed.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__uncle__2": {
+   "qwen_voice": "A big, warm bear of a man in his forties, deep rich baritone, jolly and generous, bursts into booming enthusiasm, then turns quiet and tender.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__grandma__2": {
+   "qwen_voice": "An elderly woman, calm and precise, a warm raspy alto, teasing with a smile in her voice, unhurried.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__narrator__2": {
+   "qwen_voice": "A deep, regal male voice, slow and measured, like an ancient king reading a scroll aloud, with a hint of amusement.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__host__2": {
+   "qwen_voice": "A warm, friendly young child host, about eight years old, clear and cheerful, speaking straight to the audience like a kids' documentary presenter.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__boy__3": {
+   "qwen_voice": "A small, sweet-voiced young boy around six or seven, bright and clear, earnest and full of wonder, speaks quickly when excited and trails off when unsure.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__uncle__3": {
+   "qwen_voice": "A very deep, gravelly, large man's voice, slow and dignified like a retired opera singer, who sometimes erupts into manic, squeaky comic shouting.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__grandma__3": {
+   "qwen_voice": "A wise old grandmother with a soft, thin, slightly trembling voice, gentle and patient, very clear diction, dry humour.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__narrator__3": {
+   "qwen_voice": "A rich, resonant bass voice, a royal storyteller, grand and unhurried, a smile beneath the solemnity, with long dramatic pauses.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__host__3": {
+   "qwen_voice": "A gentle, curious young boy narrator, soft and thoughtful, reading from a storybook, calm pace, smiling.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__boy__4": {
+   "qwen_voice": "A young child, about seven years old, a boy with a light, innocent voice, cheerful and a bit hesitant, wide-eyed with wonder, like a gentle storybook hero.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__uncle__4": {
+   "qwen_voice": "A middle-aged man with a deep, warm, chesty voice, a hungry food lover, dramatic and theatrical, gasping with delight, soft and kind when serious.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__grandma__4": {
+   "qwen_voice": "A brisk, sharp-witted elderly cook, low scratchy voice, matter-of-fact with a hint of amusement, pronounces every word exactly.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__narrator__4": {
+   "qwen_voice": "A mature, velvety, smooth baritone, an old court chronicler with dry wit, slow, warm and wise.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__host__4": {
+   "qwen_voice": "A bright, energetic boy host around ten years old, enthusiastic and upbeat, crisp pronunciation, kids' TV show style.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__boy__5": {
+   "qwen_voice": "A seven-year-old boy with a slightly raspy, cheeky little voice, playful and quick, giggles easily, but quiet and sincere when moved.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__uncle__5": {
+   "qwen_voice": "A hearty, rumbling bass voice, a gentle giant, dignified but easily excitable, speaks with a smile and a laugh in the throat.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__grandma__5": {
+   "qwen_voice": "An elderly woman with a warm, mellow, storytelling voice, slow and kind, a little playful teasing, like a beloved village grandmother.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__narrator__5": {
+   "qwen_voice": "A deep, mystical, almost whispery storyteller voice, slow and hypnotic, amused, as if a legend were coming to life.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__host__5": {
+   "qwen_voice": "A warm young teenage boy's voice, calm, friendly and clear, a storyteller in a nature documentary, with a little wonder.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__boy__1": {
+   "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__uncle__1": {
+   "qwen_voice": "A huge, warm, middle-aged man with a deep, rich, theatrical voice, a little husky, operatic and over the top when grand, tiny and wheezy when defeated, quiet and sincere when moved.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__grandma__1": {
+   "qwen_voice": "An elderly woman, a village cook, flat, dry and unimpressed, a little raspy, brisk, kind underneath, never raising her voice.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__narrator__1": {
+   "qwen_voice": "A huge, booming, epic anime-trailer narrator voice, deep and thunderous and theatrical, with slow dramatic pauses.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "qwen3__host__1": {
+   "qwen_voice": "A 7-year-old boy with a bright, clear child's voice, quick and dry, a cheeky little deadpan, never shouting unless the note says so, like a witty kid host.",
+   "backends": [
+    "qwen3"
+   ]
+  },
+  "chatterbox__boy__1": {
+   "ref": "refs/boy_1.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__boy__2": {
+   "ref": "refs/boy_2.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__uncle__1": {
+   "ref": "refs/uncle_1.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__uncle__2": {
+   "ref": "refs/uncle_2.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__grandma__1": {
+   "ref": "refs/grandma_1.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__grandma__2": {
+   "ref": "refs/grandma_2.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__narrator__1": {
+   "ref": "refs/narrator_1.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__narrator__2": {
+   "ref": "refs/narrator_2.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__host__1": {
+   "ref": "refs/host_1.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "chatterbox__host__2": {
+   "ref": "refs/host_2.wav",
+   "backends": [
+    "chatterbox"
+   ]
+  },
+  "orpheus__uncle__1": {
+   "orpheus_voice": "dan",
+   "backends": [
+    "orpheus"
+   ]
+  },
+  "orpheus__narrator__1": {
+   "orpheus_voice": "zac",
+   "backends": [
+    "orpheus"
+   ]
+  },
+  "orpheus__grandma__1": {
+   "orpheus_voice": "tara",
+   "backends": [
+    "orpheus"
+   ]
+  },
+  "orpheus__host__1": {
+   "orpheus_voice": "leo",
+   "backends": [
+    "orpheus"
+   ]
+  }
+ },
+ "lines": [
+  {
+   "id": "qwen3__boy__2__l1",
+   "who": "qwen3__boy__2",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__boy__2__l2",
+   "who": "qwen3__boy__2",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__boy__2__l3",
+   "who": "qwen3__boy__2",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__boy__2__l4",
+   "who": "qwen3__boy__2",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__uncle__2__l1",
+   "who": "qwen3__uncle__2",
+   "text": "For dumpling research!",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__uncle__2__l2",
+   "who": "qwen3__uncle__2",
+   "text": "There was soup inside.",
+   "style": "tiny",
+   "qwen": "Small, quiet and stunned, a short pause at the start."
+  },
+  {
+   "id": "qwen3__uncle__2__l3",
+   "who": "qwen3__uncle__2",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy",
+   "qwen": "Dreamy and wondering, slow, savouring each word."
+  },
+  {
+   "id": "qwen3__uncle__2__l4",
+   "who": "qwen3__uncle__2",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__2__l1",
+   "who": "qwen3__grandma__2",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__grandma__2__l2",
+   "who": "qwen3__grandma__2",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__grandma__2__l3",
+   "who": "qwen3__grandma__2",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__2__l4",
+   "who": "qwen3__grandma__2",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__narrator__2__l1",
+   "who": "qwen3__narrator__2",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__2__l2",
+   "who": "qwen3__narrator__2",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__2__l3",
+   "who": "qwen3__narrator__2",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__narrator__2__l4",
+   "who": "qwen3__narrator__2",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__2__l1",
+   "who": "qwen3__host__2",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__host__2__l2",
+   "who": "qwen3__host__2",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__2__l3",
+   "who": "qwen3__host__2",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__host__2__l4",
+   "who": "qwen3__host__2",
+   "text": "Let's go find out!",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__boy__3__l1",
+   "who": "qwen3__boy__3",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__boy__3__l2",
+   "who": "qwen3__boy__3",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__boy__3__l3",
+   "who": "qwen3__boy__3",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__boy__3__l4",
+   "who": "qwen3__boy__3",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__uncle__3__l1",
+   "who": "qwen3__uncle__3",
+   "text": "For dumpling research!",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__uncle__3__l2",
+   "who": "qwen3__uncle__3",
+   "text": "There was soup inside.",
+   "style": "tiny",
+   "qwen": "Small, quiet and stunned, a short pause at the start."
+  },
+  {
+   "id": "qwen3__uncle__3__l3",
+   "who": "qwen3__uncle__3",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy",
+   "qwen": "Dreamy and wondering, slow, savouring each word."
+  },
+  {
+   "id": "qwen3__uncle__3__l4",
+   "who": "qwen3__uncle__3",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__3__l1",
+   "who": "qwen3__grandma__3",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__grandma__3__l2",
+   "who": "qwen3__grandma__3",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__grandma__3__l3",
+   "who": "qwen3__grandma__3",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__3__l4",
+   "who": "qwen3__grandma__3",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__narrator__3__l1",
+   "who": "qwen3__narrator__3",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__3__l2",
+   "who": "qwen3__narrator__3",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__3__l3",
+   "who": "qwen3__narrator__3",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__narrator__3__l4",
+   "who": "qwen3__narrator__3",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__3__l1",
+   "who": "qwen3__host__3",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__host__3__l2",
+   "who": "qwen3__host__3",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__3__l3",
+   "who": "qwen3__host__3",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__host__3__l4",
+   "who": "qwen3__host__3",
+   "text": "Let's go find out!",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__boy__4__l1",
+   "who": "qwen3__boy__4",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__boy__4__l2",
+   "who": "qwen3__boy__4",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__boy__4__l3",
+   "who": "qwen3__boy__4",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__boy__4__l4",
+   "who": "qwen3__boy__4",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__uncle__4__l1",
+   "who": "qwen3__uncle__4",
+   "text": "For dumpling research!",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__uncle__4__l2",
+   "who": "qwen3__uncle__4",
+   "text": "There was soup inside.",
+   "style": "tiny",
+   "qwen": "Small, quiet and stunned, a short pause at the start."
+  },
+  {
+   "id": "qwen3__uncle__4__l3",
+   "who": "qwen3__uncle__4",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy",
+   "qwen": "Dreamy and wondering, slow, savouring each word."
+  },
+  {
+   "id": "qwen3__uncle__4__l4",
+   "who": "qwen3__uncle__4",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__4__l1",
+   "who": "qwen3__grandma__4",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__grandma__4__l2",
+   "who": "qwen3__grandma__4",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__grandma__4__l3",
+   "who": "qwen3__grandma__4",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__4__l4",
+   "who": "qwen3__grandma__4",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__narrator__4__l1",
+   "who": "qwen3__narrator__4",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__4__l2",
+   "who": "qwen3__narrator__4",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__4__l3",
+   "who": "qwen3__narrator__4",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__narrator__4__l4",
+   "who": "qwen3__narrator__4",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__4__l1",
+   "who": "qwen3__host__4",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__host__4__l2",
+   "who": "qwen3__host__4",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__4__l3",
+   "who": "qwen3__host__4",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__host__4__l4",
+   "who": "qwen3__host__4",
+   "text": "Let's go find out!",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__boy__5__l1",
+   "who": "qwen3__boy__5",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__boy__5__l2",
+   "who": "qwen3__boy__5",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__boy__5__l3",
+   "who": "qwen3__boy__5",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__boy__5__l4",
+   "who": "qwen3__boy__5",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__uncle__5__l1",
+   "who": "qwen3__uncle__5",
+   "text": "For dumpling research!",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__uncle__5__l2",
+   "who": "qwen3__uncle__5",
+   "text": "There was soup inside.",
+   "style": "tiny",
+   "qwen": "Small, quiet and stunned, a short pause at the start."
+  },
+  {
+   "id": "qwen3__uncle__5__l3",
+   "who": "qwen3__uncle__5",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy",
+   "qwen": "Dreamy and wondering, slow, savouring each word."
+  },
+  {
+   "id": "qwen3__uncle__5__l4",
+   "who": "qwen3__uncle__5",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__5__l1",
+   "who": "qwen3__grandma__5",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__grandma__5__l2",
+   "who": "qwen3__grandma__5",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__grandma__5__l3",
+   "who": "qwen3__grandma__5",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__5__l4",
+   "who": "qwen3__grandma__5",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__narrator__5__l1",
+   "who": "qwen3__narrator__5",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__5__l2",
+   "who": "qwen3__narrator__5",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__5__l3",
+   "who": "qwen3__narrator__5",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__narrator__5__l4",
+   "who": "qwen3__narrator__5",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__5__l1",
+   "who": "qwen3__host__5",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__host__5__l2",
+   "who": "qwen3__host__5",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__5__l3",
+   "who": "qwen3__host__5",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__host__5__l4",
+   "who": "qwen3__host__5",
+   "text": "Let's go find out!",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__boy__1__l1",
+   "who": "qwen3__boy__1",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__boy__1__l2",
+   "who": "qwen3__boy__1",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__boy__1__l3",
+   "who": "qwen3__boy__1",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__boy__1__l4",
+   "who": "qwen3__boy__1",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__uncle__1__l1",
+   "who": "qwen3__uncle__1",
+   "text": "For dumpling research!",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__uncle__1__l2",
+   "who": "qwen3__uncle__1",
+   "text": "There was soup inside.",
+   "style": "tiny",
+   "qwen": "Small, quiet and stunned, a short pause at the start."
+  },
+  {
+   "id": "qwen3__uncle__1__l3",
+   "who": "qwen3__uncle__1",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy",
+   "qwen": "Dreamy and wondering, slow, savouring each word."
+  },
+  {
+   "id": "qwen3__uncle__1__l4",
+   "who": "qwen3__uncle__1",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__1__l1",
+   "who": "qwen3__grandma__1",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__grandma__1__l2",
+   "who": "qwen3__grandma__1",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh",
+   "qwen": "Laughing, joyful, playful and over the top."
+  },
+  {
+   "id": "qwen3__grandma__1__l3",
+   "who": "qwen3__grandma__1",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__grandma__1__l4",
+   "who": "qwen3__grandma__1",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational."
+  },
+  {
+   "id": "qwen3__narrator__1__l1",
+   "who": "qwen3__narrator__1",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__1__l2",
+   "who": "qwen3__narrator__1",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend."
+  },
+  {
+   "id": "qwen3__narrator__1__l3",
+   "who": "qwen3__narrator__1",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__narrator__1__l4",
+   "who": "qwen3__narrator__1",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__1__l1",
+   "who": "qwen3__host__1",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "qwen3__host__1__l2",
+   "who": "qwen3__host__1",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch."
+  },
+  {
+   "id": "qwen3__host__1__l3",
+   "who": "qwen3__host__1",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender",
+   "qwen": "Soft, gentle and sincere, slightly slower."
+  },
+  {
+   "id": "qwen3__host__1__l4",
+   "who": "qwen3__host__1",
+   "text": "Let's go find out!",
+   "style": "host",
+   "qwen": "Warm, friendly and curious, with a smile in the voice."
+  },
+  {
+   "id": "chatterbox__boy__1__l1",
+   "who": "chatterbox__boy__1",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral"
+  },
+  {
+   "id": "chatterbox__boy__1__l2",
+   "who": "chatterbox__boy__1",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited"
+  },
+  {
+   "id": "chatterbox__boy__1__l3",
+   "who": "chatterbox__boy__1",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__boy__1__l4",
+   "who": "chatterbox__boy__1",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host"
+  },
+  {
+   "id": "chatterbox__boy__2__l1",
+   "who": "chatterbox__boy__2",
+   "text": "Wait, the soup is inside the dumpling? How?",
+   "style": "neutral"
+  },
+  {
+   "id": "chatterbox__boy__2__l2",
+   "who": "chatterbox__boy__2",
+   "text": "Uncle, no! That is MY dumpling!",
+   "style": "excited"
+  },
+  {
+   "id": "chatterbox__boy__2__l3",
+   "who": "chatterbox__boy__2",
+   "text": "I think Dad stood right here, a long time ago.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__boy__2__l4",
+   "who": "chatterbox__boy__2",
+   "text": "Hello! I am the Dumpling Boy, and today we taste a legend.",
+   "style": "host"
+  },
+  {
+   "id": "chatterbox__uncle__1__l1",
+   "who": "chatterbox__uncle__1",
+   "text": "For dumpling research!",
+   "style": "laugh"
+  },
+  {
+   "id": "chatterbox__uncle__1__l2",
+   "who": "chatterbox__uncle__1",
+   "text": "There was soup inside.",
+   "style": "tiny"
+  },
+  {
+   "id": "chatterbox__uncle__1__l3",
+   "who": "chatterbox__uncle__1",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy"
+  },
+  {
+   "id": "chatterbox__uncle__1__l4",
+   "who": "chatterbox__uncle__1",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__uncle__2__l1",
+   "who": "chatterbox__uncle__2",
+   "text": "For dumpling research!",
+   "style": "laugh"
+  },
+  {
+   "id": "chatterbox__uncle__2__l2",
+   "who": "chatterbox__uncle__2",
+   "text": "There was soup inside.",
+   "style": "tiny"
+  },
+  {
+   "id": "chatterbox__uncle__2__l3",
+   "who": "chatterbox__uncle__2",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy"
+  },
+  {
+   "id": "chatterbox__uncle__2__l4",
+   "who": "chatterbox__uncle__2",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__grandma__1__l1",
+   "who": "chatterbox__grandma__1",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral"
+  },
+  {
+   "id": "chatterbox__grandma__1__l2",
+   "who": "chatterbox__grandma__1",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh"
+  },
+  {
+   "id": "chatterbox__grandma__1__l3",
+   "who": "chatterbox__grandma__1",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__grandma__1__l4",
+   "who": "chatterbox__grandma__1",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral"
+  },
+  {
+   "id": "chatterbox__grandma__2__l1",
+   "who": "chatterbox__grandma__2",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral"
+  },
+  {
+   "id": "chatterbox__grandma__2__l2",
+   "who": "chatterbox__grandma__2",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh"
+  },
+  {
+   "id": "chatterbox__grandma__2__l3",
+   "who": "chatterbox__grandma__2",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__grandma__2__l4",
+   "who": "chatterbox__grandma__2",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral"
+  },
+  {
+   "id": "chatterbox__narrator__1__l1",
+   "who": "chatterbox__narrator__1",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn"
+  },
+  {
+   "id": "chatterbox__narrator__1__l2",
+   "who": "chatterbox__narrator__1",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn"
+  },
+  {
+   "id": "chatterbox__narrator__1__l3",
+   "who": "chatterbox__narrator__1",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__narrator__1__l4",
+   "who": "chatterbox__narrator__1",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited"
+  },
+  {
+   "id": "chatterbox__narrator__2__l1",
+   "who": "chatterbox__narrator__2",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn"
+  },
+  {
+   "id": "chatterbox__narrator__2__l2",
+   "who": "chatterbox__narrator__2",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn"
+  },
+  {
+   "id": "chatterbox__narrator__2__l3",
+   "who": "chatterbox__narrator__2",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__narrator__2__l4",
+   "who": "chatterbox__narrator__2",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited"
+  },
+  {
+   "id": "chatterbox__host__1__l1",
+   "who": "chatterbox__host__1",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host"
+  },
+  {
+   "id": "chatterbox__host__1__l2",
+   "who": "chatterbox__host__1",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited"
+  },
+  {
+   "id": "chatterbox__host__1__l3",
+   "who": "chatterbox__host__1",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__host__1__l4",
+   "who": "chatterbox__host__1",
+   "text": "Let's go find out!",
+   "style": "host"
+  },
+  {
+   "id": "chatterbox__host__2__l1",
+   "who": "chatterbox__host__2",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host"
+  },
+  {
+   "id": "chatterbox__host__2__l2",
+   "who": "chatterbox__host__2",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited"
+  },
+  {
+   "id": "chatterbox__host__2__l3",
+   "who": "chatterbox__host__2",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender"
+  },
+  {
+   "id": "chatterbox__host__2__l4",
+   "who": "chatterbox__host__2",
+   "text": "Let's go find out!",
+   "style": "host"
+  },
+  {
+   "id": "orpheus__uncle__1__l1",
+   "who": "orpheus__uncle__1",
+   "text": "For dumpling research!",
+   "style": "laugh",
+   "text_orpheus": "For dumpling research! <laugh>"
+  },
+  {
+   "id": "orpheus__uncle__1__l2",
+   "who": "orpheus__uncle__1",
+   "text": "There was soup inside.",
+   "style": "tiny"
+  },
+  {
+   "id": "orpheus__uncle__1__l3",
+   "who": "orpheus__uncle__1",
+   "text": "I smell... destiny. And a little bit of ginger.",
+   "style": "dreamy"
+  },
+  {
+   "id": "orpheus__uncle__1__l4",
+   "who": "orpheus__uncle__1",
+   "text": "Little one, a good meal is a good friend. Come, sit.",
+   "style": "tender"
+  },
+  {
+   "id": "orpheus__narrator__1__l1",
+   "who": "orpheus__narrator__1",
+   "text": "Legend says, in a small shop, one very large bun.",
+   "style": "solemn"
+  },
+  {
+   "id": "orpheus__narrator__1__l2",
+   "who": "orpheus__narrator__1",
+   "text": "Many people believe it was the best bun in all the land.",
+   "style": "solemn"
+  },
+  {
+   "id": "orpheus__narrator__1__l3",
+   "who": "orpheus__narrator__1",
+   "text": "And so the hungry traveler walked on, toward the next town.",
+   "style": "tender"
+  },
+  {
+   "id": "orpheus__narrator__1__l4",
+   "who": "orpheus__narrator__1",
+   "text": "Behold! The Great Bun of Nanxiang!",
+   "style": "excited",
+   "text_orpheus": "Behold! The Great Bun of Nanxiang!"
+  },
+  {
+   "id": "orpheus__grandma__1__l1",
+   "who": "orpheus__grandma__1",
+   "text": "Everybody asks. We never pour it in. First we turn it into jelly.",
+   "style": "neutral"
+  },
+  {
+   "id": "orpheus__grandma__1__l2",
+   "who": "orpheus__grandma__1",
+   "text": "Hah! Too hot? I did tell you, my dear.",
+   "style": "laugh",
+   "text_orpheus": "<chuckle> Hah! Too hot? I did tell you, my dear."
+  },
+  {
+   "id": "orpheus__grandma__1__l3",
+   "who": "orpheus__grandma__1",
+   "text": "Your father sat right there. He was very patient.",
+   "style": "tender"
+  },
+  {
+   "id": "orpheus__grandma__1__l4",
+   "who": "orpheus__grandma__1",
+   "text": "Eight folds, no more, no less. Watch my fingers.",
+   "style": "neutral"
+  },
+  {
+   "id": "orpheus__host__1__l1",
+   "who": "orpheus__host__1",
+   "text": "Welcome back to the Silk Road. Today, one dumpling, one big question.",
+   "style": "host"
+  },
+  {
+   "id": "orpheus__host__1__l2",
+   "who": "orpheus__host__1",
+   "text": "Wait for it... here comes the steam!",
+   "style": "excited"
+  },
+  {
+   "id": "orpheus__host__1__l3",
+   "who": "orpheus__host__1",
+   "text": "Dad was right. The best part is always the part you wait for.",
+   "style": "tender"
+  },
+  {
+   "id": "orpheus__host__1__l4",
+   "who": "orpheus__host__1",
+   "text": "Let's go find out!",
+   "style": "host"
+  }
+ ]
+}
