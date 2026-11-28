@@ -1,0 +1,70 @@
+{
+ "defaults": {
+  "backend": "acestep",
+  "infer_step": 50,
+  "guidance_scale": 15.0,
+  "format": "flac"
+ },
+ "tracks": [
+  {
+   "id": "bed_a_guzheng120",
+   "duration": 36,
+   "prompt": "warm playful Chinese folk underscore, plucked guzheng arpeggios, soft woodblock and light hand percussion, soft round bass, 120 bpm, major pentatonic, cozy food travel animation, ancient Silk Road market town, instrumental, no vocals, no singing, sparse arrangement, quiet background underscore, low dynamics, no big melody, seamless loop, gentle",
+   "lyrics": "[inst]",
+   "seeds": [
+    501,
+    502
+   ]
+  },
+  {
+   "id": "bed_b_pipa120",
+   "duration": 36,
+   "prompt": "witty light comedy underscore, plucked pipa and pizzicato, tiny shaker, muted soft bass, 120 bpm, pentatonic, playful, ancient Chinese town, steamy dumpling stall, instrumental, no vocals, no singing, sparse arrangement, quiet background underscore, low dynamics, no big melody, seamless loop, gentle",
+   "lyrics": "[inst]",
+   "seeds": [
+    501,
+    502
+   ]
+  },
+  {
+   "id": "bed_c_kalimba90",
+   "duration": 36,
+   "prompt": "calm cozy underscore, kalimba and soft marimba, warm sub bass, brushed light percussion, 90 bpm, pentatonic major, gentle, Silk Road caravan evening, lantern light, instrumental, no vocals, no singing, sparse arrangement, quiet background underscore, low dynamics, no big melody, seamless loop, gentle",
+   "lyrics": "[inst]",
+   "seeds": [
+    501,
+    502
+   ]
+  },
+  {
+   "id": "bed_d_dizi90",
+   "duration": 36,
+   "prompt": "gentle Chinese folk underscore, bamboo flute dizi sparse phrases, plucked guzheng, soft frame drum, warm bass pad, 90 bpm, peaceful, ancient trading town, warm, instrumental, no vocals, no singing, sparse arrangement, quiet background underscore, low dynamics, no big melody, seamless loop, gentle",
+   "lyrics": "[inst]",
+   "seeds": [
+    501,
+    502
+   ]
+  },
+  {
+   "id": "emotional_dad90",
+   "duration": 20,
+   "prompt": "tender emotional cinematic underscore, soft felt piano, erhu-like solo strings, warm string pad, 90 bpm, slow, nostalgic, longing, gentle, instrumental, no vocals, no drums, sparse",
+   "lyrics": "[inst]",
+   "seeds": [
+    501,
+    502
+   ]
+  },
+  {
+   "id": "sting_outro3",
+   "duration": 5,
+   "prompt": "short cheerful ending sting, plucked guzheng glissando, one soft woodblock tap, warm resolve on major chord, instrumental, no vocals, ends cleanly",
+   "lyrics": "[inst]",
+   "seeds": [
+    501,
+    502
+   ]
+  }
+ ]
+}
