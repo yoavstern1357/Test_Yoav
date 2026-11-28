@@ -85,6 +85,89 @@ def stage1():
     print("stage 1:", sum(i["variants"] for i in items), "images ->", out)
 
 
+EXPR = {
+    "boy": ["curious and neutral, calm friendly closed-mouth look", "warm gentle smile", "eyes closed in a soft tender smile",
+            "wonder: eyes wide and sparkling, small round open mouth", "deadpan: flat half-lidded eyes, straight mouth",
+            "explaining: one eyebrow raised, half smile, mouth slightly open as if talking",
+            "surprised: eyebrows high, eyes wide, mouth open", "tasting bliss: eyes closed, cheeks puffed and blushing, happy",
+            "worried: eyebrows tilted up-in, small trembling mouth", "missing Dad: eyes looking down, sad, quiet, shadow over the eyes",
+            "scared: eyes wide with tiny pupils, mouth open, a sweat drop", "determined: eyebrows down, firm closed mouth, chin set"],
+    "uncle": ["hungry and hopeful: nose raised, eyes bright, mouth slightly open", "big belly laugh: eyes closed in happy arcs, mouth wide open",
+              "heroic: chest out, eyebrows high, proud grin, mustache tips curled up (For dumpling research!)",
+              "first-bite bliss: eyes closed, happy tears, glowing cheeks, mouth full",
+              "burned tongue: tongue out, steam from the ears, spiral eyes, comic",
+              "humbled: head lowered, eyebrows tilted, mustache drooping", "shock: eyes white and round, jaw dropped, mustache bristling straight",
+              "panic: tiny pupils, mouth wide open, sweat drops flying", "sneaky: side-eye, one eyebrow down, sly grin",
+              "wise and tender: soft kind eyes, small closed smile, calm", "indignant: puffed red cheeks, eyebrows down",
+              "food coma: half-closed eyes, content smile, tiny drool"],
+    "grandma": ["calm master: crescent half-closed eyes, faint smile", "warm grandmother smile, crescent eyes",
+                "focused: eyes cast down, lips pressed, concentrating", "knowing smirk: one eyebrow raised",
+                "freeze-stare: eyes fully open, wide awake and sharp, mouth closed", "delighted laugh: one hand over her mouth, eyes crinkled",
+                "stern: one eye open, firm mouth", "mild surprise: eyebrows lifted, eyes opening a little",
+                "teaching: mouth open mid-sentence, pointing with the short rolling pin", "moved, remembering: soft wet eyes, trembling gentle smile",
+                "deadpan: flat half-lidded eyes, straight mouth", "proud nod: eyes closed, chin up, content smile"],
+}
+VIEWS = [("front", "front view, standing straight, arms relaxed at the sides"),
+         ("q34", "three-quarter view (body and face turned about 45 degrees to the viewer's left), arms relaxed"),
+         ("side", "pure side profile view facing the viewer's left, arms relaxed"),
+         ("back", "back view seen from directly behind, arms relaxed")]
+POSES = {
+    "boy": [("stand", "a natural relaxed standing pose in three-quarter view, one hand pushing the brim of his hat up with one finger, curious "
+                      "friendly look"),
+            ("comic", "a comedic pose: jumping back in cartoon surprise, both arms up, eyes wide, mouth open, a sweat drop, hat bouncing")],
+    "uncle": [("stand", "a natural standing pose in three-quarter view, hands clasped on his big belly, content warm smile, nose sniffing"),
+              ("comic", "his signature comedic pose: chest out, long wooden chopsticks raised high like a trophy, eyebrows high, proud grin, "
+                        "mustache curled up, shouting 'For dumpling research!'")],
+    "grandma": [("stand", "a natural standing pose in three-quarter view, hands folded on her apron, perfectly still, one eye just opening"),
+                ("comic", "a comedic pose: pointing sharply with her short rolling pin, deadpan flat stare, one eyebrow raised")],
+}
+LINEUPS = [("lineup_boy_uncle", ["boy", "uncle"],
+            "the Boy (small, his head top at the Uncle's belt) standing next to the Uncle (very large, a head and a half taller than anyone), both "
+            "full body, side by side, front view, relaxed, friendly, both feet visible"),
+           ("lineup_grandma_boy", ["grandma", "boy"],
+            "Grandma (short and sturdy, her bun reaching above the Boy's hat) standing next to the Boy (small), both full body, side by side, "
+            "front view, relaxed, friendly, both feet visible")]
+ROLE = {"boy": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child",
+        "uncle": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man",
+        "grandma": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman"}
+
+
+def stage2(picks):
+    out = os.path.join(HERE, "inputs", "charsheets-v5-s2")
+    os.makedirs(os.path.join(out, "refs"), exist_ok=True)
+    import shutil
+    P = json.load(open(picks)); items = []; seed = {"boy": 6100, "uncle": 6200, "grandma": 6300}
+    for c in ("boy", "uncle", "grandma"):
+        for k in ("full", "bust"):
+            shutil.copy(P[c][k], os.path.join(out, "refs", f"{c}_{k}.png"))
+        rf = [{"path": f"refs/{c}_full.png", "role": ROLE[c] + " (full body)"}, {"path": f"refs/{c}_bust.png", "role": "the same character, face close-up"}]
+        for k, (vid, vt) in enumerate(VIEWS):
+            items.append(dict(id=f"{c}_turn_{vid}", seed=seed[c] + 10 * k, variants=2 if c == "uncle" else 1, refs=rf, prompt=(
+                f"Character model sheet view. {ONLY.format(n=NAME[c])} {LOOK[c]}. Full body from head to feet, {vt}, calm neutral friendly "
+                "expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition"),
+                style=STYLE, negative=AVOID[c], width=768, height=1344, ref_max=640))
+        for k, (vid, vt) in enumerate(POSES[c]):
+            items.append(dict(id=f"{c}_pose_{vid}", seed=seed[c] + 100 + k, variants=1, refs=rf, prompt=(
+                f"Character pose illustration. {ONLY.format(n=NAME[c])} {LOOK[c]}. Full body from head to feet, {vt}. Exactly the same design "
+                "and colors as the references. Vertical composition"), style=STYLE, negative=AVOID[c], width=768, height=1344, ref_max=640))
+        for k, e in enumerate(EXPR[c]):
+            items.append(dict(id=f"{c}_expr{k + 1:02d}", seed=seed[c] + 200 + k, variants=2 if c == "uncle" else 1, refs=rf[1:] + rf[:1], prompt=(
+                f"Character expression portrait. {ONLY.format(n=NAME[c])} {LOOK[c]}. Head and shoulders portrait, front view with a very slight "
+                f"three-quarter turn, expression: {e}. The same face design, headwear or bare head, hair and costume as the references. "
+                "Square composition, vertical composition"), style=STYLE, negative=AVOID[c], width=768, height=768, ref_max=512))
+    for lid, who, txt in LINEUPS:
+        rf = [{"path": f"refs/{w}_full.png", "role": ROLE[w] + " (full body)"} for w in who]
+        for w in who:
+            if not os.path.exists(os.path.join(out, "refs", f"{w}_full.png")):
+                pass
+        items.append(dict(id=lid, seed=6900 + len(items), variants=2, refs=rf, orientations=["landscape"], keep_characters=True, prompt=(
+            f"Scale lineup. Exactly TWO characters in the whole image, no third person: {txt}. Each keeps exactly the design of its reference. "
+            "Wide horizontal 16:9 composition"), style=STYLE, negative="third person, duplicate, hat on the Uncle, text",
+            width=768, height=1344, ref_max=576))
+    json.dump({"defaults": {"backend": "klein", "orientations": ["portrait"]}, "images": items}, open(os.path.join(out, "images.json"), "w"), indent=1)
+    print("stage 2:", sum(i["variants"] if "variants" in i else 1 for i in items), "images ->", out)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", type=int, default=1)
@@ -93,4 +176,4 @@ if __name__ == "__main__":
     if a.stage == 1:
         stage1()
     else:
-        raise SystemExit("stage 2 builder is added after the Stage 1 picks")
+        stage2(a.picks)
