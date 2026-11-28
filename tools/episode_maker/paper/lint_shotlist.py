@@ -9,7 +9,15 @@ Reads every Markdown table whose header has the columns
   Clip | Dur | Start | Method | Faces | Shot | START keyframe | END keyframe | ACTION | VOICE | Mouth | Motion | EDIT | SFX | Caption
 (columns are found by header name, so their order may change). Rows: AI/HERO clips `Cnn`, CODE clips `Knn`.
 FAIL rules (exit code 1): see RULES below; WARN rules are printed but do not fail.
-`parse(path)` returns the clips as dicts (used by the prompt compiler / spec builders)."""
+`parse(path)` returns the clips as dicts (used by the prompt compiler / spec builders).
+
+PACE conventions (production/v4/attention-and-pace-spec.md, section 9), all inside the EDIT cell, tokens separated by ';' (never '|'):
+  PACE fast|medium|calm      first token; required on every row as soon as one row has it (pace-aware script)
+  CUTS 0.0:A/0.9:punch/1.6:ins   picture cuts inside the slot (seconds from clip start; types A punch ins rx card); gaps >= 0.25 s
+  TRIM 0.3-2.3              only seconds a-b of a clip generated at max(b, 2.0) s are used; Dur must equal b-a (AI Dur may then be 0.8-3.5)
+  MICRO 1.4                 micro-motion / sound texture second (CALM rows longer than 2.5 s)
+  FLASH@0.1 2f cream        flash or impact effect: frames <= 2, colour not red, <= 2 per absolute second
+The lint prints the average shot length (ASL) overall and per mode and warns when it leaves the spec targets."""
 import argparse, json, re, sys
 
 PROFILES = {   # episode-level limits
@@ -17,6 +25,15 @@ PROFILES = {   # episode-level limits
     "extended": dict(ai_min=45, ai_max=50, total_max=180.0, total_warn=160.0, words_max=380, words_warn_min=250, high_max=5),
 }
 AI_DUR = (2.0, 3.5)
+AI_DUR_TRIM = (0.8, 3.5)      # slot length of an AI row that carries TRIM (the generated clip is still 2.0-3.5 s)
+PACES = {"fast", "medium", "calm"}
+CUT_TYPES = {"A", "punch", "ins", "rx", "card"}
+MIN_CUT_GAP = 0.25
+# ASL targets (spec section 0 / 2): overall range and per-mode ranges, seconds
+ASL_OVERALL = (1.2, 2.2)
+ASL_MODE = {"fast": (0.4, 1.3), "medium": (1.3, 2.7), "calm": (2.5, 6.6)}
+MAX_GAP = {"fast": 1.6, "medium": 2.8, "calm": 3.6}        # longest picture shot allowed without a cut / micro change
+MAX_RUN = 12.0                                              # continuous fast (or calm) seconds
 CODE_DUR = (0.5, 8.0)
 CHARS = ["boy", "uncle", "grandma", "dad", "narrator", "camel"]
 SHOTS = {"ECU", "CU", "MCU", "MS", "MWS", "WS", "EWS", "MACRO", "OTS", "FULL"}
@@ -122,7 +139,34 @@ def parse(path):
                           faces=n, names=names, partial=partial, faces_raw=r.get("faces", ""), shot=size, face_pct=fpct,
                           start_kf=r["start_kf"], end_kf=r["end_kf"], action=r["action"], lines=parse_voice(r["voice"]),
                           mouth=r["mouth"].lower(), motion=r["motion"].lower(), edit=r["edit"], sfx=r["sfx"], caption=r["caption"]))
+        clips[-1].update(pace_info(r["edit"]))
     return clips
+
+
+def pace_info(edit):
+    """Reads PACE / CUTS / TRIM / MICRO / FLASH tokens from an EDIT cell."""
+    out = dict(pace=None, cuts=None, trim=None, micro=None, flashes=[], pace_errors=[])
+    m = re.search(r"\bPACE\s+(\w+)", edit)
+    if m:
+        out["pace"] = m.group(1).lower()
+    m = re.search(r"\bCUTS\s+([0-9.:/A-Za-z]+)", edit)
+    if m:
+        cuts = []
+        for tok in m.group(1).split("/"):
+            mm = re.match(r"^(\d+(?:\.\d+)?)(?::(\w+))?$", tok)
+            if not mm:
+                out["pace_errors"].append(f"bad CUTS token {tok!r} (want 0.9:punch)"); continue
+            cuts.append((float(mm.group(1)), mm.group(2) or "A"))
+        out["cuts"] = cuts
+    m = re.search(r"\bTRIM\s+(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?)", edit)
+    if m:
+        out["trim"] = (float(m.group(1)), float(m.group(2)))
+    m = re.search(r"\bMICRO\s+(\d+(?:\.\d+)?)", edit)
+    if m:
+        out["micro"] = float(m.group(1))
+    for m in re.finditer(r"\b(?:FLASH|IMPACT)@(\d+(?:\.\d+)?)\s+(\d+)f(?:\s+(\w+))?", edit):
+        out["flashes"].append((float(m.group(1)), int(m.group(2)), (m.group(3) or "").lower()))
+    return out
 
 
 def names_in(text):
@@ -145,6 +189,13 @@ def lint(clips, prof):
             F(cid, f"start {c['start']:.1f} s but the clips before end at {t:.1f} s")
         t = c["start"] + c["dur"]
         lo, hi = AI_DUR if ai else CODE_DUR
+        if ai and c.get("trim"):
+            lo, hi = AI_DUR_TRIM
+            a_, b_ = c["trim"]
+            if not (0 <= a_ < b_ <= 3.5):
+                F(cid, f"TRIM {a_}-{b_} must satisfy 0 <= a < b <= 3.5 (the generated clip is 2.0-3.5 s)")
+            elif abs((b_ - a_) - c["dur"]) > 0.05:
+                F(cid, f"TRIM {a_}-{b_} is {b_ - a_:.2f} s but Dur is {c['dur']} s")
         if not lo <= c["dur"] <= hi:
             F(cid, f"duration {c['dur']} s outside {lo}-{hi} s")
         if c["mouth"] not in MOUTHS:
@@ -245,11 +296,87 @@ def lint(clips, prof):
         F("EPISODE", "the last spoken line must be “Dad was right...”")
     if not any("for dumpling research" in l["text"].lower() for l in spoken):
         F("EPISODE", "catchphrase “For dumpling research!” missing")
+    pace_stats = pace_checks(clips, F, W)
     stats = dict(clips=len(clips), ai=len(ai), code=len(clips) - len(ai), total_s=total, words=nw, high_motion_ai=high,
                  talk_shots=sum(1 for c in ai if any(l["tag"] == "on" for l in c["lines"])),
                  two_face=[c["id"] for c in ai if c.get("faces") == 2],
-                 words_by=dict(sorted({w: sum(words(l["text"]) for l in spoken if l["who"] == w) for w in {l["who"] for l in spoken}}.items())))
+                 words_by=dict(sorted({w: sum(words(l["text"]) for l in spoken if l["who"] == w) for w in {l["who"] for l in spoken}}.items())),
+                 pace=pace_stats)
     return fails, warns, stats
+
+
+def pace_checks(clips, F, W):
+    """PACE / CUTS / FLASH rules. Returns stats (None when the script has no PACE tags)."""
+    good = [c for c in clips if "error" not in c]
+    if not any(c.get("pace") for c in good):
+        return None
+    shots, by_mode, t_mode = [], {}, {}
+    flashes_abs = []
+    run_mode, run_len = None, 0.0
+    for c in good:
+        cid = c["id"]
+        for e in c.get("pace_errors", []):
+            F(cid, e)
+        p = c.get("pace")
+        if p not in PACES:
+            F(cid, f"PACE {p!r} missing or not fast|medium|calm"); continue
+        dur = c["dur"]
+        cuts = c.get("cuts") or [(0.0, "A")]
+        if cuts[0][0] != 0.0:
+            F(cid, "CUTS must start at 0.0")
+        times = [t for t, _ in cuts]
+        for (t, ty) in cuts:
+            if ty not in CUT_TYPES:
+                F(cid, f"CUTS type {ty!r} not in {sorted(CUT_TYPES)}")
+            if t >= dur:
+                F(cid, f"cut at {t} s is outside the {dur} s slot")
+        for a_, b_ in zip(times, times[1:]):
+            if b_ - a_ < MIN_CUT_GAP - 1e-9:
+                F(cid, f"cuts {a_} and {b_} are closer than {MIN_CUT_GAP} s (6 frames): too fast to read and a flicker risk")
+        bounds = times + [dur]
+        lens = [round(b_ - a_, 3) for a_, b_ in zip(bounds, bounds[1:])]
+        shots += [(p, x) for x in lens]
+        by_mode.setdefault(p, []).extend(lens)
+        t_mode[p] = t_mode.get(p, 0.0) + dur
+        # longest shot without a change
+        longest = max(lens)
+        if p == "calm" and c["method"] != "CODE":
+            if dur > 2.5 and c.get("micro") is None and len(times) == 1:
+                W(cid, "CALM row over 2.5 s without MICRO <t> (a slow push, particle or sound texture keeps it alive)")
+        elif longest > MAX_GAP[p] + 1e-9 and c["method"] != "CODE":
+            W(cid, f"{p.upper()} row holds one shot for {longest:.1f} s (> {MAX_GAP[p]} s): add a CUTS entry or a card / sprite pop")
+        if p == "fast" and dur > 1.8 and len(times) < 2:
+            W(cid, f"FAST row of {dur} s without any CUTS")
+        for (t, n, col) in c.get("flashes", []):
+            if n > 2:
+                F(cid, f"FLASH/IMPACT of {n} frames: at most 2")
+            if "red" in col:
+                F(cid, "FLASH/IMPACT colour red: no red flashes")
+            flashes_abs.append(c["start"] + t)
+        # run of one mode
+        if p == run_mode:
+            run_len += dur
+        else:
+            run_mode, run_len = p, dur
+        if p in ("fast", "calm") and run_len > MAX_RUN + 0.01:
+            W(cid, f"{run_len:.1f} s of continuous {p.upper()} (limit {MAX_RUN:.0f} s; the premiere hook + opening is the known exception)")
+    flashes_abs.sort()
+    for i, t in enumerate(flashes_abs):
+        n = sum(1 for u in flashes_abs[i:] if u - t < 1.0)
+        if n > 2:
+            F("EPISODE", f"{n} flash/impact effects within 1 s at {t:.1f} s (budget 2 per second)")
+            break
+    total = sum(x for _, x in shots)
+    asl = total / len(shots) if shots else 0
+    mode_asl = {m: round(sum(v) / len(v), 2) for m, v in by_mode.items()}
+    if not ASL_OVERALL[0] <= asl <= ASL_OVERALL[1]:
+        W("EPISODE", f"ASL {asl:.2f} s is outside the target {ASL_OVERALL[0]}-{ASL_OVERALL[1]} s")
+    for m, v in mode_asl.items():
+        lo_, hi_ = ASL_MODE[m]
+        if not lo_ <= v <= hi_:
+            W("EPISODE", f"{m.upper()} ASL {v} s is outside {lo_}-{hi_} s")
+    return dict(shots=len(shots), asl=round(asl, 2), asl_by_mode=mode_asl, seconds_by_mode={k: round(v, 1) for k, v in t_mode.items()},
+                share_by_mode={k: round(100 * v / (sum(t_mode.values()) or 1)) for k, v in t_mode.items()}, flashes=len(flashes_abs))
 
 
 def main():
@@ -270,6 +397,9 @@ def main():
               f" {','.join(c['names']) or '-':14} {c['shot']:5} {c['mouth']:8} {c['motion']:6} {v}")
     print(f"\n{st['clips']} clips ({st['ai']} AI, {st['code']} CODE), {st['total_s']} s, {st['words']} words {st['words_by']}, "
           f"talk shots {st['talk_shots']}, 2-face AI clips {len(st['two_face'])} {st['two_face']}, high-motion AI {st['high_motion_ai']}")
+    if st.get("pace"):
+        pc = st["pace"]
+        print(f"PACE: {pc['shots']} shots, ASL {pc['asl']} s overall, by mode {pc['asl_by_mode']}, time share % {pc['share_by_mode']}, flash/impact effects {pc['flashes']}")
     for w in warns:
         print("WARN ", w)
     for f in fails:

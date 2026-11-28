@@ -14,8 +14,8 @@ WCAG 2.2 SC 2.3.1 "Three Flashes or Below Threshold" and ITU-R BT.1702 / the Har
   4. Large red: a saturated-red area >= 25 % of the picture that appears or disappears within 0.25 s is a WARN (design rule: no
      full-frame red flashes); it FAILs if it also alternates (a red flash as in 2).
 Method: ffmpeg decodes the video at a small size (rgb24), per frame we compute linear relative luminance per pixel, compare each frame
-with the previous one, and record the signed area of pixels that got brighter / darker by >= 0.10 (darker side < 0.80). Each frame
-with a signed area >= 2.8 % is one "transition"; a flash = two opposing transitions; flashes per window = reversals / 2.
+with the previous one, and record the net signed area (brighter minus darker pixels, each by >= 0.10, darker side < 0.80). Each frame
+with a net area >= 2.8 % is one "transition"; a flash = two opposing transitions; flashes per window = reversals / 2.
 Not covered: spatial patterns (stripes, checkerboards), luminance changes below 10 %, whole-screen drift over >1 s (not a flash).
 Exit code 0 = PASS (WARNs allowed), 1 = FAIL."""
 import argparse, json, subprocess, sys
@@ -105,8 +105,9 @@ def main():
             dark = np.minimum(y, prev_y) < DARK_MAX
             up = float(((d >= DELTA) & dark).mean())
             dn = float(((d <= -DELTA) & dark).mean())
-            if max(up, dn) >= AREA_FRAC:
-                ev_gen.append((n, 1 if up >= dn else -1))
+            net = up - dn      # moving edges brighten and darken equal areas and cancel; real flashes are one-sided
+            if abs(net) >= AREA_FRAC:
+                ev_gen.append((n, 1 if net > 0 else -1))
             dr = red_area - prev_r
             if abs(dr) >= AREA_FRAC:
                 ev_red.append((n, 1 if dr > 0 else -1))
