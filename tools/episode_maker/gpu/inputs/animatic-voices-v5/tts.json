@@ -1,0 +1,371 @@
+{
+ "defaults": {
+  "backend": "qwen3",
+  "seed": 21,
+  "variants": 1
+ },
+ "voices": {
+  "boy": {
+   "qwen_voice": "A small, sweet-voiced young boy around six or seven, bright and clear, earnest and full of wonder, speaks quickly when excited and trails off when unsure.",
+   "exaggeration_scale": 1.0
+  },
+  "uncle": {
+   "qwen_voice": "A big, warm bear of a man in his forties, deep rich baritone, jolly and generous, bursts into booming enthusiasm, then turns quiet and tender.",
+   "exaggeration_scale": 1.0
+  },
+  "grandma": {
+   "qwen_voice": "An elderly woman, calm and precise, a warm raspy alto, teasing with a smile in her voice, unhurried.",
+   "exaggeration_scale": 1.0
+  },
+  "narrator": {
+   "qwen_voice": "A deep, regal male voice, slow and measured, like an ancient king reading a scroll aloud, with a hint of amusement.",
+   "exaggeration_scale": 1.0
+  }
+ },
+ "lines": [
+  {
+   "id": "ep01__C01",
+   "who": "narrator",
+   "text": "Defeated... by ONE tiny dumpling.",
+   "clip": "C01",
+   "style": "neutral",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C02",
+   "who": "boy",
+   "text": "Welcome to Nan-shyang, soup dumpling town!",
+   "clip": "C02",
+   "style": "neutral",
+   "qwen": "Warm, friendly and curious, with a smile in the voice. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C03",
+   "who": "boy",
+   "text": "How does soup get inside a dumpling?",
+   "clip": "C03",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C04",
+   "who": "narrator",
+   "text": "The stall... of destiny!",
+   "clip": "C04",
+   "style": "neutral",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C05",
+   "who": "boy",
+   "text": "It's just a stall.",
+   "clip": "C05",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C06",
+   "who": "grandma",
+   "text": "Everyone asks. We make the soup solid.",
+   "clip": "C06",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C07",
+   "who": "grandma",
+   "text": "Pork skin, boiled slowly, chilled to jelly.",
+   "clip": "C07",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C08",
+   "who": "boy",
+   "text": "Wait. The soup goes in solid?",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C09",
+   "who": "uncle",
+   "text": "Steam melts it back into soup.",
+   "clip": "C09",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C10",
+   "who": "uncle",
+   "text": "For dumpling research!",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Laughing, joyful, playful and over the top. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C11",
+   "who": "boy",
+   "text": "Rule one of soup dumplings: don't...",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C12",
+   "who": "narrator",
+   "text": "Three... two...",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C13",
+   "who": "boy",
+   "text": "... do that.",
+   "clip": "C13",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C14",
+   "who": "uncle",
+   "text": "... There was soup inside. Hot!",
+   "clip": "C14",
+   "style": "neutral",
+   "qwen": "Small, quiet and stunned, a short pause at the start. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C15",
+   "who": "grandma",
+   "text": "By the top knot, onto a spoon.",
+   "clip": "C15",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C16",
+   "who": "grandma",
+   "text": "Tiny hole. Let it cool. Sip.",
+   "clip": "C16",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__K03",
+   "who": "narrator",
+   "text": "Legend says!",
+   "clip": "K03",
+   "style": "neutral",
+   "qwen": "Excited and delighted, fast and lively, with big expressive ups and downs in pitch. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__K04",
+   "who": "narrator",
+   "text": "Around eighteen seventy-one, a shop made its bun tiny... hiding jelly inside!",
+   "clip": "K04",
+   "style": "neutral",
+   "qwen": "Slow, solemn and mysterious, a storyteller telling an ancient legend. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C17",
+   "who": "uncle",
+   "text": "I forgive you, little dumpling.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C19",
+   "who": "boy",
+   "text": "Wait... that's Dad's doodle.",
+   "clip": "C19",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep01__C20",
+   "who": "boy",
+   "text": "Dad was right...",
+   "clip": "C20",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C01",
+   "who": "grandma",
+   "text": "Nobody sits on that stool. Nobody.",
+   "clip": "C01",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C02",
+   "who": "boy",
+   "text": "Welcome to Nan-shyang. He's... stuck.",
+   "clip": "C02",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C03",
+   "who": "boy",
+   "text": "I follow my dad's dumpling book.",
+   "clip": "C03",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C04",
+   "who": "uncle",
+   "text": "I'm not sitting. It's research.",
+   "clip": "C04",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C05",
+   "who": "boy",
+   "text": "Grandma, why can't anyone sit there?",
+   "clip": "C05",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C06",
+   "who": "grandma",
+   "text": "The waiting seat. Eighteen folds, by hand.",
+   "clip": "C06",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C07",
+   "who": "uncle",
+   "text": "Eighteen folds? I'll... perish.",
+   "clip": "C07",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C08",
+   "who": "grandma",
+   "text": "Then perish quietly.",
+   "clip": "C08",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C09",
+   "who": "grandma",
+   "text": "That... that hat.",
+   "clip": "C09",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C10",
+   "who": "boy",
+   "text": "You've seen this hat?",
+   "clip": "C10",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C11",
+   "who": "grandma",
+   "text": "A man sat there once. Same hat.",
+   "clip": "C11",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C12",
+   "who": "boy",
+   "text": "Dad went away. His book stayed.",
+   "clip": "C12",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C13",
+   "who": "boy",
+   "text": "Page one: be patient.",
+   "clip": "C13",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C14",
+   "who": "grandma",
+   "text": "He waited all afternoon for one dumpling.",
+   "clip": "C14",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C15",
+   "who": "boy",
+   "text": "The answers are in his book.",
+   "clip": "C15",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C16",
+   "who": "grandma",
+   "text": "Tiny hole. Let it cool. Sip.",
+   "clip": "C16",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C17",
+   "who": "uncle",
+   "text": "I've been patient for nine seconds.",
+   "clip": "C17",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C18",
+   "who": "boy",
+   "text": "It was four. I counted.",
+   "clip": "C18",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C19",
+   "who": "grandma",
+   "text": "Then he went south. To Gwahng-joh.",
+   "clip": "C19",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C20",
+   "who": "uncle",
+   "text": "For dumpling research!",
+   "clip": "C20",
+   "style": "neutral",
+   "qwen": "Laughing, joyful, playful and over the top. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C21",
+   "who": "boy",
+   "text": "He's already packed. Of course.",
+   "clip": "C21",
+   "style": "neutral",
+   "qwen": "Natural, relaxed and conversational. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  },
+  {
+   "id": "ep02__C22",
+   "who": "boy",
+   "text": "Dad was right...",
+   "clip": "C22",
+   "style": "neutral",
+   "qwen": "Soft, gentle and sincere, slightly slower. Natural, brisk comedic timing like real quick talk, no long pauses, no sing-song."
+  }
+ ]
+}

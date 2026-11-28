@@ -1,0 +1,24 @@
+{
+ "_note": "Stage 1 picks (2026-11-28, run charsheets-v5-s1-002; 19 images, 1 seed-variant set per concept). Chosen by QC + looking at every candidate; creator approves by number.",
+ "boy": {
+  "pick": "boy_full__v2",
+  "alt": "boy_full__v3",
+  "why": "hat chin ribbon with two tails visible, orange sash, indigo tunic, rolled trousers, straw sandals; most polished face; QC PASS (1 person, indigo 0.30, straw 0.14)",
+  "full": "tools/episode_maker/out/charsheets-v5/stage1/boy_full__v2.png",
+  "bust": "tools/episode_maker/out/charsheets-v5/stage1/boy_bust__v2.png"
+ },
+ "uncle": {
+  "pick": "uncle_full__v2",
+  "alt": "uncle_full__v4",
+  "why": "bald, thin long curled-tip mustache, thick brows, warm eyes, mandarin collar, towel, wide orange sash, charcoal trousers, sandals, no hat; QC PASS (HAT? not raised). Jacket reads khaki, not earth-brown: darken in Stage 2",
+  "full": "tools/episode_maker/out/charsheets-v5/stage1/uncle_full__v2.png",
+  "bust": "tools/episode_maker/out/charsheets-v5/stage1/uncle_bust__v2.png"
+ },
+ "grandma": {
+  "pick": "grandma_full__v1",
+  "alt": "grandma_bust__v1",
+  "why": "only candidate with TWO CROSSED wooden pins in a white-grey bun; cream apron, orange sash, rolling pin, black shoes; QC WARN: jacket is pale sage not deep jade (fix in Stage 2 prompt)",
+  "full": "tools/episode_maker/out/charsheets-v5/stage1/grandma_full__v1.png",
+  "bust": "tools/episode_maker/out/charsheets-v5/stage1/grandma_bust__v1.png"
+ }
+}

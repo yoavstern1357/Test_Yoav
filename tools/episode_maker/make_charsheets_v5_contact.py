@@ -2,6 +2,7 @@
 """Contact sheets for the v5 character approval set (CPU, PIL). Labels are drawn here, never generated.
 
     python3 make_charsheets_v5_contact.py concept  <results_dir_s1> <out_dir>      # all Stage 1 candidates per character
+    python3 make_charsheets_v5_contact.py board    <results_dir_s1> <picks.json> <out_dir>   # picks + all candidates on one board
     python3 make_charsheets_v5_contact.py sheets   <spec.json> <out_dir>           # final per-character + combined overview
 spec.json: {"boy": {"hero": path, "turn": [4 paths], "expr": [(label, path)...], "poses": [paths]}, "uncle": {...}, "grandma": {...},
             "lineups": [paths]}
@@ -65,6 +66,22 @@ def concept(res, out):
         allims.append(im)
 
 
+def board(res, picks, out):
+    """Concept board: the picked candidate of each character (large) above all 19 candidates (small, picked ones marked)."""
+    os.makedirs(out, exist_ok=True)
+    P = json.load(open(picks))
+    top = grid([(f"{c.upper()}  PICK: {P[c]['pick']}", os.path.join(res, P[c]["pick"] + ".png")) for c in ("boy", "uncle", "grandma")], 3, 420, 740,
+               title="THE DUMPLING BOY: stage 1 concept board (picks)")
+    allc = []
+    for c in ("boy", "uncle", "grandma"):
+        for f in sorted(glob.glob(os.path.join(res, f"{c}_full__v*.png"))) + sorted(glob.glob(os.path.join(res, f"{c}_bust__v*.png"))):
+            n = os.path.basename(f)[:-4]
+            allc.append((("* " if n == P[c]["pick"] else "") + n, f))
+    low = grid(allc, 10, 150, 260)
+    im = Image.new("RGB", (max(top.width, low.width), top.height + low.height), BG); im.paste(top, (0, 0)); im.paste(low, (0, top.height))
+    save_under(im, os.path.join(out, "concept_board.png"))
+
+
 def sheets(spec, out):
     S = json.load(open(spec)); os.makedirs(out, exist_ok=True)
     per = {}
@@ -100,5 +117,7 @@ def sheets(spec, out):
 if __name__ == "__main__":
     if sys.argv[1] == "concept":
         concept(sys.argv[2], sys.argv[3])
+    elif sys.argv[1] == "board":
+        board(sys.argv[2], sys.argv[3], sys.argv[4])
     else:
         sheets(sys.argv[2], sys.argv[3])

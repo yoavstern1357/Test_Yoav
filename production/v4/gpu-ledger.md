@@ -28,3 +28,5 @@
 | charsheets-v5-s1-001 | RESULT: the Kaggle kernel stayed `kernelworkerstatus.queued` for the whole 330-min runner timeout (2026-11-28 12:26-17:58 UTC); it never started, no images. The other agent's `voice-samples-001` (pushed 12:29) was queued the same way. | 0 used | 2026-11-28 |
 
 Prepared, not yet run: `music-cues-v5-001` (music, ACE-Step, 12 instrumental cues, est. 14 min, cap 15). See `production/v4/music-cues-v5.md`.
+| charsheets-v5-s1-002 | RESULT: 19 images, complete (kernel finished); measured about 9 min wall (retry after the queue cleared) | about 9 | 2026-11-28 |
+| voice-samples-002 | RESULT: complete; measured about 21 min wall. Qwen3 12 usable sets (designs 2-4 for boy/uncle/grandma, 2-3 for narrator/host: the 9.5 min cap stopped it), Chatterbox 9, Orpheus 2 (grandma incomplete) | about 21 | 2026-11-28 |

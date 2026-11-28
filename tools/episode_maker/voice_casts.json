@@ -1,24 +1,117 @@
 {
   "_readme": "Voice cast presets for make_episode.py. Select with spec \"voice_engine\": \"supertonic\" (or env VOICE_ENGINE). Default (nothing set) = Kokoro, exactly as before. Override one character in a spec with \"voice_cast\": {\"uncle\": {\"engine\": \"supertonic\", \"sid\": 9}}. Details: production/v4/voice-tech.md",
   "supertonic": {
-    "boy":      {"engine": "supertonic", "sid": 5, "speed": 1.0,  "pitch": 1.12},
-    "uncle":    {"engine": "supertonic", "sid": 8, "speed": 0.95, "pitch": 0.94},
-    "grandma":  {"engine": "supertonic", "sid": 4, "speed": 0.95, "pitch": 0.97},
-    "dad":      {"engine": "supertonic", "sid": 9, "speed": 0.92},
-    "narrator": {"engine": "supertonic", "sid": 6, "speed": 0.9}
+    "boy": {
+      "engine": "supertonic",
+      "sid": 5,
+      "speed": 1.0,
+      "pitch": 1.12
+    },
+    "uncle": {
+      "engine": "supertonic",
+      "sid": 8,
+      "speed": 0.95,
+      "pitch": 0.94
+    },
+    "grandma": {
+      "engine": "supertonic",
+      "sid": 4,
+      "speed": 0.95,
+      "pitch": 0.97
+    },
+    "dad": {
+      "engine": "supertonic",
+      "sid": 9,
+      "speed": 0.92
+    },
+    "narrator": {
+      "engine": "supertonic",
+      "sid": 6,
+      "speed": 0.9
+    }
   },
   "pocket": {
-    "boy":      {"engine": "pocket", "ref_voice": "am_puck",    "pitch": 1.08},
-    "uncle":    {"engine": "pocket", "ref_voice": "am_michael", "pitch": 0.92},
-    "grandma":  {"engine": "pocket", "ref_voice": "af_sarah",   "pitch": 0.95},
-    "dad":      {"engine": "pocket", "ref_voice": "bm_daniel"},
-    "narrator": {"engine": "pocket", "ref_voice": "bm_george",  "pitch": 0.96}
+    "boy": {
+      "engine": "pocket",
+      "ref_voice": "am_puck",
+      "pitch": 1.08
+    },
+    "uncle": {
+      "engine": "pocket",
+      "ref_voice": "am_michael",
+      "pitch": 0.92
+    },
+    "grandma": {
+      "engine": "pocket",
+      "ref_voice": "af_sarah",
+      "pitch": 0.95
+    },
+    "dad": {
+      "engine": "pocket",
+      "ref_voice": "bm_daniel"
+    },
+    "narrator": {
+      "engine": "pocket",
+      "ref_voice": "bm_george",
+      "pitch": 0.96
+    }
   },
   "gpu": {
-    "boy":      {"engine": "prerendered", "dir": "tts/gpu"},
-    "uncle":    {"engine": "prerendered", "dir": "tts/gpu"},
-    "grandma":  {"engine": "prerendered", "dir": "tts/gpu"},
-    "dad":      {"engine": "prerendered", "dir": "tts/gpu"},
-    "narrator": {"engine": "prerendered", "dir": "tts/gpu"}
+    "boy": {
+      "engine": "prerendered",
+      "dir": "tts/gpu"
+    },
+    "uncle": {
+      "engine": "prerendered",
+      "dir": "tts/gpu"
+    },
+    "grandma": {
+      "engine": "prerendered",
+      "dir": "tts/gpu"
+    },
+    "dad": {
+      "engine": "prerendered",
+      "dir": "tts/gpu"
+    },
+    "narrator": {
+      "engine": "prerendered",
+      "dir": "tts/gpu"
+    }
+  },
+  "v5": {
+    "_readme": "v5 final cast (2026-11-28, voice-samples-002; chosen by ear proxies, the creator may override by number). Design prompts: gpu/voice_samples_lib.py QWEN_DESIGNS[char][qwen3_design-1]. Boy-voice-over host uses the Boy voice (same voice everywhere).",
+    "boy": {
+      "engine": "qwen3",
+      "qwen3_design": 3,
+      "fallback": "qwen3 design 4",
+      "prompt_source": "QWEN_DESIGNS['boy'][2]",
+      "compare_no": "compare-boy.m4a number 2"
+    },
+    "uncle": {
+      "engine": "qwen3",
+      "qwen3_design": 2,
+      "fallback": "chatterbox uncle 2 (deeper, faster, Kokoro-reference based)",
+      "prompt_source": "QWEN_DESIGNS['uncle'][1]",
+      "compare_no": "compare-uncle.m4a number 1"
+    },
+    "grandma": {
+      "engine": "qwen3",
+      "qwen3_design": 2,
+      "fallback": "qwen3 design 4 (lower, brisker)",
+      "prompt_source": "QWEN_DESIGNS['grandma'][1]",
+      "compare_no": "compare-grandma.m4a number 1"
+    },
+    "narrator": {
+      "engine": "qwen3",
+      "qwen3_design": 2,
+      "fallback": "orpheus zac (calm, very stable)",
+      "prompt_source": "QWEN_DESIGNS['narrator'][1]",
+      "compare_no": "compare-narrator.m4a number 1"
+    },
+    "dad": {
+      "engine": "qwen3",
+      "qwen3_design": 3,
+      "note": "Dad is never voiced on screen; if needed use the Boy design"
+    }
   }
 }

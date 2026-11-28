@@ -189,7 +189,14 @@ def render():
             if os.environ.get('ONLY') and who not in os.environ['ONLY'].split(','):
                 continue
             cand = chosen[who]
-            w = trim(raw(cand, o.get("tts", text), o.get("speed", 1.0), o.get("st", 0.0)))
+            gp = os.path.join(OUT, "gpu-voices", f"{ep}__{c}.wav")        # Qwen3 v5 cast (gpu/make_animatic_voices_input.py), natural speed, no pitch shift
+            if os.path.exists(gp) and os.environ.get("VOICE_SRC") != "cpu":
+                gw, gsr = sf.read(gp, dtype="float32")
+                gw = gw.mean(axis=1) if gw.ndim > 1 else gw
+                w = trim(librosa.resample(gw, orig_sr=gsr, target_sr=SR) if gsr != SR else gw)
+                cand = ("qwen3 v5 design (GPU)",)
+            else:
+                w = trim(raw(cand, o.get("tts", text), o.get("speed", 1.0), o.get("st", 0.0)))
             pk_ = np.abs(w).max() or 1
             w = w / pk_ * 0.8 * 10 ** (o.get("gain", 0.0) / 20 - 0.0)
             w = np.clip(w, -0.98, 0.98)

@@ -160,3 +160,25 @@ How to use the answer: reply with the character and the compilation number (for 
 
 ## 6. Next candidates if none of these sounds right (not run: GPU budget)
 Maya1 (Apache-2.0, voice from text + emotion tags), Zonos, Dia with a short synthetic prompt clip, Qwen3 CustomVoice (9 built-in premium speakers, Apache-2.0, already supported by `generate_tts.py --backend qwen3custom`), Chatterbox with a reference made from the best Qwen3 design (so the child voice is a Qwen3 design with Chatterbox's emotion knob). Each is one more 10 to 15 GPU-minute job.
+
+## 7. ROUND 2 RESULT and FINAL CAST (2026-11-28, job `voice-samples-002`, about 21 min wall on Kaggle)
+**What came back:** Qwen3 VoiceDesign 12 complete sets (the 9.5-min cap stopped it: designs 2-4 for Boy / Uncle / Grandma, 2-3 for Narrator and Host; design 1 = the old default and design 5 never ran), Chatterbox 9 sets, Orpheus 2 (Uncle `dan`, Narrator `zac`; Grandma `tara` incomplete and skipped). Imported with `build_compilations.py import-gpu` (it needs `tts.json` next to the three engine folders: copy `gpu/inputs/voice-samples/tts.json` there), metrics and `build` re-run: every `compare-<character>.m4a` now lists Qwen3 first, then Chatterbox, Orpheus, then the CPU engines. `out/voice-samples/cast-finalists.m4a` (2 MB, 12 voices, my pick first for each character) is the short listening file; per-voice line consistency is in `out/voice-samples/gpu-consistency.json`.
+**Ear proxies, GPU sets** (WER = Whisper word error, F0 = median pitch Hz, spread = max-min of the 4 per-line pitch medians in semitones, an outburst line always raises it; octave errors of the tracker inflate it):
+| Voice (compare no.) | WER | F0 | spread st | words/s | note |
+|---|---|---|---|---|---|
+| Boy qwen3 d3 (no. 2) **PICK** | 0.00 | 353 | 5.2 | 2.83 | all 4 lines understood, most stable child, fastest Qwen3 boy |
+| Boy qwen3 d2 (no. 1) | 0.00 | 301 | 11.1 | 2.22 | line pitches 214-406: identity drifts |
+| Boy qwen3 d4 (no. 3) | 0.04 | 361 | 7.1 | 2.59 | "That is MY dumpling" mis-heard |
+| Boy chatterbox 1 / 2 (no. 4 / 5) | 0.06 / 0.08 | 138 / 169 | | | adult-male pitch: not a child, rejected |
+| Uncle qwen3 d2 (no. 1) **PICK** | 0.00 | 124 | 17.1* | 2.09 | *the laughing "For dumpling research!" is high on purpose; other 3 lines 100-184 Hz |
+| Uncle chatterbox 2 (no. 5) | 0.00 | 96 | 5.5 | 3.17 | deepest and most stable, but a Kokoro-reference clone (muffled, centroid 1168 Hz): RUNNER-UP, may sound the most "processed" |
+| Uncle orpheus dan (no. 6) | 0.03 | 138 | 7.5 | 2.03 | |
+| Uncle qwen3 d3 / d4 (no. 2 / 3) | 0.11 / 0.08 | 113 / 124 | 20-24 | 1.5-1.65 | slow (8.6 s for one line), mis-heard catchphrase |
+| Grandma qwen3 d2 (no. 1) **PICK** | 0.03 | 189 | 10.9* | 2.04 | calm warm alto, adult, clear; the target 190 Hz of the animatic |
+| Grandma qwen3 d4 (no. 3) | 0.03 | 152 | 9.6 | 2.12 | lower and brisker, may read as too low: runner-up |
+| Grandma chatterbox 2 (no. 5) | 0.03 | 157 | 0.8 | 3.4 | steadiest and quick, Kokoro-reference |
+| Narrator qwen3 d2 (no. 1) **PICK** | 0.08 | 108 | 23.8* | 2.32 | *only the grand "Behold!" shout is high; WER comes from "Nanxiang" (ASR false alarm) |
+| Narrator orpheus zac (no. 5) | 0.04 | 122 | 1.2 | 2.27 | most even and calm: strong runner-up for "most pleasant"; Llama-3.2 terms to read first |
+| Narrator chatterbox 2 (no. 4) | 0.04 | 118 | 3.7 | 2.7 | |
+**FINAL CAST (saved in `tools/episode_maker/voice_casts.json` key `"v5"`; design prompts in `gpu/voice_samples_lib.py` `QWEN_DESIGNS[char][d-1]`): Boy = Qwen3 design 3 (also the Boy voice-over host, one voice everywhere); Uncle = Qwen3 design 2; Grandma = Qwen3 design 2; Narrator = Qwen3 design 2.** All four are the same engine and licence (Apache-2.0) and none is pitch-shifted adult Kokoro, which is the "robotic" sound the creator heard in the animatic. Nobody here has listened: the creator's ears decide, and the runner-ups above are one number away.
+**Why the Boy wins:** the only voices with a child pitch (300-360 Hz) are the Qwen3 designs; Chatterbox/Orpheus boys are adult. Boy d3 keeps the same pitch band over all 4 lines (390-504 Hz in the outburst, 374-390 Hz soft), d2 and d4 drift.
