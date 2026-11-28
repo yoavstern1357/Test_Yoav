@@ -1,1 +1,1 @@
-{"run_id": "charsheets-v45-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/charsheets-v45", "backend": "klein", "smoke": false, "only": "", "max_minutes": 90}
+{"run_id": "charsheets-v5-s1-001", "task": "images", "input": "tools/episode_maker/gpu/inputs/charsheets-v5-s1", "backend": "klein", "smoke": false, "only": "", "max_minutes": 40}
