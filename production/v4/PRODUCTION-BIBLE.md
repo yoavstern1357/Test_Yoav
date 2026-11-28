@@ -70,3 +70,6 @@
 **Tools:** FREE ONLY, with research (Kaggle via GitHub Actions + free/open models). No purchases. Voice: keep Qwen3-TTS as default, produce as many free voice samples as possible for the creator to listen to.
 **Opening song:** keep style 2 (male) as placeholder. **Work mode:** run continuously and autonomously, as cheaply as possible, delegating to sub-agents; the creator approves results only (scripts in Hebrew in chat, then animatic, then final).
 - PREMIERE EXCEPTION (creator, 2026-11-28): Episode 1A INCLUDES the full series opening (about 7.5 s, Japanese punk song sting) right after the 3.5 s hook, so 1A runs about 1:14. All other episodes keep the "no separate opening, 3-s sting only" rule unless the creator says otherwise.
+
+## VOICE DIRECTION (creator, 2026-11-28)
+As few "robotic" voices as possible. Boy = the clearest and highest voice (child-like). Uncle = the deepest voice that is also charming (warm, with comic range). Grandma = adult, clear. Scroll Narrator = the most pleasant voice. The creator delegated the final pick to Claude: choose by the voice-samples report (production/v4/voice-samples-report.md) with Qwen3-TTS VoiceDesign designs first (only engine that can sound like a child and not processed); fall back to the v4.4 Qwen3 casting if the new designs do not beat it. Listen for the SAME voice across all lines of an episode.
