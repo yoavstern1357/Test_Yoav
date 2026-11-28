@@ -132,6 +132,7 @@ def base_card(sh, W, H, k, land, speaker=None):
     p = Pen(img, k)
     lw, lh = W, H
     p.rect(0, 0, lw, 6, LEAF, None)
+    simg = None
     names = list(sh["names"]); hands = sh["hands"]; back = sh["back"]
     items = [(n, "") for n in names] + [(n, "hands only") for n in hands] + [(n, "from behind") for n in back]
     icons = []
@@ -144,7 +145,7 @@ def base_card(sh, W, H, k, land, speaker=None):
     S = (150 if land else 230)
     if len(icons) > 2:
         S = int(S * .75)
-    cy = 250 if land else 420
+    cy = 250 if land else 360
     pos = {}
     for i, (kind, nm, role) in enumerate(icons):
         cx = lw * (i + 1) / (len(icons) + 1)
@@ -161,17 +162,17 @@ def base_card(sh, W, H, k, land, speaker=None):
         p.para(lw / 2, 430, sh["action"], 24, lw * .8, BROWN, maxlines=3)
     else:
         p.text(lw / 2, 138, typ, 24, (120, 95, 70))
-        p.para(lw / 2, 598, sh["action"], 27, lw * .88, BROWN, maxlines=5)
+        p.para(lw / 2, 592, sh["action"], 25, lw * .88, BROWN, maxlines=4)
         # caption-zone guide and the phone UI strip (animatic info lives in the UI-covered strip)
         p.rect(18, 776, lw - 18, 944, None, (230, 205, 170), 2, 14)
         p.text(lw - 30, 786, "caption zone", 14, (200, 170, 130), bold=False, anchor="rt")
-        p.rect(0, 960, lw, H, (244, 231, 208), None)
-        p.line([(0, 960), (lw, 960)], (217, 72, 15), 2)
-        p.text(14, 970, "phone UI zone (480 px of 1920 clear): animatic info only", 14, ORANGE, bold=False, anchor="lt")
-        y = p.para(18, 998, "SAYS: " + (sh["voice"][:140] if sh["voice"] and sh["voice"] != "—" else "(no voice)"), 21, lw - 36, BROWN, maxlines=3, gap=1.2, anchor="la")
+        simg = Image.new('RGB', (int(W * k), int((H - 960) * k)), (244, 231, 208))
+        p = Pen(simg, k); p.line([(0, 0), (lw, 0)], (217, 72, 15), 4)
+        p.text(14, 10, "phone UI zone (480 px of 1920 clear): animatic info only", 14, ORANGE, bold=False, anchor="lt")
+        y = p.para(18, 38, "SAYS: " + (sh["voice"][:140] if sh["voice"] and sh["voice"] != "—" else "(no voice)"), 21, lw - 36, BROWN, maxlines=3, gap=1.2, anchor="la")
         p.para(18, y + 8, "SFX: " + sh["sfx"], 19, lw - 36, (110, 80, 50), maxlines=3, gap=1.2, anchor="la")
-        p.para(18, 1175, "EDIT: " + re.sub(r"\s+", " ", sh["edit"])[:170], 16, lw - 36, (130, 105, 80), maxlines=4, gap=1.2, anchor="la")
-    return img, dict(icons=pos)
+        p.para(18, 215, "EDIT: " + re.sub(r"\s+", " ", sh["edit"])[:170], 16, lw - 36, (130, 105, 80), maxlines=4, gap=1.2, anchor="la")
+    return img, dict(icons=pos, strip=simg)
 
 
 def ins_card(sh, note, W, H, k, land):

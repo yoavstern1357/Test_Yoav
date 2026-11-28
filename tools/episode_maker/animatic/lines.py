@@ -5,10 +5,10 @@ Each line: clip id, speaker, kind (on / off / vo), text spoken, caption text, op
 """
 LINES = {
     "ep01": [
-        ("C01", "narrator", "vo", "Defeated... by ONE tiny dumpling.", dict(speed=0.95, st=-1.0, gain=1.5)),
+        ("C01", "narrator", "vo", "Defeated... by ONE tiny dumpling.", dict(speed=0.95, gain=1.5)),
         ("C02", "boy", "on", "Welcome to Nanxiang, soup dumpling town!", dict(tts="Welcome to Nan-shyang, soup dumpling town!")),
         ("C03", "boy", "on", "How does soup get INSIDE a dumpling?", dict(tts="How does soup get inside a dumpling?")),
-        ("C04", "narrator", "vo", "The stall... of DESTINY.", dict(speed=0.95, st=-0.5, gain=1.0, tts="The stall... of destiny!")),
+        ("C04", "narrator", "vo", "The stall... of DESTINY.", dict(speed=0.95, gain=1.0, tts="The stall... of destiny!")),
         ("C05", "boy", "on", "It's just a stall.", dict(speed=0.95)),
         ("C06", "grandma", "on", "Everyone asks. We make the soup solid.", dict()),
         ("C07", "grandma", "off", "Pork skin, boiled slowly, chilled to jelly.", dict()),
@@ -21,7 +21,7 @@ LINES = {
         ("C14", "uncle", "on", "...There was SOUP inside. Hot!", dict(speed=0.92, st=3.0, gain=-3.0, tts="... There was soup inside. Hot!")),
         ("C15", "grandma", "off", "By the top knot, onto a spoon.", dict(speed=0.98)),
         ("C16", "grandma", "off", "Tiny hole. Let it cool. Sip.", dict(speed=0.98, gain=-1.5)),
-        ("K03", "narrator", "vo", "LEGEND SAYS!", dict(speed=1.0, st=-1.0, gain=3.0, tts="Legend says!")),
+        ("K03", "narrator", "vo", "LEGEND SAYS!", dict(speed=1.0, gain=3.0, tts="Legend says!")),
         ("K04", "narrator", "vo", "Around 1871, a shop made its bun tiny... hiding jelly inside!",
          dict(speed=1.0, tts="Around eighteen seventy-one, a shop made its bun tiny... hiding jelly inside!")),
         ("C17", "uncle", "on", "I forgive you, little dumpling.", dict(speed=0.92, gain=-2.0)),

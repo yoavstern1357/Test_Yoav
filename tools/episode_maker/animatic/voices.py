@@ -186,6 +186,8 @@ def render():
     for ep, ls in LINES.items():
         d = os.path.join(OUT, "voices", ep); os.makedirs(d, exist_ok=True)
         for c, who, kind, text, o in ls:
+            if os.environ.get('ONLY') and who not in os.environ['ONLY'].split(','):
+                continue
             cand = chosen[who]
             w = trim(raw(cand, o.get("tts", text), o.get("speed", 1.0), o.get("st", 0.0)))
             pk_ = np.abs(w).max() or 1

@@ -12,6 +12,7 @@ Last updated: 2026-11-28. Working branch: `claude/charming-euler-0laws8` (GPU ou
 - **Next steps:** (1) Hebrew scripts for Ep 1 and Ep 2 (114 spoken words each), then R1, Ep 3, Ep 4, R2 = the 6-upload bank; (2) character model sheets (Boy, Uncle B, Grandma) and the rival's design (needed by Ep 6); (3) voice samples (Qwen3-TTS default, as many free samples as possible) for the creator to choose; (4) re-cut the Ep 1 v4.5 material into Episode 1 and Episode 2.
 - **Open creator confirmations** (plan section 7): rival arrival at Ep 6, the R1-R6 list, the S1 finale answer, final rival names, how the series finale closes "where is Dad?".
 - Opening song: style 2 (male) stays as placeholder.
+- **Animatic (CPU, 2026-11-28):** `animatic-ep01-v5.mp4` (70.96 s) and `animatic-ep02-v5.mp4` (67.0 s) in `tools/episode_maker/out/` (git-ignored); built by `tools/episode_maker/animatic/` (`voices.py render`, then `render.py ep01|ep02 [--land]`) from the v5 scripts; report `production/v4/animatic-ep01-ep02-report.md`.
 
 ### 0.1 Earlier status (v4.4, 2026-11-26)
 - **Episode 1 v4.4 rendered** (2:46, both 9:16 and 16:9): anime-TV opening with an original Japanese punk song (ACE-Step), full AI motion clips (LTX-Video 0.9.8 distilled on Kaggle), anime-comedy script `scripts/episode-01-v4.4.md`, Qwen3-TTS voices, safe caption placement. Files (git-ignored): `tools/episode_maker/out/episode-01-v4.4{,-land}{,-mobile}.mp4`. Sent to the creator; awaiting notes. Not uploaded.

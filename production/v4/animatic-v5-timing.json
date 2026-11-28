@@ -1,0 +1,2615 @@
+{
+ "ep01": {
+  "total": 70.958,
+  "shots": [
+   {
+    "id": "C01",
+    "t0": 0.0,
+    "dur": 3.958,
+    "planned": 3.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      1.018,
+      "A"
+     ],
+     [
+      1.018,
+      1.92,
+      "punch"
+     ],
+     [
+      1.92,
+      2.91,
+      "ins"
+     ],
+     [
+      2.91,
+      3.958,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "narrator",
+     "kind": "vo",
+     "text": "Defeated... by ONE tiny dumpling.",
+     "voice": "kokoro bm_fable x0.88",
+     "starts_at": 0.55,
+     "dur": 3.059,
+     "asr": "defeated by one tiny dumpling.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Defeated...",
+       "s": 0.55,
+       "e": 1.332
+      },
+      {
+       "w": "by",
+       "s": 1.647,
+       "e": 1.92
+      },
+      {
+       "w": "ONE",
+       "s": 1.92,
+       "e": 2.28
+      },
+      {
+       "w": "tiny",
+       "s": 2.28,
+       "e": 2.91
+      },
+      {
+       "w": "dumpling.",
+       "s": 2.91,
+       "e": 3.432
+      }
+     ]
+    }
+   },
+   {
+    "id": "C21",
+    "t0": 3.958,
+    "dur": 2.0,
+    "planned": 2.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.67,
+      "A"
+     ],
+     [
+      0.67,
+      1.0,
+      "punch"
+     ],
+     [
+      1.0,
+      1.67,
+      "ins"
+     ],
+     [
+      1.67,
+      2.0,
+      "ins"
+     ]
+    ],
+    "voice": null
+   },
+   {
+    "id": "C22",
+    "t0": 5.958,
+    "dur": 2.0,
+    "planned": 2.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.67,
+      "A"
+     ],
+     [
+      0.67,
+      1.33,
+      "punch"
+     ],
+     [
+      1.33,
+      2.0,
+      "punch"
+     ]
+    ],
+    "voice": null
+   },
+   {
+    "id": "C23",
+    "t0": 7.958,
+    "dur": 2.0,
+    "planned": 2.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.67,
+      "A"
+     ],
+     [
+      0.67,
+      1.0,
+      "punch"
+     ],
+     [
+      1.0,
+      1.33,
+      "ins"
+     ],
+     [
+      1.33,
+      2.0,
+      "A"
+     ]
+    ],
+    "voice": null
+   },
+   {
+    "id": "K01",
+    "t0": 9.958,
+    "dur": 1.5,
+    "planned": 1.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.33,
+      "card"
+     ],
+     [
+      0.33,
+      0.67,
+      "ins"
+     ],
+     [
+      0.67,
+      1.5,
+      "card"
+     ]
+    ],
+    "voice": null
+   },
+   {
+    "id": "C02",
+    "t0": 11.458,
+    "dur": 3.417,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.833,
+      "A"
+     ],
+     [
+      1.833,
+      3.417,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Welcome to Nanxiang, soup dumpling town!",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 11.738,
+     "dur": 2.739,
+     "asr": "Welcome to Nenshiong's soup-dumping town.",
+     "wer": 0.4,
+     "words": [
+      {
+       "w": "Welcome",
+       "s": 11.738,
+       "e": 12.398
+      },
+      {
+       "w": "to",
+       "s": 12.398,
+       "e": 12.608
+      },
+      {
+       "w": "Nanxiang,",
+       "s": 12.608,
+       "e": 13.2
+      },
+      {
+       "w": "soup",
+       "s": 13.291,
+       "e": 13.628
+      },
+      {
+       "w": "dumpling",
+       "s": 13.628,
+       "e": 14.168
+      },
+      {
+       "w": "town!",
+       "s": 14.168,
+       "e": 14.368
+      }
+     ]
+    }
+   },
+   {
+    "id": "C03",
+    "t0": 14.875,
+    "dur": 3.083,
+    "planned": 3.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.32,
+      "A"
+     ],
+     [
+      1.32,
+      3.083,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "How does soup get INSIDE a dumpling?",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 15.155,
+     "dur": 2.419,
+     "asr": "How does soup get inside a dumpling?",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "How",
+       "s": 15.155,
+       "e": 15.455
+      },
+      {
+       "w": "does",
+       "s": 15.455,
+       "e": 15.695
+      },
+      {
+       "w": "soup",
+       "s": 15.695,
+       "e": 15.965
+      },
+      {
+       "w": "get",
+       "s": 15.965,
+       "e": 16.195
+      },
+      {
+       "w": "INSIDE",
+       "s": 16.195,
+       "e": 16.755
+      },
+      {
+       "w": "a",
+       "s": 16.755,
+       "e": 16.885
+      },
+      {
+       "w": "dumpling?",
+       "s": 16.885,
+       "e": 17.471
+      }
+     ]
+    }
+   },
+   {
+    "id": "C04",
+    "t0": 17.958,
+    "dur": 2.958,
+    "planned": 3.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      1.52,
+      "A"
+     ],
+     [
+      1.52,
+      2.958,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "narrator",
+     "kind": "vo",
+     "text": "The stall... of DESTINY.",
+     "voice": "kokoro bm_fable x0.88",
+     "starts_at": 18.158,
+     "dur": 2.462,
+     "asr": "The Stole of Destiny.",
+     "wer": 0.25,
+     "words": [
+      {
+       "w": "The",
+       "s": 18.158,
+       "e": 18.478
+      },
+      {
+       "w": "stall...",
+       "s": 18.478,
+       "e": 18.849
+      },
+      {
+       "w": "of",
+       "s": 19.223,
+       "e": 19.478
+      },
+      {
+       "w": "DESTINY.",
+       "s": 19.478,
+       "e": 20.41
+      }
+     ]
+    }
+   },
+   {
+    "id": "C05",
+    "t0": 20.917,
+    "dur": 2.167,
+    "planned": 2.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      1.15,
+      "A"
+     ],
+     [
+      1.15,
+      2.167,
+      "rx"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "It's just a stall.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 21.117,
+     "dur": 1.651,
+     "asr": "It's just a stall.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "It's",
+       "s": 21.117,
+       "e": 21.417
+      },
+      {
+       "w": "just",
+       "s": 21.417,
+       "e": 21.887
+      },
+      {
+       "w": "a",
+       "s": 21.887,
+       "e": 22.067
+      },
+      {
+       "w": "stall.",
+       "s": 22.067,
+       "e": 22.542
+      }
+     ]
+    }
+   },
+   {
+    "id": "C06",
+    "t0": 23.083,
+    "dur": 3.5,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.5,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "on",
+     "text": "Everyone asks. We make the soup solid.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 23.533,
+     "dur": 2.313,
+     "asr": "Everyone asks, we make the soup solid.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Everyone",
+       "s": 23.533,
+       "e": 24.193
+      },
+      {
+       "w": "asks.",
+       "s": 24.193,
+       "e": 24.389
+      },
+      {
+       "w": "We",
+       "s": 24.509,
+       "e": 24.683
+      },
+      {
+       "w": "make",
+       "s": 24.683,
+       "e": 25.053
+      },
+      {
+       "w": "the",
+       "s": 25.053,
+       "e": 25.183
+      },
+      {
+       "w": "soup",
+       "s": 25.183,
+       "e": 25.333
+      },
+      {
+       "w": "solid.",
+       "s": 25.333,
+       "e": 25.726
+      }
+     ]
+    }
+   },
+   {
+    "id": "C07",
+    "t0": 26.583,
+    "dur": 3.333,
+    "planned": 3.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.737,
+      "A"
+     ],
+     [
+      1.737,
+      3.333,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "off",
+     "text": "Pork skin, boiled slowly, chilled to jelly.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 26.863,
+     "dur": 2.633,
+     "asr": "Port skin boils slowly chilled to jelly.",
+     "wer": 0.286,
+     "words": [
+      {
+       "w": "Pork",
+       "s": 26.863,
+       "e": 27.103
+      },
+      {
+       "w": "skin,",
+       "s": 27.103,
+       "e": 27.322
+      },
+      {
+       "w": "boiled",
+       "s": 27.399,
+       "e": 27.863
+      },
+      {
+       "w": "slowly,",
+       "s": 27.863,
+       "e": 28.243
+      },
+      {
+       "w": "chilled",
+       "s": 28.32,
+       "e": 28.823
+      },
+      {
+       "w": "to",
+       "s": 28.823,
+       "e": 28.993
+      },
+      {
+       "w": "jelly.",
+       "s": 28.993,
+       "e": 29.356
+      }
+     ]
+    }
+   },
+   {
+    "id": "C08",
+    "t0": 29.917,
+    "dur": 2.75,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.17,
+      "A"
+     ],
+     [
+      1.17,
+      2.75,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Wait. The soup goes in SOLID?",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 30.197,
+     "dur": 2.057,
+     "asr": "Wait, the soup goes in solid.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Wait.",
+       "s": 30.197,
+       "e": 30.47
+      },
+      {
+       "w": "The",
+       "s": 30.636,
+       "e": 30.817
+      },
+      {
+       "w": "soup",
+       "s": 30.817,
+       "e": 31.087
+      },
+      {
+       "w": "goes",
+       "s": 31.087,
+       "e": 31.497
+      },
+      {
+       "w": "in",
+       "s": 31.497,
+       "e": 31.587
+      },
+      {
+       "w": "SOLID?",
+       "s": 31.587,
+       "e": 32.143
+      }
+     ]
+    }
+   },
+   {
+    "id": "C09",
+    "t0": 32.667,
+    "dur": 3.208,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.208,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "vo",
+     "text": "Steam melts it back into soup.",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 33.117,
+     "dur": 2.014,
+     "asr": "Steam melts it back in a soup.",
+     "wer": 0.333,
+     "words": [
+      {
+       "w": "Steam",
+       "s": 33.117,
+       "e": 33.477
+      },
+      {
+       "w": "melts",
+       "s": 33.477,
+       "e": 33.677
+      },
+      {
+       "w": "it",
+       "s": 33.677,
+       "e": 33.937
+      },
+      {
+       "w": "back",
+       "s": 33.937,
+       "e": 34.177
+      },
+      {
+       "w": "into",
+       "s": 34.177,
+       "e": 34.687
+      },
+      {
+       "w": "soup.",
+       "s": 34.687,
+       "e": 34.963
+      }
+     ]
+    }
+   },
+   {
+    "id": "C10",
+    "t0": 35.875,
+    "dur": 2.0,
+    "planned": 2.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.41,
+      "A"
+     ],
+     [
+      0.41,
+      0.95,
+      "punch"
+     ],
+     [
+      0.95,
+      2.0,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "For dumpling research!",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 36.075,
+     "dur": 1.502,
+     "asr": "for dumpling research.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "For",
+       "s": 36.075,
+       "e": 36.285
+      },
+      {
+       "w": "dumpling",
+       "s": 36.285,
+       "e": 36.825
+      },
+      {
+       "w": "research!",
+       "s": 36.825,
+       "e": 37.463
+      }
+     ]
+    }
+   },
+   {
+    "id": "C11",
+    "t0": 37.875,
+    "dur": 3.083,
+    "planned": 3.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.25,
+      "A"
+     ],
+     [
+      1.25,
+      3.083,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Rule one of soup dumplings: don't...",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 38.155,
+     "dur": 2.249,
+     "asr": "Rule one of soup dumplings don't.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Rule",
+       "s": 38.155,
+       "e": 38.505
+      },
+      {
+       "w": "one",
+       "s": 38.505,
+       "e": 38.905
+      },
+      {
+       "w": "of",
+       "s": 38.905,
+       "e": 39.125
+      },
+      {
+       "w": "soup",
+       "s": 39.125,
+       "e": 39.405
+      },
+      {
+       "w": "dumplings:",
+       "s": 39.405,
+       "e": 39.823
+      },
+      {
+       "w": "don't...",
+       "s": 39.902,
+       "e": 40.153
+      }
+     ]
+    }
+   },
+   {
+    "id": "C12",
+    "t0": 40.958,
+    "dur": 2.083,
+    "planned": 2.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      1.025,
+      "A"
+     ],
+     [
+      1.025,
+      2.083,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "narrator",
+     "kind": "vo",
+     "text": "Three... two...",
+     "voice": "kokoro bm_fable x0.88",
+     "starts_at": 41.158,
+     "dur": 1.587,
+     "asr": "3 2",
+     "wer": 1.0,
+     "words": [
+      {
+       "w": "Three...",
+       "s": 41.158,
+       "e": 41.57
+      },
+      {
+       "w": "two...",
+       "s": 41.983,
+       "e": 42.333
+      }
+     ]
+    }
+   },
+   {
+    "id": "K02",
+    "t0": 43.042,
+    "dur": 1.0,
+    "planned": 1.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.4,
+      "card"
+     ],
+     [
+      0.4,
+      1.0,
+      "ins"
+     ]
+    ],
+    "voice": null
+   },
+   {
+    "id": "C13",
+    "t0": 44.042,
+    "dur": 1.75,
+    "planned": 2.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.75,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "...do that.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 44.322,
+     "dur": 1.054,
+     "asr": "Do that!",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "...do",
+       "s": 44.322,
+       "e": 44.702
+      },
+      {
+       "w": "that.",
+       "s": 44.702,
+       "e": 45.114
+      }
+     ]
+    }
+   },
+   {
+    "id": "C14",
+    "t0": 45.792,
+    "dur": 2.583,
+    "planned": 3.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.84,
+      "A"
+     ],
+     [
+      0.84,
+      1.957,
+      "ins"
+     ],
+     [
+      1.957,
+      2.583,
+      "rx"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "...There was SOUP inside. Hot!",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 45.992,
+     "dur": 2.099,
+     "asr": "There was soup inside, hot.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "...There",
+       "s": 45.992,
+       "e": 46.372
+      },
+      {
+       "w": "was",
+       "s": 46.372,
+       "e": 46.632
+      },
+      {
+       "w": "SOUP",
+       "s": 46.632,
+       "e": 46.902
+      },
+      {
+       "w": "inside.",
+       "s": 46.902,
+       "e": 47.592
+      },
+      {
+       "w": "Hot!",
+       "s": 47.749,
+       "e": 47.987
+      }
+     ]
+    }
+   },
+   {
+    "id": "C15",
+    "t0": 48.375,
+    "dur": 3.167,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.167,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "off",
+     "text": "By the top knot, onto a spoon.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 48.825,
+     "dur": 1.95,
+     "asr": "by the top knot onto a spoon",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "By",
+       "s": 48.825,
+       "e": 49.085
+      },
+      {
+       "w": "the",
+       "s": 49.085,
+       "e": 49.315
+      },
+      {
+       "w": "top",
+       "s": 49.315,
+       "e": 49.495
+      },
+      {
+       "w": "knot,",
+       "s": 49.495,
+       "e": 49.706
+      },
+      {
+       "w": "onto",
+       "s": 49.787,
+       "e": 50.115
+      },
+      {
+       "w": "a",
+       "s": 50.115,
+       "e": 50.295
+      },
+      {
+       "w": "spoon.",
+       "s": 50.295,
+       "e": 50.629
+      }
+     ]
+    }
+   },
+   {
+    "id": "C16",
+    "t0": 51.542,
+    "dur": 2.75,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      0.64,
+      "A"
+     ],
+     [
+      0.64,
+      1.982,
+      "ins"
+     ],
+     [
+      1.982,
+      2.75,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "off",
+     "text": "Tiny hole. Let it cool. Sip.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 51.822,
+     "dur": 2.057,
+     "asr": "Tiny hole, let it cool. Sip.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Tiny",
+       "s": 51.822,
+       "e": 52.182
+      },
+      {
+       "w": "hole.",
+       "s": 52.182,
+       "e": 52.601
+      },
+      {
+       "w": "Let",
+       "s": 52.742,
+       "e": 53.022
+      },
+      {
+       "w": "it",
+       "s": 53.022,
+       "e": 53.172
+      },
+      {
+       "w": "cool.",
+       "s": 53.172,
+       "e": 53.383
+      },
+      {
+       "w": "Sip.",
+       "s": 53.524,
+       "e": 53.737
+      }
+     ]
+    }
+   },
+   {
+    "id": "K03",
+    "t0": 54.292,
+    "dur": 2.167,
+    "planned": 1.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.867,
+      "card"
+     ],
+     [
+      0.867,
+      2.167,
+      "card"
+     ]
+    ],
+    "voice": {
+     "who": "narrator",
+     "kind": "vo",
+     "text": "LEGEND SAYS!",
+     "voice": "kokoro bm_fable x0.88",
+     "starts_at": 54.492,
+     "dur": 1.651,
+     "asr": "Legend says.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "LEGEND",
+       "s": 54.492,
+       "e": 55.492
+      },
+      {
+       "w": "SAYS!",
+       "s": 55.492,
+       "e": 55.937
+      }
+     ]
+    }
+   },
+   {
+    "id": "K04",
+    "t0": 56.458,
+    "dur": 5.917,
+    "planned": 6.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.456,
+      "card"
+     ],
+     [
+      1.456,
+      2.913,
+      "card"
+     ],
+     [
+      2.913,
+      4.005,
+      "card"
+     ],
+     [
+      4.005,
+      5.917,
+      "card"
+     ]
+    ],
+    "voice": {
+     "who": "narrator",
+     "kind": "vo",
+     "text": "Around 1871, a shop made its bun tiny... hiding jelly inside!",
+     "voice": "kokoro bm_fable x0.88",
+     "starts_at": 56.738,
+     "dur": 5.235,
+     "asr": "Around 1871, a shop made its bun tiny, hiding jelly inside.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Around",
+       "s": 56.738,
+       "e": 57.248
+      },
+      {
+       "w": "1871,",
+       "s": 57.248,
+       "e": 57.577
+      },
+      {
+       "w": "a",
+       "s": 57.676,
+       "e": 57.868
+      },
+      {
+       "w": "shop",
+       "s": 57.868,
+       "e": 58.148
+      },
+      {
+       "w": "made",
+       "s": 58.148,
+       "e": 58.658
+      },
+      {
+       "w": "its",
+       "s": 58.658,
+       "e": 59.018
+      },
+      {
+       "w": "bun",
+       "s": 59.018,
+       "e": 59.248
+      },
+      {
+       "w": "tiny...",
+       "s": 59.248,
+       "e": 59.729
+      },
+      {
+       "w": "hiding",
+       "s": 60.049,
+       "e": 60.538
+      },
+      {
+       "w": "jelly",
+       "s": 60.538,
+       "e": 61.158
+      },
+      {
+       "w": "inside!",
+       "s": 61.158,
+       "e": 61.854
+      }
+     ]
+    }
+   },
+   {
+    "id": "C17",
+    "t0": 62.375,
+    "dur": 3.208,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.208,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "I forgive you, little dumpling.",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 62.825,
+     "dur": 2.014,
+     "asr": "I forgive you, little dumpling.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "I",
+       "s": 62.825,
+       "e": 63.055
+      },
+      {
+       "w": "forgive",
+       "s": 63.055,
+       "e": 63.495
+      },
+      {
+       "w": "you,",
+       "s": 63.495,
+       "e": 63.775
+      },
+      {
+       "w": "little",
+       "s": 63.85,
+       "e": 64.245
+      },
+      {
+       "w": "dumpling.",
+       "s": 64.245,
+       "e": 64.704
+      }
+     ]
+    }
+   },
+   {
+    "id": "C19",
+    "t0": 65.583,
+    "dur": 2.542,
+    "planned": 2.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.09,
+      "A"
+     ],
+     [
+      1.09,
+      2.542,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Wait... that's Dad's doodle.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 65.863,
+     "dur": 1.843,
+     "asr": "Wait, that's Dad's doodle.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Wait...",
+       "s": 65.863,
+       "e": 66.135
+      },
+      {
+       "w": "that's",
+       "s": 66.43,
+       "e": 66.673
+      },
+      {
+       "w": "Dad's",
+       "s": 66.673,
+       "e": 67.033
+      },
+      {
+       "w": "doodle.",
+       "s": 67.033,
+       "e": 67.541
+      }
+     ]
+    }
+   },
+   {
+    "id": "C20",
+    "t0": 68.125,
+    "dur": 2.833,
+    "planned": 2.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      2.833,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "vo",
+     "text": "Dad was right...",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 68.575,
+     "dur": 1.481,
+     "asr": "Dad was right.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Dad",
+       "s": 68.575,
+       "e": 68.985
+      },
+      {
+       "w": "was",
+       "s": 68.985,
+       "e": 69.295
+      },
+      {
+       "w": "right...",
+       "s": 69.295,
+       "e": 69.655
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "ep02": {
+  "total": 67.0,
+  "shots": [
+   {
+    "id": "C01",
+    "t0": 0.0,
+    "dur": 3.5,
+    "planned": 3.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      1.26,
+      "A"
+     ],
+     [
+      1.26,
+      2.322,
+      "punch"
+     ],
+     [
+      2.322,
+      3.5,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "off",
+     "text": "Nobody sits on that stool. Nobody.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 0.35,
+     "dur": 2.846,
+     "asr": "Nobody sits on that stool. Nobody.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Nobody",
+       "s": 0.35,
+       "e": 0.98
+      },
+      {
+       "w": "sits",
+       "s": 0.98,
+       "e": 1.26
+      },
+      {
+       "w": "on",
+       "s": 1.26,
+       "e": 1.56
+      },
+      {
+       "w": "that",
+       "s": 1.56,
+       "e": 1.87
+      },
+      {
+       "w": "stool.",
+       "s": 1.87,
+       "e": 2.151
+      },
+      {
+       "w": "Nobody.",
+       "s": 2.322,
+       "e": 3.026
+      }
+     ]
+    }
+   },
+   {
+    "id": "K01",
+    "t0": 3.5,
+    "dur": 1.0,
+    "planned": 1.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.5,
+      "card"
+     ],
+     [
+      0.5,
+      1.0,
+      "card"
+     ]
+    ],
+    "voice": null
+   },
+   {
+    "id": "C02",
+    "t0": 4.5,
+    "dur": 2.958,
+    "planned": 3.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.678,
+      "A"
+     ],
+     [
+      1.678,
+      2.958,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Welcome to Nanxiang. He's... stuck.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 4.78,
+     "dur": 2.27,
+     "asr": "Welcome to Nanshong, he's stuck.",
+     "wer": 0.25,
+     "words": [
+      {
+       "w": "Welcome",
+       "s": 4.78,
+       "e": 5.33
+      },
+      {
+       "w": "to",
+       "s": 5.33,
+       "e": 5.64
+      },
+      {
+       "w": "Nanxiang.",
+       "s": 5.64,
+       "e": 6.037
+      },
+      {
+       "w": "He's...",
+       "s": 6.178,
+       "e": 6.409
+      },
+      {
+       "w": "stuck.",
+       "s": 6.659,
+       "e": 6.909
+      }
+     ]
+    }
+   },
+   {
+    "id": "C03",
+    "t0": 7.458,
+    "dur": 2.958,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.61,
+      "A"
+     ],
+     [
+      1.61,
+      2.958,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "I follow my dad's dumpling book.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 7.738,
+     "dur": 2.291,
+     "asr": "I follow my dad's dumpling book.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "I",
+       "s": 7.738,
+       "e": 7.998
+      },
+      {
+       "w": "follow",
+       "s": 7.998,
+       "e": 8.408
+      },
+      {
+       "w": "my",
+       "s": 8.408,
+       "e": 8.648
+      },
+      {
+       "w": "dad's",
+       "s": 8.648,
+       "e": 9.068
+      },
+      {
+       "w": "dumpling",
+       "s": 9.068,
+       "e": 9.528
+      },
+      {
+       "w": "book.",
+       "s": 9.528,
+       "e": 9.858
+      }
+     ]
+    }
+   },
+   {
+    "id": "C04",
+    "t0": 10.417,
+    "dur": 2.792,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.441,
+      "A"
+     ],
+     [
+      1.441,
+      2.792,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "I'm not sitting. It's research.",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 10.697,
+     "dur": 2.121,
+     "asr": "I'm not seeing its research.",
+     "wer": 0.4,
+     "words": [
+      {
+       "w": "I'm",
+       "s": 10.697,
+       "e": 10.937
+      },
+      {
+       "w": "not",
+       "s": 10.937,
+       "e": 11.127
+      },
+      {
+       "w": "sitting.",
+       "s": 11.127,
+       "e": 11.696
+      },
+      {
+       "w": "It's",
+       "s": 11.858,
+       "e": 12.077
+      },
+      {
+       "w": "research.",
+       "s": 12.077,
+       "e": 12.656
+      }
+     ]
+    }
+   },
+   {
+    "id": "C05",
+    "t0": 13.208,
+    "dur": 3.167,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.42,
+      "A"
+     ],
+     [
+      1.42,
+      3.167,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Grandma, why can't anyone sit there?",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 13.488,
+     "dur": 2.483,
+     "asr": "Grandma, why can't anyone sit there?",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Grandma,",
+       "s": 13.488,
+       "e": 13.972
+      },
+      {
+       "w": "why",
+       "s": 14.057,
+       "e": 14.328
+      },
+      {
+       "w": "can't",
+       "s": 14.328,
+       "e": 14.628
+      },
+      {
+       "w": "anyone",
+       "s": 14.628,
+       "e": 15.238
+      },
+      {
+       "w": "sit",
+       "s": 15.238,
+       "e": 15.448
+      },
+      {
+       "w": "there?",
+       "s": 15.448,
+       "e": 15.869
+      }
+     ]
+    }
+   },
+   {
+    "id": "C06",
+    "t0": 16.375,
+    "dur": 3.833,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.833,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "off",
+     "text": "The waiting seat. Eighteen folds, by hand.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 16.825,
+     "dur": 2.654,
+     "asr": "The waiting seat, 18 folds by hand.",
+     "wer": 0.143,
+     "words": [
+      {
+       "w": "The",
+       "s": 16.825,
+       "e": 16.985
+      },
+      {
+       "w": "waiting",
+       "s": 16.985,
+       "e": 17.605
+      },
+      {
+       "w": "seat.",
+       "s": 17.605,
+       "e": 17.813
+      },
+      {
+       "w": "Eighteen",
+       "s": 17.969,
+       "e": 18.415
+      },
+      {
+       "w": "folds,",
+       "s": 18.415,
+       "e": 18.762
+      },
+      {
+       "w": "by",
+       "s": 18.849,
+       "e": 19.025
+      },
+      {
+       "w": "hand.",
+       "s": 19.025,
+       "e": 19.322
+      }
+     ]
+    }
+   },
+   {
+    "id": "C07",
+    "t0": 20.208,
+    "dur": 2.875,
+    "planned": 3.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.74,
+      "A"
+     ],
+     [
+      0.74,
+      1.851,
+      "punch"
+     ],
+     [
+      1.851,
+      2.875,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "Eighteen folds? I'll... perish.",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 20.408,
+     "dur": 2.377,
+     "asr": "18 folds, I'll perish.",
+     "wer": 0.25,
+     "words": [
+      {
+       "w": "Eighteen",
+       "s": 20.408,
+       "e": 20.948
+      },
+      {
+       "w": "folds?",
+       "s": 20.948,
+       "e": 21.322
+      },
+      {
+       "w": "I'll...",
+       "s": 21.442,
+       "e": 21.739
+      },
+      {
+       "w": "perish.",
+       "s": 22.059,
+       "e": 22.604
+      }
+     ]
+    }
+   },
+   {
+    "id": "C08",
+    "t0": 23.083,
+    "dur": 2.083,
+    "planned": 2.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.96,
+      "A"
+     ],
+     [
+      0.96,
+      2.083,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "on",
+     "text": "Then perish quietly.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 23.283,
+     "dur": 1.587,
+     "asr": "then perish quietly.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Then",
+       "s": 23.283,
+       "e": 23.593
+      },
+      {
+       "w": "perish",
+       "s": 23.593,
+       "e": 24.043
+      },
+      {
+       "w": "quietly.",
+       "s": 24.043,
+       "e": 24.69
+      }
+     ]
+    }
+   },
+   {
+    "id": "C09",
+    "t0": 25.167,
+    "dur": 2.542,
+    "planned": 3.0,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      2.542,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "on",
+     "text": "That... that hat.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 25.617,
+     "dur": 1.353,
+     "asr": "That hat",
+     "wer": 0.333,
+     "words": [
+      {
+       "w": "That...",
+       "s": 25.617,
+       "e": 25.911
+      },
+      {
+       "w": "that",
+       "s": 26.228,
+       "e": 26.447
+      },
+      {
+       "w": "hat.",
+       "s": 26.447,
+       "e": 26.791
+      }
+     ]
+    }
+   },
+   {
+    "id": "C10",
+    "t0": 27.708,
+    "dur": 2.292,
+    "planned": 3.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      0.9,
+      "A"
+     ],
+     [
+      0.9,
+      2.292,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "You've seen this hat?",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 27.988,
+     "dur": 1.609,
+     "asr": "You've seen this hat.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "You've",
+       "s": 27.988,
+       "e": 28.608
+      },
+      {
+       "w": "seen",
+       "s": 28.608,
+       "e": 28.908
+      },
+      {
+       "w": "this",
+       "s": 28.908,
+       "e": 29.238
+      },
+      {
+       "w": "hat?",
+       "s": 29.238,
+       "e": 29.47
+      }
+     ]
+    }
+   },
+   {
+    "id": "C11",
+    "t0": 30.0,
+    "dur": 4.042,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      4.042,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "on",
+     "text": "A man sat there once. Same hat.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 30.45,
+     "dur": 2.59,
+     "asr": "A man sat there once, same hat.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "A",
+       "s": 30.45,
+       "e": 30.69
+      },
+      {
+       "w": "man",
+       "s": 30.69,
+       "e": 30.96
+      },
+      {
+       "w": "sat",
+       "s": 30.96,
+       "e": 31.2
+      },
+      {
+       "w": "there",
+       "s": 31.2,
+       "e": 31.66
+      },
+      {
+       "w": "once.",
+       "s": 31.66,
+       "e": 32.037
+      },
+      {
+       "w": "Same",
+       "s": 32.197,
+       "e": 32.7
+      },
+      {
+       "w": "hat.",
+       "s": 32.7,
+       "e": 32.88
+      }
+     ]
+    }
+   },
+   {
+    "id": "C12",
+    "t0": 34.042,
+    "dur": 3.458,
+    "planned": 3.0,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.458,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "vo",
+     "text": "Dad went away. His book stayed.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 34.492,
+     "dur": 2.27,
+     "asr": "Dad went away, his book stayed.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Dad",
+       "s": 34.492,
+       "e": 34.782
+      },
+      {
+       "w": "went",
+       "s": 34.782,
+       "e": 35.032
+      },
+      {
+       "w": "away.",
+       "s": 35.032,
+       "e": 35.526
+      },
+      {
+       "w": "His",
+       "s": 35.701,
+       "e": 35.942
+      },
+      {
+       "w": "book",
+       "s": 35.942,
+       "e": 36.312
+      },
+      {
+       "w": "stayed.",
+       "s": 36.312,
+       "e": 36.587
+      }
+     ]
+    }
+   },
+   {
+    "id": "C13",
+    "t0": 37.5,
+    "dur": 3.125,
+    "planned": 3.0,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.125,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "vo",
+     "text": "Page one: be patient.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 37.95,
+     "dur": 1.907,
+     "asr": "Page 1, be patient.",
+     "wer": 0.25,
+     "words": [
+      {
+       "w": "Page",
+       "s": 37.95,
+       "e": 38.35
+      },
+      {
+       "w": "one:",
+       "s": 38.35,
+       "e": 38.845
+      },
+      {
+       "w": "be",
+       "s": 38.937,
+       "e": 39.23
+      },
+      {
+       "w": "patient.",
+       "s": 39.23,
+       "e": 39.691
+      }
+     ]
+    }
+   },
+   {
+    "id": "C14",
+    "t0": 40.625,
+    "dur": 3.167,
+    "planned": 3.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.67,
+      "A"
+     ],
+     [
+      1.67,
+      3.167,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "on",
+     "text": "He waited all afternoon for one dumpling.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 40.905,
+     "dur": 2.505,
+     "asr": "He waited all afternoon for one dumpling.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "He",
+       "s": 40.905,
+       "e": 41.115
+      },
+      {
+       "w": "waited",
+       "s": 41.115,
+       "e": 41.465
+      },
+      {
+       "w": "all",
+       "s": 41.465,
+       "e": 41.745
+      },
+      {
+       "w": "afternoon",
+       "s": 41.745,
+       "e": 42.295
+      },
+      {
+       "w": "for",
+       "s": 42.295,
+       "e": 42.545
+      },
+      {
+       "w": "one",
+       "s": 42.545,
+       "e": 42.785
+      },
+      {
+       "w": "dumpling.",
+       "s": 42.785,
+       "e": 43.277
+      }
+     ]
+    }
+   },
+   {
+    "id": "C15",
+    "t0": 43.792,
+    "dur": 3.333,
+    "planned": 3.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      3.333,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "The answers are in his book.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 44.242,
+     "dur": 2.142,
+     "asr": "The answers are in his book.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "The",
+       "s": 44.242,
+       "e": 44.442
+      },
+      {
+       "w": "answers",
+       "s": 44.442,
+       "e": 45.072
+      },
+      {
+       "w": "are",
+       "s": 45.072,
+       "e": 45.382
+      },
+      {
+       "w": "in",
+       "s": 45.382,
+       "e": 45.752
+      },
+      {
+       "w": "his",
+       "s": 45.752,
+       "e": 45.992
+      },
+      {
+       "w": "book.",
+       "s": 45.992,
+       "e": 46.217
+      }
+     ]
+    }
+   },
+   {
+    "id": "C16",
+    "t0": 47.125,
+    "dur": 2.75,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      0.64,
+      "A"
+     ],
+     [
+      0.64,
+      1.982,
+      "ins"
+     ],
+     [
+      1.982,
+      2.75,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "off",
+     "text": "Tiny hole. Let it cool. Sip.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 47.405,
+     "dur": 2.057,
+     "asr": "Tiny hole let it cool. Sip.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Tiny",
+       "s": 47.405,
+       "e": 47.765
+      },
+      {
+       "w": "hole.",
+       "s": 47.765,
+       "e": 48.184
+      },
+      {
+       "w": "Let",
+       "s": 48.325,
+       "e": 48.605
+      },
+      {
+       "w": "it",
+       "s": 48.605,
+       "e": 48.755
+      },
+      {
+       "w": "cool.",
+       "s": 48.755,
+       "e": 48.966
+      },
+      {
+       "w": "Sip.",
+       "s": 49.107,
+       "e": 49.32
+      }
+     ]
+    }
+   },
+   {
+    "id": "C17",
+    "t0": 49.875,
+    "dur": 2.875,
+    "planned": 3.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.89,
+      "A"
+     ],
+     [
+      0.89,
+      1.98,
+      "punch"
+     ],
+     [
+      1.98,
+      2.875,
+      "ins"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "I've been patient for NINE seconds.",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 50.075,
+     "dur": 2.355,
+     "asr": "I've been patient for 9 seconds.",
+     "wer": 0.167,
+     "words": [
+      {
+       "w": "I've",
+       "s": 50.075,
+       "e": 50.465
+      },
+      {
+       "w": "been",
+       "s": 50.465,
+       "e": 50.765
+      },
+      {
+       "w": "patient",
+       "s": 50.765,
+       "e": 51.115
+      },
+      {
+       "w": "for",
+       "s": 51.115,
+       "e": 51.375
+      },
+      {
+       "w": "NINE",
+       "s": 51.375,
+       "e": 51.855
+      },
+      {
+       "w": "seconds.",
+       "s": 51.855,
+       "e": 52.283
+      }
+     ]
+    }
+   },
+   {
+    "id": "C18",
+    "t0": 52.75,
+    "dur": 2.375,
+    "planned": 2.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      1.144,
+      "A"
+     ],
+     [
+      1.144,
+      2.375,
+      "rx"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "It was four. I counted.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 52.95,
+     "dur": 1.865,
+     "asr": "It was four, I counted.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "It",
+       "s": 52.95,
+       "e": 53.16
+      },
+      {
+       "w": "was",
+       "s": 53.16,
+       "e": 53.4
+      },
+      {
+       "w": "four.",
+       "s": 53.4,
+       "e": 53.723
+      },
+      {
+       "w": "I",
+       "s": 53.894,
+       "e": 54.03
+      },
+      {
+       "w": "counted.",
+       "s": 54.03,
+       "e": 54.644
+      }
+     ]
+    }
+   },
+   {
+    "id": "C19",
+    "t0": 55.125,
+    "dur": 2.75,
+    "planned": 3.0,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      1.448,
+      "A"
+     ],
+     [
+      1.448,
+      2.75,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "grandma",
+     "kind": "on",
+     "text": "Then he went south. To Guangzhou.",
+     "voice": "kokoro bf_isabella x0.92",
+     "starts_at": 55.405,
+     "dur": 2.078,
+     "asr": "Then he went south to Guangzhou.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Then",
+       "s": 55.405,
+       "e": 55.645
+      },
+      {
+       "w": "he",
+       "s": 55.645,
+       "e": 55.915
+      },
+      {
+       "w": "went",
+       "s": 55.915,
+       "e": 56.085
+      },
+      {
+       "w": "south.",
+       "s": 56.085,
+       "e": 56.416
+      },
+      {
+       "w": "To",
+       "s": 56.573,
+       "e": 56.715
+      },
+      {
+       "w": "Guangzhou.",
+       "s": 56.715,
+       "e": 57.326
+      }
+     ]
+    }
+   },
+   {
+    "id": "C20",
+    "t0": 57.875,
+    "dur": 2.0,
+    "planned": 2.5,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.41,
+      "A"
+     ],
+     [
+      0.41,
+      0.95,
+      "punch"
+     ],
+     [
+      0.95,
+      1.52,
+      "ins"
+     ],
+     [
+      1.52,
+      2.0,
+      "punch"
+     ]
+    ],
+    "voice": {
+     "who": "uncle",
+     "kind": "on",
+     "text": "FOR DUMPLING RESEARCH!",
+     "voice": "kokoro bm_lewis x0.92",
+     "starts_at": 58.075,
+     "dur": 1.502,
+     "asr": "for dumpling research.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "FOR",
+       "s": 58.075,
+       "e": 58.285
+      },
+      {
+       "w": "DUMPLING",
+       "s": 58.285,
+       "e": 58.825
+      },
+      {
+       "w": "RESEARCH!",
+       "s": 58.825,
+       "e": 59.463
+      }
+     ]
+    }
+   },
+   {
+    "id": "C21",
+    "t0": 59.875,
+    "dur": 2.708,
+    "planned": 2.5,
+    "pace": "medium",
+    "segs": [
+     [
+      0.0,
+      2.708,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "He's already packed. Of course.",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 60.155,
+     "dur": 2.014,
+     "asr": "He's already packed, of course.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "He's",
+       "s": 60.155,
+       "e": 60.405
+      },
+      {
+       "w": "already",
+       "s": 60.405,
+       "e": 60.855
+      },
+      {
+       "w": "packed.",
+       "s": 60.855,
+       "e": 61.328
+      },
+      {
+       "w": "Of",
+       "s": 61.46,
+       "e": 61.565
+      },
+      {
+       "w": "course.",
+       "s": 61.565,
+       "e": 62.038
+      }
+     ]
+    }
+   },
+   {
+    "id": "C22",
+    "t0": 62.583,
+    "dur": 2.417,
+    "planned": 2.5,
+    "pace": "calm",
+    "segs": [
+     [
+      0.0,
+      2.417,
+      "A"
+     ]
+    ],
+    "voice": {
+     "who": "boy",
+     "kind": "on",
+     "text": "Dad was right...",
+     "voice": "kokoro bf_lily x1.10",
+     "starts_at": 63.033,
+     "dur": 1.481,
+     "asr": "Dad was right.",
+     "wer": 0.0,
+     "words": [
+      {
+       "w": "Dad",
+       "s": 63.033,
+       "e": 63.443
+      },
+      {
+       "w": "was",
+       "s": 63.443,
+       "e": 63.753
+      },
+      {
+       "w": "right...",
+       "s": 63.753,
+       "e": 64.113
+      }
+     ]
+    }
+   },
+   {
+    "id": "C23",
+    "t0": 65.0,
+    "dur": 2.0,
+    "planned": 2.0,
+    "pace": "fast",
+    "segs": [
+     [
+      0.0,
+      0.9,
+      "A"
+     ],
+     [
+      0.9,
+      2.0,
+      "punch"
+     ]
+    ],
+    "voice": null
+   }
+  ]
+ }
+}
