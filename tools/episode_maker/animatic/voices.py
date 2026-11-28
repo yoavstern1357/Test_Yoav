@@ -24,11 +24,11 @@ TARGET_HZ = {"boy": 250, "uncle": 100, "grandma": 190, "narrator": 100}
 CANDS = {
     "boy": [("kokoro af_heart x1.20", "kokoro", "af_heart", 1.20, 1.0), ("kokoro am_puck x1.12", "kokoro", "am_puck", 1.12, 1.0),
             ("pocket ref am_liam x1.2", "pocket", "pocketref_boy_2.wav", 1.0, 1.0), ("kokoro bf_lily x1.10", "kokoro", "bf_lily", 1.10, 1.0)],
-    "uncle": [("kokoro bm_lewis x0.90", "kokoro", "bm_lewis", 0.90, 1.0), ("kokoro am_fenrir x0.90", "kokoro", "am_fenrir", 0.90, 1.0),
+    "uncle": [("kokoro bm_lewis x0.92", "kokoro", "bm_lewis", 0.92, 1.0), ("kokoro am_fenrir x0.90", "kokoro", "am_fenrir", 0.90, 1.0),
               ("supertonic 8 x0.94", "supertonic", 8, 0.94, 0.95), ("kokoro am_michael x0.90", "kokoro", "am_michael", 0.90, 1.0)],
     "grandma": [("kokoro af_sarah x0.96", "kokoro", "af_sarah", 0.96, 0.95), ("kokoro bf_isabella x0.92", "kokoro", "bf_isabella", 0.92, 0.95),
                 ("pocket ref af_sarah", "pocket", "pocketref_grandma_1.wav", 1.0, 0.95), ("kokoro bf_emma x0.90", "kokoro", "bf_emma", 0.90, 0.95)],
-    "narrator": [("kokoro bm_fable x0.88", "kokoro", "bm_fable", 0.88, 0.92), ("kokoro bm_george x0.90", "kokoro", "bm_george", 0.90, 0.92),
+    "narrator": [("supertonic 9 x0.95", "supertonic", 9, 0.95, 1.0), ("kokoro bm_fable x0.88", "kokoro", "bm_fable", 0.88, 0.92), ("kokoro bm_george x0.90", "kokoro", "bm_george", 0.90, 0.92),
                  ("supertonic 9 x0.90", "supertonic", 9, 0.90, 0.9), ("kokoro bm_lewis x0.85", "kokoro", "bm_lewis", 0.85, 0.92)],
 }
 _k = {}
@@ -174,14 +174,12 @@ def align(w, text):
     return [dict(w=a, s=round(float(b), 3), e=round(float(c), 3)) for a, b, c in out]
 
 
-def render(cast=None):
-    pk = json.load(open(os.path.join(OUT, "voice_pick.json")))
-    chosen = {}
-    for who, lst in pk.items():
-        best = max(lst, key=lambda e: e["score"])
-        chosen[who] = next(c for c in CANDS[who] if c[0] == best["label"])
-    if cast:
-        chosen.update(cast)
+# Final cast = the proxy winner, adjusted by hand where the proxy is misleading (see animatic report, section "Voices").
+CHOSEN = {"boy": "kokoro bf_lily x1.10", "uncle": "kokoro bm_lewis x0.92", "grandma": "kokoro bf_isabella x0.92", "narrator": "kokoro bm_fable x0.88"}
+
+
+def render():
+    chosen = {who: next(c for c in CANDS[who] if c[0] == lab) for who, lab in CHOSEN.items()}
     json.dump({k: v[0] for k, v in chosen.items()}, open(os.path.join(OUT, "voice_cast.json"), "w"), indent=1)
     rec = mkrec()
     report = []
