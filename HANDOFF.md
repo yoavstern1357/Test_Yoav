@@ -1,14 +1,25 @@
 # HANDOFF: The Dumpling Boy
 
-Last updated: 2026-11-26. Working branch: `claude/charming-euler-0laws8` (GPU outputs on branch `gpu-results`). Read `CLAUDE.md` and `production/v4/PRODUCTION-BIBLE.md` (all decisions, incl. "v4.4 DIRECTIVES") first.
+Last updated: 2026-11-28. Working branch: `claude/charming-euler-0laws8` (GPU outputs on branch `gpu-results`). Read `CLAUDE.md` and `production/v4/PRODUCTION-BIBLE.md` (all decisions, incl. "v4.4 DIRECTIVES") first.
 
-## 0. Current status (v4.4)
+## 0. Current status
+### 0.0 v5 decisions (creator, 2026-11-28) and the v6 plan: START HERE
+- Decisions are at the end of `production/v4/PRODUCTION-BIBLE.md` ("v5 DECISIONS"). The approved structure is `production/v4/series-structure-plan.md` (**v6**); `series-format.md`, `season-map.md`, `character-bible.md`, `scripts/README.md` were updated to match (older text kept, marked superseded).
+- **Structure:** seasons 12 / 9 / 9 / 9; **no Uncle secret, no torn page**; Dad vanished and left his dumpling book ("What is Dad's Dumpling, and where is Dad?"); rival host "Pepper" arrives in Ep 5, with friendly "Bell Round" battles before and between; **recipe = a separate 60-s Short after every 2 story episodes** (new bonus dumpling); **1 upload per week**, 6 uploads banked before launch.
+- **S1 = Ep 1a, 1b, 2-11 (12 story) + recipe Shorts R1-R6 = 18 weeks, 17 dumplings** (calendar in plan 5.2). Old Ep 3 (guotie) is now R1; old Ep n = new Ep n-1 for n >= 4.
+- **Characters:** Boy polished (age 7), Uncle variant B (fully bald, curled mustache, mandarin-collar jacket, towel), Grandma as in `production/v4/character-redesign-plan.md`; model sheets are the next art task.
+- **Work rules:** free tools only; run autonomously and cheaply via sub-agents; the creator approves results only: **each script is shown in Hebrew in chat and approved BEFORE any production**, then animatic, then final. Nothing is uploaded without approval.
+- **Next steps:** (1) Hebrew scripts for Ep 1a and Ep 1b (114 spoken words each), then R1, Ep 2, Ep 3, R2 = the 6-upload bank; (2) character model sheets (Boy, Uncle B, Grandma) and the rival's design (needed by Ep 5); (3) voice samples (Qwen3-TTS default, as many free samples as possible) for the creator to choose; (4) re-cut the Ep 1 v4.5 material into 1a and 1b.
+- **Open creator confirmations** (plan section 7): rival arrival at Ep 5, the R1-R6 list, the S1 finale answer, final rival names, how the series finale closes "where is Dad?".
+- Opening song: style 2 (male) stays as placeholder.
+
+### 0.1 Earlier status (v4.4, 2026-11-26)
 - **Episode 1 v4.4 rendered** (2:46, both 9:16 and 16:9): anime-TV opening with an original Japanese punk song (ACE-Step), full AI motion clips (LTX-Video 0.9.8 distilled on Kaggle), anime-comedy script `scripts/episode-01-v4.4.md`, Qwen3-TTS voices, safe caption placement. Files (git-ignored): `tools/episode_maker/out/episode-01-v4.4{,-land}{,-mobile}.mp4`. Sent to the creator; awaiting notes. Not uploaded.
 - Decisions pending from the creator: opening-song style (placeholder: style B, intro_b__s212), final voice approval, notes on v4.4.
 - Scripts v4.2 exist for Episodes 2-3 (need the v4.4 anime-comedy pass); creator said: focus on Episode 1 only for now.
 - Agents hit the weekly model limit (resets 2026-11-30 05:00 UTC).
 
-## 0.1 Pipeline (free)
+## 0.2 Pipeline (free)
 - **GPU (Kaggle T4 x2, ~30 h/week, max 2 sessions)** driven by GitHub Actions: edit `tools/episode_maker/gpu/jobs/run.json` (unique run_id, task images|clips|tts|music, input folder) and push; results land on branch `gpu-results/<run_id>/`. Secret `KAGGLE_API_TOKEN` is set in the repo. See `tools/episode_maker/gpu/README.md`, `production/v4/motion-tech.md`, `production/v4/voice-tech.md`, `production/v4/gpu-ledger.md`.
 - Stills: FLUX.2 klein 4B (Apache-2.0) with reference images; Uncle locked to gpu-results/intro-v3 variant 2; style "soft watercolor anime".
 - Clips: backend `ltx98d`; KNOWN BUG: RIFE x2 corrupts interpolated frames, so drop every 2nd frame on install (12 fps "on twos"); see motion-tech.md.

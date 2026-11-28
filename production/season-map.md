@@ -1,7 +1,34 @@
 # Season Map: The Dumpling Boy (Silk Road route)
 
 Planned: 2026-11-24 · Replaces the old 11-country "Season 1 map" in `series-format.md`.
-**39 episodes in 13 arcs:** Season 1 = 21 episodes (7 arcs), Season 2 = 18 episodes (6 arcs). Every episode is ~2:00 and about **one** dumpling. Every 3rd episode is **Recipe + Recap**.
+**39 episodes in 13 arcs (v1 plan, superseded by the v6 block below: 4 seasons of 12 / 9 / 9 / 9):** Season 1 = 21 episodes (7 arcs), Season 2 = 18 episodes (6 arcs). Every episode is ~2:00 and about **one** dumpling. Every 3rd episode is **Recipe + Recap**.
+
+> **v6 UPDATE (2026-11-28): season split and numbering changed. Read this block first; the tables below keep the OLD numbers (Ep 1-39, two seasons).** Plan: `production/v4/series-structure-plan.md` (v6). The route, the cities and the dumplings are kept, with one change: **old Ep 3 (Beijing guotie) is no longer a story episode; it becomes recipe Short R1.**
+>
+> **What changed**
+> - **4 seasons, 12 / 9 / 9 / 9 story episodes** instead of 21 + 18. Ep 1 is split into **1a** (soup dumpling + scroll legend) and **1b** (Dad, the book, the hook). So S1 has 12 story episodes = 1a, 1b, 2-11, and the old route shifts: **old Ep n becomes new Ep n-1 for every n >= 4** (Seoul = Ep 3, Molo = Ep 11, Huế = Ep 14, Venice = Ep 38).
+> - **No "Recipe + Recap" episodes.** The old recipe episodes (old 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39) are now plain **story** episodes; the "✔ Recipe" marks below stay as **safety flags** (deep frying, raw egg, options). Recipes are **separate 60-s Shorts (R1, R2...) after every 2 story episodes, about NEW bonus dumplings** (S1 list: R1 guotie, R2 Cantonese wonton, R3 songpyeon, R4 mitarashi dango, R5 siopao, R6 buchi).
+> - **Dad's clues:** there is **no torn page and no Uncle secret.** Dad vanished and left his dumpling book; the last page is blank on purpose. The "Dad's journal clue" column still holds, but the S1 clues are now four lines (Ep 2 "Be patient", Ep 5 "Make them together", Ep 8 "Keep it simple", Ep 11 "Cook it for someone you love"). Section 5 below is superseded by the plan, 3.7-3.8. Huế (new Ep 14) is the one gentle Dad beat.
+> - **Added:** a rival host (from Ep 5) and recurring friendly battles (plan 3.4, 3.9). Cadence 1 upload per week; S1 = 18 uploads in 18 weeks.
+>
+> **v6 numbering by arc**
+> | Season | Arc | New Ep | Old Ep | Dumplings (story) |
+> |---|---|---|---|---|
+> | **S1 The Eastern Sea** (12) | China | 1a, 1b, 2 | 1, 2 (old 3 -> R1) | Xiaolongbao (1a; 1b is the Dad/book episode), har gow |
+> | | Korea | 3, 4, 5 | 4, 5, 6 | Kimchi mandu, tteok-mandu-guk, gun-mandu |
+> | | Japan | 6, 7, 8 | 7, 8, 9 | Butaman, yaki-gyoza, shūmai |
+> | | Philippines | 9, 10, 11 | 10, 11, 12 | Ilocos empanada, siomai, pancit molo (**S1 finale**) |
+> | **S2 The Southern Sea** (9) | Vietnam | 12, 13, 14 | 13, 14, 15 | Bánh gối, white rose, bánh bột lọc (Huế = heart) |
+> | | The Straits | 15, 16, 17 | 16, 17, 18 | Chor muang, Nyonya chang, curry puff |
+> | | India | 18, 19, 20 | 19, 20, 21 | Modak, samosa, momo (**S2 finale**) |
+> | **S3 The Steppe and the Sands** (9) | Mongolia | 21, 22, 23 | 22, 23, 24 | Khuushuur, bansh, buuz |
+> | | Tea Road and Steppe | 24, 25, 26 | 25, 26, 27 | Pelmeni, manty, khoshan |
+> | | Uzbekistan | 27, 28, 29 | 28, 29, 30 | Chuchvara, samsa, tukhum barak (**S3 finale**) |
+> | **S4 The Road West** (9) | Caucasus | 30, 31, 32 | 31, 32, 33 | Dushbara, khinkali, sini manti |
+> | | Türkiye | 33, 34, 35 | 34, 35, 36 | Hingel, Kayseri mantı, çibörek |
+> | | Italy | 36, 37, 38 | 37, 38, 39 | Ravioli, tortellini, Dad's Dumpling (**series finale**) |
+>
+> The sea / land split below ("Season 1 = sea, Season 2 = land") is now: S1 and S2 = the **Maritime** road, S3 and S4 = the **Land** road. Headings and "Ep #" columns below are the old v1 numbers.
 
 ## 1. Why this route
 
@@ -94,7 +121,7 @@ Method key: **S** steamed · **F** fried (pan- or deep-) · **B** boiled · **Bk
 - **Caucasus B·B·Bk.** Option: swap Ep 31 to **Azerbaijani qutab** (pan/griddle-fried), but it's a stuffed flatbread, not a true dumpling.
 - **Türkiye B·B·F.** Anatolian mantı are boiled or baked, not steamed.
 
-## 4. Reusing the existing scripts (do not edit until the new plan is approved)
+## 4. Reusing the existing scripts (old v1 numbers; the old scripts are extended-cut references only in v6)
 
 | Existing file | New Ep # | Keep / rewrite |
 |---|---|---|
@@ -111,7 +138,7 @@ Method key: **S** steamed · **F** fried (pan- or deep-) · **B** boiled · **Bk
 
 Order note: the old order was China → Japan → Korea. The new order is **China → Korea → Japan**, so the Korea scripts (07–09) become Ep 4–6 and Japan becomes Ep 7–9. All "page X" journal lines and travel transitions need renumbering.
 
-## 5. Where Dad's story beats land
+## 5. Where Dad's story beats land (SUPERSEDED by v6: no torn page; see the plan, 3.7-3.8; old numbers)
 
 | Ep | Beat |
 |---|---|

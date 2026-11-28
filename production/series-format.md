@@ -1,39 +1,48 @@
-# Series Format: The Dumpling Boy
+# Series Format: The Dumpling Boy (v6)
+
+> **v6 (2026-11-28) replaces the first format** (2-minute episodes, a recipe inside every 3rd episode, a torn last page). The old text is in git history. Full plan with the episode tables and the calendar: `production/v4/series-structure-plan.md`. Route: `production/season-map.md`. Creator decisions: `production/v4/PRODUCTION-BIBLE.md` ("v5 DECISIONS", 2026-11-28).
 
 ## Two audiences, one show
 | Layer | Who it's for | How |
 |---|---|---|
-| **Look** | Young kids | Soft, round, bright, gentle animation; slapstick from the Uncle; big expressive faces |
-| **Content** | Everyone (teens, parents, foodies, travelers) | A continuing storyline, the real history of each dumpling, how food connects to culture, travel between countries, real recipes |
+| **Look** | Everyone, including kids | Refined soft anime, warm and clear; slapstick on the Uncle; big expressive faces |
+| **Content** | Teens, parents, foodies, travelers | A continuing storyline, the real history of each dumpling, how food connects to culture, travel between countries, real recipes |
 
 Rule of thumb: **a 6-year-old laughs at the Uncle, and a 40-year-old learns something.**
 
-## The continuing storyline: "Dad's Dumpling Journal"
-- Before he passed away, Dad traveled the world tasting dumplings and kept a **hand-drawn journal with a world map**.
-- The Boy found it, and the journey follows Dad's map, one country at a time.
-- Each country ends with a **stamp** on the map and one line Dad wrote about it.
-- The **last page is torn**: it's "Dad's Dumpling", a recipe he invented. Each country gives a clue to one secret ingredient.
-- **Ep 15 (Vietnam · Huế):** where Dad got his conical hat; the first half of the torn page is hidden in its brim.
-- **Ep 21 (Season 1 finale, India):** the journal unfolds into a map of the land road.
-- **Ep 39 (Series finale, Venice):** the second half of the page; the Boy and the Uncle cook Dad's Dumpling together, and the Uncle finally eats slowly.
-- Full route: `production/season-map.md` (Silk Road: Season 1 by sea, Season 2 by land).
+## The continuing storyline: "Dad's Dumpling Book"
+- **Dad vanished and left his dumpling book** (a hand-drawn journal with a world map). The Boy believes **the answers are in the book**. **Season question: What is Dad's Dumpling, and where is Dad?**
+- **No Uncle secret, no torn page, no quarrel.** The Uncle is Dad's brother and the Boy's loud, hungry co-host; his arc is learning to cook, not only eat.
+- Each country (arc) ends with a **stamp** on the map and one line Dad wrote. In Season 1 the four lines read as one message: *Be patient. Make them together. Keep it simple. Cook it for someone you love.* Each stamp also gives one concrete technique that goes into Dad's Dumpling.
+- Dad is only a sepia silhouette from behind. His fate is never stated in Season 1. **One gentle beat comes at Huế (Season 2).** No jokes within 10 s of a Dad beat.
+- **Ep 11 (S1 finale, Iloilo):** the stamp lines are read as one message, the first half of Dad's Dumpling is cooked together, and a drawing of the hat points to Vietnam. **Ep 14 (Huế):** where the hat comes from. **Ep 38 (Venice):** Dad's Dumpling is cooked and the Boy writes the blank last page.
 
-This gives viewers a reason to come back, and to watch from Episode 1.
+## Two kinds of upload, one per week
+| Kind | Length | What |
+|---|---|---|
+| **Story episode** | **60 s (hard max 1:15)**, vertical 9:16, about 114 spoken words | One dumpling, one place, one question answered inside the minute. Hook first, a 2-s title hit, the Uncle's gag **or a 15-20 s friendly "Bell Round" battle**, one serial beat, a next-episode hook, "Dad was right...". Template: plan 4.1. |
+| **Recipe Short (R1, R2...)** | **60 s**, vertical 9:16, standalone | **After every 2 story episodes**, a recipe for a **new bonus dumpling** (never one already in a story episode). Hands-and-food clips, grown-up-step badges, doneness temperatures, an allergy line. Full recipe in the description. Template: plan 4.2. |
+**Cadence: 1 upload per week** (pattern: story, story, recipe), with **6 finished uploads banked** before launch. A 16:9 version of each upload is also made. Optional 16:9 compilations (about 3 min, the 3 episodes of an arc) are bonus long-form for watch hours (Shorts views do not count toward the watch-hour goal).
 
 ## Every country is a 3-episode arc
-| Part | Type | Length | What happens |
-|---|---|---|---|
-| **1** | **Arrival** | ~2:00 Short (9:16) | Travel transition (map + plane/train/boat animation) → arrival → meet the dumpling → the Uncle's gag → **"Legend says…"** history moment → Dad's wisdom |
-| **2** | **Culture** | ~2:00 Short (9:16) | When and why locals eat it (festival, breakfast, family tradition) → a friendly local character → one **journal clue** that moves the story forward |
-| **3** | **Recipe + Recap** | ~2:00 Short (9:16); full written recipe in the description | A simple **family recipe** (kids + grown-up), then a **Recap card** (dumpling, country, history, fun fact, how to eat it) → **map stamp** → teaser for the next country |
+| Part | Type | What happens |
+|---|---|---|
+| **1** | **Arrival** | Travel transition, the place and the dumpling, the learning beat, a short **"Legend says..."** scroll, a Dad trace |
+| **2** | **Culture** | A friendly local master teaches; a **battle** with a local (fold-off, taste-ID, team relay, timing, crisp, shape); a clue from the book |
+| **3** | **Stamp** | A battle or a rival round, then the **map stamp**: Dad's line, the technique, a one-frame page-piece drawing, a next-country hook |
 
-**Every episode is about 2 minutes** (1:50–2:10), vertical 9:16, uploaded as a Short (Shorts can be up to 3 minutes).
-**Watch hours:** Shorts views don't count toward the YouTube Partner Program watch-hour goal. So after each country arc, publish a **16:9 "full arc" compilation** (the 3 episodes joined, ~6 min) as a regular video. It costs almost no extra work and builds watch hours and search traffic.
+## Recurring ingredients
+- **The rival host "Pepper"** (working name) and her producer **"Auntie Clip"** arrive in **Ep 5** (week 8), return about 1 episode in 3, and change (rival, frenemy, friend). Never humiliated; jokes stay on the Uncle; no real creator or platform is parodied.
+- **Battles** are a repeatable beat with fairness rules (a local master judges, same ingredients, no humiliation, taste rounds only, no speed eating). Details: plan 3.9.
+- Running gags that escalate: the Uncle's "sock" dumplings (until he folds a real one in Ep 11), "For dumpling research!", the lower third "co-host (self-appointed)", the ice pack, the Camel.
 
 ## Season map (Silk Road route)
-Full episode-by-episode plan: **see [`season-map.md`](season-map.md)** (39 episodes; every 3rd episode is Recipe + Recap).
-- **Season 1: Maritime Silk Road (Ep 1–21):** China → South Korea → Japan → Philippines → Vietnam (Huế, Dad's hat) → Thailand · Malaysia · Singapore → India
-- **Season 2: Land Silk Road (Ep 22–39):** Mongolia → Russia (Siberia) · Kazakhstan · Kyrgyzstan → Uzbekistan → Azerbaijan · Georgia · Armenia → Türkiye → Italy (finale: Venice, Marco Polo)
+Full plan: **[`season-map.md`](season-map.md)** (v6 renumbering at its top) and the plan's tables.
+- **Season 1 "The Eastern Sea" (Ep 1a, 1b, 2-11):** China (Nanxiang x2, Guangzhou) -> South Korea (Seoul, Chuncheon, Busan) -> Japan (Kobe, Utsunomiya, Yokohama) -> Philippines (Vigan, Binondo, Molo). 12 story + 6 recipe Shorts = 18 uploads.
+- **Season 2 "The Southern Sea" (Ep 12-20):** Vietnam (Hanoi, Hội An, Huế) -> Thailand, Malaysia, Singapore -> India. 9 story + 4 recipe Shorts.
+- **Season 3 "The Steppe and the Sands" (Ep 21-29):** Mongolia -> Russia (Siberia), Kazakhstan, Kyrgyzstan -> Uzbekistan. 9 story + 4 recipe Shorts.
+- **Season 4 "The Road West" (Ep 30-38):** Azerbaijan, Georgia, Armenia -> Türkiye -> Italy (finale: Venice, Marco Polo). 9 story + 4 recipe Shorts (plus an optional full-recipe Short of Dad's Dumpling).
+- Whole series: 39 story uploads + 18 recipe Shorts = 57 uploads, about 13 months at 1 per week.
 
 ## Accuracy rules (for the history parts)
 - Say **"Legend says…"** or **"Many people believe…"** when a story isn't proven. Many dumpling origin stories are legends with competing versions.
