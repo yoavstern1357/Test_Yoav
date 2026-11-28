@@ -1,1 +1,1 @@
-{"run_id": "music-cues-v5-001", "task": "music", "input": "tools/episode_maker/gpu/inputs/music-cues-v5", "backend": "acestep", "smoke": false, "only": "", "max_minutes": 15}
+{"run_id": "animatic-voices-v5-001", "task": "tts", "input": "tools/episode_maker/gpu/inputs/animatic-voices-v5", "backend": "qwen3", "smoke": false, "only": "", "max_minutes": 12}
