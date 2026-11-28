@@ -33,12 +33,12 @@ LOOK = {
     "uncle": ("the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, "
               "a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO "
               "headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled "
-              "upward past his cheeks, an earth-brown linen work jacket with a mandarin collar and exactly three cloth knot buttons, "
+              "upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, "
               "sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, "
               "brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us)"),
     "grandma": ("Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair "
                 "pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with "
-                "smile lines, small straight brows, round-square face with soft cheeks, a deep jade-green cotton jacket with a high "
+                "smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high "
                 "collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to "
                 "mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin "
                 "wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes"),
@@ -46,7 +46,7 @@ LOOK = {
 NAME = {"boy": "the Boy", "uncle": "the Uncle", "grandma": "Grandma"}
 AVOID = {
     "boy": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
-    "uncle": "hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, "
+    "uncle": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, "
              "child, text",
     "grandma": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
 }

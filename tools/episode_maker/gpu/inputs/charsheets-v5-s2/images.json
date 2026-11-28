@@ -1,0 +1,1194 @@
+{
+ "defaults": {
+  "backend": "klein",
+  "orientations": [
+   "portrait"
+  ]
+ },
+ "images": [
+  {
+   "id": "boy_turn_front",
+   "seed": 6100,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Full body from head to feet, front view, standing straight, arms relaxed at the sides, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "boy_turn_q34",
+   "seed": 6110,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Full body from head to feet, three-quarter view (body and face turned about 45 degrees to the viewer's left), arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "boy_turn_side",
+   "seed": 6120,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Full body from head to feet, pure side profile view facing the viewer's left, arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "boy_turn_back",
+   "seed": 6130,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Full body from head to feet, back view seen from directly behind, arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "boy_pose_stand",
+   "seed": 6200,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character pose illustration. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Full body from head to feet, a natural relaxed standing pose in three-quarter view, one hand pushing the brim of his hat up with one finger, curious friendly look. Exactly the same design and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "boy_pose_comic",
+   "seed": 6201,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character pose illustration. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Full body from head to feet, a comedic pose: jumping back in cartoon surprise, both arms up, eyes wide, mouth open, a sweat drop, hat bouncing. Exactly the same design and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "boy_expr01",
+   "seed": 6300,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: curious and neutral, calm friendly closed-mouth look. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr02",
+   "seed": 6301,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: warm gentle smile. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr03",
+   "seed": 6302,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: eyes closed in a soft tender smile. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr04",
+   "seed": 6303,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: wonder: eyes wide and sparkling, small round open mouth. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr05",
+   "seed": 6304,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: deadpan: flat half-lidded eyes, straight mouth. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr06",
+   "seed": 6305,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: explaining: one eyebrow raised, half smile, mouth slightly open as if talking. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr07",
+   "seed": 6306,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: surprised: eyebrows high, eyes wide, mouth open. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr08",
+   "seed": 6307,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: tasting bliss: eyes closed, cheeks puffed and blushing, happy. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr09",
+   "seed": 6308,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: worried: eyebrows tilted up-in, small trembling mouth. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr10",
+   "seed": 6309,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: missing Dad: eyes looking down, sad, quiet, shadow over the eyes. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr11",
+   "seed": 6310,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: scared: eyes wide with tiny pupils, mouth open, a sweat drop. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "boy_expr12",
+   "seed": 6311,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/boy_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Boy. No other person, no second figure, no duplicate, no reflection. the Boy: a small 7-year-old boy, about 4.5 heads tall, child proportions (he reaches an adult's belt), round soft child face with full cheeks, big dark-brown oval eyes, short black hair, a pale-straw conical leaf hat (Vietnamese non la) tied with a wide orange cloth chin ribbon that is ALWAYS visible under the chin, with two ribbon tails hanging down to the chest, a faded indigo cotton tunic with a diagonal side opening and two cloth knot buttons, a soft orange cloth sash knotted at the left hip, light hemp trousers rolled to mid-shin, flat brown straw sandals on bare feet. No bag, no shoulder strap, no pocket, no shoes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: determined: eyebrows down, firm closed mouth, chin set. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "second person, adult, bag, shoulder strap, pocket, shoes, missing chin ribbon, thin string, white clothes, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_turn_front",
+   "seed": 6200,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    },
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Full body from head to feet, front view, standing straight, arms relaxed at the sides, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "uncle_turn_q34",
+   "seed": 6210,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    },
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Full body from head to feet, three-quarter view (body and face turned about 45 degrees to the viewer's left), arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "uncle_turn_side",
+   "seed": 6220,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    },
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Full body from head to feet, pure side profile view facing the viewer's left, arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "uncle_turn_back",
+   "seed": 6230,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    },
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Full body from head to feet, back view seen from directly behind, arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "uncle_pose_stand",
+   "seed": 6300,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    },
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character pose illustration. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Full body from head to feet, a natural standing pose in three-quarter view, hands clasped on his big belly, content warm smile, nose sniffing. Exactly the same design and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "uncle_pose_comic",
+   "seed": 6301,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    },
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character pose illustration. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Full body from head to feet, his signature comedic pose: chest out, long wooden chopsticks raised high like a trophy, eyebrows high, proud grin, mustache curled up, shouting 'For dumpling research!'. Exactly the same design and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "uncle_expr01",
+   "seed": 6400,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: hungry and hopeful: nose raised, eyes bright, mouth slightly open. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr02",
+   "seed": 6401,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: big belly laugh: eyes closed in happy arcs, mouth wide open. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr03",
+   "seed": 6402,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: heroic: chest out, eyebrows high, proud grin, mustache tips curled up (For dumpling research!). The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr04",
+   "seed": 6403,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: first-bite bliss: eyes closed, happy tears, glowing cheeks, mouth full. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr05",
+   "seed": 6404,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: burned tongue: tongue out, steam from the ears, spiral eyes, comic. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr06",
+   "seed": 6405,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: humbled: head lowered, eyebrows tilted, mustache drooping. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr07",
+   "seed": 6406,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: shock: eyes white and round, jaw dropped, mustache bristling straight. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr08",
+   "seed": 6407,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: panic: tiny pupils, mouth wide open, sweat drops flying. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr09",
+   "seed": 6408,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: sneaky: side-eye, one eyebrow down, sly grin. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr10",
+   "seed": 6409,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: wise and tender: soft kind eyes, small closed smile, calm. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr11",
+   "seed": 6410,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: indignant: puffed red cheeks, eyebrows down. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "uncle_expr12",
+   "seed": 6411,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/uncle_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: the Uncle. No other person, no second figure, no duplicate, no reflection. the Uncle: a very large, fat, heavy round man with a big round belly and chubby rosy cheeks, warm, dignified and funny, a completely bald shiny round head with one small bright highlight (bare skin, NO hair on the head, NO hat, NO cap, NO headband), thick expressive black eyebrows, small kind dark eyes, a thin long black mustache with the tips curled upward past his cheeks (always a thin curled mustache, never a thick one), a rich EARTH-BROWN (#7A5230, chestnut brown, clearly NOT khaki, NOT olive, NOT tan) linen work jacket with a mandarin collar and exactly three cloth knot buttons, sleeves pushed to the elbows, a wide orange cloth sash tied in front with two long tails, wide charcoal trousers, brown straw sandals, a white cotton towel over his LEFT shoulder (the viewer's right when he faces us). Head and shoulders portrait, front view with a very slight three-quarter turn, expression: food coma: half-closed eyes, content smile, tiny drool. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "khaki jacket, olive jacket, tan jacket, hat, cap, headband, hair on the head, beard, side fringe, thick bushy mustache, kimono, gi, karate uniform, second person, child, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_turn_front",
+   "seed": 6300,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Full body from head to feet, front view, standing straight, arms relaxed at the sides, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "grandma_turn_q34",
+   "seed": 6310,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Full body from head to feet, three-quarter view (body and face turned about 45 degrees to the viewer's left), arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "grandma_turn_side",
+   "seed": 6320,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Full body from head to feet, pure side profile view facing the viewer's left, arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "grandma_turn_back",
+   "seed": 6330,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character model sheet view. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Full body from head to feet, back view seen from directly behind, arms relaxed, calm neutral friendly expression, feet on a plain floor line, exactly the same design, size and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "grandma_pose_stand",
+   "seed": 6400,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character pose illustration. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Full body from head to feet, a natural standing pose in three-quarter view, hands folded on her apron, perfectly still, one eye just opening. Exactly the same design and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "grandma_pose_comic",
+   "seed": 6401,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    }
+   ],
+   "prompt": "Character pose illustration. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Full body from head to feet, a comedic pose: pointing sharply with her short rolling pin, deadpan flat stare, one eyebrow raised. Exactly the same design and colors as the references. Vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 640
+  },
+  {
+   "id": "grandma_expr01",
+   "seed": 6500,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: calm master: crescent half-closed eyes, faint smile. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr02",
+   "seed": 6501,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: warm grandmother smile, crescent eyes. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr03",
+   "seed": 6502,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: focused: eyes cast down, lips pressed, concentrating. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr04",
+   "seed": 6503,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: knowing smirk: one eyebrow raised. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr05",
+   "seed": 6504,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: freeze-stare: eyes fully open, wide awake and sharp, mouth closed. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr06",
+   "seed": 6505,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: delighted laugh: one hand over her mouth, eyes crinkled. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr07",
+   "seed": 6506,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: stern: one eye open, firm mouth. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr08",
+   "seed": 6507,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: mild surprise: eyebrows lifted, eyes opening a little. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr09",
+   "seed": 6508,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: teaching: mouth open mid-sentence, pointing with the short rolling pin. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr10",
+   "seed": 6509,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: moved, remembering: soft wet eyes, trembling gentle smile. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr11",
+   "seed": 6510,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: deadpan: flat half-lidded eyes, straight mouth. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "grandma_expr12",
+   "seed": 6511,
+   "variants": 1,
+   "refs": [
+    {
+     "path": "refs/grandma_bust.png",
+     "role": "the same character, face close-up"
+    },
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    }
+   ],
+   "prompt": "Character expression portrait. Exactly ONE character in the whole image: Grandma. No other person, no second figure, no duplicate, no reflection. Grandma, the old dumpling master: a sturdy short elderly woman, about 4.5 heads tall, calm and kind, white-grey hair pulled back flat into a tall round bun pierced by two crossed plain wooden pins, calm half-closed crescent eyes with smile lines, small straight brows, round-square face with soft cheeks, a DEEP JADE-GREEN (#2F6B4F, dark saturated green, clearly NOT pale sage) cotton jacket with a high collar and a side opening, sleeves tied back above the elbows with an orange cord, a long plain cream apron to mid-shin with an orange apron sash, dark trousers, black cloth shoes, a little flour on her hands, a short thin wooden rolling pin tucked in the apron sash. No glasses, no earrings, no headscarf, no sage or pale-green clothes. Head and shoulders portrait, front view with a very slight three-quarter turn, expression: proud nod: eyes closed, chin up, content smile. The same face design, headwear or bare head, hair and costume as the references. Square composition, vertical composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "glasses, earrings, headscarf, light green jacket, sage-green, second person, child, kimono, text",
+   "width": 768,
+   "height": 768,
+   "ref_max": 512
+  },
+  {
+   "id": "lineup_boy_uncle",
+   "seed": 6954,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    },
+    {
+     "path": "refs/uncle_full.png",
+     "role": "the Uncle exactly (bald head, mustache, jacket, towel, sash, trousers, sandals, colors, proportions); only this one man (full body)"
+    }
+   ],
+   "orientations": [
+    "landscape"
+   ],
+   "keep_characters": true,
+   "prompt": "Scale lineup. Exactly TWO characters in the whole image, no third person: the Boy (small, his head top at the Uncle's belt) standing next to the Uncle (very large, a head and a half taller than anyone), both full body, side by side, front view, relaxed, friendly, both feet visible. Each keeps exactly the design of its reference. Wide horizontal 16:9 composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "third person, duplicate, hat on the Uncle, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 576
+  },
+  {
+   "id": "lineup_grandma_boy",
+   "seed": 6955,
+   "variants": 2,
+   "refs": [
+    {
+     "path": "refs/grandma_full.png",
+     "role": "Grandma exactly (bun with crossed pins, face, jade jacket, apron, colors, proportions); only this one woman (full body)"
+    },
+    {
+     "path": "refs/boy_full.png",
+     "role": "the Boy exactly (face, hat, chin ribbon, tunic, sash, trousers, sandals, colors, proportions); only this one child (full body)"
+    }
+   ],
+   "orientations": [
+    "landscape"
+   ],
+   "keep_characters": true,
+   "prompt": "Scale lineup. Exactly TWO characters in the whole image, no third person: Grandma (short and sturdy, her bun reaching above the Boy's hat) standing next to the Boy (small), both full body, side by side, front view, relaxed, friendly, both feet visible. Each keeps exactly the design of its reference. Wide horizontal 16:9 composition",
+   "style": "Soft watercolor anime, refined TV anime character illustration in the same painted style as the references: gentle clean thin warm-brown line art, soft painterly shading, warm muted palette (leaf yellow, cream, orange, peach, brown), natural cinematic light. Plain flat cream background (#FFFAF0) everywhere, no scenery, no props unless named, no frame, no border. No text, no labels, no numbers, no letters, no logos.",
+   "negative": "third person, duplicate, hat on the Uncle, text",
+   "width": 768,
+   "height": 1344,
+   "ref_max": 576
+  }
+ ]
+}
